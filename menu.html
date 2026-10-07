@@ -1,11 +1,13 @@
-<!-- ✅ MENÚ PAULINA DOTS (FINAL) -->
+<!-- MENU DE CONTENIDO AXFRA -->
 <nav class="main-menu" role="navigation" aria-label="Menú principal">
   <ul>
     <li><a href="https://axfra.com/">AXFRA</a></li>
+	      <li><a href="https://axfra.com/">Personajes</a></li>
+	  <li><a href="https://axfra.com/">Vestuario</a></li>
 
   
 
-    <li><a href="https://axfra.com/">Personajes</a></li>
+
 	      <li><a href="https://axfra.com/">Poses</a></li>
 
       <li><a href="https://axfra.com/">Escenarios</a></li>
@@ -157,7 +159,6 @@
 </style>
 
 <script>
-/* ✅ Marca activa */
 const currentPath = window.location.pathname.replace(/\/$/, '');
 document.querySelectorAll('.main-menu a').forEach(link => {
   const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
@@ -166,7 +167,6 @@ document.querySelectorAll('.main-menu a').forEach(link => {
 </script>
 
 <script>
-/* ✅ Fix Safari */
 const styles = document.querySelectorAll("style");
 styles.forEach(style => {
   const cloned = document.createElement("style");
