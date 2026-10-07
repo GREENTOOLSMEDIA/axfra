@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>AXFRA · Cinematic Gallery · Paulina Dots Laboratorio</title>
+
+  <link rel="canonical" href="https://axfra.com/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://axfra.com" />
+  <link rel="preload" as="image" href="https://axfra.com/images/homegallery/axfra-01.jpg" fetchpriority="high" />
+
+  <meta name="description" content="AXFRA. Galería cinematográfica del laboratorio Paulina Dots. Doce momentos creados para acompañar la música." />
+  <meta name="keywords" content="AXFRA, Paulina Dots, laboratorio, cinematic gallery, visual universe, ALARSI" />
+  <meta name="author" content="ALARSI" />
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <meta property="og:title" content="AXFRA · Cinematic Gallery" />
+  <meta property="og:description" content="Cinematic moments creados para acompañar la música." />
+  <meta property="og:image" content="https://axfra.com/images/homegallery/axfra-01.jpg" />
+  <meta property="og:url" content="https://axfra.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "AXFRA · Cinematic Gallery",
+        "description": "Galería cinematográfica del laboratorio Paulina Dots",
+        "inLanguage": "es",
+        "url": "https://axfra.com/",
+        "author": { "@type": "Organization", "name": "ALARSI" },
+        "publisher": { "@type": "Organization", "name": "ALARSI" }
+      },
+      {
+        "@type": "ImageGallery",
+        "name": "AXFRA Home Gallery",
+        "associatedMedia": [
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-01.jpg", "name": "AXFRA-0001" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-02.jpg", "name": "AXFRA-0002" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-03.jpg", "name": "AXFRA-0003" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-04.jpg", "name": "AXFRA-0004" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-05.jpg", "name": "AXFRA-0005" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-06.jpg", "name": "AXFRA-0006" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-07.jpg", "name": "AXFRA-0007" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-08.jpg", "name": "AXFRA-0008" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-09.jpg", "name": "AXFRA-0009" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-10.jpg", "name": "AXFRA-0010" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-11.jpg", "name": "AXFRA-0011" },
+          { "@type": "ImageObject", "contentUrl": "https://axfra.com/images/homegallery/axfra-12.jpg", "name": "AXFRA-0012" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{ --bg:#0b0b0b; --panel:rgba(255,255,255,0.04); --border:rgba(255,255,255,0.10); --text:#ededed; --muted:#cfcfcf; --accent:#f0c96c; --shadow:0 14px 34px rgba(0,0,0,0.28); --radius:12px; }
+    *{ box-sizing:border-box; }
+    body{ margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; line-height:1.65; }
+    img{ max-width:100%; display:block; }
+    .text-container{ max-width:920px; margin:0 auto; padding:24px 18px; }
+    .subtitle{ color:var(--muted); }
+
+    .hero{
+      position:relative;
+      width:100%;
+      aspect-ratio:16 / 9;
+      overflow:hidden;
+      background:#000;
+    }
+    .hero-stage{ position:absolute; inset:0; }
+    .hero-frame{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity:0;
+      transform:scale(1.045);
+      transition:opacity 1s ease, transform 7.5s linear;
+    }
+    .hero-frame.is-active{ opacity:1; transform:scale(1); }
+
+    .hero-overlay{
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.08) 100%);
+      display:flex;
+      align-items:end;
+      pointer-events:none;
+    }
+    .hero-copy{ width:100%; max-width:1100px; margin:0 auto; padding:18px 20px 28px; pointer-events:auto; }
+    .hero-kicker{
+      display:inline-block;
+      font-size:12px;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:#fff;
+      background:rgba(0,0,0,0.5);
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:999px;
+      padding:6px 12px;
+      backdrop-filter:blur(6px);
+      margin-bottom:12px;
+    }
+    .hero h1{
+      margin:0;
+      font-size:clamp(1.8rem,4vw,3.2rem);
+      line-height:1.05;
+      color:#fff;
+      letter-spacing:.12em;
+      text-shadow:0 2px 14px rgba(0,0,0,0.3);
+    }
+    .hero-copy p{ margin:10px 0 0; color:#fff; max-width:42ch; }
+
+    .hero-controls{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-top:16px;
+      flex-wrap:wrap;
+    }
+    .hero-nav{
+      width:34px;
+      height:34px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.28);
+      background:rgba(0,0,0,0.4);
+      color:#fff;
+      cursor:pointer;
+      font-size:20px;
+      line-height:1;
+    }
+    .hero-nav:hover{ border-color:var(--accent); color:var(--accent); }
+    .hero-meta{
+      font-variant-numeric:tabular-nums;
+      letter-spacing:.16em;
+      font-size:12px;
+      color:#fff;
+    }
+    .hero-meta span:last-child{ opacity:.55; }
+    .hero-dots{ display:flex; gap:6px; align-items:center; }
+    .hero-dots button{
+      width:16px;
+      height:2px;
+      padding:0;
+      border:0;
+      background:rgba(255,255,255,.35);
+      cursor:pointer;
+    }
+    .hero-dots button.is-on{ width:26px; background:var(--accent); }
+
+    .title{ color:var(--accent); text-align:center; margin:10px 0 8px; font-size:1.45rem; letter-spacing:.2px; }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:16px;
+      padding:10px 14px 40px;
+      max-width:1280px;
+      margin:0 auto;
+    }
+    .gallery-item{
+      position:relative;
+      aspect-ratio:2 / 3;
+      overflow:hidden;
+      border-radius:var(--radius);
+      background:#000;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,0.06);
+      cursor:pointer;
+    }
+    .gallery-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .4s ease, filter .4s ease;
+    }
+    .gallery-item:hover img{ transform:scale(1.04); filter:brightness(0.92); }
+    .gallery-item.is-current{ outline:1px solid var(--accent); }
+    .art-badge{
+      position:absolute;
+      top:12px;
+      left:12px;
+      z-index:3;
+      background:rgba(0,0,0,.72);
+      color:#f0c96c;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:10px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      border:1px solid rgba(255,255,255,.15);
+    }
+    .caption{
+      position:absolute;
+      left:12px;
+      bottom:12px;
+      background:rgba(0,0,0,0.65);
+      color:#fff;
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:12.5px;
+      letter-spacing:.3px;
+    }
+    .art-info{
+      position:absolute;
+      left:12px;
+      right:12px;
+      bottom:48px;
+      background:rgba(0,0,0,0.75);
+      color:#ddd;
+      font-size:11.5px;
+      padding:10px 12px;
+      border-radius:8px;
+      line-height:1.45;
+    }
+    .art-info strong{ color:#f0c96c; }
+
+    @media (prefers-reduced-motion: reduce){
+      .hero-frame{ transition:opacity .2s linear; transform:none !important; }
+      .gallery-item img{ transition:none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="globalMenu" class="debug-box">⚠️ menu.html no cargado</div>
+
+  <main id="main-content" role="main">
+    <section class="hero" id="axfraHero" aria-roledescription="carrusel" aria-label="Galería AXFRA">
+      <div class="hero-stage">
+        <img class="hero-frame is-active"
+             src="https://axfra.com/images/homegallery/axfra-01.jpg"
+             alt="AXFRA-0001, momento cinematográfico"
+             fetchpriority="high"
+             decoding="async" />
+        <img class="hero-frame" alt="" decoding="async" />
+      </div>
+      <div class="hero-overlay">
+        <div class="hero-copy">
+          <div class="hero-kicker">PAULINA DOTS · LABORATORIO</div>
+          <h1>AXFRA</h1>
+          <p>Cinematic moments creados para acompañar la música</p>
+          <div class="hero-controls">
+            <button type="button" class="hero-nav" data-dir="-1" aria-label="Frame anterior">‹</button>
+            <div class="hero-meta" aria-live="polite"><span class="hero-index">01</span> <span>/ 12</span></div>
+            <button type="button" class="hero-nav" data-dir="1" aria-label="Frame siguiente">›</button>
+            <div class="hero-dots" role="tablist" aria-label="Frames"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-container">
+      <h2 class="title">AXFRA</h2>
+      <p class="subtitle">Aquí se prueba la luz, la pose, el vestuario y el tratamiento. Cada pieza tiene un id. La foto es la obra. El texto no la reproduce.</p>
+      <p class="subtitle">Síguenos en x.com/axfratools</p>
+    </section>
+
+    <section class="gallery" id="axfraGrid" aria-label="Doce frames"></section>
+  </main>
+
+  <div id="banner-container" class="debug-box">⚠️ banners.html no cargado</div>
+  <footer id="footer-container" class="debug-box">⚠️ footer.html no cargado</footer>
+
+  <script>
+    async function loadBlock(id, url, label){
+      try{
+        const res = await fetch(url);
+        if(!res.ok) throw new Error("No se encontró " + url);
+        const html = await res.text();
+        const target = document.getElementById(id);
+        if(target){
+          target.innerHTML = html;
+          target.classList.remove("debug-box");
+        }
+      }catch(err){
+        console.warn("⚠️ " + label + " no se pudo cargar:", err.message);
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadBlock("globalMenu", "https://www.paulinadots.com/menu.html", "menu.html");
+      loadBlock("banner-container", "https://www.paulinadots.com/banners.html", "banners.html");
+      loadBlock("footer-container", "https://www.paulinadots.com/footer.html", "footer.html");
+    });
+
+    (function () {
+      var TOTAL = 12;
+      var BASE = "https://axfra.com/images/homegallery/axfra-";
+      var INTERVAL = 5200;
+      var root = document.getElementById("axfraHero");
+      var grid = document.getElementById("axfraGrid");
+      var frames = root.querySelectorAll(".hero-frame");
+      var indexEl = root.querySelector(".hero-index");
+      var dotsEl = root.querySelector(".hero-dots");
+      var index = 0;
+      var front = 0;
+      var timer = null;
+
+      function pad(n){ return String(n).padStart(2, "0"); }
+      function src(i){ return BASE + pad(i + 1) + ".jpg"; }
+      function code(i){ return "AXFRA-" + String(i + 1).padStart(4, "0"); }
+
+      var html = "";
+      for (var i = 0; i < TOTAL; i++) {
+        html +=
+          '<div class="gallery-item" data-index="' + i + '">' +
+            '<div class="art-badge">Cinematic Moment</div>' +
+            '<img src="' + src(i) + '" alt="Paulina Dots, ' + code(i) + ', momento cinematográfico" loading="' + (i < 2 ? "eager" : "lazy") + '" />' +
+            '<div class="caption">' + code(i) + '</div>' +
+            '<div class="art-info"><strong>Estilo:</strong> Cinematic</div>' +
+          '</div>';
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.dataset.index = String(i);
+        dot.setAttribute("aria-label", "Frame " + pad(i + 1));
+        if (i === 0) dot.className = "is-on";
+        dotsEl.appendChild(dot);
+      }
+      grid.innerHTML = html;
+
+      function paint() {
+        indexEl.textContent = pad(index + 1);
+        dotsEl.querySelectorAll("button").forEach(function (btn, i) {
+          btn.classList.toggle("is-on", i === index);
+        });
+        grid.querySelectorAll(".gallery-item").forEach(function (item, i) {
+          item.classList.toggle("is-current", i === index);
+        });
+      }
+
+      function show(next) {
+        index = (next + TOTAL) % TOTAL;
+        var incoming = frames[1 - front];
+        var outgoing = frames[front];
+        incoming.alt = code(index) + ", momento cinematográfico";
+        if (incoming.getAttribute("src") !== src(index)) incoming.src = src(index);
+        incoming.classList.add("is-active");
+        outgoing.classList.remove("is-active");
+        front = 1 - front;
+        paint();
+        var ahead = new Image();
+        ahead.src = src((index + 1) % TOTAL);
+      }
+
+      function play() {
+        stop();
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        timer = setInterval(function () { show(index + 1); }, INTERVAL);
+      }
+      function stop() {
+        if (timer) clearInterval(timer);
+        timer = null;
+      }
+
+      root.addEventListener("click", function (event) {
+        var nav = event.target.closest("[data-dir]");
+        if (nav) { show(index + Number(nav.dataset.dir)); play(); return; }
+        var dot = event.target.closest(".hero-dots button");
+        if (dot) { show(Number(dot.dataset.index)); play(); }
+      });
+      grid.addEventListener("click", function (event) {
+        var item = event.target.closest(".gallery-item");
+        if (!item) return;
+        show(Number(item.dataset.index));
+        play();
+        root.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      root.addEventListener("mouseenter", stop);
+      root.addEventListener("mouseleave", play);
+      document.addEventListener("keydown", function (event) {
+        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+        show(index + (event.key === "ArrowRight" ? 1 : -1));
+        play();
+      });
+
+      paint();
+      play();
+    })();
+  </script>
+</body>
+</html>
