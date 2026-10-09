@@ -1,0 +1,8 @@
+AXFRA — versión navegable integral
+
+Subir TODO el contenido de esta carpeta a la raíz del repositorio GitHub Pages, conservando las carpetas.
+Para previsualizar localmente: abrir Terminal dentro de la carpeta y ejecutar python3 -m http.server 8000; después visitar http://localhost:8000.
+
+Incluye portada, archivo de identidades, nueve fichas, cinco áreas temáticas, menú y footer compartidos, 12 imágenes del Home, imágenes de identidad, sitemap y robots.
+
+Las áreas temáticas son una estructura editorial navegable: no se han inventado resultados de investigación. Los JSON maestros no se publican.

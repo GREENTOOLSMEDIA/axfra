@@ -1,14 +1,13 @@
-/* Cabecera y pie compartidos de AXFRA */
-.skip{position:absolute;left:-9999px;top:10px;background:white;color:black;padding:8px;z-index:100}
-.skip:focus{left:10px}
-.site-header{position:sticky;top:0;z-index:30;background:rgba(10,12,14,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+/* AXFRA: componentes globales */
+.skip{position:absolute;left:-9999px;top:10px;background:#fff;color:#000;padding:8px;z-index:100}.skip:focus{left:10px}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(0,0,0,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line,#303a3c)}
 .header-inner{min-height:74px;display:flex;align-items:center;gap:24px;justify-content:space-between}
-.brand{text-decoration:none;font-weight:850;font-size:1.65rem;letter-spacing:.17em;line-height:1}
-.brand small{display:block;font-size:.54rem;letter-spacing:.29em;color:var(--muted);font-weight:600;margin-top:8px}
-.nav{display:flex;flex-wrap:wrap;gap:clamp(12px,2.3vw,34px)}
-.nav a{text-decoration:none;color:var(--muted);font-size:.84rem}
-.nav a:hover,.nav a:focus-visible{color:white}
-.footer{padding:35px 0 50px;border-top:1px solid var(--line);display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:.84rem}
-.footer a{color:var(--text);text-underline-offset:4px}
-.footmark{font-weight:800;letter-spacing:.18em;color:var(--text)}
+.brand{text-decoration:none;font-weight:850;font-size:1.65rem;letter-spacing:.17em;line-height:1}.brand small{display:block;font-size:.54rem;letter-spacing:.29em;color:var(--muted,#a5b0af);font-weight:600;margin-top:8px}
+.nav{display:flex;flex-wrap:wrap;gap:clamp(12px,2.3vw,34px)}.nav a{text-decoration:none;color:var(--muted,#a5b0af);font-size:.84rem}.nav a:hover,.nav a:focus-visible,.nav a[aria-current=page]{color:#fff}
+.footer-global{color:rgba(255,255,255,.6);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5pt;line-height:1.6;padding:30px 20px;text-align:center;background:transparent;border-top:1px solid var(--line,#303a3c)}
+.footer-global a{color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s ease}.footer-global a:hover{color:#fff}
+.footer-line{display:flex;flex-direction:column;align-items:center;gap:14px}.footer-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:900px}
+.footer-row p,.footer-row span{font-size:9pt;color:rgba(255,255,255,.7);line-height:1.5;max-width:800px;text-align:center;margin:0 auto;padding:5px 0;display:block}.footer-row.uso-contenido p{margin-top:10px;padding-top:15px;border-top:1px solid rgba(255,255,255,.15)}
+.footer-social a{border:1px solid #3b4645;padding:5px 13px;letter-spacing:.1em;font-size:.78rem}
+@media(max-width:750px){.footer-global{font-size:11pt;padding:40px 16px}.footer-row p,.footer-row span{font-size:11pt}}
 @media(max-width:600px){.header-inner{padding:14px 0;align-items:start;flex-direction:column;gap:14px}.brand{font-size:1.3rem}.nav{gap:13px 18px}.nav a{font-size:.76rem}}
