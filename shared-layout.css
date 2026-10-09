@@ -1,0 +1,14 @@
+/* Cabecera y pie compartidos de AXFRA */
+.skip{position:absolute;left:-9999px;top:10px;background:white;color:black;padding:8px;z-index:100}
+.skip:focus{left:10px}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(10,12,14,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:74px;display:flex;align-items:center;gap:24px;justify-content:space-between}
+.brand{text-decoration:none;font-weight:850;font-size:1.65rem;letter-spacing:.17em;line-height:1}
+.brand small{display:block;font-size:.54rem;letter-spacing:.29em;color:var(--muted);font-weight:600;margin-top:8px}
+.nav{display:flex;flex-wrap:wrap;gap:clamp(12px,2.3vw,34px)}
+.nav a{text-decoration:none;color:var(--muted);font-size:.84rem}
+.nav a:hover,.nav a:focus-visible{color:white}
+.footer{padding:35px 0 50px;border-top:1px solid var(--line);display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:.84rem}
+.footer a{color:var(--text);text-underline-offset:4px}
+.footmark{font-weight:800;letter-spacing:.18em;color:var(--text)}
+@media(max-width:600px){.header-inner{padding:14px 0;align-items:start;flex-direction:column;gap:14px}.brand{font-size:1.3rem}.nav{gap:13px 18px}.nav a{font-size:.76rem}}

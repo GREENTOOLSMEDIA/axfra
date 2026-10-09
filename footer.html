@@ -1,55 +1,100 @@
-<!-- footer.html -->
+
+<!-- footer.html — AXFRA -->
+
 <footer class="footer-global">
   <div class="footer-line">
 
-    <!-- Fila de íconos sociales -->
+    <!-- REDES SOCIALES -->
     <div class="footer-row social-icons">
 
-      <a href="https://x.com/axfratools" target="_blank" rel="noopener">
-        <img src="/SVG/paulina_dots_x.svg" alt="AXFRA en X (Twitter)" />
+      <a href="https://x.com/axfratools"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="AXFRA en X">
+        <img src="/SVG/axfra_x.svg"
+             alt="AXFRA en X"
+             width="24"
+             height="24">
       </a>
 
     </div>
 
-    <!-- Fila de texto -->
-    <div class="footer-row">
-      <a href="/">AXFRA® Axion Frame Tools | Santiago - Chile </a>
-      <a href="https://www.paulinadots.com/contacto">| Contacto | </a>
+    <!-- ENLACES INSTITUCIONALES -->
+    <div class="footer-row footer-links">
+      <a href="/">AXFRA® Axion Frame Tools | Santiago - Chile</a>
+      <a href="https://alarsi.com"
+         target="_blank"
+         rel="noopener noreferrer">| ALARSI |</a>
+      <a href="/sitemap.xml">Site Map</a>
     </div>
 
-    <!-- Nota SEO -->
+    <!-- NOTA TECNOLÓGICA Y SEO -->
     <div class="footer-row nota-seo">
       <p>
-
+        AXFRA — Axion Frame Tools es un proyecto de
+        investigación, desarrollo y documentación visual
+        mediante inteligencia artificial, desarrollado
+        por ALARSI. Estudia la construcción de identidades,
+        vestuario, poses, objetos, escenarios, cámara,
+        iluminación y estilos gráficos mediante
+        instrucciones estructuradas y sistemas JSON.
+        Sus estudios exploran la continuidad visual,
+        la reutilización de componentes y la aplicación
+        de especificaciones en distintos motores
+        de generación de imágenes.
       </p>
     </div>
 
-<!-- Política de uso -->
-<div id="politica-uso" class="footer-row uso-contenido">
-  <p>
-    <strong>Política de uso de contenido:</strong> El universo visual, narrativo y creativo de 
-    <strong>AXFRA</strong> y sus derivados puede circular libremente en redes sociales mediante 
-    contenido razonable como shorts, reacciones, videos personales, análisis o reinterpretaciones. 
-    En todos estos casos, la atribución es obligatoria, indicando claramente la fuente como 
-    <strong>AXFRA</strong>, <strong>axfra.com</strong> o <strong>@axfratools</strong>. 
-    Sin embargo, queda estrictamente prohibido cualquier uso masivo, comercial o corporativo —incluyendo 
-    campañas, publicidad, licencias, productos o reproducción industrial— sin autorización expresa del 
-    proyecto oficial. Dichos usos quedan reservados exclusivamente a 
-    <strong>
-      <a href="https://alarsi.com" target="_blank" rel="noopener noreferrer">
-        ALARSI
-      </a>
-    </strong>, 
-    como parte de su identidad artística y visión conceptual.
-  </p>
-</div>
+    <!-- POLÍTICA DE USO -->
+    <div id="politica-uso"
+         class="footer-row uso-contenido">
+      <p>
+        <strong>Política de uso de contenido:</strong>
+        Las identidades visuales, fotografías,
+        ilustraciones, documentos, estructuras,
+        especificaciones y materiales originales
+        publicados por
+        <strong>AXFRA — Axion Frame Tools</strong>
+        forman parte de un proyecto desarrollado
+        por <strong>ALARSI</strong>.
+
+        Se permite compartir enlaces al sitio y
+        realizar referencias, comentarios, reseñas
+        y análisis del proyecto, indicando claramente
+        la fuente como <strong>AXFRA</strong>,
+        <strong>axfra.com</strong> o
+        <strong>@axfratools</strong>.
+
+        La reproducción, distribución, adaptación,
+        explotación comercial, incorporación a
+        productos o servicios, y utilización masiva
+        de los materiales originales requiere
+        autorización previa de sus titulares,
+        salvo los usos permitidos por la legislación
+        aplicable.
+
+        Los derechos sobre los contenidos originales
+        corresponden a sus respectivos titulares,
+        bajo la administración del proyecto por
+        <a href="https://alarsi.com"
+           target="_blank"
+           rel="noopener noreferrer">
+          <strong>ALARSI</strong>
+        </a>.
+      </p>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-row footer-copyright">
+      <span>© <span id="footer-year">2026</span> AXFRA — Axion Frame Tools. All rights reserved.</span>
+    </div>
 
   </div>
 </footer>
 
 <style>
 /* ========================================= */
-/* FOOTER GENERAL */
+/* AXFRA — FOOTER GENERAL */
 /* ========================================= */
 
 .footer-global {
@@ -104,7 +149,7 @@
 }
 
 /* ========================================= */
-/* TEXTOS LARGOS DEL FOOTER */
+/* TEXTOS DEL FOOTER */
 /* ========================================= */
 
 .footer-row p,
@@ -119,11 +164,14 @@
   display: block;
 }
 
-/* Separador elegante */
 .footer-row.uso-contenido p {
   margin-top: 10px;
   padding-top: 15px;
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-copyright {
+  margin-top: 8px;
 }
 
 /* ========================================= */
