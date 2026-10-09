@@ -14,9 +14,9 @@
 <meta content="AXFRA — Axion Frame Tools" property="og:title"/>
 <meta content="La imagen muestra el resultado. AXFRA documenta las decisiones que lo hicieron posible." property="og:description"/>
 <meta content="https://axfra.com/" property="og:url"/>
-<meta content="https://axfra.com/images/homegallery/axfra-01.jpg" property="og:image"/>
+<meta content="https://axfra.com/images/homegallery/axfra_editorial-01.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link as="image" href="images/homegallery/axfra-01.jpg" rel="preload"/>
+<link as="image" href="images/homegallery/axfra_editorial-01.jpg" rel="preload"/>
 <style>
     :root {
 --bg: #000000;
@@ -125,11 +125,26 @@
       overflow: hidden;
       border: 1px solid var(--line);
     }
-    .feature img {
+    /* Doble página editorial: dos imágenes independientes 2:3 */
+    .feature-spread {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       width: 100%;
-      aspect-ratio: 2305 / 1729;
-      max-height: 78vh;
-      object-fit: contain;
+      aspect-ratio: 4 / 3;
+      /* No limitar la altura: con 2:3 + 2:3, la doble página es 4:3 exacta. */
+      gap: 0;
+      margin-inline: auto;
+      background: #000;
+      overflow: hidden;
+    }
+    .feature-spread img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
     }
     .feature-caption {
       display: flex;
@@ -169,7 +184,7 @@
     }
     .thumbs {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-columns: repeat(13, minmax(0, 1fr));
       gap: 6px;
       margin-top: 8px;
     }
@@ -185,10 +200,20 @@
       opacity: 1;
     }
     .thumb:hover { opacity: 1; }
-    .thumb img {
+    .thumb-spread {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      aspect-ratio: 4 / 3;
+      gap: 0;
+      background: #000;
+    }
+    .thumb-spread img {
+      display: block;
       width: 100%;
-      aspect-ratio: 1;
-      object-fit: cover;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+      object-fit: contain;
     }
     .lead {
       font-size: clamp(1.17rem, 2vw, 1.6rem);
@@ -353,7 +378,43 @@
   }
   </script>
 <link href="shared-layout.css" rel="stylesheet"/>
-<style>.category h3 a{display:inline-block;text-decoration:none;color:inherit}.category h3 a:hover,.category h3 a:focus-visible{color:var(--highlight);text-decoration:underline}.cast figure>a{display:block;text-decoration:none}.cast figure>a img{filter:grayscale(100%);transition:filter .35s ease}.cast figure>a:hover img,.cast figure>a:focus-visible img{filter:none}.cast figure>a:hover+figcaption{color:var(--highlight)}@media(prefers-reduced-motion:reduce){.cast figure>a img{transition:none}}</style></head>
+<style>.category h3 a{display:inline-block;text-decoration:none;color:inherit}.category h3 a:hover,.category h3 a:focus-visible{color:var(--highlight);text-decoration:underline}.cast figure>a{display:block;text-decoration:none}.cast figure>a img{filter:grayscale(100%);transition:filter .35s ease}.cast figure>a:hover img,.cast figure>a:focus-visible img{filter:none}.cast figure>a:hover+figcaption{color:var(--highlight)}@media(prefers-reduced-motion:reduce){.cast figure>a img{transition:none}}</style><style>
+/* Tarjetas editoriales: márgenes simétricos y fotografía centrada verticalmente */
+.method-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.method-card, .category {
+  --card-space: clamp(20px, 3.2vw, 52px);
+  --card-photo: clamp(100px, 11vw, 150px);
+  display: grid;
+  grid-template-columns: var(--card-photo) minmax(0, 1fr);
+  align-items: start;
+  align-content: start;
+  column-gap: var(--card-space);
+  padding: var(--card-space);
+  min-width: 0;
+}
+.card-reference {
+  align-self: center;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #161b1d;
+}
+.card-content { min-width: 0; }
+.method-card h3 { margin: 16px 0 14px; }
+.category h3 { margin: 14px 0 12px; }
+@media (max-width: 980px) {
+  .method-grid, .categories { grid-template-columns: 1fr; }
+  .method-card, .category { --card-space: clamp(20px, 5vw, 42px); --card-photo: 150px; }
+}
+@media (max-width: 520px) {
+  .method-card, .category { --card-space: 18px; --card-photo: 96px; }
+}
+.method-link { color: inherit; text-decoration: none; text-underline-offset: 5px; }
+.method-link:hover, .method-link:focus-visible { color: var(--highlight); text-decoration: underline; }
+.method-link span { font-size: .9em; }
+</style></head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
@@ -378,7 +439,10 @@
 <p>Una selección provisional de estudios visuales. Estas imágenes muestran aplicaciones distintas del trabajo con identidades, escenarios, objetos, vestuario y composición.</p>
 </div>
 <div aria-label="Estudios visuales AXFRA" aria-roledescription="carrusel" class="feature">
-<img alt="Estudio visual AXFRA 01" fetchpriority="high" height="1729" id="slide-image" src="images/homegallery/axfra-01.jpg" width="2305"/>
+<div class="feature-spread" aria-label="Doble página editorial 01">
+<img alt="Estudio visual AXFRA 01" fetchpriority="high" id="slide-image-left" src="images/homegallery/axfra_editorial-01.jpg" width="1000" height="1500"/>
+<img alt="Estudio visual AXFRA 02" fetchpriority="high" id="slide-image-right" src="images/homegallery/axfra_editorial-02.jpg" width="1000" height="1500"/>
+</div>
 <div class="feature-caption">
 <div>
 <strong id="slide-title">Estudio visual 01</strong>
@@ -386,7 +450,7 @@
 </div>
 <div class="feature-controls">
 <button aria-label="Imagen anterior" class="icon-btn" id="prev" type="button">←</button>
-<span aria-live="polite" class="slide-count" id="counter">01 / 13</span>
+<span aria-live="polite" class="slide-count" id="counter">01 / 23</span>
 <button aria-label="Imagen siguiente" class="icon-btn" id="next" type="button">→</button>
 </div>
 </div>
@@ -403,36 +467,36 @@
 </div>
 <p class="lead">Una instrucción puede producir una imagen interesante. Pero cuando buscamos un resultado específico, cada ambigüedad importa. AXFRA estudia esas ambigüedades y desarrolla formas de describirlas con mayor precisión.</p>
 <div class="method-grid">
-<article class="method-card">
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">01 / OBSERVAR</span>
-<h3>Identificar el problema</h3>
+<h3><a class="method-link" href="metodologia/observar.html">Identificar el problema <span aria-hidden="true">↗</span></a></h3>
 <p>Examinar qué parte de una descripción admite interpretaciones diferentes: un material, un corte, una posición, una escala o una relación entre objetos.</p>
-</article>
-<article class="method-card">
+</div></article>
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">02 / CLASIFICAR</span>
-<h3>Definir los componentes</h3>
+<h3><a class="method-link" href="metodologia/clasificar.html">Definir los componentes <span aria-hidden="true">↗</span></a></h3>
 <p>Separar estructuras y propiedades. Distinguir aquello que define una pieza de lo que puede variar: forma, material, color, transparencia o proporciones.</p>
-</article>
-<article class="method-card">
+</div></article>
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">03 / ESTRUCTURAR</span>
-<h3>Escribir instrucciones</h3>
+<h3><a class="method-link" href="metodologia/estructurar.html">Escribir instrucciones <span aria-hidden="true">↗</span></a></h3>
 <p>Organizar descripciones en catálogos, identificadores, parámetros, reglas y estructuras JSON que faciliten la reutilización y la comparación.</p>
-</article>
-<article class="method-card">
+</div></article>
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">04 / PROBAR</span>
-<h3>Contrastar con imágenes</h3>
+<h3><a class="method-link" href="metodologia/probar.html">Contrastar con imágenes <span aria-hidden="true">↗</span></a></h3>
 <p>Aplicar las instrucciones en motores de generación visual y observar cómo se traducen las especificaciones en resultados concretos.</p>
-</article>
-<article class="method-card">
+</div></article>
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">05 / AJUSTAR</span>
-<h3>Reducir ambigüedades</h3>
+<h3><a class="method-link" href="metodologia/ajustar.html">Reducir ambigüedades <span aria-hidden="true">↗</span></a></h3>
 <p>Revisar las instrucciones cuando una prenda, una pose, un objeto o una composición no responde a lo solicitado.</p>
-</article>
-<article class="method-card">
+</div></article>
+<article class="method-card"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="70" loading="lazy" src="/images/axfra_referencia_01.jpg" width="70"/><div class="card-content">
 <span class="number">06 / REUTILIZAR</span>
-<h3>Construir variaciones</h3>
+<h3><a class="method-link" href="metodologia/reutilizar.html">Construir variaciones <span aria-hidden="true">↗</span></a></h3>
 <p>Modificar componentes específicos sin tener que redefinir toda la escena: cambiar el vestuario, conservar una identidad o sustituir un escenario.</p>
-</article>
+</div></article>
 </div>
 <div class="principle">La imagen muestra el resultado. <strong>AXFRA documenta las decisiones que lo hicieron posible.</strong></div>
 </div>
@@ -447,36 +511,36 @@
 <p>Estas áreas organizan el trabajo existente y ofrecen una estructura para incorporar nuevos estudios. No representan un catálogo cerrado.</p>
 </div>
 <div class="categories">
-<article class="category">
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 01</span>
 <h3><a class="category-link" href="identities.html" style="text-decoration:none">Identidades y construcción física <span aria-hidden="true">↗</span></a></h3>
 <p>Núcleos de identidad, rasgos, proporciones y continuidad visual entre imágenes.</p>
-</article>
-<article class="category">
+</div></article>
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 02</span>
 <h3><a class="category-link" href="poses.html" style="text-decoration:none">Poses, expresiones y acciones <span aria-hidden="true">↗</span></a></h3>
 <p>Posturas, gestos, movimiento sugerido y relación del sujeto con los elementos de la escena.</p>
-</article>
-<article class="category">
+</div></article>
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 03</span>
 <h3><a class="category-link" href="apparel.html" style="text-decoration:none">Vestuario y accesorios <span aria-hidden="true">↗</span></a></h3>
 <p>Familias de prendas, cortes, tejidos, grosores, transparencias, estampados y atributos intercambiables.</p>
-</article>
-<article class="category">
+</div></article>
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 04</span>
 <h3><a class="category-link" href="environments.html" style="text-decoration:none">Objetos, vehículos y escenarios <span aria-hidden="true">↗</span></a></h3>
 <p>Construcción de elementos complejos, disposición espacial, entornos y relaciones entre componentes.</p>
-</article>
-<article class="category">
+</div></article>
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 05</span>
 <h3><a class="category-link" href="camera.html" style="text-decoration:none">Cámara, luz y composición <span aria-hidden="true">↗</span></a></h3>
 <p>Encuadres, ópticas, perspectivas, jerarquías visuales, dirección de la luz y organización de la imagen.</p>
-</article>
-<article class="category">
+</div></article>
+<article class="category"><img alt="Imagen de referencia temporal AXFRA" class="card-reference" decoding="async" height="100" loading="lazy" src="/images/axfra_referencia_01.jpg" width="100"/><div class="card-content">
 <span>AXFRA / 06</span>
 <h3><a class="category-link" href="styles.html" style="text-decoration:none">Estilos y tratamientos gráficos <span aria-hidden="true">↗</span></a></h3>
 <p>Ilustración, dibujo, montaje editorial, lenguaje cinematográfico y transformaciones que conservan atributos definidos.</p>
-</article>
+</div></article>
 </div>
 </div>
 </section>
@@ -549,27 +613,34 @@
 <script>
     (() => {
       'use strict';
-      const total = 13;
+      const total = 23; // 23 dobles páginas = 46 fotografías
       let current = 0;
-      const img = document.getElementById('slide-image');
+      const left = document.getElementById('slide-image-left');
+      const right = document.getElementById('slide-image-right');
+      const spread = document.querySelector('.feature-spread');
       const title = document.getElementById('slide-title');
       const count = document.getElementById('counter');
       const thumbs = document.getElementById('thumbs');
       const pad = n => String(n).padStart(2, '0');
-      const path = i => i === 12 ? "images/homegallery/axfra_paudotsband_rock_the_world.jpg" : `images/homegallery/axfra-${pad(i + 1)}.jpg`;
+      const path = n => `images/homegallery/axfra_editorial-${pad(n)}.jpg`;
       const buttons = [];
 
       for (let i = 0; i < total; i++) {
         const b = document.createElement('button');
         b.className = 'thumb';
         b.type = 'button';
-        b.setAttribute('aria-label', i === 12 ? "Ver PauDotsBand — Rock the World" : `Ver estudio visual ${pad(i + 1)}`);
+        b.setAttribute('aria-label', `Ver doble página ${pad(i + 1)}: fotografías ${pad(2 * i + 1)} y ${pad(2 * i + 2)}`);
         b.setAttribute('aria-current', String(i === 0));
-        const t = document.createElement('img');
-        t.src = path(i);
-        t.alt = '';
-        t.loading = 'lazy';
-        b.appendChild(t);
+        const pair = document.createElement('span');
+        pair.className = 'thumb-spread';
+        for (const n of [2 * i + 1, 2 * i + 2]) {
+          const t = document.createElement('img');
+          t.src = path(n);
+          t.alt = '';
+          t.loading = 'lazy';
+          pair.appendChild(t);
+        }
+        b.appendChild(pair);
         b.addEventListener('click', () => show(i));
         thumbs.appendChild(b);
         buttons.push(b);
@@ -577,9 +648,14 @@
 
       function show(i) {
         current = (i + total) % total;
-        img.src = path(current);
-        img.alt = current === 12 ? "PauDotsBand: Paulina en voz, Viktoria en guitarra, Dotsy en bajo y Mira en batería" : `Estudio visual AXFRA ${pad(current + 1)}`;
-        title.textContent = current === 12 ? "PauDotsBand — Rock the World" : `Estudio visual ${pad(current + 1)}`;
+        const first = 2 * current + 1;
+        const second = first + 1;
+        left.src = path(first);
+        right.src = path(second);
+        left.alt = `Estudio visual AXFRA ${pad(first)}`;
+        right.alt = `Estudio visual AXFRA ${pad(second)}`;
+        spread.setAttribute('aria-label', `Doble página editorial ${pad(current + 1)}`);
+        title.textContent = `Estudio visual ${pad(current + 1)}`;
         count.textContent = `${pad(current + 1)} / ${pad(total)}`;
         buttons.forEach((b, j) => b.setAttribute('aria-current', String(j === current)));
       }
