@@ -414,6 +414,17 @@
 .method-link { color: inherit; text-decoration: none; text-underline-offset: 5px; }
 .method-link:hover, .method-link:focus-visible { color: var(--highlight); text-decoration: underline; }
 .method-link span { font-size: .9em; }
+
+/* Demostración práctica: sección destacada */
+.demo-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border:1px solid var(--line);background:var(--surface);overflow:hidden}
+.demo-feature-image{display:block;min-height:360px;background:#090b0c}
+.demo-feature-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.demo-feature-content{padding:clamp(26px,4vw,58px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.demo-feature-content h3{font-size:clamp(1.7rem,3vw,2.8rem);letter-spacing:-.04em;line-height:1.16;margin:14px 0 18px}
+.demo-feature-content p{color:var(--muted);max-width:520px;margin:0 0 18px}
+.demo-feature-link{display:inline-block;border:1px solid var(--highlight);color:#101512;background:var(--highlight);text-decoration:none;font-weight:700;padding:12px 18px;margin-top:12px}
+.demo-feature-link:hover,.demo-feature-link:focus-visible{background:transparent;color:var(--highlight)}
+@media(max-width:850px){.demo-feature{grid-template-columns:1fr}.demo-feature-image{min-height:0;max-height:520px}.demo-feature-image img{aspect-ratio:3/2;object-fit:cover}}
 </style></head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -501,11 +512,20 @@
 <div class="principle">La imagen muestra el resultado. <strong>AXFRA documenta las decisiones que lo hicieron posible.</strong></div>
 </div>
 </section>
+<section class="section" id="demostracion" aria-labelledby="demostracion-title">
+<div class="wrap">
+<div class="section-head"><div><div class="eyebrow">03 / Demostración práctica</div><h2 id="demostracion-title">De una taza de café a un universo fantástico.</h2></div><p>Una historia visual que permite comprender las decisiones creativas y estudiar sus instrucciones estructuradas.</p></div>
+<div class="demo-feature">
+<a class="demo-feature-image" href="demostracion-practica.html" aria-label="Explorar la demostración práctica de AXFRA"><img src="images/homegallery/axfra_editorial-80.jpg" alt="Drácula abre un libro con imágenes de Viktoria Dots ante un vitral AXFRA" loading="lazy" decoding="async" width="1002" height="1504"/></a>
+<div class="demo-feature-content"><span class="eyebrow">AXFRA / HISTORIA VISUAL Y JSON</span><h3>Doce escenas. Una historia. Decisiones que una IA puede interpretar.</h3><p>Dotsy Dots comienza el día con un café. La llegada de Drácula transforma una sesión fotográfica en una aventura fantástica donde también aparecen Paulina Dots y Viktoria Dots.</p><p>Recorre cada escena, comprende su construcción visual y explora módulos JSON legibles tanto para las personas como para los modelos de IA.</p><a class="demo-feature-link" href="demostracion-practica.html">Explorar demostración práctica <span aria-hidden="true">↗</span></a></div>
+</div>
+</div>
+</section>
 <section class="section" id="archivo">
 <div class="wrap">
 <div class="section-head">
 <div>
-<div class="eyebrow">03 / Áreas de investigación</div>
+<div class="eyebrow">04 / Áreas de investigación</div>
 <h2>Un sistema visual, múltiples componentes.</h2>
 </div>
 <p>Estas áreas organizan el trabajo existente y ofrecen una estructura para incorporar nuevos estudios. No representan un catálogo cerrado.</p>
@@ -548,7 +568,7 @@
 <div class="wrap">
 <div class="section-head">
 <div>
-<div class="eyebrow">04 / Identidades de referencia</div>
+<div class="eyebrow">05 / Identidades de referencia</div>
 <h2>Nueve personajes. Múltiples posibilidades visuales.</h2>
 </div>
 <p>Identidades originales que permiten estudiar la continuidad de un sujeto cuando cambian el vestuario, la acción, el entorno o el lenguaje gráfico.</p>
@@ -598,7 +618,7 @@
 <div class="wrap">
 <div class="section-head">
 <div>
-<div class="eyebrow">05 / Sobre AXFRA</div>
+<div class="eyebrow">06 / Sobre AXFRA</div>
 <h2>Un archivo de investigación visual en construcción.</h2>
 </div>
 </div>

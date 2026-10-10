@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#000000" name="theme-color"/><meta content="Demostración AXFRA: Dotsy despierta con un café, conoce a Drácula y protagoniza una historia visual construida por módulos declarativos." name="description"/><title>Demostración práctica — Dotsy Dots | AXFRA</title><link href="https://axfra.com/demostracion-practica.html" rel="canonical"/><meta content="article" property="og:type"/><meta content="AXFRA — Demostración práctica con Dotsy Dots" property="og:title"/><meta content="Una composición visual construida por etapas mediante módulos declarativos." property="og:description"/><meta content="https://axfra.com/images/homegallery/axfra_editorial-80.jpg" property="og:image"/><link href="/shared-layout.css" rel="stylesheet"/><style>
+:root{--bg:#000;--surface:#111519;--surface2:#171d21;--text:#e9eceb;--muted:#a5b0af;--line:#303a3c;--accent:#b8d4c8;--max:1320px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}a{color:inherit}button{font:inherit}img{max-width:100%;display:block}.wrap{width:min(calc(100% - 44px),var(--max));margin-inline:auto}.hero{padding:80px 0 50px;border-bottom:1px solid var(--line)}.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:750}.hero h1{font-size:clamp(2.6rem,6vw,5.8rem);letter-spacing:-.055em;line-height:1.06;max-width:950px;margin:18px 0}.hero p{max-width:760px;font-size:1.15rem;color:var(--muted)}.hero-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.pill{border:1px solid #53635d;text-decoration:none;padding:10px 17px;border-radius:4px;font-weight:650;font-size:.9rem}.pill.primary{background:var(--accent);color:#101512}.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;padding:46px 0;border-bottom:1px solid var(--line)}h2{font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.03em;line-height:1.18}.intro p,.intro li{color:var(--muted)}.intro aside{border-left:2px solid var(--accent);padding:6px 0 6px 22px;color:var(--muted)}.intro aside strong{color:var(--text)}.intro aside a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.intro aside a:hover{color:#fff}.index{padding:32px 0 24px;border-bottom:1px solid var(--line)}.index-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.index-links a{text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:7px 12px;border-radius:4px;font-size:.85rem}.section-title{margin:65px 0 30px}.section-title p{color:var(--muted);max-width:740px}.stage{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border:1px solid var(--line);background:var(--surface);margin-bottom:24px;overflow:hidden}.stage-media{position:relative;min-height:430px;background:#080b0c;display:flex;align-items:center;justify-content:center}.stage-media img{width:100%;height:100%;max-height:680px;object-fit:contain}.photo-id{position:absolute;bottom:14px;left:16px;background:#050707df;border:1px solid #33413e;padding:5px 9px;font-size:.65rem;letter-spacing:.12em}.stage-content{padding:clamp(22px,4vw,46px);align-self:center;min-width:0}.stage-content h3{font-size:clamp(1.55rem,3vw,2.35rem);letter-spacing:-.035em;line-height:1.18;margin:14px 0}.stage-content>p{color:var(--muted)}.codebox{margin-top:25px;border:1px solid #34413e;background:#080b0d;overflow:hidden}.codehead{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid #293330;padding:9px 13px;color:var(--muted);font-size:.73rem}.copy{background:transparent;color:var(--accent);border:1px solid #465950;border-radius:3px;padding:4px 10px;cursor:pointer}.copy:hover{background:#17251f}pre{margin:0;padding:18px;overflow:auto;font:12px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#cce4d8;white-space:pre}code{font:inherit}.closed{margin-top:25px;border-top:1px solid var(--line);padding-top:15px;font-size:.88rem}.closing{padding:60px 0 85px;max-width:800px}.closing p{color:var(--muted)}.footnote{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding:22px 0 40px}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}@media(max-width:850px){.intro,.stage{grid-template-columns:1fr}.stage-media{min-height:260px}.stage-media img{max-height:560px}.hero{padding-top:48px}.stage-content{padding:24px}}@media(max-width:500px){.wrap{width:min(calc(100% - 28px),var(--max))}.hero h1{font-size:2.65rem}.stage-media{min-height:220px}.codehead{font-size:.67rem}pre{font-size:11px}}
+
+.reference-links{margin-top:15px;font-size:.83rem;color:var(--muted)}.reference-links a{color:var(--accent);text-underline-offset:3px}
+</style></head><body><div id="globalHeader"></div><main id="contenido"><section class="hero"><div class="wrap"><span class="eyebrow">AXFRA / AXION FRAME TOOLS / DOCUMENTACIÓN APLICADA</span><h1>Demostración<br/>práctica<span style="color:var(--accent)">.</span></h1><p>Dotsy despierta con una taza de café. Una sesión de fotos aparentemente normal se transforma cuando aparece Drácula y la historia cruza los límites del estudio. Una demostración narrativa de construcción visual declarativa.</p><div class="hero-links"><a class="pill primary" href="#recorrido">Explorar la secuencia ↓</a><a class="pill" href="/index.html#metodo">Conocer la metodología ↗</a></div></div></section><section class="intro wrap"><div><span class="eyebrow">01 / EL PRINCIPIO</span><h2>Una imagen no es una instrucción única.</h2><p>AXFRA organiza la construcción visual en decisiones explícitas: identidad, pose, accesorios, vestuario, entorno, iluminación, cámara y composición. Cada bloque puede estudiarse y modificarse sin confundirlo con los demás.</p><p>Esta demostración combina extractos documentados de la metodología AXFRA con módulos de ejemplo redactados para explicar escenas concretas. No reproduce íntegramente los archivos maestros privados ni pretende ofrecer los parámetros exactos de todas las imágenes.</p></div><aside><strong>Protagonistas</strong><br/><a href="/identities/dotsy.html">Dotsy Dots</a> · <a href="/identities/paulina.html">Paulina Dots</a> · <a href="/identities/viktoria.html">Viktoria Dots</a><br/><br/><strong>Relato visual</strong><br/>11 escenas editoriales, del despertar al desenlace fantástico.<br/><br/><strong>Alcance público</strong><br/>Fragmentos JSON ilustrativos y resultados visuales. Los archivos maestros permanecen reservados.</aside></section><nav aria-label="Navegación por etapas" class="index wrap"><span class="eyebrow">02 / RECORRIDO</span><div class="index-links"><a href="#etapa-77">01 · Primero, un café</a><a href="#etapa-68">02 · Una mañana cualquiera</a><a href="#etapa-78">03 · La imagen se construye</a><a href="#etapa-70">04 · Accesorios y primera capa</a><a href="#etapa-71">05 · Superposición de prendas</a><a href="#etapa-72">06 · Luz, agua y cámara</a><a href="#etapa-73">07 · Todo parecía una sesión normal</a><a href="#etapa-79">08 · Drácula entra al estudio</a><a href="#etapa-74">09 · La realidad cambia de escala</a><a href="#etapa-75">10 · Un brindis imposible</a><a href="#etapa-76">11 · La historia sale a la ciudad</a><a href="#etapa-80">12 · El último capítulo está en el libro</a></div></nav><section class="wrap" id="recorrido"><div class="section-title"><span class="eyebrow">03 / SECUENCIA VISUAL</span><h2>Una mañana que termina en otro mundo</h2><p>Del primer café al libro de Drácula: una narración visual construida con identidad, vestuario, cámara, escenarios y composición. Los extractos JSON explican decisiones seleccionadas, no revelan archivos maestros.</p></div><article aria-labelledby="stage-77" class="stage" id="etapa-77"><div class="stage-media"><img alt="Dotsy Dots recién despierta, con el cabello despeinado, ofrece una taza roja de café en un invernadero." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-77.jpg"/><span class="photo-id">AXFRA EDITORIAL — 77</span></div><div class="stage-content"><span class="eyebrow">ESCENA 01 / EL DESPERTAR</span><h3 id="stage-77">Primero, un café</h3><p>La mañana empieza con un bostezo, el cabello revuelto y una taza de café rojo. Dotsy todavía no sabe que su día terminará dentro de una historia de Drácula.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-77" type="button">Copiar</button></div><pre id="code-77"><code>{
+  "apparel_block": {
+    "t_shirt": {
+      "type": "fitted short-sleeve crew-neck T-shirt",
+      "color": "white",
+      "material": "soft cotton jersey",
+      "fit": "close to the torso, natural fabric tension"
+    },
+    "belt": {
+      "type": "brown leather belt",
+      "buckle": "metallic A-shaped buckle",
+      "placement": "through the belt loops of faded blue jeans"
+    }
+  },
+  "pose_and_attitude_block": {
+    "action": "just waking up, stretching into the morning and offering a red coffee mug toward the viewer",
+    "facial_expression": "eyes closed, wide sleepy yawn",
+    "hair": "messy, tousled short black hair",
+    "mood": "sleepy, spontaneous, playful",
+    "gesture": "one arm extended forward holding the coffee cup"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-68" class="stage" id="etapa-68"><div class="stage-media"><img alt="Mujer sonriente con camiseta blanca y jeans en galería acristalada." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-68.jpg"/><span class="photo-id">AXFRA EDITORIAL — 68</span></div><div class="stage-content"><span class="eyebrow">ESCENA 02 / EL ESCENARIO</span><h3 id="stage-68">Una mañana cualquiera</h3><p>El invernadero es el escenario de partida. Dotsy se prepara para el día: la identidad y el entorno se mantienen reconocibles mientras la historia cambia de dirección.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-68" type="button">Copiar</button></div><pre id="code-68"><code>{
+  "apparel_block": {
+    "jeans": {
+      "type": "blue denim jeans",
+      "wash": "faded medium blue",
+      "fit": "casual fitted jeans",
+      "details": "natural creases and visible distressed patches"
+    }
+  },
+  "headwear_block": {
+    "type": "black baseball cap",
+    "front_embroidery": "AXFRA in red collegiate lettering",
+    "brim": "black with light edge trim"
+  },
+  "eyewear_block": {
+    "type": "classic aviator sunglasses",
+    "frame": "thin gold-tone metal",
+    "lenses": "transparent green, non-mirrored",
+    "placement": "resting on top of the baseball cap, not covering the eyes"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-78" class="stage" id="etapa-78"><div class="stage-media"><img alt="Dotsy Dots con gorra AXFRA, gafas de aviador y jeans en un invernadero luminoso." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-78.jpg"/><span class="photo-id">AXFRA EDITORIAL — 78</span></div><div class="stage-content"><span class="eyebrow">ESCENA 03 / LA TRANSFORMACIÓN</span><h3 id="stage-78">La imagen se construye</h3><p>Después del café, Dotsy cambia de actitud: la gorra AXFRA, los lentes y la pose anuncian una sesión editorial que irá mucho más lejos de lo previsto.</p><div class="codebox"><div class="codehead"><span>Fragmento JSON ilustrativo · no es el archivo maestro</span><button class="copy" data-code="code-69" type="button">Copiar</button></div><pre id="code-69"><code>{
+  "pose_and_framing_block": {
+    "pose": "standing contrapposto",
+    "weight_distribution": "weight on one leg",
+    "hip_position": "shifted to one side",
+    "torso": "slight twist",
+    "framing": "full body, centered",
+    "camera_angle": "slightly low angle"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-70" class="stage" id="etapa-70"><div class="stage-media"><img alt="Mujer sonriente con gorra AXFRA, sujetador negro de encaje y jeans rotos en un invernadero." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-70.jpg"/><span class="photo-id">AXFRA EDITORIAL — 70</span></div><div class="stage-content"><span class="eyebrow">ESCENA 04 / ACCESORIOS</span><h3 id="stage-70">Accesorios y primera capa</h3><p>Se incorporan gorra AXFRA, lentes sobre la visera y encaje negro. Cada elemento tiene atributos propios.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-70" type="button">Copiar</button></div><pre id="code-70"><code>{
+  "bra": {
+    "type": "balconette underwire bra",
+    "color": "black",
+    "material": "floral lace",
+    "cup_coverage": "opaque structured cups with lace overlay",
+    "lace_transparency": 0.4
+  },
+  "pose_and_framing_block": {
+    "pose": "standing contrapposto",
+    "weight_distribution": "weight on one leg",
+    "hip_position": "shifted to one side",
+    "torso": "slight twist",
+    "arms": "one arm across the chest; the other hand resting at the hip",
+    "expression": "relaxed, smiling confidently",
+    "framing": "mid-to-full body portrait"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-71" class="stage" id="etapa-71"><div class="stage-media"><img alt="Mujer con gorra y blusa blanca entre salpicaduras de agua." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-71.jpg"/><span class="photo-id">AXFRA EDITORIAL — 71</span></div><div class="stage-content"><span class="eyebrow">ESCENA 05 / VESTUARIO</span><h3 id="stage-71">Superposición de prendas</h3><p>La camisa blanca se superpone a las prendas anteriores y conserva un comportamiento textil independiente.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-71" type="button">Copiar</button></div><pre id="code-71"><code>{
+  "shirt": {
+    "type": "long-sleeve button-front shirt",
+    "color": "white",
+    "material": "lightweight linen voile",
+    "transparency": 0.1,
+    "styling": "untucked; top two buttons undone",
+    "fabric_behavior": "natural folds, layered opacity and realistic seams"
+  },
+  "water_effects_block": {
+    "water_source": "dynamic splashes of clear water inside a sunlit glass conservatory",
+    "motion": "irregular arcs of water droplets frozen in mid-air around the subject",
+    "interaction": "water splashes pass in front of and around the clothing, with plausible wet fabric and hair response",
+    "droplets": "distinct sharp droplets, realistic sizes, refraction and specular highlights",
+    "surface_behavior": "natural wet sheen, localized dampness and believable fabric folds",
+    "constraints": "no artificial water ribbons, no floating static liquid, no melted anatomy or clothing"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-72" class="stage" id="etapa-72"><div class="stage-media"><img alt="Mujer con gorra hace gesto de paz entre salpicaduras." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-72.jpg"/><span class="photo-id">AXFRA EDITORIAL — 72</span></div><div class="stage-content"><span class="eyebrow">ESCENA 06 / LUZ Y CÁMARA</span><h3 id="stage-72">Luz, agua y cámara</h3><p>La interacción con el agua, la iluminación y la captura fotográfica definen el carácter editorial.</p><div class="codebox"><div class="codehead"><span>Extracto del estilo documentado · AXFRA</span><button class="copy" data-code="code-72" type="button">Copiar</button></div><pre id="code-72"><code>{
+  "camera_and_style_block": {
+    "camera": "shot on professional mirrorless camera, 85mm lens, f/2.8 aperture for shallow depth of field and creamy background separation, 1/4000s shutter speed freezing water droplets, sharp focus on eyes and face",
+    "style": "Alarsi editorial style, ultra photorealistic high-fashion outdoor portrait, cinematic natural lighting, Vogue-level luxury aesthetic, hyper-detailed skin pores, realistic wet surfaces, accurate water physics, no smoothing, no plastic look, masterpiece, best quality"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-73" class="stage" id="etapa-73"><div class="stage-media"><img alt="Mujer con gorra y blusa blanca sentada sobre un taburete." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-73.jpg"/><span class="photo-id">AXFRA EDITORIAL — 73</span></div><div class="stage-content"><span class="eyebrow">ESCENA 07 / LA SESIÓN</span><h3 id="stage-73">Todo parecía una sesión normal</h3><p>Dotsy se sienta frente a la cámara. La puesta en escena parece controlada… hasta que aparece un visitante inesperado.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-73" type="button">Copiar</button></div><pre id="code-73"><code>{
+  "pose_and_framing_block": {
+    "pose": "sitting casually on a round wooden studio stool",
+    "legs": "one knee raised and bent toward the torso; the other leg lowered naturally",
+    "feet": "bare feet relaxed near the stool frame",
+    "torso": "slight forward lean with relaxed shoulders",
+    "arms": "one hand lifted toward the cap or temple; the other resting naturally near the lap",
+    "head": "slightly tilted toward the photographer",
+    "expression": "friendly, relaxed smile",
+    "attitude": "spontaneous behind-the-scenes fashion portrait"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-79" class="stage" id="etapa-79"><div class="stage-media"><img alt="Drácula sonríe junto a Dotsy Dots, sentada en un taburete, durante una sesión fotográfica con cámara y luces de estudio." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-79.jpg"/><span class="photo-id">AXFRA EDITORIAL — 79</span></div><div class="stage-content"><span class="eyebrow">ESCENA 08 / EL INVITADO</span><h3 id="stage-79">Drácula entra al estudio</h3><p>El visitante inesperado es Drácula. Entre focos, cámara y un taburete, posa junto a Dotsy como si formara parte de la producción desde el principio.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-79" type="button">Copiar</button></div><pre id="code-79"><code>{
+  "environment_block": {
+    "location": "professional photography studio",
+    "backdrop": "large seamless light neutral photographic background",
+    "lighting_equipment": "two large softbox lights on stands, one on each side of the set",
+    "camera_setup": "professional mirrorless camera on a tripod in the foreground, with a visible rear display",
+    "furniture": "tall round wooden stool positioned near the center of the set",
+    "scene_arrangement": "Dotsy Dots seated on the stool while Dracula stands nearby in black formal attire and a high red-lined cape",
+    "action": "Dracula joins the photo session while the studio camera is positioned to photograph Dotsy",
+    "atmosphere": "playful behind-the-scenes editorial production with clearly visible photographic equipment"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-74" class="stage" id="etapa-74"><div class="stage-media"><img alt="Vampiro junto a mujer sentada sobre un frasco con líquido rojo." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-74.jpg"/><span class="photo-id">AXFRA EDITORIAL — 74</span></div><div class="stage-content"><span class="eyebrow">ESCENA 09 / FANTASÍA</span><h3 id="stage-74">La realidad cambia de escala</h3><p>La historia abandona el estudio y entra en el territorio fantástico: Drácula, un recipiente desmesurado y un nuevo juego de perspectivas.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-74" type="button">Copiar</button></div><pre id="code-74"><code>{
+  "poster_style_block": {
+    "genre": "fantasy gothic editorial poster",
+    "visual_language": "cinematic photomontage combining a foreground Dracula figure with a dramatically enlarged secondary composition",
+    "composition": "strong foreground silhouette, monumental scale contrast and theatrical spatial depth",
+    "palette": "deep black, dark burgundy red, warm stone and restrained highlights",
+    "lighting": "dramatic directional light, rich shadows and luminous red accents",
+    "texture": "photorealistic fabrics, stone, glass and realistic material reflections",
+    "mood": "surreal, theatrical and slightly humorous",
+    "finish": "high-resolution editorial poster with coherent perspective and no additional typography"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-75" class="stage" id="etapa-75"><div class="stage-media"><img alt="Drácula junto a mujer con gorra AXFRA sentada sobre un gran recipiente rojo, brindando con una copa." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-75.jpg"/><span class="photo-id">AXFRA EDITORIAL — 75</span></div><div class="stage-content"><span class="eyebrow">ESCENA 10 / EL BRINDIS</span><h3 id="stage-75">Un brindis imposible</h3><p>Dotsy acepta el absurdo de la escena y brinda desde lo alto de un enorme recipiente rojo, mientras Drácula observa.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-75" type="button">Copiar</button></div><pre id="code-75"><code>{
+  "environment_block": {
+    "location": "fantasy architectural setting above historic terracotta-tiled rooftops",
+    "architecture": "dense old-world rooftops and stone structures seen from an elevated perspective",
+    "central_object": "enormous transparent glass vessel partially filled with deep red liquid",
+    "scale": "deliberately oversized vessel relative to the surrounding architecture and human figures",
+    "subject_placement": "Dotsy Dots seated on the rim of the giant vessel, holding up a glass in a toast",
+    "secondary_character": "Dracula in the near foreground, watching the impossible scene",
+    "atmosphere": "surreal gothic fantasy, playful and cinematic",
+    "lighting": "warm natural daylight with realistic reflections on glass and liquid"
+  }
+}</code></pre></div></div></article><article aria-labelledby="stage-76" class="stage" id="etapa-76"><div class="stage-media"><img alt="Montaje urbano con vampiro gigante y personajes de superhéroes." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-76.jpg"/><span class="photo-id">AXFRA EDITORIAL — 76</span></div><div class="stage-content"><span class="eyebrow">ESCENA 11 / LA CIUDAD</span><h3 id="stage-76">La historia sale a la ciudad</h3><p>La composición se expande a la ciudad e incorpora referencias visuales de Paulina Dots y Viktoria Dots (editoriales 41–44), junto a Dotsy y Drácula. El módulo muestra cómo vincular personajes y conservar su continuidad.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-76" type="button">Copiar</button></div><pre id="code-76"><code>{
+  "narrative_situation_block": {
+    "scene": "urban-scale fantasy editorial montage combining previously established characters and imagery",
+    "characters": [
+      "Dotsy Dots",
+      "Dracula",
+      "Paulina Dots",
+      "Viktoria Dots"
+    ],
+    "reference_images": {
+      "viktoria_dots_portrait": "https://axfra.com/images/homegallery/axfra_editorial-41.jpg",
+      "viktoria_dots_full_figure": "https://axfra.com/images/homegallery/axfra_editorial-42.jpg",
+      "paulina_dots_heroine": "https://axfra.com/images/homegallery/axfra_editorial-43.jpg",
+      "paulina_dots_additional_reference": "https://axfra.com/images/homegallery/axfra_editorial-44.jpg"
+    },
+    "continuity": "retain the established appearance of each referenced character while adapting scale, pose and visual treatment to the montage",
+    "action": "the photographic story expands into a monumental city composition with fantasy figures and graphic elements",
+    "visual_goal": "unify separate editorial references into one coherent cinematic scene",
+    "constraints": "do not interchange Paulina Dots and Viktoria Dots; preserve individual visual identities"
+  }
+}</code></pre></div><p class="reference-links">Referencias de personajes: <a href="https://axfra.com/images/homegallery/axfra_editorial-41.jpg" rel="noopener noreferrer" target="_blank">Editorial 41</a> · <a href="https://axfra.com/images/homegallery/axfra_editorial-42.jpg" rel="noopener noreferrer" target="_blank">Editorial 42</a> · <a href="https://axfra.com/images/homegallery/axfra_editorial-43.jpg" rel="noopener noreferrer" target="_blank">Editorial 43</a> · <a href="https://axfra.com/images/homegallery/axfra_editorial-44.jpg" rel="noopener noreferrer" target="_blank">Editorial 44</a></p></div></article><article aria-labelledby="stage-80" class="stage" id="etapa-80"><div class="stage-media"><img alt="Drácula contempla un libro abierto con ilustraciones de una mujer vestida de verde y casco de cuernos, ante un vitral AXFRA." decoding="async" loading="lazy" src="https://axfra.com/images/homegallery/axfra_editorial-80.jpg"/><span class="photo-id">AXFRA EDITORIAL — 80</span></div><div class="stage-content"><span class="eyebrow">ESCENA 12 / EL DESENLACE</span><h3 id="stage-80">El último capítulo está en el libro</h3><p>El desenlace revela otra dimensión del relato: Drácula abre un libro ilustrado y encuentra a Viktoria Dots transformada en una figura fantástica. El vitral AXFRA cierra la historia como una declaración de autoría visual.</p><div class="codebox"><div class="codehead"><span>Módulo JSON de demostración · editable y reutilizable</span><button class="copy" data-code="code-80" type="button">Copiar</button></div><pre id="code-80"><code>{
+  "composition_block": {
+    "location": "gothic stone interior with a monumental stained-glass window",
+    "background": "ornate multicolored stained glass with a large illuminated AXFRA emblem at its center",
+    "foreground_left": "Dracula in profile wearing a black cape with deep red lining",
+    "central_focus": "large open illustrated art book resting on a white display table",
+    "book_pages": "two-page spread featuring Viktoria Dots in green fantasy attire with a golden horned helmet, one close-up portrait and one full-figure view",
+    "foreground_right": "clear glass jar containing dark red liquid",
+    "visual_hierarchy": [
+      "illuminated AXFRA stained-glass emblem",
+      "open book with Viktoria Dots",
+      "Dracula reading the book",
+      "glass vessel as narrative callback"
+    ],
+    "lighting": "warm backlight through stained glass, detailed stone shadows and realistic glass reflections",
+    "narrative_function": "final reveal that the adventure continues as a visual story inside the illustrated book"
+  }
+}</code></pre></div></div></article></section><section class="closing wrap"><span class="eyebrow">04 / CONCLUSIÓN</span><h2>De un café cotidiano a un universo fantástico.</h2><p>El hilo narrativo cambia de escenario, escala y lenguaje visual sin perder el control de sus componentes. AXFRA permite documentar esas decisiones de manera modular: identidad, accesorios, vestuario, pose, luz, cámara y composición. Esta es una demostración aplicada, no una prueba.</p><a class="pill" href="/index.html#metodo">← Volver a AXFRA</a></section></main><div id="globalFooter"></div><script defer="" src="/shared-layout.js"></script><script>document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const txt=document.getElementById(btn.dataset.code)?.innerText||'';try{await navigator.clipboard.writeText(txt);btn.textContent='Copiado ✓';setTimeout(()=>btn.textContent='Copiar',1800)}catch(e){btn.textContent='Selecciona el texto';}}));</script></body></html>
