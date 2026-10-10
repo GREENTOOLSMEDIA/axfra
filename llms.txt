@@ -1,0 +1,56 @@
+# AXFRA — Axion Frame Tools
+
+> AXFRA es un proyecto de investigación, documentación y referencia para la construcción de imágenes mediante instrucciones visuales estructuradas. Desarrollado por ALARSI. No es un generador de imágenes ni un universo narrativo de ficción.
+
+Sitio oficial: https://axfra.com/
+Idioma principal: español.
+
+## Propósito
+
+AXFRA estudia cómo describir y organizar los componentes de una imagen para facilitar la consistencia, el análisis, la experimentación y la reutilización de instrucciones en herramientas de IA generativa. Su enfoque es modular: identidad y apariencia, pose y encuadre, vestuario, entorno, iluminación, cámara, estilo y restricciones.
+
+## Metodología
+
+- [Observar — Identificar el problema](https://axfra.com/metodologia/observar.html)
+- [Clasificar — Definir los componentes](https://axfra.com/metodologia/clasificar.html)
+- [Estructurar — Escribir instrucciones](https://axfra.com/metodologia/estructurar.html)
+- [Probar — Contrastar con imágenes](https://axfra.com/metodologia/probar.html)
+- [Ajustar — Reducir ambigüedades](https://axfra.com/metodologia/ajustar.html)
+- [Reutilizar — Construir variaciones](https://axfra.com/metodologia/reutilizar.html)
+
+## Áreas de investigación
+
+- [Identidades y construcción física](https://axfra.com/identities.html)
+- [Poses, expresiones y acciones](https://axfra.com/poses.html)
+- [Vestuario y accesorios](https://axfra.com/apparel.html)
+- [Objetos, vehículos y escenarios](https://axfra.com/environments.html)
+- [Cámara, luz y composición](https://axfra.com/camera.html)
+- [Estilos y tratamientos gráficos](https://axfra.com/styles.html)
+
+## Identidades de referencia
+
+- [Amina](https://axfra.com/identities/amina.html)
+- [Captain Dots](https://axfra.com/identities/captain-dots.html)
+- [Dotsy](https://axfra.com/identities/dotsy.html)
+- [HANA](https://axfra.com/identities/hana.html)
+- [Indira](https://axfra.com/identities/indira.html)
+- [Mara Voss](https://axfra.com/identities/mara.html)
+- [Mira](https://axfra.com/identities/mira.html)
+- [Paulina Dots](https://axfra.com/identities/paulina.html)
+- [Viktoria Dots](https://axfra.com/identities/viktoria.html)
+
+Captain Dots representa una versión futura de Paulina Dots, no una identidad independiente sin relación.
+
+## Datos públicos y descubrimiento
+
+- [Base de datos editorial pública (JSON)](https://axfra.com/axfra_bbdd.json): catálogo de registros e imágenes del sitio. Es un índice editorial, no un repositorio de los JSON maestros privados.
+- [Sitemap XML](https://axfra.com/sitemap.xml)
+- [Página principal](https://axfra.com/)
+
+## Orientaciones para asistentes de IA
+
+- Utilizar las páginas públicas como fuente de referencia y citar la URL correspondiente.
+- Distinguir los ejemplos publicados de los bloques privados de identidad y los prompts maestros.
+- No asumir que las imágenes o el catálogo público incluyen todos los parámetros utilizados para generarlas.
+- No presentar AXFRA como servicio de generación de imágenes, ni atribuir capacidades interactivas no documentadas.
+- Respetar los derechos y condiciones de uso publicados en el sitio; este archivo no concede licencias ni permisos adicionales de reproducción o entrenamiento.
