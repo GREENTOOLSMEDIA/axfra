@@ -9,13 +9,13 @@
     "alt": "Paulina Dots junto a una piscina tropical, en pose dinámica con el brazo extendido hacia la cámara.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 2,
@@ -24,16 +24,16 @@
     "current": "axfra_editorial-02.jpg",
     "proposed": "axfra_0002_paulina_dots_secuencia_camiseta_rosa_shorts_mezclilla_piscina.jpg",
     "description": "Secuencia de cuatro vistas de una Paulina Dots con camiseta rosa y shorts de mezclilla junto a una piscina.",
-    "alt": "Secuencia de cuatro vistas de una Paulina Dots con camiseta rosa y shorts de mezclilla junto a una.",
+    "alt": "Cuatro vistas de Paulina Dots con camiseta rosa y shorts de mezclilla junto a una piscina.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 3,
@@ -45,13 +45,13 @@
     "alt": "Composición fantástica nocturna con bandera chilena, aurora austral, pingüinos y figura femenina.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 4,
@@ -63,13 +63,13 @@
     "alt": "Paulina Dots con traje rojo sobre una motocicleta deportiva roja, rodeada de luces urbanas de neón.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 5,
@@ -81,13 +81,13 @@
     "alt": "Retrato editorial de cuerpo entero con Paulina Dots en lencería negra de encaje sobre fondo claro.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 6,
@@ -99,13 +99,13 @@
     "alt": "Collage de cuatro fotografías de Paulina Dots con lencería negra de encaje y poses de estudio.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 7,
@@ -114,16 +114,16 @@
     "current": "axfra_editorial-07.jpg",
     "proposed": "axfra_0007_paulina_dots_sentada_piernas_cruzadas_escenario_rock_iluminado.jpg",
     "description": "Paulina Dots sentada con las piernas cruzadas frente a un escenario de rock iluminado, con gorra y vestuario deportivo.",
-    "alt": "Paulina Dots sentada con las piernas cruzadas frente a un escenario de rock iluminado, con gorra y.",
+    "alt": "Paulina Dots con gorra y vestuario deportivo frente a un escenario de rock iluminado.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 8,
@@ -135,13 +135,13 @@
     "alt": "Dotsy Dots con ropa colorida junto a un puesto de jugos tropicales y un vehículo rojo.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 9,
@@ -153,13 +153,13 @@
     "alt": "Escena fantástica nocturna con figura masculina de aspecto esquelético y mujer alada bajo la luna.",
     "reviewed": true,
     "character": "Paulina Dots y Alarsi",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 10,
@@ -171,13 +171,13 @@
     "alt": "Dotsy Dots con dos moños altos, conjunto blanco y una pierna flexionada en estudio luminoso.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 11,
@@ -189,13 +189,13 @@
     "alt": "Paulina Dots con camisa blanca frente a fondo beige",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 12,
@@ -207,7 +207,7 @@
     "alt": "Lámina de diseño con cuatro vistas de una motocicleta deportiva roja de estilo futurista.",
     "reviewed": true,
     "character": "Alarsi Super Bike",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 13,
@@ -216,10 +216,10 @@
     "current": "axfra_editorial-13.jpg",
     "proposed": "axfra_0013_captain_dots_and_dracula_dracula_primer_plano_heroina_rojo_sentada.jpg",
     "description": "Composición de Drácula en primer plano y una heroína rubia de rojo sentada sobre un gran frasco de líquido oscuro.",
-    "alt": "Composición de Drácula en primer plano y una heroína rubia de rojo sentada sobre un gran frasco de.",
+    "alt": "Drácula en primer plano y heroína rubia de rojo sentada sobre un frasco de líquido oscuro.",
     "reviewed": true,
     "character": "Captain Dots and Dracula",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 14,
@@ -228,10 +228,10 @@
     "current": "axfra_editorial-14.jpg",
     "proposed": "axfra_0014_captain_dots_ilustracion_fantastica_heroina_mascara_traje_rojo.jpg",
     "description": "Ilustración fantástica de heroína rubia con máscara y traje rojo ante un paisaje de calaveras y luna.",
-    "alt": "Ilustración fantástica de heroína rubia con máscara y traje rojo ante un paisaje de calaveras y.",
+    "alt": "Heroína rubia con máscara y traje rojo ante un paisaje de calaveras y luna.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 15,
@@ -243,13 +243,13 @@
     "alt": "Paulina Dots con gorra y conjunto deportivo rojo y negro, de pie junto a una piscina.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 16,
@@ -261,13 +261,13 @@
     "alt": "Retrato frontal de Paulina Dots con cabello recogido y pendientes geométricos plateados.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 17,
@@ -276,16 +276,16 @@
     "current": "axfra_editorial-17.jpg",
     "proposed": "axfra_0017_paulina_dots_sentada_letrero_luminoso_paudots_escenario_luces.jpg",
     "description": "Paulina Dots sentada frente a un letrero luminoso PAUDOTS en un escenario de luces verdes y naranjas.",
-    "alt": "Paulina Dots sentada frente a un letrero luminoso PAUDOTS en un escenario de luces verdes y naranjas",
+    "alt": "Paulina Dots sentada frente al letrero luminoso PAUDOTS con luces verdes y naranjas.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 18,
@@ -294,16 +294,16 @@
     "current": "axfra_editorial-18.jpg",
     "proposed": "axfra_0018_paulina_dots_vestuario_deportivo_luces_neon_al_letrero.jpg",
     "description": "Collage de cuatro vistas de Paulina Dots con vestuario deportivo y luces de neón frente al letrero PAUDOTS.",
-    "alt": "Collage de cuatro vistas de Paulina Dots con vestuario deportivo y luces de neón frente al letrero.",
+    "alt": "Cuatro vistas de Paulina Dots con vestuario deportivo frente al letrero PAUDOTS.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 19,
@@ -315,7 +315,7 @@
     "alt": "Composición editorial de primer plano monocromático y figura rubia con máscara y traje rojo sentada.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 20,
@@ -327,7 +327,7 @@
     "alt": "Collage de cuatro fotografías de heroína rubia con traje rojo en un baño de mármol.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 21,
@@ -339,13 +339,13 @@
     "alt": "Composición artística de mujer dorada bajo luces nocturnas y retratos superpuestos.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 22,
@@ -357,13 +357,13 @@
     "alt": "Collage de cuatro escenas de una figura femenina dorada en una ciudad nocturna.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 23,
@@ -375,7 +375,7 @@
     "alt": "Heroína rubia con máscara y traje rojo agachada en posición de salida sobre pavimento mojado.",
     "reviewed": false,
     "character": "Por identificar",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 24,
@@ -387,7 +387,7 @@
     "alt": "Collage de cuatro encuadres de heroína rubia con traje rojo en poses de acción nocturna.",
     "reviewed": false,
     "character": "Por identificar",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 25,
@@ -396,16 +396,16 @@
     "current": "axfra_editorial-25.jpg",
     "proposed": "axfra_0025_dotsy_dots_dotsy_dots_dots_mujer_cabello_corto_ondulado_camiseta_blanca.jpg",
     "description": "Retrato de mujer morena con cabello corto ondulado, camiseta blanca y collar de cruz, sonriendo a cámara.",
-    "alt": "Retrato de mujer morena con cabello corto ondulado, camiseta blanca y collar de cruz, sonriendo a.",
+    "alt": "Mujer morena con cabello corto ondulado, camiseta blanca y collar de cruz, sonriendo.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 26,
@@ -417,13 +417,13 @@
     "alt": "Dotsy Dots con bikini blanco de pie en una piscina tropical con salpicaduras de agua.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 27,
@@ -435,7 +435,6 @@
     "alt": "Dos modelos con vestidos de noche rojo y negro caminan por una calle iluminada.",
     "reviewed": true,
     "character": "Dotsy Dots, Paulina Dots, Amina",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
@@ -449,7 +448,8 @@
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 28,
@@ -461,7 +461,6 @@
     "alt": "Tres modelos con vestidos elegantes negro, plateado y verde posan en una calle nocturna.",
     "reviewed": true,
     "character": "Amina, Mara Voss, Indira, Mira",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
@@ -479,7 +478,8 @@
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 29,
@@ -491,13 +491,13 @@
     "alt": "Viktoria Dots con guitarra eléctrica y chaqueta negra frente a un ventanal urbano nocturno.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 30,
@@ -509,13 +509,13 @@
     "alt": "Paulina Dots con vestido rosa, botas altas y bolso a juego junto a una piscina.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 31,
@@ -524,10 +524,10 @@
     "current": "axfra_editorial-31.jpg",
     "proposed": "axfra_0031_captain_dots_playa_soleada_prenda_roja_blanca_arena.jpg",
     "description": "Playa soleada con prenda roja y blanca sobre la arena y una figura femenina entrando al mar al fondo.",
-    "alt": "Playa soleada con prenda roja y blanca sobre la arena y una figura femenina entrando al mar al.",
+    "alt": "Prenda roja y blanca sobre arena de playa y figura femenina entrando al mar.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 32,
@@ -539,7 +539,7 @@
     "alt": "Ilustración de heroína rubia en traje rojo y máscara con retratos superpuestos.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 33,
@@ -551,13 +551,13 @@
     "alt": "Heroína vista de espaldas en una calle nocturna con explosión de fuego y luces de ciudad.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 34,
@@ -569,13 +569,13 @@
     "alt": "Paulina Dots con vestido corto rojo, de pie en una calle peatonal con brazos cruzados.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 35,
@@ -587,13 +587,13 @@
     "alt": "Viktoria Dots sentada sobre un banco con camiseta oscura de banda musical y piernas separadas.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 36,
@@ -605,7 +605,7 @@
     "alt": "Captain Dots con traje rojo y capa blanca, arqueando la espalda en pose teatral de estudio.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 37,
@@ -614,16 +614,16 @@
     "current": "axfra_editorial-37.jpg",
     "proposed": "axfra_0037_paulina_dots_ilustracion_monocromatica_gorra_cabello_movimiento_pose.jpg",
     "description": "Ilustración monocromática de Paulina Dots con gorra y cabello en movimiento, en pose agachada con mano hacia la cámara.",
-    "alt": "Ilustración monocromática de Paulina Dots con gorra y cabello en movimiento, en pose agachada con ma",
+    "alt": "Paulina Dots con gorra, cabello en movimiento y mano extendida hacia la cámara.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 110,
@@ -635,13 +635,13 @@
     "alt": "Ilustración en blanco y negro de una Paulina Dots con gorra, piernas flexionadas y cabello extendido",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 38,
@@ -653,13 +653,13 @@
     "alt": "Paulina Dots con vestido rojo largo y abertura lateral, posando de pie sobre fondo claro.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 39,
@@ -668,16 +668,16 @@
     "current": "axfra_editorial-39.jpg",
     "proposed": "axfra_0039_paulina_dots_gorra_vestuario_deportivo_agachada_luces_concierto.jpg",
     "description": "Paulina Dots con gorra y vestuario deportivo agachada frente a luces de un concierto, con mano hacia el objetivo.",
-    "alt": "Paulina Dots con gorra y vestuario deportivo agachada frente a luces de un concierto, con mano.",
+    "alt": "Paulina Dots con gorra agachada frente a luces de concierto y mano hacia el objetivo.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 40,
@@ -689,13 +689,13 @@
     "alt": "Paulina Dots con conjunto negro y detalles morados en un salón nocturno elegante.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 41,
@@ -707,13 +707,13 @@
     "alt": "Primer plano de mujer morena con casco dorado de cuernos y vestuario verde en un entorno boscoso.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 42,
@@ -725,13 +725,13 @@
     "alt": "Figura femenina con traje verde, capa y casco dorado de cuernos, de pie entre árboles.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 43,
@@ -743,13 +743,13 @@
     "alt": "Heroína rubia con armadura roja metálica y gorra, arrodillada sobre fondo negro.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 44,
@@ -761,7 +761,6 @@
     "alt": "Dos modelos con trajes de heroínas verde y rojo, posando juntas en un bosque.",
     "reviewed": true,
     "character": "Paulina Dots, Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
@@ -771,7 +770,8 @@
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 96,
@@ -780,16 +780,16 @@
     "current": "axfra_editorial-45.jpg",
     "proposed": "axfra_0096_amina_piel_oscura_armadura_metalica_plateada_sentada.jpg",
     "description": "Amina de piel oscura con armadura metálica plateada, sentada en una estructura de piedra entre vegetación.",
-    "alt": "Amina de piel oscura con armadura metálica plateada, sentada en una estructura de piedra entre.",
+    "alt": "Amina con armadura metálica plateada sentada sobre piedra entre vegetación.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 97,
@@ -798,16 +798,16 @@
     "current": "axfra_editorial-46.jpg",
     "proposed": "axfra_0097_amina_camiseta_rosa_shorts_mezclilla_piscina.jpg",
     "description": "Collage de cuatro vistas de Amina con camiseta rosa y shorts de mezclilla junto a una piscina.",
-    "alt": "Collage de cuatro vistas de Amina con camiseta rosa y shorts de mezclilla junto a una.",
+    "alt": "Cuatro vistas de Amina con camiseta rosa y shorts de mezclilla junto a una piscina.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 98,
@@ -819,7 +819,6 @@
     "alt": "Díptico de escena chilena bajo auroras y Paulina Dots, Viktoria Dots en puesto de jugos tropicales.",
     "reviewed": true,
     "character": "Paulina Dots, Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
@@ -829,7 +828,8 @@
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 99,
@@ -841,13 +841,13 @@
     "alt": "Collage de Amina en lencería negra de encaje con diferentes encuadres.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 100,
@@ -859,13 +859,13 @@
     "alt": "Collage de Hana con gorra y conjunto deportivo ante escenario de rock.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 101,
@@ -877,13 +877,13 @@
     "alt": "Collage de escena fantástica con personaje esquelético y mujer alada bajo la luna.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 102,
@@ -895,13 +895,13 @@
     "alt": "Collage de Mara Voss en conjunto blanco con distintas poses de estudio.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 103,
@@ -913,7 +913,6 @@
     "alt": "Díptico de Drácula con frasco de líquido oscuro y heroína roja en ilustración fantástica.",
     "reviewed": true,
     "character": "Mira, Indira",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
@@ -923,7 +922,8 @@
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 104,
@@ -935,7 +935,7 @@
     "alt": "Collage de heroína rubia en traje rojo realizando poses de acción en calle nocturna.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 105,
@@ -947,7 +947,6 @@
     "alt": "Collage de Hana, Mara Voss frente al letrero PAUDOTS bajo luces de neón.",
     "reviewed": true,
     "character": "Hana, Mara Voss",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
@@ -957,7 +956,8 @@
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 106,
@@ -969,13 +969,13 @@
     "alt": "Collage de retrato monocromático y heroína roja en un baño luminoso.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 107,
@@ -987,13 +987,13 @@
     "alt": "Collage de retratos y figura femenina dorada en ciudad nocturna.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 108,
@@ -1005,13 +1005,13 @@
     "alt": "Collage de Indira con bikini claro en una playa soleada.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 109,
@@ -1023,13 +1023,13 @@
     "alt": "Retrato de Amina y figuras con vestuario deportivo azul sobre fondo oscuro.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Fotografía verificada en homegallery.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 146,
@@ -1041,13 +1041,13 @@
     "alt": "Retrato de mujer con trenzas y sombras de luz sobre el rostro.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 147,
@@ -1059,7 +1059,7 @@
     "alt": "Heroína rubia con antifaz rojo bajo luces azules y cálidas.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación"
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 148,
@@ -1071,13 +1071,13 @@
     "alt": "Mujer sonriente con pendientes geométricos y collar metálico.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 149,
@@ -1089,13 +1089,13 @@
     "alt": "Mujer de pelo negro corto y abrigo gris ante estanterías.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 150,
@@ -1107,13 +1107,13 @@
     "alt": "Mujer de cabello oscuro con blazer gris y camisa blanca.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 151,
@@ -1125,13 +1125,13 @@
     "alt": "Primer plano de mujer rubia con cabello suelto y mirada intensa.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 152,
@@ -1143,13 +1143,13 @@
     "alt": "Mujer pelirroja sonriente con cabello ondulado y prenda beige.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 153,
@@ -1161,13 +1161,13 @@
     "alt": "Primer plano de mujer rubia de ojos azules y cabello suelto.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 154,
@@ -1179,13 +1179,13 @@
     "alt": "Mujer de cabello negro ondulado posa junto al agua.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 155,
@@ -1197,13 +1197,13 @@
     "alt": "Mujer sonriente con camiseta blanca y jeans en galería acristalada.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 156,
@@ -1215,13 +1215,13 @@
     "alt": "Mujer con gorra negra y jeans posa junto a ventanales.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 157,
@@ -1233,13 +1233,13 @@
     "alt": "Mujer sonriente con gorra AXFRA, sujetador negro de encaje y jeans rotos en un invernadero.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía original proporcionada por el usuario; verificada visualmente",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 158,
@@ -1251,13 +1251,13 @@
     "alt": "Mujer con gorra y blusa blanca entre salpicaduras de agua.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 159,
@@ -1269,13 +1269,13 @@
     "alt": "Mujer con gorra hace gesto de paz entre salpicaduras.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 160,
@@ -1287,13 +1287,13 @@
     "alt": "Mujer con gorra y blusa blanca sentada sobre un taburete.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 161,
@@ -1305,13 +1305,13 @@
     "alt": "Vampiro junto a mujer sentada sobre un frasco con líquido rojo.",
     "reviewed": true,
     "character": "Dracula, Dotsy Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   },
   {
     "id": 46,
@@ -1320,16 +1320,16 @@
     "current": "axfra-01.jpg",
     "proposed": "axfra_0046_paulina_dots_camiseta_rosa_shorts_mezclilla_piscina.jpg",
     "description": "Collage de cuatro vistas de Paulina Dots con camiseta rosa y shorts de mezclilla junto a una piscina.",
-    "alt": "Collage de cuatro vistas de Paulina Dots con camiseta rosa y shorts de mezclilla junto a una.",
+    "alt": "Cuatro vistas de Paulina Dots con camiseta rosa y shorts de mezclilla junto a una piscina.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 47,
@@ -1341,7 +1341,6 @@
     "alt": "Díptico de escena chilena bajo auroras y Viktoria Dots, Dotsy Dots en puesto de jugos tropicales.",
     "reviewed": true,
     "character": "Viktoria Dots, Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
@@ -1351,7 +1350,8 @@
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 48,
@@ -1363,13 +1363,13 @@
     "alt": "Collage de Paulina Dots en lencería negra de encaje con diferentes encuadres.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 49,
@@ -1381,13 +1381,13 @@
     "alt": "Collage de Paulina Dots con gorra y conjunto deportivo ante escenario de rock.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 50,
@@ -1399,13 +1399,13 @@
     "alt": "Collage de escena fantástica con personaje esquelético y mujer alada bajo la luna.",
     "reviewed": true,
     "character": "Paulina Dots, Alarsi",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 51,
@@ -1417,13 +1417,13 @@
     "alt": "Collage de Paulina Dots en conjunto blanco con distintas poses de estudio.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 52,
@@ -1435,7 +1435,7 @@
     "alt": "Díptico de Drácula con frasco de líquido oscuro y heroína roja en ilustración fantástica.",
     "reviewed": true,
     "character": "Dracula, Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 53,
@@ -1447,7 +1447,7 @@
     "alt": "Collage de heroína rubia en traje rojo realizando poses de acción en calle nocturna.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 54,
@@ -1459,13 +1459,13 @@
     "alt": "Collage de Paulina Dots frente al letrero PAUDOTS bajo luces de neón.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 55,
@@ -1477,7 +1477,7 @@
     "alt": "Collage de retrato monocromático y heroína roja en un baño luminoso.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 56,
@@ -1489,13 +1489,13 @@
     "alt": "Collage de retratos y figura femenina dorada en ciudad nocturna.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 57,
@@ -1507,13 +1507,13 @@
     "alt": "Collage de Paulina Dots con bikini claro en una playa soleada.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 58,
@@ -1525,13 +1525,13 @@
     "alt": "Retrato de Amina y figuras con vestuario deportivo azul sobre fondo oscuro.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 59,
@@ -1543,13 +1543,13 @@
     "alt": "Retrato de Dotsy Dots y figuras con vestuario verde sobre fondo oscuro.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 60,
@@ -1561,13 +1561,13 @@
     "alt": "Retrato de Hana y figuras con vestuario amarillo sobre fondo oscuro.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 61,
@@ -1579,13 +1579,13 @@
     "alt": "Retrato de Indira y figuras con vestuario plateado sobre fondo oscuro.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 62,
@@ -1597,13 +1597,13 @@
     "alt": "Retrato de Mara Voss y figuras con vestuario naranja sobre fondo oscuro.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 63,
@@ -1615,13 +1615,13 @@
     "alt": "Retrato de Mira y figuras con vestuario morado sobre fondo oscuro.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 64,
@@ -1633,13 +1633,13 @@
     "alt": "Retrato de Paulina Dots y figuras con vestuario rojo sobre fondo oscuro.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 65,
@@ -1651,13 +1651,13 @@
     "alt": "Retrato de Viktoria Dots y figuras con vestuario blanco sobre fondo oscuro.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 66,
@@ -1669,7 +1669,7 @@
     "alt": "Retrato de Captain Dots con máscara roja y figuras de acción sobre fondo oscuro.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 111,
@@ -1681,13 +1681,13 @@
     "alt": "Referencia de cuerpo entero de Amina con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 112,
@@ -1699,13 +1699,13 @@
     "alt": "Referencia de cuerpo entero de Dotsy Dots con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 113,
@@ -1717,13 +1717,13 @@
     "alt": "Referencia de cuerpo entero de Hana con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 114,
@@ -1735,13 +1735,13 @@
     "alt": "Referencia de cuerpo entero de Indira con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 115,
@@ -1753,13 +1753,13 @@
     "alt": "Referencia de cuerpo entero de Mara Voss con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 116,
@@ -1771,13 +1771,13 @@
     "alt": "Referencia de cuerpo entero de Mira con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 117,
@@ -1789,13 +1789,13 @@
     "alt": "Referencia de cuerpo entero de Paulina Dots con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 118,
@@ -1807,13 +1807,13 @@
     "alt": "Referencia de cuerpo entero de Viktoria Dots con vestuario deportivo, sobre fondo negro.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 75,
@@ -1825,13 +1825,13 @@
     "alt": "Referencia visual de Amina con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 119,
@@ -1843,13 +1843,13 @@
     "alt": "Fotografía editorial de Amina en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 76,
@@ -1861,10 +1861,8 @@
     "alt": "Ficha de Amina, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_amina_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 77,
@@ -1876,7 +1874,7 @@
     "alt": "Fotografía editorial de Captain Dots en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 78,
@@ -1888,7 +1886,7 @@
     "alt": "Primer plano de Captain Dots, con énfasis en los rasgos del rostro y la expresión facial.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 79,
@@ -1900,7 +1898,7 @@
     "alt": "Ficha de Captain Dots, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Captain Dots",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 80,
@@ -1912,13 +1910,13 @@
     "alt": "Referencia visual de Dotsy Dots con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 81,
@@ -1930,13 +1928,13 @@
     "alt": "Primer plano de Dotsy Dots, con énfasis en los rasgos del rostro y la expresión facial.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 120,
@@ -1948,13 +1946,13 @@
     "alt": "Retrato editorial de Dotsy Dots con iluminación suave y encuadre centrado.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 82,
@@ -1966,10 +1964,8 @@
     "alt": "Ficha de Dotsy Dots, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_dotsy_identity_core.json",
-    "identity_reference_status": "Ruta de perfil existente en catálogo; JSON sin visual_reference"
+    "identity_status": "catalogued"
   },
   {
     "id": 121,
@@ -1981,13 +1977,13 @@
     "alt": "Fotografía editorial de Dotsy Dots en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 83,
@@ -1999,13 +1995,13 @@
     "alt": "Referencia visual de Hana con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 84,
@@ -2017,10 +2013,8 @@
     "alt": "Ficha de Hana, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_hana_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 122,
@@ -2032,13 +2026,13 @@
     "alt": "Fotografía editorial de Hana en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 85,
@@ -2050,13 +2044,13 @@
     "alt": "Referencia visual de Indira con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 86,
@@ -2068,10 +2062,8 @@
     "alt": "Ficha de Indira, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_indira_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 123,
@@ -2083,13 +2075,13 @@
     "alt": "Fotografía editorial de Indira en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 87,
@@ -2101,13 +2093,13 @@
     "alt": "Referencia visual de Mara Voss con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 88,
@@ -2119,10 +2111,8 @@
     "alt": "Ficha de Mara Voss, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_mara_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 124,
@@ -2134,13 +2124,13 @@
     "alt": "Fotografía editorial de Mara Voss en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 89,
@@ -2152,13 +2142,13 @@
     "alt": "Referencia visual de Mira con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 90,
@@ -2170,10 +2160,8 @@
     "alt": "Ficha de Mira, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_mira_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 125,
@@ -2185,13 +2173,13 @@
     "alt": "Fotografía editorial de Mira en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 91,
@@ -2203,13 +2191,13 @@
     "alt": "Referencia visual de Paulina Dots con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 126,
@@ -2221,13 +2209,13 @@
     "alt": "Fotografía editorial de Paulina Dots en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 92,
@@ -2239,10 +2227,8 @@
     "alt": "Ficha de Paulina Dots, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_paulina_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 93,
@@ -2254,13 +2240,13 @@
     "alt": "Referencia visual de Viktoria Dots con figura de cuerpo entero y elementos visuales de referencia.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 127,
@@ -2272,13 +2258,13 @@
     "alt": "Fotografía editorial de Viktoria Dots en una escena de moda y estilo.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 94,
@@ -2290,10 +2276,8 @@
     "alt": "Ficha de Viktoria Dots, con retrato y representación de cuerpo entero sobre fondo gráfico.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master": true,
-    "identity_core_file": "identity/axfra_viktoria_dots_identity_core.json",
-    "identity_reference_status": "Referencia explícita en JSON privado"
+    "identity_status": "catalogued"
   },
   {
     "id": 129,
@@ -2305,13 +2289,13 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 130,
@@ -2323,13 +2307,13 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 131,
@@ -2341,13 +2325,13 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 132,
@@ -2359,7 +2343,7 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "NO INCLUIR (esto esta para armar demo)",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 133,
@@ -2371,7 +2355,7 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "NO INCLUIR (esto esta para armar demo)",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 134,
@@ -2383,7 +2367,7 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "NO INCLUIR (esto esta para armar demo)",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 135,
@@ -2395,13 +2379,13 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 136,
@@ -2413,7 +2397,7 @@
     "alt": "Figura femenina rubia con conjunto deportivo rojo brillante y zapatillas blancas sobre fondo negro",
     "reviewed": true,
     "character": "NO INCLUIR (esto esta para armar demo)",
-    "source": "Respaldo axfra-main-2.zip"
+    "identity_status": "catalogued"
   },
   {
     "id": 137,
@@ -2425,13 +2409,13 @@
     "alt": "Composición gráfica de referencia de Amina, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 138,
@@ -2443,13 +2427,13 @@
     "alt": "Composición gráfica de referencia de Dotsy Dots, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 139,
@@ -2461,13 +2445,13 @@
     "alt": "Composición gráfica de referencia de Hana, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 140,
@@ -2479,13 +2463,13 @@
     "alt": "Composición gráfica de referencia de Indira, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 141,
@@ -2497,13 +2481,13 @@
     "alt": "Composición gráfica de referencia de Mara Voss, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 142,
@@ -2515,13 +2499,13 @@
     "alt": "Composición gráfica de referencia de Mira, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 143,
@@ -2533,13 +2517,13 @@
     "alt": "Composición gráfica de referencia de Paulina Dots, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 144,
@@ -2551,13 +2535,13 @@
     "alt": "Composición gráfica de referencia de Viktoria Dots, con retrato y figura de cuerpo entero.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 145,
@@ -2569,13 +2553,13 @@
     "alt": "Dotsy Dots sonríe en una piscina con traje de baño blanco y cabello negro ondulado.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 67,
@@ -2587,13 +2571,13 @@
     "alt": "Amina con traje amarillo junto a una Vespa crema ante una fachada modernista.",
     "reviewed": true,
     "character": "Amina",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Amina",
         "path": "images/identity/axfra_amina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 68,
@@ -2605,13 +2589,13 @@
     "alt": "Dotsy sentada en un automóvil con traje blanco frente a la Ópera de Sídney.",
     "reviewed": true,
     "character": "Dotsy Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 69,
@@ -2623,13 +2607,13 @@
     "alt": "Hana sentada en una terraza con un libro y una taza de café.",
     "reviewed": true,
     "character": "Hana",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Hana",
         "path": "images/identity/axfra_hana_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 70,
@@ -2641,13 +2625,13 @@
     "alt": "Indira con traje gris junto a un taxi amarillo en Nueva York.",
     "reviewed": true,
     "character": "Indira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Indira",
         "path": "images/identity/axfra_indira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 71,
@@ -2659,13 +2643,13 @@
     "alt": "Mara Voss con chaqueta roja sentada sobre una motocicleta deportiva.",
     "reviewed": true,
     "character": "Mara Voss",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mara Voss",
         "path": "images/identity/axfra_mara_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 72,
@@ -2677,13 +2661,13 @@
     "alt": "Mira con falda azul mira hacia atrás en una plaza iluminada al anochecer.",
     "reviewed": true,
     "character": "Mira",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 45,
@@ -2692,10 +2676,9 @@
     "current": "axfra_paudotsband_rock_the_world.jpg",
     "proposed": "axfra_0045_paudotsband_rock_the_world.jpg",
     "description": "PauDots Band (Dotsy Dots, Paulina Dots, Mira, Viktoria Dots) de piel oscura con armadura metálica plateada, sentada en una estructura de piedra entre vegetación.",
-    "alt": "PauDots Band (Dotsy Dots, Paulina Dots, Mira, Viktoria Dots) de piel oscura con armadura metálica pl",
+    "alt": "PauDots Band con personajes de AXFRA en una composición editorial.",
     "reviewed": true,
     "character": "PauDots Band (Dotsy Dots, Paulina Dots, Mira, Viktoria Dots)",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
@@ -2705,7 +2688,8 @@
         "character": "Mira",
         "path": "images/identity/axfra_mira_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 73,
@@ -2717,13 +2701,13 @@
     "alt": "Paulina Dots con blusa verde apoyada en una baranda de mosaicos marroquíes.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 95,
@@ -2735,13 +2719,13 @@
     "alt": "Póster gráfico AXFRA rojo con figura femenina de traje deportivo rojo ante formas geométricas.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 74,
@@ -2753,13 +2737,13 @@
     "alt": "Viktoria Dots vestida de cuero negro junto a un automóvil bajo luces de neón.",
     "reviewed": true,
     "character": "Viktoria Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 128,
@@ -2771,13 +2755,13 @@
     "alt": "Póster gráfico AXFRA rojo con figura femenina de traje deportivo rojo y composición geométrica.",
     "reviewed": true,
     "character": "Paulina Dots",
-    "source": "Respaldo axfra-main-2.zip",
     "identity_master_refs": [
       {
         "character": "Paulina Dots",
         "path": "images/identity/axfra_paulina_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 163,
@@ -2785,7 +2769,6 @@
     "path": "images/homegallery/axfra_editorial-75.jpg",
     "current": "axfra_editorial-75.jpg",
     "reviewed": true,
-    "source": "Fotografía original proporcionada por el usuario; verificada visualmente",
     "character": "Dracula, Dotsy Dots",
     "description": "Composición fantástica en perspectiva elevada: Drácula aparece en primer plano a la izquierda, mientras una mujer sonriente con gorra AXFRA, camisa blanca translúcida y jeans rotos se sienta descalza sobre un enorme recipiente de vidrio con líquido rojo y levanta una copa, sobre un conjunto arquitectónico de tejados de teja.",
     "alt": "Drácula junto a mujer con gorra AXFRA sentada sobre un gran recipiente rojo, brindando con una copa.",
@@ -2795,7 +2778,8 @@
         "character": "Dotsy Dots",
         "path": "images/identity/axfra_dotsy_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "catalogued"
   },
   {
     "id": 162,
@@ -2807,7 +2791,6 @@
     "alt": "Montaje urbano con vampiro gigante y personajes de superhéroes.",
     "reviewed": true,
     "character": "Dracula, Dotsy Dots, Paulina Dots, Viktoria Dots",
-    "source": "Fotografía verificada en homegallery.zip; personaje pendiente de confirmación",
     "identity_master_refs": [
       {
         "character": "Dotsy Dots",
@@ -2821,6 +2804,7 @@
         "character": "Viktoria Dots",
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
-    ]
+    ],
+    "identity_status": "pending_confirmation"
   }
 ]
