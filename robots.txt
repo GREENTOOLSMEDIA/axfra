@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /axfra_bbdd.html
 
 Sitemap: https://axfra.com/sitemap.xml

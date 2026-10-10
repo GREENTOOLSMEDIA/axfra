@@ -1,0 +1,148 @@
+{
+  "pages": [
+    {
+      "page": "identities.html",
+      "images": 10,
+      "catalogue_matches": 10,
+      "title": "Identidades de referencia | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "apparel.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Vestuario y accesorios | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "index.html",
+      "images": 24,
+      "catalogue_matches": 23,
+      "title": "AXFRA — Axion Frame Tools | Investigación y construcción visual con IA"
+    },
+    {
+      "page": "demostracion-practica.html",
+      "images": 12,
+      "catalogue_matches": 8,
+      "title": "Demostración práctica — Dotsy Dots | AXFRA"
+    },
+    {
+      "page": "axfra_bbdd.html",
+      "internal": true
+    },
+    {
+      "page": "environments.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Objetos, vehículos y escenarios | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "styles.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Estilos y tratamientos gráficos | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "poses.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Poses, expresiones y acciones | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "camera.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Cámara, luz y composición | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/hana.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "HANA | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/paulina.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Paulina Dots | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/viktoria.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Viktoria Dots | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/amina.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Amina | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/indira.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Indira | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/captain-dots.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Captain Dots | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/mira.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Mira | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/dotsy.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Dotsy | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "identities/mara.html",
+      "images": 2,
+      "catalogue_matches": 2,
+      "title": "Mara | AXFRA — Axion Frame Tools"
+    },
+    {
+      "page": "metodologia/clasificar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Clasificar | Metodología AXFRA"
+    },
+    {
+      "page": "metodologia/reutilizar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Reutilizar | Metodología AXFRA"
+    },
+    {
+      "page": "metodologia/probar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Probar | Metodología AXFRA"
+    },
+    {
+      "page": "metodologia/observar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Observar | Metodología AXFRA"
+    },
+    {
+      "page": "metodologia/estructurar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Estructurar | Metodología AXFRA"
+    },
+    {
+      "page": "metodologia/ajustar.html",
+      "images": 1,
+      "catalogue_matches": 1,
+      "title": "Ajustar | Metodología AXFRA"
+    }
+  ],
+  "total_public_pages": 23,
+  "total_matched_image_tags": 70
+}
