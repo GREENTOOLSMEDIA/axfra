@@ -1,0 +1,54 @@
+{
+  "id": "AXFRA_dummy_paulina_style",
+  "name": "Paulina-style Dummy Version",
+  "meta": {
+    "brand": "AXFRA",
+    "system": "AXFRA JSON prompt system",
+    "model": "Paulina-style",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "public_test_note": "Public experimental dummy. Yellow articulated mannequin with character-specific proportions. Face, eyes, hair and biometric identity excluded.",
+  "identity_block": {
+    "name": "Paulina-style",
+    "subject_type": "AXFRA female yellow articulated mannequin, not a real human",
+    "age": "20s",
+    "build": "slender athletic feminine build with narrow waist",
+    "proportion_anchor": "slender, 174 cm reference"
+  },
+  "appearance_block": {
+    "dummy_type": "female yellow articulated fashion test dummy",
+    "surface": "vivid matte golden-yellow molded mannequin shell with discreet black mechanical joint seams",
+    "face": "smooth yellow simplified mannequin face with soft smile, simplified graphic dark eyes",
+    "hair": "none; hairless yellow mannequin head"
+  },
+  "apparel_block": {
+    "dress": {
+      "type": "lightweight sheer white gauze or chiffon short dress",
+      "material": "gasa / chiffon",
+      "transparencia": "si",
+      "styling": "soft drape with subtle transparency"
+    }
+  },
+  "headwear_block": {
+    "type": "black baseball cap",
+    "front_embroidery": "AXFRA in red collegiate lettering"
+  },
+  "eyewear_block": {
+    "type": "classic aviator sunglasses",
+    "placement": "resting on top of the baseball cap"
+  },
+  "environment_block": {
+    "type": "studio with large vertical poster/affiche behind subject",
+    "poster": "tropical pool with turquoise water, stone edge and palm foliage",
+    "studio": "white seamless floor, light stands and softboxes visible"
+  },
+  "pose_and_framing_block": {
+    "pose": "standing contrapposto, weight on one leg, hip cocked, one hand on waist",
+    "framing": "full body, centered, head to feet visible"
+  },
+  "constraints_block": {
+    "identity": "mandatory yellow articulated mannequin, no human skin, no real face, no hair",
+    "wardrobe": "keep sheer white gauze dress clearly visible with realistic fabric transparency"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "AXFRA_dummy_indira",
+  "name": "Indira Dummy Version",
+  "meta": {
+    "brand": "AXFRA",
+    "system": "AXFRA JSON prompt system",
+    "model": "Indira",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "public_test_note": "Public experimental dummy. Yellow articulated mannequin with character-specific proportions. Face, eyes, hair and biometric identity excluded.",
+  "identity_block": {
+    "name": "Indira",
+    "subject_type": "AXFRA female yellow articulated mannequin, not a real human",
+    "age": "20s",
+    "build": "medium frame, soft waist, average shoulders",
+    "proportion_anchor": "medium frame, 166 cm reference"
+  },
+  "appearance_block": {
+    "dummy_type": "female yellow articulated fashion test dummy",
+    "surface": "vivid matte golden-yellow molded mannequin shell with discreet black mechanical joint seams",
+    "face": "smooth yellow simplified mannequin face with soft smile, simplified graphic dark eyes",
+    "hair": "none; hairless yellow mannequin head"
+  },
+  "apparel_block": {
+    "top": "open beige linen short-sleeve shirt",
+    "bottom": "brown corduroy pants",
+    "belt": "aged brown leather belt with metallic A buckle"
+  },
+  "headwear_block": {
+    "type": "black baseball cap",
+    "front_embroidery": "AXFRA in red collegiate lettering"
+  },
+  "eyewear_block": {
+    "type": "classic aviator sunglasses",
+    "placement": "resting on top of the baseball cap"
+  },
+  "environment_block": {
+    "type": "studio with large vertical poster/affiche behind subject",
+    "poster": "private jet cabin in daylight, cream leather, walnut trim, oval window with bright cloud field",
+    "studio": "white seamless floor, light stands and softboxes visible"
+  },
+  "pose_and_framing_block": {
+    "pose": "standing contrapposto, weight on one leg, hip cocked, one hand on waist",
+    "framing": "full body, centered, head to feet visible"
+  },
+  "constraints_block": {
+    "identity": "mandatory yellow articulated mannequin, no human skin, no real face, no hair",
+    "wardrobe": "keep open linen shirt and corduroy pants clearly identifiable"
+  }
+}
