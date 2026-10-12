@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_flamingo_standing_pose",
+  "name": "Flamingo Standing Pose",
+  "name_es": "Flamingo Standing Pose",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "casual flamingo pose standing on one leg, the other foot resting against the standing calf, one hand on her hip, the other arm relaxed, playful yet elegant attitude, cinematic 85mm lens, f/2.8, shallow DOF, fashion editorial lighting",
+  "source_index": 7
+}

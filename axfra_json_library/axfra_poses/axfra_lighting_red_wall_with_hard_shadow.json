@@ -1,0 +1,17 @@
+{
+  "id": "AXFRA_lighting_red_wall_with_hard_shadow",
+  "name": "Red Wall With Hard Shadow",
+  "name_es": "Red Wall With Hard Shadow",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "lighting_block": {
+    "source_description": "hay una pared de fondo color roja y una luz fuerte proyecta sombras muy marcadas"
+  },
+  "source_index": 87
+}

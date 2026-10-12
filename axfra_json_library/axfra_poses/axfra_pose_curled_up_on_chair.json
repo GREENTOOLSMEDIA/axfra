@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_curled_up_on_chair",
+  "name": "Curled Up On Chair",
+  "name_es": "Curled Up On Chair",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto sentado en una silla. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara.\n\nPOSE\n\nSujeto sentado en una silla vintage blanca. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara.",
+  "source_index": 89
+}
