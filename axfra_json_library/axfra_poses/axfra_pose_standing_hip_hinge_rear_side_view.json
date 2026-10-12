@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_standing_hip_hinge_rear_side_view",
+  "name": "Standing Hip Hinge Rear Side View",
+  "name_es": "Standing Hip Hinge Rear Side View",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "cuerpo entero, sujeto de pie en bisagra de cadera, peso en la pierna adelantada, la otra un paso atrás con rodillas suaves, cadera atrás, torso flexionado hacia adelante desde la cadera, un brazo doblado a la espalda con la mano cerca de la zona lumbar, el otro brazo colgando relajado junto al muslo, cabeza alineada con el torso y mirada baja, ambos talones en el piso, vista de perfil tres cuartos con ligera lectura de espalda y cadera, cámara a altura de cadera, distancia media",
+  "source_index": 78
+}

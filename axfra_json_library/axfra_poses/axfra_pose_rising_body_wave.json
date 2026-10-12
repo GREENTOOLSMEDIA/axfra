@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_rising_body_wave",
+  "name": "Rising Body Wave",
+  "name_es": "Rising Body Wave",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Sube lentamente el cuerpo haciendo un body wave desde las rodillas hasta la cabeza.",
+  "source_index": 46
+}

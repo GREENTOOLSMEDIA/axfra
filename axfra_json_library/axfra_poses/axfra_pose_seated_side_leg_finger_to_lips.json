@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_seated_side_leg_finger_to_lips",
+  "name": "Seated Side Leg Finger To Lips",
+  "name_es": "Seated Side Leg Finger To Lips",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto sentado en el suelo. Una pierna extendida hacia el lado, rodilla suave. La otra pierna recogida, rodilla abierta, pie cerca del muslo contrario. El peso cae sobre un glúteo. Torso de frente, ligera torsión. Un brazo bajo, mano apoyada sobre el muslo de la pierna recogida. El otro brazo alzado: un dedo toca los labios. Cabeza levemente inclinada, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nFrontal, a la altura del pecho o un poco más alto. Encuadre de cuerpo entero sobre fondo limpio. Distancia media. Sin perfil extremo ni picado fuerte. Ambas piernas y la mano de la boca deben verse.",
+  "source_index": 82
+}

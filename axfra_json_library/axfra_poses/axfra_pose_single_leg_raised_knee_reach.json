@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_single_leg_raised_knee_reach",
+  "name": "Single Leg Raised Knee Reach",
+  "name_es": "Single Leg Raised Knee Reach",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "standing on one leg with the other knee lifted, one arm reaching high above her head and the other arm extended to the side, body aligned on a vertical center line, graceful and controlled expression, cinematic 85mm lens, f/2.8, clean studio lighting, ultra detailed anatomy",
+  "source_index": 19
+}

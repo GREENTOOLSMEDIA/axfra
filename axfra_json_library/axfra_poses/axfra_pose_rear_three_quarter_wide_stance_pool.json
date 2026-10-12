@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_rear_three_quarter_wide_stance_pool",
+  "name": "Rear Three Quarter Wide Stance Pool",
+  "name_es": "Rear Three Quarter Wide Stance Pool",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Exact pose: rear three-quarter view, wide balanced stance, hips shifted with a clear S-curve, torso slightly rotated, one arm reaching forward away from camera, the other arm extended back, weight distributed on both legs. Camera placed 3 meters behind her and slightly to her left, at hip-to-waist height, angled just a few degrees upward, pointing at her lower back and the shifted hip, with the forward arm leaving the frame toward the front. 85mm lens, f/2.8, focus on her back, waist and hip line, luxury pool and palm trees in front of her, harsh tropical sunlight, ultra detailed",
+  "source_index": 11
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_right_wide_side_step",
+  "name": "Right Wide Side Step",
+  "name_es": "Right Wide Side Step",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Paso lateral amplio con pierna derecha → posición más abierta.",
+  "source_index": 28
+}
