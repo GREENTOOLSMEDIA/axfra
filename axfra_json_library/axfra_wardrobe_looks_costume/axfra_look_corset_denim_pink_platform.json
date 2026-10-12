@@ -1,0 +1,71 @@
+{
+  "id": "AXFRA_look_corset_denim_pink_platform",
+  "name": "Pink corset with wide jeans and platform sandals",
+  "name_es": "Corset rosa con jeans anchos y plataformas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.corset.denim.pink.platform",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "y2k, edgy, casual glam",
+  "top": {
+    "type": "strapless corset with lace trim",
+    "material": "satin",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "wide-leg light wash jeans",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "light blue",
+    "pattern": "estrellas y texto rosa"
+  },
+  "accessories": [
+    "studded pink bag",
+    "cross necklace",
+    "platform sandals",
+    "rhinestone belt"
+  ],
+  "source_image": "HQ9Ykg5bIAA4_MM",
+  "original_specification": {
+    "id": "look.corset.denim.pink.platform",
+    "name_es": "Corset rosa con jeans anchos y plataformas",
+    "name_en": "Pink corset with wide jeans and platform sandals",
+    "mood": "y2k, edgy, casual glam",
+    "top": {
+      "type": "strapless corset with lace trim",
+      "material": "satin",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "wide-leg light wash jeans",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "azul claro",
+      "estampado": "estrellas y texto rosa"
+    },
+    "accessories": [
+      "studded pink bag",
+      "cross necklace",
+      "platform sandals",
+      "rhinestone belt"
+    ],
+    "source_image": "HQ9Ykg5bIAA4_MM"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

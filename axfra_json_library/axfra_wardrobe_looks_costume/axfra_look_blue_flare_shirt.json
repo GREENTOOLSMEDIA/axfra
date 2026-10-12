@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_blue_flare_shirt",
+  "name": "Blue Cropped Shirt and Flare Jeans",
+  "name_es": "Camisa cropped y jean flare",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.blue.flare.shirt",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "camisa cropped de manga larga, frunce al centro",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "blue"
+  },
+  "bottom": {
+    "type": "jean flare",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "indigo"
+  },
+  "shoes": {
+    "type": "slingback de punta con lazo",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bandolera de solapa",
+    "material": "leather",
+    "color": "blue"
+  },
+  "original_specification": {
+    "id": "look.blue.flare.shirt",
+    "name_es": "Camisa cropped y jean flare",
+    "top": {
+      "type": "camisa cropped de manga larga, frunce al centro",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "azul"
+    },
+    "bottom": {
+      "type": "jean flare",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "índigo"
+    },
+    "shoes": {
+      "type": "slingback de punta con lazo",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bandolera de solapa",
+      "material": "cuero",
+      "color": "azul"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

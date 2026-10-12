@@ -1,0 +1,97 @@
+{
+  "id": "AXFRA_look_angel_raglan",
+  "name": "Graphic Raglan and Flag Mini Skirt",
+  "name_es": "Raglan gráfico y mini de bandera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.angel.raglan",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "crop raglan, escote en V, mangas oscuras con estrellas, gráfico al frente",
+    "material": "cotton",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white",
+    "sleeve_color": "navy blue",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "mini denim, un lado con estrellas, frayed hem, lace-up",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "indigo"
+  },
+  "shoes": {
+    "type": "bota arrugada a la rodilla, tachas y hebillas",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bolso de solapa con tachas",
+    "material": "leather",
+    "color": "red"
+  },
+  "original_specification": {
+    "id": "look.angel.raglan",
+    "name_es": "Raglan gráfico y mini de bandera",
+    "top": {
+      "type": "crop raglan, escote en V, mangas oscuras con estrellas, gráfico al frente",
+      "material": "algodon",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "blanco",
+      "sleeve_color": "marino",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "mini denim, un lado con estrellas, bajo deshilachado, cordón",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "índigo"
+    },
+    "shoes": {
+      "type": "bota arrugada a la rodilla, tachas y hebillas",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bolso de solapa con tachas",
+      "material": "cuero",
+      "color": "rojo"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

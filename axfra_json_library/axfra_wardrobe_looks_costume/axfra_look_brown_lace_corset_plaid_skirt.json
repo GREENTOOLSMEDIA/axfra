@@ -1,0 +1,63 @@
+{
+  "id": "AXFRA_look_brown_lace_corset_plaid_skirt",
+  "name": "Brown lace-trim corset with pink plaid ruffle skirt",
+  "name_es": "Corset marrón con falda plaid rosa de volados",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.brown.lace.corset.plaid.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "romantic, coquette, vintage",
+  "top": {
+    "type": "off-shoulder long-sleeve corset with lace and bow",
+    "material": "jersey or satin",
+    "color": "brown",
+    "transparency": "no"
+  },
+  "bottom": {
+    "type": "tiered plaid mini skirt with lace hem and chain",
+    "material": "plaid fabric",
+    "color": "rosa y marrón",
+    "finish": "con volados y encaje"
+  },
+  "accessories": [
+    "heart jewelry",
+    "pink mules",
+    "Miss Dior perfume"
+  ],
+  "source_image": "HQ-ubnaXQAAMwOa",
+  "original_specification": {
+    "id": "look.brown.lace.corset.plaid.skirt",
+    "name_es": "Corset marrón con falda plaid rosa de volados",
+    "name_en": "Brown lace-trim corset with pink plaid ruffle skirt",
+    "mood": "romantic, coquette, vintage",
+    "top": {
+      "type": "off-shoulder long-sleeve corset with lace and bow",
+      "material": "jersey or satin",
+      "color": "marrón",
+      "transparencia": "no"
+    },
+    "bottom": {
+      "type": "tiered plaid mini skirt with lace hem and chain",
+      "material": "plaid fabric",
+      "color": "rosa y marrón",
+      "acabado": "con volados y encaje"
+    },
+    "accessories": [
+      "heart jewelry",
+      "pink mules",
+      "Miss Dior perfume"
+    ],
+    "source_image": "HQ-ubnaXQAAMwOa"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

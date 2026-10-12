@@ -1,0 +1,63 @@
+{
+  "id": "AXFRA_look_golf_pink_polo_set",
+  "name": "Pink golf polo with white pleated skirt",
+  "name_es": "Polo rosa con falda plisada blanca de golf",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.golf.pink.polo.set",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "preppy, sporty, clean",
+  "top": {
+    "type": "cropped polo shirt",
+    "material": "knit",
+    "color": "pink",
+    "pattern": "crest"
+  },
+  "bottom": {
+    "type": "white pleated mini skirt",
+    "material": "knit",
+    "color": "white"
+  },
+  "accessories": [
+    "Titleist visor",
+    "pink golf bag",
+    "sneakers",
+    "pearls"
+  ],
+  "source_image": "HQ-D-VpWwAA82Ao",
+  "original_specification": {
+    "id": "look.golf.pink.polo.set",
+    "name_es": "Polo rosa con falda plisada blanca de golf",
+    "name_en": "Pink golf polo with white pleated skirt",
+    "mood": "preppy, sporty, clean",
+    "top": {
+      "type": "cropped polo shirt",
+      "material": "punto",
+      "color": "rosa",
+      "estampado": "crest"
+    },
+    "bottom": {
+      "type": "white pleated mini skirt",
+      "material": "punto",
+      "color": "blanco"
+    },
+    "accessories": [
+      "Titleist visor",
+      "pink golf bag",
+      "sneakers",
+      "pearls"
+    ],
+    "source_image": "HQ-D-VpWwAA82Ao"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

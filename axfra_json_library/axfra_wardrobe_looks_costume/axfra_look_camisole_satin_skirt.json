@@ -1,0 +1,69 @@
+{
+  "id": "AXFRA_look_camisole_satin_skirt",
+  "name": "Cream lace camisole with pink satin mini skirt",
+  "name_es": "Camisola crema con falda rosa satén",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.camisole.satin.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "coquette, romantic, soft",
+  "top": {
+    "type": "satin camisole with lace trim",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "cream"
+  },
+  "bottom": {
+    "type": "satin mini skirt",
+    "material": "satin",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "accessories": [
+    "large satin bow",
+    "pearl earrings",
+    "patent bag",
+    "bow heels"
+  ],
+  "source_image": "HQ9yCsAWoAADEC_",
+  "original_specification": {
+    "id": "look.camisole.satin.skirt",
+    "name_es": "Camisola crema con falda rosa satén",
+    "name_en": "Cream lace camisole with pink satin mini skirt",
+    "mood": "coquette, romantic, soft",
+    "top": {
+      "type": "satin camisole with lace trim",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "crema"
+    },
+    "bottom": {
+      "type": "satin mini skirt",
+      "material": "satin",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "accessories": [
+      "large satin bow",
+      "pearl earrings",
+      "patent bag",
+      "bow heels"
+    ],
+    "source_image": "HQ9yCsAWoAADEC_"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

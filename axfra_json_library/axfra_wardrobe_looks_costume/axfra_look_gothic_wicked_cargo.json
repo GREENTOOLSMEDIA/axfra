@@ -1,0 +1,63 @@
+{
+  "id": "AXFRA_look_gothic_wicked_cargo",
+  "name": "Wicked graphic top with gothic cargo pants",
+  "name_es": "Top Wicked con pantalones cargo góticos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.gothic.wicked.cargo",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "goth, punk, edgy",
+  "top": {
+    "type": "graphic corset-style crop",
+    "material": "printed fabric",
+    "color": "pink and black",
+    "pattern": "Wicked skull"
+  },
+  "bottom": {
+    "type": "studded cargo pants",
+    "material": "denim",
+    "color": "black",
+    "finish": "envejecido con tachas"
+  },
+  "accessories": [
+    "studded pink bag",
+    "platform boots",
+    "cross chains"
+  ],
+  "source_image": "HQ9TAjhbYAEiymH",
+  "original_specification": {
+    "id": "look.gothic.wicked.cargo",
+    "name_es": "Top Wicked con pantalones cargo góticos",
+    "name_en": "Wicked graphic top with gothic cargo pants",
+    "mood": "goth, punk, edgy",
+    "top": {
+      "type": "graphic corset-style crop",
+      "material": "printed fabric",
+      "color": "rosa y negro",
+      "estampado": "Wicked skull"
+    },
+    "bottom": {
+      "type": "studded cargo pants",
+      "material": "denim",
+      "color": "negro",
+      "acabado": "envejecido con tachas"
+    },
+    "accessories": [
+      "studded pink bag",
+      "platform boots",
+      "cross chains"
+    ],
+    "source_image": "HQ9TAjhbYAEiymH"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}
