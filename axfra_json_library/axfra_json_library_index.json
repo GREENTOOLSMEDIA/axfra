@@ -8,16 +8,18 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 200,
+  "total_json": 333,
   "categories": {
     "axfra_apparel/axfra_blouses": 12,
     "axfra_apparel/axfra_lingerie": 12,
     "axfra_dummy_version": 8,
+    "axfra_facial_expressions": 12,
     "axfra_graphic_styles": 39,
     "axfra_hair_styles": 12,
     "axfra_instruments": 5,
     "axfra_motion": 7,
-    "axfra_poses": 105
+    "axfra_poses": 105,
+    "axfra_wardrobe_looks_costume": 121
   },
   "files": [
     {
@@ -275,6 +277,102 @@
       "category": "axfra_dummy_version",
       "path": "axfra_dummy_version/axfra_viktoria_dots_dummy_version.json",
       "url": "https://axfra.com/axfra_json_library/axfra_dummy_version/axfra_viktoria_dots_dummy_version.json"
+    },
+    {
+      "id": "AXFRA_expression_anger",
+      "name": "Anger",
+      "name_es": "Enojo",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_anger.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_anger.json"
+    },
+    {
+      "id": "AXFRA_expression_big_smile",
+      "name": "Big Smile",
+      "name_es": "Sonrisa amplia",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_big_smile.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_big_smile.json"
+    },
+    {
+      "id": "AXFRA_expression_confusion",
+      "name": "Confusion",
+      "name_es": "Confusión",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_confusion.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_confusion.json"
+    },
+    {
+      "id": "AXFRA_expression_disgust",
+      "name": "Disgust",
+      "name_es": "Desagrado",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_disgust.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_disgust.json"
+    },
+    {
+      "id": "AXFRA_expression_fear",
+      "name": "Fear",
+      "name_es": "Miedo",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_fear.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_fear.json"
+    },
+    {
+      "id": "AXFRA_expression_laughter",
+      "name": "Laughter",
+      "name_es": "Carcajada",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_laughter.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_laughter.json"
+    },
+    {
+      "id": "AXFRA_expression_neutral",
+      "name": "Neutral",
+      "name_es": "Neutral",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_neutral.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_neutral.json"
+    },
+    {
+      "id": "AXFRA_expression_sadness",
+      "name": "Sadness",
+      "name_es": "Tristeza",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_sadness.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_sadness.json"
+    },
+    {
+      "id": "AXFRA_expression_skepticism",
+      "name": "Skepticism",
+      "name_es": "Escepticismo",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_skepticism.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_skepticism.json"
+    },
+    {
+      "id": "AXFRA_expression_soft_smile",
+      "name": "Soft Smile",
+      "name_es": "Sonrisa suave",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_soft_smile.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_soft_smile.json"
+    },
+    {
+      "id": "AXFRA_expression_surprise",
+      "name": "Surprise",
+      "name_es": "Sorpresa",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_surprise.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_surprise.json"
+    },
+    {
+      "id": "AXFRA_expression_wink",
+      "name": "Wink",
+      "name_es": "Guiño",
+      "category": "axfra_facial_expressions",
+      "path": "axfra_facial_expressions/axfra_expression_wink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_facial_expressions/axfra_expression_wink.json"
     },
     {
       "id": "AXFRA_pose_arm_reaching_toward_lens",
@@ -1619,6 +1717,974 @@
       "category": "axfra_poses",
       "path": "axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json",
       "url": "https://axfra.com/axfra_json_library/axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json"
+    },
+    {
+      "id": "AXFRA_costume_crest_circular",
+      "name": "Circular Ear Crest Full Armor Costume",
+      "name_es": "Cresta con oreja circular, traje completo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_costume_crest_circular.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_costume_crest_circular.json"
+    },
+    {
+      "id": "AXFRA_look_angel_raglan",
+      "name": "Graphic Raglan and Flag Mini Skirt",
+      "name_es": "Raglan gráfico y mini de bandera",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_angel_raglan.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_angel_raglan.json"
+    },
+    {
+      "id": "AXFRA_look_baddie_varsity_skirt",
+      "name": "Pink Baddie varsity jacket with pleated skirt",
+      "name_es": "Varsity rosa Baddie con falda plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_baddie_varsity_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_baddie_varsity_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_beach_crochet",
+      "name": "Crochet Beach Cover-Up and Bikini",
+      "name_es": "Cover de crochet y bikini",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_beach_crochet.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_beach_crochet.json"
+    },
+    {
+      "id": "AXFRA_look_beach_knit_coverup_bikini",
+      "name": "Pink open-knit cover-up with cream bikini",
+      "name_es": "Cover-up de punto rosa con bikini crema",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_beach_knit_coverup_bikini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_beach_knit_coverup_bikini.json"
+    },
+    {
+      "id": "AXFRA_look_black_babygirl_cutout",
+      "name": "Black Babygirl Cut-Out Set",
+      "name_es": "Set negro 'BABYGIRL' cut-out",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_babygirl_cutout.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_babygirl_cutout.json"
+    },
+    {
+      "id": "AXFRA_look_black_cutout_mini",
+      "name": "Black Cut-Out Mini Set",
+      "name_es": "Set negro cut-out mini",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_cutout_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_cutout_mini.json"
+    },
+    {
+      "id": "AXFRA_look_black_offshoulder_flare",
+      "name": "Black Off-Shoulder and Flare Jeans",
+      "name_es": "Off shoulder y jean flare",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_offshoulder_flare.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_offshoulder_flare.json"
+    },
+    {
+      "id": "AXFRA_look_black_ruched",
+      "name": "Black Ruched Mini Dress",
+      "name_es": "Mini drapeado negro",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_ruched.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_ruched.json"
+    },
+    {
+      "id": "AXFRA_look_black_satin_gown",
+      "name": "Black Satin Evening Gown",
+      "name_es": "Vestido largo de satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_satin_gown.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_satin_gown.json"
+    },
+    {
+      "id": "AXFRA_look_black_velvet_lace",
+      "name": "Black Velvet and Lace Mini",
+      "name_es": "Mini de terciopelo y encaje",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_black_velvet_lace.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_black_velvet_lace.json"
+    },
+    {
+      "id": "AXFRA_look_blue_butterfly",
+      "name": "Blue Butterfly Crop Top and Denim Mini",
+      "name_es": "Crop de mariposa y mini denim",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_blue_butterfly.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_blue_butterfly.json"
+    },
+    {
+      "id": "AXFRA_look_blue_flare_shirt",
+      "name": "Blue Cropped Shirt and Flare Jeans",
+      "name_es": "Camisa cropped y jean flare",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_blue_flare_shirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_blue_flare_shirt.json"
+    },
+    {
+      "id": "AXFRA_look_blue_holo_chain",
+      "name": "Blue Holographic Chain Set",
+      "name_es": "Set holográfico con cadenas",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_blue_holo_chain.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_blue_holo_chain.json"
+    },
+    {
+      "id": "AXFRA_look_brown_corset_shorts",
+      "name": "Brown Leather Corset and Shorts",
+      "name_es": "Corset de cuero y short",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_brown_corset_shorts.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_brown_corset_shorts.json"
+    },
+    {
+      "id": "AXFRA_look_brown_lace_corset_plaid_skirt",
+      "name": "Brown lace-trim corset with pink plaid ruffle skirt",
+      "name_es": "Corset marrón con falda plaid rosa de volados",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_brown_lace_corset_plaid_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_brown_lace_corset_plaid_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_brown_leather_pleated",
+      "name": "Brown leather blazer with distressed pleated skirt",
+      "name_es": "Blazer de cuero marrón con falda plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_brown_leather_pleated.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_brown_leather_pleated.json"
+    },
+    {
+      "id": "AXFRA_look_brown_offshoulder_blackjeans",
+      "name": "Brown Off-Shoulder and Black Jeans",
+      "name_es": "Off shoulder y jean negro",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_brown_offshoulder_blackjeans.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_brown_offshoulder_blackjeans.json"
+    },
+    {
+      "id": "AXFRA_look_burgundy_leather_mini",
+      "name": "Burgundy Top and Black Leather Mini",
+      "name_es": "Top burdeos + mini cuero negro",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_burgundy_leather_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_burgundy_leather_mini.json"
+    },
+    {
+      "id": "AXFRA_look_burgundy_offshoulder",
+      "name": "Burgundy Off-Shoulder and Pleated Mini",
+      "name_es": "Off shoulder y mini plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_burgundy_offshoulder.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_burgundy_offshoulder.json"
+    },
+    {
+      "id": "AXFRA_look_burgundy_pleat",
+      "name": "Burgundy Crop and Pleated Mini",
+      "name_es": "Crop y mini plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_burgundy_pleat.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_burgundy_pleat.json"
+    },
+    {
+      "id": "AXFRA_look_burgundy_satin_mini",
+      "name": "Burgundy structured satin mini dress",
+      "name_es": "Vestido mini burdeos estructurado",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_burgundy_satin_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_burgundy_satin_mini.json"
+    },
+    {
+      "id": "AXFRA_look_camisole_satin_skirt",
+      "name": "Cream lace camisole with pink satin mini skirt",
+      "name_es": "Camisola crema con falda rosa satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_camisole_satin_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_camisole_satin_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_corset_denim_pink_platform",
+      "name": "Pink corset with wide jeans and platform sandals",
+      "name_es": "Corset rosa con jeans anchos y plataformas",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_corset_denim_pink_platform.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_corset_denim_pink_platform.json"
+    },
+    {
+      "id": "AXFRA_look_cream_lace_corset",
+      "name": "Ivory Lace Corset and Satin Mini Skirt",
+      "name_es": "Corset de encaje y mini de satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_cream_lace_corset.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_cream_lace_corset.json"
+    },
+    {
+      "id": "AXFRA_look_denim_corset_pink_lace_skirt",
+      "name": "Denim corset with pink lace-trim pleated skirt",
+      "name_es": "Corset de denim con falda plisada y encaje rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_denim_corset_pink_lace_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_denim_corset_pink_lace_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_denim_mermaid",
+      "name": "Denim Mermaid Gown",
+      "name_es": "Vestido denim de sirena",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_denim_mermaid.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_denim_mermaid.json"
+    },
+    {
+      "id": "AXFRA_look_fishnet_red",
+      "name": "White Mesh and Red Pleated Mini",
+      "name_es": "Malla y mini plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_fishnet_red.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_fishnet_red.json"
+    },
+    {
+      "id": "AXFRA_look_golf_pink_polo_set",
+      "name": "Pink golf polo with white pleated skirt",
+      "name_es": "Polo rosa con falda plisada blanca de golf",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_golf_pink_polo_set.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_golf_pink_polo_set.json"
+    },
+    {
+      "id": "AXFRA_look_golf_white",
+      "name": "White Golf Polo and Pleated Skirt",
+      "name_es": "Polo y falda plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_golf_white.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_golf_white.json"
+    },
+    {
+      "id": "AXFRA_look_goth_flame_baby_skirt",
+      "name": "Flame top with Baby gothic mini skirt",
+      "name_es": "Top de llamas con falda Baby gótica",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_goth_flame_baby_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_goth_flame_baby_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_goth_lace_corset_dress",
+      "name": "Black gothic lace corset dress with pink ribbons",
+      "name_es": "Vestido corset gótico negro con lazos rosas",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_goth_lace_corset_dress.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_goth_lace_corset_dress.json"
+    },
+    {
+      "id": "AXFRA_look_gothic_lace_black_pink",
+      "name": "Black and Pink Gothic Lace Corset Set",
+      "name_es": "Corsé encaje negro con rosa gótico",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gothic_lace_black_pink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gothic_lace_black_pink.json"
+    },
+    {
+      "id": "AXFRA_look_gothic_wicked_cargo",
+      "name": "Wicked graphic top with gothic cargo pants",
+      "name_es": "Top Wicked con pantalones cargo góticos",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gothic_wicked_cargo.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gothic_wicked_cargo.json"
+    },
+    {
+      "id": "AXFRA_look_gown_pink_corset_satin",
+      "name": "Pink satin corset gown with train",
+      "name_es": "Vestido corset rosa satén con cola",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gown_pink_corset_satin.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gown_pink_corset_satin.json"
+    },
+    {
+      "id": "AXFRA_look_gown_ruched_satin_pink",
+      "name": "Pink ruched satin maxi gown with lace-up back",
+      "name_es": "Vestido largo rosa drapeado con cordones",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gown_ruched_satin_pink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gown_ruched_satin_pink.json"
+    },
+    {
+      "id": "AXFRA_look_gown_sequin_pink_mermaid",
+      "name": "Pink sequin mermaid gown",
+      "name_es": "Vestido sirena rosa de lentejuelas",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gown_sequin_pink_mermaid.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gown_sequin_pink_mermaid.json"
+    },
+    {
+      "id": "AXFRA_look_gym_brown",
+      "name": "Brown Workout Set",
+      "name_es": "Set de entrenamiento",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gym_brown.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gym_brown.json"
+    },
+    {
+      "id": "AXFRA_look_gym_pink_full",
+      "name": "Full Pink Gym Set",
+      "name_es": "Set gym rosa completo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_gym_pink_full.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_gym_pink_full.json"
+    },
+    {
+      "id": "AXFRA_look_hello_kitty_mesh_set",
+      "name": "Pink Hello Kitty mesh set",
+      "name_es": "Conjunto de malla Hello Kitty rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_hello_kitty_mesh_set.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_hello_kitty_mesh_set.json"
+    },
+    {
+      "id": "AXFRA_look_hellokitty",
+      "name": "Pink Graphic Tee and Pleated Mini",
+      "name_es": "Tee rosa y mini plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_hellokitty.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_hellokitty.json"
+    },
+    {
+      "id": "AXFRA_look_juicy_white_pink_shorts",
+      "name": "White Juicy tank with distressed pink shorts",
+      "name_es": "Tank Juicy blanco con shorts rosa rotos",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_juicy_white_pink_shorts.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_juicy_white_pink_shorts.json"
+    },
+    {
+      "id": "AXFRA_look_lace_bat_leather",
+      "name": "Bat Lace Top and Leather Mini",
+      "name_es": "Top encaje murciélago + mini cuero",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_lace_bat_leather.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_lace_bat_leather.json"
+    },
+    {
+      "id": "AXFRA_look_lace_corset_pleated_skirt",
+      "name": "Pink lace corset with pleated mini skirt",
+      "name_es": "Corset de encaje rosa con falda plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_lace_corset_pleated_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_lace_corset_pleated_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_mesh_white_pants_bikini",
+      "name": "White open-knit pants with black bikini",
+      "name_es": "Pantalón de malla blanca con bikini negro",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_mesh_white_pants_bikini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_mesh_white_pants_bikini.json"
+    },
+    {
+      "id": "AXFRA_look_metallic_pink_fur_cargo",
+      "name": "Pink fur jacket with metallic bra top and silver cargo skirt",
+      "name_es": "Chaqueta de pelo rosa con top metálico y falda cargo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_metallic_pink_fur_cargo.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_metallic_pink_fur_cargo.json"
+    },
+    {
+      "id": "AXFRA_look_midi_pink_cardigan",
+      "name": "Pink Midi Dress with Cream Cardigan",
+      "name_es": "Vestido midi rosa + cardigan crema",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_midi_pink_cardigan.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_midi_pink_cardigan.json"
+    },
+    {
+      "id": "AXFRA_look_offshoulder_cargo_pink",
+      "name": "Pink Off-Shoulder Top and Cargo Pants",
+      "name_es": "Top off-shoulder gráfico + cargo rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_offshoulder_cargo_pink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_offshoulder_cargo_pink.json"
+    },
+    {
+      "id": "AXFRA_look_offshoulder_ribbed_jeans",
+      "name": "Black off-shoulder ribbed top with wide jeans",
+      "name_es": "Top off-shoulder negro con jeans anchos",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_offshoulder_ribbed_jeans.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_offshoulder_ribbed_jeans.json"
+    },
+    {
+      "id": "AXFRA_look_pajama_champagne",
+      "name": "Champagne Feather-Trim Pajamas",
+      "name_es": "Pijama de satén con pluma",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pajama_champagne.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pajama_champagne.json"
+    },
+    {
+      "id": "AXFRA_look_pink_beaded_mermaid",
+      "name": "Pink Beaded Mermaid Gown",
+      "name_es": "Vestido de sirena bordado",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_beaded_mermaid.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_beaded_mermaid.json"
+    },
+    {
+      "id": "AXFRA_look_pink_bomber_cargo",
+      "name": "Pink bomber jacket with cargo pants",
+      "name_es": "Bomber rosa con pantalones cargo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_bomber_cargo.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_bomber_cargo.json"
+    },
+    {
+      "id": "AXFRA_look_pink_corset_white_lace",
+      "name": "Pink Corset and White Lace Skirt",
+      "name_es": "Corsé rosa + falda encaje blanca",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_corset_white_lace.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_corset_white_lace.json"
+    },
+    {
+      "id": "AXFRA_look_pink_denim_corset",
+      "name": "Pink Denim Corset and Mini",
+      "name_es": "Corset y mini denim rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_denim_corset.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_denim_corset.json"
+    },
+    {
+      "id": "AXFRA_look_pink_denim_jacket_skirt",
+      "name": "Pink denim jacket and skirt with monogram tank",
+      "name_es": "Chaqueta y falda de denim rosa con tank monograma",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_denim_jacket_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_denim_jacket_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feather_pajama",
+      "name": "Pink Feather-Trim Satin Pajamas",
+      "name_es": "Pijama satén rosa con plumas",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feather_pajama.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feather_pajama.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_01",
+      "name": "Pink satin pajama set + matching robe with feather trim",
+      "name_es": "Pink satin pajama set + matching robe with feather trim",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_01.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_01.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_02",
+      "name": "Pink lace corset + matching lace mini skirt with bows",
+      "name_es": "Pink lace corset + matching lace mini skirt with bows",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_02.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_02.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_03",
+      "name": "Black leather-look strapless mini dress with pink panels and crosses",
+      "name_es": "Black leather-look strapless mini dress with pink panels and crosses",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_03.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_03.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_04",
+      "name": "Pink satin mini dress covered in large bows",
+      "name_es": "Pink satin mini dress covered in large bows",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_04.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_04.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_05",
+      "name": "Pink cargo pants + white tank top",
+      "name_es": "Pink cargo pants + white tank top",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_05.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_05.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_06",
+      "name": "Black leather jacket + pink metallic corset + distressed black shorts",
+      "name_es": "Black leather jacket + pink metallic corset + distressed black shorts",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_06.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_06.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_07",
+      "name": "Pink floral mini dress with ruffles and side ties",
+      "name_es": "Pink floral mini dress with ruffles and side ties",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_07.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_07.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_08",
+      "name": "Hot pink metallic bustier + silver metallic mini skirt",
+      "name_es": "Hot pink metallic bustier + silver metallic mini skirt",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_08.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_08.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_09",
+      "name": "Denim strapless gown with crystal embellishments and high slit",
+      "name_es": "Denim strapless gown with crystal embellishments and high slit",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_09.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_09.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_10",
+      "name": "Pink lace robe + matching bra and thong",
+      "name_es": "Pink lace robe + matching bra and thong",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_10.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_10.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_11",
+      "name": "Black and pink gothic ballgown with lace overlay",
+      "name_es": "Black and pink gothic ballgown with lace overlay",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_11.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_11.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_12",
+      "name": "Pink Miu Miu polo + white pleated skirt",
+      "name_es": "Pink Miu Miu polo + white pleated skirt",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_12.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_12.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_13",
+      "name": "Burgundy off-shoulder bodysuit + grey pleated mini skirt",
+      "name_es": "Burgundy off-shoulder bodysuit + grey pleated mini skirt",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_13.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_13.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_14",
+      "name": "White halter crop + light-wash jeans",
+      "name_es": "White halter crop + light-wash jeans",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_14.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_14.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_15",
+      "name": "Pink long-sleeve crop + blue jeans with cat embroidery",
+      "name_es": "Pink long-sleeve crop + blue jeans with cat embroidery",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_15.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_15.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_16",
+      "name": "Black corset top + black jeans",
+      "name_es": "Black corset top + black jeans",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_16.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_16.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_17",
+      "name": "Black lace-up corset + pink-washed distressed denim shorts",
+      "name_es": "Black lace-up corset + pink-washed distressed denim shorts",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_17.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_17.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_18",
+      "name": "Pink satin corset + denim mini skirt + black leather jacket",
+      "name_es": "Pink satin corset + denim mini skirt + black leather jacket",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_18.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_18.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_19",
+      "name": "Pink satin bustier + draped asymmetrical skirt with train",
+      "name_es": "Pink satin bustier + draped asymmetrical skirt with train",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_19.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_19.json"
+    },
+    {
+      "id": "AXFRA_look_pink_feminine_flat_lay_20",
+      "name": "Burgundy corset top + matching mini skirt",
+      "name_es": "Burgundy corset top + matching mini skirt",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_20.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_feminine_flat_lay_20.json"
+    },
+    {
+      "id": "AXFRA_look_pink_fur_ruched",
+      "name": "Pink Fur Coat and Ruched Mini",
+      "name_es": "Abrigo de pelo y mini drapeado",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_fur_ruched.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_fur_ruched.json"
+    },
+    {
+      "id": "AXFRA_look_pink_lace_corset_jeans",
+      "name": "Pink Lace Corset and Wide-Leg Jeans",
+      "name_es": "Corset de encaje y jean ancho",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_lace_corset_jeans.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_lace_corset_jeans.json"
+    },
+    {
+      "id": "AXFRA_look_pink_laceup_mini",
+      "name": "Pink Lace-Up Mini Dress",
+      "name_es": "Mini de encaje con cordón",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_laceup_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_laceup_mini.json"
+    },
+    {
+      "id": "AXFRA_look_pink_leather_biker",
+      "name": "Fuchsia Leather Biker Set",
+      "name_es": "Biker corta y mini de cuero",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_leather_biker.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_leather_biker.json"
+    },
+    {
+      "id": "AXFRA_look_pink_leather_jacket_set",
+      "name": "Pink Leather Jacket, Tank and Mini",
+      "name_es": "Chaqueta, tank y mini de cuero",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_leather_jacket_set.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_leather_jacket_set.json"
+    },
+    {
+      "id": "AXFRA_look_pink_lingerie_robe",
+      "name": "Pink Lingerie and Satin Robe",
+      "name_es": "Set lencería rosa + bata satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_lingerie_robe.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_lingerie_robe.json"
+    },
+    {
+      "id": "AXFRA_look_pink_metallic_cowboy",
+      "name": "Pink Metallic Halter and Cowboy Shorts",
+      "name_es": "Halter metálico y short",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_metallic_cowboy.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_metallic_cowboy.json"
+    },
+    {
+      "id": "AXFRA_look_pink_metallic_mini",
+      "name": "Pink Metallic Mini Dress",
+      "name_es": "Mini metálico",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_metallic_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_metallic_mini.json"
+    },
+    {
+      "id": "AXFRA_look_pink_pajama_robe",
+      "name": "Pink Satin Pajamas and Robe",
+      "name_es": "Pijama y bata de satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_pajama_robe.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_pajama_robe.json"
+    },
+    {
+      "id": "AXFRA_look_pink_rib_lounge",
+      "name": "Pink Ribbed Lounge Set",
+      "name_es": "Set ribbed rosa lounge",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_rib_lounge.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_rib_lounge.json"
+    },
+    {
+      "id": "AXFRA_look_pink_rib_pleat",
+      "name": "Pink Ribbed Crop and Pleated Mini",
+      "name_es": "Crop de canalé y mini plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_rib_pleat.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_rib_pleat.json"
+    },
+    {
+      "id": "AXFRA_look_pink_rock_biker",
+      "name": "Pink Biker Jacket, Tee and Denim Mini",
+      "name_es": "Biker, tee y mini denim",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_rock_biker.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_rock_biker.json"
+    },
+    {
+      "id": "AXFRA_look_pink_ruched_lace_mini",
+      "name": "Pink Ruched Lace Mini",
+      "name_es": "Mini rosa fruncido con encaje",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_ruched_lace_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_ruched_lace_mini.json"
+    },
+    {
+      "id": "AXFRA_look_pink_ruffle_corset",
+      "name": "Pink Corset and Ruffle Mini",
+      "name_es": "Corset y mini de volantes",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_ruffle_corset.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_ruffle_corset.json"
+    },
+    {
+      "id": "AXFRA_look_pink_satin_corset_black_ruffle",
+      "name": "Pink satin corset with black tiered ruffle skirt",
+      "name_es": "Corset rosa satén con falda negra de volados",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_satin_corset_black_ruffle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_satin_corset_black_ruffle.json"
+    },
+    {
+      "id": "AXFRA_look_pink_satin_rhinestone",
+      "name": "Pink Satin Rhinestone Mini",
+      "name_es": "Mini de satén con strass",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_satin_rhinestone.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_satin_rhinestone.json"
+    },
+    {
+      "id": "AXFRA_look_pink_sequin_bustier",
+      "name": "Pink Sequin Bustier and Ruched Mini",
+      "name_es": "Bustier de lentejuela y mini drapeada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_sequin_bustier.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_sequin_bustier.json"
+    },
+    {
+      "id": "AXFRA_look_pink_sequin_metallic",
+      "name": "Pink Sequin Mesh and Metallic Mini",
+      "name_es": "Top malla lentejuelas + mini metálico",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_sequin_metallic.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_sequin_metallic.json"
+    },
+    {
+      "id": "AXFRA_look_pink_sheer_leather",
+      "name": "Sheer Red Shirt and Fuchsia Leather Mini",
+      "name_es": "Camisola, camisa transparente y mini",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_sheer_leather.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_sheer_leather.json"
+    },
+    {
+      "id": "AXFRA_look_pink_suede_cowboy",
+      "name": "Pink Suede Mini and Cowboy Boots",
+      "name_es": "Vestido de cordón y bota cowboy",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_suede_cowboy.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_suede_cowboy.json"
+    },
+    {
+      "id": "AXFRA_look_pink_tank_wide",
+      "name": "Pink Tank and Wide-Leg Pants",
+      "name_es": "Tank y pantalón ancho",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_tank_wide.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_tank_wide.json"
+    },
+    {
+      "id": "AXFRA_look_pink_tank_wide_jeans",
+      "name": "Pink tank with wide jeans and shoulder bag",
+      "name_es": "Tank rosa con jeans anchos y bolso",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_tank_wide_jeans.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_tank_wide_jeans.json"
+    },
+    {
+      "id": "AXFRA_look_pink_tennis",
+      "name": "Pink Tennis Dress",
+      "name_es": "Vestido deportivo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_tennis.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_tennis.json"
+    },
+    {
+      "id": "AXFRA_look_pink_wrap_bow_skirt",
+      "name": "Pink Wrap Top and Satin Bow Skirt",
+      "name_es": "Top wrap rosa + falda satén lazo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pink_wrap_bow_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pink_wrap_bow_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_pool_pink_halter_pants",
+      "name": "Pink halter top with wide-leg pants",
+      "name_es": "Top halter rosa con pantalón palazzo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_pool_pink_halter_pants.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_pool_pink_halter_pants.json"
+    },
+    {
+      "id": "AXFRA_look_racer_pink_jacket_dress",
+      "name": "Pink racer jacket with black ruched dress",
+      "name_es": "Chaqueta racer rosa con vestido negro",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_racer_pink_jacket_dress.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_racer_pink_jacket_dress.json"
+    },
+    {
+      "id": "AXFRA_look_rhinestone_holo",
+      "name": "Rhinestone Bustier and Holographic Mini",
+      "name_es": "Bustier de strass y mini holográfica",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_rhinestone_holo.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_rhinestone_holo.json"
+    },
+    {
+      "id": "AXFRA_look_rock_baby_leather_jacket",
+      "name": "Rock Baby leather jacket with pink metallic mini",
+      "name_es": "Chaqueta Rock Baby con falda metálica rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_rock_baby_leather_jacket.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_rock_baby_leather_jacket.json"
+    },
+    {
+      "id": "AXFRA_look_rock_leather",
+      "name": "Graphic Tee and Leather Mini",
+      "name_es": "Tee gráfico y mini de cuero",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_rock_leather.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_rock_leather.json"
+    },
+    {
+      "id": "AXFRA_look_satin_bow_blue",
+      "name": "Blue Satin Bow Mini Dress",
+      "name_es": "Mini de satén con lazos",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_satin_bow_blue.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_satin_bow_blue.json"
+    },
+    {
+      "id": "AXFRA_look_satin_cowl_mini",
+      "name": "Pink Satin Cowl Neck Mini",
+      "name_es": "Mini satén cowl neck rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_satin_cowl_mini.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_satin_cowl_mini.json"
+    },
+    {
+      "id": "AXFRA_look_satin_mermaid_dusty",
+      "name": "Dusty Pink Satin Mermaid Dress",
+      "name_es": "Vestido sirena satén polvo",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_satin_mermaid_dusty.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_satin_mermaid_dusty.json"
+    },
+    {
+      "id": "AXFRA_look_tennis_pink_nike_set",
+      "name": "Pink Nike tennis top with white pleated skirt",
+      "name_es": "Polo rosa Nike con falda plisada blanca",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_tennis_pink_nike_set.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_tennis_pink_nike_set.json"
+    },
+    {
+      "id": "AXFRA_look_travel_pink_hoodie_sweats",
+      "name": "Pink cropped hoodie with grey sweatpants",
+      "name_es": "Hoodie rosa cropped con sweatpants grises",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_travel_pink_hoodie_sweats.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_travel_pink_hoodie_sweats.json"
+    },
+    {
+      "id": "AXFRA_look_tulle_corset_dress",
+      "name": "Pink corset dress with tulle skirt",
+      "name_es": "Vestido corset rosa con falda de tul",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_tulle_corset_dress.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_tulle_corset_dress.json"
+    },
+    {
+      "id": "AXFRA_look_tweed_corset_pleated",
+      "name": "Pink tweed jacket with corset and pleated skirt",
+      "name_es": "Chaqueta tweed rosa con corset y falda plisada",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_tweed_corset_pleated.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_tweed_corset_pleated.json"
+    },
+    {
+      "id": "AXFRA_look_varsity_pink_m",
+      "name": "Pink Varsity Jacket with M Letter",
+      "name_es": "Varsity rosa con letra M",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_varsity_pink_m.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_varsity_pink_m.json"
+    },
+    {
+      "id": "AXFRA_look_velour_travel_pink",
+      "name": "Pink Velour Travel Tracksuit",
+      "name_es": "Chándal de terciopelo rosa de viaje",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_velour_travel_pink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_velour_travel_pink.json"
+    },
+    {
+      "id": "AXFRA_look_velvet_corset_heart_bag",
+      "name": "Black velvet corset dress with pink lace",
+      "name_es": "Corset de terciopelo negro con detalles rosa",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_velvet_corset_heart_bag.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_velvet_corset_heart_bag.json"
+    },
+    {
+      "id": "AXFRA_look_velvet_gothic_pink",
+      "name": "Pink Gothic Velvet Corset",
+      "name_es": "Corsé terciopelo rosa gótico",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_velvet_gothic_pink.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_velvet_gothic_pink.json"
+    },
+    {
+      "id": "AXFRA_look_white_corset_pleat",
+      "name": "White Corset and Pleated Mini",
+      "name_es": "Corset y mini plisada blancos",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_white_corset_pleat.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_white_corset_pleat.json"
+    },
+    {
+      "id": "AXFRA_look_white_fishnet_red_ruffle",
+      "name": "White Mesh, Pink Top and Red Ruffle Mini",
+      "name_es": "Malla, top y mini de volante",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_white_fishnet_red_ruffle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_white_fishnet_red_ruffle.json"
+    },
+    {
+      "id": "AXFRA_look_white_lace_jeans",
+      "name": "White Lace Blouse and Jeans",
+      "name_es": "Blusa de encaje y jean",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_white_lace_jeans.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_white_lace_jeans.json"
+    },
+    {
+      "id": "AXFRA_look_wrap_ribbed_satin_skirt",
+      "name": "Ribbed wrap top with satin ruffle skirt",
+      "name_es": "Top cruzado de punto con falda satén",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_wrap_ribbed_satin_skirt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_wrap_ribbed_satin_skirt.json"
+    },
+    {
+      "id": "AXFRA_look_y2k_von_dutch_fur",
+      "name": "Von Dutch crop top with fur-trim jacket and jeans",
+      "name_es": "Crop Von Dutch con chaqueta de piel y jeans",
+      "category": "axfra_wardrobe_looks_costume",
+      "path": "axfra_wardrobe_looks_costume/axfra_look_y2k_von_dutch_fur.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_wardrobe_looks_costume/axfra_look_y2k_von_dutch_fur.json"
     }
   ]
 }
