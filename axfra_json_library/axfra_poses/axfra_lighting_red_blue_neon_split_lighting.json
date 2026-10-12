@@ -1,0 +1,17 @@
+{
+  "id": "AXFRA_lighting_red_blue_neon_split_lighting",
+  "name": "Red Blue Neon Split Lighting",
+  "name_es": "Red Blue Neon Split Lighting",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "lighting_block": {
+    "source_description": "\"lighting_block\": {\n\n\"lighting\": \"high-contrast cinematic neon lighting with three sources: intense red gel from one side and electric blue gel from the opposite side, sharp color separation across the facial planes, plus a soft low-intensity frontal key just above camera axis, neutral and weaker than the gels, opening eyes, lips, cheekbones and the center of the face without flattening the split; glossy specular highlights on lips and skin from the side gels, deep shadows kept in the folds, ultra-dramatic editorial beauty lighting, no flat even light, no missing frontal exposure\"\n\n}"
+  },
+  "source_index": 103
+}
