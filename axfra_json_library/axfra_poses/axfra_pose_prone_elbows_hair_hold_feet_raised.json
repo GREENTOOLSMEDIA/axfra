@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_prone_elbows_hair_hold_feet_raised",
+  "name": "Prone Elbows Hair Hold Feet Raised",
+  "name_es": "Prone Elbows Hair Hold Feet Raised",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto tendido boca abajo. Peso sobre antebrazos y codos. Manos a cada lado de la cabeza, sujetando el cabello. Torso de frente al suelo, pecho apenas levantado. Rodillas flexionadas, pies alzados detrás. Cabeza erguida, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nDesde la cabecera, frontal con leve tres cuartos. Plano medio-largo (cabeza a pies). Cámara un poco por encima del su cabeza. Distancia media. Deben verse los pies en el aire y ambos antebrazos.",
+  "source_index": 91
+}

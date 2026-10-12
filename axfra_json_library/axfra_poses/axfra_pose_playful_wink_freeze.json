@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_playful_wink_freeze",
+  "name": "Playful Wink Freeze",
+  "name_es": "Playful Wink Freeze",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Cara de “¿y ahora qué?” + guiño rápido → freeze 1 segundo. (beat 7)",
+  "source_index": 37
+}

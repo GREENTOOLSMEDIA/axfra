@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_quick_landing_squat",
+  "name": "Quick Landing Squat",
+  "name_es": "Quick Landing Squat",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Al aterrizar: squat rápido (baja cadera) y sube inmediatamente con energía. (beat 5)",
+  "source_index": 33
+}

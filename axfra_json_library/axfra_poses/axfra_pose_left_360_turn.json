@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_left_360_turn",
+  "name": "Left 360 Turn",
+  "name_es": "Left 360 Turn",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Gira rápido 360° hacia la izquierda (giro completo sobre el pie izquierdo).",
+  "source_index": 41
+}

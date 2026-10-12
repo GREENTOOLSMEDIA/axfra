@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_pose_knees_up_seated_wide_v_with_heels",
+  "name": "Knees Up Seated Wide V With Heels",
+  "name_es": "Knees Up Seated Wide V With Heels",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "@type": "Pose",
+  "bodyPosition": "Seated on the floor, torso facing camera. Knees pulled up and opened, creating a wide V-shape with the legs.",
+  "legs": {
+    "bothLegs": "Knees raised and spread apart, thighs forming a wide angle. Feet planted on the floor wearing black high-heel sandals. Heels visible."
+  },
+  "torso": "Upright, slight forward lean. Shoulders squared to camera.",
+  "arms": {
+    "bothArms": "Resting along the sides of the body, hands near the hips or slightly behind for support"
+  },
+  "hands": "Relaxed, fingers slightly curled",
+  "head": "Facing camera directly, chin level",
+  "expression": "Neutral to slightly intense, lips closed, serious/seductive look",
+  "gaze": "Strong direct eye contact",
+  "source_id": "pose_02_knees_up_spread",
+  "source_index": 57
+}

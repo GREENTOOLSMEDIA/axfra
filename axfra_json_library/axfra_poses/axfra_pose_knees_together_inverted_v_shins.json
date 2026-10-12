@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_knees_together_inverted_v_shins",
+  "name": "Knees Together Inverted V Shins",
+  "name_es": "Knees Together Inverted V Shins",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "@type": "Pose",
+  "bodyPosition": "Seated on the floor. Buttocks on the ground, torso facing the camera with a slight forward lean of the upper body.",
+  "legs": {
+    "femurs": "Thighs raised and kept close together. Knees touching or nearly touching, pulled upward toward the torso.",
+    "tibias": "Lower legs form an inverted V (∧). Starting close at the knees and opening outward and downward toward the feet.",
+    "bothLegs": "Knees bent and held together at the top. Shins diverge away from each other down to the floor."
+  },
+  "feet": "Planted on the floor, separated from each other. Toes pointing slightly outward.",
+  "torso": "Upright with a subtle forward lean. Shoulders squared and relaxed, facing the camera.",
+  "arms": {
+    "bothArms": "Extended downward along the sides of the body. Hands placed on the floor beside or slightly behind the hips for support."
+  },
+  "hands": "Relaxed, fingers lightly curled, palms down on the floor providing balance.",
+  "head": "Facing the camera directly, chin level to slightly lowered.",
+  "expression": "Neutral to slightly intense. Lips closed, serious and composed look with a hint of seduction.",
+  "gaze": "Strong, direct eye contact with the camera.",
+  "source_id": "pose_02_knees_together_tibias_inverted_v",
+  "source_index": 62
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_power_pointing_pose",
+  "name": "Power Pointing Pose",
+  "name_es": "Power Pointing Pose",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Pose power: mano izquierda en la cadera, mano derecha apunta/index arriba hacia cámara.",
+  "source_index": 36
+}
