@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_pinstripe",
+  "name": "Pinstripe Tailored",
+  "name_es": "Raya fina sastre",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.pinstripe",
+  "pattern": "stripes",
+  "color": "black",
+  "bra": {
+    "type": "balconette",
+    "coverage": "balconette",
+    "straps": "narrow straps",
+    "details": "clean cups, contrasting piping, fine vertical pinstripes",
+    "material": "microfiber",
+    "thickness": "normal",
+    "transparency": "no"
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "high-waisted",
+    "details": "wide plain waistband, minimal seams, fine vertical pinstripes",
+    "material": "microfiber",
+    "thickness": "normal",
+    "transparency": "no"
+  },
+  "stockings": {
+    "chart_name": "Pinstripe",
+    "type": "thigh-high",
+    "pattern": "fine opaque vertical stripes on sheer base",
+    "top": "plain band with loops",
+    "attachment": "garter belt",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  }
+}

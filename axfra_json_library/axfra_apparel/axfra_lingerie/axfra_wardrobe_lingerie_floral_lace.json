@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_floral_lace",
+  "name": "Full Floral Lace",
+  "name_es": "Encaje floral completo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.floral_lace",
+  "pattern": "floral",
+  "color": "black",
+  "bra": {
+    "type": "full cup",
+    "coverage": "full",
+    "straps": "lace straps",
+    "details": "rose lace across entire cup, lined underband, scalloped neckline, bow",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "classic",
+    "details": "rose lace, scalloped leg openings and waist",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "chart_name": "Floral Lace",
+    "type": "lace thigh-high",
+    "pattern": "floral rose lace from toe to thigh",
+    "top": "scalloped floral edge",
+    "attachment": "silicone",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes"
+  }
+}

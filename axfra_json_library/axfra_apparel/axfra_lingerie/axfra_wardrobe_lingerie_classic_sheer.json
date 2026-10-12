@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_classic_sheer",
+  "name": "Classic Sheer",
+  "name_es": "Transparencia clásica",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.classic_sheer",
+  "pattern": "solid",
+  "color": "black",
+  "bra": {
+    "type": "underwired, sheer",
+    "coverage": "demi",
+    "straps": "convertible straps",
+    "details": "narrow lace upper band, clean edges",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "thong",
+    "cut": "thong",
+    "details": "narrow lace waistband, minimal seams",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "chart_name": "Classic Sheer",
+    "type": "thigh-high, sheer",
+    "pattern": "plain, unpatterned",
+    "top": "narrow lace band",
+    "attachment": "silicone",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}
