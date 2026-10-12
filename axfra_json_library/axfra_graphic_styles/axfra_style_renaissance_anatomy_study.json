@@ -1,0 +1,16 @@
+{
+  "id": "AXFRA_style_renaissance_anatomy_study",
+  "name": "Renaissance Anatomy Study",
+  "name_es": "Estudio anatómico renacentista",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "format": "vertical",
+  "technique": "Sepia pen and sanguine on aged paper; two overlapping poses in a circle and square; preserve subject identity and avoid copying clothing.",
+  "source_content": "Estilo de estudio anatómico renacentista, a tinta y sanguina sobre papel viejo. El sujeto va dentro de un círculo y un cuadrado, como una lámina de cuaderno, no como póster.\nComposición\n* Formato vertical de hoja. El sujeto está al centro, de cuerpo entero, de frente. Dos posiciones superpuestas del mismo cuerpo: una con brazos en cruz y piernas juntas, otra con brazos más altos y piernas abiertas. Las dos se leen a la vez.\n* Un círculo fino lo toca en manos y pies. Un cuadrado lo encuadra. El ombligo o el centro del cuerpo queda cerca del centro del círculo.\n* Arriba y abajo, bandas de papel con manchas y trazos ilegibles, como notas de cuaderno. Sin palabras reales, sin titular, sin firma legible.\nLuz y color\n* Papel amarillento, manchado, con borde irregular y alguna marca de humedad. Sin color de escena.\n* Trazo sepia o marrón claro, línea fina, sombra mínima. El volumen se insinúa con hatch, no con grafito realista.\n* Sin mano, sin lápiz, sin sacapuntas. Aquí todo es la lámina.\nEntorno\n* No hay lugar. Solo geometría y papel.\n* Omitir desnudez y vestuario del dibujo original. Conservar identidad, rostro y proporciones; el cuerpo puede quedar en línea esquemática, sin copiar ropa ni anatomía de estudio.\n* El rostro es el del sujeto, no el del modelo histórico. Pelo y rasgos se mantienen.\nTratamiento\n* Dibujo de codex, no retrato a lápiz ni afiche. Línea de pluma, papel envejecido, geometría exacta.\n* Las dos poses comparten la misma cabeza. No son dos personas.\n* Preservar al sujeto. El círculo y el cuadrado no le tapan la cara.\nIndicación corta para reutilizar\nLámina vertical de estudio renacentista, tinta sepia sobre papel manchado. El sujeto al centro, de frente, en dos poses superpuestas: brazos en cruz con piernas juntas, y brazos altos con piernas abiertas. Círculo y cuadrado finos lo encuadran. Notas ilegibles arriba y abajo, sin texto real ni titular. Rostro del sujeto, no de un modelo histórico. Preservar identidad; no cambiar vestuario ni desnudar."
+}

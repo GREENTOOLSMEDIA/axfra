@@ -1,0 +1,204 @@
+{
+  "id": "AXFRA_motion_elegant_dance_37_step_sequence",
+  "name": "Elegant Dance — 37-Step Choreography",
+  "name_es": "Coreografía elegante de 37 pasos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "choreography",
+  "style": "Elegant, fluid, controlled and sensual",
+  "tempo": "Moderate to slow",
+  "priority": "Continuity, weight control, and connection between gaze and body",
+  "sequence": [
+    {
+      "step": 1,
+      "name": "Confident Entrance",
+      "instruction": "Walk slowly toward the center for 4 counts. Keep shoulders relaxed, eyes forward, and place one foot ahead of the other to mark the rhythm."
+    },
+    {
+      "step": 2,
+      "name": "Opening Pose",
+      "instruction": "For 4 counts, place one hand on the waist while the other softly traces the arm or hair. Maintain eye contact with the audience."
+    },
+    {
+      "step": 3,
+      "name": "Body Roll",
+      "instruction": "Roll the body from chest to hips. Repeat twice in time with the beat."
+    },
+    {
+      "step": 4,
+      "name": "Hip Sway",
+      "instruction": "Sway hips left to right while keeping the torso relatively stable."
+    },
+    {
+      "step": 5,
+      "name": "Hair Flip or Head Roll",
+      "instruction": "Make a slow, controlled head roll or hair movement, avoiding abrupt motion."
+    },
+    {
+      "step": 6,
+      "name": "Half Turn",
+      "instruction": "Slowly turn 180 degrees. Look over the shoulder before completing the turn."
+    },
+    {
+      "step": 7,
+      "name": "Shoulder Rolls",
+      "instruction": "Roll shoulders backward, alternating right and left."
+    },
+    {
+      "step": 8,
+      "name": "Cross Step",
+      "instruction": "Cross one leg in front of the other, adding a small hip movement."
+    },
+    {
+      "step": 9,
+      "name": "Glide",
+      "instruction": "Take two soft side steps, accompanying them with fluid arm movements."
+    },
+    {
+      "step": 10,
+      "name": "Elegant Squat",
+      "instruction": "Slowly bend the knees and lower with a straight back, then rise under control."
+    },
+    {
+      "step": 11,
+      "name": "Figure Eight",
+      "instruction": "Trace a continuous, slow figure-eight pattern with the hips."
+    },
+    {
+      "step": 12,
+      "name": "Wrapping Arms",
+      "instruction": "Raise both arms and spiral them downward around the body without touching intimate areas."
+    },
+    {
+      "step": 13,
+      "name": "Full Turn",
+      "instruction": "Complete a 360-degree turn and finish in a different pose from the opening."
+    },
+    {
+      "step": 14,
+      "name": "Accented Side Walk",
+      "instruction": "Take three soft lateral steps with a light hip accent on the final step."
+    },
+    {
+      "step": 15,
+      "name": "Chest Isolation",
+      "instruction": "Move the chest slightly forward and backward while keeping the hips stable."
+    },
+    {
+      "step": 16,
+      "name": "Backward Step with Opening",
+      "instruction": "Step backward on one leg and open the other slightly. Spread both arms to the sides at shoulder height."
+    },
+    {
+      "step": 17,
+      "name": "Slow Hip Circle",
+      "instruction": "Complete a full hip circle in one direction over 4 counts; keep torso upright."
+    },
+    {
+      "step": 18,
+      "name": "Diagonal Travel",
+      "instruction": "Walk two diagonal steps while facing forward; accompany with one arm following the body line."
+    },
+    {
+      "step": 19,
+      "name": "Knee Dip and Recovery",
+      "instruction": "Bend one knee to lower the weight, recover fluidly, and alternate legs."
+    },
+    {
+      "step": 20,
+      "name": "Arm Wave",
+      "instruction": "Make a continuous wave from shoulder to fingertips along one arm, then switch arms."
+    },
+    {
+      "step": 21,
+      "name": "Backward Cross Step",
+      "instruction": "Cross one leg behind the other, transfer weight, and add a small hip sway."
+    },
+    {
+      "step": 22,
+      "name": "Torso Twist",
+      "instruction": "Rotate torso side to side while keeping hips relatively still; gaze follows the turn."
+    },
+    {
+      "step": 23,
+      "name": "Slide and Pause",
+      "instruction": "Slide one foot sideways, hold a one-count micro-pause, then continue."
+    },
+    {
+      "step": 24,
+      "name": "Double Hip Sway",
+      "instruction": "Perform two slower, broader hip sways, emphasizing the second."
+    },
+    {
+      "step": 25,
+      "name": "Reverse Half Turn",
+      "instruction": "Turn 180 degrees opposite to step 6, ending with a glance over the opposite shoulder."
+    },
+    {
+      "step": 26,
+      "name": "Arm Raise and Spiral Descent",
+      "instruction": "Raise both arms overhead in a controlled manner and lower them in a spiral around the body."
+    },
+    {
+      "step": 27,
+      "name": "Extended Final Walk",
+      "instruction": "Take four or five slow steps along a gently curved line, alternating gaze frontward and sideways."
+    },
+    {
+      "step": 28,
+      "name": "Combined Figure Eight and Body Roll",
+      "instruction": "Combine a hip figure eight with a gentle body roll starting at the chest."
+    },
+    {
+      "step": 29,
+      "name": "Final Pose Preparation",
+      "instruction": "Step slightly forward, place one hand on the waist and prepare the final position with the other."
+    },
+    {
+      "step": 30,
+      "name": "Final Pose Hold",
+      "instruction": "Place one leg ahead, one hand on the waist and the other arm extended or behind the head. Hold the pose for two measures before finishing."
+    },
+    {
+      "step": 31,
+      "name": "Hands to Hair",
+      "instruction": "Lift hands toward the head near ears and temples, fingers touching or adjusting hair; elbows out. Look directly at the camera, mouth slightly open, with a small shoulder sway."
+    },
+    {
+      "step": 32,
+      "name": "Arms Forward, Thumbs Down",
+      "instruction": "Extend both arms straight forward at chest height, fists closed, thumbs pointing down or outward in a thumbs-down/pointing-down gesture. Lean slightly forward and gaze intensely at the camera."
+    },
+    {
+      "step": 33,
+      "name": "Hands on Head",
+      "instruction": "Place palms atop the head, fingers pointing backward and elbows open; add a small chest and shoulder roll while maintaining the position."
+    },
+    {
+      "step": 34,
+      "name": "Hands Descend to Chest",
+      "instruction": "Keep hands on the head one more second, then lower slowly toward the chest. Briefly drop the gaze before looking back up."
+    },
+    {
+      "step": 35,
+      "name": "Small Rhythmic Hand Gestures",
+      "instruction": "At chest height, make small rhythmic finger motions as though marking beats or counting. Move shoulders and torso fluidly."
+    },
+    {
+      "step": 36,
+      "name": "Hand Heart",
+      "instruction": "Bring hands together at the chest as if clapping or crossing wrists, then open them into a heart with thumbs and index fingers in front of face or chest."
+    },
+    {
+      "step": 37,
+      "name": "Final Overhead Extension",
+      "instruction": "From the heart, lift both arms completely overhead, nearly touching hands; finish with arms high, torso slightly arched, and gaze at the camera."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "AXFRA_motion_fast_360_orbit_snap_zoom",
+  "name": "Fast 360 Orbit and Snap Zoom",
+  "name_es": "Órbita rápida de 360° y zoom brusco",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "camera_movement",
+  "subject": "Main subject centered in an open space",
+  "camera": {
+    "start": "In front of the subject at eye level",
+    "movement": "Rapid clockwise 360-degree orbit around the central element, maintaining a constant distance and smooth circular motion",
+    "finish": "Sudden straight whip-zoom toward the focal point for a dramatic close-up",
+    "character": "Dynamic, fluid, energetic camera work; high-frame-rate feel"
+  },
+  "mood": "Cinematic intensity"
+}

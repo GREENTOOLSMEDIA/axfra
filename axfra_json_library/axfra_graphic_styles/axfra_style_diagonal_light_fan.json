@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_diagonal_light_fan",
+  "name": "Diagonal Light Fan Composition",
+  "name_es": "Composición diagonal con haces de luz",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "Composición\n* Formato vertical. El sujeto entra desde abajo a la izquierda y sube hacia la derecha, en escorzo, un brazo adelantado. El cuerpo es una cuña.\n* Detrás, rayos y planos de luz en abanico, como vitrales o haces de un reflector. Algunos triángulos oscuros cruzan el primer plano y tapan un borde del cuerpo.\n* La cara del sujeto se lee, de perfil o de tres cuartos, dentro del movimiento.\nLuz y color\n\n* Sombra dura y larga\n* Luz desde arriba a la izquierda, en bandas. El fondo no tiene horizonte.\nEntorno\n* No hay cielo ni ciudad. El movimiento lo dan las líneas y los planos que salen del sujeto hacia las esquinas.\n* Los triángulos del primer plano pueden cortar el encuadre, no la cara.\nTratamiento\n* Preservar al sujeto. La diagonal y el abanico de luz son el estilo."
+}

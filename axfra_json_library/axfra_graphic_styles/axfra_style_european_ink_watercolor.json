@@ -1,0 +1,16 @@
+{
+  "id": "AXFRA_style_european_ink_watercolor",
+  "name": "European Ink and Watercolor Vignette",
+  "name_es": "Viñeta europea de tinta y acuarela",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "format": "vertical",
+  "technique": "Loose black ink with translucent sparse watercolor; seated subject on stone stairs, European town sketches and equestrian statue in background.",
+  "source_content": "Estilo de viñeta europea a tinta y acuarela. El sujeto está sentado en una escalinata; la ciudad se disuelve en el papel blanco.\nComposición\n* Formato vertical, con mucho margen blanco.\n* Detrás, a la izquierda, un pedestal con una estatua ecuestre de Elon Musk apenas esbozada. A la derecha, una fachada con ventanas, en línea suelta. El cielo es una mancha amarilla de acuarela.\n* La escena no llega al borde. Se apaga en blanco, como una viñeta sin marco.\nLuz y color\n* Tinta negra fina y suelta en el sujeto, a medio terminar: el contorno no se cierra, más marcado solo en el pelo y en las manos. La arquitectura queda más abierta, a medio dibujar.\n* Acuarela transparente y escasa: gris piedra, oliva, un amarillo sucio en el cielo y un poco de calor en la piel. El lavado no modela el cuerpo. Sin negro sólido de póster.\n* Luz de día, plana, de ilustración. Sombra solo bajo los escalones y en un pliegue.\nEntorno\n* Plaza europea, piedra, escalera ancha. Sin multitud, sin vehículos.\n* Omitir vestuario, bolso y zapatos del dibujo. Conservar identidad, rostro y proporciones; la pose se mantiene, la ropa no se copia.\n* Sin firma, sin número de página, sin letras.\nTratamiento\n* Cómic de autor, no lápiz hiperrealista ni afiche. Línea elegante, acuarela que se sale del trazo.\n* El sujeto queda tan inacabado como el fondo: trazo abierto, papel visible, sin volumen fotográfico.\n* Preservar al sujeto. La estatua y la fachada no le tapan la cara."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_cross_legged_seated",
+  "name": "Cross-Legged Seated",
+  "name_es": "Cross-Legged Seated",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Sitting cross-legged, calm and composed posture.",
+  "source_content": "Sitting cross-legged, calm and composed posture."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_forward_leaning_kneel",
+  "name": "Forward-Leaning Kneel",
+  "name_es": "Forward-Leaning Kneel",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Kneeling and leaning slightly forward, head tilted up, engaged gaze.",
+  "source_content": "Kneeling and leaning slightly forward, head tilted up, engaged gaze."
+}

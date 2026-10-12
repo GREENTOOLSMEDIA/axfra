@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_gothic_cemetery_ensemble_poster",
+  "name": "Gothic Cemetery Ensemble Poster",
+  "name_es": "Póster coral de cementerio gótico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "Composición\n* Formato vertical, lleno hasta el borde. El sujeto ocupa el centro, de medio cuerpo, girado, mirando hacia atrás por encima del hombro con alarma. Una mano cerca del pecho, la otra baja.\n* Alrededor, figuras secundarias de terror: una calavera enorme arriba a la izquierda, un castillo en ruinas al centro del cielo, una figura encapuchada a la derecha con la mano alzada, murciélagos, y manos que salen de la tierra en primer plano. No son el sujeto.\n* Capas claras: manos negras abajo, sujeto al medio, cielo y castillo atrás. Nada queda vacío.\nLuz y color\n* Luna llena blanca detrás del castillo, cielo en manchas rojas y magenta. La luz sobre el sujeto es frontal y cálida, como de ilustración, no de foto.\n* Contorno marcado, color en planos, sombra dura en pliegues y en las figuras de atrás.\nEntorno\n* Cementerio o ruina nocturna. Cruces, lápidas verdes, castillo gótico, ramas secas. El primer plano es tierra y manos que emergen, desenfocadas y oscuras.\n* Omitir tela, desnudez y vestuario del afiche. Conservar identidad, rostro y proporciones. El gesto de alarma se puede hacer con la pose, sin cambiar ropa.\n* Las criaturas y la calavera son attrezzo del póster, no parte del sujeto.\nTratamiento\n* Sin título, sin créditos, sin logo. El borde puede quedar oscuro, pero la escena llega hasta el marco.\n* Preservar al sujeto. El entorno hostil y las manos del primer plano son el estilo."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "AXFRA_style_editorial_collage_black_background",
+  "name": "Editorial Collage — Black Background",
+  "name_es": "Collage editorial sobre fondo negro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "format": "vertical",
+  "background": "absolute black",
+  "composition": "Same subject shown at three scales; one full standing body and two portraits.",
+  "source_content": "Estilo de póster editorial de collage, sobre fondo claro. Varias escalas del mismo sujeto flotan en una mancha de pintura, sin ciudad ni escenario completo.\nComposición\n* Formato vertical. Tres presencias del sujeto, no una sola pose: un rostro grande de perfil arriba a la derecha, mirando fuera; un rostro frontal más chico a la izquierda, con sonrisa; una figura de cuerpo entero al centro, de pie sobre un fragmento de suelo.\n* El cuerpo entero es el ancla. Los dos rostros son ecos, más grandes, y se solapan detrás sin tapar la figura.\n* El suelo es solo una tabla o plataforma rota, suspendida. No hay horizonte ni habitación: el resto es blanco. --- fondo negro absoluto",
+  "source_note": "Source contrasts light background and white negative space with an explicit final override to absolute black; final override retained."
+}

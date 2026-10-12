@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_relaxed_standing_turn",
+  "name": "Relaxed Standing Turn",
+  "name_es": "Relaxed Standing Turn",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Standing upright, relaxed posture, head slightly turned.",
+  "source_content": "Standing upright, relaxed posture, head slightly turned."
+}
