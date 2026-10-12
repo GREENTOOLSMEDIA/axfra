@@ -1,0 +1,89 @@
+{
+  "id": "AXFRA_look_pink_suede_cowboy",
+  "name": "Pink Suede Mini and Cowboy Boots",
+  "name_es": "Vestido de cordón y bota cowboy",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.suede.cowboy",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de straps, lace-up al frente, belt ancho",
+    "material": "suede",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "bota cowboy con bordado",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bolso con hebilla de strass",
+    "material": "leather",
+    "color": "pink"
+  },
+  "hat": {
+    "type": "sombrero de ala, banda de strass",
+    "material": "felt",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.pink.suede.cowboy",
+    "name_es": "Vestido de cordón y bota cowboy",
+    "dress": {
+      "type": "mini de tirantes, cordón al frente, cinturón ancho",
+      "material": "ante",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "bota cowboy con bordado",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bolso con hebilla de strass",
+      "material": "cuero",
+      "color": "rosa"
+    },
+    "hat": {
+      "type": "sombrero de ala, banda de strass",
+      "material": "fieltro",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

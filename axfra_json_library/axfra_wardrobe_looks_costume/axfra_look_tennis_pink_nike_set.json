@@ -1,0 +1,61 @@
+{
+  "id": "AXFRA_look_tennis_pink_nike_set",
+  "name": "Pink Nike tennis top with white pleated skirt",
+  "name_es": "Polo rosa Nike con falda plisada blanca",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.tennis.pink.nike.set",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "sporty, clean, athletic",
+  "top": {
+    "type": "short-sleeve athletic top",
+    "material": "technical fabric",
+    "color": "pink",
+    "pattern": "Nike swoosh"
+  },
+  "bottom": {
+    "type": "white pleated mini skirt",
+    "material": "knit",
+    "color": "white"
+  },
+  "accessories": [
+    "white visor",
+    "Wilson bag",
+    "pink sneakers"
+  ],
+  "source_image": "HQ_VkTZWkAA2ZIr",
+  "original_specification": {
+    "id": "look.tennis.pink.nike.set",
+    "name_es": "Polo rosa Nike con falda plisada blanca",
+    "name_en": "Pink Nike tennis top with white pleated skirt",
+    "mood": "sporty, clean, athletic",
+    "top": {
+      "type": "short-sleeve athletic top",
+      "material": "technical fabric",
+      "color": "rosa",
+      "estampado": "Nike swoosh"
+    },
+    "bottom": {
+      "type": "white pleated mini skirt",
+      "material": "punto",
+      "color": "blanco"
+    },
+    "accessories": [
+      "white visor",
+      "Wilson bag",
+      "pink sneakers"
+    ],
+    "source_image": "HQ_VkTZWkAA2ZIr"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

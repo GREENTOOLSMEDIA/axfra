@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_satin_rhinestone",
+  "name": "Pink Satin Rhinestone Mini",
+  "name_es": "Mini de satén con strass",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.satin.rhinestone",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de tirantes, fruncido, cadenas de strass en el busto",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "outer": {
+    "type": "abrigo corto de pelo",
+    "material": "fur",
+    "thickness": "thick",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "sandal de heel con strass",
+    "material": "satin",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bolso cubierto de strass",
+    "material": "rhinestones",
+    "color": "silver"
+  },
+  "original_specification": {
+    "id": "look.pink.satin.rhinestone",
+    "name_es": "Mini de satén con strass",
+    "dress": {
+      "type": "mini de tirantes, fruncido, cadenas de strass en el busto",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "outer": {
+      "type": "abrigo corto de pelo",
+      "material": "piel",
+      "grosor": "gruesa",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "sandalia de tacón con strass",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bolso cubierto de strass",
+      "material": "strass",
+      "color": "plata"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

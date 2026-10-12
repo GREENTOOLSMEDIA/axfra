@@ -1,0 +1,107 @@
+{
+  "id": "AXFRA_look_white_fishnet_red_ruffle",
+  "name": "White Mesh, Pink Top and Red Ruffle Mini",
+  "name_es": "Malla, top y mini de volante",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.white.fishnet.red.ruffle",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "outer": {
+    "type": "malla de manga larga",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "white"
+  },
+  "top": {
+    "type": "top de encaje con lazo",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "mini denim con volante y tachas",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red"
+  },
+  "shoes": {
+    "type": "bota de plataforma",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bag con corazón",
+    "material": "leather",
+    "color": "red"
+  },
+  "original_specification": {
+    "id": "look.white.fishnet.red.ruffle",
+    "name_es": "Malla, top y mini de volante",
+    "outer": {
+      "type": "malla de manga larga",
+      "material": "malla",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "blanco"
+    },
+    "top": {
+      "type": "top de encaje con lazo",
+      "material": "encaje",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "mini denim con volante y tachas",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rojo"
+    },
+    "shoes": {
+      "type": "bota de plataforma",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bolso con corazón",
+      "material": "cuero",
+      "color": "rojo"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

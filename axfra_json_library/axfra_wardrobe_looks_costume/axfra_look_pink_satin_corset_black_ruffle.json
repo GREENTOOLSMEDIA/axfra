@@ -1,0 +1,61 @@
+{
+  "id": "AXFRA_look_pink_satin_corset_black_ruffle",
+  "name": "Pink satin corset with black tiered ruffle skirt",
+  "name_es": "Corset rosa satén con falda negra de volados",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink.satin.corset.black.ruffle",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "goth coquette, dark romantic",
+  "top": {
+    "type": "satin corset with black lace and bows",
+    "material": "satin",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "tiered ruffle mini skirt with pink underlayer",
+    "material": "satin and lace",
+    "color": "black and pink",
+    "transparency": "si (lace)"
+  },
+  "accessories": [
+    "black heart bag",
+    "platform Mary Janes",
+    "heart choker"
+  ],
+  "source_image": "HQ-qW8tXwAAK-hR",
+  "original_specification": {
+    "id": "look.pink.satin.corset.black.ruffle",
+    "name_es": "Corset rosa satén con falda negra de volados",
+    "name_en": "Pink satin corset with black tiered ruffle skirt",
+    "mood": "goth coquette, dark romantic",
+    "top": {
+      "type": "satin corset with black lace and bows",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "tiered ruffle mini skirt with pink underlayer",
+      "material": "satin and lace",
+      "color": "negro y rosa",
+      "transparencia": "si (lace)"
+    },
+    "accessories": [
+      "black heart bag",
+      "platform Mary Janes",
+      "heart choker"
+    ],
+    "source_image": "HQ-qW8tXwAAK-hR"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

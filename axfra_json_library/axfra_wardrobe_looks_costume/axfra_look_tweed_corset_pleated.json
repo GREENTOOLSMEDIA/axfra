@@ -1,0 +1,69 @@
+{
+  "id": "AXFRA_look_tweed_corset_pleated",
+  "name": "Pink tweed jacket with corset and pleated skirt",
+  "name_es": "Chaqueta tweed rosa con corset y falda plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.tweed.corset.pleated",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "preppy, elegant, feminine",
+  "outer": {
+    "type": "cropped tweed jacket with pearls",
+    "material": "tweed",
+    "color": "pink"
+  },
+  "top": {
+    "type": "satin corset",
+    "material": "satin",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "pleated mini skirt with lace",
+    "material": "satin",
+    "color": "pink"
+  },
+  "accessories": [
+    "quilted bag",
+    "bow heels",
+    "rose bouquet"
+  ],
+  "source_image": "HQ9UqZwbIAA_IPv",
+  "original_specification": {
+    "id": "look.tweed.corset.pleated",
+    "name_es": "Chaqueta tweed rosa con corset y falda plisada",
+    "name_en": "Pink tweed jacket with corset and pleated skirt",
+    "mood": "preppy, elegant, feminine",
+    "outer": {
+      "type": "cropped tweed jacket with pearls",
+      "material": "tweed",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "satin corset",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "pleated mini skirt with lace",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "accessories": [
+      "quilted bag",
+      "bow heels",
+      "rose bouquet"
+    ],
+    "source_image": "HQ9UqZwbIAA_IPv"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

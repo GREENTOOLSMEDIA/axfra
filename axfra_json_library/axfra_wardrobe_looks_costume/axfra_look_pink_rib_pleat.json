@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_rib_pleat",
+  "name": "Pink Ribbed Crop and Pleated Mini",
+  "name_es": "Crop de canalé y mini plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.rib.pleat",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "crop de short-sleeve, escote redondo, canalé",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "mini plisada",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white"
+  },
+  "shoes": {
+    "type": "slingback de punta con lazo",
+    "material": "leather",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bolso acolchado, cadena",
+    "material": "leather",
+    "color": "pink"
+  },
+  "original_specification": {
+    "id": "look.pink.rib.pleat",
+    "name_es": "Crop de canalé y mini plisada",
+    "top": {
+      "type": "crop de manga corta, escote redondo, canalé",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "mini plisada",
+      "material": "punto",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "blanco"
+    },
+    "shoes": {
+      "type": "slingback de punta con lazo",
+      "material": "cuero",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bolso acolchado, cadena",
+      "material": "cuero",
+      "color": "rosa"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

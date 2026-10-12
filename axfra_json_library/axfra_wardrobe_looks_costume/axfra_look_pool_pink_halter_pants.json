@@ -1,0 +1,59 @@
+{
+  "id": "AXFRA_look_pool_pink_halter_pants",
+  "name": "Pink halter top with wide-leg pants",
+  "name_es": "Top halter rosa con pantalón palazzo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pool.pink.halter.pants",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "summer, resort, bright",
+  "top": {
+    "type": "halter crop with ring detail",
+    "material": "satin or jersey",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "wide-leg drawstring pants",
+    "material": "satin",
+    "color": "pink"
+  },
+  "accessories": [
+    "woven bag",
+    "pearl sandals",
+    "white sunglasses"
+  ],
+  "source_image": "HQ9GP6xXkAAWSKw",
+  "original_specification": {
+    "id": "look.pool.pink.halter.pants",
+    "name_es": "Top halter rosa con pantalón palazzo",
+    "name_en": "Pink halter top with wide-leg pants",
+    "mood": "summer, resort, bright",
+    "top": {
+      "type": "halter crop with ring detail",
+      "material": "satin or jersey",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "wide-leg drawstring pants",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "accessories": [
+      "woven bag",
+      "pearl sandals",
+      "white sunglasses"
+    ],
+    "source_image": "HQ9GP6xXkAAWSKw"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

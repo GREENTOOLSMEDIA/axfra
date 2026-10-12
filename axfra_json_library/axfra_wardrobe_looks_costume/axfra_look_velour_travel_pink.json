@@ -1,0 +1,81 @@
+{
+  "id": "AXFRA_look_velour_travel_pink",
+  "name": "Pink Velour Travel Tracksuit",
+  "name_es": "Chándal de terciopelo rosa de viaje",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.velour.travel.pink",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "lounge / travel",
+  "top": {
+    "type": "hoodie cropped con cremallera",
+    "material": "velvet",
+    "thickness": "medium",
+    "transparency": "no",
+    "color": "dusty pink"
+  },
+  "bottom": {
+    "type": "pants wide-leg de chándal",
+    "material": "velvet",
+    "thickness": "medium",
+    "transparency": "no",
+    "color": "dusty pink",
+    "detail": "logo bordado"
+  },
+  "under": {
+    "type": "camiseta ribbed cropped",
+    "material": "ribbed cotton",
+    "color": "white"
+  },
+  "accessories": [
+    "gorra 'LOS ANGELES'",
+    "auriculares rosa",
+    "vaso Stanley",
+    "maleta + bolso acolchado",
+    "zapatillas New Balance"
+  ],
+  "original_specification": {
+    "id": "look.velour.travel.pink",
+    "name_es": "Chándal de terciopelo rosa de viaje",
+    "style": "lounge / travel",
+    "top": {
+      "type": "hoodie cropped con cremallera",
+      "material": "terciopelo",
+      "grosor": "media",
+      "transparencia": "no",
+      "color": "rosa palo"
+    },
+    "bottom": {
+      "type": "pantalón wide-leg de chándal",
+      "material": "terciopelo",
+      "grosor": "media",
+      "transparencia": "no",
+      "color": "rosa palo",
+      "detail": "logo bordado"
+    },
+    "under": {
+      "type": "camiseta ribbed cropped",
+      "material": "algodón rib",
+      "color": "blanco"
+    },
+    "accessories": [
+      "gorra 'LOS ANGELES'",
+      "auriculares rosa",
+      "vaso Stanley",
+      "maleta + bolso acolchado",
+      "zapatillas New Balance"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

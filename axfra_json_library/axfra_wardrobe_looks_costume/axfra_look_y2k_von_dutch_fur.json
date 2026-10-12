@@ -1,0 +1,77 @@
+{
+  "id": "AXFRA_look_y2k_von_dutch_fur",
+  "name": "Von Dutch crop top with fur-trim jacket and jeans",
+  "name_es": "Crop Von Dutch con chaqueta de piel y jeans",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.y2k.von.dutch.fur",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "y2k, street, rock",
+  "top": {
+    "type": "cropped graphic t-shirt",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink",
+    "pattern": "Von Dutch wings"
+  },
+  "outer": {
+    "type": "cropped jacket with pink fur collar",
+    "material": "denim or cotton with faux fur",
+    "color": "black and pink"
+  },
+  "bottom": {
+    "type": "embroidered wide jeans",
+    "material": "denim",
+    "color": "light blue"
+  },
+  "accessories": [
+    "studded bag",
+    "platform boots",
+    "chain belt",
+    "pink mules"
+  ],
+  "source_image": "HQ9WDXLbwAEdDb_",
+  "original_specification": {
+    "id": "look.y2k.von.dutch.fur",
+    "name_es": "Crop Von Dutch con chaqueta de piel y jeans",
+    "name_en": "Von Dutch crop top with fur-trim jacket and jeans",
+    "mood": "y2k, street, rock",
+    "top": {
+      "type": "cropped graphic t-shirt",
+      "material": "punto",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa",
+      "estampado": "Von Dutch wings"
+    },
+    "outer": {
+      "type": "cropped jacket with pink fur collar",
+      "material": "denim or cotton with faux fur",
+      "color": "negro y rosa"
+    },
+    "bottom": {
+      "type": "embroidered wide jeans",
+      "material": "denim",
+      "color": "azul claro"
+    },
+    "accessories": [
+      "studded bag",
+      "platform boots",
+      "chain belt",
+      "pink mules"
+    ],
+    "source_image": "HQ9WDXLbwAEdDb_"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "AXFRA_look_pink_sequin_metallic",
+  "name": "Pink Sequin Mesh and Metallic Mini",
+  "name_es": "Top malla lentejuelas + mini metálico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.pink.sequin.metallic",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "festival",
+  "top": {
+    "type": "crop manga larga malla + lentejuelas",
+    "material": "metallic mesh",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "mini skirt metálica con belt cristal",
+    "material": "metallic",
+    "color": "pink"
+  },
+  "accessories": [
+    "plataformas rosa con bolsillos",
+    "bolso cristal",
+    "gafas corazón"
+  ],
+  "original_specification": {
+    "id": "look.pink.sequin.metallic",
+    "name_es": "Top malla lentejuelas + mini metálico",
+    "style": "festival",
+    "top": {
+      "type": "crop manga larga malla + lentejuelas",
+      "material": "malla metálica",
+      "grosor": "fina",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "mini falda metálica con cinturón cristal",
+      "material": "metálico",
+      "color": "rosa"
+    },
+    "accessories": [
+      "plataformas rosa con bolsillos",
+      "bolso cristal",
+      "gafas corazón"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "AXFRA_look_rock_baby_leather_jacket",
+  "name": "Rock Baby leather jacket with pink metallic mini",
+  "name_es": "Chaqueta Rock Baby con falda metálica rosa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.rock.baby.leather.jacket",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "rock, edgy, glam",
+  "outer": {
+    "type": "cropped leather jacket with stars",
+    "material": "leather",
+    "color": "black",
+    "pattern": "Rock Baby"
+  },
+  "top": {
+    "type": "star studded bra",
+    "material": "leather",
+    "color": "black"
+  },
+  "bottom": {
+    "type": "metallic mini skirt",
+    "material": "metallic",
+    "color": "pink"
+  },
+  "accessories": [
+    "studded boots",
+    "thigh highs",
+    "star bag"
+  ],
+  "source_image": "HQ-532YWoAAqx0H",
+  "original_specification": {
+    "id": "look.rock.baby.leather.jacket",
+    "name_es": "Chaqueta Rock Baby con falda metálica rosa",
+    "name_en": "Rock Baby leather jacket with pink metallic mini",
+    "mood": "rock, edgy, glam",
+    "outer": {
+      "type": "cropped leather jacket with stars",
+      "material": "leather",
+      "color": "negro",
+      "estampado": "Rock Baby"
+    },
+    "top": {
+      "type": "star studded bra",
+      "material": "leather",
+      "color": "negro"
+    },
+    "bottom": {
+      "type": "metallic mini skirt",
+      "material": "metallic",
+      "color": "rosa"
+    },
+    "accessories": [
+      "studded boots",
+      "thigh highs",
+      "star bag"
+    ],
+    "source_image": "HQ-532YWoAAqx0H"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}
