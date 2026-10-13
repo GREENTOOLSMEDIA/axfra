@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_instrument_drums_tama_double",
+  "name": "Double bass drum kit",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "instrument",
+  "piece_family": "drums",
+  "swap_rule": "Se cita el id. Se cambian color y logo. El kit no se reescribe.",
+  "original_id": "instrument.drums.tama.double",
+  "name_es": "Batería doble bombo",
+  "name_en": "Double bass drum kit",
+  "reference": "Tama, kit de doble bombo",
+  "shells": "cascos blancos",
+  "bass": "dos bombos frontales",
+  "heads": "parches negros en los bombos, parches blancos en toms y caja",
+  "toms": "cuatro toms aéreos y dos de piso",
+  "cymbals": "platos en atriles de boom, a ambos lados",
+  "hardware": "herrajes negros",
+  "logo": "AXFRA",
+  "logo_style": "Helvetica Bold",
+  "logo_place": "centro de cada parche de bombo",
+  "color": "blanco",
+  "acabado": "nuevo"
+}
