@@ -86,16 +86,26 @@ const CATEGORY_GROUPS=[
     ['axfra_poses','Poses']]},
   {name:'Entornos y fondos',keys:[
     ['axfra_environments/axfra_studios','Estudios fotográficos'],
-    ['axfra_environments/axfra_sports_venues','Recintos deportivos']]},
+    ['axfra_environments/axfra_sports_venues','Recintos deportivos'],
+    ['axfra_environments/axfra_architectural_spaces','Espacios arquitectónicos'],
+    ['axfra_environments/axfra_commercial_spaces','Espacios comerciales'],
+    ['axfra_environments/axfra_editorial_industrial','Entornos industriales'],
+    ['axfra_environments/axfra_event_spaces','Escenarios y espectáculos'],
+    ['axfra_environments/axfra_extreme_environments','Ambientes extremos'],
+    ['axfra_environments/axfra_luxury_interiors','Interiores de lujo'],
+    ['axfra_environments/axfra_nature_scenes','Naturaleza']]},
   {name:'Iluminación',keys:[
     ['axfra_lighting/axfra_studio_lighting','Iluminación de estudio'],
     ['axfra_lighting/axfra_dynamic_lighting','Iluminación dinámica 360°'],
     ['axfra_lighting/axfra_lighting_schemes','Esquemas de iluminación']]},
+  {name:'Cámara',keys:[
+    ['axfra_camera/axfra_camera_angles','Ángulos y orientación de cámara'],
+    ['axfra_camera/axfra_subject_rotation','Rotación del sujeto']]},
   {name:'Producción audiovisual',keys:[
     ['axfra_instruments','Instrumentos'],
     ['axfra_motion','Movimientos de cámara']]}
 ];
-const openFamilies=new Set(['Vestuario','Entornos y fondos','Iluminación']);
+const openFamilies=new Set(['Vestuario','Entornos y fondos','Iluminación','Cámara']);
 const nameForCategory=new Map(CATEGORY_GROUPS.flatMap(group=>group.keys));
 let index=null,category='all',selected=null,composition=[],requestSeq=0;
 const label=k=>nameForCategory.get(k)||k.replaceAll('_',' ').replaceAll('/',' / ');

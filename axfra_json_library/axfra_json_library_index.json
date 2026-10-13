@@ -8,13 +8,22 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 355,
+  "total_json": 377,
   "categories": {
     "axfra_apparel/axfra_blouses": 12,
     "axfra_apparel/axfra_lingerie": 12,
     "axfra_apparel/axfra_sports_uniforms": 1,
     "axfra_apparel/axfra_swim_bikinis": 6,
+    "axfra_camera/axfra_camera_angles": 9,
+    "axfra_camera/axfra_subject_rotation": 1,
     "axfra_dummy_version": 8,
+    "axfra_environments/axfra_architectural_spaces": 4,
+    "axfra_environments/axfra_commercial_spaces": 1,
+    "axfra_environments/axfra_editorial_industrial": 1,
+    "axfra_environments/axfra_event_spaces": 1,
+    "axfra_environments/axfra_extreme_environments": 1,
+    "axfra_environments/axfra_luxury_interiors": 2,
+    "axfra_environments/axfra_nature_scenes": 2,
     "axfra_environments/axfra_sports_venues": 1,
     "axfra_environments/axfra_studios": 1,
     "axfra_facial_expressions": 12,
@@ -278,6 +287,86 @@
       "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json"
     },
     {
+      "id": "AXFRA_camera_dutch_angle",
+      "name": "Dutch Angle View",
+      "name_es": "Ángulo holandés",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_dutch_angle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_dutch_angle.json"
+    },
+    {
+      "id": "AXFRA_camera_extreme_high_angle",
+      "name": "Extreme High Angle View",
+      "name_es": "Picado extremo",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_extreme_high_angle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_extreme_high_angle.json"
+    },
+    {
+      "id": "AXFRA_camera_extreme_low_angle",
+      "name": "Extreme Low Angle View",
+      "name_es": "Contrapicado extremo",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_extreme_low_angle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_extreme_low_angle.json"
+    },
+    {
+      "id": "AXFRA_camera_eye_level",
+      "name": "Eye-Level View",
+      "name_es": "Vista a la altura de los ojos",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_eye_level.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_eye_level.json"
+    },
+    {
+      "id": "AXFRA_camera_ground_level",
+      "name": "Ground-Level View",
+      "name_es": "Vista a ras de suelo",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_ground_level.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_ground_level.json"
+    },
+    {
+      "id": "AXFRA_camera_high_angle",
+      "name": "High Angle View",
+      "name_es": "Picado",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_high_angle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_high_angle.json"
+    },
+    {
+      "id": "AXFRA_camera_low_angle",
+      "name": "Low Angle View",
+      "name_es": "Contrapicado",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_low_angle.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_low_angle.json"
+    },
+    {
+      "id": "AXFRA_camera_subject_relative_orientation",
+      "name": "Subject-Relative Camera Orientation",
+      "name_es": "Orientación de cámara respecto al sujeto",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_subject_relative_orientation.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_subject_relative_orientation.json"
+    },
+    {
+      "id": "AXFRA_camera_top_down",
+      "name": "Top-Down View",
+      "name_es": "Vista cenital",
+      "category": "axfra_camera/axfra_camera_angles",
+      "path": "axfra_camera/axfra_camera_angles/axfra_camera_top_down.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_camera_angles/axfra_camera_top_down.json"
+    },
+    {
+      "id": "AXFRA_subject_rotation",
+      "name": "Subject Rotation",
+      "name_es": "Rotación del sujeto",
+      "category": "axfra_camera/axfra_subject_rotation",
+      "path": "axfra_camera/axfra_subject_rotation/axfra_subject_rotation.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_camera/axfra_subject_rotation/axfra_subject_rotation.json"
+    },
+    {
       "id": "AXFRA_dummy_amina",
       "name": "Amina Dummy Version",
       "name_es": null,
@@ -340,6 +429,102 @@
       "category": "axfra_dummy_version",
       "path": "axfra_dummy_version/axfra_viktoria_dots_dummy_version.json",
       "url": "https://axfra.com/axfra_json_library/axfra_dummy_version/axfra_viktoria_dots_dummy_version.json"
+    },
+    {
+      "id": "AXFRA_env_botanical_greenhouse",
+      "name": "Botanical Greenhouse",
+      "name_es": "Invernadero botánico",
+      "category": "axfra_environments/axfra_architectural_spaces",
+      "path": "axfra_environments/axfra_architectural_spaces/axfra_env_botanical_greenhouse.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_architectural_spaces/axfra_env_botanical_greenhouse.json"
+    },
+    {
+      "id": "AXFRA_env_contemporary_art_gallery",
+      "name": "Contemporary Art Gallery",
+      "name_es": "Galería de arte contemporáneo",
+      "category": "axfra_environments/axfra_architectural_spaces",
+      "path": "axfra_environments/axfra_architectural_spaces/axfra_env_contemporary_art_gallery.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_architectural_spaces/axfra_env_contemporary_art_gallery.json"
+    },
+    {
+      "id": "AXFRA_env_gothic_cathedral_santiago",
+      "name": "Santiago Gothic Cathedral with AXFRA Stained Glass",
+      "name_es": "Catedral gótica de Santiago con vitral AXFRA",
+      "category": "axfra_environments/axfra_architectural_spaces",
+      "path": "axfra_environments/axfra_architectural_spaces/axfra_env_gothic_cathedral_santiago.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_architectural_spaces/axfra_env_gothic_cathedral_santiago.json"
+    },
+    {
+      "id": "AXFRA_env_grand_classic_library",
+      "name": "Grand Classical Library",
+      "name_es": "Biblioteca clásica monumental",
+      "category": "axfra_environments/axfra_architectural_spaces",
+      "path": "axfra_environments/axfra_architectural_spaces/axfra_env_grand_classic_library.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_architectural_spaces/axfra_env_grand_classic_library.json"
+    },
+    {
+      "id": "AXFRA_env_axfra_premium_cafe",
+      "name": "AXFRA Premium Coffeehouse",
+      "name_es": "Café premium AXFRA",
+      "category": "axfra_environments/axfra_commercial_spaces",
+      "path": "axfra_environments/axfra_commercial_spaces/axfra_env_axfra_premium_cafe.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_commercial_spaces/axfra_env_axfra_premium_cafe.json"
+    },
+    {
+      "id": "AXFRA_env_editorial_warehouse",
+      "name": "Industrial Editorial Warehouse",
+      "name_es": "Nave industrial editorial",
+      "category": "axfra_environments/axfra_editorial_industrial",
+      "path": "axfra_environments/axfra_editorial_industrial/axfra_env_editorial_warehouse.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_editorial_industrial/axfra_env_editorial_warehouse.json"
+    },
+    {
+      "id": "AXFRA_env_live_rock_stage",
+      "name": "Live Rock Concert Stage",
+      "name_es": "Escenario de rock en vivo",
+      "category": "axfra_environments/axfra_event_spaces",
+      "path": "axfra_environments/axfra_event_spaces/axfra_env_live_rock_stage.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_event_spaces/axfra_env_live_rock_stage.json"
+    },
+    {
+      "id": "AXFRA_env_antarctic_station_aurora",
+      "name": "Chilean Antarctic Station, Aurora Breach",
+      "name_es": "Base chilena antártica, ruptura de aurora",
+      "category": "axfra_environments/axfra_extreme_environments",
+      "path": "axfra_environments/axfra_extreme_environments/axfra_env_antarctic_station_aurora.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_extreme_environments/axfra_env_antarctic_station_aurora.json"
+    },
+    {
+      "id": "AXFRA_env_glass_penthouse",
+      "name": "Glass Penthouse",
+      "name_es": "Ático de cristal",
+      "category": "axfra_environments/axfra_luxury_interiors",
+      "path": "axfra_environments/axfra_luxury_interiors/axfra_env_glass_penthouse.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_luxury_interiors/axfra_env_glass_penthouse.json"
+    },
+    {
+      "id": "AXFRA_env_vip_elevator",
+      "name": "VIP Elevator",
+      "name_es": "Ascensor VIP",
+      "category": "axfra_environments/axfra_luxury_interiors",
+      "path": "axfra_environments/axfra_luxury_interiors/axfra_env_vip_elevator.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_luxury_interiors/axfra_env_vip_elevator.json"
+    },
+    {
+      "id": "AXFRA_env_black_sand_beach",
+      "name": "Black Sand Beach",
+      "name_es": "Playa de arena negra",
+      "category": "axfra_environments/axfra_nature_scenes",
+      "path": "axfra_environments/axfra_nature_scenes/axfra_env_black_sand_beach.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_nature_scenes/axfra_env_black_sand_beach.json"
+    },
+    {
+      "id": "AXFRA_env_forest_camper_satellite_squirrels",
+      "name": "Forest Camper with Satellite Dish and Squirrels",
+      "name_es": "Bosque con casa rodante, antena satelital y ardillas",
+      "category": "axfra_environments/axfra_nature_scenes",
+      "path": "axfra_environments/axfra_nature_scenes/axfra_env_forest_camper_satellite_squirrels.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_nature_scenes/axfra_env_forest_camper_satellite_squirrels.json"
     },
     {
       "id": "AXFRA_soccer_stadium",
