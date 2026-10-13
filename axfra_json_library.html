@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AXFRA JSON Library | Biblioteca modular</title>
+<link rel="canonical" href="https://axfra.com/axfra_json_library/axfra_json_library.html">
+<meta name="description" content="Explora los módulos JSON de AXFRA, consulta sus categorías y prepara composiciones de prueba en un editor local.">
+<link rel="stylesheet" href="/shared-layout.css">
+<style>
+:root{color-scheme:dark;--bg:#090909;--panel:#151515;--line:#303030;--muted:#a8a8a8;--red:#da1e2c;--text:#f4f4f4}*{box-sizing:border-box}.library-main,.library-header{font:14px/1.5 Arial,Helvetica,sans-serif;color:#f4f4f4}.library-main{background:#090909}.library-main button,.library-main input,.library-main textarea{font:inherit}.library-main button{cursor:pointer;background:#262626;border:1px solid #494949;color:white;border-radius:5px;padding:9px 12px}.library-main button:hover{border-color:#e34752}.library-main button.primary{background:var(--red);border-color:var(--red)}.library-main button:disabled{opacity:.4;cursor:default}.library-header{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 22px;border-bottom:1px solid var(--line)}.library-brand{font-weight:800;letter-spacing:2px;font-size:20px}.brand b{color:var(--red)}.sub{color:var(--muted);font-size:12px}.library-main{display:grid;grid-template-columns:225px minmax(235px,330px) minmax(0,1fr);height:calc(100vh - 69px);min-height:550px}.sidebar,.catalog,.work{min-height:0;overflow:auto;padding:16px;border-right:1px solid var(--line)}.sidebar h2,.catalog h2,.work h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px}.cat{display:flex;width:100%;text-align:left;justify-content:space-between;align-items:center;background:transparent;border:0;border-radius:4px;padding:10px 8px;color:#ddd;gap:5px}.cat:hover,.cat.active{background:#282020;color:white}.count{color:#999;font-size:12px}.search{width:100%;padding:11px;background:#1b1b1b;color:white;border:1px solid #414141;border-radius:5px;margin-bottom:12px}.item{width:100%;display:block;text-align:left;background:transparent;border:0;border-bottom:1px solid #292929;border-radius:0;padding:11px 6px}.item:hover,.item.active{background:#242020}.item strong{display:block;font-size:13px;font-weight:600}.item small{display:block;color:#999;margin-top:3px;overflow-wrap:anywhere}.work{border-right:0;display:flex;flex-direction:column;gap:12px}.bar{display:flex;flex-wrap:wrap;gap:7px;align-items:center}.bar h2{margin:0 auto 0 0}.file{color:#bbb;font-size:12px;overflow-wrap:anywhere}.editor{display:block;flex:1;min-height:300px;width:100%;resize:vertical;background:#101010;border:1px solid #424242;color:#e7e7e7;border-radius:5px;padding:15px;font:12.5px/1.6 Menlo,Consolas,monospace;tab-size:2}.status{font-size:12px;color:#aaa;min-height:20px}.status.ok{color:#80d7a4}.status.err{color:#ff8888}.collection{border-top:1px solid var(--line);padding-top:12px}.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:115px;overflow:auto}.chip{padding:5px 8px;border:1px solid #444;border-radius:4px;background:#202020;font-size:12px}.chip button{padding:0 3px;background:none;border:0;color:#f77;margin-left:5px}.muted{color:var(--muted)}.library-main a{color:#f3a4a9}#loading{padding:10px;color:#bbb}.hint{font-size:12px;color:#999} @media(max-width:900px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto}.sidebar{grid-row:1/3}.catalog{height:330px}.work{height:700px;grid-column:2}}@media(max-width:600px){.library-header{padding:12px}.library-main{display:block}.sidebar,.catalog,.work{height:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line)}.sidebar{max-height:230px}.catalog{max-height:270px}.work{height:660px}.editor{min-height:260px}}
+
+/* AXFRA: fallback de estilos globales para páginas internas. */
+html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+#globalHeader,#globalFooter{color:#e9eceb;background:#000;font-family:inherit}
+#globalHeader *,#globalFooter *{box-sizing:border-box}
+#globalHeader a,#globalFooter a{color:inherit;text-decoration:none}
+#globalHeader .site-header{background:#000;border-bottom:1px solid #303a3c;width:100%}
+#globalHeader .wrap{width:min(calc(100% - 48px),1320px);margin-inline:auto}
+#globalHeader .header-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+#globalHeader .brand{font-size:1.55rem;font-weight:800;letter-spacing:.17em;line-height:1.1;white-space:nowrap}
+#globalHeader .brand small{display:block;font-size:.54rem;font-weight:600;letter-spacing:.24em;margin-top:7px}
+#globalHeader .nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:clamp(10px,1.8vw,26px)}
+#globalHeader .nav a{font-size:.84rem;color:#d4dad8}
+#globalHeader .nav a:hover,#globalFooter a:hover{color:#fff;text-decoration:underline}
+#globalFooter .footer-global{background:#000;color:#a5b0af;border-top:1px solid #303a3c;padding:32px 24px 42px;font-size:.78rem;text-align:center}
+#globalFooter .footer-line{max-width:1320px;margin:auto}
+#globalFooter .footer-row{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+#globalFooter .footer-row p{margin:0;max-width:1000px}
+#globalFooter .nota-seo{line-height:1.65}
+.library-main{width:100%;max-width:100%;min-width:0;min-height:650px;height:calc(100vh - 84px);overflow:hidden}
+.library-main .sidebar,.library-main .catalog,.library-main .work{min-width:0;max-width:100%}
+.library-main .work .bar{min-width:0}
+.library-main .work .bar button{white-space:normal}
+.library-main .editor{min-width:0;max-width:100%;box-sizing:border-box}
+.library-main .library-summary{font-size:12px;color:#aaa;margin:0 0 15px;line-height:1.5}
+@media(max-width:1050px){#globalHeader .header-inner{flex-direction:column;justify-content:center;align-items:flex-start;padding:18px 0;gap:14px}#globalHeader .nav{justify-content:flex-start}.library-main{height:auto;min-height:650px;overflow:visible}}
+@media(max-width:600px){#globalHeader .wrap{width:calc(100% - 32px)}#globalHeader .nav{gap:10px 16px}#globalHeader .nav a{font-size:.8rem}}
+
+/* Navegación jerárquica: familia > categoría > componente. */
+.library-main .cat-all,.library-main .family-toggle,.library-main .cat-child{font:inherit;display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;gap:9px;border-radius:5px;box-sizing:border-box}
+.library-main .cat-all{margin:0 0 10px;padding:10px 11px;background:#252525;border:1px solid #444}
+.library-main .cat-all.active,.library-main .cat-child.active{background:#352124;border-color:#a8434b}
+.family-group{margin:0 0 5px}
+.library-main .family-toggle{background:#1d1d1d;border:1px solid #373737;padding:11px 10px;font-weight:700}
+.library-main .family-toggle:hover{background:#282828}
+.family-label{display:flex;align-items:center;gap:7px;min-width:0}
+.family-chevron{color:#aaa;font-size:11px;width:13px;flex-shrink:0}
+.family-children{border-left:1px solid #484848;margin:2px 0 9px 12px;padding:3px 0 3px 9px}
+.library-main .cat-child{background:transparent;border:1px solid transparent;padding:8px 7px;font-size:13px;color:#ddd}
+.library-main .cat-child:hover{background:#292323}
+.cat-name{min-width:0;overflow-wrap:break-word}
+.library-main .catalog .item{padding:12px 7px;line-height:1.5}
+.library-main .catalog .item strong{font-size:13px}
+.library-main .catalog .item .item-en{font-size:12px;color:#aaa;margin-top:2px}
+.library-main .catalog .item .item-id{font:11px/1.45 Menlo,Consolas,monospace;color:#838383;margin-top:5px;overflow-wrap:anywhere}
+.library-main .sidebar .hint{margin-top:15px}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+
+<main class="library-main" id="contenido">
+<aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary" aria-live="polite">Conectando con el índice…</div><nav id="categories"></nav><p class="hint">Categorías obtenidas del índice público. No se modifica ningún JSON del servidor.</p></aside>
+<section class="catalog"><h2>Componentes</h2><input id="search" class="search" type="search" placeholder="Buscar nombre, ID o archivo…" aria-label="Buscar módulos"><div id="loading">Cargando biblioteca…</div><div id="items"></div></section>
+<section class="work"><div class="bar"><h2>Editor / pruebas JSON</h2><button id="new">Nuevo / pegar</button><button id="reload" title="Recuperar versión original del archivo seleccionado">Restaurar original</button></div><div id="filename" class="file">Selecciona un módulo o pega tu propio JSON.</div><textarea id="editor" class="editor" spellcheck="false" placeholder="Pega aquí cualquier JSON para probarlo, modificarlo y copiarlo…"></textarea><div class="bar"><button id="validate">Validar JSON</button><button class="primary" id="copy">Copiar JSON</button><button id="download">Descargar .json</button><button id="add">Añadir a composición</button></div><div class="status" id="status" aria-live="polite"></div><div class="collection"><div class="bar"><h2>Composición de prueba <span id="nSelected" class="count">(0)</span></h2><button id="copyComposition">Copiar composición</button><button id="downloadComposition">Descargar composición</button><button id="clearComposition">Vaciar</button></div><div id="chips" class="chips"><span class="muted">Añade módulos desde el editor para construir una composición de prueba.</span></div><p class="hint">La composición agrupa los JSON íntegros por módulo, sin fusionar ni sobrescribir bloques. Puedes copiarla o descargarla y ajustar su integración posteriormente con el Master AXFRA.</p></div></section>
+</main>
+<div id="globalFooter"></div>
+<script>
+'use strict';
+const INDEX_URL='https://axfra.com/axfra_json_library/axfra_json_library_index.json';
+const $=id=>document.getElementById(id);
+const CATEGORY_GROUPS=[
+  {name:'Vestuario',keys:[
+    ['axfra_apparel/axfra_blouses','Blusas'],
+    ['axfra_apparel/axfra_lingerie','Lencería'],
+    ['axfra_apparel/axfra_swim_bikinis','Trajes de baño / Bikinis'],
+    ['axfra_apparel/axfra_sports_uniforms','Uniformes deportivos'],
+    ['axfra_wardrobe_looks_costume','Looks y disfraces']]},
+  {name:'Identidades y personajes',keys:[['axfra_dummy_version','Dummy Version']]},
+  {name:'Expresión y apariencia',keys:[
+    ['axfra_facial_expressions','Expresiones faciales'],
+    ['axfra_hair_styles','Peinados']]},
+  {name:'Composición visual',keys:[
+    ['axfra_graphic_styles','Estilos gráficos'],
+    ['axfra_poses','Poses']]},
+  {name:'Entornos y fondos',keys:[
+    ['axfra_environments/axfra_studios','Estudios fotográficos'],
+    ['axfra_environments/axfra_sports_venues','Recintos deportivos'],
+    ['axfra_environments/axfra_architectural_spaces','Espacios arquitectónicos'],
+    ['axfra_environments/axfra_commercial_spaces','Espacios comerciales'],
+    ['axfra_environments/axfra_editorial_industrial','Entornos industriales'],
+    ['axfra_environments/axfra_event_spaces','Escenarios y espectáculos'],
+    ['axfra_environments/axfra_extreme_environments','Ambientes extremos'],
+    ['axfra_environments/axfra_luxury_interiors','Interiores de lujo'],
+    ['axfra_environments/axfra_nature_scenes','Naturaleza']]},
+  {name:'Iluminación',keys:[
+    ['axfra_lighting/axfra_studio_lighting','Iluminación de estudio'],
+    ['axfra_lighting/axfra_dynamic_lighting','Iluminación dinámica 360°'],
+    ['axfra_lighting/axfra_lighting_schemes','Esquemas de iluminación']]},
+  {name:'Cámara',keys:[
+    ['axfra_camera/axfra_camera_angles','Ángulos y orientación de cámara'],
+    ['axfra_camera/axfra_subject_rotation','Rotación del sujeto']]},
+  {name:'Objetos',keys:[
+    ['axfra_objects/axfra_instruments','Instrumentos']]},
+  {name:'Producción audiovisual',keys:[
+    ['axfra_motion','Movimientos de cámara']]}
+];
+const openFamilies=new Set(['Vestuario','Entornos y fondos','Iluminación','Cámara']);
+const nameForCategory=new Map(CATEGORY_GROUPS.flatMap(group=>group.keys));
+let index=null,category='all',selected=null,composition=[],requestSeq=0;
+const label=k=>nameForCategory.get(k)||k.replaceAll('_',' ').replaceAll('/',' / ');
+function categorizedGroups(){
+  const cats=Object.keys(index.categories||{});
+  const assigned=new Set(CATEGORY_GROUPS.flatMap(g=>g.keys.map(pair=>pair[0])));
+  const groups=CATEGORY_GROUPS.map(g=>({...g,keys:g.keys.filter(pair=>cats.includes(pair[0]))})).filter(g=>g.keys.length);
+  const unknown=cats.filter(k=>!assigned.has(k));
+  if(unknown.length)groups.push({name:'Otras categorías',keys:unknown.map(k=>[k,label(k)])});
+  return groups;
+}
+function status(s,kind=''){const el=$('status');el.textContent=s;el.className='status '+kind;}
+function safeFilename(s){return (s||'axfra_custom').toLowerCase().replace(/[^a-z0-9_-]+/g,'_').replace(/^_+|_+$/g,'')+'.json';}
+function getJSON(){try{return JSON.parse($('editor').value)}catch(e){status('JSON inválido: '+e.message,'err');return null}}
+function download(name,text){const blob=new Blob([text],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+async function copyText(t){try{await navigator.clipboard.writeText(t);status('Copiado al portapapeles.','ok')}catch(e){$('editor').focus();$('editor').select();status('El navegador bloqueó el portapapeles. Seleccionado: usa Cmd/Ctrl+C.','err')}}
+function renderCategories(){
+  const nav=$('categories');nav.replaceChildren();
+  const all=document.createElement('button');all.type='button';all.className='cat-all'+(category==='all'?' active':'');
+  const allName=document.createElement('span');allName.textContent='Todas las categorías';
+  const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
+  all.append(allName,allCount);all.onclick=()=>{category='all';renderCategories();renderItems()};nav.append(all);
+  for(const group of categorizedGroups()){
+    const wrapper=document.createElement('div');wrapper.className='family-group';
+    const expanded=openFamilies.has(group.name);
+    const count=group.keys.reduce((n,[key])=>n+(Number(index.categories[key])||0),0);
+    const head=document.createElement('button');head.type='button';head.className='family-toggle';head.setAttribute('aria-expanded',String(expanded));
+    const left=document.createElement('span');left.className='family-label';
+    const chevron=document.createElement('span');chevron.className='family-chevron';chevron.textContent=expanded?'▾':'▸';
+    const title=document.createElement('span');title.className='cat-name';title.textContent=group.name;
+    const number=document.createElement('span');number.className='count';number.textContent=count;
+    left.append(chevron,title);head.append(left,number);
+    head.onclick=()=>{if(openFamilies.has(group.name))openFamilies.delete(group.name);else openFamilies.add(group.name);renderCategories()};
+    wrapper.append(head);
+    if(expanded){
+      const children=document.createElement('div');children.className='family-children';
+      for(const [key,name] of group.keys){
+        const button=document.createElement('button');button.type='button';button.className='cat-child'+(category===key?' active':'');
+        const text=document.createElement('span');text.className='cat-name';text.textContent=name;
+        const n=document.createElement('span');n.className='count';n.textContent=index.categories[key];
+        button.append(text,n);button.onclick=()=>{category=key;renderCategories();renderItems()};children.append(button);
+      }
+      wrapper.append(children);
+    }
+    nav.append(wrapper);
+  }
+}
+function renderItems(){
+  const q=$('search').value.toLocaleLowerCase().trim();
+  const files=index.files.filter(f=>(category==='all'||f.category===category)&&[f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+  const list=$('items');list.replaceChildren();
+  files.forEach(f=>{
+    const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');
+    const name=document.createElement('strong');name.textContent=f.name_es||f.name||f.id||'Sin nombre';
+    b.append(name);
+    if(f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;b.append(en)}
+    const id=document.createElement('small');id.className='item-id';id.textContent=f.id||f.path.split('/').pop();b.append(id);
+    b.title=f.path;b.onclick=()=>loadFile(f);list.append(b)
+  });
+  $('loading').textContent=files.length+' componente(s)';
+}
+async function loadFile(f){const seq=++requestSeq;selected=f;$('filename').textContent='Cargando '+f.path+'…';status('Recuperando JSON original…');renderItems();try{const base=new URL(index.base_url||INDEX_URL,INDEX_URL);const url=new URL(f.path,base);if(url.origin!==new URL(INDEX_URL).origin)throw new Error('Ruta fuera del dominio AXFRA');const r=await fetch(url.href,{cache:'no-cache'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();if(seq!==requestSeq)return;$('editor').value=JSON.stringify(data,null,2);$('filename').textContent=f.path;status('JSON original cargado. Puedes editarlo sin modificar el servidor.','ok')}catch(e){if(seq!==requestSeq)return;$('filename').textContent=f.path;status('No se pudo cargar: '+e.message,'err')}}
+function makeComposition(){return {id:'AXFRA_test_composition',name:'AXFRA Test Composition',meta:{developer:'ALARSI',developer_site:'https://alarsi.com',brand:'AXFRA',brand_site:'https://axfra.com',system:'AXFRA JSON prompt system'},modules:composition.map(x=>({source_path:x.path,content:x.data}))}}
+function renderComposition(){const c=$('chips');c.replaceChildren();$('nSelected').textContent='('+composition.length+')';if(!composition.length){const span=document.createElement('span');span.className='muted';span.textContent='Sin módulos seleccionados.';c.append(span)}composition.forEach((x,i)=>{const el=document.createElement('span');el.className='chip';el.append(document.createTextNode(x.label));const remove=document.createElement('button');remove.textContent='×';remove.title='Quitar módulo';remove.onclick=()=>{composition.splice(i,1);renderComposition()};el.append(remove);c.append(el)})}
+$('search').addEventListener('input',()=>index&&renderItems());
+$('new').onclick=()=>{++requestSeq;selected=null;$('editor').value='';$('filename').textContent='JSON nuevo / pegado (local)';status('Editor vacío: pega tu JSON.');if(index)renderItems();$('editor').focus()};
+$('reload').onclick=()=>{if(selected)loadFile(selected);else status('No hay un archivo original seleccionado.','err')};
+$('validate').onclick=()=>{const data=getJSON();if(data!==null)status('JSON válido. '+(data.id?'ID: '+data.id:'Sin campo ID (opcional para pruebas).'),'ok')};
+$('copy').onclick=()=>{const data=getJSON();if(data!==null)copyText(JSON.stringify(data,null,2))};
+$('download').onclick=()=>{const data=getJSON();if(data!==null)download(selected?.path.split('/').pop()||safeFilename(data.id||data.name),JSON.stringify(data,null,2)+'\n')};
+$('add').onclick=()=>{const data=getJSON();if(data===null)return;const path=selected?.path||'local/'+safeFilename(data.id||data.name||'custom');const i=composition.findIndex(x=>x.path===path);const x={path,label:data.name||data.id||path,data};if(i>=0)composition[i]=x;else composition.push(x);renderComposition();status(i>=0?'Módulo actualizado en la composición.':'Módulo añadido a la composición.','ok')};
+$('copyComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');copyText(JSON.stringify(makeComposition(),null,2))};
+$('downloadComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');download('axfra_test_composition.json',JSON.stringify(makeComposition(),null,2)+'\n')};
+$('clearComposition').onclick=()=>{composition=[];renderComposition();status('Composición vaciada.','ok')};
+async function initializeLibrary(){
+  const summary=$('summary'), loading=$('loading');
+  try {
+    // Cache-busting: evita mostrar un índice antiguo después de actualizar GitHub Pages.
+    const url=new URL(INDEX_URL);
+    url.searchParams.set('v',String(Date.now()));
+    const response=await fetch(url.href,{cache:'no-store',mode:'cors'});
+    if(!response.ok)throw new Error('HTTP '+response.status+' al recuperar el índice');
+    const data=await response.json();
+    if(!data||!Array.isArray(data.files))throw new Error('El índice no contiene files[]');
+    index=data;
+    const count=index.files.length;
+    summary.textContent=count+' JSON · '+Object.keys(index.categories||{}).length+' categorías';
+    renderCategories();
+    renderItems();
+    status('Índice cargado correctamente. Selecciona un componente.','ok');
+  }catch(error){
+    console.error('AXFRA JSON Library:',error);
+    summary.textContent='No se pudo cargar el índice';
+    loading.textContent='Error de carga: '+error.message;
+    status('No se pudo leer el índice: '+error.message,'err');
+    const retry=document.createElement('button');
+    retry.type='button';retry.textContent='Reintentar carga';
+    retry.addEventListener('click',()=>{retry.remove();loading.textContent='Cargando biblioteca…';initializeLibrary()});
+    $('items').replaceChildren(retry);
+  }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initializeLibrary,{once:true});
+else initializeLibrary();
+</script>
+<script defer src="/shared-layout.js"></script>
+</body></html>
