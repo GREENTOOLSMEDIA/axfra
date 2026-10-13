@@ -8,10 +8,11 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 333,
+  "total_json": 339,
   "categories": {
     "axfra_apparel/axfra_blouses": 12,
     "axfra_apparel/axfra_lingerie": 12,
+    "axfra_apparel/axfra_swim_bikinis": 6,
     "axfra_dummy_version": 8,
     "axfra_facial_expressions": 12,
     "axfra_graphic_styles": 39,
@@ -1717,6 +1718,54 @@
       "category": "axfra_poses",
       "path": "axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json",
       "url": "https://axfra.com/axfra_json_library/axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json"
+    },
+    {
+      "id": "AXFRA_bikini_bandeau_ring",
+      "name": "Ring Bandeau",
+      "name_es": "Bandeau con aro",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_crochet",
+      "name": "Crochet Triangle",
+      "name_es": "Triángulo crochet",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_floral",
+      "name": "Floral Triangle",
+      "name_es": "Triángulo floral",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_knit",
+      "name": "Knit Triangle",
+      "name_es": "Triángulo de punto",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_lace",
+      "name": "Lace Triangle",
+      "name_es": "Triángulo de encaje",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_strappy",
+      "name": "Strappy Triangle",
+      "name_es": "Triángulo con tiras",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json"
     },
     {
       "id": "AXFRA_costume_crest_circular",
