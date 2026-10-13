@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "uniform_white": {
+    "uniform_template": {
+      "category": "soccer uniform",
+      "style": "minimal, fitted, sporty, sexy, editorial",
+      "top": {
+        "type": "short-sleeve cropped athletic jersey",
+        "fit": "tight fitted",
+        "collar": "round neck",
+        "length": "above navel",
+        "material": "smooth stretch performance fabric",
+        "color": "white"
+      },
+      "bottom": {
+        "type": "ultra-short fitted athletic shorts",
+        "fit": "body-contouring",
+        "waist": "mid to low rise",
+        "material": "smooth stretch performance fabric",
+        "color": "white"
+      },
+      "socks": {
+        "type": "knee-high sports socks",
+        "fit": "fitted",
+        "color": "white"
+      },
+      "footwear": {
+        "type": "black soccer cleats",
+        "style": "clean modern",
+        "color": "black"
+      },
+      "overall_look": {
+        "silhouette": "clean, athletic, streamlined",
+        "mood": "stylized sports promo"
+      }
+    },
+    "hair_block": {
+      "enabled": true,
+      "team_identity_function": "used to differentiate teams visually",
+      "dynamic": true,
+      "style_family": "tied-back hair",
+      "description": "sporty tied-back hairstyle, clean and controlled"
+    },
+    "face_markings_block": {
+      "enabled": true,
+      "type": "sports-inspired face paint or makeup accent",
+      "placement": "under eyes, cheek, or side face",
+      "intensity": "subtle to medium",
+      "dynamic": true,
+      "color": "white"
+    },
+    "pose_block": {
+      "enabled": true,
+      "framing": "full body",
+      "style": "dynamic athletic pose",
+      "dynamic": true,
+      "examples": [
+        "standing confidently with soccer ball",
+        "one leg relaxed, torso slightly angled",
+        "hands on hips",
+        "holding ball at hip level",
+        "ready stance, sporty and confident"
+      ]
+    }
+  }
+}
