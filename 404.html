@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#000000">
+  <title>404 — Wrong Place! | AXFRA</title>
+  <meta name="description" content="Wrong place! This page does not exist. Return to AXFRA home.">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body { background: #000; color: #f5f5f5; font-family: Inter, 'Helvetica Neue', Arial, sans-serif; }
+    a { color: inherit; }
+    .wrap { width: min(1200px, calc(100% - 40px)); margin-inline: auto; }
+    .site-header { border-bottom: 1px solid #222; background: #000; }
+    .header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; flex-direction: column; font-size: 25px; font-weight: 900; letter-spacing: .07em; text-decoration: none; line-height: 1; }
+    .brand small { margin-top: 6px; font-size: 9px; font-weight: 600; letter-spacing: .19em; }
+    .nav { display: flex; gap: 24px; flex-wrap: wrap; }
+    .nav a { text-decoration: none; font-size: 13px; color: #ddd; }
+    .nav a:hover, .nav a:focus-visible { color: #fff; text-decoration: underline; }
+    main { min-height: calc(100svh - 150px); display: flex; align-items: center; justify-content: center; padding: 38px 20px 50px; }
+    .error-content { text-align: center; width: 100%; }
+    .error-image { display: block; width: min(100%, 440px); height: auto; margin: 0 auto; border: 0; }
+    .error-caption { margin: 24px 0 20px; font-size: clamp(15px, 2vw, 18px); color: #d6d6d6; }
+    .home-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 27px; border-radius: 3px; background: #da1e2c; color: white; text-decoration: none; font-size: 13px; font-weight: 800; letter-spacing: .08em; transition: background .2s ease; }
+    .home-button:hover, .home-button:focus-visible { background: #f13240; }
+    .site-footer { padding: 22px 20px; border-top: 1px solid #222; text-align: center; color: #888; font-size: 12px; }
+    @media (max-width: 780px) { .header-inner { padding-block: 18px; flex-direction: column; gap: 18px; } .nav { justify-content: center; gap: 12px 18px; } main { padding-top: 25px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/index.html#inicio" aria-label="AXFRA, inicio">AXFRA<small>AXION FRAME TOOLS</small></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="/index.html#estudios">Estudios</a>
+        <a href="/index.html#metodo">Método</a>
+        <a href="/index.html#archivo">Áreas</a>
+        <a href="/identities.html">Identidades</a>
+        <a href="/axfra_json_library/axfra_json_library.html">Librería</a>
+        <a href="/index.html#proyecto">Proyecto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="error-content" aria-label="Error 404: página no encontrada">
+      <img class="error-image" src="https://axfra.com/images/404.jpg" width="1024" height="1536" alt="Una mujer con gorro de ducha mira sorprendida hacia atrás, hace un gesto de alto y un pato amarillo aparece delante de la ducha.">
+      <p class="error-caption">Oops! Looks like you've walked into the wrong place.</p>
+      <a class="home-button" href="/index.html">BACK TO HOME →</a>
+    </section>
+  </main>
+  <footer class="site-footer">© 2026 AXFRA · ALARSI</footer>
+</body>
+</html>
