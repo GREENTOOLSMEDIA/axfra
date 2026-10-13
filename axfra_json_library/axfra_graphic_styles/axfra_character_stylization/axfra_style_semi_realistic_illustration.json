@@ -1,0 +1,35 @@
+{
+  "id": "AXFRA_style_semi_realistic_illustration",
+  "name": "Semi-Realistic Illustration",
+  "name_es": "Ilustración semirrealista",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "style_block": {
+    "type": "character_stylization",
+    "style": "semi-realistic digital painting",
+    "visual_characteristics": "Plausible anatomy, painterly brushwork, nuanced skin tones, natural facial structure, controlled edges and soft cinematic light",
+    "application": "Transform the rendering style of the subject from the reference image, maintaining a recognizable identity and consistent scene composition.",
+    "preserve": [
+      "subject_identity",
+      "facial_likeness",
+      "pose",
+      "gesture",
+      "wardrobe",
+      "background",
+      "environment",
+      "camera_angle",
+      "camera_framing",
+      "lighting_direction"
+    ],
+    "adaptation_rule": "Only stylize appearance and rendering. Allow the geometric simplification inherent to this style while keeping the original visual relationships and intent.",
+    "avoid": "Avoid full photorealism or strongly cartoonish proportions."
+  },
+  "reference_rule": "Use the subject from the reference image. Do not introduce new people, props, text, or logos."
+}

@@ -1,0 +1,35 @@
+{
+  "id": "AXFRA_style_fashion_doll",
+  "name": "Fashion Doll",
+  "name_es": "Muñeca de moda",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "style_block": {
+    "type": "character_stylization",
+    "style": "editorial fashion doll aesthetic",
+    "visual_characteristics": "Polished collectible-doll surface, refined makeup, styled hair strands, slightly stylized proportions, clean studio-quality rendering",
+    "application": "Transform the rendering style of the subject from the reference image, maintaining a recognizable identity and consistent scene composition.",
+    "preserve": [
+      "subject_identity",
+      "facial_likeness",
+      "pose",
+      "gesture",
+      "wardrobe",
+      "background",
+      "environment",
+      "camera_angle",
+      "camera_framing",
+      "lighting_direction"
+    ],
+    "adaptation_rule": "Only stylize appearance and rendering. Allow the geometric simplification inherent to this style while keeping the original visual relationships and intent.",
+    "avoid": "Avoid changing outfit, adding accessories or exaggerating body proportions."
+  },
+  "reference_rule": "Use the subject from the reference image. Do not introduce new people, props, text, or logos."
+}
