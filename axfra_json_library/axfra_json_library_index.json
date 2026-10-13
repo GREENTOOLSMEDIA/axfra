@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 377,
+  "total_json": 387,
   "categories": {
     "axfra_apparel/axfra_blouses": 12,
     "axfra_apparel/axfra_lingerie": 12,
@@ -28,12 +28,13 @@
     "axfra_environments/axfra_studios": 1,
     "axfra_facial_expressions": 12,
     "axfra_graphic_styles": 39,
+    "axfra_graphic_styles/axfra_character_stylization": 10,
     "axfra_hair_styles": 12,
-    "axfra_instruments": 5,
     "axfra_lighting/axfra_dynamic_lighting": 1,
     "axfra_lighting/axfra_lighting_schemes": 11,
     "axfra_lighting/axfra_studio_lighting": 1,
     "axfra_motion": 7,
+    "axfra_objects/axfra_instruments": 5,
     "axfra_poses": 105,
     "axfra_wardrobe_looks_costume": 121
   },
@@ -951,6 +952,86 @@
       "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_style_wellness_lifestyle_four_panel_identity_locked.json"
     },
     {
+      "id": "AXFRA_style_3d_animated_character",
+      "name": "3D Animated Character",
+      "name_es": "Personaje animado 3D",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_3d_animated_character.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_3d_animated_character.json"
+    },
+    {
+      "id": "AXFRA_style_3d_chibi_doll",
+      "name": "3D Chibi Doll",
+      "name_es": "Muñeca chibi 3D",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_3d_chibi_doll.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_3d_chibi_doll.json"
+    },
+    {
+      "id": "AXFRA_style_animated_film",
+      "name": "Animated Film",
+      "name_es": "Película animada 2D",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_animated_film.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_animated_film.json"
+    },
+    {
+      "id": "AXFRA_style_anime",
+      "name": "Anime",
+      "name_es": "Anime",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_anime.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_anime.json"
+    },
+    {
+      "id": "AXFRA_style_claymation",
+      "name": "Claymation",
+      "name_es": "Animación en plastilina",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_claymation.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_claymation.json"
+    },
+    {
+      "id": "AXFRA_style_comic_book",
+      "name": "Comic Book",
+      "name_es": "Cómic",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_comic_book.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_comic_book.json"
+    },
+    {
+      "id": "AXFRA_style_fashion_doll",
+      "name": "Fashion Doll",
+      "name_es": "Muñeca de moda",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_fashion_doll.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_fashion_doll.json"
+    },
+    {
+      "id": "AXFRA_style_low_poly_3d",
+      "name": "Low Poly 3D",
+      "name_es": "3D de polígonos reducidos",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_low_poly_3d.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_low_poly_3d.json"
+    },
+    {
+      "id": "AXFRA_style_photorealistic_character",
+      "name": "Photorealistic Character",
+      "name_es": "Personaje fotorrealista",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_photorealistic_character.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_photorealistic_character.json"
+    },
+    {
+      "id": "AXFRA_style_semi_realistic_illustration",
+      "name": "Semi-Realistic Illustration",
+      "name_es": "Ilustración semirrealista",
+      "category": "axfra_graphic_styles/axfra_character_stylization",
+      "path": "axfra_graphic_styles/axfra_character_stylization/axfra_style_semi_realistic_illustration.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_graphic_styles/axfra_character_stylization/axfra_style_semi_realistic_illustration.json"
+    },
+    {
       "id": "AXFRA_hair_bob",
       "name": "Wavy Bob",
       "name_es": "Bob ondulado",
@@ -1045,46 +1126,6 @@
       "category": "axfra_hair_styles",
       "path": "axfra_hair_styles/axfra_hair_volume_pony.json",
       "url": "https://axfra.com/axfra_json_library/axfra_hair_styles/axfra_hair_volume_pony.json"
-    },
-    {
-      "id": "AXFRA_instrument_bass_sr1355b",
-      "name": "Ibanez SR1355B Premium",
-      "name_es": "Ibanez SR1355B Premium",
-      "category": "axfra_instruments",
-      "path": "axfra_instruments/axfra_instrument_bass_sr1355b.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_bass_sr1355b.json"
-    },
-    {
-      "id": "AXFRA_instrument_drums_starclassic_ma62bdzs",
-      "name": "Tama Starclassic Maple MA62BDZS-DPP",
-      "name_es": "Tama Starclassic Maple MA62BDZS-DPP",
-      "category": "axfra_instruments",
-      "path": "axfra_instruments/axfra_instrument_drums_starclassic_ma62bdzs.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_drums_starclassic_ma62bdzs.json"
-    },
-    {
-      "id": "AXFRA_instrument_drums_tama_double",
-      "name": "Double bass drum kit",
-      "name_es": "Batería doble bombo",
-      "category": "axfra_instruments",
-      "path": "axfra_instruments/axfra_instrument_drums_tama_double.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_drums_tama_double.json"
-    },
-    {
-      "id": "AXFRA_instrument_guitar_lespaul_60s",
-      "name": "Gibson Les Paul Standard '60s",
-      "name_es": "Gibson Les Paul Standard '60s",
-      "category": "axfra_instruments",
-      "path": "axfra_instruments/axfra_instrument_guitar_lespaul_60s.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_guitar_lespaul_60s.json"
-    },
-    {
-      "id": "AXFRA_instrument_mic_super55",
-      "name": "Shure Super 55SH Series II",
-      "name_es": "Shure Super 55SH Series II",
-      "category": "axfra_instruments",
-      "path": "axfra_instruments/axfra_instrument_mic_super55.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_mic_super55.json"
     },
     {
       "id": "lighting.orbiting_key_360",
@@ -1245,6 +1286,46 @@
       "category": "axfra_motion",
       "path": "axfra_motion/axfra_motion_overhead_boom_down_half_orbit_zoom_out.json",
       "url": "https://axfra.com/axfra_json_library/axfra_motion/axfra_motion_overhead_boom_down_half_orbit_zoom_out.json"
+    },
+    {
+      "id": "AXFRA_instrument_bass_sr1355b",
+      "name": "Ibanez SR1355B Premium",
+      "name_es": "Ibanez SR1355B Premium",
+      "category": "axfra_objects/axfra_instruments",
+      "path": "axfra_objects/axfra_instruments/axfra_instrument_bass_sr1355b.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_objects/axfra_instruments/axfra_instrument_bass_sr1355b.json"
+    },
+    {
+      "id": "AXFRA_instrument_drums_starclassic_ma62bdzs",
+      "name": "Tama Starclassic Maple MA62BDZS-DPP",
+      "name_es": "Tama Starclassic Maple MA62BDZS-DPP",
+      "category": "axfra_objects/axfra_instruments",
+      "path": "axfra_objects/axfra_instruments/axfra_instrument_drums_starclassic_ma62bdzs.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_objects/axfra_instruments/axfra_instrument_drums_starclassic_ma62bdzs.json"
+    },
+    {
+      "id": "AXFRA_instrument_drums_tama_double",
+      "name": "Double bass drum kit",
+      "name_es": "Batería doble bombo",
+      "category": "axfra_objects/axfra_instruments",
+      "path": "axfra_objects/axfra_instruments/axfra_instrument_drums_tama_double.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_objects/axfra_instruments/axfra_instrument_drums_tama_double.json"
+    },
+    {
+      "id": "AXFRA_instrument_guitar_lespaul_60s",
+      "name": "Gibson Les Paul Standard '60s",
+      "name_es": "Gibson Les Paul Standard '60s",
+      "category": "axfra_objects/axfra_instruments",
+      "path": "axfra_objects/axfra_instruments/axfra_instrument_guitar_lespaul_60s.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_objects/axfra_instruments/axfra_instrument_guitar_lespaul_60s.json"
+    },
+    {
+      "id": "AXFRA_instrument_mic_super55",
+      "name": "Shure Super 55SH Series II",
+      "name_es": "Shure Super 55SH Series II",
+      "category": "axfra_objects/axfra_instruments",
+      "path": "axfra_objects/axfra_instruments/axfra_instrument_mic_super55.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_objects/axfra_instruments/axfra_instrument_mic_super55.json"
     },
     {
       "id": "AXFRA_lighting_red_blue_neon_split_lighting",
