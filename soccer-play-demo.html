@@ -1,437 +1,563 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101114"><meta name="description" content="AXFRA Soccer Play: una demostración práctica de composición visual modular con ocho identidades, dos equipos, uniformes y escenarios JSON."><title>AXFRA Soccer Play — Demostración práctica</title><link rel="stylesheet" href="https://axfra.com/shared-layout.css"><link rel="canonical" href="https://axfra.com/soccer-play.html"><style>
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#101114" name="theme-color"/><meta content="Soccer Play: ocho identidades, dos equipos y una historia visual. Explora cómo AXFRA combina personajes, vestuario, escenarios y composición mediante JSON modular." name="description"/><title>Soccer Play: Red vs White | Demostración visual AXFRA</title><link href="https://axfra.com/shared-layout.css" rel="stylesheet"/><link href="https://axfra.com/soccer-play-demo.html" rel="canonical"/><style>
 :root{--bg:#000;--surface:#111519;--line:#303a3c;--txt:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8;--max:1320px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif}a{color:inherit}.wrap{width:min(calc(100% - 44px),var(--max));margin-inline:auto}.hero{padding:100px 0 94px;background:radial-gradient(ellipse at 88% 20%,#64202c55,transparent 52%),linear-gradient(140deg,#101114,#161d27 85%);border-bottom:1px solid var(--line)}.eyebrow{font-size:.75rem;font-weight:750;letter-spacing:.17em;text-transform:uppercase;color:#d1a5aa}.hero h1{font-size:clamp(3.1rem,8.4vw,7rem);line-height:.99;letter-spacing:-.055em;margin:22px 0}.hero h1 em{color:#f34a58;font-style:normal}.lede{max-width:780px;color:#d4d5d7;font-size:clamp(1.05rem,1.7vw,1.3rem)}.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.cta a{padding:11px 18px;text-decoration:none;border:1px solid #666;border-radius:4px;font-weight:650}.cta .primary{background:#da1e2c;border-color:#da1e2c}.section{padding:80px 0}.section h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.12;letter-spacing:-.04em;margin:12px 0 20px}.muted{color:var(--muted);max-width:830px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.stat{padding:23px;border:1px solid var(--line);background:var(--surface)}.stat b{display:block;font-size:1.1rem}.stat span{font-size:.88rem;color:var(--muted)}.roster{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.team{border:1px solid var(--line);padding:26px;background:#191b20}.team h3{margin:0 0 7px;font-size:1.5rem}.team.red{border-top:5px solid #dd2636}.team.white{border-top:5px solid #ececec}.team p{margin:3px 0;color:#d2d2d2}.team-portraits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:22px}.team-portraits img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center top;background:#101114}.team-portraits figure{margin:0;min-width:0}.team-portraits figcaption{font-size:.72rem;text-align:center;margin-top:7px;color:#d2d2d2;overflow-wrap:anywhere}.scene-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}.scene-nav a{text-decoration:none;border:1px solid var(--line);padding:13px 15px;font-size:.88rem;background:#191c20}.scene-nav a:hover{border-color:#dc2a39}.scene-nav span{color:#f04b57;font-weight:bold;margin-right:10px}.scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;padding:45px 0;border-top:1px solid var(--line);scroll-margin-top:100px}.scene:nth-child(even) .scene-visual{order:2}.scene-visual{align-self:start;position:sticky;top:105px;background:#1e2229;min-height:280px}.scene-visual img{display:block;width:100%;height:auto;max-height:740px;object-fit:contain}.scene-info h3{font-size:clamp(1.6rem,3vw,2.45rem);line-height:1.15;margin:10px 0 17px}.scene-info>p:not(.eyebrow){color:#c8c9ce}.code-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:24px;background:#242830;padding:10px 13px;color:#d4d7dd;font-size:.75rem}.copy{cursor:pointer;background:#3c424c;border:1px solid #656d78;color:#fff;border-radius:3px;padding:6px 10px}pre{background:#0b0d10;border:1px solid #2f3339;padding:16px;margin:0;max-height:350px;overflow:auto;color:#d9dee5;font-size:.74rem;line-height:1.55}code{white-space:pre}.pending,.pending span{font-size:.7rem;letter-spacing:.16em;color:#ff737e}.pending strong{font-size:1.7rem}.pending small{color:#aeb6c0}a:focus-visible,button:focus-visible{outline:2px solid white;outline-offset:3px}@media(max-width:850px){.scene{grid-template-columns:1fr}.scene:nth-child(even) .scene-visual{order:0}.scene-visual{position:static}.scene-nav{grid-template-columns:1fr 1fr}.hero{padding:68px 0}.stats{grid-template-columns:1fr}}@media(max-width:560px){.scene-nav,.roster{grid-template-columns:1fr}.section{padding:55px 0}.scene{gap:18px;padding:30px 0}}
-</style></head><body>
-<div id="globalHeader"></div>
-<main id="contenido"><section class="hero"><div class="wrap"><p class="eyebrow">AXFRA / AXION FRAME TOOLS / DOCUMENTACIÓN APLICADA</p><h1>Soccer Play.<br><em>Red vs White.</em></h1><p class="lede">Ocho identidades. Dos equipos. Un estadio. Una historia visual construida por capas: identidad, vestuario, entorno, pose, cámara y composición.</p><div class="cta"><a class="primary" href="#secuencia">Explorar la secuencia ↓</a><a href="#metodo">Conocer la metodología ↗</a></div></div></section>
-<section class="section" id="metodo"><div class="wrap"><p class="eyebrow">01 / EL PRINCIPIO</p><h2>Ocho protagonistas.<br>Un sistema de decisiones.</h2><p class="muted">AXFRA Soccer Play demuestra cómo un mismo entorno y uniformes parametrizados pueden combinarse con identidades independientes. Los extractos JSON documentan decisiones editoriales y módulos existentes; no reproducen necesariamente los prompts completos que generaron cada imagen.</p><div class="stats"><div class="stat"><b>8 identidades</b><span>Rostros y características preservados por personaje</span></div><div class="stat"><b>2 equipos</b><span>Familias de uniforme compartidas rojo y blanco</span></div><div class="stat"><b>1 escenario</b><span>Estadio cinematográfico y branding perimetral AXFRA / ALARSI</span></div></div><div class="roster"><div class="team red"><h3>TEAM RED</h3><p><b>Paulina</b> · Capitana</p><p>Viktoria · Jugadora</p><p>Mira · Jugadora</p><p>Hana · Arquera</p><div class="team-portraits"><figure><img src="https://axfra.com/images/homegallery/axfra_paulina_soccer.jpg" alt="Paulina · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Paulina</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_viktoria_soccer.jpg" alt="Viktoria · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Viktoria</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_mira_soccer.jpg" alt="Mira · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Mira</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_hana_soccer.jpg" alt="Hana · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Hana</figcaption></figure></div></div><div class="team white"><h3>TEAM WHITE</h3><p><b>Amina</b> · Capitana</p><p>Indira · Jugadora</p><p>Dotsy · Jugadora</p><p>Mara · Arquera</p><div class="team-portraits"><figure><img src="https://axfra.com/images/homegallery/axfra_amina_soccer.jpg" alt="Amina · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Amina</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_indira_soccer.jpg" alt="Indira · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Indira</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_dotsy_soccer.jpg" alt="Dotsy · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Dotsy</figcaption></figure><figure><img src="https://axfra.com/images/homegallery/axfra_mara_soccer.jpg" alt="Mara · AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"><figcaption>Mara</figcaption></figure></div></div></div></div></section>
-<section class="section" id="recorrido" style="background:#14161a"><div class="wrap"><p class="eyebrow">02 / RECORRIDO</p><h2>Del estadio al epílogo.</h2><p class="muted">Una secuencia editorial que reúne retratos, equipos, público y escenas deportivas.</p><nav class="scene-nav" aria-label="Escenas de Soccer Play"><a href="#scene-01"><span>01</span>Estadio AXFRA</a><a href="#scene-02"><span>02</span>El público VIP</a><a href="#scene-03"><span>03</span>La hinchada de AXFRA</a><a href="#scene-04"><span>04</span>Team Red · Foto oficial</a><a href="#scene-05"><span>05</span>Team White · Foto oficial</a><a href="#scene-06"><span>06</span>Hana · Arquera roja</a><a href="#scene-07"><span>07</span>Mara · Arquera blanca</a><a href="#scene-08"><span>08</span>Red · Antes del partido</a><a href="#scene-09"><span>09</span>White · Antes del partido</a><a href="#scene-10"><span>10</span>Paulina vs. Amina</a><a href="#scene-11"><span>11</span>Partido en acción</a><a href="#scene-12"><span>12</span>Gol del Team Red</a><a href="#scene-13"><span>13</span>Gol del Team White</a><a href="#scene-14"><span>14</span>Juntas en la piscina</a></nav></div></section>
-<section class="section" id="secuencia"><div class="wrap"><p class="eyebrow">03 / SECUENCIA VISUAL</p><h2>La historia, escena a escena.</h2><p class="muted">Cada composición explica una decisión visual y ofrece un bloque JSON para examinar y copiar. Las imágenes ya generadas conservan su condición de resultados editoriales; los bloques son documentación técnica ilustrativa.</p><article class="scene" id="scene-01"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_soccer_stadium_branding.jpg" loading="lazy" alt="Estadio AXFRA" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 01 / EL ESCENARIO</p><h3>Estadio AXFRA</h3><p>El recinto reúne las condiciones para el enfrentamiento: graderías, campo profesional, iluminación dramática y presencia visual de AXFRA. La imagen de marca se integra en el espectáculo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Estadio AXFRA">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+</style><meta content="noindex, follow, max-image-preview:large" name="robots"/><meta content="article" property="og:type"/><meta content="es_CL" property="og:locale"/><meta content="AXFRA — Axion Frame Tools" property="og:site_name"/><meta content="Soccer Play: Red vs White | Demostración visual AXFRA" property="og:title"/><meta content="Soccer Play: ocho identidades, dos equipos y una historia visual. Explora cómo AXFRA combina personajes, vestuario, escenarios y composición mediante JSON modular." property="og:description"/><meta content="https://axfra.com/soccer-play-demo.html" property="og:url"/><meta content="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg" property="og:image"/><meta content="Paulina y Amina, capitanas de los equipos rojo y blanco, frente a frente en Soccer Play" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Soccer Play: Red vs White | Demostración visual AXFRA" name="twitter:title"/><meta content="Soccer Play: ocho identidades, dos equipos y una historia visual. Explora cómo AXFRA combina personajes, vestuario, escenarios y composición mediante JSON modular." name="twitter:description"/><meta content="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg" name="twitter:image"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Soccer Play: Red vs White — AXFRA",
+  "inLanguage": "es",
+  "url": "https://axfra.com/soccer-play-demo.html",
+  "description": "Soccer Play: ocho identidades, dos equipos y una historia visual. Explora cómo AXFRA combina personajes, vestuario, escenarios y composición mediante JSON modular.",
+  "creator": {
+    "@type": "Organization",
+    "name": "ALARSI",
+    "url": "https://alarsi.com"
   },
-  &quot;environment&quot;: {
-    &quot;environment&quot;: {
-      &quot;type&quot;: &quot;soccer stadium&quot;,
-      &quot;architecture&quot;: &quot;large modern open-air bowl stadium&quot;,
-      &quot;scale&quot;: &quot;monumental&quot;,
-      &quot;roof&quot;: &quot;open&quot;,
-      &quot;crowd&quot;: {
-        &quot;enabled&quot;: true,
-        &quot;density&quot;: &quot;medium&quot;,
-        &quot;appearance&quot;: &quot;subtle distant spectators, not individually detailed&quot;
+  "publisher": {
+    "@type": "Organization",
+    "name": "AXFRA",
+    "url": "https://axfra.com"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "AXFRA",
+    "url": "https://axfra.com"
+  },
+  "image": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_paulina_soccer.jpg",
+      "description": "Paulina · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_viktoria_soccer.jpg",
+      "description": "Viktoria · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_mira_soccer.jpg",
+      "description": "Mira · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_hana_soccer.jpg",
+      "description": "Hana · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_amina_soccer.jpg",
+      "description": "Amina · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_indira_soccer.jpg",
+      "description": "Indira · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_dotsy_soccer.jpg",
+      "description": "Dotsy · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_mara_soccer.jpg",
+      "description": "Mara · AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_soccer_stadium_branding.jpg",
+      "description": "Estadio de fútbol AXFRA iluminado, con graderías y campo preparado para Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_soccer_vip_crowd.jpg",
+      "description": "El público VIP"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_soccer_identity_fans.jpg",
+      "description": "La hinchada de AXFRA"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_01.jpg",
+      "description": "Team Red · Foto oficial"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_01.jpg",
+      "description": "Team White · Foto oficial"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_02.jpg",
+      "description": "Red · Antes del partido"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_02.jpg",
+      "description": "White · Antes del partido"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg",
+      "description": "Paulina vs. Amina"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra-soccer-action.jpg",
+      "description": "Paulina y Amina disputan el balón durante el partido AXFRA Soccer Play"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/gol-team-red.jpg",
+      "description": "Mara, arquera del Team White, protagoniza una secuencia de atajadas"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/gol-team-white.jpg",
+      "description": "Hana, arquera del Team Red, atrapa el balón durante una atajada"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://axfra.com/images/homegallery/axfra_soccer_full%20team_happy_pool_02.jpg",
+      "description": "Juntas en la piscina"
+    }
+  ]
+}</script></head><body>
+<div id="globalHeader"></div>
+<main id="contenido"><section class="hero"><div class="wrap"><p class="eyebrow">AXFRA / AXION FRAME TOOLS / DOCUMENTACIÓN APLICADA</p><h1>Soccer Play.<br/><em>Red vs White.</em></h1><p class="lede">Ocho identidades. Dos equipos. Un estadio. Una historia visual construida por capas: identidad, vestuario, entorno, pose, cámara y composición.</p><div class="cta"><a class="primary" href="#secuencia">Explorar la secuencia ↓</a><a href="#metodo">Conocer la metodología ↗</a></div></div></section>
+<section class="section" id="metodo"><div class="wrap"><p class="eyebrow">01 / EL PRINCIPIO</p><h2>Ocho protagonistas.<br/>Un sistema de decisiones.</h2><p class="muted">AXFRA Soccer Play demuestra cómo un mismo entorno y uniformes parametrizados pueden combinarse con identidades independientes. Los extractos JSON documentan decisiones editoriales y módulos existentes; no reproducen necesariamente los prompts completos que generaron cada imagen.</p><div class="stats"><div class="stat"><b>8 identidades</b><span>Rostros y características preservados por personaje</span></div><div class="stat"><b>2 equipos</b><span>Familias de uniforme compartidas rojo y blanco</span></div><div class="stat"><b>1 escenario</b><span>Estadio cinematográfico y branding perimetral AXFRA / ALARSI</span></div></div><div class="roster"><div class="team red"><h3>TEAM RED</h3><p><b>Paulina</b> · Capitana</p><p>Viktoria · Jugadora</p><p>Mira · Jugadora</p><p>Hana · Arquera</p><div class="team-portraits"><figure><img alt="Paulina · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_paulina_soccer.jpg"/><figcaption>Paulina</figcaption></figure><figure><img alt="Viktoria · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_viktoria_soccer.jpg"/><figcaption>Viktoria</figcaption></figure><figure><img alt="Mira · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_mira_soccer.jpg"/><figcaption>Mira</figcaption></figure><figure><img alt="Hana · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer.jpg"/><figcaption>Hana</figcaption></figure></div></div><div class="team white"><h3>TEAM WHITE</h3><p><b>Amina</b> · Capitana</p><p>Indira · Jugadora</p><p>Dotsy · Jugadora</p><p>Mara · Arquera</p><div class="team-portraits"><figure><img alt="Amina · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_amina_soccer.jpg"/><figcaption>Amina</figcaption></figure><figure><img alt="Indira · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_indira_soccer.jpg"/><figcaption>Indira</figcaption></figure><figure><img alt="Dotsy · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_dotsy_soccer.jpg"/><figcaption>Dotsy</figcaption></figure><figure><img alt="Mara · AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_mara_soccer.jpg"/><figcaption>Mara</figcaption></figure></div></div></div></div></section>
+<section class="section" id="recorrido" style="background:#14161a"><div class="wrap"><p class="eyebrow">02 / RECORRIDO</p><h2>Del estadio al epílogo.</h2><p class="muted">Una secuencia editorial que reúne retratos, equipos, público y escenas deportivas.</p><nav aria-label="Escenas de Soccer Play" class="scene-nav"><a href="#scene-01"><span>01</span>Estadio AXFRA</a><a href="#scene-02"><span>02</span>El público VIP</a><a href="#scene-03"><span>03</span>La hinchada de AXFRA</a><a href="#scene-04"><span>04</span>Team Red · Foto oficial</a><a href="#scene-05"><span>05</span>Team White · Foto oficial</a><a href="#scene-06"><span>06</span>Hana · Arquera roja</a><a href="#scene-07"><span>07</span>Mara · Arquera blanca</a><a href="#scene-08"><span>08</span>Red · Antes del partido</a><a href="#scene-09"><span>09</span>White · Antes del partido</a><a href="#scene-10"><span>10</span>Paulina vs. Amina</a><a href="#scene-11"><span>11</span>Partido en acción</a><a href="#scene-12">12  · Mara, la atajada</a><a href="#scene-13">13  · Hana, la respuesta</a><a href="#scene-14"><span>14</span>Juntas en la piscina</a></nav></div></section>
+<section class="section" id="secuencia"><div class="wrap"><p class="eyebrow">03 / SECUENCIA VISUAL</p><h2>La historia, escena a escena.</h2><p class="muted">Cada composición explica una decisión visual y ofrece un bloque JSON para examinar y copiar. Las imágenes ya generadas conservan su condición de resultados editoriales; los bloques son documentación técnica ilustrativa.</p><article class="scene" id="scene-01"><div class="scene-visual"><img alt="Estadio de fútbol AXFRA iluminado, con graderías y campo preparado para Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_soccer_stadium_branding.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 01 / EL ESCENARIO</p><h3>El estadio espera</h3><p>Antes de que aparezcan las protagonistas, el estadio ya anuncia que algo importante está por comenzar. Las graderías, el césped y la iluminación convierten el espacio en el escenario de un encuentro imaginario. AXFRA permite definir ese entorno como una pieza reutilizable, independiente de quienes entrarán a jugar.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Estadio AXFRA" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "environment": {
+    "environment": {
+      "type": "soccer stadium",
+      "architecture": "large modern open-air bowl stadium",
+      "scale": "monumental",
+      "roof": "open",
+      "crowd": {
+        "enabled": true,
+        "density": "medium",
+        "appearance": "subtle distant spectators, not individually detailed"
       }
     },
-    &quot;lighting&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;type&quot;: &quot;stadium floodlights&quot;,
-      &quot;intensity&quot;: &quot;high&quot;,
-      &quot;color_temperature&quot;: &quot;cool white&quot;,
-      &quot;effect&quot;: &quot;bright rim illumination from upper stadium ring, soft diffusion over pitch&quot;,
-      &quot;shadow_behavior&quot;: &quot;subtle, realistic, stadium-scale&quot;
+    "lighting": {
+      "enabled": true,
+      "type": "stadium floodlights",
+      "intensity": "high",
+      "color_temperature": "cool white",
+      "effect": "bright rim illumination from upper stadium ring, soft diffusion over pitch",
+      "shadow_behavior": "subtle, realistic, stadium-scale"
     },
-    &quot;perimeter_ads&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;placement&quot;: &quot;lower ring around the field perimeter&quot;,
-      &quot;format&quot;: &quot;LED advertising boards&quot;,
-      &quot;style&quot;: &quot;clean premium branding, readable but integrated into the stadium scene&quot;,
-      &quot;repeat_pattern&quot;: true,
-      &quot;ads&quot;: [
+    "perimeter_ads": {
+      "enabled": true,
+      "placement": "lower ring around the field perimeter",
+      "format": "LED advertising boards",
+      "style": "clean premium branding, readable but integrated into the stadium scene",
+      "repeat_pattern": true,
+      "ads": [
         {
-          &quot;text&quot;: &quot;AXFRA&quot;,
-          &quot;enabled&quot;: true
+          "text": "AXFRA",
+          "enabled": true
         },
         {
-          &quot;text&quot;: &quot;ALARSI&quot;,
-          &quot;enabled&quot;: true
+          "text": "ALARSI",
+          "enabled": true
         }
       ]
     }
   }
-}</code></pre></div></article><article class="scene" id="scene-02"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_soccer_vip_crowd.jpg" loading="lazy" alt="El público VIP" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 02 / LOS INVITADOS</p><h3>El público VIP</h3><p>Una platea reúne figuras públicas y referentes tecnológicos en una composición ficticia. Sus camisetas rojas y blancas los convierten en espectadores de este evento imaginario.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de El público VIP">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-02"><div class="scene-visual"><img alt="El público VIP" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_soccer_vip_crowd.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 02 / LOS INVITADOS</p><h3>Una platea fuera de lo común</h3><p>La noticia del encuentro parece haber llegado lejos: una platea de invitados inesperados observa la cancha. Esta reunión es una ficción visual, no un acontecimiento real. En AXFRA, el público, sus camisetas y la distribución de la escena se construyen como componentes de una misma composición.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de El público VIP" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;crowd&quot;: {
-    &quot;type&quot;: &quot;thematic VIP audience&quot;,
-    &quot;wardrobe&quot;: &quot;red and white soccer jerseys&quot;,
-    &quot;placement&quot;: &quot;stadium grandstand&quot;,
-    &quot;editorial_note&quot;: &quot;synthetic fictional spectator scene; no real-world endorsement implied&quot;
+  "crowd": {
+    "type": "thematic VIP audience",
+    "wardrobe": "red and white soccer jerseys",
+    "placement": "stadium grandstand",
+    "editorial_note": "synthetic fictional spectator scene; no real-world endorsement implied"
   }
-}</code></pre></div></article><article class="scene" id="scene-03"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_soccer_identity_fans.jpg" loading="lazy" alt="La hinchada de AXFRA" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 03 / IDENTIDADES REUTILIZADAS</p><h3>La hinchada de AXFRA</h3><p>Las identidades publicadas en AXFRA Identities reaparecen como retratos en carteles sostenidos por los aficionados. Un ejemplo de reutilización de referencias existentes en una composición distinta.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de La hinchada de AXFRA">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-03"><div class="scene-visual"><img alt="La hinchada de AXFRA" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_soccer_identity_fans.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 03 / IDENTIDADES REUTILIZADAS</p><h3>La hinchada también tiene rostro</h3><p>En las tribunas aparecen carteles con rostros familiares. Son identidades del universo AXFRA que regresan en un contexto diferente, sin necesidad de inventarlas desde cero. La escena muestra cómo una referencia visual puede convertirse en parte del ambiente y conservar su reconocimiento.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de La hinchada de AXFRA" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;identity_reuse&quot;: {
-    &quot;source&quot;: &quot;https://axfra.com/identities.html&quot;,
-    &quot;application&quot;: &quot;supporters holding character posters&quot;,
-    &quot;characters&quot;: [
-      &quot;Amina&quot;,
-      &quot;Dotsy&quot;,
-      &quot;Hana&quot;,
-      &quot;Indira&quot;,
-      &quot;Mara&quot;,
-      &quot;Mira&quot;,
-      &quot;Viktoria&quot;
+  "identity_reuse": {
+    "source": "https://axfra.com/identities.html",
+    "application": "supporters holding character posters",
+    "characters": [
+      "Amina",
+      "Dotsy",
+      "Hana",
+      "Indira",
+      "Mara",
+      "Mira",
+      "Viktoria"
     ],
-    &quot;continuity&quot;: &quot;use established AXFRA identity references&quot;
+    "continuity": "use established AXFRA identity references"
   }
-}</code></pre></div></article><article class="scene" id="scene-04"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_01.jpg" loading="lazy" alt="Team Red · Foto oficial" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 04 / EQUIPO DE PAULINA</p><h3>Team Red · Foto oficial</h3><p>Paulina capitanea al Team Red, junto a Viktoria, Mira y Hana. Una única familia de vestuario unifica el equipo sin borrar la identidad de cada integrante.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Team Red · Foto oficial">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-04"><div class="scene-visual"><img alt="Team Red · Foto oficial" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_01.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 04 / EQUIPO DE PAULINA</p><h3>Las cuatro del rojo</h3><p>Paulina llega como capitana, acompañada por Viktoria, Mira y Hana. Comparten los colores del Team Red, pero cada una mantiene sus propios rasgos. El uniforme funciona como una capa común sobre cuatro identidades independientes: pertenecer a un equipo no significa convertirse en la misma persona.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Team Red · Foto oficial" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;uniform_red&quot;: {
-    &quot;uniform_template&quot;: {
-      &quot;category&quot;: &quot;soccer uniform&quot;,
-      &quot;style&quot;: &quot;minimal, fitted, sporty, sexy, editorial&quot;,
-      &quot;top&quot;: {
-        &quot;type&quot;: &quot;short-sleeve cropped athletic jersey&quot;,
-        &quot;fit&quot;: &quot;tight fitted&quot;,
-        &quot;collar&quot;: &quot;round neck&quot;,
-        &quot;length&quot;: &quot;above navel&quot;,
-        &quot;material&quot;: &quot;smooth stretch performance fabric&quot;,
-        &quot;color&quot;: &quot;red&quot;
+  "uniform_red": {
+    "uniform_template": {
+      "category": "soccer uniform",
+      "style": "minimal, fitted, sporty, sexy, editorial",
+      "top": {
+        "type": "short-sleeve cropped athletic jersey",
+        "fit": "tight fitted",
+        "collar": "round neck",
+        "length": "above navel",
+        "material": "smooth stretch performance fabric",
+        "color": "red"
       },
-      &quot;bottom&quot;: {
-        &quot;type&quot;: &quot;ultra-short fitted athletic shorts&quot;,
-        &quot;fit&quot;: &quot;body-contouring&quot;,
-        &quot;waist&quot;: &quot;mid to low rise&quot;,
-        &quot;material&quot;: &quot;smooth stretch performance fabric&quot;,
-        &quot;color&quot;: &quot;red&quot;
+      "bottom": {
+        "type": "ultra-short fitted athletic shorts",
+        "fit": "body-contouring",
+        "waist": "mid to low rise",
+        "material": "smooth stretch performance fabric",
+        "color": "red"
       },
-      &quot;socks&quot;: {
-        &quot;type&quot;: &quot;knee-high sports socks&quot;,
-        &quot;fit&quot;: &quot;fitted&quot;,
-        &quot;color&quot;: &quot;red&quot;
+      "socks": {
+        "type": "knee-high sports socks",
+        "fit": "fitted",
+        "color": "red"
       },
-      &quot;footwear&quot;: {
-        &quot;type&quot;: &quot;black soccer cleats&quot;,
-        &quot;style&quot;: &quot;clean modern&quot;,
-        &quot;color&quot;: &quot;black&quot;
+      "footwear": {
+        "type": "black soccer cleats",
+        "style": "clean modern",
+        "color": "black"
       },
-      &quot;overall_look&quot;: {
-        &quot;silhouette&quot;: &quot;clean, athletic, streamlined&quot;,
-        &quot;mood&quot;: &quot;stylized sports promo&quot;
+      "overall_look": {
+        "silhouette": "clean, athletic, streamlined",
+        "mood": "stylized sports promo"
       }
     },
-    &quot;hair_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;team_identity_function&quot;: &quot;used to differentiate teams visually&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;style_family&quot;: &quot;ponytails&quot;,
-      &quot;description&quot;: &quot;sporty ponytails, energetic and playful&quot;
+    "hair_block": {
+      "enabled": true,
+      "team_identity_function": "used to differentiate teams visually",
+      "dynamic": true,
+      "style_family": "ponytails",
+      "description": "sporty ponytails, energetic and playful"
     },
-    &quot;face_markings_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;type&quot;: &quot;sports-inspired face paint or makeup accent&quot;,
-      &quot;placement&quot;: &quot;under eyes, cheek, or side face&quot;,
-      &quot;intensity&quot;: &quot;subtle to medium&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;color&quot;: &quot;red&quot;
+    "face_markings_block": {
+      "enabled": true,
+      "type": "sports-inspired face paint or makeup accent",
+      "placement": "under eyes, cheek, or side face",
+      "intensity": "subtle to medium",
+      "dynamic": true,
+      "color": "red"
     },
-    &quot;pose_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;framing&quot;: &quot;full body&quot;,
-      &quot;style&quot;: &quot;dynamic athletic pose&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;examples&quot;: [
-        &quot;standing confidently with soccer ball&quot;,
-        &quot;one leg relaxed, torso slightly angled&quot;,
-        &quot;hands on hips&quot;,
-        &quot;holding ball at hip level&quot;,
-        &quot;ready stance, sporty and confident&quot;
+    "pose_block": {
+      "enabled": true,
+      "framing": "full body",
+      "style": "dynamic athletic pose",
+      "dynamic": true,
+      "examples": [
+        "standing confidently with soccer ball",
+        "one leg relaxed, torso slightly angled",
+        "hands on hips",
+        "holding ball at hip level",
+        "ready stance, sporty and confident"
       ]
     }
   }
-}</code></pre></div></article><article class="scene" id="scene-05"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_01.jpg" loading="lazy" alt="Team White · Foto oficial" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 05 / EQUIPO DE AMINA</p><h3>Team White · Foto oficial</h3><p>Amina capitanea al Team White, junto a Indira, Dotsy y Mara. El blanco define el vestuario común; Mara incorpora equipamiento de arquera. La fotografía de referencia requiere corregir una repetición de Indira por Dotsy.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Team White · Foto oficial">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-05"><div class="scene-visual"><img alt="Team White · Foto oficial" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_01.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 05 / EQUIPO DE AMINA</p><h3>Las cuatro del blanco</h3><p>Al otro lado esperan Amina, Indira, Dotsy y Mara. El blanco las une, mientras cada rostro conserva su carácter. Mara se prepara para defender el arco. La fotografía presenta una repetición de Indira en lugar de Dotsy, un detalle visual pendiente de corrección que no altera la composición modular prevista.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Team White · Foto oficial" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;uniform_white&quot;: {
-    &quot;uniform_template&quot;: {
-      &quot;category&quot;: &quot;soccer uniform&quot;,
-      &quot;style&quot;: &quot;minimal, fitted, sporty, sexy, editorial&quot;,
-      &quot;top&quot;: {
-        &quot;type&quot;: &quot;short-sleeve cropped athletic jersey&quot;,
-        &quot;fit&quot;: &quot;tight fitted&quot;,
-        &quot;collar&quot;: &quot;round neck&quot;,
-        &quot;length&quot;: &quot;above navel&quot;,
-        &quot;material&quot;: &quot;smooth stretch performance fabric&quot;,
-        &quot;color&quot;: &quot;white&quot;
+  "uniform_white": {
+    "uniform_template": {
+      "category": "soccer uniform",
+      "style": "minimal, fitted, sporty, sexy, editorial",
+      "top": {
+        "type": "short-sleeve cropped athletic jersey",
+        "fit": "tight fitted",
+        "collar": "round neck",
+        "length": "above navel",
+        "material": "smooth stretch performance fabric",
+        "color": "white"
       },
-      &quot;bottom&quot;: {
-        &quot;type&quot;: &quot;ultra-short fitted athletic shorts&quot;,
-        &quot;fit&quot;: &quot;body-contouring&quot;,
-        &quot;waist&quot;: &quot;mid to low rise&quot;,
-        &quot;material&quot;: &quot;smooth stretch performance fabric&quot;,
-        &quot;color&quot;: &quot;white&quot;
+      "bottom": {
+        "type": "ultra-short fitted athletic shorts",
+        "fit": "body-contouring",
+        "waist": "mid to low rise",
+        "material": "smooth stretch performance fabric",
+        "color": "white"
       },
-      &quot;socks&quot;: {
-        &quot;type&quot;: &quot;knee-high sports socks&quot;,
-        &quot;fit&quot;: &quot;fitted&quot;,
-        &quot;color&quot;: &quot;white&quot;
+      "socks": {
+        "type": "knee-high sports socks",
+        "fit": "fitted",
+        "color": "white"
       },
-      &quot;footwear&quot;: {
-        &quot;type&quot;: &quot;black soccer cleats&quot;,
-        &quot;style&quot;: &quot;clean modern&quot;,
-        &quot;color&quot;: &quot;black&quot;
+      "footwear": {
+        "type": "black soccer cleats",
+        "style": "clean modern",
+        "color": "black"
       },
-      &quot;overall_look&quot;: {
-        &quot;silhouette&quot;: &quot;clean, athletic, streamlined&quot;,
-        &quot;mood&quot;: &quot;stylized sports promo&quot;
+      "overall_look": {
+        "silhouette": "clean, athletic, streamlined",
+        "mood": "stylized sports promo"
       }
     },
-    &quot;hair_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;team_identity_function&quot;: &quot;used to differentiate teams visually&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;style_family&quot;: &quot;tied-back hair&quot;,
-      &quot;description&quot;: &quot;sporty tied-back hairstyle, clean and controlled&quot;
+    "hair_block": {
+      "enabled": true,
+      "team_identity_function": "used to differentiate teams visually",
+      "dynamic": true,
+      "style_family": "tied-back hair",
+      "description": "sporty tied-back hairstyle, clean and controlled"
     },
-    &quot;face_markings_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;type&quot;: &quot;sports-inspired face paint or makeup accent&quot;,
-      &quot;placement&quot;: &quot;under eyes, cheek, or side face&quot;,
-      &quot;intensity&quot;: &quot;subtle to medium&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;color&quot;: &quot;white&quot;
+    "face_markings_block": {
+      "enabled": true,
+      "type": "sports-inspired face paint or makeup accent",
+      "placement": "under eyes, cheek, or side face",
+      "intensity": "subtle to medium",
+      "dynamic": true,
+      "color": "white"
     },
-    &quot;pose_block&quot;: {
-      &quot;enabled&quot;: true,
-      &quot;framing&quot;: &quot;full body&quot;,
-      &quot;style&quot;: &quot;dynamic athletic pose&quot;,
-      &quot;dynamic&quot;: true,
-      &quot;examples&quot;: [
-        &quot;standing confidently with soccer ball&quot;,
-        &quot;one leg relaxed, torso slightly angled&quot;,
-        &quot;hands on hips&quot;,
-        &quot;holding ball at hip level&quot;,
-        &quot;ready stance, sporty and confident&quot;
+    "pose_block": {
+      "enabled": true,
+      "framing": "full body",
+      "style": "dynamic athletic pose",
+      "dynamic": true,
+      "examples": [
+        "standing confidently with soccer ball",
+        "one leg relaxed, torso slightly angled",
+        "hands on hips",
+        "holding ball at hip level",
+        "ready stance, sporty and confident"
       ]
     }
   }
-}</code></pre></div></article><article class="scene" id="scene-06"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_hana_soccer.jpg" loading="lazy" alt="Hana · Arquera roja" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 06 / RETRATO INDIVIDUAL</p><h3>Hana · Arquera roja</h3><p>Hana ocupa el arco del Team Red. Su identidad se conserva mientras cambia el vestuario y se suman guantes de arquera.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Hana · Arquera roja">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-06"><div class="scene-visual"><img alt="Hana · Arquera roja" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 06 / RETRATO INDIVIDUAL</p><h3>Hana se pone los guantes</h3><p>Para Hana, el partido se vivirá desde la portería roja. Los guantes y el equipamiento cambian su función dentro del relato, no su identidad. AXFRA permite añadir esas piezas sin reconstruir al personaje completo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Hana · Arquera roja" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;goalkeeper_red&quot;: {
-    &quot;identity&quot;: &quot;Hana&quot;,
-    &quot;team&quot;: &quot;Team Red&quot;,
-    &quot;role&quot;: &quot;goalkeeper&quot;,
-    &quot;uniform_ref&quot;: &quot;AXFRA soccer_uniform_team_red&quot;,
-    &quot;equipment&quot;: [
-      &quot;goalkeeper gloves&quot;,
-      &quot;soccer ball&quot;
+  "goalkeeper_red": {
+    "identity": "Hana",
+    "team": "Team Red",
+    "role": "goalkeeper",
+    "uniform_ref": "AXFRA soccer_uniform_team_red",
+    "equipment": [
+      "goalkeeper gloves",
+      "soccer ball"
     ],
-    &quot;identity_rule&quot;: &quot;preserve established face and proportions&quot;
+    "identity_rule": "preserve established face and proportions"
   }
-}</code></pre></div></article><article class="scene" id="scene-07"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_mara_soccer.jpg" loading="lazy" alt="Mara · Arquera blanca" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 07 / RETRATO INDIVIDUAL</p><h3>Mara · Arquera blanca</h3><p>Mara defiende el arco del Team White. Los guantes y la protección de arquera permiten distinguir su función sin perder los colores del equipo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Mara · Arquera blanca">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-07"><div class="scene-visual"><img alt="Mara · Arquera blanca" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_mara_soccer.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 07 / RETRATO INDIVIDUAL</p><h3>Mara, última defensa</h3><p>En el Team White, Mara ocupa el arco. Su uniforme y sus guantes la distinguen del resto de las jugadoras. Una misma identidad puede asumir un rol específico mediante cambios de vestuario, accesorios y encuadre.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Mara · Arquera blanca" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;goalkeeper_white&quot;: {
-    &quot;identity&quot;: &quot;Mara&quot;,
-    &quot;team&quot;: &quot;Team White&quot;,
-    &quot;role&quot;: &quot;goalkeeper&quot;,
-    &quot;uniform_ref&quot;: &quot;AXFRA soccer_uniform_team_white&quot;,
-    &quot;equipment&quot;: [
-      &quot;goalkeeper gloves&quot;,
-      &quot;padded goalkeeper shorts&quot;
+  "goalkeeper_white": {
+    "identity": "Mara",
+    "team": "Team White",
+    "role": "goalkeeper",
+    "uniform_ref": "AXFRA soccer_uniform_team_white",
+    "equipment": [
+      "goalkeeper gloves",
+      "padded goalkeeper shorts"
     ],
-    &quot;identity_rule&quot;: &quot;preserve established face and proportions&quot;
+    "identity_rule": "preserve established face and proportions"
   }
-}</code></pre></div></article><article class="scene" id="scene-08"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_02.jpg" loading="lazy" alt="Red · Antes del partido" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 08 / CAMARINES</p><h3>Red · Antes del partido</h3><p>El Team Red se prepara fuera de la cancha. La escena introduce una capa narrativa y permite variar el vestuario sin confundir a las cuatro integrantes.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Red · Antes del partido">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-08"><div class="scene-visual"><img alt="Red · Antes del partido" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer_red_team_02.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 08 / CAMARINES</p><h3>Últimos minutos en rojo</h3><p>Antes de pisar el césped, el Team Red comparte un momento lejos de la multitud. La tensión todavía es tranquila: quedan conversaciones, gestos y preparativos. AXFRA traslada a las cuatro protagonistas a otro espacio y ajusta sus poses sin perder la continuidad del equipo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Red · Antes del partido" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;red_locker_room&quot;: {
-    &quot;characters&quot;: [
-      &quot;Paulina&quot;,
-      &quot;Viktoria&quot;,
-      &quot;Mira&quot;,
-      &quot;Hana&quot;
+  "red_locker_room": {
+    "characters": [
+      "Paulina",
+      "Viktoria",
+      "Mira",
+      "Hana"
     ],
-    &quot;scene&quot;: &quot;pre-match preparation&quot;,
-    &quot;wardrobe&quot;: &quot;team red clothing with casual pre-match layers&quot;,
-    &quot;identity_rule&quot;: &quot;one distinct established identity per person&quot;
+    "scene": "pre-match preparation",
+    "wardrobe": "team red clothing with casual pre-match layers",
+    "identity_rule": "one distinct established identity per person"
   }
-}</code></pre></div></article><article class="scene" id="scene-09"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_02.jpg" loading="lazy" alt="White · Antes del partido" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 09 / CAMARINES</p><h3>White · Antes del partido</h3><p>Mara, Indira, Dotsy y Amina conversan en el camarín. El espacio y los accesorios deportivos se adaptan a un momento previo al partido.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de White · Antes del partido">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-09"><div class="scene-visual"><img alt="White · Antes del partido" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_hana_soccer_white_team_02.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 09 / CAMARINES</p><h3>El camarín blanco</h3><p>Amina, Indira, Dotsy y Mara viven su propia espera. Entre conversaciones y accesorios deportivos, el Team White se prepara para salir. El cambio de escenario demuestra que el entorno puede variar mientras las identidades y los colores siguen siendo reconocibles.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de White · Antes del partido" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;white_locker_room&quot;: {
-    &quot;characters&quot;: [
-      &quot;Mara&quot;,
-      &quot;Indira&quot;,
-      &quot;Dotsy&quot;,
-      &quot;Amina&quot;
+  "white_locker_room": {
+    "characters": [
+      "Mara",
+      "Indira",
+      "Dotsy",
+      "Amina"
     ],
-    &quot;scene&quot;: &quot;pre-match locker room&quot;,
-    &quot;wardrobe&quot;: &quot;white team uniform and goalkeeper accessories&quot;,
-    &quot;environment&quot;: &quot;lockers, benches and sports bags&quot;
+    "scene": "pre-match locker room",
+    "wardrobe": "white team uniform and goalkeeper accessories",
+    "environment": "lockers, benches and sports bags"
   }
-}</code></pre></div></article><article class="scene" id="scene-10"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg" loading="lazy" alt="Paulina vs. Amina" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 10 / DUELO DE CAPITANAS</p><h3>Paulina vs. Amina</h3><p>El rojo y el blanco se encuentran sobre la línea central. Dos perfiles enfrentados establecen la tensión antes del encuentro y recuperan la iluminación del estadio.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Paulina vs. Amina">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-10"><div class="scene-visual"><img alt="Paulina vs. Amina" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 10 / DUELO DE CAPITANAS</p><h3>Dos capitanas, una mirada</h3><p>Paulina y Amina se encuentran frente a frente bajo las luces del estadio. El rojo y el blanco ya no son solo colores: representan dos equipos a punto de competir. AXFRA reúne dos identidades, sus uniformes y un encuadre de perfiles enfrentados en una composición compartida.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Paulina vs. Amina" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;captains&quot;: {
-    &quot;subjects&quot;: [
-      &quot;Paulina — Team Red captain&quot;,
-      &quot;Amina — Team White captain&quot;
+  "captains": {
+    "subjects": [
+      "Paulina — Team Red captain",
+      "Amina — Team White captain"
     ],
-    &quot;framing&quot;: &quot;cinematic close-up, opposing profiles&quot;,
-    &quot;background_ref&quot;: &quot;AXFRA soccer_stadium_cinematic_night&quot;,
-    &quot;continuity&quot;: &quot;preserve red and white face markings and team colors&quot;
+    "framing": "cinematic close-up, opposing profiles",
+    "background_ref": "AXFRA soccer_stadium_cinematic_night",
+    "continuity": "preserve red and white face markings and team colors"
   }
-}</code></pre></div></article><article class="scene" id="scene-11"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra-soccer-action.jpg" alt="Paulina y Amina disputan el balón durante el partido AXFRA Soccer Play" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 11 / JUGADA COLECTIVA</p><h3>Partido en acción</h3><p>Paulina y Amina disputan la pelota en plena carrera, mientras otras jugadoras acompañan la acción. Una escena de movimiento que une ambas identidades de equipo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Partido en acción">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-11"><div class="scene-visual"><img alt="Paulina y Amina disputan el balón durante el partido AXFRA Soccer Play" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra-soccer-action.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 11 / JUGADA COLECTIVA</p><h3>Ahora sí, rueda el balón</h3><p>La quietud termina. Paulina y Amina corren por la pelota mientras el resto acompaña la jugada. El desafío visual ya no es posar, sino sostener identidades, vestuario y espacio en una escena de movimiento con varias protagonistas.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Partido en acción" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;match_action&quot;: {
-    &quot;status&quot;: &quot;pending_image&quot;,
-    &quot;teams&quot;: {
-      &quot;red&quot;: [
-        &quot;Paulina&quot;,
-        &quot;Viktoria&quot;,
-        &quot;Mira&quot;,
-        &quot;Hana&quot;
+  "match_action": {
+    "status": "pending_image",
+    "teams": {
+      "red": [
+        "Paulina",
+        "Viktoria",
+        "Mira",
+        "Hana"
       ],
-      &quot;white&quot;: [
-        &quot;Amina&quot;,
-        &quot;Indira&quot;,
-        &quot;Dotsy&quot;,
-        &quot;Mara&quot;
+      "white": [
+        "Amina",
+        "Indira",
+        "Dotsy",
+        "Mara"
       ]
     },
-    &quot;camera&quot;: &quot;wide sports action framing&quot;,
-    &quot;environment_ref&quot;: &quot;AXFRA soccer_stadium_cinematic_night&quot;
+    "camera": "wide sports action framing",
+    "environment_ref": "AXFRA soccer_stadium_cinematic_night"
   }
-}</code></pre></div></article><article class="scene" id="scene-12"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/gol-team-red.jpg" alt="Mara, arquera del Team White, protagoniza una secuencia de atajadas" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 12 / MOMENTO DECISIVO</p><h3>Gol del Team Red</h3><p>Secuencia de Mara, arquera del Team White, defendiendo su portería. La composición muestra una atajada; no se observa un gol confirmado.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Gol del Team Red">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-12"><div class="scene-visual"><img alt="Mara, arquera del Team White, protagoniza una secuencia de atajadas" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/gol-team-red.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 12 / MOMENTO DECISIVO</p><h3>Mara no deja pasar</h3><p>La jugada llega al arco blanco y Mara responde con una atajada. La imagen no confirma un gol; muestra precisamente el instante en que la arquera interviene. Para AXFRA, esta secuencia exige coordinar acción, balón, postura y continuidad del personaje.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Gol del Team Red" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;goal_red&quot;: {
-    &quot;status&quot;: &quot;pending_image&quot;,
-    &quot;attacking_team&quot;: &quot;Team Red&quot;,
-    &quot;defending_goalkeeper&quot;: &quot;Mara&quot;,
-    &quot;visual_goal&quot;: &quot;ball visibly crossing the goal line&quot;,
-    &quot;camera&quot;: &quot;dynamic sports photography&quot;
+  "goal_red": {
+    "status": "pending_image",
+    "attacking_team": "Team Red",
+    "defending_goalkeeper": "Mara",
+    "visual_goal": "ball visibly crossing the goal line",
+    "camera": "dynamic sports photography"
   }
-}</code></pre></div></article><article class="scene" id="scene-13"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/gol-team-white.jpg" alt="Hana, arquera del Team Red, atrapa el balón durante una atajada" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 13 / EL EMPATE</p><h3>Gol del Team White</h3><p>Hana, arquera del Team Red, captura el balón en una intervención deportiva. La imagen presenta una atajada, no un gol confirmado.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Gol del Team White">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-13"><div class="scene-visual"><img alt="Hana, arquera del Team Red, atrapa el balón durante una atajada" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/gol-team-white.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 13 / EL EMPATE</p><h3>Hana responde en el otro arco</h3><p>El Team Red también tiene quien lo defienda. Hana atrapa el balón y detiene la amenaza. Aquí tampoco se muestra un gol: la historia avanza a través de la respuesta de ambas arqueras y de la coherencia de sus movimientos.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Gol del Team White" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;goal_white&quot;: {
-    &quot;status&quot;: &quot;pending_image&quot;,
-    &quot;attacking_team&quot;: &quot;Team White&quot;,
-    &quot;defending_goalkeeper&quot;: &quot;Hana&quot;,
-    &quot;visual_goal&quot;: &quot;ball visibly crossing the goal line&quot;,
-    &quot;camera&quot;: &quot;dynamic sports photography&quot;
+  "goal_white": {
+    "status": "pending_image",
+    "attacking_team": "Team White",
+    "defending_goalkeeper": "Hana",
+    "visual_goal": "ball visibly crossing the goal line",
+    "camera": "dynamic sports photography"
   }
-}</code></pre></div></article><article class="scene" id="scene-14"><div class="scene-visual"><img src="https://axfra.com/images/homegallery/axfra_soccer_full%20team_happy_pool_02.jpg" loading="lazy" alt="Juntas en la piscina" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';"></div><div class="scene-info"><p class="eyebrow">ESCENA 14 / EPÍLOGO</p><h3>Juntas en la piscina</h3><p>Después de competir, las ocho protagonistas celebran juntas en la piscina. El contraste de colores sigue identificando a los equipos, pero la rivalidad termina en compañerismo.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button class="copy" type="button" aria-label="Copiar JSON de Juntas en la piscina">Copiar JSON</button></div><pre><code>{
-  &quot;meta&quot;: {
-    &quot;developer&quot;: &quot;ALARSI&quot;,
-    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
-    &quot;brand&quot;: &quot;AXFRA&quot;,
-    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
-    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
-    &quot;version&quot;: &quot;1.0&quot;,
-    &quot;updated&quot;: &quot;2026-10-12&quot;
+}</code></pre></div></article><article class="scene" id="scene-14"><div class="scene-visual"><img alt="Juntas en la piscina" decoding="async" loading="lazy" onerror="this.onerror=null;this.src='https://axfra.com/images/identity/axfra_captain_dots.jpg';" src="https://axfra.com/images/homegallery/axfra_soccer_full%20team_happy_pool_02.jpg"/></div><div class="scene-info"><p class="eyebrow">ESCENA 14 / EPÍLOGO</p><h3>Después del silbato, todas juntas</h3><p>La rivalidad queda en la cancha. Las ocho protagonistas vuelven a reunirse, esta vez junto a una piscina, sin dejar de reconocer los colores que las acompañaron durante el partido. Cambia el entorno y cambia el tono, pero AXFRA conserva las identidades que hicieron posible toda la historia.</p><div class="code-top"><span>Bloque JSON · demostración ilustrativa</span><button aria-label="Copiar JSON de Juntas en la piscina" class="copy" type="button">Copiar JSON</button></div><pre><code>{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
   },
-  &quot;pool_finale&quot;: {
-    &quot;characters&quot;: {
-      &quot;red&quot;: [
-        &quot;Hana&quot;,
-        &quot;Mira&quot;,
-        &quot;Viktoria&quot;,
-        &quot;Paulina&quot;
+  "pool_finale": {
+    "characters": {
+      "red": [
+        "Hana",
+        "Mira",
+        "Viktoria",
+        "Paulina"
       ],
-      &quot;white&quot;: [
-        &quot;Mara&quot;,
-        &quot;Indira&quot;,
-        &quot;Amina&quot;,
-        &quot;Dotsy&quot;
+      "white": [
+        "Mara",
+        "Indira",
+        "Amina",
+        "Dotsy"
       ]
     },
-    &quot;environment&quot;: &quot;bright outdoor swimming pool&quot;,
-    &quot;action&quot;: &quot;group celebration, cheerful gestures and splashing water&quot;,
-    &quot;continuity&quot;: &quot;recognizable individual faces and team colors&quot;
+    "environment": "bright outdoor swimming pool",
+    "action": "group celebration, cheerful gestures and splashing water",
+    "continuity": "recognizable individual faces and team colors"
   }
-}</code></pre></div></article></div></section><section class="section" style="background:#181b20"><div class="wrap"><p class="eyebrow">04 / CONCLUSIÓN</p><h2>La composición es modular.<br>La historia es una sola.</h2><p class="muted">De las identidades de AXFRA al estadio, de la rivalidad deportiva a la celebración conjunta: Soccer Play reúne vestuario, escenario, personajes, narrativa y elementos de marca sin depender de un único prompt monolítico. La escena de figuras públicas representa una ficción editorial y no implica su participación o respaldo reales.</p><div class="cta"><a class="primary" href="https://axfra.com/identities.html">Explorar identidades</a><a href="https://axfra.com/axfra_json_library/axfra_json_library.html">Ver librería JSON</a><a href="https://axfra.com/demostracion-practica.html">Otra demostración práctica</a></div></div></section></main><div id="globalFooter"></div><script defer src="https://axfra.com/shared-layout.js"></script><script>document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const code=btn.closest('.scene-info').querySelector('code').textContent;try{await navigator.clipboard.writeText(code);btn.textContent='Copiado ✓';setTimeout(()=>btn.textContent='Copiar JSON',1600)}catch(e){btn.textContent='Selecciona el texto';}}));</script></body></html>
+}</code></pre></div></article></div></section><section class="section" style="background:#181b20"><div class="wrap"><p class="eyebrow">04 / CONCLUSIÓN</p><h2>La composición es modular.<br/>La historia es una sola.</h2><p class="muted">De las identidades de AXFRA al estadio, de la rivalidad deportiva a la celebración conjunta: Soccer Play reúne vestuario, escenario, personajes, narrativa y elementos de marca sin depender de un único prompt monolítico. La escena de figuras públicas representa una ficción editorial y no implica su participación o respaldo reales.</p><div class="cta"><a class="primary" href="https://axfra.com/identities.html">Explorar identidades</a><a href="https://axfra.com/axfra_json_library/axfra_json_library.html">Ver librería JSON</a><a href="https://axfra.com/demostracion-practica.html">Otra demostración práctica</a></div></div></section></main><div id="globalFooter"></div><script defer="" src="https://axfra.com/shared-layout.js"></script><script>document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const code=btn.closest('.scene-info').querySelector('code').textContent;try{await navigator.clipboard.writeText(code);btn.textContent='Copiado ✓';setTimeout(()=>btn.textContent='Copiar JSON',1600)}catch(e){btn.textContent='Selecciona el texto';}}));</script></body></html>
