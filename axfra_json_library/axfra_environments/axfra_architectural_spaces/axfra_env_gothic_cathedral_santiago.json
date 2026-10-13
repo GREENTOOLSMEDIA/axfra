@@ -1,0 +1,48 @@
+{
+  "id": "AXFRA_env_gothic_cathedral_santiago",
+  "name": "Santiago Gothic Cathedral with AXFRA Stained Glass",
+  "name_es": "Catedral gótica de Santiago con vitral AXFRA",
+  "mood": "monumental, solemn, gothic, editorial",
+  "palette": [
+    "dark stone",
+    "ruby red",
+    "cobalt blue",
+    "amber",
+    "violet"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "imagined grand Gothic-style cathedral in Santiago, Chile; fictional architectural setting rather than a depiction of a specific existing cathedral",
+    "architecture": "soaring pointed arches, rib vaults, stone columns, carved tracery, deep central nave, polished worn flagstones",
+    "background": "gigantic central stained-glass rose window bearing the legible word AXFRA integrated into the colored glass design",
+    "elements": "subtle incense haze, aligned wooden pews, sculpted stone details, open clear central aisle, stained-glass reflections across stone floor",
+    "branding": {
+      "text": "AXFRA",
+      "placement": "central stained glass",
+      "legibility": "clearly readable, correctly spelled, natural part of glazing"
+    }
+  },
+  "framing_block": {
+    "angle": "low eye-level along main aisle",
+    "lens": "24mm",
+    "frame": "wide full environment, nave symmetry and entire AXFRA window visible, clear foreground suitable for subject"
+  },
+  "lighting_block": {
+    "lighting": "colored sunlight projected through large stained glass, soft architectural fill, realistic volumetric rays and stone contact shadows"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 24mm, architectural perspective with controlled vertical lines",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no unreadable AXFRA lettering, no arbitrary modern signage, no collapsed columns, no warped arches, no tourists, no excessive fog"
+  }
+}

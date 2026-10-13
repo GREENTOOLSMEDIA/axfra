@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_env_contemporary_art_gallery",
+  "name": "Contemporary Art Gallery",
+  "name_es": "Galería de arte contemporáneo",
+  "mood": "minimalist, sophisticated, curated, quiet",
+  "palette": [
+    "white",
+    "soft gray",
+    "matte black",
+    "neutral beige"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "large contemporary art gallery interior",
+    "architecture": "tall white walls, high ceiling, long polished concrete floor, clean geometric sightlines",
+    "background": "large abstract works mounted with ample space between them, distant sculpture on low plinth",
+    "elements": "minimal gallery labels with no legible filler text, simple benches, open uncluttered subject zone"
+  },
+  "framing_block": {
+    "angle": "eye-level architectural three-quarter",
+    "lens": "28mm",
+    "frame": "subject-scale area in foreground with visible art installations and vanishing depth"
+  },
+  "lighting_block": {
+    "lighting": "soft ceiling gallery spots with natural diffuse skylight and restrained art highlights"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, sharp clean museum-style editorial interior",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no warped artworks, no unreadable fake signage, no crowd, no overly glossy white floors"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_env_botanical_greenhouse",
+  "name": "Botanical Greenhouse",
+  "name_es": "Invernadero botánico",
+  "mood": "lush, organic, elegant, fresh",
+  "palette": [
+    "leaf green",
+    "emerald",
+    "glass white",
+    "earth brown",
+    "sunlit gold"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "spacious nineteenth-century-inspired botanical greenhouse",
+    "architecture": "arched glass roof and slender ironwork, tiled central path, plant beds along sides",
+    "background": "layered tropical foliage and climbing plants extending into deep greenhouse perspective",
+    "elements": "ferns, large-leaf tropical plants, potted orchids, fine condensation on glass, natural clear central walking route"
+  },
+  "framing_block": {
+    "angle": "eye-level down central walkway",
+    "lens": "28mm",
+    "frame": "full greenhouse structure and attractive portrait position in center"
+  },
+  "lighting_block": {
+    "lighting": "soft filtered natural daylight through humid glazing, gently luminous green bounce, consistent plant shadows"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, coherent glass reflections and botanical detail",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no plastic vegetation, no nonsensical plant scaling, no overcrowded subject area, no extreme green skin cast"
+  }
+}

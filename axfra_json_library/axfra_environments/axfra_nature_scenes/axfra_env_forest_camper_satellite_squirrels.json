@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_env_forest_camper_satellite_squirrels",
+  "name": "Forest Camper with Satellite Dish and Squirrels",
+  "name_es": "Bosque con casa rodante, antena satelital y ardillas",
+  "mood": "peaceful, adventurous, intimate, natural",
+  "palette": [
+    "pine green",
+    "moss green",
+    "earth brown",
+    "warm cream",
+    "soft blue"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "temperate forest clearing with tall pines and a soft mossy floor",
+    "background": "a parked camper trailer placed in the background among trees, with a plainly visible satellite dish mounted on its roof",
+    "elements": "several squirrels scattered naturally near roots and fallen logs, ferns, stones, fallen branches, forest textures, narrow path into clearing",
+    "subject_space": "keep a usable clear foreground, camper visible but not dominating"
+  },
+  "framing_block": {
+    "angle": "human eye level looking into clearing",
+    "lens": "28mm",
+    "frame": "wide environmental composition including foreground subject space, background camper and recognizable squirrels"
+  },
+  "lighting_block": {
+    "lighting": "soft filtered daylight through canopy, natural dappled shadows, controlled highlights on camper and satellite dish"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, deep environmental focus",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no extra vehicles, no anthropomorphic squirrels, no oversized animals, no floating satellite dish, no plastic foliage, no crowded foreground"
+  }
+}

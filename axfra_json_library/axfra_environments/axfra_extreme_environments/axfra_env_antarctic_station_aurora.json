@@ -1,0 +1,52 @@
+{
+  "id": "AXFRA_env_antarctic_station_aurora",
+  "name": "Chilean Antarctic Station, Aurora Breach",
+  "name_es": "Base chilena antártica, ruptura de aurora",
+  "mood": "epic, polar, surreal, cinematic",
+  "palette": [
+    "emerald green",
+    "magenta",
+    "violet",
+    "ice blue",
+    "black water",
+    "snow white",
+    "oxidized red"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "Chilean scientific station on a black volcanic Antarctic shore at astronomical night, ice cliff behind the modules, open lead of black water in front",
+    "background": "a curtain of aurora borealis filling the whole sky, emerald core tearing into magenta and violet at the edges, stars still visible in the dark gaps, the Chilean flag cracking in a hard katabatic wind on a tall mast above the station, blue canton and white star readable, red and white bands lit by the aurora",
+    "station": "modular research base half-buried in wind-packed snow, oxidized red and safety-yellow panels, frost on every rivet, a lit laboratory window with silhouettes of instruments, satellite dish rimmed in rime, orange survival suits hanging frozen by the airlock, no people outside",
+    "elements": "emperor penguins clustered on the near ice, one mid-waddle kicking ice crystals, another with head thrown back, a second group smaller in the middle distance. In the black lead an orca breaches at the peak of the jump, white eye-patch and belly catching the aurora, spray frozen into a glass fan, a second orca dorsal cutting the water behind it. Wind-lifted snow as bright streaks, breath-fog if the subject is present, ice platelets floating in the lead, Chilean flag reflection broken across the wet shore"
+  },
+  "framing_block": {
+    "angle": "low heroic angle from ice level, slight wide",
+    "lens": "24mm",
+    "frame": "full environment readable in one frame: subject placed on the ice between the penguin group and the station, orca breach in the right third, flag and aurora owning the top half, no crop of the whale, no crop of the flag"
+  },
+  "lighting_block": {
+    "lighting": "primary key is the aurora itself, green-magenta wash from above and behind, hard cold fill from the station's sodium work lights, specular knife-edge on the orca's wet skin and on the ice, flag translucent where the aurora passes through the cloth, no flat daylight, no warm sunset"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 24mm, ice-level, f/4 so penguins, station and breaching orca stay legible, 1/1600s freezing spray and flag snap, sharp micro-detail on rime, feathers and wet hide",
+    "style": "Alarsi editorial, impossible Antarctic night, hyper-real ice physics, spectacular but photographically credible, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no daylight, no tropical color, no palm, no pool, no tourists, no scientists in frame, no cartoon animals, no extra orcas piled up, no malformed penguins, no unreadable flag, no text errors on signage, no plastic ice, no background mush"
+  },
+  "engine_params": {
+    "stylize": "--stylize 180",
+    "version": "--v 6",
+    "aspect_ratio": "--ar 3:4",
+    "quality": "--q 2",
+    "style": "--style raw"
+  }
+}

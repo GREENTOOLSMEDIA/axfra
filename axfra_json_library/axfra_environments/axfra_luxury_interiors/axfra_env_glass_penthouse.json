@@ -1,0 +1,49 @@
+{
+  "id": "AXFRA_env_glass_penthouse",
+  "name": "Glass Penthouse",
+  "name_es": "Ático de cristal",
+  "mood": "cold, luxurious, refined, nocturnal",
+  "palette": [
+    "charcoal black",
+    "cool gray",
+    "glass blue",
+    "pale stone",
+    "city light white"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "Berlin penthouse at night",
+    "background": "floor-to-ceiling glass, distant TV tower and cold city grid, dark interior, pale stone floor",
+    "elements": "city bokeh, faint silhouette reflection in the glass, one low lamp out of focus"
+  },
+  "framing_block": {
+    "angle": "low angle from knee height",
+    "lens": "35mm",
+    "frame": "full body, subject centered against the skyline"
+  },
+  "lighting_block": {
+    "lighting": "cool city backlight with a soft frontal key, rim along hair and shoulder, restrained speculars"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 35mm, low angle, f/2.8, sharp on the eyes, skyline softly separated",
+    "style": "Alarsi editorial, cold luxury night portrait, cinematic glass reflections, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no tourist snapshot, no blown windows, no extra people, no background artifacts"
+  },
+  "engine_params": {
+    "stylize": "--stylize 160",
+    "version": "--v 6",
+    "aspect_ratio": "--ar 3:4",
+    "quality": "--q 2",
+    "style": "--style raw"
+  }
+}

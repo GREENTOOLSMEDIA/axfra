@@ -1,0 +1,48 @@
+{
+  "id": "AXFRA_env_axfra_premium_cafe",
+  "name": "AXFRA Premium Coffeehouse",
+  "name_es": "Café premium AXFRA",
+  "mood": "warm, social, urban, refined",
+  "palette": [
+    "espresso brown",
+    "warm wood",
+    "matte black",
+    "cream",
+    "copper"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "contemporary premium chain-style coffeehouse with a welcoming interior and large street-facing windows",
+    "architecture": "wooden bar counter, comfortable seating, shelving, baked goods display, pendant lamps and warm timber paneling",
+    "background": "large sign reading AXFRA over main counter and subtle AXFRA branding on menu design and cups",
+    "elements": "espresso machine, clean tables, ceramic cups, plants, display case, uncluttered central walkway",
+    "branding": {
+      "text": "AXFRA",
+      "legibility": "readable and correctly spelled",
+      "restriction": "do not reproduce another coffee brand logo"
+    }
+  },
+  "framing_block": {
+    "angle": "slight wide-angle eye level from within cafe",
+    "lens": "28mm",
+    "frame": "counter and sign visible, with enough clear foreground for subject or product photography"
+  },
+  "lighting_block": {
+    "lighting": "warm pendant practicals complemented by diffuse daylight through front windows, natural reflections on polished surfaces"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, realistic commercial interior photography",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no Starbucks logo, no incorrect AXFRA spelling, no excessive text, no distorted furniture, no crowded tables, no people blocking counter"
+  }
+}
