@@ -1,0 +1,50 @@
+{
+  "id": "AXFRA_bikini_bandeau_ring",
+  "name": "Ring Bandeau",
+  "name_es": "Bandeau con aro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "swim",
+  "piece_family": "bikini",
+  "swap_rule": "Reference the bikini ID. Material, thickness, transparency, pattern, and color may be changed. The cut must not be rewritten.",
+  "material_catalog": [
+    "lycra",
+    "lace",
+    "crochet",
+    "knit",
+    "satin"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "lace",
+    "floral",
+    "metallic"
+  ],
+  "source_id": "bikini.bandeau_ring",
+  "top": "bandeau with neck straps joined by a ring",
+  "bottom": "high-waisted bottoms, diagonal strap with a ring at the hip",
+  "detail": "scaled surface, sheen",
+  "material": "lycra",
+  "thickness": "thin",
+  "transparency": "no",
+  "pattern": "metallic",
+  "color": "blue"
+}
