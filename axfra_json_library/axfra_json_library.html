@@ -35,6 +35,25 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Int
 .library-main .library-summary{font-size:12px;color:#aaa;margin:0 0 15px;line-height:1.5}
 @media(max-width:1050px){#globalHeader .header-inner{flex-direction:column;justify-content:center;align-items:flex-start;padding:18px 0;gap:14px}#globalHeader .nav{justify-content:flex-start}.library-main{height:auto;min-height:650px;overflow:visible}}
 @media(max-width:600px){#globalHeader .wrap{width:calc(100% - 32px)}#globalHeader .nav{gap:10px 16px}#globalHeader .nav a{font-size:.8rem}}
+
+/* Navegación jerárquica: familia > categoría > componente. */
+.library-main .cat-all,.library-main .family-toggle,.library-main .cat-child{font:inherit;display:flex;align-items:center;justify-content:space-between;width:100%;text-align:left;gap:9px;border-radius:5px;box-sizing:border-box}
+.library-main .cat-all{margin:0 0 10px;padding:10px 11px;background:#252525;border:1px solid #444}
+.library-main .cat-all.active,.library-main .cat-child.active{background:#352124;border-color:#a8434b}
+.family-group{margin:0 0 5px}
+.library-main .family-toggle{background:#1d1d1d;border:1px solid #373737;padding:11px 10px;font-weight:700}
+.library-main .family-toggle:hover{background:#282828}
+.family-label{display:flex;align-items:center;gap:7px;min-width:0}
+.family-chevron{color:#aaa;font-size:11px;width:13px;flex-shrink:0}
+.family-children{border-left:1px solid #484848;margin:2px 0 9px 12px;padding:3px 0 3px 9px}
+.library-main .cat-child{background:transparent;border:1px solid transparent;padding:8px 7px;font-size:13px;color:#ddd}
+.library-main .cat-child:hover{background:#292323}
+.cat-name{min-width:0;overflow-wrap:break-word}
+.library-main .catalog .item{padding:12px 7px;line-height:1.5}
+.library-main .catalog .item strong{font-size:13px}
+.library-main .catalog .item .item-en{font-size:12px;color:#aaa;margin-top:2px}
+.library-main .catalog .item .item-id{font:11px/1.45 Menlo,Consolas,monospace;color:#838383;margin-top:5px;overflow-wrap:anywhere}
+.library-main .sidebar .hint{margin-top:15px}
 </style>
 </head>
 <body>
@@ -51,16 +70,85 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Int
 'use strict';
 const INDEX_URL='https://axfra.com/axfra_json_library/axfra_json_library_index.json';
 const $=id=>document.getElementById(id);
-const LABELS={'axfra_apparel/axfra_blouses':'Vestuario / Blusas','axfra_apparel/axfra_lingerie':'Vestuario / Lencería','axfra_dummy_version':'Personajes / Dummy Version','axfra_graphic_styles':'Estilos gráficos','axfra_hair_styles':'Peinados','axfra_instruments':'Instrumentos','axfra_motion':'Movimientos de cámara','axfra_poses':'Poses'};
+const CATEGORY_GROUPS=[
+  {name:'Vestuario',keys:[
+    ['axfra_apparel/axfra_blouses','Blusas'],
+    ['axfra_apparel/axfra_lingerie','Lencería'],
+    ['axfra_apparel/axfra_swim_bikinis','Trajes de baño / Bikinis'],
+    ['axfra_wardrobe_looks_costume','Looks y disfraces']]},
+  {name:'Identidades y personajes',keys:[['axfra_dummy_version','Dummy Version']]},
+  {name:'Expresión y apariencia',keys:[
+    ['axfra_facial_expressions','Expresiones faciales'],
+    ['axfra_hair_styles','Peinados']]},
+  {name:'Composición visual',keys:[
+    ['axfra_graphic_styles','Estilos gráficos'],
+    ['axfra_poses','Poses']]},
+  {name:'Producción audiovisual',keys:[
+    ['axfra_instruments','Instrumentos'],
+    ['axfra_motion','Movimientos de cámara']]}
+];
+const openFamilies=new Set(['Vestuario']);
+const nameForCategory=new Map(CATEGORY_GROUPS.flatMap(group=>group.keys));
 let index=null,category='all',selected=null,composition=[],requestSeq=0;
-const label=k=>LABELS[k]||k.replaceAll('_',' ').replaceAll('/',' / ');
+const label=k=>nameForCategory.get(k)||k.replaceAll('_',' ').replaceAll('/',' / ');
+function categorizedGroups(){
+  const cats=Object.keys(index.categories||{});
+  const assigned=new Set(CATEGORY_GROUPS.flatMap(g=>g.keys.map(pair=>pair[0])));
+  const groups=CATEGORY_GROUPS.map(g=>({...g,keys:g.keys.filter(pair=>cats.includes(pair[0]))})).filter(g=>g.keys.length);
+  const unknown=cats.filter(k=>!assigned.has(k));
+  if(unknown.length)groups.push({name:'Otras categorías',keys:unknown.map(k=>[k,label(k)])});
+  return groups;
+}
 function status(s,kind=''){const el=$('status');el.textContent=s;el.className='status '+kind;}
 function safeFilename(s){return (s||'axfra_custom').toLowerCase().replace(/[^a-z0-9_-]+/g,'_').replace(/^_+|_+$/g,'')+'.json';}
 function getJSON(){try{return JSON.parse($('editor').value)}catch(e){status('JSON inválido: '+e.message,'err');return null}}
 function download(name,text){const blob=new Blob([text],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 async function copyText(t){try{await navigator.clipboard.writeText(t);status('Copiado al portapapeles.','ok')}catch(e){$('editor').focus();$('editor').select();status('El navegador bloqueó el portapapeles. Seleccionado: usa Cmd/Ctrl+C.','err')}}
-function renderCategories(){const cats=Object.keys(index.categories||{});const nav=$('categories');nav.replaceChildren();[['all','Todos',index.files.length],...cats.map(c=>[c,label(c),index.categories[c]])].forEach(([key,name,n])=>{const b=document.createElement('button');b.className='cat'+(category===key?' active':'');const a=document.createElement('span');a.textContent=name;const count=document.createElement('span');count.className='count';count.textContent=n;b.append(a,count);b.onclick=()=>{category=key;renderCategories();renderItems()};nav.append(b)})}
-function renderItems(){const q=$('search').value.toLocaleLowerCase().trim();const files=index.files.filter(f=>(category==='all'||f.category===category)&&[f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));const list=$('items');list.replaceChildren();files.forEach(f=>{const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');const name=document.createElement('strong');name.textContent=f.name_es&&f.name_es!==f.name?f.name_es+' / '+f.name:f.name;const path=document.createElement('small');path.textContent=f.path;b.append(name,path);b.onclick=()=>loadFile(f);list.append(b)});$('loading').textContent=files.length+' componente(s)';}
+function renderCategories(){
+  const nav=$('categories');nav.replaceChildren();
+  const all=document.createElement('button');all.type='button';all.className='cat-all'+(category==='all'?' active':'');
+  const allName=document.createElement('span');allName.textContent='Todas las categorías';
+  const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
+  all.append(allName,allCount);all.onclick=()=>{category='all';renderCategories();renderItems()};nav.append(all);
+  for(const group of categorizedGroups()){
+    const wrapper=document.createElement('div');wrapper.className='family-group';
+    const expanded=openFamilies.has(group.name);
+    const count=group.keys.reduce((n,[key])=>n+(Number(index.categories[key])||0),0);
+    const head=document.createElement('button');head.type='button';head.className='family-toggle';head.setAttribute('aria-expanded',String(expanded));
+    const left=document.createElement('span');left.className='family-label';
+    const chevron=document.createElement('span');chevron.className='family-chevron';chevron.textContent=expanded?'▾':'▸';
+    const title=document.createElement('span');title.className='cat-name';title.textContent=group.name;
+    const number=document.createElement('span');number.className='count';number.textContent=count;
+    left.append(chevron,title);head.append(left,number);
+    head.onclick=()=>{if(openFamilies.has(group.name))openFamilies.delete(group.name);else openFamilies.add(group.name);renderCategories()};
+    wrapper.append(head);
+    if(expanded){
+      const children=document.createElement('div');children.className='family-children';
+      for(const [key,name] of group.keys){
+        const button=document.createElement('button');button.type='button';button.className='cat-child'+(category===key?' active':'');
+        const text=document.createElement('span');text.className='cat-name';text.textContent=name;
+        const n=document.createElement('span');n.className='count';n.textContent=index.categories[key];
+        button.append(text,n);button.onclick=()=>{category=key;renderCategories();renderItems()};children.append(button);
+      }
+      wrapper.append(children);
+    }
+    nav.append(wrapper);
+  }
+}
+function renderItems(){
+  const q=$('search').value.toLocaleLowerCase().trim();
+  const files=index.files.filter(f=>(category==='all'||f.category===category)&&[f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+  const list=$('items');list.replaceChildren();
+  files.forEach(f=>{
+    const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');
+    const name=document.createElement('strong');name.textContent=f.name_es||f.name||f.id||'Sin nombre';
+    b.append(name);
+    if(f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;b.append(en)}
+    const id=document.createElement('small');id.className='item-id';id.textContent=f.id||f.path.split('/').pop();b.append(id);
+    b.title=f.path;b.onclick=()=>loadFile(f);list.append(b)
+  });
+  $('loading').textContent=files.length+' componente(s)';
+}
 async function loadFile(f){const seq=++requestSeq;selected=f;$('filename').textContent='Cargando '+f.path+'…';status('Recuperando JSON original…');renderItems();try{const base=new URL(index.base_url||INDEX_URL,INDEX_URL);const url=new URL(f.path,base);if(url.origin!==new URL(INDEX_URL).origin)throw new Error('Ruta fuera del dominio AXFRA');const r=await fetch(url.href,{cache:'no-cache'});if(!r.ok)throw new Error('HTTP '+r.status);const data=await r.json();if(seq!==requestSeq)return;$('editor').value=JSON.stringify(data,null,2);$('filename').textContent=f.path;status('JSON original cargado. Puedes editarlo sin modificar el servidor.','ok')}catch(e){if(seq!==requestSeq)return;$('filename').textContent=f.path;status('No se pudo cargar: '+e.message,'err')}}
 function makeComposition(){return {id:'AXFRA_test_composition',name:'AXFRA Test Composition',meta:{developer:'ALARSI',developer_site:'https://alarsi.com',brand:'AXFRA',brand_site:'https://axfra.com',system:'AXFRA JSON prompt system'},modules:composition.map(x=>({source_path:x.path,content:x.data}))}}
 function renderComposition(){const c=$('chips');c.replaceChildren();$('nSelected').textContent='('+composition.length+')';if(!composition.length){const span=document.createElement('span');span.className='muted';span.textContent='Sin módulos seleccionados.';c.append(span)}composition.forEach((x,i)=>{const el=document.createElement('span');el.className='chip';el.append(document.createTextNode(x.label));const remove=document.createElement('button');remove.textContent='×';remove.title='Quitar módulo';remove.onclick=()=>{composition.splice(i,1);renderComposition()};el.append(remove);c.append(el)})}
