@@ -8,16 +8,22 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 339,
+  "total_json": 355,
   "categories": {
     "axfra_apparel/axfra_blouses": 12,
     "axfra_apparel/axfra_lingerie": 12,
+    "axfra_apparel/axfra_sports_uniforms": 1,
     "axfra_apparel/axfra_swim_bikinis": 6,
     "axfra_dummy_version": 8,
+    "axfra_environments/axfra_sports_venues": 1,
+    "axfra_environments/axfra_studios": 1,
     "axfra_facial_expressions": 12,
     "axfra_graphic_styles": 39,
     "axfra_hair_styles": 12,
     "axfra_instruments": 5,
+    "axfra_lighting/axfra_dynamic_lighting": 1,
+    "axfra_lighting/axfra_lighting_schemes": 11,
+    "axfra_lighting/axfra_studio_lighting": 1,
     "axfra_motion": 7,
     "axfra_poses": 105,
     "axfra_wardrobe_looks_costume": 121
@@ -216,6 +222,62 @@
       "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_lingerie/axfra_wardrobe_lingerie_striped_fishnet.json"
     },
     {
+      "id": "AXFRA_soccer_uniform_white",
+      "name": "White Soccer Uniform",
+      "name_es": "Uniforme blanco de fútbol",
+      "category": "axfra_apparel/axfra_sports_uniforms",
+      "path": "axfra_apparel/axfra_sports_uniforms/axfra_soccer_uniform_white.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_sports_uniforms/axfra_soccer_uniform_white.json"
+    },
+    {
+      "id": "AXFRA_bikini_bandeau_ring",
+      "name": "Ring Bandeau",
+      "name_es": "Bandeau con aro",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_crochet",
+      "name": "Crochet Triangle",
+      "name_es": "Triángulo crochet",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_floral",
+      "name": "Floral Triangle",
+      "name_es": "Triángulo floral",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_knit",
+      "name": "Knit Triangle",
+      "name_es": "Triángulo de punto",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_lace",
+      "name": "Lace Triangle",
+      "name_es": "Triángulo de encaje",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json"
+    },
+    {
+      "id": "AXFRA_bikini_triangle_strappy",
+      "name": "Strappy Triangle",
+      "name_es": "Triángulo con tiras",
+      "category": "axfra_apparel/axfra_swim_bikinis",
+      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json"
+    },
+    {
       "id": "AXFRA_dummy_amina",
       "name": "Amina Dummy Version",
       "name_es": null,
@@ -278,6 +340,22 @@
       "category": "axfra_dummy_version",
       "path": "axfra_dummy_version/axfra_viktoria_dots_dummy_version.json",
       "url": "https://axfra.com/axfra_json_library/axfra_dummy_version/axfra_viktoria_dots_dummy_version.json"
+    },
+    {
+      "id": "AXFRA_soccer_stadium",
+      "name": "Soccer Stadium",
+      "name_es": "Estadio de fútbol",
+      "category": "axfra_environments/axfra_sports_venues",
+      "path": "axfra_environments/axfra_sports_venues/axfra_soccer_stadium.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_sports_venues/axfra_soccer_stadium.json"
+    },
+    {
+      "id": "AXFRA studio_white_seamless_logo",
+      "name": "AXFRA White Seamless Studio",
+      "name_es": "Estudio blanco seamless AXFRA",
+      "category": "axfra_environments/axfra_studios",
+      "path": "axfra_environments/axfra_studios/axfra_studio_white_seamless_logo.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_environments/axfra_studios/axfra_studio_white_seamless_logo.json"
     },
     {
       "id": "AXFRA_expression_anger",
@@ -822,6 +900,110 @@
       "category": "axfra_instruments",
       "path": "axfra_instruments/axfra_instrument_mic_super55.json",
       "url": "https://axfra.com/axfra_json_library/axfra_instruments/axfra_instrument_mic_super55.json"
+    },
+    {
+      "id": "lighting.orbiting_key_360",
+      "name": "Cinematic 360° Orbiting Light",
+      "name_es": "Luz orbital cinematográfica 360°",
+      "category": "axfra_lighting/axfra_dynamic_lighting",
+      "path": "axfra_lighting/axfra_dynamic_lighting/axfra_lighting_orbiting_key_360.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_dynamic_lighting/axfra_lighting_orbiting_key_360.json"
+    },
+    {
+      "id": "lighting.butterfly_beauty",
+      "name": "Butterfly Beauty",
+      "name_es": "Mariposa editorial",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_butterfly_beauty.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_butterfly_beauty.json"
+    },
+    {
+      "id": "lighting.dual_rim_face_recovery",
+      "name": "Dual Rim With Face Recovery",
+      "name_es": "Doble contorno con recuperación facial",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_dual_rim_face_recovery.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_dual_rim_face_recovery.json"
+    },
+    {
+      "id": "lighting.dual_rim_night",
+      "name": "Dual Rim Night Without Front Key",
+      "name_es": "Noche de doble contorno sin luz frontal",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_dual_rim_night.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_dual_rim_night.json"
+    },
+    {
+      "id": "lighting.golden_hour_backlight",
+      "name": "Golden Hour Backlight",
+      "name_es": "Contraluz de hora dorada",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_golden_hour_backlight.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_golden_hour_backlight.json"
+    },
+    {
+      "id": "lighting.high_key_studio",
+      "name": "High-Key Studio",
+      "name_es": "Estudio de clave alta",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_high_key_studio.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_high_key_studio.json"
+    },
+    {
+      "id": "lighting.moonlight_silhouette",
+      "name": "Moonlit Silhouette",
+      "name_es": "Silueta a contraluz lunar",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_moonlight_silhouette.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_moonlight_silhouette.json"
+    },
+    {
+      "id": "lighting.neon_cyberpunk",
+      "name": "Chromatic Neon Night",
+      "name_es": "Neón cromático urbano",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_neon_cyberpunk.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_neon_cyberpunk.json"
+    },
+    {
+      "id": "lighting.overcast_softbox",
+      "name": "Overcast Soft Light",
+      "name_es": "Luz difusa de cielo cubierto",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_overcast_softbox.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_overcast_softbox.json"
+    },
+    {
+      "id": "lighting.rembrandt",
+      "name": "Classic Rembrandt",
+      "name_es": "Rembrandt clásico",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_rembrandt.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_rembrandt.json"
+    },
+    {
+      "id": "lighting.split_light",
+      "name": "Split Lighting",
+      "name_es": "Luz partida",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_split_light.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_split_light.json"
+    },
+    {
+      "id": "lighting.urban_night_front_illuminated",
+      "name": "Front-Lit Urban Night",
+      "name_es": "Noche urbana con rostro iluminado",
+      "category": "axfra_lighting/axfra_lighting_schemes",
+      "path": "axfra_lighting/axfra_lighting_schemes/axfra_lighting_urban_night_front_illuminated.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_lighting_schemes/axfra_lighting_urban_night_front_illuminated.json"
+    },
+    {
+      "id": "AXFRA set_lighting_studio",
+      "name": "Four-Point Studio Lighting Set",
+      "name_es": "Set de iluminación de estudio de cuatro focos",
+      "category": "axfra_lighting/axfra_studio_lighting",
+      "path": "axfra_lighting/axfra_studio_lighting/axfra_set_lighting_studio.json",
+      "url": "https://axfra.com/axfra_json_library/axfra_lighting/axfra_studio_lighting/axfra_set_lighting_studio.json"
     },
     {
       "id": "AXFRA_motion_bullet_time_360_orbit",
@@ -1718,54 +1900,6 @@
       "category": "axfra_poses",
       "path": "axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json",
       "url": "https://axfra.com/axfra_json_library/axfra_poses/axfra_pose_wide_stance_forward_reach_pool.json"
-    },
-    {
-      "id": "AXFRA_bikini_bandeau_ring",
-      "name": "Ring Bandeau",
-      "name_es": "Bandeau con aro",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_bandeau_ring.json"
-    },
-    {
-      "id": "AXFRA_bikini_triangle_crochet",
-      "name": "Crochet Triangle",
-      "name_es": "Triángulo crochet",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_crochet.json"
-    },
-    {
-      "id": "AXFRA_bikini_triangle_floral",
-      "name": "Floral Triangle",
-      "name_es": "Triángulo floral",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_floral.json"
-    },
-    {
-      "id": "AXFRA_bikini_triangle_knit",
-      "name": "Knit Triangle",
-      "name_es": "Triángulo de punto",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_knit.json"
-    },
-    {
-      "id": "AXFRA_bikini_triangle_lace",
-      "name": "Lace Triangle",
-      "name_es": "Triángulo de encaje",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_lace.json"
-    },
-    {
-      "id": "AXFRA_bikini_triangle_strappy",
-      "name": "Strappy Triangle",
-      "name_es": "Triángulo con tiras",
-      "category": "axfra_apparel/axfra_swim_bikinis",
-      "path": "axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json",
-      "url": "https://axfra.com/axfra_json_library/axfra_apparel/axfra_swim_bikinis/axfra_bikini_triangle_strappy.json"
     },
     {
       "id": "AXFRA_costume_crest_circular",
