@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.golden_hour_backlight",
+  "name_es": "Contraluz de hora dorada",
+  "name_en": "Golden Hour Backlight",
+  "style": "natural_cinematic",
+  "light_sources": [
+    {
+      "role": "backlight",
+      "position": "low_sun_behind_subject",
+      "color": "golden_warm",
+      "quality": "directional",
+      "intensity": "high",
+      "notes": "Halo en cabello y hombros"
+    },
+    {
+      "role": "fill",
+      "position": "front_sky_or_bounce",
+      "color": "neutral_warm",
+      "quality": "soft",
+      "intensity": "low_medium",
+      "notes": "Conserva detalles faciales"
+    }
+  ],
+  "contrast": "medium",
+  "subject_exposure": "warm_subject",
+  "background": "outdoor_sunset",
+  "atmosphere": "subtle_haze",
+  "finish": "soft_flare;warm_edge_highlights",
+  "visual_intent": "Atmósfera cálida con separación del fondo",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {}
+}

@@ -1,0 +1,134 @@
+{
+  "id": "AXFRA studio_white_seamless_logo",
+  "name": "AXFRA White Seamless Studio",
+  "name_es": "Estudio blanco seamless AXFRA",
+  "mood": "clean, minimalist, editorial, professional photography studio",
+  "palette": [
+    "white",
+    "soft gray",
+    "matte black",
+    "light concrete"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "system": "AXFRA JSON prompt system",
+    "model": "Paulina Dots",
+    "handle": "@axfratools",
+    "site": "https://axfra.com",
+    "portfolio": "https://paulinadots.com",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-06",
+    "brand_site": "https://axfra.com"
+  },
+  "style": "Alarsi editorial style, ultra photorealistic high-fashion outdoor portrait, cinematic natural lighting, Vogue-level luxury aesthetic, hyper-detailed skin pores, realistic wet surfaces, accurate water physics, no smoothing, no plastic look, masterpiece, best quality",
+  "set": {
+    "type": "photography studio",
+    "environment": "indoor",
+    "category": "seamless backdrop studio",
+    "layout": {
+      "main_axis": "centered",
+      "shooting_style": "portrait and fashion editorial",
+      "usable_scene_depth": "medium",
+      "subject_position": "center"
+    },
+    "subject_placement": {
+      "source": "subject from the reference image",
+      "position": "center of the set",
+      "posture": "standing",
+      "orientation": {
+        "selected": "default",
+        "options": [
+          "default",
+          "three_quarter",
+          "left_profile",
+          "right_profile",
+          "back"
+        ],
+        "definitions": {
+          "default": "Preserve the exact body orientation and viewing angle from the reference image",
+          "three_quarter": "Subject rotated approximately 45 degrees relative to the camera",
+          "left_profile": "Subject facing left, approximately 90 degrees from the camera",
+          "right_profile": "Subject facing right, approximately 90 degrees from the camera",
+          "back": "Subject facing away from the camera, back view"
+        }
+      },
+      "grounding": "feet naturally placed on the studio floor",
+      "integration": "realistic scale, perspective, contact shadows and lighting consistent with the studio environment",
+      "identity_preservation": "preserve the exact identity, facial features, hairstyle, body proportions and clothing from the reference image",
+      "restriction": "do not invent, replace or redesign the original subject"
+    },
+    "framing": {
+      "shot_type": "full_body",
+      "subject_alignment": "centered",
+      "body_visibility": "entire body visible from head to feet",
+      "cropping": "no cropping of head, hands or feet",
+      "scale": "subject occupies a natural central proportion of the frame",
+      "camera_relation": "subject clearly readable within the full studio setup",
+      "priority": "preserve the original subject while reframing to a centered full-body composition"
+    },
+    "background": {
+      "type": "white seamless backdrop",
+      "structure": "paper or vinyl sweep extending from vertical background to floor",
+      "color": "#FFFFFF",
+      "finish": "matte",
+      "texture": "smooth",
+      "branding": {
+        "enabled": true,
+        "text": "AXFRA",
+        "font_family": "Helvetica",
+        "font_weight": "bold",
+        "color": "3% black",
+        "color_hex": "#F7F7F7",
+        "placement": "centered on background",
+        "scale": "large",
+        "opacity_style": "very subtle low-contrast branding"
+      }
+    },
+    "floor": {
+      "type": "continuous seamless floor",
+      "color": "#FFFFFF",
+      "finish": "matte",
+      "cleanliness": "clean studio surface",
+      "reflection": "minimal"
+    },
+    "room": {
+      "visible_side_areas": true,
+      "wall_color": "neutral white",
+      "ceiling_color": "white",
+      "side_space_style": "functional studio surroundings",
+      "floor_outside_set": "raw concrete"
+    },
+    "props": {
+      "primary_seat": {
+        "enabled": true,
+        "optional": true,
+        "type": "studio stool",
+        "color": "light gray",
+        "material": "padded seat with metal base",
+        "position": "foreground lower center",
+        "restriction": "must not block the subject's body or interfere with full-body framing"
+      }
+    },
+    "equipment_visibility": {
+      "light_stands_visible": true,
+      "softboxes_visible": true,
+      "support_structure_visible": true,
+      "studio_edges_visible": true
+    },
+    "composition_guidance": {
+      "look": "real working photo studio",
+      "cleanliness": "tidy but authentic",
+      "branding_visibility": "subtle",
+      "preferred_use": [
+        "portrait photography",
+        "fashion photography",
+        "editorial shoots",
+        "character presentation",
+        "productized AI scene setup"
+      ]
+    }
+  }
+}
