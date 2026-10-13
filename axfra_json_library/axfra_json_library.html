@@ -75,6 +75,7 @@ const CATEGORY_GROUPS=[
     ['axfra_apparel/axfra_blouses','Blusas'],
     ['axfra_apparel/axfra_lingerie','Lencería'],
     ['axfra_apparel/axfra_swim_bikinis','Trajes de baño / Bikinis'],
+    ['axfra_apparel/axfra_sports_uniforms','Uniformes deportivos'],
     ['axfra_wardrobe_looks_costume','Looks y disfraces']]},
   {name:'Identidades y personajes',keys:[['axfra_dummy_version','Dummy Version']]},
   {name:'Expresión y apariencia',keys:[
@@ -83,11 +84,18 @@ const CATEGORY_GROUPS=[
   {name:'Composición visual',keys:[
     ['axfra_graphic_styles','Estilos gráficos'],
     ['axfra_poses','Poses']]},
+  {name:'Entornos y fondos',keys:[
+    ['axfra_environments/axfra_studios','Estudios fotográficos'],
+    ['axfra_environments/axfra_sports_venues','Recintos deportivos']]},
+  {name:'Iluminación',keys:[
+    ['axfra_lighting/axfra_studio_lighting','Iluminación de estudio'],
+    ['axfra_lighting/axfra_dynamic_lighting','Iluminación dinámica 360°'],
+    ['axfra_lighting/axfra_lighting_schemes','Esquemas de iluminación']]},
   {name:'Producción audiovisual',keys:[
     ['axfra_instruments','Instrumentos'],
     ['axfra_motion','Movimientos de cámara']]}
 ];
-const openFamilies=new Set(['Vestuario']);
+const openFamilies=new Set(['Vestuario','Entornos y fondos','Iluminación']);
 const nameForCategory=new Map(CATEGORY_GROUPS.flatMap(group=>group.keys));
 let index=null,category='all',selected=null,composition=[],requestSeq=0;
 const label=k=>nameForCategory.get(k)||k.replaceAll('_',' ').replaceAll('/',' / ');
