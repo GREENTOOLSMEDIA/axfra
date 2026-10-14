@@ -1,0 +1,30 @@
+{
+  "id": "AXFRA_stage_backdrop_illuminated_axfra",
+  "name": "AXFRA Illuminated Stage Backdrop",
+  "name_es": "Backdrop de escenario iluminado AXFRA",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "environment",
+  "slot": "backdrop",
+  "piece_family": "stage_backdrop",
+  "swap_rule": "Se cita el id. Se pueden ajustar iluminación, escala y estilo visual del fondo, manteniendo la estructura general del letrero AXFRA y la composición del escenario.",
+  "backdrop": {
+    "type": "illuminated stage backdrop",
+    "main_feature": "Giant illuminated AXFRA lettering dominating the center of the stage",
+    "signage_text": "AXFRA",
+    "signage_style": "massive uppercase block letters constructed from hundreds of bright warm-white concert bulbs, inspired by classic arena rock stage signage",
+    "signage_position": "centered above the performers, spanning most of the stage width",
+    "signage_visibility": "All five letters A-X-F-R-A must be clearly readable, accurately spelled, unobstructed and brightly illuminated",
+    "secondary_feature": "additional illuminated stage panels beneath the AXFRA sign",
+    "side_panels": "symmetrical rows of illuminated speaker-stack style panels",
+    "style": "spectacular classic arena rock stage design"
+  }
+}
