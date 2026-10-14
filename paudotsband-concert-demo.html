@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><link href="https://axfra.com/shared-layout.css" rel="stylesheet"/><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>PauDotsBand Concert | Demostración visual AXFRA</title><meta content="PauDotsBand Concert: demostración editorial AXFRA de identidad, vestuario, instrumentos, escenario, backstage y narrativa visual modular." name="description"/><link href="https://axfra.com/paudotsband-concert-demo.html" rel="canonical"/><style>
+:root{color-scheme:dark;--bg:#000;--panel:#151515;--ink:#f4f4f4;--muted:#a7a7a7;--red:#da1e2c;--line:#343434}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,"Helvetica Neue",Arial,sans-serif}a{color:inherit;text-decoration:none}a:hover{color:#ff666e}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.header{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:#0b0b0bee;backdrop-filter:blur(12px)}.head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{font-size:24px;font-weight:900;letter-spacing:.1em;line-height:1}.brand small{display:block;font-size:9px;letter-spacing:.17em;color:#aaa;margin-top:7px}.nav{display:flex;flex-wrap:wrap;gap:18px;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.hero{min-height:74vh;display:grid;align-items:end;background:linear-gradient(90deg,#050505ee 4%,#05050566 78%),url('https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg') center/cover;padding:110px 0 65px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.22em;color:#ff5a64;text-transform:uppercase}h1{font-size:clamp(48px,9vw,116px);line-height:.94;letter-spacing:-.065em;margin:20px 0 26px;max-width:850px}h1 span{color:#e0e0e0}h2{font-size:clamp(29px,4.5vw,53px);line-height:1.08;letter-spacing:-.04em;margin:14px 0 22px}h3{font-size:clamp(24px,3vw,38px);line-height:1.13;margin:10px 0 20px}p{margin:0 0 16px;color:#ccc}.lead{max-width:660px;font-size:19px}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;border:1px solid #888;padding:11px 18px;font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.btn.primary{background:var(--red);border-color:var(--red)}.section{padding:90px 0;border-top:1px solid #242424}.section-intro{max-width:770px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}.stat{padding:22px;background:var(--panel);border-top:2px solid var(--red)}.stat strong{display:block;font-size:35px}.stat span{color:#aaa;font-size:12px}.contents{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:35px}.contents a{padding:13px;background:#191919;border:1px solid #333;font-size:12px}.contents a b{color:#f15b65;margin-right:8px}.scene{display:grid;grid-template-columns:1.12fr 1fr;gap:52px;align-items:center;padding:72px 0;border-top:1px solid #303030}.scene:nth-child(even) .scene-media{order:2}.scene-media{background:transparent;min-height:0}.scene-media img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;aspect-ratio:auto}.scene-meta{color:#f26871;letter-spacing:.14em;font-weight:800;font-size:11px}.scene-content p{font-size:16px}.jsonbox{border:1px solid #3c3c3c;background:#141414;margin-top:25px}.jsonbox summary{cursor:pointer;padding:13px 16px;font-size:12px;font-weight:800}.json-inner{padding:0 16px 16px}.json-inner button{background:#2b2b2b;border:1px solid #666;color:white;padding:8px 12px;cursor:pointer;font-weight:bold}.json-inner pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.5;max-height:300px;overflow:auto;background:#080808;padding:14px}.source{font-size:11px;color:#999;overflow-wrap:anywhere}.notice{border-left:3px solid var(--red);padding:12px 20px;background:#181818;margin:26px 0;color:#bbb;font-size:13px}.end{background:#161616;text-align:center;padding:85px 0}.footer{padding:30px 0;border-top:1px solid #333;font-size:12px;color:#888}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}@media(max-width:800px){.nav{gap:10px}.hero{min-height:580px}.scene{grid-template-columns:1fr;gap:22px;padding:50px 0}.scene:nth-child(even) .scene-media{order:0}.stats{grid-template-columns:repeat(2,1fr)}.contents{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.nav{font-size:10px}.wrap{width:min(100% - 26px,1160px)}.hero{min-height:510px}h1{font-size:52px}.section{padding:60px 0}.stats{gap:8px}.stat{padding:12px}.contents{grid-template-columns:1fr 1fr}}
+
+/* Ajustes editoriales: imágenes sin bandas ni cajas forzadas */
+.scene{align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.scene-media{align-self:start;overflow:visible}.scene-media img{width:100%;height:auto;aspect-ratio:auto;max-height:none;object-fit:contain;background:transparent}
+.scene-content{min-width:0}.scene-content a,.intro-text a{color:#f0b2b6;text-decoration:underline;text-underline-offset:3px}
+.intro-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);gap:clamp(24px,5vw,72px);align-items:start}
+.intro-layout img{width:100%;height:auto;display:block}
+.backstage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:28px 0 22px}
+.backstage-grid figure{margin:0;min-width:0}.backstage-grid img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover}
+.backstage-grid figcaption{padding:12px 0;font-size:13px;color:#cfcfcf;line-height:1.5}.backstage-grid figcaption strong{display:block;color:#fff}
+.backstage-story{padding:64px 0;border-top:1px solid #303030}.backstage-story .jsonbox{max-width:900px}
+.hero{background-position:center center}
+@media(max-width:850px){.intro-layout{grid-template-columns:1fr}.backstage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scene{grid-template-columns:1fr}}
+@media(max-width:480px){.backstage-grid{gap:10px}.backstage-grid figcaption{font-size:12px}}
+</style><style>
+/* Expanded JSON panels, without affecting image alignment */
+.scene{align-items:start}
+.scene-media{align-self:start}
+.scene-content{min-width:0}
+.scene-content .jsonbox{width:100%}
+.jsonbox{margin-top:20px}
+.jsonbox[open] summary{border-bottom:1px solid #333}
+.json-inner pre{max-height:340px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+.scene-media img{width:100%;height:auto;object-fit:contain;display:block}
+@media(min-width:851px){.scene:nth-child(even) .scene-media{order:2}}
+</style><style>.identity-links{font-size:13px!important;color:#a7a7a7}.identity-links a{color:#ff7b82;text-decoration:underline;text-underline-offset:3px}.jsonbox summary{list-style:none}.jsonbox summary::-webkit-details-marker{display:none}.jsonbox summary:before{content:"▾ ";color:#ff6d75}</style></head><body><div id="globalHeader"></div><main id="contenido"><section class="hero"><div class="wrap"><div class="eyebrow">AXFRA / DOCUMENTACIÓN APLICADA / DEMO 03</div><h1>PauDotsBand.<br/><span>Concert.</span></h1><p class="lead">Cuatro músicas, una noche de rock y muchas escenas posibles. De la elección del vestuario al gran escenario, del backstage al público: una historia construida mediante recursos visuales y módulos JSON.</p><div class="links"><a class="btn primary" href="#recorrido">Explorar secuencia ↓</a><a class="btn" href="https://axfra.com/axfra_json_library/axfra_json_library.html">Explorar biblioteca ↗</a></div></div></section><section class="section"><div class="wrap"><div class="intro-layout"><div class="intro-text"><div class="eyebrow">01 / EL PRINCIPIO</div><h2>Una banda.<br/>Muchas capas de creación.</h2><div class="section-intro"><p>La demostración sigue el desarrollo visual de PauDotsBand: vestuario individual, instrumentos, retratos, escenografía y un relato que se expande más allá del escenario.</p><p>Las imágenes son resultados editoriales. Los JSON mostrados proceden del material suministrado para esta maqueta y documentan componentes reutilizables; no representan necesariamente el prompt íntegro utilizado para cada fotografía.</p></div></div><figure style="margin:0"><img alt="Escenario AXFRA iluminado, imagen completa de referencia" loading="lazy" src="https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg"/></figure></div><div class="notice">Las escenas con figuras públicas son imágenes sintéticas ficticias. No representan encuentros reales, participación ni respaldo de esas personas a AXFRA.</div></div></section><section class="section" id="recorrido"><div class="wrap"><div class="eyebrow">02 / RECORRIDO</div><h2>Del ensayo al backstage.<br/>Y más allá.</h2><p>Selecciona un momento para ir directamente a su escena.</p><div class="contents">
+<a href="#escena-01"><b>01</b>Cuatro músicas. Un escenario.</a>
+<a href="#escena-02"><b>02</b>Dotsy: espíritu rockero</a>
+<a href="#escena-03"><b>03</b>Viktoria: uniforme reinterpretado</a>
+<a href="#escena-04"><b>04</b>Paulina: denim envejecido</a>
+<a href="#escena-05"><b>05</b>Amina: blanco metálico</a>
+<a href="#escena-06"><b>06</b>Dotsy y su Les Paul</a>
+<a href="#escena-07"><b>07</b>Viktoria y el bajo Ibanez</a>
+<a href="#escena-08"><b>08</b>Paulina frente al micrófono</a>
+<a href="#escena-09"><b>09</b>Amina en la batería</a>
+<a href="#escena-11"><b>11</b>El gran escenario AXFRA</a>
+<a href="#escena-12"><b>12</b>La banda sale a escena</a>
+<a href="#escena-13"><b>13</b>Backstage: cuatro encuentros</a>
+<a href="#escena-17"><b>17</b>Hana y Mara: selfie del concierto</a>
+<a href="#escena-18"><b>18</b>Mira cuida el evento</a>
+<a href="#escena-19"><b>19</b>Indira sigue el show desde casa</a>
+<a href="#escena-20"><b>20</b>El concierto desde las alturas</a>
+</div></div></section><section class="section" id="secuencia"><div class="wrap"><div class="eyebrow">03 / SECUENCIA VISUAL</div><h2>La historia, escena a escena.</h2><p>Fotografías, decisiones editoriales y componentes JSON relacionados.</p>
+<article class="scene" id="escena-01"><div class="scene-media"><img alt="Cuatro músicas. Un escenario." loading="lazy" src="https://axfra.com/images/homegallery/axfra_paudotsband_group_portrait.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 01 / EL CONCEPTO</div><h3>Cuatro músicas. Un escenario.</h3><p>La banda reúne identidades y estilos propios en una misma composición. La fotografía colectiva introduce a las protagonistas antes de entrar en los detalles de cada instrumento y vestuario.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/dotsy.html">Dotsy</a> · <a href="https://axfra.com/identities/viktoria.html">Viktoria</a> · <a href="https://axfra.com/identities/paulina.html">Paulina</a> · <a href="https://axfra.com/identities/amina.html">Amina</a></p>
+<div class="source">Fotografía editorial · sin JSON específico incluido en el paquete</div>
+</div></article>
+<article class="scene" id="escena-02"><div class="scene-media"><img alt="Dotsy: espíritu rockero" loading="lazy" src="https://axfra.com/images/homegallery/axfra_wardrobe_stage_dotsy_tophat.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 02 / VESTUARIO</div><h3>Dotsy: espíritu rockero</h3><p>Sombrero de copa, gafas oscuras y una estética inspirada en el rock clásico. El vestuario se documenta por separado para reutilizarlo con distintos encuadres y escenarios.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/dotsy.html">Dotsy</a></p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_wardrobe_stage_tophat.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_wardrobe_stage_tophat.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_wardrobe_stage_tophat",
+  "name": "Stage Top Hat",
+  "name_es": "Sombrero de copa en escenario",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage_rock",
+  "swap_rule": "Reference the look by its ID. Color and material may be changed. The garment cuts, hat, and standing pose must remain unchanged.",
+  "hat": "Black high-crown top hat with a band decorated with circular medallions",
+  "glasses": "Dark sunglasses",
+  "hair": "Long, curly hair, loose over the shoulders",
+  "top": "Sleeveless graphic T-shirt with a front print",
+  "bottom": "Distressed leather pants with a chain",
+  "shoes": "Black high-top sneakers with white toe caps",
+  "accessories": "Pendant necklace, bracelets, rings",
+  "stance": "Standing with legs apart, torso leaning slightly to one side, hands relaxed naturally; no instrument",
+  "material": "leather",
+  "color": "black"
+}</pre><div class="source">Archivo de referencia: axfra_wardrobe_stage_tophat.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-03"><div class="scene-media"><img alt="Viktoria: uniforme reinterpretado" loading="lazy" src="https://axfra.com/images/homegallery/axfra_wardrobe_stage_viktoria_schoolboy.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 03 / VESTUARIO</div><h3>Viktoria: uniforme reinterpretado</h3><p>Una reinterpretación escénica del uniforme escolar de rock: prendas, accesorios y actitud se combinan sin alterar la identidad visual de <a href="https://axfra.com/identities/viktoria.html">Viktoria</a>.</p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_wardrobe_stage_schoolboy.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_wardrobe_stage_schoolboy.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_wardrobe_stage_schoolboy",
+  "name": "Stage Schoolboy",
+  "name_es": "Uniforme de escenario",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage_rock",
+  "swap_rule": "Reference the look by its ID. Material and color may be changed. Do not rewrite the cut, cap, or pose.",
+  "hat": "Black cap with a red letter A on the front",
+  "hair": "Long, loose hair falling over the shoulders",
+  "top": "Velvet jacket, white shirt, striped tie",
+  "bottom": "Shorts made of matching velvet",
+  "socks": "Short socks",
+  "shoes": "Red Converse sneakers",
+  "stance": "Standing with one leg raised and torso angled to the side",
+  "material": "velvet",
+  "color": "red"
+}</pre><div class="source">Archivo de referencia: axfra_wardrobe_stage_schoolboy.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-04"><div class="scene-media"><img alt="Paulina: denim envejecido" loading="lazy" src="https://axfra.com/images/homegallery/axfra_wardrobe_stage_paulina_overalls.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 04 / VESTUARIO</div><h3>Paulina: denim envejecido</h3><p>El overol de mezclilla gastado define una silueta escénica reconocible. Las texturas envejecidas forman parte del módulo de vestuario.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/paulina.html">Paulina</a></p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_wardrobe_stage_overalls.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_wardrobe_stage_overalls.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_wardrobe_stage_overalls",
+  "name": "Vintage Washed Baggy Denim Overalls",
+  "name_es": "Overall ancho de denim vintage desgastado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage",
+  "swap_rule": "Reference the look by its ID. Preserve the oversized wide-leg cut, low waist, long shoulder straps, washed denim finish and open torso.",
+  "top": {
+    "type": "cropped bandeau-style tank top",
+    "color": "white",
+    "material": "stretch cotton",
+    "neckline": "wide scoop neckline",
+    "sleeves": "sleeveless",
+    "straps": "thin shoulder straps",
+    "fit": "close-fitting",
+    "hem": "cropped above the waist"
+  },
+  "bottom": {
+    "type": "oversized denim bib overalls",
+    "cut": "extremely wide-leg, loose baggy silhouette",
+    "waist": "very low-slung waistline resting at the hips",
+    "bib": "low front bib with deep side openings exposing the white crop top and midriff",
+    "straps": "long adjustable denim shoulder straps extending vertically over the shoulders",
+    "closure": "front zipper and metal fasteners",
+    "pockets": "large front utility pockets and wide rectangular patch pockets on the thighs",
+    "legs": "extra-wide straight legs with generous fabric volume",
+    "length": "floor-length, fabric pooling slightly over the footwear",
+    "material": "heavy cotton denim",
+    "color": "heavily faded blue-gray indigo",
+    "wash": "strong vintage stonewash with uneven cloudy fading",
+    "finish": "authentic aged denim, worn-in and heavily washed",
+    "distressing": "natural faded abrasion along seams, pocket edges, knees and hems, without large holes",
+    "fabric_behavior": "Heavy loose denim falling in long vertical folds, with natural bunching around the ankles and irregular washed texture."
+  },
+  "material": "aged stonewashed denim and white stretch cotton",
+  "thickness": "thick denim, thin crop top",
+  "transparency": false,
+  "pattern": "solid with irregular vintage fading",
+  "color": "faded blue-gray denim and white",
+  "style": "1990s oversized vintage denim, relaxed alternative rock stage fashion, authentic worn texture, natural fabric weight, photorealistic"
+}</pre><div class="source">Archivo de referencia: axfra_wardrobe_stage_overalls.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-05"><div class="scene-media"><img alt="Amina: blanco metálico" loading="lazy" src="https://axfra.com/images/homegallery/axfra_wardrobe_stage_metallic_white_amina.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 05 / VESTUARIO</div><h3>Amina: blanco metálico</h3><p>El blanco metalizado crea un contraste luminoso frente al resto de la banda. El vestuario mantiene una definición independiente del escenario.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/amina.html">Amina</a></p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_wardrobe_stage_metallic_white.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_wardrobe_stage_metallic_white.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_wardrobe_stage_metallic_white",
+  "name": "Metallic White Stage Outfit",
+  "name_es": "Vestuario de escenario blanco metalizado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source": "AXFRA_blouse_crop_top"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage",
+  "swap_rule": "Reference the look by its ID. Material and color may be changed. Preserve garment cuts, proportions, and accessory details.",
+  "top": {
+    "type": "crop top",
+    "source_id": "AXFRA_blouse_crop_top",
+    "neckline": "high round neckline",
+    "sleeves": "sleeveless",
+    "hem": "cropped above the waist",
+    "fit": "short, slightly loose",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": false,
+    "pattern": "solid",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "skin-tight pants",
+    "material": "lycra",
+    "finish": "metallic",
+    "fit": "very tight, form-fitting stretch fabric",
+    "length": "full length to the ankles",
+    "waist": "fitted waistband with belt loops",
+    "thickness": "normal",
+    "transparency": false,
+    "pattern": "solid",
+    "color": "metallic white",
+    "fabric_behavior": "Smooth, elastic fabric following the natural contours of the legs, with realistic stretch tension, subtle folds at the knees and ankles, and controlled metallic reflections."
+  },
+  "belt": {
+    "type": "waist belt",
+    "material": "leather",
+    "color": "black",
+    "width": "medium",
+    "buckle": {
+      "material": "polished metal",
+      "shape": "capital letter A",
+      "finish": "silver metallic",
+      "design": "A clearly recognizable uppercase A forming the central belt buckle"
+    }
+  },
+  "footwear": {
+    "type": "Converse sneakers",
+    "style": "classic canvas sneakers",
+    "color": "white",
+    "material": "canvas",
+    "laces": "white",
+    "sole": "white rubber",
+    "finish": "clean"
+  },
+  "material": "knit, metallic lycra, leather, canvas",
+  "thickness": "thin top, normal pants",
+  "transparency": false,
+  "pattern": "solid",
+  "color": "white, metallic white, black"
+}</pre><div class="source">Archivo de referencia: axfra_wardrobe_stage_metallic_white.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-06"><div class="scene-media"><img alt="Dotsy y su Les Paul" loading="lazy" src="https://axfra.com/images/homegallery/axfra_dotsy_gibson_les_paul_60s.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 06 / INSTRUMENTOS</div><h3>Dotsy y su Les Paul</h3><p>La guitarra aporta una identidad musical y visual específica. El instrumento puede combinarse con vestuario, pose y cámara como componente independiente.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/dotsy.html">Dotsy</a></p>
+
+<details class="jsonbox" open=""><summary>JSON · Instrumento · Gibson Les Paul</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_instrument_scene_06",
+  "type": "illustrative_instrument_reference",
+  "subject": "Dotsy",
+  "instrument": {
+    "name": "Gibson Les Paul",
+    "visual_description": "Gibson Les Paul 1960s-style, sunburst finish, cream pickguard, two humbucker pickups"
+  },
+  "usage": "Combine the instrument with the character identity, wardrobe, pose, and AXFRA stage background.",
+  "note": "Reconstruction for this demo from the supplied image; not presented as the original instrument library JSON."
+}</pre></div></details><details class="jsonbox" open=""><summary>JSON · Cámara · escena 6</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_camera_scene_06",
+  "type": "camera_composition",
+  "camera_angle": "low-angle full-body concert shot; camera below waist height looking upward; strong stage perspective, entire guitar visible",
+  "subject_orientation": "front three-quarter body angle, legs apart, guitar neck rising toward upper right",
+  "framing": "2:3 vertical concert editorial photograph",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "note": "Estimated from the visual result; camera angle is not verified capture metadata."
+}</pre></div></details></div></article>
+<article class="scene" id="escena-07"><div class="scene-media"><img alt="Viktoria y el bajo Ibanez" loading="lazy" src="https://axfra.com/images/homegallery/axfra_viktoria_ibanez_SR1355B_premium.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 07 / INSTRUMENTOS</div><h3>Viktoria y el bajo Ibanez</h3><p>El bajo Ibanez se convierte en una pieza protagonista, con su forma y acabados visibles en el retrato.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/viktoria.html">Viktoria</a></p>
+
+<details class="jsonbox" open=""><summary>JSON · Instrumento · Ibanez SR1355B Premium</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_instrument_scene_07",
+  "type": "illustrative_instrument_reference",
+  "subject": "Viktoria",
+  "instrument": {
+    "name": "Ibanez SR1355B Premium",
+    "visual_description": "Ibanez SR1355B Premium five-string electric bass, natural wood finish"
+  },
+  "usage": "Combine the instrument with the character identity, wardrobe, pose, and AXFRA stage background.",
+  "note": "Reconstruction for this demo from the supplied image; not presented as the original instrument library JSON."
+}</pre></div></details><details class="jsonbox" open=""><summary>JSON · Cámara · escena 7</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_camera_scene_07",
+  "type": "camera_composition",
+  "camera_angle": "extreme low-angle upward view from below stage level; bass neck recedes diagonally into the upper frame",
+  "subject_orientation": "front three-quarter body angle, one leg elevated on amplifier stack",
+  "framing": "2:3 vertical concert editorial photograph",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "note": "Estimated from the visual result; camera angle is not verified capture metadata."
+}</pre></div></details></div></article>
+<article class="scene" id="escena-08"><div class="scene-media"><img alt="Paulina frente al micrófono" loading="lazy" src="https://axfra.com/images/homegallery/axfra_paulina_dots__shure_super_55SH_series_II.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 08 / INSTRUMENTOS</div><h3>Paulina frente al micrófono</h3><p>El micrófono retro Shure Super 55 define la imagen de la vocalista. El retrato separa personaje, objeto y acción.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/paulina.html">Paulina</a></p>
+
+<details class="jsonbox" open=""><summary>JSON · Instrumento · Shure Super 55 Series II</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_instrument_scene_08",
+  "type": "illustrative_instrument_reference",
+  "subject": "Paulina",
+  "instrument": {
+    "name": "Shure Super 55 Series II",
+    "visual_description": "Shure Super 55 Series II vintage silver microphone with classic chrome grille"
+  },
+  "usage": "Combine the instrument with the character identity, wardrobe, pose, and AXFRA stage background.",
+  "note": "Reconstruction for this demo from the supplied image; not presented as the original instrument library JSON."
+}</pre></div></details><details class="jsonbox" open=""><summary>JSON · Cámara · escena 8</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_camera_scene_08",
+  "type": "camera_composition",
+  "camera_angle": "extreme high-angle overhead wide-lens portrait, camera looking steeply down toward face and stage floor; pronounced wide-angle perspective",
+  "subject_orientation": "singer looks up toward camera, microphone in foreground",
+  "framing": "2:3 vertical concert editorial photograph",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "note": "Estimated from the visual result; camera angle is not verified capture metadata."
+}</pre></div></details></div></article>
+<article class="scene" id="escena-09"><div class="scene-media"><img alt="Amina en la batería" loading="lazy" src="https://axfra.com/images/homegallery/axfra_amina_tama_starclassic_maple_poster_version.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 09 / INSTRUMENTOS</div><h3>Amina en la batería</h3><p><a href="https://axfra.com/identities/amina.html">Amina</a> en plena ejecución, frente a la batería AXFRA. Esta fotografía de concierto sustituye la referencia instrumental utilizada durante las pruebas iniciales.</p>
+
+<details class="jsonbox" open=""><summary>JSON · Instrumento · Tama Starclassic Maple</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_instrument_scene_09",
+  "type": "illustrative_instrument_reference",
+  "subject": "Amina",
+  "instrument": {
+    "name": "Tama Starclassic Maple",
+    "visual_description": "white double-bass drum kit with AXFRA lettering on both front bass drum heads, multiple toms and cymbals"
+  },
+  "usage": "Combine the instrument with the character identity, wardrobe, pose, and AXFRA stage background.",
+  "note": "Reconstruction for this demo from the supplied image; not presented as the original instrument library JSON."
+}</pre></div></details><details class="jsonbox" open=""><summary>JSON · Cámara · escena 9</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_camera_scene_09",
+  "type": "camera_composition",
+  "camera_angle": "low frontal concert photograph, slightly upward camera view from in front of the bass drums; full kit and AXFRA sign visible",
+  "subject_orientation": "front-facing drummer in dynamic performance pose behind drums",
+  "framing": "2:3 vertical concert editorial photograph",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "note": "Estimated from the visual result; camera angle is not verified capture metadata."
+}</pre></div></details></div></article>
+<article class="scene" id="escena-11"><div class="scene-media"><img alt="El gran escenario AXFRA" loading="lazy" src="https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 11 / ESCENOGRAFÍA</div><h3>El gran escenario AXFRA</h3><p>La marca se transforma en escenografía: letras monumentales iluminadas, estructuras de concierto y una atmósfera de espectáculo.</p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_environment_stage_backdrop_illuminated.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_environment_stage_backdrop_illuminated.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_stage_backdrop_illuminated_axfra",
+  "name": "AXFRA Illuminated Stage Backdrop",
+  "name_es": "Backdrop de escenario iluminado AXFRA",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "environment",
+  "slot": "backdrop",
+  "piece_family": "stage_backdrop",
+  "swap_rule": "Se cita el id. Se pueden ajustar iluminación, escala y estilo visual del fondo, manteniendo la estructura general del letrero AXFRA y la composición del escenario.",
+  "backdrop": {
+    "type": "illuminated stage backdrop",
+    "main_feature": "Giant illuminated AXFRA lettering dominating the center of the stage",
+    "signage_text": "AXFRA",
+    "signage_style": "massive uppercase block letters constructed from hundreds of bright warm-white concert bulbs, inspired by classic arena rock stage signage",
+    "signage_position": "centered above the performers, spanning most of the stage width",
+    "signage_visibility": "All five letters A-X-F-R-A must be clearly readable, accurately spelled, unobstructed and brightly illuminated",
+    "secondary_feature": "additional illuminated stage panels beneath the AXFRA sign",
+    "side_panels": "symmetrical rows of illuminated speaker-stack style panels",
+    "style": "spectacular classic arena rock stage design"
+  }
+}</pre><div class="source">Archivo de referencia: axfra_environment_stage_backdrop_illuminated.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-12"><div class="scene-media"><img alt="La banda sale a escena" loading="lazy" src="https://axfra.com/images/homegallery/axfra_paudotsband_stage_group.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 12 / CONCIERTO</div><h3>La banda sale a escena</h3><p>Las cuatro integrantes comparten escenario. La dificultad visual aumenta: instrumentos, posiciones, escala, iluminación y continuidad deben convivir en una sola toma. El fondo proviene del módulo axfra_environment_stage_backdrop_illuminated.json.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/dotsy.html">Dotsy</a> · <a href="https://axfra.com/identities/viktoria.html">Viktoria</a> · <a href="https://axfra.com/identities/paulina.html">Paulina</a> · <a href="https://axfra.com/identities/amina.html">Amina</a></p>
+<div class="source">Fotografía editorial · sin JSON específico incluido en el paquete</div>
+<details class="jsonbox" open=""><summary>JSON · Fondo de escenario AXFRA (módulo reutilizado)</summary><div class="json-inner"><button class="copy" data-json="axfra_environment_stage_backdrop_illuminated.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_stage_backdrop_illuminated_axfra",
+  "name": "AXFRA Illuminated Stage Backdrop",
+  "name_es": "Backdrop de escenario iluminado AXFRA",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "environment",
+  "slot": "backdrop",
+  "piece_family": "stage_backdrop",
+  "swap_rule": "Se cita el id. Se pueden ajustar iluminación, escala y estilo visual del fondo, manteniendo la estructura general del letrero AXFRA y la composición del escenario.",
+  "backdrop": {
+    "type": "illuminated stage backdrop",
+    "main_feature": "Giant illuminated AXFRA lettering dominating the center of the stage",
+    "signage_text": "AXFRA",
+    "signage_style": "massive uppercase block letters constructed from hundreds of bright warm-white concert bulbs, inspired by classic arena rock stage signage",
+    "signage_position": "centered above the performers, spanning most of the stage width",
+    "signage_visibility": "All five letters A-X-F-R-A must be clearly readable, accurately spelled, unobstructed and brightly illuminated",
+    "secondary_feature": "additional illuminated stage panels beneath the AXFRA sign",
+    "side_panels": "symmetrical rows of illuminated speaker-stack style panels",
+    "style": "spectacular classic arena rock stage design"
+  }
+}</pre><div class="source">Archivo de referencia: axfra_environment_stage_backdrop_illuminated.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details></div></article>
+<article class="backstage-story" id="escena-13"><div class="scene-meta">ESCENA 13 / BACKSTAGE VIP</div><h3>Un photocall. Cuatro encuentros imposibles.</h3><p>El muro de prensa alterna AXFRA y ALARSI en una cuadrícula negra y blanca. Sobre esa base se construyeron cuatro composiciones ficticias con las integrantes de PauDotsBand y figuras públicas. El componente de entorno se mantiene; cambian las personas, la pose y la interacción.</p><div class="backstage-grid"><figure><img alt="Dotsy y Sam Altman en escena ficticia creada con IA" loading="lazy" src="https://axfra.com/images/homegallery/axfra_dotsy_sam_altman_backstage.jpg"/><figcaption><strong>Dotsy y Sam Altman</strong>Dotsy abraza a Sam Altman ante el photocall.</figcaption></figure><figure><img alt="Viktoria y Vladimir Putin en escena ficticia creada con IA" loading="lazy" src="https://axfra.com/images/homegallery/axfra_viktoria_dots_vladimir_putin_backstage.jpg"/><figcaption><strong>Viktoria y Vladimir Putin</strong>Viktoria posa abrazando a Vladimir Putin.</figcaption></figure><figure><img alt="Paulina y Elon Musk en escena ficticia creada con IA" loading="lazy" src="https://axfra.com/images/homegallery/axfra_paulina_dots_elon_musk_backstage.jpg"/><figcaption><strong>Paulina y Elon Musk</strong>Paulina abraza a Elon Musk para la fotografía.</figcaption></figure><figure><img alt="Amina y Donald Trump en escena ficticia creada con IA" loading="lazy" src="https://axfra.com/images/homegallery/axfra_amina_donald_trump_backstage.jpg"/><figcaption><strong>Amina y Donald Trump</strong>Amina posa con Donald Trump junto a la batería AXFRA.</figcaption></figure></div><details class="jsonbox" open=""><summary>Ver JSON · Composición de photocall (ejemplo editable) ▾</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_paudotsband_backstage",
+  "type": "scene_composition",
+  "environment_reference": "axfra_environment_backdrop_press_wall_checkerboard_axfra_alarsi.json",
+  "reference_images": [
+    "Identity reference of the selected band member",
+    "Reference image of the selected guest"
+  ],
+  "prompt": "Create a fictional VIP concert photocall photograph. The selected AXFRA band member warmly embraces the selected guest, both facing the press cameras. Apply the black-and-white AXFRA / ALARSI checkerboard press-wall environment. Preserve the exact AXFRA and ALARSI lettering. Maintain believable perspective, natural hands and photographic lighting.",
+  "variants": [
+    {
+      "band_member": "Dotsy",
+      "guest": "Sam Altman"
+    },
+    {
+      "band_member": "Viktoria Dots",
+      "guest": "Vladimir Putin"
+    },
+    {
+      "band_member": "Paulina Dots",
+      "guest": "Elon Musk"
+    },
+    {
+      "band_member": "Amina",
+      "guest": "Donald Trump"
+    }
+  ],
+  "note": "Fictional AI-generated editorial composition, not a real encounter or endorsement."
+}</pre></div></details></article>
+<article class="scene" id="escena-17"><div class="scene-media"><img alt="Hana y Mara: selfie del concierto" loading="lazy" src="https://axfra.com/images/homegallery/axfra_hana_mara_concert_selfie.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 17 / PÚBLICO</div><h3>Hana y Mara: selfie del concierto</h3><p>La cámara cambia de lugar: ahora la historia se cuenta desde el público, mediante una selfie compartida en pleno espectáculo.</p><p class="identity-links">Identidades: <a href="https://axfra.com/identities/hana.html">Hana</a> · <a href="https://axfra.com/identities/mara.html">Mara</a></p>
+
+<details class="jsonbox" open=""><summary>Ver JSON · Hana y Mara · selfie ▾</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_hana_mara_concert_selfie",
+  "type": "scene_composition",
+  "subjects": [
+    "Hana",
+    "Mara"
+  ],
+  "subject_reference": "AXFRA identity reference images for Hana and Mara",
+  "pose_action": "Hana and Mara stand close together, smiling, one holding a smartphone at arm’s length to take a selfie. Selfie perspective facing both women.",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "environment": "Live PauDotsBand concert with AXFRA illuminated stage visible behind the audience",
+  "camera": "front-facing smartphone selfie, natural wide-angle perspective",
+  "aspect_ratio": "2:3",
+  "constraints": [
+    "Preserve both characters’ identities",
+    "Keep the illuminated AXFRA stage legible in the background",
+    "Natural hands and believable smartphone placement"
+  ]
+}</pre></div></details></div></article>
+<article class="scene" id="escena-18"><div class="scene-media"><img alt="Mira cuida el evento" loading="lazy" src="https://axfra.com/images/homegallery/axfra_mira_concert_security.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 18 / OPERACIÓN</div><h3>Mira cuida el evento</h3><p><a href="https://axfra.com/identities/mira.html">Mira</a> asume un rol distinto al musical como parte del equipo de seguridad. El mismo personaje cambia de función mediante vestuario y contexto. En la escena coordina a un equipo de guardias delante del escenario, con acreditaciones, radios y personal de apoyo.</p>
+
+<details class="jsonbox" open=""><summary>Ver JSON · Mira · seguridad del concierto ▾</summary><div class="json-inner"><button class="copy" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_demo_mira_concert_security",
+  "type": "scene_composition",
+  "subject": "Mira",
+  "subject_reference": "AXFRA identity reference image for Mira",
+  "pose_action": "Mira is the event security supervisor, coordinating her team with a handheld radio while monitoring the crowd.",
+  "wardrobe": "Professional black concert security uniform with AXFRA identification badge",
+  "background_reference": "https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+  "environment": "PauDotsBand concert, security area near the stage",
+  "camera": "editorial event photography, dynamic wide view",
+  "aspect_ratio": "2:3",
+  "constraints": [
+    "Preserve Mira identity",
+    "Keep AXFRA concert context",
+    "Natural security gear and anatomy"
+  ]
+}</pre></div></details></div></article>
+<article class="scene" id="escena-19"><div class="scene-media"><img alt="Indira sigue el show desde casa" loading="lazy" src="https://axfra.com/images/homegallery/axfra_indira_megatv_concert.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 19 / TRANSMISIÓN</div><h3>Indira sigue el show desde casa</h3><p>La narración sale del recinto y llega al salón de <a href="https://axfra.com/identities/indira.html">Indira</a>. El cine en casa es un entorno modular; la imagen de la pantalla se puede sustituir sin reconstruir la habitación.</p>
+<details class="jsonbox" open=""><summary>Ver JSON · axfra_environment_home_cinema_premium.json ▾</summary><div class="json-inner"><button class="copy" data-json="axfra_environment_home_cinema_premium.json" type="button">Copiar JSON</button><pre>{
+  "id": "AXFRA_environment_home_cinema_premium",
+  "name": "Premium Nighttime Home Cinema",
+  "name_es": "Cine doméstico premium nocturno",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "environment",
+  "slot": "interior",
+  "piece_family": "home_cinema",
+  "environment": {
+    "type": "high-end residential home cinema integrated into a contemporary living room",
+    "time_of_day": "night",
+    "architecture": "floor-to-ceiling dark-framed windows along the left wall with a nighttime city view; dark concrete-textured television feature wall; warm neutral ceiling with recessed spotlights; light natural wood floor",
+    "layout": "large wall-mounted widescreen television on the right-hand feature wall; low dark wooden media cabinet beneath it; deep charcoal L-shaped sectional sofa facing the screen from the left foreground; low rectangular wood coffee table in the foreground",
+    "furnishings": [
+      "plush charcoal sectional sofa with chaise section, neutral cushions and a soft throw",
+      "low wooden media console with open shelving",
+      "slim black soundbar centered below the screen",
+      "low wooden coffee table with books, remote control and a small glass bowl",
+      "subtle neutral floor rug",
+      "narrow illuminated display shelves recessed beside the feature wall"
+    ],
+    "materials": [
+      "dark textured concrete",
+      "dark upholstery",
+      "natural wood",
+      "clear glass",
+      "matte black metal"
+    ],
+    "palette": [
+      "charcoal",
+      "warm gray",
+      "walnut brown",
+      "soft beige",
+      "warm white"
+    ],
+    "people": "two seated viewers on the sofa, seen in partial side view, naturally watching the television; their specific identities and wardrobes are not defined by this environment",
+    "screen": {
+      "type": "large wall-mounted widescreen television",
+      "content_rule": "screen imagery is an independent replaceable content layer, not part of the permanent room design",
+      "default_content": "colorful cinematic science-fiction space scene featuring a spacecraft against bright blue, magenta and amber nebula clouds",
+      "default_text": "no fixed on-screen typography required",
+      "preserve_screen_geometry": true
+    }
+  },
+  "lighting": {
+    "ambient": "dim warm evening lighting with restrained recessed ceiling downlights",
+    "accent": "soft warm LED backlighting outlining the television; concealed warm strip lights inside architectural shelving",
+    "practical": "subtle small side lamp and gentle reflections on the windows",
+    "screen_glow": "soft color spill from the displayed content, without overwhelming the room",
+    "mood": "intimate, upscale, calm, cinematic"
+  },
+  "camera": {
+    "framing": "wide interior establishing shot showing sofa in left foreground and television wall on the right",
+    "viewpoint": "slightly elevated three-quarter room view, looking diagonally toward the feature wall",
+    "lens": "moderate wide-angle architectural interior photography",
+    "perspective": "natural room proportions, straight architectural lines, no extreme distortion",
+    "aspect_ratio": "1:1 reference composition; adaptable to other output ratios"
+  },
+  "style": "ultra-photorealistic premium architectural interior photography, believable natural materials, precise furniture geometry, controlled reflections, cinematic low-light exposure",
+  "swap_rule": "Reference this environment ID to preserve the room layout, materials, furniture and architectural lighting. Replace the television image independently without redesigning the environment.",
+  "constraints": [
+    "Do not permanently embed any movie title or lettering into the room architecture",
+    "Keep the television screen separate from the room and its furniture",
+    "Maintain a plausible residential scale and natural seating orientation",
+    "Preserve the nighttime window views and warm architectural accent lighting"
+  ]
+}</pre><div class="source">Archivo de referencia: axfra_environment_home_cinema_premium.json · Verificar ubicación exacta dentro de axfra_json_library antes de enlazarlo</div></div></details>
+</div></article>
+<article class="scene" id="escena-20"><div class="scene-media"><img alt="El concierto desde las alturas" loading="lazy" src="https://axfra.com/images/homegallery/cpatain%20dots%20mirando%20desde%20la%20%20altura.jpg"/></div><div class="scene-content"><div class="scene-meta">ESCENA 20 / OTRA MIRADA</div><h3>Captain Dots: otra mirada, otra realidad</h3><p><a href="https://axfra.com/identities/captain-dots.html">Captain Dots</a> contempla el concierto desde las alturas. Su existencia en una realidad cuántica permite que, en determinadas circunstancias, coexista con Paulina Dots. Esta aparición amplía la ficción sin sustituir a la cantante.</p>
+<div class="source">Fotografía editorial · sin JSON específico incluido en el paquete</div>
+</div></article>
+</div></section><section class="end"><div class="wrap"><div class="eyebrow">04 / CONCLUSIÓN</div><h2>La música es una historia.<br/>AXFRA organiza sus piezas.</h2><p class="section-intro" style="margin:0 auto 25px">Identidades, vestuario, instrumentos y entornos pueden reutilizarse en distintas composiciones. El resultado final también deja espacio para la sorpresa y la exploración creativa.</p><div class="links" style="justify-content:center"><a class="btn primary" href="https://axfra.com/axfra_json_library/axfra_json_library.html">Librería JSON</a><a class="btn" href="https://axfra.com/soccer-play-demo.html">Soccer Play</a><a class="btn" href="https://axfra.com/demostracion-practica.html">Demostración práctica</a></div></div></section></main>
+<script>document.querySelectorAll("button.copy").forEach(b=>b.addEventListener("click",async()=>{const s=b.parentElement.querySelector("pre").textContent;try{await navigator.clipboard.writeText(s);b.textContent="Copiado ✓";setTimeout(()=>b.textContent="Copiar JSON",1800)}catch(e){b.textContent="Selecciona y copia el bloque"}}));</script><div id="globalFooter"></div><script defer="" src="https://axfra.com/shared-layout.js"></script></body></html>
