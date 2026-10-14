@@ -1,0 +1,72 @@
+
+{
+  "id": "AXFRA_wardrobe_stage_metallic_white",
+  "name": "Metallic White Stage Outfit",
+  "name_es": "Vestuario de escenario blanco metalizado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source": "AXFRA_blouse_crop_top"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage",
+  "swap_rule": "Reference the look by its ID. Material and color may be changed. Preserve garment cuts, proportions, and accessory details.",
+  "top": {
+    "type": "crop top",
+    "source_id": "AXFRA_blouse_crop_top",
+    "neckline": "high round neckline",
+    "sleeves": "sleeveless",
+    "hem": "cropped above the waist",
+    "fit": "short, slightly loose",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": false,
+    "pattern": "solid",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "skin-tight pants",
+    "material": "lycra",
+    "finish": "metallic",
+    "fit": "very tight, form-fitting stretch fabric",
+    "length": "full length to the ankles",
+    "waist": "fitted waistband with belt loops",
+    "thickness": "normal",
+    "transparency": false,
+    "pattern": "solid",
+    "color": "metallic white",
+    "fabric_behavior": "Smooth, elastic fabric following the natural contours of the legs, with realistic stretch tension, subtle folds at the knees and ankles, and controlled metallic reflections."
+  },
+  "belt": {
+    "type": "waist belt",
+    "material": "leather",
+    "color": "black",
+    "width": "medium",
+    "buckle": {
+      "material": "polished metal",
+      "shape": "capital letter A",
+      "finish": "silver metallic",
+      "design": "A clearly recognizable uppercase A forming the central belt buckle"
+    }
+  },
+  "footwear": {
+    "type": "Converse sneakers",
+    "style": "classic canvas sneakers",
+    "color": "white",
+    "material": "canvas",
+    "laces": "white",
+    "sole": "white rubber",
+    "finish": "clean"
+  },
+  "material": "knit, metallic lycra, leather, canvas",
+  "thickness": "thin top, normal pants",
+  "transparency": false,
+  "pattern": "solid",
+  "color": "white, metallic white, black"
+}
