@@ -3356,5 +3356,534 @@
     "credit": "ALARSI / AXFRA",
     "page_url": "https://axfra.com/soccer-play-demo.html",
     "image_url": "https://axfra.com/images/homegallery/axfra_soccer_full team_happy_pool_02.jpg"
+  },
+  {
+    "id": 190,
+    "group": "PauDots Band · Backstage",
+    "path": "images/homegallery/axfra_amina_donald_trump_backstage.jpg",
+    "current": "axfra_amina_donald_trump_backstage.jpg",
+    "proposed": "axfra_amina_donald_trump_backstage.jpg",
+    "description": "Amina posa junto a un invitado con esmoquin delante de un muro de prensa AXFRA y ALARSI; batería violeta AXFRA en primer plano. Composición ficticia generada con IA.",
+    "alt": "Amina posa junto a un invitado con esmoquin delante de un muro de prensa AXFRA y ALARSI; batería vi.",
+    "reviewed": true,
+    "character": "Amina",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "group": "PauDots Band · Instrumentos",
+    "path": "images/homegallery/axfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "current": "axfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "proposed": "axfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "description": "Amina interpreta una batería blanca de doble bombo AXFRA frente a un escenario con letras AXFRA iluminadas, humo y torres de sonido.",
+    "alt": "Amina interpreta una batería blanca de doble bombo AXFRA frente a un escenario con letras AXFRA ilu.",
+    "reviewed": true,
+    "character": "Amina",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "group": "PauDots Band · Instrumentos",
+    "path": "images/homegallery/axfra_amina_tama_starclassic_maple.jpg",
+    "current": "axfra_amina_tama_starclassic_maple.jpg",
+    "proposed": "axfra_amina_tama_starclassic_maple.jpg",
+    "description": "Amina toca una batería blanca AXFRA de doble bombo junto a una piscina tropical con palmeras y columnas claras.",
+    "alt": "Amina toca una batería blanca AXFRA de doble bombo junto a una piscina tropical con palmeras y colu.",
+    "reviewed": true,
+    "character": "Amina",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "group": "PauDots Band · Narrativa",
+    "path": "images/homegallery/axfra_captain _dots mirando_desde_la_altura_a_paudotsband.jpg",
+    "current": "axfra_captain _dots mirando_desde_la_altura_a_paudotsband.jpg",
+    "proposed": "axfra_captain _dots mirando_desde_la_altura_a_paudotsband.jpg",
+    "description": "Captain Dots, con traje rojo, observa desde las alturas a PauDotsBand actuando ante una multitud en un estadio iluminado.",
+    "alt": "Captain Dots, con traje rojo, observa desde las alturas a PauDotsBand actuando ante una multitud en.",
+    "reviewed": true,
+    "character": "Captain Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Captain Dots",
+        "path": "images/identity/axfra_captain_dots_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "group": "PauDots Band · Instrumentos",
+    "path": "images/homegallery/axfra_dotsy_gibson_les_paul_60s.jpg",
+    "current": "axfra_dotsy_gibson_les_paul_60s.jpg",
+    "proposed": "axfra_dotsy_gibson_les_paul_60s.jpg",
+    "description": "Dotsy toca una guitarra Gibson Les Paul de acabado ámbar en un escenario de rock; plano contrapicado y grandes letras AXFRA iluminadas.",
+    "alt": "Dotsy toca una guitarra Gibson Les Paul de acabado ámbar en un escenario de rock; plano contrapicad.",
+    "reviewed": true,
+    "character": "Dotsy Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "group": "PauDots Band · Backstage",
+    "path": "images/homegallery/axfra_dotsy_sam_altman_backstage.jpg",
+    "current": "axfra_dotsy_sam_altman_backstage.jpg",
+    "proposed": "axfra_dotsy_sam_altman_backstage.jpg",
+    "description": "Dotsy posa con un invitado vestido de esmoquin delante de un photocall de cuadros AXFRA y ALARSI. Escena ficticia generada con IA.",
+    "alt": "Dotsy posa con un invitado vestido de esmoquin delante de un photocall de cuadros AXFRA y ALARSI.",
+    "reviewed": true,
+    "character": "Dotsy Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "group": "PauDots Band · Público",
+    "path": "images/homegallery/axfra_hana_mara_concert_selfie.jpg",
+    "current": "axfra_hana_mara_concert_selfie.jpg",
+    "proposed": "axfra_hana_mara_concert_selfie.jpg",
+    "description": "Hana y Mara se toman una selfie sonrientes entre el público; PauDotsBand actúa sobre un escenario AXFRA al fondo.",
+    "alt": "Hana y Mara se toman una selfie sonrientes entre el público; PauDotsBand actúa sobre un escenario A.",
+    "reviewed": true,
+    "character": "Hana, Mara Voss",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Hana",
+        "path": "images/identity/axfra_hana_profile.jpg"
+      },
+      {
+        "character": "Mara Voss",
+        "path": "images/identity/axfra_mara_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "group": "PauDots Band · Transmisión",
+    "path": "images/homegallery/axfra_indira_megatv_concert.jpg",
+    "current": "axfra_indira_megatv_concert.jpg",
+    "proposed": "axfra_indira_megatv_concert.jpg",
+    "description": "Dos espectadores ven el concierto de PauDotsBand en un gran televisor de salón contemporáneo con vistas nocturnas de la ciudad.",
+    "alt": "Dos espectadores ven el concierto de PauDotsBand en un gran televisor de salón contemporáneo con vi.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": []
+  },
+  {
+    "id": 198,
+    "group": "PauDots Band · Operación",
+    "path": "images/homegallery/axfra_mira_concert_security.jpg",
+    "current": "axfra_mira_concert_security.jpg",
+    "proposed": "axfra_mira_concert_security.jpg",
+    "description": "Mira coordina a un equipo de seguridad con uniformes negros AXFRA frente al escenario de PauDotsBand.",
+    "alt": "Mira coordina a un equipo de seguridad con uniformes negros AXFRA frente al escenario de PauDotsBan.",
+    "reviewed": true,
+    "character": "Mira",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "group": "PauDots Band · Grupo",
+    "path": "images/homegallery/axfra_paudotsband_group_portrait.jpg",
+    "current": "axfra_paudotsband_group_portrait.jpg",
+    "proposed": "axfra_paudotsband_group_portrait.jpg",
+    "description": "Viktoria, Amina, Paulina y Dotsy se abrazan junto a una piscina tropical, luciendo sus respectivos vestuarios de la banda.",
+    "alt": "Viktoria, Amina, Paulina y Dotsy se abrazan junto a una piscina tropical, luciendo sus respectivos.",
+    "reviewed": true,
+    "character": "Viktoria Dots, Amina, Paulina Dots, Dotsy Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      },
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      },
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      },
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "group": "PauDots Band · Grupo",
+    "path": "images/homegallery/axfra_paudotsband_stage_group.jpg",
+    "current": "axfra_paudotsband_stage_group.jpg",
+    "proposed": "axfra_paudotsband_stage_group.jpg",
+    "description": "Dotsy, Paulina, Amina y Viktoria interpretan un concierto con guitarra, micrófono, batería y bajo frente a un gran letrero AXFRA.",
+    "alt": "Dotsy, Paulina, Amina y Viktoria interpretan un concierto con guitarra, micrófono, batería y bajo f.",
+    "reviewed": true,
+    "character": "Dotsy Dots, Paulina Dots, Amina, Viktoria Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      },
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      },
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      },
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "group": "PauDots Band · Escenografía",
+    "path": "images/homegallery/axfra_paudotsband_stage_illuminated.jpg",
+    "current": "axfra_paudotsband_stage_illuminated.jpg",
+    "proposed": "axfra_paudotsband_stage_illuminated.jpg",
+    "description": "Escenario vacío de rock con gran letrero AXFRA iluminado por bombillas cálidas, torres de altavoces y luces de concierto.",
+    "alt": "Escenario vacío de rock con gran letrero AXFRA iluminado por bombillas cálidas, torres de altavoces.",
+    "reviewed": true,
+    "character": "Sin personajes",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html"
+  },
+  {
+    "id": 202,
+    "group": "PauDots Band · Instrumentos",
+    "path": "images/homegallery/axfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "current": "axfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "proposed": "axfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "description": "Paulina canta ante un micrófono cromado retro Shure desde una toma cenital de gran angular, rodeada de luminarias AXFRA.",
+    "alt": "Paulina canta ante un micrófono cromado retro Shure desde una toma cenital de gran angular, rodeada.",
+    "reviewed": true,
+    "character": "Paulina Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "group": "PauDots Band · Backstage",
+    "path": "images/homegallery/axfra_paulina_dots_elon_musk_backstage.jpg",
+    "current": "axfra_paulina_dots_elon_musk_backstage.jpg",
+    "proposed": "axfra_paulina_dots_elon_musk_backstage.jpg",
+    "description": "Paulina posa abrazada a un invitado con esmoquin ante el photocall de cuadros AXFRA y ALARSI. Encuentro ficticio generado con IA.",
+    "alt": "Paulina posa abrazada a un invitado con esmoquin ante el photocall de cuadros AXFRA y ALARSI.",
+    "reviewed": true,
+    "character": "Paulina Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "group": "PauDots Band · Backstage",
+    "path": "images/homegallery/axfra_viktoria_dots_vladimir_putin_backstage.jpg",
+    "current": "axfra_viktoria_dots_vladimir_putin_backstage.jpg",
+    "proposed": "axfra_viktoria_dots_vladimir_putin_backstage.jpg",
+    "description": "Viktoria posa abrazada a un invitado con esmoquin frente al muro de prensa AXFRA y ALARSI. Composición ficticia generada con IA.",
+    "alt": "Viktoria posa abrazada a un invitado con esmoquin frente al muro de prensa AXFRA y ALARSI.",
+    "reviewed": true,
+    "character": "Viktoria Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "group": "PauDots Band · Instrumentos",
+    "path": "images/homegallery/axfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "current": "axfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "proposed": "axfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "description": "Viktoria toca un bajo Ibanez de cinco cuerdas sobre amplificadores Marshall, en un contrapicado extremo con cartel AXFRA iluminado.",
+    "alt": "Viktoria toca un bajo Ibanez de cinco cuerdas sobre amplificadores Marshall, en un contrapicado ext.",
+    "reviewed": true,
+    "character": "Viktoria Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "group": "PauDots Band · Vestuario",
+    "path": "images/homegallery/axfra_wardrobe_stage_dotsy_tophat.jpg",
+    "current": "axfra_wardrobe_stage_dotsy_tophat.jpg",
+    "proposed": "axfra_wardrobe_stage_dotsy_tophat.jpg",
+    "description": "Dotsy luce sombrero de copa negro, gafas oscuras, camiseta rockera sin mangas y pantalones negros desgastados en un interior acristalado.",
+    "alt": "Dotsy luce sombrero de copa negro, gafas oscuras, camiseta rockera sin mangas y pantalones negros d.",
+    "reviewed": true,
+    "character": "Dotsy Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "group": "PauDots Band · Vestuario",
+    "path": "images/homegallery/axfra_wardrobe_stage_metallic_white_amina.jpg",
+    "current": "axfra_wardrobe_stage_metallic_white_amina.jpg",
+    "proposed": "axfra_wardrobe_stage_metallic_white_amina.jpg",
+    "description": "Amina posa junto a una piscina con crop top blanco, pantalones metalizados claros, cinturón negro con hebilla A y zapatillas blancas.",
+    "alt": "Amina posa junto a una piscina con crop top blanco, pantalones metalizados claros, cinturón negro c.",
+    "reviewed": true,
+    "character": "Amina",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "group": "PauDots Band · Vestuario",
+    "path": "images/homegallery/axfra_wardrobe_stage_paulina_overalls.jpg",
+    "current": "axfra_wardrobe_stage_paulina_overalls.jpg",
+    "proposed": "axfra_wardrobe_stage_paulina_overalls.jpg",
+    "description": "Paulina luce crop top blanco y overol ancho de denim azul envejecido junto a una piscina tropical.",
+    "alt": "Paulina luce crop top blanco y overol ancho de denim azul envejecido junto a una piscina tropical.",
+    "reviewed": true,
+    "character": "Paulina Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "group": "PauDots Band · Vestuario",
+    "path": "images/homegallery/axfra_wardrobe_stage_viktoria_schoolboy.jpg",
+    "current": "axfra_wardrobe_stage_viktoria_schoolboy.jpg",
+    "proposed": "axfra_wardrobe_stage_viktoria_schoolboy.jpg",
+    "description": "Viktoria posa junto a una piscina con gorra negra de letra A roja, chaqueta y shorts de terciopelo rojo, corbata y zapatillas rojas.",
+    "alt": "Viktoria posa junto a una piscina con gorra negra de letra A roja, chaqueta y shorts de terciopelo.",
+    "reviewed": true,
+    "character": "Viktoria Dots",
+    "source": "Imagen proporcionada por el usuario; relacionada con paudotsband-concert-demo-v5.html",
+    "identity_master_refs": [
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/aaxfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "current": "aaxfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "proposed": "aaxfra_amina_tama_starclassic_maple_poster_version.jpg",
+    "description": "Amina toca una batería AXFRA blanca de doble bombo junto a una piscina, en encuadre vertical y sin escenario iluminado.",
+    "alt": "Amina toca una batería AXFRA blanca de doble bombo junto a una piscina, en encuadre vertical y sin.",
+    "reviewed": true,
+    "character": "Amina",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Amina",
+        "path": "images/identity/axfra_amina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 211,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/aaxfra_dotsy_gibson_les_paul_60s.jpg",
+    "current": "aaxfra_dotsy_gibson_les_paul_60s.jpg",
+    "proposed": "aaxfra_dotsy_gibson_les_paul_60s.jpg",
+    "description": "Dotsy posa con una guitarra Les Paul ámbar en un interior acristalado luminoso; vestuario rockero negro y sombrero de copa.",
+    "alt": "Dotsy posa con una guitarra Les Paul ámbar en un interior acristalado luminoso; vestuario rockero n.",
+    "reviewed": true,
+    "character": "Dotsy Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/aaxfra_mira_concert_security.jpg",
+    "current": "aaxfra_mira_concert_security.jpg",
+    "proposed": "aaxfra_mira_concert_security.jpg",
+    "description": "Mira aparece en primer plano con los brazos cruzados y uniforme de seguridad AXFRA mientras la banda interpreta detrás.",
+    "alt": "Mira aparece en primer plano con los brazos cruzados y uniforme de seguridad AXFRA mientras la band.",
+    "reviewed": true,
+    "character": "Mira",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 213,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/aaxfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "current": "aaxfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "proposed": "aaxfra_paulina_dots__shure_super_55SH_series_II.jpg",
+    "description": "Paulina canta junto a una piscina tropical ante un micrófono retro cromado, con crop top blanco y denim holgado.",
+    "alt": "Paulina canta junto a una piscina tropical ante un micrófono retro cromado, con crop top blanco y d.",
+    "reviewed": true,
+    "character": "Paulina Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/aaxfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "current": "aaxfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "proposed": "aaxfra_viktoria_ibanez_SR1355B_premium.jpg",
+    "description": "Viktoria posa tocando un bajo Ibanez de cinco cuerdas junto a una piscina tropical, vestida con terciopelo rojo.",
+    "alt": "Viktoria posa tocando un bajo Ibanez de cinco cuerdas junto a una piscina tropical, vestida con ter.",
+    "reviewed": true,
+    "character": "Viktoria Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 215,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/baxfra_dotsy_gibson_les_paul_60s.jpg",
+    "current": "baxfra_dotsy_gibson_les_paul_60s.jpg",
+    "proposed": "baxfra_dotsy_gibson_les_paul_60s.jpg",
+    "description": "Dotsy posa con una guitarra Gibson Les Paul frente a un escenario AXFRA iluminado, en toma frontal de cuerpo entero.",
+    "alt": "Dotsy posa con una guitarra Gibson Les Paul frente a un escenario AXFRA iluminado, en toma frontal.",
+    "reviewed": true,
+    "character": "Dotsy Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/cpatain dots mirando desde la  altura.jpg",
+    "current": "cpatain dots mirando desde la  altura.jpg",
+    "proposed": "cpatain dots mirando desde la  altura.jpg",
+    "description": "Captain Dots observa sentada desde la cornisa de un rascacielos el escenario AXFRA de PauDotsBand sobre una ciudad nocturna.",
+    "alt": "Captain Dots observa sentada desde la cornisa de un rascacielos el escenario AXFRA de PauDotsBand s.",
+    "reviewed": true,
+    "character": "Captain Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Captain Dots",
+        "path": "images/identity/axfra_captain_dots_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "group": "PauDots Band · Variantes",
+    "path": "images/homegallery/grok-image-3835f960-d4d4-47a8-b5ac-c129ea4df0c3.jpg",
+    "current": "grok-image-3835f960-d4d4-47a8-b5ac-c129ea4df0c3.jpg",
+    "proposed": "grok-image-3835f960-d4d4-47a8-b5ac-c129ea4df0c3.jpg",
+    "description": "Dotsy, Paulina y Viktoria se abrazan sonrientes junto a una piscina, con vestuario rockero y overol de mezclilla.",
+    "alt": "Dotsy, Paulina y Viktoria se abrazan sonrientes junto a una piscina, con vestuario rockero y overol.",
+    "reviewed": true,
+    "character": "Dotsy Dots, Paulina Dots, Viktoria Dots",
+    "source": "Variante visual proporcionada por el usuario; publicación web no verificada",
+    "identity_master_refs": [
+      {
+        "character": "Dotsy Dots",
+        "path": "images/identity/axfra_dotsy_profile.jpg"
+      },
+      {
+        "character": "Paulina Dots",
+        "path": "images/identity/axfra_paulina_profile.jpg"
+      },
+      {
+        "character": "Viktoria Dots",
+        "path": "images/identity/axfra_viktoria_profile.jpg"
+      }
+    ]
   }
 ]
