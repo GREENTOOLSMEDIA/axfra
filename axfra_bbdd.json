@@ -3885,5 +3885,233 @@
         "path": "images/identity/axfra_viktoria_profile.jpg"
       }
     ]
+  },
+  {
+    "id": 218,
+    "group": "AXION FRAME 69 · Beachwear",
+    "path": "images/homegallery/axfra_indira_mira_axion_frame_69_cabana_surf.jpg",
+    "current": "axfra_indira_mira_axion_frame_69_cabana_surf.jpg",
+    "proposed": "axfra_indira_mira_axion_frame_69_cabana_surf.jpg",
+    "description": "Mira e Indira posan frente a una surf shack de madera junto al mar, rodeadas de tablas de surf de colores y vistiendo poleras vintage AXION FRAME 69 en versiones blanca y grafito.",
+    "alt": "Mira e Indira junto a una surf shack de playa con tablas de surf y poleras AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Mira, Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      },
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "group": "AXION FRAME 69 · Poolside",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_piscina_gesto_paz.jpg",
+    "current": "axfra_indira_axion_frame_69_piscina_gesto_paz.jpg",
+    "proposed": "axfra_indira_axion_frame_69_piscina_gesto_paz.jpg",
+    "description": "Indira posa dentro de una piscina tropical haciendo el gesto de paz con la mano, con cabello mojado y polera vintage grafito AXION FRAME 69.",
+    "alt": "Indira dentro de una piscina tropical haciendo el gesto de paz con polera AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "group": "AXION FRAME 69 · Poolside",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_piscina_pie.jpg",
+    "current": "axfra_indira_axion_frame_69_piscina_pie.jpg",
+    "proposed": "axfra_indira_axion_frame_69_piscina_pie.jpg",
+    "description": "Indira posa de pie en la piscina con una mano en la cadera, salpicaduras de agua y polera vintage grafito AXION FRAME 69.",
+    "alt": "Indira de pie en la piscina con polera grafito AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "group": "AXION FRAME 69 · Poolside",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_piscina_sentada_taburete.jpg",
+    "current": "axfra_indira_axion_frame_69_piscina_sentada_taburete.jpg",
+    "proposed": "axfra_indira_axion_frame_69_piscina_sentada_taburete.jpg",
+    "description": "Indira, con cabello mojado y polera vintage AXION FRAME 69, posa sentada en un taburete junto a la piscina con actitud editorial relajada.",
+    "alt": "Indira sentada en un taburete junto a la piscina con polera AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "group": "AXION FRAME 69 · Art Poster",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_poster_acuarela(1).jpg",
+    "current": "axfra_indira_axion_frame_69_poster_acuarela(1).jpg",
+    "proposed": "axfra_indira_axion_frame_69_poster_acuarela(1).jpg",
+    "description": "Composición artística estilo acuarela de Indira surfeando sobre una tabla roja, rodeada de delfines y orcas, con retratos superpuestos y la polera AXION FRAME 69 como protagonista visual.",
+    "alt": "Poster artístico de Indira surfeando rodeada de delfines y orcas.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "group": "AXION FRAME 69 · Art Poster",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_poster_atardecer.jpg",
+    "current": "axfra_indira_axion_frame_69_poster_atardecer.jpg",
+    "proposed": "axfra_indira_axion_frame_69_poster_atardecer.jpg",
+    "description": "Composición editorial de Indira caminando descalza por una playa al atardecer con la polera AXION FRAME 69, acompañada por un gran retrato superpuesto sobre un cielo dorado.",
+    "alt": "Composición editorial de Indira caminando por la playa al atardecer con un retrato superpuesto.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "group": "AXION FRAME 69 · Poolside",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_piscina_brazos_cruzados.jpg",
+    "current": "axfra_indira_axion_frame_69_piscina_brazos_cruzados.jpg",
+    "proposed": "axfra_indira_axion_frame_69_piscina_brazos_cruzados.jpg",
+    "description": "Retrato frontal de Indira, parcialmente sumergida en la piscina y con brazos cruzados, vistiendo la polera vintage grafito AXION FRAME 69.",
+    "alt": "Retrato frontal de Indira dentro de la piscina con polera AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "group": "AXION FRAME 69 · Beachwear",
+    "path": "images/homegallery/axfra_indira_mira_atardecer(1).jpg",
+    "current": "axfra_indira_mira_atardecer(1).jpg",
+    "proposed": "axfra_indira_mira_atardecer(1).jpg",
+    "description": "Indira y Mira caminan por la orilla al atardecer cargando tablas de surf, luciendo poleras AXION FRAME 69 en versiones grafito y blanca.",
+    "alt": "Indira y Mira caminando por la playa al atardecer con tablas de surf y poleras AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira, Mira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      },
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "group": "AXION FRAME 69 · Editorial",
+    "path": "images/homegallery/axfra_indira_axion_frame_69_retrato_pared_clara.jpg",
+    "current": "axfra_indira_axion_frame_69_retrato_pared_clara.jpg",
+    "proposed": "axfra_indira_axion_frame_69_retrato_pared_clara.jpg",
+    "description": "Indira posa sonriente apoyada en un muro claro, con cabello húmedo y polera vintage grafito AXION FRAME 69.",
+    "alt": "Indira apoyada en un muro claro con polera AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "group": "AXION FRAME 69 · Collage",
+    "path": "images/homegallery/axfra_indira_mira_axion_frame_69_collage_estudio_azul.jpg",
+    "current": "axfra_indira_mira_axion_frame_69_collage_estudio_azul.jpg",
+    "proposed": "axfra_indira_mira_axion_frame_69_collage_estudio_azul.jpg",
+    "description": "Collage en cuadrícula con cuatro escenas de Mira e Indira dentro de un set azul, modelando y jugando con poleras AXION FRAME 69 en versiones blanca y grafito.",
+    "alt": "Collage de cuatro escenas de Mira e Indira en un set azul con poleras AXION FRAME 69.",
+    "reviewed": true,
+    "character": "Mira, Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      },
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "group": "AXION FRAME 69 · Concept Art",
+    "path": "images/homegallery/axfra_magazine(1).jpg",
+    "current": "axfra_magazine(1).jpg",
+    "proposed": "axfra_magazine(1).jpg",
+    "description": "Escena conceptual dentro de una catedral gótica: Drácula muestra un libro abierto con imágenes de Indira, incluyendo una composición acuarela de surf con orcas y delfines, frente a un vitral AXFRA.",
+    "alt": "Drácula muestra un libro con imágenes de Indira ante el vitral AXFRA de una catedral gótica.",
+    "reviewed": true,
+    "character": "Dracula, Indira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Indira",
+        "path": "images/identity/axfra_indira_profile.jpg"
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "group": "AXION FRAME 69 · Poolside",
+    "path": "images/homegallery/axfra_mira_axion_frame_69_piscina_polera_blanca.jpg",
+    "current": "axfra_mira_axion_frame_69_piscina_polera_blanca.jpg",
+    "proposed": "axfra_mira_axion_frame_69_piscina_polera_blanca.jpg",
+    "description": "Mira posa junto a la piscina bajo salpicaduras de agua, con pecas visibles y polera blanca semitransparente AXION FRAME 69.",
+    "alt": "Mira junto a la piscina con polera blanca AXION FRAME 69 y salpicaduras de agua.",
+    "reviewed": true,
+    "character": "Mira",
+    "source": "Imagen original proporcionada por el usuario; archivo y descripción revisados visualmente; publicación web por verificar",
+    "identity_master_refs": [
+      {
+        "character": "Mira",
+        "path": "images/identity/axfra_mira_profile.jpg"
+      }
+    ]
   }
 ]
