@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_wide_stance_forward_reach_pool",
+  "name": "Wide Stance Forward Reach Pool",
+  "name_es": "Wide Stance Forward Reach Pool",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "wide stance with one arm reaching forward and the other back. Camera placed at chest height, 2.8 meters in front of her and slightly to the side of the reaching arm, pointing directly at her extended hand and then her chest, 85mm lens, f/2.8, focus on the forward hand and her face, pool and palm trees behind, bright sun",
+  "source_index": 10
+}

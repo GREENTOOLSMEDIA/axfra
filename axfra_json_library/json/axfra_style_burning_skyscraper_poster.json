@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_burning_skyscraper_poster",
+  "name": "Burning Skyscraper Poster",
+  "name_es": "Póster de rascacielos en llamas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "Estilo de póster de bloque, contrapicado y amenazante. El sujeto es pequeño frente a un edificio que ocupa casi todo el afiche; el fuego arriba es el verdadero titular.\nComposición\n* Formato vertical. El sujeto está abajo, al centro, de cuerpo entero, visto desde abajo. Ocupa poco: la torre manda.\n* Detrás, un rascacielos frontal, casi simétrico, con una marca de fuego enorme atravesando la fachada. La marca puede ser un emblema simple, no un logo de personaje.\n* Humo denso a la izquierda, cielo gris azulado arriba, esquina de otro edificio a la derecha. Brasas y trozos flotan en primer plano, desenfocados.\nLuz y color\n* Dos temperaturas: azul petróleo y gris en la ciudad y en el sujeto; naranja y amarillo solo en el fuego y en las chispas.\n* El sujeto queda en sombra, con un borde de luz fría. El rostro se lee, pero no es un primer plano.\n* El fuego chorrea hacia abajo por la fachada, como si la marca estuviera quemando el edificio.\nEntorno\n* Ciudad nocturna, un solo edificio protagonista, sin calle visible. El suelo se pierde en humo azul.\n* Partículas de brasa cruzan delante del sujeto. Algunas están cerca de la lente.\n* Omitir traje, capa, máscara y cualquier emblema del vestuario. Conservar identidad, rostro y proporciones. La marca de fuego es del edificio, no del sujeto.\nTratamiento\n* Póster de estreno, no collage. Una sola escena, un solo punto de vista bajo.\n* Dejar libre la franja de arriba y la de abajo. Sin frase, sin nombres, sin título, sin fecha.\n* Grano fino, niebla, negros azulados. El único highlight fuerte es el fuego.\n* Preservar al sujeto. La escala chica y el edificio en llamas son el estilo, no un cambio de persona.\nIndicación corta para reutilizar\nPóster vertical de bloque, contrapicado. El sujeto de cuerpo entero abajo al centro, en sombra, pequeño frente a un rascacielos. En la fachada, un emblema enorme de fuego que chorrea hacia abajo. Humo a un lado, cielo gris azulado, brasas y escombros en primer plano. Paleta azul petróleo con naranja solo en el fuego. Franjas superior e inferior vacías, sin textos. Preservar identidad del sujeto; no cambiar vestuario ni máscara."
+}

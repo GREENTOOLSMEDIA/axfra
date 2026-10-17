@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_cross_strap_fishnet",
+  "name": "Cross-Strap Fishnet",
+  "name_es": "Red con tiras cruzadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.cross_strap_fishnet",
+  "pattern": "fishnet",
+  "color": "black",
+  "bra": {
+    "type": "strappy",
+    "coverage": "minimal",
+    "straps": "straps crossing at the sternum and beneath the bust",
+    "details": "metal rings, fishnet cups, unpadded",
+    "material": "fishnet",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "strappy thong",
+    "cut": "low-rise",
+    "details": "fishnet front panel, hip straps, rings",
+    "material": "fishnet",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "chart_name": "Cross-Strap Fishnet",
+    "type": "thigh-high, fishnet",
+    "pattern": "medium diamond fishnet",
+    "top": "crossed elastic straps at thigh",
+    "attachment": "integrated harness",
+    "material": "fishnet",
+    "thickness": "thin",
+    "transparency": "yes"
+  }
+}

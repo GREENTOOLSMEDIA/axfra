@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_supine_symmetrical",
+  "name": "Supine Symmetrical",
+  "name_es": "Supine Symmetrical",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Lying flat on the back, face looking straight upward, symmetrical composition.",
+  "source_content": "Lying flat on the back, face looking straight upward, symmetrical composition."
+}

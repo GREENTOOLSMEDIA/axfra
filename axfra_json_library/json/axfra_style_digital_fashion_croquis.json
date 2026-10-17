@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_digital_fashion_croquis",
+  "name": "Digital Fashion Croquis",
+  "name_es": "Croquis de moda digital",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "Es un croquis de moda digital, de línea limpia, sin sombreado.\nEl trazo es fino, continuo y de peso casi uniforme: contorno cerrado, sin presión de lápiz, sin textura de grafito ni manchas. Se ve vectorial o de tinta digital (pluma de punta constante, no pincel seco). Las líneas de construcción quedan visibles a propósito: eje vertical del torso, círculos de articulación en hombro, codo, muñeca, cadera, rodilla y tobillo, y guías de volumen en pecho, cintura y cadera. Eso lo acerca más a un maniquí de proporción o a un boceto de pose para figurín que a un dibujo acabado."
+}

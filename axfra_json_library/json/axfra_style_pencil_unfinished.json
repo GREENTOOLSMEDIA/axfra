@@ -1,0 +1,36 @@
+{
+  "id": "AXFRA_style_pencil_unfinished",
+  "name": "Unfinished Graphite Drawing",
+  "name_es": "Lámina a lápiz a medio hacer",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "style",
+  "slot": "treatment",
+  "piece_family": "pencil_sheet",
+  "swap_rule": "Reference this style ID and change subject framing only; do not rewrite the page, real hand, or sharpener.",
+  "properties": {
+    "format": "vertical",
+    "subject": "Centered frontal half-body or full-body portrait, looking at the viewer, still expression",
+    "placement": "Figure floats within page edges, with extra bottom and side margins",
+    "drawing": "Graphite drawing on beige paper with detailed eyes, hair strands and finely drawn skin",
+    "face": "Carefully detailed face with visible strokes at hair and edges",
+    "clothes": "Do not reproduce garments; indicate clothing only with lines",
+    "identity": "Preserve face and proportions",
+    "paper": "Textured Cambridge silk beige paper with graphite smudges and dust",
+    "light": "Even tabletop light",
+    "hand": "Real hand with pencil from bottom right touching unfinished drawing",
+    "sharpener": "Metal pencil sharpener at upper right, shavings and graphite dust",
+    "contrast": "Photographic hand, pencil and sharpener against graphite subject",
+    "pencil_mark": "AXFRA",
+    "pencil_mark_size": "small",
+    "pencil_mark_style": "Helvetica Bold",
+    "pencil_mark_place": "on pencil",
+    "forbid": "Action poster, collage, neon, backlight, sky, scenery, signature on skin, URL, cursor, watermark, pulp or movie poster, occluded subject"
+  }
+}

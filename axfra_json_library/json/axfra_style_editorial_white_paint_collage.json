@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_editorial_white_paint_collage",
+  "name": "White Paint Editorial Collage",
+  "name_es": "Collage editorial sobre pintura blanca",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "background": "off-white",
+  "source_content": "Estilo de póster editorial de collage, sobre fondo claro. Varias escalas del mismo sujeto flotan en una mancha de pintura, sin ciudad ni escenario completo.\nComposición\n* Formato vertical. Tres presencias del sujeto, no una sola pose: un rostro grande de perfil arriba a la derecha, mirando fuera; un rostro frontal más chico a la izquierda, con sonrisa; una figura de cuerpo entero al centro, de pie sobre un fragmento de suelo.\n* El cuerpo entero es el ancla. Los dos rostros son ecos, más grandes, y se solapan detrás sin tapar la figura.\n* El suelo es solo una tabla o plataforma rota, suspendida. No hay horizonte ni habitación: el resto es blanco.\nLuz y color\n* Fondo casi blanco, con salpicaduras grises y beige. La luz sobre el sujeto es suave, de día, sin contraluz duro.\n* El color vive en el sujeto; el entorno se desatura hasta el papel. Sombras cortas, piel natural, sin grano de cine ni neón.\n* Los bordes del pelo y del cuerpo se disuelven en brochazos y gotas, no en un recorte limpio.\nEntorno\n* Mancha de acuarela o tinta seca alrededor del grupo: blancos, grises y un poco de ocre. Algunas gotas sueltas fuera de la mancha.\n* La plataforma de madera queda abajo, irregular, como un islote. Nada de arquitectura, vehículos ni texto.\n* Omitir vestuario, peinado y accesorios del afiche (lentes, moño, ropa). Conservar identidad y proporciones.\nTratamiento\n* Collage de moda, no montaje de película. Las capas se funden con opacidad y pintura, no con humo ni hologramas.\n* Una sola identidad repetida a tres escalas. Misma persona, no tres personajes.\n* Dejar aire blanco alrededor. El póster respira; no se llena hasta el borde.\n* Preservar el rostro del sujeto. Las salpicaduras y la plataforma son tratamiento, no parte del cuerpo.\nIndicación corta para reutilizar\nPóster vertical de collage editorial sobre blanco. El sujeto en tres escalas: rostro grande de perfil arriba, rostro frontal sonriente a un lado, cuerpo entero de pie al centro sobre una plataforma de madera suspendida. Bordes disueltos en salpicadura y brochazo gris-beige, fondo de papel, luz suave de día. Sin ciudad, sin texto, sin escenario completo. Preservar identidad del sujeto; no cambiar vestuario ni accesorios."
+}

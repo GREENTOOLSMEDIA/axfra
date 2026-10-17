@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_waistband_holding_head_tilt",
+  "name": "Waistband Holding Head Tilt",
+  "name_es": "Waistband Holding Head Tilt",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto de pie. Torso en tres cuartos hacia cámara, cadera un poco desplazada. Ambas manos en la cintura, bajando el borde de la prenda (o simulando ese gesto). Cabeza echada atrás y a un lado, ojos cerrados o casi cerrados. Cabello cayendo sobre la cara. Hombros bajos. Piernas juntas o apenas abiertas, peso repartido.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio-largo (caderas o muslos a cabeza) o cuerpo entero. Cámara a altura de pecho. Distancia media. El gesto de las dos manos en la cintura debe verse claro.",
+  "source_index": 88
+}

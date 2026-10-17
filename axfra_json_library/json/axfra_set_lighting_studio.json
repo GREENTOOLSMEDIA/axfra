@@ -1,0 +1,84 @@
+{
+  "id": "AXFRA set_lighting_studio",
+  "name": "Four-Point Studio Lighting Set",
+  "name_es": "Set de iluminación de estudio de cuatro focos",
+  "mood": "cinematic, editorial, controlled studio lighting",
+  "palette": [
+    "white",
+    "warm white",
+    "cool white"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "system": "AXFRA JSON prompt system",
+    "model": "Paulina Dots",
+    "handle": "@axfratools",
+    "site": "https://axfra.com",
+    "portfolio": "https://paulinadots.com",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-06",
+    "brand_site": "https://axfra.com"
+  },
+  "lighting": {
+    "controls": {
+      "intensity_range": "0-100",
+      "height_options": [
+        "arriba",
+        "medio",
+        "abajo"
+      ],
+      "ambient_tone_options": [
+        "calido",
+        "neutral",
+        "frio"
+      ]
+    },
+    "lights": {
+      "left": {
+        "on": true,
+        "position": {
+          "side": "left",
+          "height": "medio"
+        },
+        "intensity": 70,
+        "color": "#FFFFFF"
+      },
+      "right": {
+        "on": true,
+        "position": {
+          "side": "right",
+          "height": "medio"
+        },
+        "intensity": 45,
+        "color": "#FFFFFF"
+      },
+      "front": {
+        "on": true,
+        "position": {
+          "side": "front",
+          "height": "arriba"
+        },
+        "intensity": 60,
+        "color": "#FFFFFF"
+      },
+      "rear": {
+        "on": false,
+        "position": {
+          "side": "rear",
+          "height": "abajo"
+        },
+        "intensity": 35,
+        "color": "#FFFFFF"
+      }
+    },
+    "ambient": {
+      "intensity": 20,
+      "color": "#FFFFFF",
+      "tone": "neutral"
+    }
+  },
+  "style": "Alarsi editorial style, ultra photorealistic high-fashion outdoor portrait, cinematic natural lighting, Vogue-level luxury aesthetic, hyper-detailed skin pores, realistic wet surfaces, accurate water physics, no smoothing, no plastic look, masterpiece, best quality"
+}

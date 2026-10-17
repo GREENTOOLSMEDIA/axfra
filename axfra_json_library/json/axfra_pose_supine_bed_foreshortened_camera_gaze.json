@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_supine_bed_foreshortened_camera_gaze",
+  "name": "Supine Bed Foreshortened Camera Gaze",
+  "name_es": "Supine Bed Foreshortened Camera Gaze",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto recostado boca arriba. Cabeza apoyada, ligeramente girada hacia un lado, mirada hacia la camra. Torso de frente, hombros relajados. Una rodilla flexionada y abierta hacia afuera; la otra pierna más larga, también con rodilla suave. Un pie más cerca del primer plano. Ambos brazos adelantados: una mano sobre el pubis, la otra sobre el muslo interno, cerca de la ingle. Cadera apoyada, sin sentarse ni girar de lado.\n\nÁNGULO DE CÁMARA\n\nPicado suave desde el extremo de los pies hacia la cabeza. Cámara por encima de la cama, no a ras. Encuadre de cuerpo casi entero (cabeza a pies). El pie más cercano entra en primer plano; el rostro queda en el tercio superior. Eje ligeramente descentrado, no cenital puro.\n\nPOSE\n\nSujeto sentado en el suelo o en un borde bajo, torso inclinado hacia atrás. Un brazo extendido detrás del cuerpo, palma apoyada, sosteniendo el peso. El otro brazo descansa sobre la rodilla flexionada. Una pierna estirada a lo largo del suelo; la otra rodilla alzada, pie plantado. Pecho abierto. Cabeza echada atrás, mentón alto, mirada hacia arriba. Cadera apoyada de lado, no de frente ni de perfil puro.\n\nÁNGULO DE CÁMARA\n\nTres cuartos de lado, a la altura del torso o un poco más bajo. Encuadre de cuerpo entero o tres cuartos largo (cabeza a pies). El brazo de apoyo y la pierna extendida deben verse completos. Distancia media. Luz preferible lateral o contraluz suave, no cenital.",
+  "source_index": 80
+}
