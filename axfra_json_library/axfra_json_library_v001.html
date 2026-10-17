@@ -76,7 +76,12 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Int
 .item-en{font-size:11px;display:block;color:#a9a9a9;margin-top:2px}
 .item-id{font-family:Menlo,Consolas,monospace;font-size:10px!important;line-height:1.25}
 .library-main .thumb{width:48px;height:54px}
-.library-main .item:hover .thumb{transform:none;box-shadow:none}
+/* Vista ampliada 2x al pasar el mouse; no altera el flujo del catálogo */
+.library-main .item{position:relative}
+.library-main .item:hover{z-index:10}
+.library-main .thumb{transform-origin:left center;transition:transform .16s ease,box-shadow .16s ease}
+.library-main .item:hover .thumb{transform:scale(2);box-shadow:0 8px 22px rgba(0,0,0,.8);z-index:20}
+@media(hover:none){.library-main .item:hover .thumb{transform:none;box-shadow:none}}
 .library-main .editor{min-height:280px}
 .library-main .bar button{padding:9px 10px;font-size:12px}
 @media(max-width:1000px){.library-main{grid-template-columns:175px 255px minmax(0,1fr)}}
