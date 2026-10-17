@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_midair_leap_toward_camera",
+  "name": "Midair Leap Toward Camera",
+  "name_es": "Midair Leap Toward Camera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "mid-air leaping pose toward the camera, both arms extended, one knee tucked, body slightly twisted, hair floating, confident gaze, cinematic 85mm lens, f/2.8, motion freeze, dramatic lighting, ultra detailed, Vogue editorial style",
+  "source_index": 2
+}

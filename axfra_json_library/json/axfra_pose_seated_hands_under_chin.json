@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_seated_hands_under_chin",
+  "name": "Seated Hands Under Chin",
+  "name_es": "Seated Hands Under Chin",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante. Ambos brazos flexionados: las manos se apilan bajo el mentón o rodean la base de la mandíbula. Codos hacia adentro, cerca del pecho. Hombros un poco altos. Cabeza inclinada hacia cámara, mirada al lente.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio-corto (pecho o cintura a cabeza). Cámara a altura de la cara o un poco más alta. Distancia corta. Deben verse las dos manos bajo el mentón.",
+  "source_index": 102
+}

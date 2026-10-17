@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_side_profile_kneeling_look_back",
+  "name": "Side Profile Kneeling Look Back",
+  "name_es": "Side Profile Kneeling Look Back",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "kneeling on both knees in side profile facing left, feet pointed back, torso upright, one hand on her hip, head turned looking back over her shoulder. Camera 2.5 meters to her side, at hip height, pointing at her waist and the turned shoulder, 85mm lens, f/2.8, shallow depth of field, fashion editorial lighting, ultra detailed",
+  "source_index": 21
+}
