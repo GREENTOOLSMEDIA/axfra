@@ -101,6 +101,7 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Int
 <script>
 'use strict';
 const INDEX_URL='./axfra_json_library_index_v001.json';
+const thumbVersion=Date.now(); // Verifica referencias nuevas en cada apertura
 const $=id=>document.getElementById(id);
 let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0;
 
@@ -162,13 +163,25 @@ function renderItems(){
   files.forEach(f=>{
     const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');b.title=f.path;
     const thumb=document.createElement('div');thumb.className='thumb';
-    if(f.thumb){
-      const img=document.createElement('img');img.src=f.thumb;img.alt='';img.loading='lazy';
-      img.onerror=function(){this.remove();const ph=document.createElement('div');ph.className='placeholder';ph.textContent=thumbInitials(f);thumb.append(ph)};
-      thumb.append(img);
-    }else{
-      const ph=document.createElement('div');ph.className='placeholder';ph.textContent=thumbInitials(f);thumb.append(ph);
-    }
+    // La imagen se busca por el NOMBRE DEL ARCHIVO JSON, sin depender del índice.thumb.
+    // Ej.: json/axfra_expression_anger.json -> thumbs/axfra_expression_anger.jpg
+    const stem=(f.path||'').split('/').pop().replace(/\.json$/i,'');
+    const img=document.createElement('img');img.alt='';img.loading='lazy';
+    const ph=document.createElement('div');ph.className='placeholder';
+    ph.textContent=thumbInitials(f);
+    const base=new URL('./thumbs/',window.location.href);
+    let extensionIndex=0;
+    const extensions=['.jpg','.png','.jpeg'];
+    img.onerror=()=>{
+      extensionIndex++;
+      if(extensionIndex<extensions.length){
+        img.src=new URL(encodeURIComponent(stem)+extensions[extensionIndex],base).href+'?v='+thumbVersion;
+      }else{
+        img.remove();thumb.append(ph);
+      }
+    };
+    thumb.append(img);
+    img.src=new URL(encodeURIComponent(stem)+extensions[0],base).href+'?v='+thumbVersion;
     b.append(thumb);
     const text=document.createElement('div');text.className='item-text';
     const name=document.createElement('strong');name.textContent=f.group==='unclassified'?f.path.split('/').pop():(f.name_es||f.name||f.id||f.path);text.append(name);
