@@ -1,0 +1,55 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_pink_lace_chain_set",
+  "name": "Pink Lace Chain Lingerie Set",
+  "name_es": "Conjunto de lencería rosa con cadenas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "lingerie_set",
+  "swap_rule": "Reference this set by ID. Material, thickness, transparency and color may be changed for each piece without altering its cut or construction.",
+  "pieces": {
+    "bra": {
+      "type": "underwire balconette-style bra with shaped cups and narrow adjustable shoulder straps",
+      "material": "fine patterned mesh with delicate floral lace along the upper cup edges",
+      "color": "light pink",
+      "transparency": "semi-sheer mesh",
+      "details": "pink edging, small center-front satin bow, silver-tone chain accents extending from the upper cup/strap connections toward the central chest"
+    },
+    "panties": {
+      "type": "high-cut matching thong",
+      "material": "fine patterned mesh and lace",
+      "color": "light pink",
+      "transparency": "semi-sheer mesh",
+      "details": "narrow pink edging and delicate lace across the front upper edge"
+    },
+    "garter_belt": {
+      "type": "high-waisted open-front garter belt with lace side panels",
+      "material": "patterned mesh, lace and narrow satin elastic straps",
+      "color": "light pink",
+      "details": "small central satin bow, silver-tone rings and draped decorative chains at the open front, adjustable suspender straps running down toward the thighs"
+    },
+    "thigh_bands": {
+      "type": "pair of wide upper-thigh bands",
+      "material": "fine patterned mesh with solid pink edging",
+      "color": "light pink",
+      "details": "one matching band on each upper thigh, connected to the garter belt by adjustable straps"
+    }
+  },
+  "accessories": {
+    "chains": "silver-tone decorative chains draped across the upper chest and open front of the garter belt",
+    "bows": "small pale-pink satin bows on the bra center and garter belt center",
+    "hardware": "small silver-tone chain links, rings and strap adjusters"
+  },
+  "material": "fine mesh, floral lace, satin elastic and silver-tone metal hardware",
+  "color": "light pink with silver accents",
+  "identity_rule": "Apply the lingerie set to the reference subject without changing their face, body proportions, hairstyle or identity.",
+  "exclusions": "Do not copy the reference photograph's pose, camera framing, curtains or room environment into the wardrobe module."
+}

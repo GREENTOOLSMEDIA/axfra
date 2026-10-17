@@ -1,0 +1,40 @@
+{
+  "id": "AXFRA_wardrobe_swim_pink_rhinestone_string_bikini",
+  "name": "Pink Rhinestone String Bikini",
+  "name_es": "Bikini rosa de tiras con pedrería",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "swim",
+  "piece_family": "bikini",
+  "swap_rule": "Reference the ID. Material, thickness, transparency, embellishment and color may be adjusted without altering the garment cut or tie placement.",
+  "top": {
+    "type": "minimal triangle bikini top",
+    "cut": "two small triangular cups with a gathered lower edge",
+    "straps": "thin string halter neck ties and narrow back fastening",
+    "surface": "densely embellished with fine sparkling pink rhinestones or glitter-like crystals",
+    "color": "soft shimmering pink"
+  },
+  "bottom": {
+    "type": "high-cut string bikini bottom",
+    "cut": "small narrow triangular front panel with high leg openings",
+    "waistband": "ultra-thin strings tied into visible bows at both hips, with long loose tie ends",
+    "surface": "matching densely sparkling pink rhinestone embellishment",
+    "color": "soft shimmering pink"
+  },
+  "material": "stretch swim fabric with rhinestone embellishments",
+  "thickness": "thin",
+  "transparency": "no",
+  "pattern": "solid with all-over sparkling crystal texture",
+  "color": "light pink",
+  "identity_rule": "Do not include or modify subject identity, body proportions, hairstyle, pose, lighting or background.",
+  "footwear": "not specified in the reference"
+}

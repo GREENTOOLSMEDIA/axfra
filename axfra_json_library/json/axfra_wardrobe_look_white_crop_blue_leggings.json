@@ -1,0 +1,55 @@
+{
+  "id": "AXFRA_wardrobe_look_white_crop_blue_leggings",
+  "name": "White Athletic Crop Top and Blue High-Waist Leggings",
+  "name_es": "Top deportivo blanco y leggings azules de cintura alta",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "activewear_set",
+  "swap_rule": "Reference this look by ID. Material, thickness, transparency, pattern and color can be adjusted independently for each garment. Preserve the garment cuts and silhouettes.",
+  "top": {
+    "type": "sleeveless cropped athletic top",
+    "neckline": "high round neckline with racer-inspired shoulder cut",
+    "cut": "fitted, cropped above the waist, exposing the midriff",
+    "hem": "wide elastic underbust band",
+    "fabric_texture": "fine textured athletic knit",
+    "material": "stretch performance knit",
+    "thickness": "normal",
+    "transparency": "no",
+    "pattern": "solid",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "high-waisted full-length athletic leggings",
+    "waistband": "wide, smooth, high-rise waistband",
+    "cut": "close-fitting from hips to ankles",
+    "seams": "visible shaped seams along hips and legs",
+    "details": "small subtle marks near outer upper thighs",
+    "material": "stretch performance fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "pattern": "solid",
+    "color": "vivid royal blue"
+  },
+  "footwear": {
+    "included": false
+  },
+  "exclusions": [
+    "facial identity",
+    "hairstyle",
+    "body proportions",
+    "pose",
+    "background",
+    "lighting",
+    "camera composition"
+  ],
+  "usage": "Apply only the wardrobe set to the selected AXFRA identity."
+}

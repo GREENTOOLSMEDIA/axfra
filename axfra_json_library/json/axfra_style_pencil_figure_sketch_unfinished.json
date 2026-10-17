@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_style_pencil_figure_sketch_unfinished",
+  "name": "Unfinished Pencil Figure Sketch",
+  "name_es": "Boceto de figura a lápiz inacabado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "style",
+  "slot": "graphic_style",
+  "piece_family": "drawing",
+  "swap_rule": "Se cita el id. Se puede aplicar el estilo gráfico a distintos sujetos o escenas sin alterar su contenido base. Se mantienen el lenguaje visual, la técnica lineal y el acabado de boceto.",
+  "style": {
+    "medium": "graphite pencil drawing",
+    "finish": "unfinished sketch",
+    "color_mode": "monochrome grayscale",
+    "line_quality": "soft, hand-drawn contour lines with visible exploratory strokes",
+    "construction": "visible structural sketch lines and underdrawing",
+    "shading": "light crosshatching and soft tonal shading, concentrated on form and volume",
+    "detail_level": "selective detail, prioritizing anatomy and silhouette over textures",
+    "rendering_focus": "figure study, gesture, body proportions, and simplified volume",
+    "background": "minimal or blank background",
+    "composition_behavior": "cropped academic sketch aesthetic, like a figure study from a sketchbook",
+    "overall_look": "clean artistic pencil study, elegant, observational, and intentionally incomplete"
+  },
+  "notes": "Este archivo describe únicamente el estilo gráfico de la imagen. La pose específica no queda fijada por este módulo, salvo que se cite por separado en un bloque de pose."
+}

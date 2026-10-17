@@ -1,0 +1,44 @@
+{
+  "id": "AXFRA_wardrobe_look_ivory_cowl_neck_satin_romper",
+  "name": "Ivory Cowl-Neck Satin Romper",
+  "name_es": "Mono corto satinado marfil con escote drapeado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "romper",
+  "swap_rule": "Reference the ID. Material, thickness, transparency, pattern, and color may be changed without rewriting the garment cut or silhouette.",
+  "garment": {
+    "type": "short one-piece romper",
+    "neckline": "deep, softly draped cowl neckline with cascading fabric folds",
+    "straps": "very thin halter-style straps extending around the neck",
+    "bodice": "relaxed, fluid satin-like fabric falling in soft vertical folds over the torso",
+    "waist": "soft, unstructured transition between bodice and shorts; no prominent waistband",
+    "bottom": "very short, loose-fitting shorts with soft, gently curved hems",
+    "fit": "lightweight flowing drape, loose through the torso and softly fitted at the hips",
+    "material": "silky satin-like fabric",
+    "thickness": "thin",
+    "transparency": "no",
+    "pattern": "solid",
+    "color": "warm ivory white",
+    "finish": "subtle satin sheen, smooth highlights and realistic fabric folds"
+  },
+  "exclusions": [
+    "subject identity",
+    "face",
+    "hairstyle",
+    "pose",
+    "jewelry",
+    "background",
+    "environment",
+    "camera"
+  ]
+}

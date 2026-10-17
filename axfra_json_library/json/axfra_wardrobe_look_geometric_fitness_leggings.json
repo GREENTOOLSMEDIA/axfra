@@ -1,0 +1,62 @@
+{
+  "id": "AXFRA_wardrobe_look_geometric_fitness_leggings",
+  "name": "Geometric Fitness Leggings Look",
+  "name_es": "Conjunto deportivo con leggings geométricos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "fitness_set",
+  "swap_rule": "Reference the look ID. Material, thickness, opacity, pattern and color may be adjusted independently for each garment; keep the garment cuts and construction unchanged.",
+  "pieces": {
+    "top": {
+      "type": "fitted cropped athletic top",
+      "cut": "cropped above the waist, three-quarter-length sleeves, rounded neckline",
+      "construction": "black opaque fitted bodice with sheer black mesh inserts across the upper chest, shoulder and upper back; small perforated mesh panels",
+      "material": "stretch performance knit and mesh",
+      "thickness": "thin",
+      "transparency": "partial, mesh inserts only",
+      "pattern": "solid",
+      "color": "black"
+    },
+    "bottom": {
+      "type": "full-length high-waisted athletic leggings",
+      "cut": "close-fitting from waist to ankles, high-rise waistband",
+      "construction": "smooth fitted stretch leggings with contrasting pale pink waistband and narrow crisscrossing diagonal ribbon-like graphic bands around thighs and calves",
+      "material": "stretch performance fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "pattern": "dynamic abstract black-and-white brushstroke geometry, layered with narrow pale pink diagonal bands",
+      "colors": [
+        "black",
+        "white",
+        "pale pink"
+      ]
+    },
+    "shoes": {
+      "type": "low-cut athletic trainers",
+      "construction": "lace-up sneakers with contrasting black uppers, patterned white detailing and white soles",
+      "colors": [
+        "black",
+        "white"
+      ]
+    }
+  },
+  "view_reference": "Front and rear views of the same outfit shown side by side, allowing garment construction and pattern placement to be read from both angles.",
+  "exclude_from_wardrobe": [
+    "subject identity",
+    "facial features",
+    "hairstyle",
+    "body proportions",
+    "pose",
+    "photographic background"
+  ],
+  "source_image": "https://umbrasports.com/wp-content/uploads/2018/10/protokolo-20073-leggings-umbrasports-fitness-1.jpg"
+}

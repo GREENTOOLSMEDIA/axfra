@@ -1,0 +1,35 @@
+{
+  "id": "AXFRA_style_pencil_figure_sketch_loose_unfinished",
+  "name": "Loose Unfinished Pencil Figure Sketch",
+  "name_es": "Boceto de figura a lápiz suelto e inacabado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "style",
+  "slot": "graphic_style",
+  "piece_family": "drawing",
+  "swap_rule": "Se cita el id. Se puede aplicar el estilo gráfico a distintos sujetos o escenas sin alterar su contenido base. Se mantienen el lenguaje visual, la soltura del trazo y el acabado de boceto inacabado.",
+  "style": {
+    "medium": "graphite pencil sketch",
+    "finish": "unfinished, loose sketch",
+    "color_mode": "monochrome grayscale",
+    "line_quality": "loose, gestural, hand-drawn contour lines with visible exploratory strokes and irregular pressure",
+    "construction": "visible construction lines, underdrawing, and open sketch marks that are not fully cleaned",
+    "shading": "light, simple hatching and soft tonal indication only where needed to suggest volume",
+    "detail_level": "low to moderate detail, prioritizing silhouette, gesture, and construction over polished rendering",
+    "rendering_focus": "anatomy study, pose, and garment structure with an intentionally raw sketchbook feel",
+    "facial_treatment": "the face must remain suggested rather than fully defined, with very minimal features, soft indication only, and no highly rendered realism",
+    "edge_definition": "edges should remain open and flexible, avoiding sharp, finished outlines",
+    "background": "minimal or blank background",
+    "composition_behavior": "academic sketchbook aesthetic, cropped or partial figure studies allowed, with an observational and spontaneous feeling",
+    "overall_look": "clean but loose artistic pencil study, elegant, observational, lightly constructed, and intentionally incomplete"
+  },
+  "notes": "Este archivo describe únicamente el estilo gráfico. El resultado debe evitar rostros demasiado definidos o acabados pulidos. La pose específica debe citarse por separado si corresponde."
+}

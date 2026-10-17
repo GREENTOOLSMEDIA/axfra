@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_wardrobe_stage_angelic_winged_white",
+  "name": "Angelic Winged White Stage Look",
+  "name_es": "Vestuario escénico blanco con alas angelicales",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage",
+  "swap_rule": "Se cita el id. Se cambian color y material. El corte, las alas y la pose no se reescriben.",
+  "pieces": [
+    {
+      "id": "look.stage.angelic_winged_white",
+      "name_es": "Vestuario angelical de escenario",
+      "name_en": "Angelic stage look",
+      "wings": "alas grandes de plumas blancas, abiertas, integradas al look",
+      "dress": "vestuario escénico blanco tipo corset, bordado y ajustado, con estructura de mini vestido, detalle de plumas en la cadera y caída posterior etérea",
+      "shoes": "sandalias de taco alto con tiras, elegantes y ad hoc al vestuario",
+      "hair": "largo, suelto, ondas suaves",
+      "accessories": "micrófono de mano, detalles brillantes sutiles",
+      "stance": "de pie al centro, sosteniendo el micrófono al frente",
+      "material": "encaje, tul, plumas y pedrería",
+      "color": "blanco"
+    }
+  ]
+}
