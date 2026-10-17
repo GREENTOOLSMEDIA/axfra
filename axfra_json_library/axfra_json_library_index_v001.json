@@ -295,7 +295,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_babydoll_floral.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_babydoll_floral.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_babydoll_floral.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -339,7 +339,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_bandeau_ring.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_bandeau_ring.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_bandeau_ring.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -416,7 +416,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_swim_pink_rhinestone_string_bikini.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_swim_pink_rhinestone_string_bikini.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_swim_pink_rhinestone_string_bikini.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -493,7 +493,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_cruzada.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_cruzada.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_cruzada.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -515,7 +515,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_tirantes.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_tirantes.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_tirantes.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -526,7 +526,7 @@
       "category": "identity",
       "path": "json/axfra_hair_bob.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_bob.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_bob.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -647,7 +647,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_camisa.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_camisa.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_camisa.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -669,7 +669,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_camiseta.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_camiseta.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_camiseta.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -702,7 +702,7 @@
       "category": "identity",
       "path": "json/axfra_expression_laughter.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_laughter.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_laughter.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -834,7 +834,7 @@
       "category": "identity",
       "path": "json/axfra_hair_volume_pony.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_volume_pony.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_volume_pony.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -845,7 +845,7 @@
       "category": "identity",
       "path": "json/axfra_hair_scrunchie_pony.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_scrunchie_pony.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_scrunchie_pony.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -922,7 +922,7 @@
       "category": "identity",
       "path": "json/axfra_expression_confusion.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_confusion.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_confusion.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -944,7 +944,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_white_basic_set.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_white_basic_set.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_white_basic_set.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -955,7 +955,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_pink_lace_chain_set.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_pink_lace_chain_set.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_pink_lace_chain_set.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -1043,7 +1043,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_corset.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_corset.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_corset.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -1219,7 +1219,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_back_seam.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_back_seam.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_back_seam.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -1285,7 +1285,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_crop_top.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_crop_top.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_crop_top.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -1428,7 +1428,7 @@
       "category": "identity",
       "path": "json/axfra_expression_disgust.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_disgust.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_disgust.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -1461,7 +1461,7 @@
       "category": "identity",
       "path": "json/axfra_hair_pigtails.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_pigtails.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_pigtails.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -1472,7 +1472,7 @@
       "category": "identity",
       "path": "json/axfra_hair_space_buns.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_space_buns.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_space_buns.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -1483,7 +1483,7 @@
       "category": "identity",
       "path": "json/axfra_hair_double_braids.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_double_braids.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_double_braids.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -1505,7 +1505,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_floral_lace.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_floral_lace.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_floral_lace.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -1516,7 +1516,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_side_lace.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_side_lace.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_side_lace.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -1527,7 +1527,7 @@
       "category": "identity",
       "path": "json/axfra_expression_anger.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_anger.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_anger.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -1549,7 +1549,7 @@
       "category": "identity",
       "path": "json/axfra_expression_skepticism.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_skepticism.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_skepticism.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -1560,7 +1560,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_escote_cuadrado.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_escote_cuadrado.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_escote_cuadrado.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -1571,7 +1571,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_eskeleto.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_eskeleto.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_eskeleto.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -1813,7 +1813,7 @@
       "category": "identity",
       "path": "json/axfra_expression_wink.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_wink.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_wink.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -1912,7 +1912,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_hombro_descubierto.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_hombro_descubierto.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_hombro_descubierto.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -1923,7 +1923,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_hombros_descubiertos.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_hombros_descubiertos.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_hombros_descubiertos.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -2121,7 +2121,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_polka_dot.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_polka_dot.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_polka_dot.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -2187,7 +2187,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_fine_mesh.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_fine_mesh.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_fine_mesh.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -2253,7 +2253,7 @@
       "category": "identity",
       "path": "json/axfra_expression_fear.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_fear.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_fear.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -2374,7 +2374,7 @@
       "category": "identity",
       "path": "json/axfra_hair_messy_bun.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_messy_bun.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_messy_bun.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -2396,7 +2396,7 @@
       "category": "identity",
       "path": "json/axfra_expression_neutral.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_neutral.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_neutral.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -2473,7 +2473,7 @@
       "category": "identity",
       "path": "json/axfra_hair_bombshell.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_bombshell.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_bombshell.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -2484,7 +2484,7 @@
       "category": "identity",
       "path": "json/axfra_hair_soft_waves.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_soft_waves.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_soft_waves.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -2605,7 +2605,7 @@
       "category": "wardrobe",
       "path": "json/axfra_blouse_peplum.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_blouse_peplum.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_blouse_peplum.jpg",
       "group": "wardrobe",
       "subgroup": "tops"
     },
@@ -3067,7 +3067,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_fringe_stripe.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_fringe_stripe.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_fringe_stripe.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -3078,7 +3078,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_pinstripe.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_pinstripe.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_pinstripe.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -3166,7 +3166,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_striped_fishnet.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_striped_fishnet.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_striped_fishnet.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -3188,7 +3188,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_cross_strap_fishnet.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_cross_strap_fishnet.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_cross_strap_fishnet.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -3199,7 +3199,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_lace_top_fishnet.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_lace_top_fishnet.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_lace_top_fishnet.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -3309,7 +3309,7 @@
       "category": "identity",
       "path": "json/axfra_hair_long_curls.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_long_curls.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_long_curls.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -3463,7 +3463,7 @@
       "category": "identity",
       "path": "json/axfra_hair_half_up.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_half_up.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_half_up.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -3694,7 +3694,7 @@
       "category": "identity",
       "path": "json/axfra_expression_big_smile.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_big_smile.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_big_smile.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -3705,7 +3705,7 @@
       "category": "identity",
       "path": "json/axfra_expression_soft_smile.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_soft_smile.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_soft_smile.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -3716,7 +3716,7 @@
       "category": "identity",
       "path": "json/axfra_expression_surprise.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_expression_surprise.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_expression_surprise.jpg",
       "group": "appearance",
       "subgroup": "expressions"
     },
@@ -4068,7 +4068,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_cross_lace_top.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_cross_lace_top.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_cross_lace_top.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -4079,7 +4079,7 @@
       "category": "wardrobe",
       "path": "json/axfra_wardrobe_lingerie_classic_sheer.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_wardrobe_lingerie_classic_sheer.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_wardrobe_lingerie_classic_sheer.jpg",
       "group": "wardrobe",
       "subgroup": "lingerie"
     },
@@ -4090,7 +4090,7 @@
       "category": "identity",
       "path": "json/axfra_hair_box_braids.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_hair_box_braids.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_hair_box_braids.jpg",
       "group": "appearance",
       "subgroup": "hair"
     },
@@ -4112,7 +4112,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_triangle_strappy.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_triangle_strappy.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_triangle_strappy.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -4123,7 +4123,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_triangle_crochet.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_triangle_crochet.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_triangle_crochet.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -4134,7 +4134,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_triangle_lace.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_triangle_lace.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_triangle_lace.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -4145,7 +4145,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_triangle_knit.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_triangle_knit.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_triangle_knit.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
@@ -4156,7 +4156,7 @@
       "category": "wardrobe",
       "path": "json/axfra_bikini_triangle_floral.json",
       "url": "https://axfra.com/axfra_json_library/json/axfra_bikini_triangle_floral.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/axfra_json_library/thumbs/axfra_bikini_triangle_floral.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
     },
