@@ -1,0 +1,67 @@
+{
+  "id": "AXFRA_look_gown_pink_corset_satin",
+  "name": "Pink satin corset gown with train",
+  "name_es": "Vestido corset rosa satén con cola",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.gown.pink.corset.satin",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "elegant, glamorous, evening",
+  "top": {
+    "type": "strapless corset bodice",
+    "material": "satin with beading",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pale pink"
+  },
+  "bottom": {
+    "type": "draped satin skirt with train",
+    "material": "satin",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pale pink"
+  },
+  "accessories": [
+    "pearl clutch",
+    "crystal earrings",
+    "rhinestone heels"
+  ],
+  "source_image": "HQ9YOUoWgAAQqre",
+  "original_specification": {
+    "id": "look.gown.pink.corset.satin",
+    "name_es": "Vestido corset rosa satén con cola",
+    "name_en": "Pink satin corset gown with train",
+    "mood": "elegant, glamorous, evening",
+    "top": {
+      "type": "strapless corset bodice",
+      "material": "satin with beading",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa pálido"
+    },
+    "bottom": {
+      "type": "draped satin skirt with train",
+      "material": "satin",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa pálido"
+    },
+    "accessories": [
+      "pearl clutch",
+      "crystal earrings",
+      "rhinestone heels"
+    ],
+    "source_image": "HQ9YOUoWgAAQqre"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

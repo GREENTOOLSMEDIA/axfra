@@ -1,0 +1,59 @@
+{
+  "id": "AXFRA_look_lace_bat_leather",
+  "name": "Bat Lace Top and Leather Mini",
+  "name_es": "Top encaje murciélago + mini cuero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.lace.bat.leather",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "gothic night",
+  "top": {
+    "type": "brallette encaje con forma murciélago",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "black"
+  },
+  "bottom": {
+    "type": "mini cuero slit",
+    "material": "leather",
+    "color": "black"
+  },
+  "accessories": [
+    "bolso lazo cristal",
+    "joyería"
+  ],
+  "original_specification": {
+    "id": "look.lace.bat.leather",
+    "name_es": "Top encaje murciélago + mini cuero",
+    "style": "gothic night",
+    "top": {
+      "type": "brallette encaje con forma murciélago",
+      "material": "encaje",
+      "grosor": "fina",
+      "transparencia": "si",
+      "color": "negro"
+    },
+    "bottom": {
+      "type": "mini cuero slit",
+      "material": "cuero",
+      "color": "negro"
+    },
+    "accessories": [
+      "bolso lazo cristal",
+      "joyería"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

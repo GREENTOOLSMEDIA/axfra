@@ -1,0 +1,39 @@
+{
+  "id": "AXFRA_look_pink_feminine_flat_lay_08",
+  "name": "Hot pink metallic bustier + silver metallic mini skirt",
+  "name_es": "Hot pink metallic bustier + silver metallic mini skirt",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink_feminine_flat_lay_08",
+  "swap_rule": "Use the outfit ID; keep garment cuts and silhouettes unchanged when modifying material, thickness, transparency, pattern, or color.",
+  "notes": "Mostly pink collection with satin, lace, bows, pearls, metallics and casual/edgy combinations. Useful as outfit references for image generation or character adaptation.",
+  "collection": "Pink & Feminine Fashion Flat Lays",
+  "theme": "Dominant pink palette (blush, satin, metallic, fuchsia) with coquette, Y2K, gothic, casual and elegant mixes",
+  "source_declared_total_outfits": 53,
+  "source_provided_outfits": 20,
+  "suggested_use": "Base for AI prompts, moodboards or identity/outfit cores",
+  "style": "metallic / festival",
+  "main_garment": "Hot pink metallic bustier + silver metallic mini skirt",
+  "key_items": [
+    "zip-up metallic top",
+    "silver cargo-style metallic skirt",
+    "platform metallic pink boots",
+    "pink fur leg warmers",
+    "rhinestone bag"
+  ],
+  "colors": [
+    "hot pink metallic",
+    "silver"
+  ],
+  "vibe": "Y2K club / rave",
+  "source_batch": "user_message_pink_feminine_flat_lays"
+}

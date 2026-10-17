@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_cream_lace_corset",
+  "name": "Ivory Lace Corset and Satin Mini Skirt",
+  "name_es": "Corset de encaje y mini de satén",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.cream.lace.corset",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "corset de copas, encaje, borde de perlas, lazos en los tirantes",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "ivory"
+  },
+  "bottom": {
+    "type": "mini satin, bow en el side",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "ivory"
+  },
+  "shoes": {
+    "type": "slingback de punta, lazo y perlas",
+    "material": "satin",
+    "color": "ivory"
+  },
+  "bag": {
+    "type": "bolso de perlas",
+    "material": "pearl",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.cream.lace.corset",
+    "name_es": "Corset de encaje y mini de satén",
+    "top": {
+      "type": "corset de copas, encaje, borde de perlas, lazos en los tirantes",
+      "material": "encaje",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "marfil"
+    },
+    "bottom": {
+      "type": "mini de satén, lazo en el costado",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "marfil"
+    },
+    "shoes": {
+      "type": "slingback de punta, lazo y perlas",
+      "material": "satin",
+      "color": "marfil"
+    },
+    "bag": {
+      "type": "bolso de perlas",
+      "material": "perla",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

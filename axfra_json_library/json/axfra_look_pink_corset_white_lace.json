@@ -1,0 +1,59 @@
+{
+  "id": "AXFRA_look_pink_corset_white_lace",
+  "name": "Pink Corset and White Lace Skirt",
+  "name_es": "Corsé rosa + falda encaje blanca",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.pink.corset.white.lace",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "coquette",
+  "top": {
+    "type": "corsé satén con encaje",
+    "material": "satin and lace",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "falda tiered encaje",
+    "material": "lace",
+    "color": "white",
+    "detail": "lazo rosa"
+  },
+  "accessories": [
+    "lazo gigante",
+    "bolso quilted",
+    "tacones perlas"
+  ],
+  "original_specification": {
+    "id": "look.pink.corset.white.lace",
+    "name_es": "Corsé rosa + falda encaje blanca",
+    "style": "coquette",
+    "top": {
+      "type": "corsé satén con encaje",
+      "material": "satén + encaje",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "falda tiered encaje",
+      "material": "encaje",
+      "color": "blanco",
+      "detail": "lazo rosa"
+    },
+    "accessories": [
+      "lazo gigante",
+      "bolso quilted",
+      "tacones perlas"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

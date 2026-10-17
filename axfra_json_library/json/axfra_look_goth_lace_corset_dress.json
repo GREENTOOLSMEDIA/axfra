@@ -1,0 +1,53 @@
+{
+  "id": "AXFRA_look_goth_lace_corset_dress",
+  "name": "Black gothic lace corset dress with pink ribbons",
+  "name_es": "Vestido corset gótico negro con lazos rosas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.goth.lace.corset.dress",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "goth, romantic, dark",
+  "dress": {
+    "type": "corset mini dress with ruffles and lace",
+    "material": "satin and lace",
+    "color": "black and pink",
+    "transparency": "si (lace)"
+  },
+  "accessories": [
+    "studded bag",
+    "platform boots",
+    "cross choker",
+    "thigh highs"
+  ],
+  "source_image": "HQ6Xa0naMAA3Fou",
+  "original_specification": {
+    "id": "look.goth.lace.corset.dress",
+    "name_es": "Vestido corset gótico negro con lazos rosas",
+    "name_en": "Black gothic lace corset dress with pink ribbons",
+    "mood": "goth, romantic, dark",
+    "dress": {
+      "type": "corset mini dress with ruffles and lace",
+      "material": "satin and lace",
+      "color": "negro y rosa",
+      "transparencia": "si (lace)"
+    },
+    "accessories": [
+      "studded bag",
+      "platform boots",
+      "cross choker",
+      "thigh highs"
+    ],
+    "source_image": "HQ6Xa0naMAA3Fou"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

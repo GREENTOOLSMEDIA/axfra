@@ -1,0 +1,51 @@
+{
+  "id": "AXFRA_look_burgundy_satin_mini",
+  "name": "Burgundy structured satin mini dress",
+  "name_es": "Vestido mini burdeos estructurado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.burgundy.satin.mini",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "elegant, sexy, evening",
+  "dress": {
+    "type": "strapless or spaghetti structured mini",
+    "material": "satin",
+    "color": "burgundy",
+    "finish": "drapeado"
+  },
+  "accessories": [
+    "black YSL heels",
+    "patent bag",
+    "gold hoops"
+  ],
+  "source_image": "HQ_QpKHXkAAyM3J",
+  "original_specification": {
+    "id": "look.burgundy.satin.mini",
+    "name_es": "Vestido mini burdeos estructurado",
+    "name_en": "Burgundy structured satin mini dress",
+    "mood": "elegant, sexy, evening",
+    "dress": {
+      "type": "strapless or spaghetti structured mini",
+      "material": "satin",
+      "color": "burdeos",
+      "acabado": "drapeado"
+    },
+    "accessories": [
+      "black YSL heels",
+      "patent bag",
+      "gold hoops"
+    ],
+    "source_image": "HQ_QpKHXkAAyM3J"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "AXFRA_look_juicy_white_pink_shorts",
+  "name": "White Juicy tank with distressed pink shorts",
+  "name_es": "Tank Juicy blanco con shorts rosa rotos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.juicy.white.pink.shorts",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "y2k, cute, casual",
+  "top": {
+    "type": "ribbed tank",
+    "material": "knit",
+    "color": "white",
+    "pattern": "Juicy rhinestone"
+  },
+  "bottom": {
+    "type": "distressed denim shorts",
+    "material": "denim",
+    "color": "pink",
+    "finish": "roto y envejecido"
+  },
+  "accessories": [
+    "cross bag",
+    "platform boots",
+    "pearl necklace"
+  ],
+  "source_image": "HQ7D_0XXkAA9ydK",
+  "original_specification": {
+    "id": "look.juicy.white.pink.shorts",
+    "name_es": "Tank Juicy blanco con shorts rosa rotos",
+    "name_en": "White Juicy tank with distressed pink shorts",
+    "mood": "y2k, cute, casual",
+    "top": {
+      "type": "ribbed tank",
+      "material": "punto",
+      "color": "blanco",
+      "estampado": "Juicy rhinestone"
+    },
+    "bottom": {
+      "type": "distressed denim shorts",
+      "material": "denim",
+      "color": "rosa",
+      "acabado": "roto y envejecido"
+    },
+    "accessories": [
+      "cross bag",
+      "platform boots",
+      "pearl necklace"
+    ],
+    "source_image": "HQ7D_0XXkAA9ydK"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

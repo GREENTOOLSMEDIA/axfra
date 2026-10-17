@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_pink_beaded_mermaid",
+  "name": "Pink Beaded Mermaid Gown",
+  "name_es": "Vestido de sirena bordado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.beaded.mermaid",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "strapless, corset bordado, falda de tul con cola",
+    "material": "tulle",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "sandal de heel con bow",
+    "material": "satin",
+    "color": "silver"
+  },
+  "bag": {
+    "type": "clutch de perlas",
+    "material": "pearl",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.pink.beaded.mermaid",
+    "name_es": "Vestido de sirena bordado",
+    "dress": {
+      "type": "strapless, corset bordado, falda de tul con cola",
+      "material": "tul",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "sandalia de tacón con lazo",
+      "material": "satin",
+      "color": "plata"
+    },
+    "bag": {
+      "type": "clutch de perlas",
+      "material": "perla",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "AXFRA_look_goth_flame_baby_skirt",
+  "name": "Flame top with Baby gothic mini skirt",
+  "name_es": "Top de llamas con falda Baby gótica",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.goth.flame.baby.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "goth, punk, rock",
+  "top": {
+    "type": "halter corset with flames",
+    "material": "leather or faux",
+    "color": "black",
+    "pattern": "llamas rosas"
+  },
+  "bottom": {
+    "type": "mini skirt with chains and text",
+    "material": "denim or leather",
+    "color": "black",
+    "pattern": "Baby"
+  },
+  "accessories": [
+    "studded bag",
+    "platform boots",
+    "cross jewelry"
+  ],
+  "source_image": "HQ6Zw_DasAAvwuO",
+  "original_specification": {
+    "id": "look.goth.flame.baby.skirt",
+    "name_es": "Top de llamas con falda Baby gótica",
+    "name_en": "Flame top with Baby gothic mini skirt",
+    "mood": "goth, punk, rock",
+    "top": {
+      "type": "halter corset with flames",
+      "material": "leather or faux",
+      "color": "negro",
+      "estampado": "llamas rosas"
+    },
+    "bottom": {
+      "type": "mini skirt with chains and text",
+      "material": "denim or leather",
+      "color": "negro",
+      "estampado": "Baby"
+    },
+    "accessories": [
+      "studded bag",
+      "platform boots",
+      "cross jewelry"
+    ],
+    "source_image": "HQ6Zw_DasAAvwuO"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

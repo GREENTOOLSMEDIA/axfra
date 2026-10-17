@@ -1,0 +1,109 @@
+{
+  "id": "AXFRA_look_gym_brown",
+  "name": "Brown Workout Set",
+  "name_es": "Set de entrenamiento",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.gym.brown",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "top deportivo",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "brown",
+    "logo": "AXFRA"
+  },
+  "outer": {
+    "type": "chaqueta cropped con cierre",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "brown"
+  },
+  "bottom": {
+    "type": "legging",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "brown"
+  },
+  "shoes": {
+    "type": "zapatilla de running",
+    "material": "mesh",
+    "color": "gray"
+  },
+  "bag": {
+    "type": "bolso de gimnasio",
+    "material": "nylon",
+    "color": "brown"
+  },
+  "original_specification": {
+    "id": "look.gym.brown",
+    "name_es": "Set de entrenamiento",
+    "top": {
+      "type": "top deportivo",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "marrón",
+      "logo": "AXFRA"
+    },
+    "outer": {
+      "type": "chaqueta cropped con cierre",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "marrón"
+    },
+    "bottom": {
+      "type": "legging",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "marrón"
+    },
+    "shoes": {
+      "type": "zapatilla de running",
+      "material": "malla",
+      "color": "gris"
+    },
+    "bag": {
+      "type": "bolso de gimnasio",
+      "material": "nylon",
+      "color": "marrón"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

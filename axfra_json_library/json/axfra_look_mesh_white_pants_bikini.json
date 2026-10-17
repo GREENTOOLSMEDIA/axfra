@@ -1,0 +1,53 @@
+{
+  "id": "AXFRA_look_mesh_white_pants_bikini",
+  "name": "White open-knit pants with black bikini",
+  "name_es": "Pantalón de malla blanca con bikini negro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.mesh.white.pants.bikini",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "beach, cover-up, minimal",
+  "bottom": {
+    "type": "wide open-knit pants",
+    "material": "crochet mesh",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "white"
+  },
+  "underwear": {
+    "type": "black bikini set",
+    "material": "jersey",
+    "color": "black"
+  },
+  "source_image": "HQ8ZaPvWsAAjxDu",
+  "original_specification": {
+    "id": "look.mesh.white.pants.bikini",
+    "name_es": "Pantalón de malla blanca con bikini negro",
+    "name_en": "White open-knit pants with black bikini",
+    "mood": "beach, cover-up, minimal",
+    "bottom": {
+      "type": "wide open-knit pants",
+      "material": "crochet mesh",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "blanco"
+    },
+    "underwear": {
+      "type": "black bikini set",
+      "material": "jersey",
+      "color": "negro"
+    },
+    "source_image": "HQ8ZaPvWsAAjxDu"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

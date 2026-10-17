@@ -1,0 +1,95 @@
+{
+  "id": "AXFRA_look_golf_white",
+  "name": "White Golf Polo and Pleated Skirt",
+  "name_es": "Polo y falda plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.golf.white",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "polo de manga corta",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "falda plisada",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white"
+  },
+  "shoes": {
+    "type": "oxford",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bolso estructurado",
+    "material": "leather",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.golf.white",
+    "name_es": "Polo y falda plisada",
+    "top": {
+      "type": "polo de manga corta",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "blanco",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "falda plisada",
+      "material": "punto",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "blanco"
+    },
+    "shoes": {
+      "type": "oxford",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bolso estructurado",
+      "material": "cuero",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

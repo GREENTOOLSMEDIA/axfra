@@ -1,0 +1,61 @@
+{
+  "id": "AXFRA_look_denim_corset_pink_lace_skirt",
+  "name": "Denim corset with pink lace-trim pleated skirt",
+  "name_es": "Corset de denim con falda plisada y encaje rosa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.denim.corset.pink.lace.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "y2k, feminine, casual glam",
+  "top": {
+    "type": "denim corset with pink lace and bow",
+    "material": "denim",
+    "color": "blue"
+  },
+  "bottom": {
+    "type": "pleated denim mini with pink lace hem and lacing",
+    "material": "denim",
+    "color": "blue",
+    "finish": "con encaje rosa"
+  },
+  "accessories": [
+    "Juicy bag",
+    "pink studded heels",
+    "cross jewelry"
+  ],
+  "source_image": "HQ-k1IYXUAAWD5s",
+  "original_specification": {
+    "id": "look.denim.corset.pink.lace.skirt",
+    "name_es": "Corset de denim con falda plisada y encaje rosa",
+    "name_en": "Denim corset with pink lace-trim pleated skirt",
+    "mood": "y2k, feminine, casual glam",
+    "top": {
+      "type": "denim corset with pink lace and bow",
+      "material": "denim",
+      "color": "azul"
+    },
+    "bottom": {
+      "type": "pleated denim mini with pink lace hem and lacing",
+      "material": "denim",
+      "color": "azul",
+      "acabado": "con encaje rosa"
+    },
+    "accessories": [
+      "Juicy bag",
+      "pink studded heels",
+      "cross jewelry"
+    ],
+    "source_image": "HQ-k1IYXUAAWD5s"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}
