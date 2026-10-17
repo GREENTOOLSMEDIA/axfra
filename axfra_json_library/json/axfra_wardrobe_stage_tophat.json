@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_wardrobe_stage_tophat",
+  "name": "Stage Top Hat",
+  "name_es": "Sombrero de copa en escenario",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage_rock",
+  "swap_rule": "Reference the look by its ID. Color and material may be changed. The garment cuts, hat, and standing pose must remain unchanged.",
+  "hat": "Black high-crown top hat with a band decorated with circular medallions",
+  "glasses": "Dark sunglasses",
+  "hair": "Long, curly hair, loose over the shoulders",
+  "top": "Sleeveless graphic T-shirt with a front print",
+  "bottom": "Distressed leather pants with a chain",
+  "shoes": "Black high-top sneakers with white toe caps",
+  "accessories": "Pendant necklace, bracelets, rings",
+  "stance": "Standing with legs apart, torso leaning slightly to one side, hands relaxed naturally; no instrument",
+  "material": "leather",
+  "color": "black"
+}

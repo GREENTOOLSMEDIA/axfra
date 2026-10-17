@@ -1,0 +1,27 @@
+{
+  "id": "AXFRA_wardrobe_stage_schoolboy",
+  "name": "Stage Schoolboy",
+  "name_es": "Uniforme de escenario",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage_rock",
+  "swap_rule": "Reference the look by its ID. Material and color may be changed. Do not rewrite the cut, cap, or pose.",
+  "hat": "Black cap with a red letter A on the front",
+  "hair": "Long, loose hair falling over the shoulders",
+  "top": "Velvet jacket, white shirt, striped tie",
+  "bottom": "Shorts made of matching velvet",
+  "socks": "Short socks",
+  "shoes": "Red Converse sneakers",
+  "stance": "Standing with one leg raised and torso angled to the side",
+  "material": "velvet",
+  "color": "red"
+}

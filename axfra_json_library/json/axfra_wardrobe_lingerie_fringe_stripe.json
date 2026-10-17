@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_fringe_stripe",
+  "name": "Fringe Stripe",
+  "name_es": "Raya con fleco",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.fringe_stripe",
+  "pattern": "stripes",
+  "color": "black",
+  "bra": {
+    "type": "bralette",
+    "coverage": "bralette",
+    "straps": "thin straps",
+    "details": "striped mesh, short fringe beneath the bust",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "tap shorts",
+    "cut": "loose short",
+    "details": "striped mesh, fringe at leg opening",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "chart_name": "Fringe Stripe",
+    "type": "thigh-high",
+    "pattern": "vertical stripes",
+    "top": "lace band with fringe",
+    "attachment": "garter belt",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  }
+}
