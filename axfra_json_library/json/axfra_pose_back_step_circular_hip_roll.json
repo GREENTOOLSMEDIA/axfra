@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_back_step_circular_hip_roll",
+  "name": "Back Step Circular Hip Roll",
+  "name_es": "Back Step Circular Hip Roll",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Paso atrás con pierna derecha + inmediato hip roll circular hacia la izquierda (cadera da una vuelta completa).",
+  "source_index": 39
+}

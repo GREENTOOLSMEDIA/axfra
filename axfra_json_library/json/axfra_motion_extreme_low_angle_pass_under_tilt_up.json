@@ -1,0 +1,22 @@
+{
+  "id": "AXFRA_motion_extreme_low_angle_pass_under_tilt_up",
+  "name": "Extreme Low-Angle Pass-Under and Tilt Up",
+  "name_es": "Paso inferior en contrapicado extremo y tilt ascendente",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "camera_movement",
+  "subject": "Main subject stands in a powerful stance",
+  "camera": {
+    "start": "Extreme low angle at ground level, looking straight up",
+    "movement": "Slide forward, passing directly beneath the central element if structurally possible, continuing the low-angle push",
+    "finish": "Sharp upward tilt revealing the full subject towering above",
+    "character": "Smooth gliding, dramatic low-to-high move, intense perspective distortion"
+  },
+  "mood": "Epic reveal"
+}

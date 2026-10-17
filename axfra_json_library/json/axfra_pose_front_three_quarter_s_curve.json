@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_front_three_quarter_s_curve",
+  "name": "Front Three Quarter S Curve",
+  "name_es": "Front Three Quarter S Curve",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "front three-quarter view of the body, wide stance, hips shifted with a clear upward S-curve on the near hip, torso slightly rotated away from camera, one arm reaching forward, the other arm extended back",
+  "source_index": 13
+}

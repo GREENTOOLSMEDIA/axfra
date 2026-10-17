@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_crouching_look_up",
+  "name": "Crouching Look Up",
+  "name_es": "Crouching Look Up",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Squatting slightly with knees bent, arms resting near thighs, looking up at the camera.",
+  "source_content": "Squatting slightly with knees bent, arms resting near thighs, looking up at the camera."
+}

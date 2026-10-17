@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_cold_applause",
+  "name": "Cold Applause",
+  "name_es": "Cold Applause",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "cold applause",
+  "source_index": 68
+}

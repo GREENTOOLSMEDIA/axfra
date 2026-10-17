@@ -1,0 +1,24 @@
+{
+  "id": "AXFRA_motion_lateral_whip_pan_reverse_pull_out",
+  "name": "Lateral Whip Pan, Reverse and Pull-Out",
+  "name_es": "Barrido lateral rápido, regreso y alejamiento",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "camera_movement",
+  "subject": "Main subject centered in frame",
+  "camera": {
+    "sequence": [
+      "Whip-pan sharply left to reveal empty space",
+      "Immediately whip-pan right across the main subject",
+      "Quickly pull backward to a wide shot of the surroundings"
+    ],
+    "character": "Rapid direction changes; snappy energetic camera whips and fluid transitions"
+  },
+  "mood": "High energy"
+}

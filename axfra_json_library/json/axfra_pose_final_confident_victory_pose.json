@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_final_confident_victory_pose",
+  "name": "Final Confident Victory Pose",
+  "name_es": "Final Confident Victory Pose",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Termina en pose final ultra-confiada: • Piernas un poco más abiertas que el ancho de hombros • Mano derecha en la nuca / pelo • Mano izquierda señala directo a cámara con dedo índice o forma de pistola • Mentón ligeramente levantado, mirada intensa + sonrisa lenta y triunfal\n\n→ Freeze fuerte hasta que corte el video",
+  "source_index": 43
+}

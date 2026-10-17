@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_knees_up_seated_wide_v_white_background",
+  "name": "Knees Up Seated Wide V White Background",
+  "name_es": "Knees Up Seated Wide V White Background",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "@type": "Pose",
+  "bodyPosition": "Seated on the floor on a seamless white background. Buttocks on the ground, torso facing the camera with a slight forward lean of the upper body.",
+  "legs": {
+    "bothLegs": "Knees bent and pulled upward toward the torso, spread wide into an open V. Inner thighs fully visible. Feet planted on the floor, toes pointing slightly outward.",
+    "leftLeg": "Knee raised and angled outward, thigh creating a strong diagonal line from hip to knee.",
+    "rightLeg": "Knee raised closer to the body, thigh more vertical."
+  },
+  "feet": "Planted flat on the floor wearing black strappy high-heeled sandals with ankle straps.",
+  "torso": "Upright with a subtle forward lean. Shoulders squared and relaxed, facing the camera.",
+  "arms": {
+    "bothArms": "Extended downward along the sides of the body. Hands placed on the floor beside or slightly behind the hips for support."
+  },
+  "hands": "Relaxed, fingers lightly curled, palms down on the floor providing balance.",
+  "head": "Facing the camera directly, chin level to slightly lowered.",
+  "expression": "Neutral to slightly intense. Lips closed, serious and composed look with a hint of seduction.",
+  "gaze": "Strong, direct eye contact with the camera.",
+  "source_id": "pose_02_knees_up_spread",
+  "source_index": 60
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_chin_resting_on_interlaced_hands",
+  "name": "Chin Resting On Interlaced Hands",
+  "name_es": "Chin Resting On Interlaced Hands",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Barbilla apoyada suavemente sobre las manos entrelazadas. Dedos elegantemente colocados. Mirada directa a cámara con expresión suave y cariñosa.",
+  "source_index": 49
+}
