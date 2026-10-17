@@ -1,0 +1,117 @@
+{
+  "id": "AXFRA_costume_crest_circular",
+  "name": "Circular Ear Crest Full Armor Costume",
+  "name_es": "Cresta con oreja circular, traje completo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "set",
+  "source_id": "costume.crest.circular",
+  "archive": "AXFRA",
+  "piece_count": 8,
+  "pieces": [
+    "crest",
+    "ear",
+    "neck",
+    "bustier",
+    "arms",
+    "waist",
+    "legs",
+    "boots"
+  ],
+  "swap_rule": "Reference the ID. Materials and colors can be changed for each piece. Do not rewrite the cut.",
+  "material_catalog": [
+    "bone",
+    "metal",
+    "stone",
+    "leather"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "crest": {
+    "type": "curved crest",
+    "shape": "one long arc from the crown extending behind down to the waist",
+    "surface": "scales and cracks resembling aged bone",
+    "material": "bone",
+    "transparency": "no",
+    "color": "beige"
+  },
+  "ear": {
+    "type": "ear cover",
+    "shape": "disk with concentric rings and round center",
+    "detail": "metal components and blue stones at the temple",
+    "material": "metal",
+    "transparency": "no",
+    "color": "gold",
+    "center_color": "blue"
+  },
+  "neck": {
+    "type": "armored collar",
+    "shape": "plate covering the neck and extending into a point over the chest",
+    "detail": "central filigree",
+    "material": "metal",
+    "transparency": "no",
+    "color": "silver"
+  },
+  "bustier": {
+    "type": "bust armor",
+    "shape": "metal cups, open upper edge",
+    "chest": "disk of concentric rings on one cup",
+    "trim": "brown trim between cups",
+    "material": "metal",
+    "transparency": "no",
+    "color": "silver",
+    "disc_color": "gold"
+  },
+  "arms": {
+    "type": "arm plates",
+    "shoulder": "shoulder guard with round gemstone and metal flower",
+    "upper": "pointed plate toward elbow",
+    "forearm": "bracelet with the same concentric ring disk, smaller",
+    "hand": "back of the hand covered, fingers free",
+    "material": "metal",
+    "transparency": "no",
+    "color": "silver",
+    "gem_color": "blue",
+    "flower_color": "gold"
+  },
+  "waist": {
+    "type": "armored waist cincher",
+    "shape": "plate beneath bust, closing at the waist",
+    "detail": "concentric-ring disk in center, brown trim",
+    "material": "metal",
+    "transparency": "no",
+    "color": "silver",
+    "disc_color": "gold"
+  },
+  "legs": {
+    "type": "hip and thigh plates",
+    "hip": "two short pointed plates, one on each hip",
+    "thigh": "frontal plate on each thigh with metal flower",
+    "open": "sides of the legs remain uncovered",
+    "material": "metal",
+    "transparency": "no",
+    "color": "silver",
+    "flower_color": "gold"
+  },
+  "boots": {
+    "type": "armored boots",
+    "shaft": "knee-height shaft, frontal plate",
+    "detail": "concentric-ring disk on instep",
+    "heel": "low heel",
+    "material": "metal",
+    "sole": "leather",
+    "transparency": "no",
+    "color": "silver",
+    "disc_color": "gold"
+  }
+}

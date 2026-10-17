@@ -1,0 +1,46 @@
+{
+  "id": "AXFRA_camera_low_angle",
+  "name": "Low Angle View",
+  "name_es": "Contrapicado",
+  "mood": "editorial, photographic, controlled perspective",
+  "palette": [
+    "neutral"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "camera_angle": {
+    "enabled": true,
+    "type": "low_angle",
+    "scope": "general",
+    "vertical_position": "low",
+    "orientation": "unspecified",
+    "orientation_options": [
+      "unspecified",
+      "subject_front",
+      "subject_front_left",
+      "subject_left",
+      "subject_back_left",
+      "subject_back",
+      "subject_back_right",
+      "subject_right",
+      "subject_front_right"
+    ],
+    "orientation_reference": "Subject left and right mean the anatomical sides of the subject, never the viewer screen sides.",
+    "description": "camera below the subject eye line, tilted upward",
+    "application": "When scope is general, change only overall camera height/tilt; when scope is subject_relative, select an orientation from orientation_options. Do not rotate the subject to simulate a camera move.",
+    "preserve": [
+      "subject_identity",
+      "subject_proportions",
+      "wardrobe",
+      "environment_identity",
+      "lighting_scheme"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_backdrop_press_wall_checkerboard_axfra_alarsi",
+  "name": "AXFRA ALARSI Checkerboard Press Wall",
+  "name_es": "Press wall ajedrezado AXFRA ALARSI",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "environment",
+  "slot": "backdrop",
+  "piece_family": "press_wall",
+  "swap_rule": "The ID is referenced. The press wall scale, lighting, and proportions may be adjusted while preserving the checkerboard pattern and the exact alternation of AXFRA and ALARSI.",
+  "backdrop": {
+    "type": "professional backstage press wall",
+    "pattern": "black-and-white checkerboard grid",
+    "coverage": "fills the entire background behind the subjects",
+    "grid_structure": "precise checkerboard with evenly sized squares, consistent spacing, and perfectly aligned rows and columns",
+    "content_rule": "each square contains one centered, clearly legible brand name, alternating between AXFRA and ALARSI in a consistent repeating pattern",
+    "brand_names": ["AXFRA", "ALARSI"],
+    "spelling_rule": "both names must be spelled exactly as AXFRA and ALARSI",
+    "white_squares": "bold black uppercase lettering",
+    "black_squares": "bold white uppercase lettering",
+    "typography": "clean, bold, uppercase, high legibility",
+    "style": "authentic VIP concert photocall sponsor wall",
+    "forbid": "no other brands, no logos, no misspelled text, no additional signage"
+  }
+}

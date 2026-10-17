@@ -1,0 +1,47 @@
+{
+  "id": "AXFRA_environment_rustic_beach_surf_shack",
+  "name": "Rustic Beach Surf Shack",
+  "name_es": "Cabaña rústica de surf frente al mar",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "environment",
+  "slot": "environment",
+  "piece_family": "coastal_exterior",
+  "swap_rule": "Reference this ID to apply the environment. The subject, pose, and wardrobe are independent. Preserve the surf shack, weathered wood, turquoise shutters, boards, and coastal setting unless explicitly changed.",
+  "environment": {
+    "type": "rustic surf shack on a tropical beach",
+    "structure": "single-story weathered timber shack with horizontal wooden planks, simple corrugated-metal roof and narrow raised wooden deck",
+    "wood_finish": "sun-faded uneven boards, visible aging and natural wear",
+    "left_window": "closed weathered turquoise louvered shutters",
+    "right_entrance": "open timber doorway with weathered turquoise shutters and a dim interior",
+    "surfboards_upright": "four tall surfboards leaning against the center front wall, in yellow, turquoise, faded coral pink, and cream",
+    "surfboards_foreground": "seven worn surfboards laid on pale sand before the deck, with mint, pink, green, orange, yellow, pale blue, and cream color accents",
+    "beach": "light sandy shoreline with small pebbles and natural surface irregularities",
+    "ocean": "clear turquoise water behind and on both sides of the shack, gentle waves meeting the shore",
+    "sky": "bright blue sky with scattered soft white clouds",
+    "atmosphere": "sunny, relaxed, surf culture, authentic tropical coastal setting"
+  },
+  "lighting": {
+    "type": "bright natural coastal daylight",
+    "quality": "clear sunlight, realistic highlights, defined but natural shadows"
+  },
+  "camera_and_style": {
+    "framing": "wide frontal establishing shot showing the entire shack, surfboards, beach and sea",
+    "angle": "eye-level, mostly frontal",
+    "style": "ultra-photorealistic environmental photography, detailed materials and natural colors"
+  },
+  "constraints": [
+    "No subjects or people required",
+    "Keep all surfboards separate and visibly grounded",
+    "Avoid additional buildings, promotional signs, text overlays, and watermarks",
+    "Do not reproduce the reference image watermark"
+  ]
+}

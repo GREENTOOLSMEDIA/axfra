@@ -1,0 +1,57 @@
+{
+  "id": "AXFRA_blouse_hombro_descubierto",
+  "name": "One-shoulder top",
+  "name_es": "Hombro descubierto",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source": "Clara Pattern Studio — Tipos de blusas"
+  },
+  "category": "wardrobe",
+  "piece_type": "blouse",
+  "swap_rule": "Reference the blouse ID and change material, thickness, transparency, pattern, and color. Do not rewrite the cut.",
+  "material_catalog": [
+    "cotton",
+    "linen",
+    "silk",
+    "satin",
+    "chiffon",
+    "lace",
+    "knit",
+    "denim",
+    "corduroy",
+    "velvet",
+    "leather",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    true,
+    false
+  ],
+  "pattern_catalog": [
+    "solid",
+    "stripes",
+    "checks",
+    "polka_dots",
+    "floral"
+  ],
+  "neckline": "asymmetric, one shoulder covered",
+  "sleeves": "single wide strap",
+  "hem": "straight, hip length",
+  "fit": "straight, asymmetric",
+  "material": "knit",
+  "thickness": "thin",
+  "transparency": false,
+  "pattern": "solid",
+  "color": "white"
+}

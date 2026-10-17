@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_env_grand_classic_library",
+  "name": "Grand Classical Library",
+  "name_es": "Biblioteca clásica monumental",
+  "mood": "scholarly, timeless, elegant, cinematic",
+  "palette": [
+    "dark walnut",
+    "aged gold",
+    "warm amber",
+    "burgundy",
+    "forest green"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "monumental historic classical library interior",
+    "architecture": "floor-to-ceiling dark walnut shelves, two-tier mezzanine with iron railings, tall central aisle, carved woodwork",
+    "background": "distant arched reading windows and shelves receding into depth",
+    "elements": "long oak reading tables, green-shaded reading lamps, rolling library ladders, old leather-bound books, clear center walkway"
+  },
+  "framing_block": {
+    "angle": "slightly low centered aisle view",
+    "lens": "28mm",
+    "frame": "full architectural height readable with open space for subject"
+  },
+  "lighting_block": {
+    "lighting": "warm table-lamp pools balanced with soft high-window daylight, gentle shadow falloff"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, controlled vertical perspective and rich wood texture",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no floating books, no impossibly curved shelves, no illegible giant sign, no modern advertising"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_env_editorial_warehouse",
+  "name": "Industrial Editorial Warehouse",
+  "name_es": "Nave industrial editorial",
+  "mood": "raw, modern, expansive, fashion-forward",
+  "palette": [
+    "concrete gray",
+    "charcoal",
+    "oxidized steel",
+    "cool white"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "large repurposed industrial warehouse prepared as an editorial photography setting",
+    "architecture": "high steel roof trusses, exposed concrete columns, wide windows, weathered brick accents",
+    "background": "open deep hall with subtle industrial fixtures, no commercial signage",
+    "elements": "aged concrete floor, scattered minimal crates as optional props, clear central shooting area"
+  },
+  "framing_block": {
+    "angle": "low eye level along structural bay",
+    "lens": "24mm",
+    "frame": "full-body usable foreground and long warehouse depth"
+  },
+  "lighting_block": {
+    "lighting": "strong lateral daylight through industrial windows, deep architectural shadows, optional subtle diffused fill"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 24mm, realistic metal and concrete textures",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no dangerous debris in subject path, no distorted beams, no colorful nightclub signage, no clutter overload"
+  }
+}
