@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.butterfly_beauty",
+  "name_es": "Mariposa editorial",
+  "name_en": "Butterfly Beauty",
+  "style": "beauty_editorial",
+  "light_sources": [
+    {
+      "role": "key",
+      "position": "front_center_above_camera",
+      "color": "neutral",
+      "quality": "large_soft",
+      "intensity": "high",
+      "notes": "Sombra pequeña bajo la nariz"
+    },
+    {
+      "role": "fill",
+      "position": "front_below_face",
+      "color": "neutral",
+      "quality": "soft",
+      "intensity": "medium",
+      "notes": "Reduce sombras de ojos y mentón"
+    }
+  ],
+  "contrast": "low_medium",
+  "subject_exposure": "bright_face",
+  "background": "neutral_studio",
+  "atmosphere": "none",
+  "finish": "smooth_controlled_speculars",
+  "visual_intent": "Simetría, ojos visibles y piel uniforme",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {}
+}

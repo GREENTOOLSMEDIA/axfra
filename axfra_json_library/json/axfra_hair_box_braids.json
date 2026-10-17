@@ -1,0 +1,69 @@
+{
+  "id": "AXFRA_hair_box_braids",
+  "name": "Box Braids with Loose Hair",
+  "name_es": "Trenzas finas con suelto",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "identity",
+  "slot": "hair",
+  "piece_family": "style",
+  "swap_rule": "Reference the hairstyle ID. Preserve its structure. Hair color is inherited from the character Identity Core unless a color variant is explicitly specified.",
+  "color_source": "character_identity",
+  "allow_color_override": true,
+  "color_catalog": {
+    "natural": [
+      "jet black",
+      "natural black",
+      "dark brown",
+      "medium brown",
+      "light brown",
+      "dark blonde",
+      "ash blonde",
+      "golden blonde",
+      "platinum blonde",
+      "natural red",
+      "copper",
+      "mahogany",
+      "gray",
+      "white"
+    ],
+    "fashion": [
+      "intense red",
+      "pastel pink",
+      "fuchsia",
+      "violet",
+      "electric blue",
+      "pastel blue",
+      "emerald green",
+      "turquoise",
+      "silver"
+    ],
+    "techniques": [
+      "uniform color",
+      "dark roots",
+      "highlights",
+      "balayage",
+      "ombré",
+      "fantasy gradient",
+      "two-tone",
+      "dyed ends"
+    ]
+  },
+  "lock": [
+    "facial_identity",
+    "facial_features",
+    "body_proportions"
+  ],
+  "cut": "fine braids from the roots across the upper half, remainder left loose",
+  "part": "center part",
+  "length": "long, over the shoulders",
+  "texture": "close-to-scalp braids on top, waves below",
+  "color": null
+}

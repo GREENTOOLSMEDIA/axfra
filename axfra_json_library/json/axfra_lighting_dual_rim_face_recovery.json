@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.dual_rim_face_recovery",
+  "name_es": "Doble contorno con recuperación facial",
+  "name_en": "Dual Rim With Face Recovery",
+  "style": "cinematic_low_key_teal_orange",
+  "light_sources": [
+    {
+      "role": "side_rim",
+      "position": "subject_left",
+      "color": "cyan_blue",
+      "quality": "directional",
+      "intensity": "low_medium",
+      "notes": "Enfría levemente la mejilla"
+    },
+    {
+      "role": "rim_hair",
+      "position": "subject_right_behind",
+      "color": "amber_orange",
+      "quality": "hard",
+      "intensity": "strong",
+      "notes": "Separa la silueta"
+    },
+    {
+      "role": "key",
+      "position": "front_above_camera_axis",
+      "color": "neutral_warm",
+      "quality": "soft_fast_falloff",
+      "intensity": "low",
+      "notes": "Abre ojos, pómulos y pecho sin aplanar"
+    },
+    {
+      "role": "ambient_fill",
+      "position": "sky",
+      "color": "cool_blue",
+      "quality": "diffuse",
+      "intensity": "very_low",
+      "notes": "Fill ambiental secundario"
+    }
+  ],
+  "contrast": "high",
+  "subject_exposure": "face_readable_but_moody",
+  "background": "defocused_city_bokeh",
+  "atmosphere": "storm;fine_rain_or_dust_in_warm_beam",
+  "finish": "dense_blacks;controlled_highlights;visible_leather_texture",
+  "visual_intent": "Conservar doble contorno y recuperar lectura facial",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {
+    "front_key_enabled": true,
+    "front_key_priority": "below_rim"
+  }
+}

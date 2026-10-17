@@ -1,0 +1,61 @@
+{
+  "id": "AXFRA_look_beach_knit_coverup_bikini",
+  "name": "Pink open-knit cover-up with cream bikini",
+  "name_es": "Cover-up de punto rosa con bikini crema",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.beach.knit.coverup.bikini",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "beach, resort, soft",
+  "outer": {
+    "type": "long open-knit cover-up",
+    "material": "crochet mesh",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "underwear": {
+    "type": "cream triangle bikini with pearls",
+    "material": "jersey",
+    "color": "cream"
+  },
+  "accessories": [
+    "platform slides",
+    "straw bag"
+  ],
+  "source_image": "HQ_Ky-WWwAAxvzj",
+  "original_specification": {
+    "id": "look.beach.knit.coverup.bikini",
+    "name_es": "Cover-up de punto rosa con bikini crema",
+    "name_en": "Pink open-knit cover-up with cream bikini",
+    "mood": "beach, resort, soft",
+    "outer": {
+      "type": "long open-knit cover-up",
+      "material": "crochet mesh",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "underwear": {
+      "type": "cream triangle bikini with pearls",
+      "material": "jersey",
+      "color": "crema"
+    },
+    "accessories": [
+      "platform slides",
+      "straw bag"
+    ],
+    "source_image": "HQ_Ky-WWwAAxvzj"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

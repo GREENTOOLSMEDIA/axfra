@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_instrument_mic_super55",
+  "name": "Shure Super 55SH Series II",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "instrument",
+  "piece_family": "stage_kit",
+  "swap_rule": "Se cita el id. Se cambian color, acabado y logo. El modelo no se reescribe.",
+  "acabado_catalog": [
+    "nuevo",
+    "usado",
+    "envejecido"
+  ],
+  "original_id": "instrument.mic.super55",
+  "name_es": "Shure Super 55SH Series II",
+  "name_en": "Shure Super 55SH Series II",
+  "model": "Super 55 Deluxe, 55SH Series II",
+  "body": "cuerpo cromado de estilo vintage, cápsula frontal con rejilla de ranuras horizontales",
+  "mount": "horquilla giratoria integrada",
+  "stand": "atril recto cromado, base redonda",
+  "hardware": "dinámico, supercardioide, interruptor en el cuerpo",
+  "color": "cromo",
+  "acabado": "nuevo"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "AXFRA_instrument_guitar_lespaul_60s",
+  "name": "Gibson Les Paul Standard '60s",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "instrument",
+  "piece_family": "stage_kit",
+  "swap_rule": "Se cita el id. Se cambian color, acabado y logo. El modelo no se reescribe.",
+  "acabado_catalog": [
+    "nuevo",
+    "usado",
+    "envejecido"
+  ],
+  "original_id": "instrument.guitar.lespaul.60s",
+  "name_es": "Gibson Les Paul Standard '60s",
+  "name_en": "Gibson Les Paul Standard '60s",
+  "model": "Les Paul Standard '60s",
+  "body": "caoba sólida, tapa de arce flameado AA, single cutaway",
+  "neck": "mástil de caoba SlimTaper, diapasón de palisandro, 22 trastes, incrustaciones trapezoidales",
+  "hardware": "dos Burstbucker '60s, selector de tres posiciones, puente ABR-1, stop bar, clavijas Grover, pickguard crema, herrajes níquel",
+  "color": "honey amber",
+  "acabado": "nuevo"
+}

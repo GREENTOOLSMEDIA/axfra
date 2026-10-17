@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.dual_rim_night",
+  "name_es": "Noche de doble contorno sin luz frontal",
+  "name_en": "Dual Rim Night Without Front Key",
+  "style": "cinematic_low_key",
+  "light_sources": [
+    {
+      "role": "side_rim",
+      "position": "subject_left",
+      "color": "cyan_blue",
+      "quality": "directional",
+      "intensity": "low_medium",
+      "notes": "Apenas ilumina hombro y mejilla"
+    },
+    {
+      "role": "rim_hair",
+      "position": "subject_right_behind",
+      "color": "amber_orange",
+      "quality": "hard",
+      "intensity": "strong",
+      "notes": "Recorta pelo, brazo y chaqueta"
+    },
+    {
+      "role": "ambient_fill",
+      "position": "sky_and_city",
+      "color": "cool_blue",
+      "quality": "very_diffuse",
+      "intensity": "very_low",
+      "notes": "Insuficiente para abrir sombras del torso"
+    }
+  ],
+  "contrast": "very_high",
+  "subject_exposure": "face_in_shadow",
+  "background": "defocused_city_bokeh",
+  "atmosphere": "storm;fine_rain_or_dust_in_warm_beam",
+  "finish": "dense_blacks;controlled_highlights;hard_leather_speculars",
+  "visual_intent": "Silueta dramática, rostro parcialmente en penumbra",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {
+    "front_key_enabled": false
+  }
+}

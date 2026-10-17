@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "id": "lighting.orbiting_key_360",
+  "name_es": "Luz orbital cinematográfica 360°",
+  "name_en": "Cinematic 360° Orbiting Light",
+  "type": "dynamic_lighting",
+  "description": "Una fuente de luz intensa orbita lentamente alrededor del sujeto, generando reflejos móviles dramáticos y sombras profundas.",
+  "light_sources": [
+    {
+      "role": "orbiting_key",
+      "intensity": "strong",
+      "quality": "hard",
+      "color": "neutral_white",
+      "movement": {
+        "type": "orbit",
+        "degrees": 360,
+        "speed": "slow",
+        "direction": "clockwise",
+        "axis": "vertical",
+        "center": "subject"
+      }
+    }
+  ],
+  "shadows": {
+    "style": "deep_black",
+    "movement": "synchronized_with_light",
+    "ambient_fill": "none"
+  },
+  "reflections": {
+    "type": "dynamic_specular",
+    "behavior": "move_across_surfaces_as_light_orbits"
+  },
+  "camera": {
+    "movement": "static"
+  },
+  "subject": {
+    "position": "fixed",
+    "movement": "none"
+  },
+  "lock": [
+    "facial_identity",
+    "body_proportions",
+    "wardrobe",
+    "pose",
+    "environment",
+    "camera_position",
+    "camera_framing"
+  ],
+  "editable": [
+    "light_color",
+    "light_intensity",
+    "orbit_speed",
+    "orbit_direction",
+    "light_height",
+    "ambient_fill"
+  ]
+}

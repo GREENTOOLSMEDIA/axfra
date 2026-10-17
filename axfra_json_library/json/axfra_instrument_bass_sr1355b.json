@@ -1,0 +1,32 @@
+{
+  "id": "AXFRA_instrument_bass_sr1355b",
+  "name": "Ibanez SR1355B Premium",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "instrument",
+  "piece_family": "stage_kit",
+  "swap_rule": "Se cita el id. Se cambian color, acabado y logo. El modelo no se reescribe.",
+  "acabado_catalog": [
+    "nuevo",
+    "usado",
+    "envejecido"
+  ],
+  "original_id": "instrument.bass.sr1355b",
+  "name_es": "Ibanez SR1355B Premium",
+  "name_en": "Ibanez SR1355B Premium",
+  "model": "SR1355B",
+  "body": "cuerpo de caoba africana, tapa de nogal, panga panga y arce, doble cutaway ergonómico",
+  "neck": "mástil Atlas-5 de cinco piezas, diapasón de panga panga, 24 trastes, incrustaciones ovales de abulón, escala 34 pulgadas",
+  "hardware": "cinco cuerdas, dos pastillas Nordstrand Big Single, puente MR5S, EQ de tres bandas, herrajes negros",
+  "color": "dual mocha burst",
+  "acabado": "nuevo"
+}

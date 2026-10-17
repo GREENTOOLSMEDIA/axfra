@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_black_velvet_lace",
+  "name": "Black Velvet and Lace Mini",
+  "name_es": "Mini de terciopelo y encaje",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.black.velvet.lace",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de mangas de encaje, corset de terciopelo, bajo de encaje, cruz al centro",
+    "material": "velvet",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black"
+  },
+  "shoes": {
+    "type": "ankle boot de platform, buckles y ojales",
+    "material": "leather",
+    "color": "black"
+  },
+  "bag": {
+    "type": "bandolera con cruz y cadena",
+    "material": "leather",
+    "color": "silver"
+  },
+  "original_specification": {
+    "id": "look.black.velvet.lace",
+    "name_es": "Mini de terciopelo y encaje",
+    "dress": {
+      "type": "mini de mangas de encaje, corset de terciopelo, bajo de encaje, cruz al centro",
+      "material": "terciopelo",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "negro"
+    },
+    "shoes": {
+      "type": "botín de plataforma, hebillas y ojales",
+      "material": "cuero",
+      "color": "negro"
+    },
+    "bag": {
+      "type": "bandolera con cruz y cadena",
+      "material": "cuero",
+      "color": "plata"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

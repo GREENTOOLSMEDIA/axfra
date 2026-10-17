@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_brown_corset_shorts",
+  "name": "Brown Leather Corset and Shorts",
+  "name_es": "Corset de cuero y short",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.brown.corset.shorts",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "corset sin tirantes, copas",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "brown"
+  },
+  "bottom": {
+    "type": "short de cinco bolsillos",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "ivory"
+  },
+  "shoes": {
+    "type": "boot knee-high, punta y heel",
+    "material": "leather",
+    "color": "brown"
+  },
+  "bag": {
+    "type": "bolso estructurado con asa",
+    "material": "leather",
+    "color": "brown"
+  },
+  "original_specification": {
+    "id": "look.brown.corset.shorts",
+    "name_es": "Corset de cuero y short",
+    "top": {
+      "type": "corset sin tirantes, copas",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "marrón"
+    },
+    "bottom": {
+      "type": "short de cinco bolsillos",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "marfil"
+    },
+    "shoes": {
+      "type": "bota a la rodilla, punta y tacón",
+      "material": "cuero",
+      "color": "marrón"
+    },
+    "bag": {
+      "type": "bolso estructurado con asa",
+      "material": "cuero",
+      "color": "marrón"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}
