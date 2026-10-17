@@ -1,0 +1,57 @@
+{
+  "id": "AXFRA_look_pink_tank_wide_jeans",
+  "name": "Pink tank with wide jeans and shoulder bag",
+  "name_es": "Tank rosa con jeans anchos y bolso",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink.tank.wide.jeans",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "casual, y2k, everyday",
+  "top": {
+    "type": "ribbed tank",
+    "material": "knit",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "wide-leg jeans with pink belt",
+    "material": "denim",
+    "color": "light blue"
+  },
+  "accessories": [
+    "studded pink bag",
+    "slingback heels"
+  ],
+  "source_image": "HQ8_O2NX0AEneds",
+  "original_specification": {
+    "id": "look.pink.tank.wide.jeans",
+    "name_es": "Tank rosa con jeans anchos y bolso",
+    "name_en": "Pink tank with wide jeans and shoulder bag",
+    "mood": "casual, y2k, everyday",
+    "top": {
+      "type": "ribbed tank",
+      "material": "punto",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "wide-leg jeans with pink belt",
+      "material": "denim",
+      "color": "azul claro"
+    },
+    "accessories": [
+      "studded pink bag",
+      "slingback heels"
+    ],
+    "source_image": "HQ8_O2NX0AEneds"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "AXFRA_look_pink_rock_biker",
+  "name": "Pink Biker Jacket, Tee and Denim Mini",
+  "name_es": "Biker, tee y mini denim",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.rock.biker",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "outer": {
+    "type": "biker, cremalleras",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "top": {
+    "type": "tee de short-sleeve, gráfico al frente",
+    "material": "cotton",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "black",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "mini denim, belt de studs",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "boot de platform, corazón y llamas",
+    "material": "leather",
+    "color": "black"
+  },
+  "bag": {
+    "type": "bandolera con tachas",
+    "material": "leather",
+    "color": "black"
+  },
+  "original_specification": {
+    "id": "look.pink.rock.biker",
+    "name_es": "Biker, tee y mini denim",
+    "outer": {
+      "type": "biker, cremalleras",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "tee de manga corta, gráfico al frente",
+      "material": "algodon",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "negro",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "mini denim, cinturón de tachas",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "bota de plataforma, corazón y llamas",
+      "material": "cuero",
+      "color": "negro"
+    },
+    "bag": {
+      "type": "bandolera con tachas",
+      "material": "cuero",
+      "color": "negro"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

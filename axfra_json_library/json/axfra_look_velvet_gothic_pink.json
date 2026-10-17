@@ -1,0 +1,49 @@
+{
+  "id": "AXFRA_look_velvet_gothic_pink",
+  "name": "Pink Gothic Velvet Corset",
+  "name_es": "Corsé terciopelo rosa gótico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.velvet.gothic.pink",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "gothic coquette",
+  "dress": {
+    "type": "corsé terciopelo + skirt fruncida",
+    "material": "velvet and lace",
+    "color": "pink and black",
+    "detail": "cruces, lazos, encaje"
+  },
+  "accessories": [
+    "plataformas negras con hebillas",
+    "bolso plata cruces",
+    "liguero"
+  ],
+  "original_specification": {
+    "id": "look.velvet.gothic.pink",
+    "name_es": "Corsé terciopelo rosa gótico",
+    "style": "gothic coquette",
+    "dress": {
+      "type": "corsé terciopelo + falda fruncida",
+      "material": "terciopelo + encaje",
+      "color": "rosa y negro",
+      "detail": "cruces, lazos, encaje"
+    },
+    "accessories": [
+      "plataformas negras con hebillas",
+      "bolso plata cruces",
+      "liguero"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

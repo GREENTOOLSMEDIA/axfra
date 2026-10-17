@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_satin_bow_blue",
+  "name": "Blue Satin Bow Mini Dress",
+  "name_es": "Mini de satén con lazos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.satin.bow.blue",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de tirantes, corset, falda abullonada, lazos en la cadera y el bajo, borde de perlas",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "sky blue"
+  },
+  "shoes": {
+    "type": "sandal de heel con bow y cristales",
+    "material": "satin",
+    "color": "silver"
+  },
+  "bag": {
+    "type": "bolso de perlas",
+    "material": "pearl",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.satin.bow.blue",
+    "name_es": "Mini de satén con lazos",
+    "dress": {
+      "type": "mini de tirantes, corset, falda abullonada, lazos en la cadera y el bajo, borde de perlas",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "celeste"
+    },
+    "shoes": {
+      "type": "sandalia de tacón con lazo y cristales",
+      "material": "satin",
+      "color": "plata"
+    },
+    "bag": {
+      "type": "bolso de perlas",
+      "material": "perla",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

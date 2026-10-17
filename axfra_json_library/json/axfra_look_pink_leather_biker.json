@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_leather_biker",
+  "name": "Fuchsia Leather Biker Set",
+  "name_es": "Biker corta y mini de cuero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.leather.biker",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "outer": {
+    "type": "biker cropped, zipper asimétrica, belt",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "fuchsia"
+  },
+  "bottom": {
+    "type": "mini recta con abertura",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "fuchsia"
+  },
+  "shoes": {
+    "type": "boot knee-high, punta y heel",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bandolera acolchada, cadena",
+    "material": "leather",
+    "color": "fuchsia"
+  },
+  "original_specification": {
+    "id": "look.pink.leather.biker",
+    "name_es": "Biker corta y mini de cuero",
+    "outer": {
+      "type": "biker cropped, cremallera asimétrica, cinturón",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "fucsia"
+    },
+    "bottom": {
+      "type": "mini recta con abertura",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "fucsia"
+    },
+    "shoes": {
+      "type": "bota a la rodilla, punta y tacón",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bandolera acolchada, cadena",
+      "material": "cuero",
+      "color": "fucsia"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

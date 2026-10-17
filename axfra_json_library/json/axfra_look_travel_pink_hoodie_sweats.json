@@ -1,0 +1,59 @@
+{
+  "id": "AXFRA_look_travel_pink_hoodie_sweats",
+  "name": "Pink cropped hoodie with grey sweatpants",
+  "name_es": "Hoodie rosa cropped con sweatpants grises",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.travel.pink.hoodie.sweats",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "casual, travel, comfort",
+  "top": {
+    "type": "cropped zip hoodie",
+    "material": "cotton",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "wide sweatpants",
+    "material": "cotton",
+    "color": "gray"
+  },
+  "accessories": [
+    "pink suitcase",
+    "sneakers",
+    "headphones"
+  ],
+  "source_image": "HQ_K5OSWcAAdlvb",
+  "original_specification": {
+    "id": "look.travel.pink.hoodie.sweats",
+    "name_es": "Hoodie rosa cropped con sweatpants grises",
+    "name_en": "Pink cropped hoodie with grey sweatpants",
+    "mood": "casual, travel, comfort",
+    "top": {
+      "type": "cropped zip hoodie",
+      "material": "algodón",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "wide sweatpants",
+      "material": "algodón",
+      "color": "gris"
+    },
+    "accessories": [
+      "pink suitcase",
+      "sneakers",
+      "headphones"
+    ],
+    "source_image": "HQ_K5OSWcAAdlvb"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

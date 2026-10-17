@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_sheer_leather",
+  "name": "Sheer Red Shirt and Fuchsia Leather Mini",
+  "name_es": "Camisola, camisa transparente y mini",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.sheer.leather",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "camisola de encaje bajo camisa transparente de manga larga",
+    "material": "chiffon",
+    "thickness": "very thin",
+    "transparency": "yes",
+    "color": "red"
+  },
+  "bottom": {
+    "type": "mini leather, belt rhinestone",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "fuchsia"
+  },
+  "shoes": {
+    "type": "slingback de punta",
+    "material": "leather",
+    "color": "red"
+  },
+  "bag": {
+    "type": "bolso estructurado",
+    "material": "leather",
+    "color": "fuchsia"
+  },
+  "original_specification": {
+    "id": "look.pink.sheer.leather",
+    "name_es": "Camisola, camisa transparente y mini",
+    "top": {
+      "type": "camisola de encaje bajo camisa transparente de manga larga",
+      "material": "gasa",
+      "grosor": "muy_delgada",
+      "transparencia": "si",
+      "color": "rojo"
+    },
+    "bottom": {
+      "type": "mini de cuero, cinturón de strass",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "fucsia"
+    },
+    "shoes": {
+      "type": "slingback de punta",
+      "material": "cuero",
+      "color": "rojo"
+    },
+    "bag": {
+      "type": "bolso estructurado",
+      "material": "cuero",
+      "color": "fucsia"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "AXFRA_look_wrap_ribbed_satin_skirt",
+  "name": "Ribbed wrap top with satin ruffle skirt",
+  "name_es": "Top cruzado de punto con falda satén",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.wrap.ribbed.satin.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "soft feminine, coquette",
+  "top": {
+    "type": "long-sleeve ribbed wrap blouse",
+    "material": "rib knit",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "satin mini skirt with ruffles",
+    "material": "satin",
+    "color": "pink"
+  },
+  "accessories": [
+    "pearl bag",
+    "satin bows",
+    "strappy heels"
+  ],
+  "source_image": "HQ9K3jNXwAA5QZ0",
+  "original_specification": {
+    "id": "look.wrap.ribbed.satin.skirt",
+    "name_es": "Top cruzado de punto con falda satén",
+    "name_en": "Ribbed wrap top with satin ruffle skirt",
+    "mood": "soft feminine, coquette",
+    "top": {
+      "type": "long-sleeve ribbed wrap blouse",
+      "material": "punto acanalado",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "satin mini skirt with ruffles",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "accessories": [
+      "pearl bag",
+      "satin bows",
+      "strappy heels"
+    ],
+    "source_image": "HQ9K3jNXwAA5QZ0"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

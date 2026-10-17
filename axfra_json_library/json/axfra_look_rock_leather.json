@@ -1,0 +1,95 @@
+{
+  "id": "AXFRA_look_rock_leather",
+  "name": "Graphic Tee and Leather Mini",
+  "name_es": "Tee gráfico y mini de cuero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.rock.leather",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "tee de short-sleeve, gráfico al frente",
+    "material": "cotton",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "black",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "mini leather, belt, cremalleras al frente",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black"
+  },
+  "shoes": {
+    "type": "ankle boot de heel, studs",
+    "material": "leather",
+    "color": "black"
+  },
+  "bag": {
+    "type": "bag de mesh metálica",
+    "material": "metal",
+    "color": "silver"
+  },
+  "original_specification": {
+    "id": "look.rock.leather",
+    "name_es": "Tee gráfico y mini de cuero",
+    "top": {
+      "type": "tee de manga corta, gráfico al frente",
+      "material": "algodon",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "negro",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "mini de cuero, cinturón, cremalleras al frente",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "negro"
+    },
+    "shoes": {
+      "type": "botín de tacón, tachas",
+      "material": "cuero",
+      "color": "negro"
+    },
+    "bag": {
+      "type": "bolso de malla metálica",
+      "material": "metal",
+      "color": "plata"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

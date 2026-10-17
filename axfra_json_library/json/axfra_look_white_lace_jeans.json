@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_white_lace_jeans",
+  "name": "White Lace Blouse and Jeans",
+  "name_es": "Blusa de encaje y jean",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.white.lace.jeans",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "camisa de manga larga, encaje floral, frunce al centro",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "jean recto",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "indigo"
+  },
+  "shoes": {
+    "type": "mule de heel con bow",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bandolera acolchada, cadena",
+    "material": "leather",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.white.lace.jeans",
+    "name_es": "Blusa de encaje y jean",
+    "top": {
+      "type": "camisa de manga larga, encaje floral, frunce al centro",
+      "material": "encaje",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "jean recto",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "índigo"
+    },
+    "shoes": {
+      "type": "mule de tacón con lazo",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bandolera acolchada, cadena",
+      "material": "cuero",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

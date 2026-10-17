@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_pink_metallic_mini",
+  "name": "Pink Metallic Mini Dress",
+  "name_es": "Mini metálico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.metallic.mini",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de tirantes, copas, fruncido",
+    "material": "metal",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "pump de punta con lazo de strass",
+    "material": "satin",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bandolera de strass",
+    "material": "rhinestones",
+    "color": "silver"
+  },
+  "original_specification": {
+    "id": "look.pink.metallic.mini",
+    "name_es": "Mini metálico",
+    "dress": {
+      "type": "mini de tirantes, copas, fruncido",
+      "material": "metal",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "pump de punta con lazo de strass",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bandolera de strass",
+      "material": "strass",
+      "color": "plata"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

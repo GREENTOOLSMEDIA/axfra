@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_white_corset_pleat",
+  "name": "White Corset and Pleated Mini",
+  "name_es": "Corset y mini plisada blancos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.white.corset.pleat",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "corset de tirantes, borde de strass",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "mini plisada",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white"
+  },
+  "shoes": {
+    "type": "boot knee-high, punta y heel",
+    "material": "leather",
+    "color": "white"
+  },
+  "bag": {
+    "type": "bolso de perlas",
+    "material": "pearl",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.white.corset.pleat",
+    "name_es": "Corset y mini plisada blancos",
+    "top": {
+      "type": "corset de tirantes, borde de strass",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "mini plisada",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "blanco"
+    },
+    "shoes": {
+      "type": "bota a la rodilla, punta y tacón",
+      "material": "cuero",
+      "color": "blanco"
+    },
+    "bag": {
+      "type": "bolso de perlas",
+      "material": "perla",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}
