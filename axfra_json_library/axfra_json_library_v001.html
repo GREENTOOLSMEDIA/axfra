@@ -58,22 +58,46 @@
 html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
 .library-main{width:100%;max-width:100%;min-width:0;min-height:650px;height:calc(100vh - 84px);overflow:hidden}
 .library-main .sidebar,.library-main .catalog,.library-main .work{min-width:0;max-width:100%}
+
+/* AXFRA: tres paneles y navegación jerárquica del boceto */
+.library-main{grid-template-columns:200px 285px minmax(0,1fr);height:calc(100vh - 85px);min-height:580px}
+.sidebar{padding:13px 12px}.catalog{padding:15px 13px}.work{padding:15px 14px}
+.library-summary{font-size:12px;color:#aaa;margin-bottom:13px}
+.group-block{margin-bottom:5px}
+.library-main .cat{background:transparent;border:1px solid transparent;border-radius:5px;padding:9px 8px;font-size:12px;line-height:1.4;color:#e1e1e1}
+.library-main .cat.parent{background:#1b1b1b;border-color:#353535;font-weight:700;margin:6px 0 2px;min-height:39px}
+.library-main .cat.child{padding-left:18px;font-size:11.5px;min-height:33px}
+.library-main .cat:hover{background:#302426;border-color:#724047}
+.library-main .cat.active{background:#342326;border-color:#aa4550;color:white}
+.library-main .cat .group-name{flex:1}
+.library-main .item{background:#252525;border:1px solid #484848;border-radius:5px;padding:10px 7px;min-height:64px;margin:0 0 2px;gap:9px;color:#fff}
+.library-main .item.active{border-color:#c34d59;outline:none;background:#30272a}
+.library-main .item:hover{background:#313131}
+.item-en{font-size:11px;display:block;color:#a9a9a9;margin-top:2px}
+.item-id{font-family:Menlo,Consolas,monospace;font-size:10px!important;line-height:1.25}
+.library-main .thumb{width:48px;height:54px}
+.library-main .item:hover .thumb{transform:none;box-shadow:none}
+.library-main .editor{min-height:280px}
+.library-main .bar button{padding:9px 10px;font-size:12px}
+@media(max-width:1000px){.library-main{grid-template-columns:175px 255px minmax(0,1fr)}}
+@media(max-width:800px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto;overflow:visible}.sidebar{grid-row:1/3}.catalog{height:370px}.work{grid-column:2;height:700px}}
+@media(max-width:600px){.library-main{display:block}.sidebar{max-height:340px}.catalog{max-height:350px}.work{height:700px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
 <main class="library-main" id="contenido">
-<aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary">Conectando…</div><nav id="categories"></nav><p class="hint">Índice generado a partir de la carpeta json/. Miniaturas en thumbs/.</p></aside>
+<aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary">Conectando…</div><nav id="categories"></nav><p class="hint">Catálogo automático · JSON originales intactos.</p></aside>
 <section class="catalog"><h2>Componentes</h2><input id="search" class="search" type="search" placeholder="Buscar nombre, ID o archivo…" aria-label="Buscar módulos"><div id="loading">Cargando biblioteca…</div><div id="items"></div></section>
 <section class="work"><div class="bar"><h2>Editor / pruebas JSON</h2><button id="new">Nuevo / pegar</button><button id="reload">Restaurar original</button></div><div id="filename" class="file">Selecciona un módulo o pega tu propio JSON.</div><textarea id="editor" class="editor" spellcheck="false" placeholder="Pega aquí cualquier JSON…"></textarea><div class="bar"><button id="validate">Validar JSON</button><button class="primary" id="copy">Copiar JSON</button><button id="download">Descargar .json</button><button id="add">Añadir a composición</button></div><div class="status" id="status"></div><div class="collection"><div class="bar"><h2>Composición de prueba <span id="nSelected" class="count">(0)</span></h2><button id="copyComposition">Copiar composición</button><button id="downloadComposition">Descargar composición</button><button id="clearComposition">Vaciar</button></div><div id="chips" class="chips"><span class="muted">Añade módulos desde el editor.</span></div><p class="hint">La composición agrupa los JSON íntegros por módulo.</p></div></section>
 </main>
 <div id="globalFooter"></div>
 <script>
 'use strict';
-const INDEX_URL='https://axfra.com/axfra_json_library/axfra_json_library_index.json';
+const INDEX_URL='./axfra_json_library_index.json';
 const $=id=>document.getElementById(id);
-let index=null,category='all',selected=null,composition=[],requestSeq=0;
+let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0;
 
 function thumbInitials(f){
   const name=(f.name_es||f.name||f.id||'??').trim();
@@ -89,21 +113,46 @@ async function copyText(t){try{await navigator.clipboard.writeText(t);status('Co
 
 function renderCategories(){
   const nav=$('categories');nav.replaceChildren();
-  const cats=[...new Set(index.files.map(f=>f.category))].sort();
-  const all=document.createElement('button');all.type='button';all.className='cat'+(category==='all'?' active':'');
-  all.innerHTML=`<span>Todas</span><span class="count">${index.files.length}</span>`;
-  all.onclick=()=>{category='all';renderCategories();renderItems()};nav.append(all);
-  cats.forEach(c=>{
-    const n=index.files.filter(f=>f.category===c).length;
-    const b=document.createElement('button');b.type='button';b.className='cat'+(category===c?' active':'');
-    b.innerHTML=`<span>${c}</span><span class="count">${n}</span>`;
-    b.onclick=()=>{category=c;renderCategories();renderItems()};nav.append(b);
+  const groups=index.groups||[];
+  const all=document.createElement('button');all.type='button';
+  all.className='cat parent'+(groupFilter==='all'?' active':'');
+  const allName=document.createElement('span');allName.textContent='Todos los componentes';
+  const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
+  all.append(allName,allCount);
+  all.onclick=()=>{groupFilter='all';subgroupFilter=null;renderCategories();renderItems()};nav.append(all);
+  groups.forEach(g=>{
+    const wrapper=document.createElement('div');wrapper.className='group-block';
+    const button=document.createElement('button');button.type='button';
+    button.className='cat parent'+(groupFilter===g.id?' active':'');
+    button.setAttribute('aria-expanded',String(expandedGroups.has(g.id)));
+    const label=document.createElement('span');label.className='group-name';
+    label.textContent=(expandedGroups.has(g.id)?'▾  ':'▸  ')+g.label;
+    const count=document.createElement('span');count.className='count';count.textContent=g.count;
+    button.append(label,count);
+    button.onclick=()=>{if(expandedGroups.has(g.id)){expandedGroups.delete(g.id)}else{expandedGroups.add(g.id)};
+      groupFilter=g.id;subgroupFilter=null;renderCategories();renderItems()};
+    wrapper.append(button);
+    if(expandedGroups.has(g.id)){
+      (g.children||[]).forEach(c=>{
+        const child=document.createElement('button');child.type='button';
+        child.className='cat child'+(groupFilter===g.id&&subgroupFilter===c.id?' active':'');
+        const name=document.createElement('span');name.textContent=c.label;
+        const n=document.createElement('span');n.className='count';n.textContent=c.count;
+        child.append(name,n);
+        child.onclick=()=>{groupFilter=g.id;subgroupFilter=c.id;renderCategories();renderItems()};
+        wrapper.append(child)
+      });
+    }
+    nav.append(wrapper)
   });
 }
-
 function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
-  const files=index.files.filter(f=>(category==='all'||f.category===category)&&[f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+  const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
+    (!subgroupFilter||f.subgroup===subgroupFilter)&&
+    [f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+  // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
+  if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
   const list=$('items');list.replaceChildren();
   files.forEach(f=>{
     const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');b.title=f.path;
@@ -117,11 +166,10 @@ function renderItems(){
     }
     b.append(thumb);
     const text=document.createElement('div');text.className='item-text';
-    const name=document.createElement('strong');name.textContent=f.name_es||f.name||f.id||'Sin nombre';text.append(name);
-    if(f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;text.append(en)}
+    const name=document.createElement('strong');name.textContent=f.group==='unclassified'?f.path.split('/').pop():(f.name_es||f.name||f.id||f.path);text.append(name);
+    if(f.group!=='unclassified'&&f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;text.append(en)}
     const id=document.createElement('small');id.className='item-id';id.textContent=f.id||f.path.split('/').pop();text.append(id);
-    b.append(text);
-    b.onclick=()=>loadFile(f);list.append(b);
+    b.append(text);b.onclick=()=>loadFile(f);list.append(b);
   });
   $('loading').textContent=files.length+' componente(s)';
 }
@@ -161,7 +209,8 @@ async function initializeLibrary(){
     index=await r.json();
     if(!Array.isArray(index.files))throw new Error('Índice sin files[]');
     $('summary').textContent=index.files.length+' JSON · '+Object.keys(index.categories||{}).length+' categorías';
-    renderCategories();renderItems();status('Índice cargado.','ok');
+    if(!Array.isArray(index.groups))throw new Error('El índice no contiene groups[]. Genera el índice con axfra_generar_biblioteca.py');
+    expandedGroups.add('appearance');renderCategories();renderItems();status('Índice cargado.','ok');
   }catch(e){
     $('summary').textContent='Error al cargar índice';
     $('loading').textContent=e.message;
