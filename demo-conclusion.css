@@ -1,13 +1,13 @@
-/* AXFRA · conclusión unificada; no altera las escenas */
-.axfra-demo-ending{background:#151515!important;border-top:1px solid #303030!important;padding:80px 0!important;color:#dedede;text-align:center!important}
-.axfra-demo-ending>.wrap, .axfra-demo-ending .wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
-.axfra-demo-ending .eyebrow,.axfra-demo-ending .overline,.axfra-demo-ending .scene-meta{color:#b8d4c8!important;font-size:11px!important;text-transform:uppercase;letter-spacing:.17em;font-weight:800}
-.axfra-demo-ending h2{max-width:900px;margin:12px auto 20px!important;color:#f4f4f4;font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.04em}
-.axfra-demo-ending p{max-width:780px;margin:0 auto 22px!important;color:#c9cecc!important}
-.axfra-demo-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;width:min(760px,calc(100% - 28px));margin:28px auto 0}
-.axfra-demo-link{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:47px;flex:1 1 170px;padding:12px 16px;border:1px solid #85958f;border-radius:0;background:transparent;color:#f3f3f3!important;text-decoration:none!important;font:800 12px/1.3 Inter,system-ui,-apple-system,Arial,sans-serif;letter-spacing:.05em;transition:background .15s,color .15s}
-.axfra-demo-link:hover,.axfra-demo-link:focus-visible{background:#2c3934;color:#fff!important}
-.axfra-demo-link-primary{background:#b8d4c8;border-color:#b8d4c8;color:#101512!important}
-.axfra-demo-link-primary:hover,.axfra-demo-link-primary:focus-visible{background:transparent;color:#b8d4c8!important}
-.axfra-demo-link span{margin-left:6px}
-@media(max-width:500px){.axfra-demo-ending{padding:58px 0!important}.axfra-demo-links{flex-direction:column}.axfra-demo-link{flex-basis:auto}}
+/* AXFRA / Conclusión global de demostraciones v1.0 */
+.axfra-demo-conclusion{background:#161616!important;border-top:1px solid #343434!important;padding:85px 0!important;margin:0!important;text-align:center!important;max-width:none!important;width:100%!important;box-sizing:border-box;color:#f4f4f4}
+.axfra-demo-conclusion *{box-sizing:border-box}
+.axfra-demo-conclusion-inner{width:min(850px,calc(100% - 44px));margin:0 auto}
+.axfra-demo-kicker{color:#b8d4c8;font-size:11px;letter-spacing:.20em;text-transform:uppercase;font-weight:800;margin-bottom:16px}
+.axfra-demo-conclusion h2{margin:0 auto 24px!important;color:#f4f4f4!important;font-size:clamp(30px,4.2vw,53px)!important;line-height:1.13!important;letter-spacing:-.04em!important;font-weight:750!important;max-width:850px!important}
+.axfra-demo-conclusion p{margin:0 auto 30px!important;color:#c5c9c7!important;max-width:770px!important;font-size:16px!important;line-height:1.7!important}
+.axfra-demo-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:0 auto}
+.axfra-demo-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #7b8580;color:#f4f4f4!important;background:transparent;padding:11px 18px;font-size:12px!important;font-weight:800!important;letter-spacing:.055em!important;text-transform:uppercase;text-decoration:none!important;border-radius:0;transition:background .15s,color .15s}
+.axfra-demo-link:hover,.axfra-demo-link:focus-visible{color:#111!important;background:#f1f3f2!important;border-color:#f1f3f2!important}
+.axfra-demo-link-primary{background:#b8d4c8!important;color:#101512!important;border-color:#b8d4c8!important}
+.axfra-demo-link-primary:hover,.axfra-demo-link-primary:focus-visible{background:#e0eee7!important;border-color:#e0eee7!important}
+@media(max-width:560px){.axfra-demo-conclusion{padding:60px 0!important}.axfra-demo-conclusion-inner{width:calc(100% - 28px)}.axfra-demo-links{flex-direction:column;align-items:stretch}.axfra-demo-link{width:100%}}
