@@ -1,0 +1,127 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+{
+  "id": "AXFRA_environment_home_cinema_premium",
+  "name": "Premium Nighttime Home Cinema",
+  "name_es": "Cine doméstico premium nocturno",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "environment",
+  "slot": "interior",
+  "piece_family": "home_cinema",
+  "environment": {
+    "type": "high-end residential home cinema integrated into a contemporary living room",
+    "time_of_day": "night",
+    "architecture": "floor-to-ceiling dark-framed windows along the left wall with a nighttime city view; dark concrete-textured television feature wall; warm neutral ceiling with recessed spotlights; light natural wood floor",
+    "layout": "large wall-mounted widescreen television on the right-hand feature wall; low dark wooden media cabinet beneath it; deep charcoal L-shaped sectional sofa facing the screen from the left foreground; low rectangular wood coffee table in the foreground",
+    "furnishings": [
+      "plush charcoal sectional sofa with chaise section, neutral cushions and a soft throw",
+      "low wooden media console with open shelving",
+      "slim black soundbar centered below the screen",
+      "low wooden coffee table with books, remote control and a small glass bowl",
+      "subtle neutral floor rug",
+      "narrow illuminated display shelves recessed beside the feature wall"
+    ],
+    "materials": ["dark textured concrete", "dark upholstery", "natural wood", "clear glass", "matte black metal"],
+    "palette": ["charcoal", "warm gray", "walnut brown", "soft beige", "warm white"],
+    "people": "two seated viewers on the sofa, seen in partial side view, naturally watching the television; their specific identities and wardrobes are not defined by this environment",
+    "screen": {
+      "type": "large wall-mounted widescreen television",
+      "content_rule": "screen imagery is an independent replaceable content layer, not part of the permanent room design",
+      "default_content": "colorful cinematic science-fiction space scene featuring a spacecraft against bright blue, magenta and amber nebula clouds",
+      "default_text": "no fixed on-screen typography required",
+      "preserve_screen_geometry": true
+    }
+  },
+  "lighting": {
+    "ambient": "dim warm evening lighting with restrained recessed ceiling downlights",
+    "accent": "soft warm LED backlighting outlining the television; concealed warm strip lights inside architectural shelving",
+    "practical": "subtle small side lamp and gentle reflections on the windows",
+    "screen_glow": "soft color spill from the displayed content, without overwhelming the room",
+    "mood": "intimate, upscale, calm, cinematic"
+  },
+  "camera": {
+    "framing": "wide interior establishing shot showing sofa in left foreground and television wall on the right",
+    "viewpoint": "slightly elevated three-quarter room view, looking diagonally toward the feature wall",
+    "lens": "moderate wide-angle architectural interior photography",
+    "perspective": "natural room proportions, straight architectural lines, no extreme distortion",
+    "aspect_ratio": "1:1 reference composition; adaptable to other output ratios"
+  },
+  "style": "ultra-photorealistic premium architectural interior photography, believable natural materials, precise furniture geometry, controlled reflections, cinematic low-light exposure",
+  "swap_rule": "Reference this environment ID to preserve the room layout, materials, furniture and architectural lighting. Replace the television image independently without redesigning the environment.",
+  "constraints": [
+    "Do not permanently embed any movie title or lettering into the room architecture",
+    "Keep the television screen separate from the room and its furniture",
+    "Maintain a plausible residential scale and natural seating orientation",
+    "Preserve the nighttime window views and warm architectural accent lighting"
+  ]
+}

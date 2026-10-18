@@ -1,0 +1,44 @@
+{
+  "id": "AXFRA_env_live_rock_stage",
+  "name": "Live Rock Concert Stage",
+  "name_es": "Escenario de rock en vivo",
+  "mood": "explosive, immersive, live concert, dramatic",
+  "palette": [
+    "black",
+    "deep red",
+    "magenta",
+    "violet",
+    "cool white",
+    "smoke gray"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "large live rock concert stage viewed from onstage looking out toward the audience",
+    "background": "dense cheering concert crowd with raised arms, overhead rigging, high truss grid, red and white spotlights and stage haze",
+    "elements": "black guitar amplifier stacks and speaker cabinets on the near stage, dark reflective textured stage floor, synchronized concert lighting, violet laser accents",
+    "stage_direction": "open center stage area for singer or band, crowd clearly beyond the stage edge"
+  },
+  "framing_block": {
+    "angle": "slightly low performer viewpoint from stage",
+    "lens": "24mm",
+    "frame": "full stage foreground with backline and crowd filling rear view, open subject area at center"
+  },
+  "lighting_block": {
+    "lighting": "concert spotlights in deep red and cool white, magenta and violet edge lighting, volumetric beams through controlled haze"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 24mm, wide-angle concert editorial shot, detailed rigging and coherent crowd depth",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no duplicate instruments, no floating amplifiers, no malformed crowd hands in foreground, no random brand text, no stage clutter hiding performers"
+  }
+}

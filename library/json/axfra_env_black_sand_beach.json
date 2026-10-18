@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_env_black_sand_beach",
+  "name": "Black Sand Beach",
+  "name_es": "Playa de arena negra",
+  "mood": "dramatic, windswept, elemental, cinematic",
+  "palette": [
+    "volcanic black",
+    "slate gray",
+    "sea foam white",
+    "deep blue",
+    "silver"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "wild volcanic coastline with expansive black sand beach",
+    "background": "distant dark basalt cliffs, open horizon, rolling gray-blue ocean and breaking foam",
+    "elements": "wet black sand reflecting clouds, occasional smooth rocks, irregular natural shoreline, wind-driven mist, clean open foreground"
+  },
+  "framing_block": {
+    "angle": "low beach-level environmental perspective",
+    "lens": "28mm",
+    "frame": "room for full-body subject with coastline, waves, cliffs and horizon readable"
+  },
+  "lighting_block": {
+    "lighting": "soft dramatic coastal overcast with silver edge highlights on wet sand and sea foam"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 28mm, natural water texture and believable coastal perspective",
+    "style": "Alarsi editorial, cinematic photorealism, realistic materials, coherent perspective, detailed environmental textures, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no tropical palms, no resort buildings, no white-sand patches, no plastic water, no distorted horizon"
+  }
+}

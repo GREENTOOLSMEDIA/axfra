@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_camera_subject_relative_orientation",
+  "name": "Subject-Relative Camera Orientation",
+  "name_es": "Orientación de cámara respecto al sujeto",
+  "mood": "technical, precise, controllable",
+  "palette": [
+    "neutral"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "camera_orientation": {
+    "enabled": true,
+    "scope": "subject_relative",
+    "selected": "subject_front",
+    "options": [
+      "subject_front",
+      "subject_front_left",
+      "subject_left",
+      "subject_back_left",
+      "subject_back",
+      "subject_back_right",
+      "subject_right",
+      "subject_front_right"
+    ],
+    "reference": "Sides are anatomical sides of the subject. Camera moves relative to the subject, while the subject itself stays fixed.",
+    "preserve": [
+      "subject_pose",
+      "subject_body_rotation",
+      "subject_identity",
+      "wardrobe",
+      "environment_identity"
+    ],
+    "instruction": "Place the camera at the selected viewing direction relative to the stationary subject. Do not rotate the subject to imitate a camera repositioning. Scene parallax may change when camera position changes."
+  }
+}
