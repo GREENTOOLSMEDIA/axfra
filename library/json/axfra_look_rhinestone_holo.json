@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_rhinestone_holo",
+  "name": "Rhinestone Bustier and Holographic Mini",
+  "name_es": "Bustier de strass y mini holográfica",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.rhinestone.holo",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "bustier de tirantes, cubierto de strass",
+    "material": "rhinestones",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "silver"
+  },
+  "bottom": {
+    "type": "mini de cinco bolsillos",
+    "material": "metal",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "holographic"
+  },
+  "shoes": {
+    "type": "plataforma de tiras con strass",
+    "material": "metal",
+    "color": "silver"
+  },
+  "bag": {
+    "type": "hobo metálico",
+    "material": "metal",
+    "color": "silver"
+  },
+  "original_specification": {
+    "id": "look.rhinestone.holo",
+    "name_es": "Bustier de strass y mini holográfica",
+    "top": {
+      "type": "bustier de tirantes, cubierto de strass",
+      "material": "strass",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "plata"
+    },
+    "bottom": {
+      "type": "mini de cinco bolsillos",
+      "material": "metal",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "holográfico"
+    },
+    "shoes": {
+      "type": "plataforma de tiras con strass",
+      "material": "metal",
+      "color": "plata"
+    },
+    "bag": {
+      "type": "hobo metálico",
+      "material": "metal",
+      "color": "plata"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

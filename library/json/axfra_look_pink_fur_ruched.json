@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_fur_ruched",
+  "name": "Pink Fur Coat and Ruched Mini",
+  "name_es": "Abrigo de pelo y mini drapeado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.fur.ruched",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "outer": {
+    "type": "abrigo corto, cuello y cuerpo de pelo",
+    "material": "fur",
+    "thickness": "thick",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "dress": {
+    "type": "mini strapless, fruncido",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "bota a la rodilla cubierta de strass",
+    "material": "rhinestones",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bolso cubierto de strass",
+    "material": "rhinestones",
+    "color": "pink"
+  },
+  "original_specification": {
+    "id": "look.pink.fur.ruched",
+    "name_es": "Abrigo de pelo y mini drapeado",
+    "outer": {
+      "type": "abrigo corto, cuello y cuerpo de pelo",
+      "material": "piel",
+      "grosor": "gruesa",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "dress": {
+      "type": "mini strapless, fruncido",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "bota a la rodilla cubierta de strass",
+      "material": "strass",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bolso cubierto de strass",
+      "material": "strass",
+      "color": "rosa"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

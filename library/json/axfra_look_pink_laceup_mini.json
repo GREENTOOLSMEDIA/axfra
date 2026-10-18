@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_pink_laceup_mini",
+  "name": "Pink Lace-Up Mini Dress",
+  "name_es": "Mini de encaje con cordón",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.laceup.mini",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "mini de straps, encaje, lace-up al frente",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "sandal de heel con strass",
+    "material": "leather",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "clutch de perlas",
+    "material": "pearl",
+    "color": "white"
+  },
+  "original_specification": {
+    "id": "look.pink.laceup.mini",
+    "name_es": "Mini de encaje con cordón",
+    "dress": {
+      "type": "mini de tirantes, encaje, cordón al frente",
+      "material": "encaje",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "sandalia de tacón con strass",
+      "material": "cuero",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "clutch de perlas",
+      "material": "perla",
+      "color": "blanco"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

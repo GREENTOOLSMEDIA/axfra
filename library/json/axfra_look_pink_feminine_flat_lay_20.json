@@ -1,0 +1,38 @@
+{
+  "id": "AXFRA_look_pink_feminine_flat_lay_20",
+  "name": "Burgundy corset top + matching mini skirt",
+  "name_es": "Burgundy corset top + matching mini skirt",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink_feminine_flat_lay_20",
+  "swap_rule": "Use the outfit ID; keep garment cuts and silhouettes unchanged when modifying material, thickness, transparency, pattern, or color.",
+  "notes": "Mostly pink collection with satin, lace, bows, pearls, metallics and casual/edgy combinations. Useful as outfit references for image generation or character adaptation.",
+  "collection": "Pink & Feminine Fashion Flat Lays",
+  "theme": "Dominant pink palette (blush, satin, metallic, fuchsia) with coquette, Y2K, gothic, casual and elegant mixes",
+  "source_declared_total_outfits": 53,
+  "source_provided_outfits": 20,
+  "suggested_use": "Base for AI prompts, moodboards or identity/outfit cores",
+  "style": "luxury casual",
+  "main_garment": "Burgundy corset top + matching mini skirt",
+  "key_items": [
+    "structured top",
+    "belted mini",
+    "Dior bag",
+    "Dior slingbacks",
+    "gold jewelry"
+  ],
+  "colors": [
+    "burgundy"
+  ],
+  "vibe": "chic monochrome",
+  "source_batch": "user_message_pink_feminine_flat_lays"
+}

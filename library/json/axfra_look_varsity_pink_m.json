@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_look_varsity_pink_m",
+  "name": "Pink Varsity Jacket with M Letter",
+  "name_es": "Varsity rosa con letra M",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.varsity.pink.m",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "preppy Y2K",
+  "outer": {
+    "type": "chaqueta varsity",
+    "material": "velvet and leather",
+    "color": "pink and white",
+    "detail": "letra M y 03"
+  },
+  "top": {
+    "type": "tank ribbed",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "mini falda",
+    "color": "pink"
+  },
+  "accessories": [
+    "gorra NY",
+    "bolso Jacquemus",
+    "zapatillas plataforma estrella"
+  ],
+  "original_specification": {
+    "id": "look.varsity.pink.m",
+    "name_es": "Varsity rosa con letra M",
+    "style": "preppy Y2K",
+    "outer": {
+      "type": "chaqueta varsity",
+      "material": "terciopelo + cuero",
+      "color": "rosa y blanco",
+      "detail": "letra M y 03"
+    },
+    "top": {
+      "type": "tank ribbed",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "mini falda",
+      "color": "rosa"
+    },
+    "accessories": [
+      "gorra NY",
+      "bolso Jacquemus",
+      "zapatillas plataforma estrella"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

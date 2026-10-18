@@ -1,0 +1,109 @@
+{
+  "id": "AXFRA_look_pink_leather_jacket_set",
+  "name": "Pink Leather Jacket, Tank and Mini",
+  "name_es": "Chaqueta, tank y mini de cuero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.leather.jacket.set",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "outer": {
+    "type": "chaqueta de cuero, cremalleras",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "top": {
+    "type": "tank de canalé",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "mini de cinco bolsillos",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "shoes": {
+    "type": "ankle boot pointed-toe y heel",
+    "material": "leather",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bolso con hebilla",
+    "material": "leather",
+    "color": "pink"
+  },
+  "original_specification": {
+    "id": "look.pink.leather.jacket.set",
+    "name_es": "Chaqueta, tank y mini de cuero",
+    "outer": {
+      "type": "chaqueta de cuero, cremalleras",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "tank de canalé",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "blanco",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "mini de cinco bolsillos",
+      "material": "cuero",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "shoes": {
+      "type": "botín de punta y tacón",
+      "material": "cuero",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bolso con hebilla",
+      "material": "cuero",
+      "color": "rosa"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

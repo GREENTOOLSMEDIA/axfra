@@ -1,0 +1,21 @@
+{
+  "id": "AXFRA_motion_dutch_angle_leveling_push_in",
+  "name": "Dutch Angle Leveling Push-In",
+  "name_es": "Ángulo holandés con enderezamiento y acercamiento",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "camera_movement",
+  "subject": "Central subject in a neutral or natural pose",
+  "camera": {
+    "start": "Strong 45-degree Dutch angle; horizon visibly diagonal and unstable",
+    "movement": "Slowly roll the camera to level the horizon while pushing in slightly toward the main element",
+    "finish": "Level horizon with subtle zoom-in"
+  },
+  "mood": "Moody, dynamic, tension-building suspense"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_pink_metallic_cowboy",
+  "name": "Pink Metallic Halter and Cowboy Shorts",
+  "name_es": "Halter metálico y short",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.pink.metallic.cowboy",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "halter de copas, bow al collar, belt de studs",
+    "material": "metal",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "short de cinco pockets, frayed hem, belt rhinestone",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white"
+  },
+  "shoes": {
+    "type": "bota cowboy",
+    "material": "metal",
+    "color": "silver"
+  },
+  "bag": {
+    "type": "bolso con fleco de strass",
+    "material": "rhinestones",
+    "color": "pink"
+  },
+  "original_specification": {
+    "id": "look.pink.metallic.cowboy",
+    "name_es": "Halter metálico y short",
+    "top": {
+      "type": "halter de copas, lazo al cuello, cinturón de tachas",
+      "material": "metal",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "short de cinco bolsillos, bajo deshilachado, cinturón de strass",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "blanco"
+    },
+    "shoes": {
+      "type": "bota cowboy",
+      "material": "metal",
+      "color": "plata"
+    },
+    "bag": {
+      "type": "bolso con fleco de strass",
+      "material": "strass",
+      "color": "rosa"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

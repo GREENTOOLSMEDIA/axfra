@@ -1,0 +1,51 @@
+{
+  "id": "AXFRA_look_velvet_corset_heart_bag",
+  "name": "Black velvet corset dress with pink lace",
+  "name_es": "Corset de terciopelo negro con detalles rosa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.velvet.corset.heart.bag",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "goth, elegant, romantic",
+  "dress": {
+    "type": "velvet corset mini with lace trim",
+    "material": "velvet",
+    "color": "black",
+    "finish": "con encaje rosa"
+  },
+  "accessories": [
+    "heart rhinestone bag",
+    "platform boots",
+    "heart jewelry"
+  ],
+  "source_image": "HQ6rFjwWYAA19o3",
+  "original_specification": {
+    "id": "look.velvet.corset.heart.bag",
+    "name_es": "Corset de terciopelo negro con detalles rosa",
+    "name_en": "Black velvet corset dress with pink lace",
+    "mood": "goth, elegant, romantic",
+    "dress": {
+      "type": "velvet corset mini with lace trim",
+      "material": "velvet",
+      "color": "negro",
+      "acabado": "con encaje rosa"
+    },
+    "accessories": [
+      "heart rhinestone bag",
+      "platform boots",
+      "heart jewelry"
+    ],
+    "source_image": "HQ6rFjwWYAA19o3"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

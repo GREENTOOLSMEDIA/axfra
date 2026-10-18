@@ -1,0 +1,53 @@
+{
+  "id": "AXFRA_look_pink_ruched_lace_mini",
+  "name": "Pink Ruched Lace Mini",
+  "name_es": "Mini rosa fruncido con encaje",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.pink.ruched.lace.mini",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "coquette night",
+  "dress": {
+    "type": "mini tirantes fruncido con lazos laterales",
+    "material": "stretch fabric and lace",
+    "thickness": "medium",
+    "transparency": "partial",
+    "color": "pink"
+  },
+  "accessories": [
+    "bolso cruz rosa",
+    "tacones",
+    "gafas",
+    "labial"
+  ],
+  "original_specification": {
+    "id": "look.pink.ruched.lace.mini",
+    "name_es": "Mini rosa fruncido con encaje",
+    "style": "coquette night",
+    "dress": {
+      "type": "mini tirantes fruncido con lazos laterales",
+      "material": "stretch + encaje",
+      "grosor": "media",
+      "transparencia": "parcial",
+      "color": "rosa"
+    },
+    "accessories": [
+      "bolso cruz rosa",
+      "tacones",
+      "gafas",
+      "labial"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

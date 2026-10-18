@@ -1,0 +1,53 @@
+{
+  "id": "AXFRA_look_tulle_corset_dress",
+  "name": "Pink corset dress with tulle skirt",
+  "name_es": "Vestido corset rosa con falda de tul",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.tulle.corset.dress",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "romantic, princess, coquette",
+  "dress": {
+    "type": "strapless corset with tulle mini skirt",
+    "material": "satin and tulle",
+    "thickness": "normal",
+    "transparency": "si (tulle)",
+    "color": "pink"
+  },
+  "accessories": [
+    "large bow",
+    "quilted bag",
+    "bow heels"
+  ],
+  "source_image": "HQ9SaAua4AANf7t",
+  "original_specification": {
+    "id": "look.tulle.corset.dress",
+    "name_es": "Vestido corset rosa con falda de tul",
+    "name_en": "Pink corset dress with tulle skirt",
+    "mood": "romantic, princess, coquette",
+    "dress": {
+      "type": "strapless corset with tulle mini skirt",
+      "material": "satin and tulle",
+      "grosor": "normal",
+      "transparencia": "si (tulle)",
+      "color": "rosa"
+    },
+    "accessories": [
+      "large bow",
+      "quilted bag",
+      "bow heels"
+    ],
+    "source_image": "HQ9SaAua4AANf7t"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

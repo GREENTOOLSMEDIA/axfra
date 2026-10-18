@@ -1,0 +1,25 @@
+{
+  "id": "AXFRA_motion_overhead_boom_down_half_orbit_zoom_out",
+  "name": "Overhead Boom Down, Half Orbit and Zoom Out",
+  "name_es": "Descenso cenital, media órbita y zoom de salida",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "type": "camera_movement",
+  "subject": "Main subject positioned below",
+  "camera": {
+    "start": "High overhead bird’s-eye view, pointing straight down",
+    "sequence": [
+      "Boom vertically downward toward the main subject",
+      "Transition into a smooth half-circle orbit while continuing to descend",
+      "End with a quick zoom out pulling away upward"
+    ],
+    "character": "Continuous, fluid motion combining descent and orbit with dramatic height changes"
+  },
+  "mood": "Epic, grand scale"
+}
