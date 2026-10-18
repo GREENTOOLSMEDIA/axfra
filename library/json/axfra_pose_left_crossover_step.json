@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_left_crossover_step",
+  "name": "Left Crossover Step",
+  "name_es": "Left Crossover Step",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Cruza pierna izquierda por delante de la derecha (paso cruzado).",
+  "source_index": 30
+}

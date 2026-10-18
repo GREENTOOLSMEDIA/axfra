@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_rear_three_quarter_low_squat",
+  "name": "Rear Three Quarter Low Squat",
+  "name_es": "Rear Three Quarter Low Squat",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto en cuclillas bajas. Pies separados, talones que pueden despegarse. Torso girado: la espalda y la cadera quedan hacia cámara. La cabeza rota por encima del hombro, mirada al lente. Una mano sobre el muslo delantero; la otra sobre la cadera o el glúteo. Rodillas abiertas.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás. Cuerpo entero. Cámara a altura de cadera o torso. Distancia media. Deben verse la rotación de la cabeza, ambas manos y los pies.",
+  "source_index": 93
+}

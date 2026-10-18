@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_high_angle_reclined_on_sofa",
+  "name": "High Angle Reclined On Sofa",
+  "name_es": "High Angle Reclined On Sofa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "\"Pose\": {\n\n\n\n\"Tipo\": \"reclinado en el sofá, vista de ángulo alto\",\n\n\n\n\"Cuerpo\": \"acostada de espaldas, el torso ligeramente diagonal sobre el sofá, las caderas giradas hacia la cámara\",\n\n\n\n\"Torso\": \"suagamente arqueado, un brazo levantado detrás de la cabeza\",\n\n\n\n\"Piernas\": \"ambas rodillas dobladas, piernas cruzadas en los muslos, pierna derecha sobre izquierda, pies hacia la parte inferior del marco\",\n\n\n\n\"Brazos\": {\n\n\n\n\"Derecha\": \"doblado, mano detrás de la cabeza / en el cabello\",\n\n\n\n\"Izquierda\": \"doblada, mano también cerca de la cabeza / cabello\"\n\n\n\n}\n\n\n\n\"Cabeza\": \"se volvió ligeramente hacia la cámara, descansando en el cojín del respaldo del sofá\",\n\n\n\n\"Expresión\": \"relajado, confiado, ojos en cámara\"\n\n\n\n}",
+  "source_index": 63
+}

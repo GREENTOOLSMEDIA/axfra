@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_final_scheme",
+  "name": "Final Scheme",
+  "name_es": "Final Scheme",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Final Scheme",
+  "source_index": 69
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_seated_asymmetric_leg_support",
+  "name": "Seated Asymmetric Leg Support",
+  "name_es": "Seated Asymmetric Leg Support",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto sentado en el suelo. Ambas manos plantadas detrás del cuerpo, brazos extendidos, sosteniendo el torso. Una pierna se pliega a un lado, rodilla en el piso, pie hacia afuera. La otra pierna se adelanta hacia cámara, rodilla suave, pie de frente. Torso erguido de frente. Cabeza al frente.\n\nÁNGULO DE CÁMARA\n\nFrontal, un poco por encima. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse las dos manos detrás y los dos pies.",
+  "source_index": 107
+}

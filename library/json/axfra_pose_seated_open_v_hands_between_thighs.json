@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_seated_open_v_hands_between_thighs",
+  "name": "Seated Open V Hands Between Thighs",
+  "name_es": "Seated Open V Hands Between Thighs",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "POSE\n\nSujeto sentado de frente. Rodillas abiertas, muslos en V. Torso erguido o con una inclinación mínima hacia adelante. Ambos brazos caen entre los muslos, manos juntas o casi juntas en el hueco del regazo. Hombros bajos, clavículas abiertas. Cabeza un poco girada, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nFrontal. Plano medio (mitad de muslo a cabeza). Cámara a la altura de la cara o del pecho, eje recto. Distancia corta-media. Se deben ver ambos muslos y los dos brazos enteros.",
+  "source_index": 84
+}

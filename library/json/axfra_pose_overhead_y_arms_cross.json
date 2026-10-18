@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_overhead_y_arms_cross",
+  "name": "Overhead Y Arms Cross",
+  "name_es": "Overhead Y Arms Cross",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Durante el giro: brazos suben en forma de “Y” y luego bajan cruzando el pecho (dramatic cross). (beat 10)",
+  "source_index": 42
+}

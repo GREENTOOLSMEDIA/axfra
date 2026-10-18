@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_seated_finger_to_lips_black_background",
+  "name": "Seated Finger To Lips Black Background",
+  "name_es": "Seated Finger To Lips Black Background",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "@type": "Pose",
+  "bodyPosition": "Seated on the floor with legs open. Left leg extended to the side, right leg bent with knee pointing outward. Torso facing camera with a slight lean.",
+  "legs": {
+    "leftLeg": "Extended to the side, slightly bent at the knee",
+    "rightLeg": "Bent, foot tucked closer to the body"
+  },
+  "torso": "Upright with a gentle S-curve. Shoulders relaxed.",
+  "arms": {
+    "rightArm": "Raised, hand near the face",
+    "leftArm": "Resting on the left thigh"
+  },
+  "hands": {
+    "rightHand": "Index finger touching or hovering near the lips",
+    "leftHand": "Resting on the inner thigh"
+  },
+  "head": "Tilted slightly, facing camera",
+  "expression": "Playful, lips slightly parted, finger near mouth",
+  "gaze": "Direct, seductive eye contact",
+  "source_id": "pose_03_black_bg_finger_to_lips",
+  "source_index": 55
+}

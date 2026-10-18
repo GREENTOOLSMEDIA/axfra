@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_heroic_ground_level_stance",
+  "name": "Heroic Ground-Level Stance",
+  "name_es": "Postura heroica a ras de suelo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "POSE\n\nSujeto de pie, de frente. Pies separados al ancho de los hombros, peso repartido. Brazos caen a los lados, manos en puño suave. Torso erguido, pecho abierto. Hombros anchos. Cabeza un poco alzada, mirada hacia adelante y arriba. Capa o prenda larga cae por detrás, no tapa el torso.\nÁNGULO DE CÁMARA\n* Posición: justo delante del sujeto, en el eje del cuerpo.\n* Altura del lente: por debajo de las rodillas, casi a ras de suelo.\n* El lente apunta hacia arriba (~40–60°).\n* Lo más cerca: botas y parte baja de las piernas.\n* Lo más lejos: cabeza y hombros, que quedan pequeños en el tercio superior.\n* El edificio o el fondo se lee por encima de la cabeza.\n* No a la altura de la cara. No picado. No perfil."
+}

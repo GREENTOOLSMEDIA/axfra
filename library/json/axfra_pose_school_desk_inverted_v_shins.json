@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_school_desk_inverted_v_shins",
+  "name": "School Desk — Inverted-V Shins",
+  "name_es": "Sentada en pupitre con tibias en V invertida",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho, sosteniendo un objeto fino. Mirada a cámara."
+}

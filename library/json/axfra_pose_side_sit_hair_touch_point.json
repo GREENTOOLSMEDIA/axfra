@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_side_sit_hair_touch_point",
+  "name": "Side Sit Hair Touch Point",
+  "name_es": "Side Sit Hair Touch Point",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "@type": "Pose",
+  "bodyPosition": "Seated on the floor with torso slightly twisted toward camera. Weight on the right hip and right thigh. Left leg folded underneath, right leg extended forward and slightly bent at the knee.",
+  "legs": {
+    "rightLeg": "Extended forward, knee softly bent, foot pointed and wearing black strappy high-heel sandal",
+    "leftLeg": "Folded under the body, knee pointing outward, foot also in black strappy high-heel sandal"
+  },
+  "torso": "Upright with a slight arch in the lower back. Shoulders relaxed and open.",
+  "arms": {
+    "leftArm": "Raised, hand running through long dark hair, elbow bent",
+    "rightArm": "Extended downward and slightly forward, index finger pointing toward the floor"
+  },
+  "hands": {
+    "leftHand": "Fingers loosely tangled in hair",
+    "rightHand": "Index finger extended, other fingers relaxed"
+  },
+  "head": "Turned toward camera, chin slightly down",
+  "expression": "Soft smile, lips parted, playful and inviting",
+  "gaze": "Direct eye contact with camera",
+  "source_id": "pose_01_side_sit_hair_flip",
+  "source_index": 56
+}

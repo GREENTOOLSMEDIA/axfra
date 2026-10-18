@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_playful_dynamic_pose",
+  "name": "Playful Dynamic Pose",
+  "name_es": "Playful Dynamic Pose",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "pose dinamica sexy y coqueta",
+  "source_index": 17
+}

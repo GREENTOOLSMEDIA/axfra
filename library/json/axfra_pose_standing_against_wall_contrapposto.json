@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_standing_against_wall_contrapposto",
+  "name": "Standing Against Wall Contrapposto",
+  "name_es": "Standing Against Wall Contrapposto",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "* Está de pie apoyada contra la pared, con el cuerpo ligeramente girado y la cadera bien marcada (contrapposto).\n\n* La pierna de apoyo está recta y la otra flexionada, con la rodilla adelantada, lo que acentúa las curvas.\n\n* Una mano (la izquierda) subida tocándose el pelo/sombrero de forma juguetona.\n\n* El otro brazo cae relajado a lo largo del cuerpo.\n\n* Cabeza ligeramente inclinada, mirada directa a cámara y sonrisa coqueta/provocativa.",
+  "source_index": 64
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_raised_arm_greeting",
+  "name": "Raised Arm Greeting",
+  "name_es": "Raised Arm Greeting",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "pose_description": "Standing with one arm raised gently as if signaling or acknowledging.",
+  "source_content": "Standing with one arm raised gently as if signaling or acknowledging."
+}

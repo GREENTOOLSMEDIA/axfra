@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_slow_body_roll",
+  "name": "Slow Body Roll",
+  "name_es": "Slow Body Roll",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Body roll lento y sensual: hombros → pecho → abdomen → cadera (baja la energía al final del roll). (beat 2)",
+  "source_index": 27
+}

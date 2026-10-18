@@ -1,0 +1,45 @@
+{
+  "id": "AXFRA_pose_seated_left_knee_raised_right_leg_extended",
+  "name": "Seated Pose with Raised Left Knee and Extended Right Leg",
+  "name_es": "Pose sentada con rodilla izquierda elevada y pierna derecha extendida",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose_and_framing",
+  "pose_and_framing_block": {
+    "base": "Seated on both sit bones, with slight posterior pelvic tilt and slight rotation toward the subject's right. Weight distributed across the pelvis, with no weight borne by the feet.",
+    "left_leg": "Marked hip and knee flexion (approximately 90–100 degrees). Thigh raised, shin nearly vertical; left foot planted flat on the ground in front of the torso, toes pointing forward.",
+    "right_leg": "Extended toward the subject's right and slightly forward. Hip slightly to moderately flexed, knee slightly bent; right foot resting on its outer edge with the sole partially visible and toes pointing outward.",
+    "torso": "Upright, with slight lateral lean toward the subject's right and slight torsion.",
+    "shoulders": "Right shoulder lower and relaxed; left shoulder slightly advanced.",
+    "right_arm": "Hanging beside the torso, elbow nearly fully extended with slight flexion. Right hand supported near the ground beside the right hip, fingers relaxed.",
+    "left_arm": "Crosses toward the left leg, elbow moderately flexed, forearm resting across the thigh. Left hand resting on the left shin with fingers extended toward the ankle.",
+    "head": "Facing forward, with a slight turn and lateral tilt toward the subject's right."
+  },
+  "camera_and_style_block": {
+    "camera_position": "Front three-quarter view from the subject's left side.",
+    "lens_height": "Slightly above eye level, with a gentle downward camera angle.",
+    "nearest_elements": [
+      "Right foot in the foreground",
+      "Planted left foot"
+    ],
+    "farthest_elements": [
+      "Back",
+      "Right shoulder",
+      "Crown of the head"
+    ],
+    "framing": "Full body, from the crown of the head to both feet.",
+    "restrictions": [
+      "No low-angle view",
+      "No pure side profile",
+      "No rear view"
+    ]
+  }
+}
