@@ -127,6 +127,17 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 @media(max-width:600px){.library-main{display:block}.sidebar{max-height:340px}.catalog{max-height:350px}.work{height:700px}}
 /* Título accesible sin alterar el panel de trabajo */
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* Header AXFRA: apariencia unificada y protegida frente a estilos del editor */
+.site-header{height:70px;min-height:70px;background:#000;border-bottom:1px solid #2c3434;position:relative;z-index:100;color:#e9eceb;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.site-header .wrap.header-inner{width:100%;max-width:none;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-header .brand{display:inline-flex;flex-direction:column;flex-shrink:0;align-items:flex-start;justify-content:center;text-decoration:none!important;color:#f0f1f0!important;font-family:inherit!important;font-size:25px!important;font-weight:800!important;letter-spacing:.11em;line-height:1.05!important}
+.site-header .brand small{display:block;margin-top:6px;font-family:inherit!important;color:#b6c6c1!important;font-size:8px!important;font-weight:700!important;letter-spacing:.29em;line-height:1.2!important}
+.site-header .nav{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:clamp(12px,2.1vw,29px);font-family:inherit!important}
+.site-header .nav a{font-family:inherit!important;font-size:13px!important;font-weight:400!important;color:#b7bfc0!important;line-height:1.4!important;text-decoration:none!important;white-space:nowrap}
+.site-header .nav a:hover,.site-header .nav a[aria-current="page"]{color:#fff!important}
+.site-header .nav a[aria-current="page"]{font-weight:700!important}
+@media(max-width:850px){.site-header{height:auto;min-height:70px}.site-header .wrap.header-inner{padding:15px 20px;flex-wrap:wrap;row-gap:14px}.site-header .nav{justify-content:flex-start;gap:12px 20px}.library-main{height:auto!important}}
 </style>
 </head>
 <body>
