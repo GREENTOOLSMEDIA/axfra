@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_look_midi_pink_cardigan",
+  "name": "Pink Midi Dress with Cream Cardigan",
+  "name_es": "Vestido midi rosa + cardigan crema",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.midi.pink.cardigan",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "elegante casual",
+  "dress": {
+    "type": "midi bodycon tirantes",
+    "material": "satin stretch",
+    "thickness": "medium",
+    "transparency": "no",
+    "color": "dusty pink"
+  },
+  "outer": {
+    "type": "cardigan cropped ribbed",
+    "material": "knit",
+    "thickness": "thin",
+    "color": "cream"
+  },
+  "accessories": [
+    "bolso Jacquemus",
+    "sandalias rosa",
+    "gafas",
+    "perlas"
+  ],
+  "original_specification": {
+    "id": "look.midi.pink.cardigan",
+    "name_es": "Vestido midi rosa + cardigan crema",
+    "style": "elegante casual",
+    "dress": {
+      "type": "midi bodycon tirantes",
+      "material": "stretch satinado",
+      "grosor": "media",
+      "transparencia": "no",
+      "color": "rosa palo"
+    },
+    "outer": {
+      "type": "cardigan cropped ribbed",
+      "material": "punto",
+      "grosor": "fina",
+      "color": "crema"
+    },
+    "accessories": [
+      "bolso Jacquemus",
+      "sandalias rosa",
+      "gafas",
+      "perlas"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

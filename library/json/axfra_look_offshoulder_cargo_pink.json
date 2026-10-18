@@ -1,0 +1,71 @@
+{
+  "id": "AXFRA_look_offshoulder_cargo_pink",
+  "name": "Pink Off-Shoulder Top and Cargo Pants",
+  "name_es": "Top off-shoulder gráfico + cargo rosa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.offshoulder.cargo.pink",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "Y2K / street",
+  "top": {
+    "type": "off-shoulder long-sleeve gráfico",
+    "material": "knit",
+    "thickness": "medium",
+    "transparency": "no",
+    "pattern": "alas + estrella 'DEATHWISH'",
+    "color": "black"
+  },
+  "bottom": {
+    "type": "cargo wide-leg",
+    "material": "velvet",
+    "thickness": "medium",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "accessories": [
+    "cinturón tachuelas + cadena",
+    "gorra 'BROKEN PROMISES'",
+    "bolso negro tachuelas",
+    "zapatillas estrellas",
+    "maleta negra"
+  ],
+  "original_specification": {
+    "id": "look.offshoulder.cargo.pink",
+    "name_es": "Top off-shoulder gráfico + cargo rosa",
+    "style": "Y2K / street",
+    "top": {
+      "type": "off-shoulder manga larga gráfico",
+      "material": "punto",
+      "grosor": "media",
+      "transparencia": "no",
+      "estampado": "alas + estrella 'DEATHWISH'",
+      "color": "negro"
+    },
+    "bottom": {
+      "type": "cargo wide-leg",
+      "material": "terciopelo",
+      "grosor": "media",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "accessories": [
+      "cinturón tachuelas + cadena",
+      "gorra 'BROKEN PROMISES'",
+      "bolso negro tachuelas",
+      "zapatillas estrellas",
+      "maleta negra"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

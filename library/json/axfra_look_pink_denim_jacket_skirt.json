@@ -1,0 +1,67 @@
+{
+  "id": "AXFRA_look_pink_denim_jacket_skirt",
+  "name": "Pink denim jacket and skirt with monogram tank",
+  "name_es": "Chaqueta y falda de denim rosa con tank monograma",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink.denim.jacket.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "casual, preppy, soft",
+  "outer": {
+    "type": "cropped pink denim jacket",
+    "material": "denim",
+    "color": "pink"
+  },
+  "top": {
+    "type": "white tank with rhinestone monogram",
+    "material": "knit",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "pink denim mini skirt",
+    "material": "denim",
+    "color": "pink"
+  },
+  "accessories": [
+    "rhinestone belt",
+    "star sneakers"
+  ],
+  "source_image": "HQ_zTvlW4AA1BrT",
+  "original_specification": {
+    "id": "look.pink.denim.jacket.skirt",
+    "name_es": "Chaqueta y falda de denim rosa con tank monograma",
+    "name_en": "Pink denim jacket and skirt with monogram tank",
+    "mood": "casual, preppy, soft",
+    "outer": {
+      "type": "cropped pink denim jacket",
+      "material": "denim",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "white tank with rhinestone monogram",
+      "material": "punto",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "pink denim mini skirt",
+      "material": "denim",
+      "color": "rosa"
+    },
+    "accessories": [
+      "rhinestone belt",
+      "star sneakers"
+    ],
+    "source_image": "HQ_zTvlW4AA1BrT"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

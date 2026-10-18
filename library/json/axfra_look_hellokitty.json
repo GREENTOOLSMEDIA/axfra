@@ -1,0 +1,95 @@
+{
+  "id": "AXFRA_look_hellokitty",
+  "name": "Pink Graphic Tee and Pleated Mini",
+  "name_es": "Tee rosa y mini plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.hellokitty",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "tee de short-sleeve, escote con encaje, bow, gráfico al frente",
+    "material": "knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink",
+    "logo": "AXFRA"
+  },
+  "bottom": {
+    "type": "mini plisada, bajo de encaje, cadena con charms",
+    "material": "cotton",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "ivory"
+  },
+  "shoes": {
+    "type": "mary jane de plataforma, cara en la punta",
+    "material": "leather",
+    "color": "pink"
+  },
+  "bag": {
+    "type": "bolso con lazo",
+    "material": "leather",
+    "color": "pink"
+  },
+  "original_specification": {
+    "id": "look.hellokitty",
+    "name_es": "Tee rosa y mini plisada",
+    "top": {
+      "type": "tee de manga corta, escote con encaje, lazo, gráfico al frente",
+      "material": "punto",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "rosa",
+      "logo": "AXFRA"
+    },
+    "bottom": {
+      "type": "mini plisada, bajo de encaje, cadena con charms",
+      "material": "algodon",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "marfil"
+    },
+    "shoes": {
+      "type": "mary jane de plataforma, cara en la punta",
+      "material": "cuero",
+      "color": "rosa"
+    },
+    "bag": {
+      "type": "bolso con lazo",
+      "material": "cuero",
+      "color": "rosa"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

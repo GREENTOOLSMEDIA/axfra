@@ -1,0 +1,75 @@
+{
+  "id": "AXFRA_look_hello_kitty_mesh_set",
+  "name": "Pink Hello Kitty mesh set",
+  "name_es": "Conjunto de malla Hello Kitty rosa",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.hello.kitty.mesh.set",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "cute, y2k, playful",
+  "top": {
+    "type": "halter mesh tank",
+    "material": "mesh",
+    "transparency": "yes",
+    "color": "pink",
+    "pattern": "Hello Kitty rhinestone"
+  },
+  "bottom": {
+    "type": "mesh mini skirt",
+    "material": "mesh",
+    "transparency": "yes",
+    "color": "pink",
+    "pattern": "Hello Kitty"
+  },
+  "underwear": {
+    "type": "matching thong",
+    "material": "mesh",
+    "color": "pink"
+  },
+  "accessories": [
+    "Hello Kitty bag",
+    "rhinestone necklace"
+  ],
+  "source_image": "HQ8i392WgAAr2nO",
+  "original_specification": {
+    "id": "look.hello.kitty.mesh.set",
+    "name_es": "Conjunto de malla Hello Kitty rosa",
+    "name_en": "Pink Hello Kitty mesh set",
+    "mood": "cute, y2k, playful",
+    "top": {
+      "type": "halter mesh tank",
+      "material": "mesh",
+      "transparencia": "si",
+      "color": "rosa",
+      "estampado": "Hello Kitty rhinestone"
+    },
+    "bottom": {
+      "type": "mesh mini skirt",
+      "material": "mesh",
+      "transparencia": "si",
+      "color": "rosa",
+      "estampado": "Hello Kitty"
+    },
+    "underwear": {
+      "type": "matching thong",
+      "material": "mesh",
+      "color": "rosa"
+    },
+    "accessories": [
+      "Hello Kitty bag",
+      "rhinestone necklace"
+    ],
+    "source_image": "HQ8i392WgAAr2nO"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

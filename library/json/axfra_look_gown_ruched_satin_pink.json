@@ -1,0 +1,51 @@
+{
+  "id": "AXFRA_look_gown_ruched_satin_pink",
+  "name": "Pink ruched satin maxi gown with lace-up back",
+  "name_es": "Vestido largo rosa drapeado con cordones",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.gown.ruched.satin.pink",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "elegant, romantic, evening",
+  "dress": {
+    "type": "spaghetti strap ruched maxi gown",
+    "material": "satin",
+    "color": "rosa polvo",
+    "finish": "drapeado"
+  },
+  "accessories": [
+    "pearl heels",
+    "clutch",
+    "pearl jewelry"
+  ],
+  "source_image": "HQ_zhvKWcAAI3lA",
+  "original_specification": {
+    "id": "look.gown.ruched.satin.pink",
+    "name_es": "Vestido largo rosa drapeado con cordones",
+    "name_en": "Pink ruched satin maxi gown with lace-up back",
+    "mood": "elegant, romantic, evening",
+    "dress": {
+      "type": "spaghetti strap ruched maxi gown",
+      "material": "satin",
+      "color": "rosa polvo",
+      "acabado": "drapeado"
+    },
+    "accessories": [
+      "pearl heels",
+      "clutch",
+      "pearl jewelry"
+    ],
+    "source_image": "HQ_zhvKWcAAI3lA"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

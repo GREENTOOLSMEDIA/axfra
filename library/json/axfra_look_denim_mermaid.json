@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_denim_mermaid",
+  "name": "Denim Mermaid Gown",
+  "name_es": "Vestido denim de sirena",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.denim.mermaid",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "strapless, corset, falda entallada, abertura frontal, bajo deshilachado",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "indigo"
+  },
+  "shoes": {
+    "type": "sandal de heel",
+    "material": "metal",
+    "color": "silver"
+  },
+  "bag": {
+    "type": "clutch",
+    "material": "rhinestones",
+    "color": "black"
+  },
+  "original_specification": {
+    "id": "look.denim.mermaid",
+    "name_es": "Vestido denim de sirena",
+    "dress": {
+      "type": "strapless, corset, falda entallada, abertura frontal, bajo deshilachado",
+      "material": "denim",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "índigo"
+    },
+    "shoes": {
+      "type": "sandalia de tacón",
+      "material": "metal",
+      "color": "plata"
+    },
+    "bag": {
+      "type": "clutch",
+      "material": "strass",
+      "color": "negro"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

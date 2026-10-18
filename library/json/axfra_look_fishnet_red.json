@@ -1,0 +1,93 @@
+{
+  "id": "AXFRA_look_fishnet_red",
+  "name": "White Mesh and Red Pleated Mini",
+  "name_es": "Malla y mini plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.fishnet.red",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "malla de manga larga sobre top",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "mini plisada, dos hebillas",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red"
+  },
+  "shoes": {
+    "type": "sandal de heel",
+    "material": "leather",
+    "color": "red"
+  },
+  "bag": {
+    "type": "hobo de hebilla",
+    "material": "leather",
+    "color": "red"
+  },
+  "original_specification": {
+    "id": "look.fishnet.red",
+    "name_es": "Malla y mini plisada",
+    "top": {
+      "type": "malla de manga larga sobre top",
+      "material": "malla",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "mini plisada, dos hebillas",
+      "material": "punto",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rojo"
+    },
+    "shoes": {
+      "type": "sandalia de tacón",
+      "material": "cuero",
+      "color": "rojo"
+    },
+    "bag": {
+      "type": "hobo de hebilla",
+      "material": "cuero",
+      "color": "rojo"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

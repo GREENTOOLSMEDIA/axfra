@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_look_gym_pink_full",
+  "name": "Full Pink Gym Set",
+  "name_es": "Set gym rosa completo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.gym.pink.full",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "athletic",
+  "top": {
+    "type": "sports bra + jacket cropped",
+    "material": "stretch fabric",
+    "thickness": "medium",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "leggings high-waist",
+    "material": "stretch fabric",
+    "thickness": "medium",
+    "color": "pink"
+  },
+  "accessories": [
+    "bolso acolchado",
+    "auriculares",
+    "zapatillas Adidas",
+    "toalla + botella"
+  ],
+  "original_specification": {
+    "id": "look.gym.pink.full",
+    "name_es": "Set gym rosa completo",
+    "style": "athletic",
+    "top": {
+      "type": "sports bra + jacket cropped",
+      "material": "stretch",
+      "grosor": "media",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "leggings high-waist",
+      "material": "stretch",
+      "grosor": "media",
+      "color": "rosa"
+    },
+    "accessories": [
+      "bolso acolchado",
+      "auriculares",
+      "zapatillas Adidas",
+      "toalla + botella"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_look_black_satin_gown",
+  "name": "Black Satin Evening Gown",
+  "name_es": "Vestido largo de satén",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.black.satin.gown",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "dress": {
+    "type": "strapless, corset de encaje, falda drapeada, abertura y bajo de encaje",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "black"
+  },
+  "shoes": {
+    "type": "sandal de heel, tira rhinestone",
+    "material": "satin",
+    "color": "black"
+  },
+  "bag": {
+    "type": "clutch con broche",
+    "material": "satin",
+    "color": "black"
+  },
+  "original_specification": {
+    "id": "look.black.satin.gown",
+    "name_es": "Vestido largo de satén",
+    "dress": {
+      "type": "strapless, corset de encaje, falda drapeada, abertura y bajo de encaje",
+      "material": "satin",
+      "grosor": "delgada",
+      "transparencia": "no",
+      "color": "negro"
+    },
+    "shoes": {
+      "type": "sandalia de tacón, tira de strass",
+      "material": "satin",
+      "color": "negro"
+    },
+    "bag": {
+      "type": "clutch con broche",
+      "material": "satin",
+      "color": "negro"
+    }
+  },
+  "source_batch": "Texto pegado(2).txt"
+}

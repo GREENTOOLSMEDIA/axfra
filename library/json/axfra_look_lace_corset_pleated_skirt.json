@@ -1,0 +1,69 @@
+{
+  "id": "AXFRA_look_lace_corset_pleated_skirt",
+  "name": "Pink lace corset with pleated mini skirt",
+  "name_es": "Corset de encaje rosa con falda plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.lace.corset.pleated.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "coquette, preppy, feminine",
+  "top": {
+    "type": "strapless lace corset with ruffles and bow",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": "yes",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "pleated mini skirt with lace hem",
+    "material": "satin",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink"
+  },
+  "accessories": [
+    "studded bag",
+    "cross jewelry",
+    "rhinestone belt",
+    "bow mules"
+  ],
+  "source_image": "HQ9XMFmakAARpNI",
+  "original_specification": {
+    "id": "look.lace.corset.pleated.skirt",
+    "name_es": "Corset de encaje rosa con falda plisada",
+    "name_en": "Pink lace corset with pleated mini skirt",
+    "mood": "coquette, preppy, feminine",
+    "top": {
+      "type": "strapless lace corset with ruffles and bow",
+      "material": "lace",
+      "grosor": "delgada",
+      "transparencia": "si",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "pleated mini skirt with lace hem",
+      "material": "satin",
+      "grosor": "normal",
+      "transparencia": "no",
+      "color": "rosa"
+    },
+    "accessories": [
+      "studded bag",
+      "cross jewelry",
+      "rhinestone belt",
+      "bow mules"
+    ],
+    "source_image": "HQ9XMFmakAARpNI"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

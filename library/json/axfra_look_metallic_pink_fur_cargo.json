@@ -1,0 +1,67 @@
+{
+  "id": "AXFRA_look_metallic_pink_fur_cargo",
+  "name": "Pink fur jacket with metallic bra top and silver cargo skirt",
+  "name_es": "Chaqueta de pelo rosa con top metálico y falda cargo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.metallic.pink.fur.cargo",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "futuristic, y2k, glam rock",
+  "outer": {
+    "type": "cropped pink faux fur jacket",
+    "material": "faux fur",
+    "color": "pink"
+  },
+  "top": {
+    "type": "metallic pink bra top with studs",
+    "material": "metallic",
+    "color": "pink"
+  },
+  "bottom": {
+    "type": "silver metallic cargo mini skirt",
+    "material": "metallic",
+    "color": "silver"
+  },
+  "accessories": [
+    "pink metallic bag",
+    "platform boots"
+  ],
+  "source_image": "HQ-bB1CXsAE4JKi",
+  "original_specification": {
+    "id": "look.metallic.pink.fur.cargo",
+    "name_es": "Chaqueta de pelo rosa con top metálico y falda cargo",
+    "name_en": "Pink fur jacket with metallic bra top and silver cargo skirt",
+    "mood": "futuristic, y2k, glam rock",
+    "outer": {
+      "type": "cropped pink faux fur jacket",
+      "material": "faux fur",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "metallic pink bra top with studs",
+      "material": "metallic",
+      "color": "rosa"
+    },
+    "bottom": {
+      "type": "silver metallic cargo mini skirt",
+      "material": "metallic",
+      "color": "plata"
+    },
+    "accessories": [
+      "pink metallic bag",
+      "platform boots"
+    ],
+    "source_image": "HQ-bB1CXsAE4JKi"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

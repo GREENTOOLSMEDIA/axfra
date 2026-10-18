@@ -1,0 +1,57 @@
+{
+  "id": "AXFRA_look_offshoulder_ribbed_jeans",
+  "name": "Black off-shoulder ribbed top with wide jeans",
+  "name_es": "Top off-shoulder negro con jeans anchos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.offshoulder.ribbed.jeans",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "casual chic, dark",
+  "top": {
+    "type": "off-shoulder long-sleeve ribbed top",
+    "material": "knit",
+    "color": "black"
+  },
+  "bottom": {
+    "type": "wide-leg jeans",
+    "material": "denim",
+    "color": "dark blue"
+  },
+  "accessories": [
+    "patent bag",
+    "slingback heels"
+  ],
+  "source_image": "HQ9aVT-aMAAGmBa",
+  "original_specification": {
+    "id": "look.offshoulder.ribbed.jeans",
+    "name_es": "Top off-shoulder negro con jeans anchos",
+    "name_en": "Black off-shoulder ribbed top with wide jeans",
+    "mood": "casual chic, dark",
+    "top": {
+      "type": "off-shoulder long-sleeve ribbed top",
+      "material": "punto",
+      "color": "negro"
+    },
+    "bottom": {
+      "type": "wide-leg jeans",
+      "material": "denim",
+      "color": "azul oscuro"
+    },
+    "accessories": [
+      "patent bag",
+      "slingback heels"
+    ],
+    "source_image": "HQ9aVT-aMAAGmBa"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

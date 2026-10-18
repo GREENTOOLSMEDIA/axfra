@@ -1,0 +1,69 @@
+{
+  "id": "AXFRA_look_pink_bomber_cargo",
+  "name": "Pink bomber jacket with cargo pants",
+  "name_es": "Bomber rosa con pantalones cargo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.pink.bomber.cargo",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "street, casual, y2k",
+  "outer": {
+    "type": "cropped bomber jacket",
+    "material": "nylon or satin",
+    "color": "pink"
+  },
+  "top": {
+    "type": "white ribbed tank",
+    "material": "knit",
+    "color": "white"
+  },
+  "bottom": {
+    "type": "wide cargo pants",
+    "material": "nylon or cotton",
+    "color": "pink"
+  },
+  "accessories": [
+    "cross necklace",
+    "sneakers",
+    "shoulder bag"
+  ],
+  "source_image": "HQ_-199WoAABmP5",
+  "original_specification": {
+    "id": "look.pink.bomber.cargo",
+    "name_es": "Bomber rosa con pantalones cargo",
+    "name_en": "Pink bomber jacket with cargo pants",
+    "mood": "street, casual, y2k",
+    "outer": {
+      "type": "cropped bomber jacket",
+      "material": "nylon or satin",
+      "color": "rosa"
+    },
+    "top": {
+      "type": "white ribbed tank",
+      "material": "punto",
+      "color": "blanco"
+    },
+    "bottom": {
+      "type": "wide cargo pants",
+      "material": "nylon or cotton",
+      "color": "rosa"
+    },
+    "accessories": [
+      "cross necklace",
+      "sneakers",
+      "shoulder bag"
+    ],
+    "source_image": "HQ_-199WoAABmP5"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}
