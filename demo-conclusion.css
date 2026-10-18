@@ -1,0 +1,13 @@
+/* AXFRA · conclusión unificada; no altera las escenas */
+.axfra-demo-ending{background:#151515!important;border-top:1px solid #303030!important;padding:80px 0!important;color:#dedede;text-align:center!important}
+.axfra-demo-ending>.wrap, .axfra-demo-ending .wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.axfra-demo-ending .eyebrow,.axfra-demo-ending .overline,.axfra-demo-ending .scene-meta{color:#b8d4c8!important;font-size:11px!important;text-transform:uppercase;letter-spacing:.17em;font-weight:800}
+.axfra-demo-ending h2{max-width:900px;margin:12px auto 20px!important;color:#f4f4f4;font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.04em}
+.axfra-demo-ending p{max-width:780px;margin:0 auto 22px!important;color:#c9cecc!important}
+.axfra-demo-links{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;width:min(760px,calc(100% - 28px));margin:28px auto 0}
+.axfra-demo-link{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:47px;flex:1 1 170px;padding:12px 16px;border:1px solid #85958f;border-radius:0;background:transparent;color:#f3f3f3!important;text-decoration:none!important;font:800 12px/1.3 Inter,system-ui,-apple-system,Arial,sans-serif;letter-spacing:.05em;transition:background .15s,color .15s}
+.axfra-demo-link:hover,.axfra-demo-link:focus-visible{background:#2c3934;color:#fff!important}
+.axfra-demo-link-primary{background:#b8d4c8;border-color:#b8d4c8;color:#101512!important}
+.axfra-demo-link-primary:hover,.axfra-demo-link-primary:focus-visible{background:transparent;color:#b8d4c8!important}
+.axfra-demo-link span{margin-left:6px}
+@media(max-width:500px){.axfra-demo-ending{padding:58px 0!important}.axfra-demo-links{flex-direction:column}.axfra-demo-link{flex-basis:auto}}
