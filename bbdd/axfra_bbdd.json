@@ -4113,5 +4113,89 @@
         "path": "images/identity/axfra_mira_profile.jpg"
       }
     ]
+  },
+  {
+    "id": 230,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_02_identity_core.jpg",
+    "current": "axfra_conde_alarsi_02_identity_core.jpg",
+    "proposed": "axfra_conde_alarsi_02_identity_core.jpg",
+    "description": "Retrato de cuerpo entero del Conde Alarsi con traje gris oscuro y fondo de estudio.",
+    "alt": "Conde Alarsi de pie con traje formal en estudio gris.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 231,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_03_casual_axion_frame_69.jpg",
+    "current": "axfra_conde_alarsi_03_casual_axion_frame_69.jpg",
+    "proposed": "axfra_conde_alarsi_03_casual_axion_frame_69.jpg",
+    "description": "El Conde Alarsi viste polera vintage negra AXION FRAME 69, jeans y zapatillas rojas; sonríe con colmillos y hace el gesto de victoria.",
+    "alt": "Conde Alarsi con polera AXION FRAME 69, sonrisa y gesto de victoria.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 232,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_04_piscina.jpg",
+    "current": "axfra_conde_alarsi_04_piscina.jpg",
+    "proposed": "axfra_conde_alarsi_04_piscina.jpg",
+    "description": "Conde Alarsi junto a dos mujeres en una piscina tropical, en una composición grupal alegre.",
+    "alt": "Conde Alarsi abrazando a dos mujeres dentro de una piscina tropical.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 233,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_05_concierto_catedral.jpg",
+    "current": "axfra_conde_alarsi_05_concierto_catedral.jpg",
+    "proposed": "axfra_conde_alarsi_05_concierto_catedral.jpg",
+    "description": "Conde Alarsi interpreta rock junto a dos músicas en una catedral gótica, frente a un vitral AXFRA.",
+    "alt": "Conde Alarsi canta con dos músicas bajo el vitral AXFRA de una catedral gótica.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 234,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_06_playa_selfie.jpg",
+    "current": "axfra_conde_alarsi_06_playa_selfie.jpg",
+    "proposed": "axfra_conde_alarsi_06_playa_selfie.jpg",
+    "description": "Mira toma una selfie en primer plano con Conde Alarsi y el grupo de identidades AXFRA al fondo en la playa.",
+    "alt": "Mira se fotografía con Conde Alarsi y otras identidades AXFRA en la playa.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 235,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_07_playa_selfie_grupal.jpg",
+    "current": "axfra_conde_alarsi_07_playa_selfie_grupal.jpg",
+    "proposed": "axfra_conde_alarsi_07_playa_selfie_grupal.jpg",
+    "description": "Conde Alarsi toma una selfie grupal en la playa, frente a un Mustang convertible rojo de 1970.",
+    "alt": "Conde Alarsi y el grupo posan para una selfie con un Mustang rojo convertible.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
+  },
+  {
+    "id": 236,
+    "group": "Conde Alarsi — Demo",
+    "path": "images/homegallery/axfra_conde_alarsi_08_playa_banda_convertible.jpg",
+    "current": "axfra_conde_alarsi_08_playa_banda_convertible.jpg",
+    "proposed": "axfra_conde_alarsi_08_playa_banda_convertible.jpg",
+    "description": "Paulina Dots, Conde Alarsi y Paulina Dots posan con instrumentos musicales junto a un Mustang convertible rojo de 1970 en la playa de Maitencillo.",
+    "alt": "Tres integrantes de una banda junto a un Mustang rojo convertible en la playa.",
+    "reviewed": true,
+    "character": "Conde Alarsi",
+    "source": "Imagen enlazada en https://axfra.com/demos/axfra_conde_alarsi_demo.html"
   }
 ]
