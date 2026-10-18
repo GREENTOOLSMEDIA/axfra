@@ -2,9 +2,47 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AXFRA JSON Library | Biblioteca modular</title>
+<title>Librería JSON AXFRA | Módulos para composición visual con IA</title>
 <link rel="canonical" href="https://axfra.com/library/">
-<meta name="description" content="Explora los módulos JSON de AXFRA, consulta sus categorías y prepara composiciones de prueba en un editor local.">
+<meta name="description" content="Explora la librería JSON de AXFRA: identidades, vestuario, poses, escenarios, cámara, iluminación y estilos. Consulta, edita y combina módulos para creación visual con IA.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="ALARSI">
+<meta name="theme-color" content="#090909">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="AXFRA — Axion Frame Tools">
+<meta property="og:title" content="Librería JSON AXFRA | Módulos de composición visual">
+<meta property="og:description" content="Biblioteca modular JSON para explorar, adaptar y combinar componentes visuales con IA.">
+<meta property="og:url" content="https://axfra.com/library/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Librería JSON AXFRA">
+<meta name="twitter:description" content="Componentes JSON reutilizables para composición visual con IA.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://axfra.com/library/#collection",
+  "url": "https://axfra.com/library/",
+  "name": "Librería JSON AXFRA",
+  "description": "Biblioteca de módulos JSON reutilizables para estructurar identidades, apariencia, vestuario, poses, entornos, iluminación, cámara y estilos visuales con IA.",
+  "inLanguage": "es-CL",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://axfra.com/#website",
+    "url": "https://axfra.com/",
+    "name": "AXFRA — Axion Frame Tools",
+    "publisher": {"@id": "https://axfra.com/#organization"}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://axfra.com/#organization",
+    "name": "AXFRA",
+    "url": "https://axfra.com/",
+    "founder": {"@type": "Person", "name": "ALARSI", "url": "https://alarsi.com"}
+  },
+  "about": ["JSON modular", "Composición visual con inteligencia artificial", "Instrucciones estructuradas para imágenes"]
+}
+</script>
 <link rel="stylesheet" href="/shared-layout.css">
 <style>
 :root{color-scheme:dark;--bg:#090909;--panel:#151515;--line:#303030;--muted:#a8a8a8;--red:#da1e2c;--text:#f4f4f4}
@@ -55,7 +93,7 @@
 .hint{font-size:12px;color:#999}
 @media(max-width:900px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto}.sidebar{grid-row:1/3}.catalog{height:330px}.work{height:700px;grid-column:2}}
 @media(max-width:600px){.library-main{display:block}.sidebar,.catalog,.work{height:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line)}.sidebar{max-height:230px}.catalog{max-height:270px}.work{height:660px}.editor{min-height:260px}.item:hover .thumb{transform:scale(1.3)}}
-html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 .library-main{width:100%;max-width:100%;min-width:0;min-height:650px;height:calc(100vh - 84px);overflow:hidden}
 .library-main .sidebar,.library-main .catalog,.library-main .work{min-width:0;max-width:100%}
 
@@ -87,11 +125,33 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Int
 @media(max-width:1000px){.library-main{grid-template-columns:175px 255px minmax(0,1fr)}}
 @media(max-width:800px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto;overflow:visible}.sidebar{grid-row:1/3}.catalog{height:370px}.work{grid-column:2;height:700px}}
 @media(max-width:600px){.library-main{display:block}.sidebar{max-height:340px}.catalog{max-height:350px}.work{height:700px}}
+/* Título accesible sin alterar el panel de trabajo */
+.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<div id="globalHeader"></div>
+<!-- Cabecera AXFRA consistente con las páginas del sitio. -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="https://axfra.com/" aria-label="AXFRA, inicio">
+      AXFRA<small>AXION FRAME TOOLS</small>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="/index.html#estudios">Estudios</a>
+      <a href="/index.html#metodo">Método</a>
+      <a href="/index.html#archivo">Áreas</a>
+      <a href="/identities.html">Identidades</a>
+      <a href="/demos/">Demos</a>
+      <a href="/library/" aria-current="page">Librería</a>
+      <a href="/glossary.html">Glosario</a>
+      <a href="/index.html#proyecto">Proyecto</a>
+    </nav>
+  </div>
+</header>
+<!-- Compatibilidad con el cargador compartido: conserva únicamente el footer dinámico. -->
+<div id="globalHeader" hidden aria-hidden="true"></div>
+<h1 class="visually-hidden">Librería JSON de AXFRA: módulos de composición visual con IA</h1>
 <main class="library-main" id="contenido">
 <aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary">Conectando…</div><nav id="categories"></nav><p class="hint">Catálogo automático · JSON originales intactos.</p></aside>
 <section class="catalog"><h2>Componentes</h2><input id="search" class="search" type="search" placeholder="Buscar nombre, ID o archivo…" aria-label="Buscar módulos"><div id="loading">Cargando biblioteca…</div><div id="items"></div></section>
