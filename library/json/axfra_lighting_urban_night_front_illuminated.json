@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.urban_night_front_illuminated",
+  "name_es": "Noche urbana con rostro iluminado",
+  "name_en": "Front-Lit Urban Night",
+  "style": "cinematic_editorial",
+  "light_sources": [
+    {
+      "role": "key",
+      "position": "front_camera_axis",
+      "color": "neutral",
+      "quality": "strong_direct",
+      "intensity": "high",
+      "notes": "Ilumina directamente al sujeto"
+    },
+    {
+      "role": "fill",
+      "position": "front_camera_axis",
+      "color": "neutral",
+      "quality": "soft",
+      "intensity": "strong",
+      "notes": "Reduce sombras faciales"
+    },
+    {
+      "role": "practical",
+      "position": "urban_background",
+      "color": "warm_orange",
+      "quality": "mixed",
+      "intensity": "medium",
+      "notes": "Luces urbanas cálidas"
+    },
+    {
+      "role": "ambient",
+      "position": "urban_background",
+      "color": "cool_blue",
+      "quality": "diffuse",
+      "intensity": "medium",
+      "notes": "Ambiente urbano frío"
+    }
+  ],
+  "contrast": "medium_high",
+  "subject_exposure": "high_subject_exposure",
+  "background": "cool_blue_urban_night",
+  "atmosphere": "wet_ground_reflections;volumetric_beams;steam",
+  "finish": "dramatic_skin_speculars;high_detail_editorial",
+  "visual_intent": "Rostro claramente visible con entorno nocturno cálido-frío",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {}
+}

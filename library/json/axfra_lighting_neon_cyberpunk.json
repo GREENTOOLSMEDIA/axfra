@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-12"
+  },
+  "catalog_rules": {
+    "archive": "AXFRA",
+    "version": "1.0",
+    "category": "lighting",
+    "slot": "lighting_block",
+    "piece_family": "lighting_scheme",
+    "swap_rule": "Se cita el ID del esquema. Se sustituyen únicamente sus parámetros de iluminación; se preservan los módulos no solicitados. Si un esquema requiere un entorno o atmósfera distintos, esos cambios deben autorizarse explícitamente.",
+    "default_intensity": "as_defined_per_piece",
+    "lock": [
+      "facial_identity",
+      "facial_anatomy",
+      "body_proportions",
+      "hair_style",
+      "hair_color",
+      "facial_expression",
+      "pose",
+      "wardrobe",
+      "environment",
+      "camera",
+      "framing"
+    ],
+    "editable": [
+      "lighting_block"
+    ],
+    "application_notes": [
+      "Las fuentes son instrucciones descriptivas, no garantías físicas de reproducción.",
+      "El fondo y la atmósfera son sugerencias del esquema; no reemplazan EnvironmentBlock sin autorización.",
+      "No mezclar front_key enabled=false con instrucciones de key frontal intensa.",
+      "Los efectos especulares dependen también del material de piel y vestuario.",
+      "La pose y el ángulo de cámara se definen en sus módulos respectivos."
+    ]
+  },
+  "id": "lighting.neon_cyberpunk",
+  "name_es": "Neón cromático urbano",
+  "name_en": "Chromatic Neon Night",
+  "style": "stylized_cinematic",
+  "light_sources": [
+    {
+      "role": "key",
+      "position": "subject_left_front",
+      "color": "magenta",
+      "quality": "medium_hard",
+      "intensity": "medium",
+      "notes": "Acento cromático frontal"
+    },
+    {
+      "role": "rim",
+      "position": "subject_right_back",
+      "color": "cyan_blue",
+      "quality": "hard",
+      "intensity": "high",
+      "notes": "Recorta silueta"
+    },
+    {
+      "role": "practical",
+      "position": "environment",
+      "color": "violet_and_blue",
+      "quality": "mixed",
+      "intensity": "medium",
+      "notes": "Neones de escena"
+    }
+  ],
+  "contrast": "high",
+  "subject_exposure": "selectively_lit",
+  "background": "night_neon_city",
+  "atmosphere": "light_fog;wet_reflections",
+  "finish": "colored_speculars;controlled_bloom",
+  "visual_intent": "Contraste cromático urbano estilizado",
+  "editable": [
+    "light_sources",
+    "contrast",
+    "subject_exposure",
+    "background",
+    "atmosphere",
+    "finish"
+  ],
+  "compatible_with": [
+    "identity",
+    "pose",
+    "camera",
+    "framing",
+    "environment"
+  ],
+  "optional_overrides": {}
+}

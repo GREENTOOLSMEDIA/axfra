@@ -1,0 +1,38 @@
+{
+  "id": "AXFRA_instrument_drums_starclassic_ma62bdzs",
+  "name": "Tama Starclassic Maple MA62BDZS-DPP",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-11"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "instrument",
+  "piece_family": "stage_kit",
+  "swap_rule": "Se cita el id. Se cambian color, acabado y logo. El modelo no se reescribe.",
+  "acabado_catalog": [
+    "nuevo",
+    "usado",
+    "envejecido"
+  ],
+  "original_id": "instrument.drums.starclassic.ma62bdzs",
+  "name_es": "Tama Starclassic Maple MA62BDZS-DPP",
+  "name_en": "Tama Starclassic Maple MA62BDZS-DPP",
+  "model": "MA62BDZS-DPP, The World Wired Kit",
+  "shells": "arce, laca brillante",
+  "bass": "dos bombos 22 x 16",
+  "toms": "10 x 8 y 12 x 10 aéreos, 16 x 14 y 16 x 16 de piso",
+  "heads": "Evans",
+  "hardware": "aros die-cast, soportes Star-Cast, herrajes cromados",
+  "not_included": "caja, platos y atriles no vienen en el shell set",
+  "logo": "AXFRA",
+  "logo_style": "Helvetica Bold",
+  "logo_place": "centro de cada parche de bombo",
+  "color": "deeper purple",
+  "acabado": "nuevo"
+}

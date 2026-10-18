@@ -1,0 +1,73 @@
+{
+  "id": "AXFRA_look_baddie_varsity_skirt",
+  "name": "Pink Baddie varsity jacket with pleated skirt",
+  "name_es": "Varsity rosa Baddie con falda plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "source_id": "look.baddie.varsity.skirt",
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
+  "notes": "Catálogo expandido de looks flat-lay. El corte de cada look queda fijo. Citar por id y solo intercambiar color/material/grosor/transparencia/estampado/acabado. Lote actualizado con gowns, golf, denim, metallic, beach y travel looks.",
+  "mood": "y2k, preppy, sporty",
+  "outer": {
+    "type": "varsity jacket with lettering",
+    "material": "wool or satin",
+    "color": "pink and white",
+    "pattern": "Baddie 11"
+  },
+  "top": {
+    "type": "cropped tank",
+    "material": "knit",
+    "color": "white",
+    "pattern": "BADDIE"
+  },
+  "bottom": {
+    "type": "pleated mini skirt",
+    "material": "satin",
+    "color": "pink"
+  },
+  "accessories": [
+    "pink backpack",
+    "platform sneakers",
+    "pearl jewelry"
+  ],
+  "source_image": "HQ8s05lWsAAUQav",
+  "original_specification": {
+    "id": "look.baddie.varsity.skirt",
+    "name_es": "Varsity rosa Baddie con falda plisada",
+    "name_en": "Pink Baddie varsity jacket with pleated skirt",
+    "mood": "y2k, preppy, sporty",
+    "outer": {
+      "type": "varsity jacket with lettering",
+      "material": "wool or satin",
+      "color": "rosa y blanco",
+      "estampado": "Baddie 11"
+    },
+    "top": {
+      "type": "cropped tank",
+      "material": "punto",
+      "color": "blanco",
+      "estampado": "BADDIE"
+    },
+    "bottom": {
+      "type": "pleated mini skirt",
+      "material": "satin",
+      "color": "rosa"
+    },
+    "accessories": [
+      "pink backpack",
+      "platform sneakers",
+      "pearl jewelry"
+    ],
+    "source_image": "HQ8s05lWsAAUQav"
+  },
+  "source_batch": "axfra_looks_batch_hq9-3.json"
+}

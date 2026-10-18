@@ -1,0 +1,57 @@
+{
+  "id": "AXFRA_look_black_babygirl_cutout",
+  "name": "Black Babygirl Cut-Out Set",
+  "name_es": "Set negro 'BABYGIRL' cut-out",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flatlay_batch_oct2026",
+  "source_id": "look.black.babygirl.cutout",
+  "swap_rule": "el corte (id) queda fijo; se citan y se pueden cambiar material, grosor, transparencia, estampado y color de cada pieza",
+  "source": "nuevos flat-lays referenciados",
+  "notes": "Lote nuevo de flat-lays. Predomina el rosa en variaciones (terciopelo, satén, malla, metálico, encaje) junto con looks góticos negro/rosa y algunos sport/travel. Todos siguen el criterio AXFRA: corte fijo por id, controles intercambiables de material/grosor/transparencia/color.",
+  "style": "night",
+  "top": {
+    "type": "halter con anillo",
+    "material": "velvet",
+    "color": "black",
+    "detail": "collar 'BABYGIRL'"
+  },
+  "bottom": {
+    "type": "mini con cut-out y anillos",
+    "color": "black"
+  },
+  "accessories": [
+    "bolso cristal",
+    "tacones YSL",
+    "perfume Black Opium"
+  ],
+  "original_specification": {
+    "id": "look.black.babygirl.cutout",
+    "name_es": "Set negro 'BABYGIRL' cut-out",
+    "style": "night",
+    "top": {
+      "type": "halter con anillo",
+      "material": "terciopelo",
+      "color": "negro",
+      "detail": "collar 'BABYGIRL'"
+    },
+    "bottom": {
+      "type": "mini con cut-out y anillos",
+      "color": "negro"
+    },
+    "accessories": [
+      "bolso cristal",
+      "tacones YSL",
+      "perfume Black Opium"
+    ]
+  },
+  "source_batch": "Texto pegado (2).txt"
+}
