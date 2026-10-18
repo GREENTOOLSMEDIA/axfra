@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_pose_top_down_twist",
+  "name": "Top Down Twist",
+  "name_es": "Top Down Twist",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "description": "Top-Down Twist",
+  "source_index": 72
+}

@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_polka_dot",
+  "name": "Polka Dot Classic",
+  "name_es": "Lunares clásicos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Do not rewrite the cut or pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "set.polka_dot",
+  "pattern": "polka dots",
+  "color": "black",
+  "bra": {
+    "type": "balconette",
+    "coverage": "demi",
+    "straps": "thin adjustable straps",
+    "details": "underwire, scalloped lace trim, center bow",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "bikini",
+    "cut": "mid-rise",
+    "details": "lace waistband, front bow, medium rear coverage",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "chart_name": "Polka Dot",
+    "type": "thigh-high, stay-up",
+    "pattern": "opaque polka dots on sheer base",
+    "top": "wide floral lace band",
+    "attachment": "silicone",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}

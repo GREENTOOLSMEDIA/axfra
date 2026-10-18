@@ -1,0 +1,15 @@
+{
+  "id": "AXFRA_style_diagonal_scifi_ensemble",
+  "name": "Diagonal Science Fiction Ensemble Poster",
+  "name_es": "Póster coral de ciencia ficción diagonal",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "content_language": "Spanish",
+  "source_content": "Estilo de póster de ensemble de ciencia ficción, partido en diagonal. El sujeto va en acción arriba; abajo, una banda de rostros más chicos.\nComposición\n* Formato vertical. Una línea de luz cruza el afiche de arriba a la derecha hacia abajo al centro y separa dos mitades.\n* El sujeto ocupa la zona alta, de medio cuerpo, inclinado hacia delante, brazos al frente en gesto de apuntar. Detrás y encima, una criatura grande en sombra, con la cabeza cerca del borde. Es amenaza del póster, no el sujeto.\n* Un aro de neón circular enmarca al sujeto por detrás. Abajo, una franja diagonal de rostros del mismo sujeto, repetido en varias expresiones, de frente y de tres cuartos. A la derecha, una nave pequeña con un foco azul.\n* El arma del afiche no se copia. El gesto de los brazos basta.\nLuz y color\n* Mitad izquierda en rojo y magenta; mitad derecha en cian y azul. El corte es la línea de luz.\n* El sujeto recibe borde de color, no luz de día. Piel con reflejo rojo de un lado y azul del otro.\n* Abajo, un resplandor blanco-azul en la nave. El resto cae a negro.\nEntorno\n* Sin lugar real. El fondo es negro con el aro y la diagonal. La criatura y la nave son attrezzo.\n* Omitir uniforme, arma y equipo. Conservar identidad, rostro y proporciones en la figura grande y en los rostros repetidos.\n* Franja inferior vacía. Sin título ni créditos.\nTratamiento\n* Montaje de afiche de los ochenta, pintado sobre foto. Capas duras, no acuarela.\n* Los rostros chicos no son otros personajes: son el mismo sujeto en distinta escala y distintos ángulos de perfiles.\n* Preservar al sujeto. La criatura queda detrás y no le tapa la cara."
+}

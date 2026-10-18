@@ -1,0 +1,17 @@
+{
+  "id": "AXFRA_style_outdoor_cafe_four_panel",
+  "name": "Outdoor Café Four-Panel Collage",
+  "name_es": "Collage de cuatro escenas en café exterior",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "format": "2x2 collage",
+  "source_status": "malformed_original",
+  "source_note": "Original scene object is missing a delimiter and is preserved intact to avoid inventing structure.",
+  "source_content": "{\n  \"type\": \"image_set\",\n  \"style\": \"lifestyle fashion photography, clean and aesthetic\",\n  \"layout\": {\n    \"format\": \"2x2 grid collage\",\n    \"orientation\": \"portrait images combined\"\n  },\n  \"scene\": {\n    \"setting\": \"outdoor café walkway\",\n    \"environment\": {\n      \"architecture\": \"white modern building with pergola\",\n      \"surroundings\": \"lush green plants and vines\",\n      \"ground\": \"stone tile flooring\",\n      \"lighting\": \"natural daylight with soft shadows\"\n    }\n  \n  \"activity\": {\n    \"action\": \"holding and drinking a green beverage\",\n    \"drink\": \"green iced drink in clear cup with straw\"\n  },\n  \"poses\": [\n    \"standing casually\",\n    \"leaning against planter\",\n    \"smiling while standing\",\n    \"crouching with drink\"\n  ],\n  \"composition\": {\n    \"focus\": \"subject centered in each frame\",\n    \"depth\": \"clear subject separation from background\",\n    \"balance\": \"consistent framing across all four images\"\n  },\n  \"color_palette\": {\n    \"dominant_colors\": [\"white\", \"green\", \"beige\"],\n    \"accent_colors\": [\"black\", \"natural skin tones\"]\n  },\n  \"overall_tone\": \"fresh, healthy, stylish, summer lifestyle\"\n}"
+}

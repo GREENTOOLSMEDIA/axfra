@@ -1,0 +1,49 @@
+{
+  "id": "AXFRA_subject_rotation",
+  "name": "Subject Rotation",
+  "name_es": "Rotación del sujeto",
+  "mood": "precise, modular, reference-preserving",
+  "palette": [
+    "neutral"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "subject_rotation": {
+    "enabled": true,
+    "mode": "subject_only",
+    "rotation": "three_quarter_right",
+    "degrees": 45,
+    "options": {
+      "front": 0,
+      "three_quarter_right": 45,
+      "right_profile": 90,
+      "three_quarter_back_right": 135,
+      "back": 180,
+      "three_quarter_back_left": 225,
+      "left_profile": 270,
+      "three_quarter_left": 315
+    },
+    "angle_convention": "0 degrees is subject front facing the fixed camera; right and left describe which side of the subject becomes visible, not screen direction. Degrees are presets, not physical rotation guarantees.",
+    "rotation_axis": "vertical_yaw",
+    "preserve": [
+      "environment",
+      "background",
+      "camera_position",
+      "camera_angle",
+      "camera_framing",
+      "subject_identity",
+      "subject_proportions",
+      "wardrobe",
+      "lighting_setup"
+    ],
+    "instruction": "Rotate only the subject to the specified orientation, keeping the camera fixed and the background unchanged. Maintain realistic anatomy, grounding, occlusion, cast shadows and lighting consistency.",
+    "notes": "If a full-body turn changes the silhouette, update occlusions and contact shadows without moving or replacing the environment."
+  }
+}

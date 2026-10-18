@@ -1,0 +1,47 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_babydoll_floral",
+  "name": "Floral Babydoll",
+  "name_es": "Babydoll floral",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "babydoll",
+  "swap_rule": "Reference this item by its ID. Material, fabric thickness, transparency, pattern, and color may be changed; the cut and silhouette must remain unchanged.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "satin",
+    "chiffon"
+  ],
+  "grosor_catalog": [
+    "very_thin",
+    "thin",
+    "normal"
+  ],
+  "transparencia_catalog": [
+    "yes",
+    "no"
+  ],
+  "estampado_catalog": [
+    "solid",
+    "floral",
+    "polka_dots"
+  ],
+  "top": "Triangle cups with lace trim, thin shoulder straps, and a center bow",
+  "body": "Short, loose mesh skirt ending above the hips",
+  "bottom": "Matching panties visible beneath the mesh",
+  "detail": "Small flowers embroidered onto the mesh",
+  "material": "mesh",
+  "grosor": "very_thin",
+  "transparencia": "yes",
+  "estampado": "floral",
+  "color": "light blue"
+}

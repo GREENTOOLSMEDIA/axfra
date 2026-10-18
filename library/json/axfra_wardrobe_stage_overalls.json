@@ -1,0 +1,52 @@
+
+{
+  "id": "AXFRA_wardrobe_stage_overalls",
+  "name": "Vintage Washed Baggy Denim Overalls",
+  "name_es": "Overall ancho de denim vintage desgastado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "stage",
+  "swap_rule": "Reference the look by its ID. Preserve the oversized wide-leg cut, low waist, long shoulder straps, washed denim finish and open torso.",
+  "top": {
+    "type": "cropped bandeau-style tank top",
+    "color": "white",
+    "material": "stretch cotton",
+    "neckline": "wide scoop neckline",
+    "sleeves": "sleeveless",
+    "straps": "thin shoulder straps",
+    "fit": "close-fitting",
+    "hem": "cropped above the waist"
+  },
+  "bottom": {
+    "type": "oversized denim bib overalls",
+    "cut": "extremely wide-leg, loose baggy silhouette",
+    "waist": "very low-slung waistline resting at the hips",
+    "bib": "low front bib with deep side openings exposing the white crop top and midriff",
+    "straps": "long adjustable denim shoulder straps extending vertically over the shoulders",
+    "closure": "front zipper and metal fasteners",
+    "pockets": "large front utility pockets and wide rectangular patch pockets on the thighs",
+    "legs": "extra-wide straight legs with generous fabric volume",
+    "length": "floor-length, fabric pooling slightly over the footwear",
+    "material": "heavy cotton denim",
+    "color": "heavily faded blue-gray indigo",
+    "wash": "strong vintage stonewash with uneven cloudy fading",
+    "finish": "authentic aged denim, worn-in and heavily washed",
+    "distressing": "natural faded abrasion along seams, pocket edges, knees and hems, without large holes",
+    "fabric_behavior": "Heavy loose denim falling in long vertical folds, with natural bunching around the ankles and irregular washed texture."
+  },
+  "material": "aged stonewashed denim and white stretch cotton",
+  "thickness": "thick denim, thin crop top",
+  "transparency": false,
+  "pattern": "solid with irregular vintage fading",
+  "color": "faded blue-gray denim and white",
+  "style": "1990s oversized vintage denim, relaxed alternative rock stage fashion, authentic worn texture, natural fabric weight, photorealistic"
+}

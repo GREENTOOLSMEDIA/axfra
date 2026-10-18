@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_white_basic_set",
+  "name": "White Minimal Lingerie Set",
+  "name_es": "Conjunto de lencería básica blanca",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "swap_rule": "Reference the set ID. Material, thickness, transparency and color may be changed without rewriting the garment cuts.",
+  "pieces": {
+    "bra": {
+      "type": "minimal soft-cup bralette",
+      "cut": "scoop neckline, thin shoulder straps, close-fitting cups without visible underwire, broad underbust band",
+      "material": "soft stretch knit",
+      "thickness": "thin",
+      "transparency": "opaque",
+      "pattern": "solid",
+      "color": "white"
+    },
+    "panties": {
+      "type": "classic brief",
+      "cut": "mid-rise waist, smooth wide waistband, moderately high leg openings, full front coverage",
+      "material": "soft stretch knit",
+      "thickness": "thin",
+      "transparency": "opaque",
+      "pattern": "solid",
+      "color": "white"
+    }
+  },
+  "constraints": {
+    "exclude": ["orange outer garment", "jacket", "cover-up", "hair", "identity", "pose", "background"],
+    "preserve": ["bralette neckline and straps", "underbust band", "brief cut and waistband"]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "AXFRA_wardrobe_carnival_rio_red_feather_samba",
+  "name": "Rio Carnival Red Feather Samba Costume",
+  "name_es": "Vestuario de samba del Carnaval de Río con plumas rojas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "carnival_samba_set",
+  "swap_rule": "Reference the ID to apply this costume. Materials and colors may be changed by piece; preserve the original cut, feather headdress structure, and decorative arrangement.",
+  "headdress": {
+    "type": "towering carnival samba feather headdress",
+    "structure": "ornate red and silver rhinestone crown with symmetrical pointed motifs and a central teardrop ornament",
+    "feathers": "very large layered scarlet red, crimson and golden-orange plumes radiating upward and outward",
+    "material": "feathers, rhinestones, decorative metal framework",
+    "color": "red, crimson, orange and gold"
+  },
+  "top": {
+    "type": "structured carnival bra top with shaped cups and slender red shoulder straps",
+    "decoration": "dense red sequins and clear rhinestones, jeweled outlines and multiple draped silver-tone chains beneath the bust",
+    "material": "sequined stretch fabric, rhinestones, metal chains",
+    "color": "ruby red and silver"
+  },
+  "bottom": {
+    "type": "high-cut samba bikini bottom",
+    "decoration": "red jeweled waistband with scrolling rhinestone embroidery",
+    "material": "sequined stretch fabric, rhinestones",
+    "color": "ruby red"
+  },
+  "hip_drapes": {
+    "type": "lightweight semi-sheer draped hip panels",
+    "shape": "open at the front, flowing along the sides and behind the hips",
+    "decoration": "subtle gold-toned trim along the flowing edges",
+    "material": "sheer chiffon",
+    "color": "translucent crimson red"
+  },
+  "arm_accessories": {
+    "type": "matching carnival arm jewelry",
+    "details": "red rhinestone floral arm cuff, dangling silver-tone chains, coordinated embellished wrist cuffs",
+    "color": "red, silver and crystal"
+  },
+  "neck_accessories": {
+    "type": "layered jeweled necklace",
+    "details": "red and clear rhinestones with silver-tone draped detailing",
+    "color": "red and silver"
+  },
+  "earrings": {
+    "type": "long dangling carnival earrings",
+    "material": "red rhinestones and metal",
+    "color": "red and silver"
+  },
+  "shoes": {
+    "type": "elegant high-heeled samba dance sandals",
+    "cut": "open toe, slender supportive ankle straps, secure adjustable fastening, slim high heel",
+    "finish": "ruby red metallic straps decorated with small rhinestones, coordinated with the jeweled costume",
+    "material": "metallic leather and rhinestones",
+    "color": "ruby red and silver",
+    "functional_requirement": "securely fitted for carnival dancing and parade movement"
+  },
+  "exclusions": [
+    "Do not define or replace the subject's identity, face, body proportions, or hairstyle.",
+    "Do not include the original pose, parade crowd, floats, or street environment.",
+    "Do not introduce instruments or unrelated accessories."
+  ]
+}
