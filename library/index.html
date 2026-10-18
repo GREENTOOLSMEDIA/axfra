@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AXFRA JSON Library | Biblioteca modular</title>
+<link rel="canonical" href="https://axfra.com/library/">
+<meta name="description" content="Explora los módulos JSON de AXFRA, consulta sus categorías y prepara composiciones de prueba en un editor local.">
+<link rel="stylesheet" href="/shared-layout.css">
+<style>
+:root{color-scheme:dark;--bg:#090909;--panel:#151515;--line:#303030;--muted:#a8a8a8;--red:#da1e2c;--text:#f4f4f4}
+*{box-sizing:border-box}
+.library-main{background:#090909;font:14px/1.5 Arial,Helvetica,sans-serif;color:#f4f4f4}
+.library-main button,.library-main input,.library-main textarea{font:inherit}
+.library-main button{cursor:pointer;background:#262626;border:1px solid #494949;color:white;border-radius:5px;padding:9px 12px}
+.library-main button:hover{border-color:#e34752}
+.library-main button.primary{background:var(--red);border-color:var(--red)}
+.library-main{display:grid;grid-template-columns:225px minmax(260px,360px) minmax(0,1fr);height:calc(100vh - 69px);min-height:550px}
+.sidebar,.catalog,.work{min-height:0;overflow:auto;padding:16px;border-right:1px solid var(--line)}
+.sidebar h2,.catalog h2,.work h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px}
+.cat{display:flex;width:100%;text-align:left;justify-content:space-between;align-items:center;background:transparent;border:0;border-radius:4px;padding:10px 8px;color:#ddd;gap:5px}
+.cat:hover,.cat.active{background:#282020;color:white}
+.count{color:#999;font-size:12px}
+.search{width:100%;padding:11px;background:#1b1b1b;color:white;border:1px solid #414141;border-radius:5px;margin-bottom:12px}
+.item{width:100%;display:flex;align-items:flex-start;gap:10px;text-align:left;background:transparent;border:0;border-bottom:1px solid #292929;border-radius:0;padding:10px 6px}
+.item:hover,.item.active{background:#242020}
+.item.active{outline:1px solid #a8434b;outline-offset:-1px}
+.item strong{display:block;font-size:13px;font-weight:600}
+.item small{display:block;color:#999;margin-top:3px;overflow-wrap:anywhere}
+.item-text{flex:1;min-width:0}
+.thumb{
+  flex-shrink:0;width:48px;height:48px;aspect-ratio:1/1;border-radius:4px;
+  overflow:hidden;background:#1a1a1a;border:1px solid #333;position:relative;
+  transition:transform .15s ease,box-shadow .15s ease;z-index:1;
+}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .placeholder{
+  width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;color:#666;letter-spacing:.5px;
+  background:linear-gradient(135deg,#1a1a1a,#111);
+}
+.item:hover .thumb{transform:scale(1.65);box-shadow:0 6px 20px rgba(0,0,0,.55);z-index:20;border-color:#555}
+.work{border-right:0;display:flex;flex-direction:column;gap:12px}
+.bar{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.bar h2{margin:0 auto 0 0}
+.file{color:#bbb;font-size:12px;overflow-wrap:anywhere}
+.editor{display:block;flex:1;min-height:300px;width:100%;resize:vertical;background:#101010;border:1px solid #424242;color:#e7e7e7;border-radius:5px;padding:15px;font:12.5px/1.6 Menlo,Consolas,monospace;tab-size:2}
+.status{font-size:12px;color:#aaa;min-height:20px}
+.status.ok{color:#80d7a4}.status.err{color:#ff8888}
+.collection{border-top:1px solid var(--line);padding-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:115px;overflow:auto}
+.chip{padding:5px 8px;border:1px solid #444;border-radius:4px;background:#202020;font-size:12px}
+.chip button{padding:0 3px;background:none;border:0;color:#f77;margin-left:5px}
+.muted{color:var(--muted)}
+#loading{padding:10px;color:#bbb}
+.hint{font-size:12px;color:#999}
+@media(max-width:900px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto}.sidebar{grid-row:1/3}.catalog{height:330px}.work{height:700px;grid-column:2}}
+@media(max-width:600px){.library-main{display:block}.sidebar,.catalog,.work{height:auto;max-height:none;border-right:0;border-bottom:1px solid var(--line)}.sidebar{max-height:230px}.catalog{max-height:270px}.work{height:660px}.editor{min-height:260px}.item:hover .thumb{transform:scale(1.3)}}
+html{background:#000}body{margin:0;background:#000;color:#e9eceb;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+.library-main{width:100%;max-width:100%;min-width:0;min-height:650px;height:calc(100vh - 84px);overflow:hidden}
+.library-main .sidebar,.library-main .catalog,.library-main .work{min-width:0;max-width:100%}
+
+/* AXFRA: tres paneles y navegación jerárquica del boceto */
+.library-main{grid-template-columns:200px 285px minmax(0,1fr);height:calc(100vh - 85px);min-height:580px}
+.sidebar{padding:13px 12px}.catalog{padding:15px 13px}.work{padding:15px 14px}
+.library-summary{font-size:12px;color:#aaa;margin-bottom:13px}
+.group-block{margin-bottom:5px}
+.library-main .cat{background:transparent;border:1px solid transparent;border-radius:5px;padding:9px 8px;font-size:12px;line-height:1.4;color:#e1e1e1}
+.library-main .cat.parent{background:#1b1b1b;border-color:#353535;font-weight:700;margin:6px 0 2px;min-height:39px}
+.library-main .cat.child{padding-left:18px;font-size:11.5px;min-height:33px}
+.library-main .cat:hover{background:#302426;border-color:#724047}
+.library-main .cat.active{background:#342326;border-color:#aa4550;color:white}
+.library-main .cat .group-name{flex:1}
+.library-main .item{background:#252525;border:1px solid #484848;border-radius:5px;padding:10px 7px;min-height:64px;margin:0 0 2px;gap:9px;color:#fff}
+.library-main .item.active{border-color:#c34d59;outline:none;background:#30272a}
+.library-main .item:hover{background:#313131}
+.item-en{font-size:11px;display:block;color:#a9a9a9;margin-top:2px}
+.item-id{font-family:Menlo,Consolas,monospace;font-size:10px!important;line-height:1.25}
+.library-main .thumb{width:48px;height:54px}
+/* Vista ampliada 2x al pasar el mouse; no altera el flujo del catálogo */
+.library-main .item{position:relative}
+.library-main .item:hover{z-index:10}
+.library-main .thumb{transform-origin:left center;transition:transform .16s ease,box-shadow .16s ease}
+.library-main .item:hover .thumb{transform:scale(2);box-shadow:0 8px 22px rgba(0,0,0,.8);z-index:20}
+@media(hover:none){.library-main .item:hover .thumb{transform:none;box-shadow:none}}
+.library-main .editor{min-height:280px}
+.library-main .bar button{padding:9px 10px;font-size:12px}
+@media(max-width:1000px){.library-main{grid-template-columns:175px 255px minmax(0,1fr)}}
+@media(max-width:800px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto;overflow:visible}.sidebar{grid-row:1/3}.catalog{height:370px}.work{grid-column:2;height:700px}}
+@media(max-width:600px){.library-main{display:block}.sidebar{max-height:340px}.catalog{max-height:350px}.work{height:700px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+<main class="library-main" id="contenido">
+<aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary">Conectando…</div><nav id="categories"></nav><p class="hint">Catálogo automático · JSON originales intactos.</p></aside>
+<section class="catalog"><h2>Componentes</h2><input id="search" class="search" type="search" placeholder="Buscar nombre, ID o archivo…" aria-label="Buscar módulos"><div id="loading">Cargando biblioteca…</div><div id="items"></div></section>
+<section class="work"><div class="bar"><h2>Editor / pruebas JSON</h2><button id="new">Nuevo / pegar</button><button id="reload">Restaurar original</button></div><div id="filename" class="file">Selecciona un módulo o pega tu propio JSON.</div><textarea id="editor" class="editor" spellcheck="false" placeholder="Pega aquí cualquier JSON…"></textarea><div class="bar"><button id="validate">Validar JSON</button><button class="primary" id="copy">Copiar JSON</button><button id="download">Descargar .json</button><button id="add">Añadir a composición</button></div><div class="status" id="status"></div><div class="collection"><div class="bar"><h2>Composición de prueba <span id="nSelected" class="count">(0)</span></h2><button id="copyComposition">Copiar composición</button><button id="downloadComposition">Descargar composición</button><button id="clearComposition">Vaciar</button></div><div id="chips" class="chips"><span class="muted">Añade módulos desde el editor.</span></div><p class="hint">La composición agrupa los JSON íntegros por módulo.</p></div></section>
+</main>
+<div id="globalFooter"></div>
+<script>
+'use strict';
+const INDEX_URL='./axfra_json_library_index.json';
+const thumbVersion=Date.now(); // Verifica referencias nuevas en cada apertura
+const $=id=>document.getElementById(id);
+let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0;
+
+function thumbInitials(f){
+  const name=(f.name_es||f.name||f.id||'??').trim();
+  const parts=name.split(/\s+/).filter(Boolean);
+  if(parts.length>=2)return (parts[0][0]+parts[1][0]).toUpperCase();
+  return name.slice(0,2).toUpperCase();
+}
+
+function status(s,kind=''){const el=$('status');el.textContent=s;el.className='status '+kind;}
+function getJSON(){try{return JSON.parse($('editor').value)}catch(e){status('JSON inválido: '+e.message,'err');return null}}
+function download(name,text){const blob=new Blob([text],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+async function copyText(t){try{await navigator.clipboard.writeText(t);status('Copiado al portapapeles.','ok')}catch(e){$('editor').focus();$('editor').select();status('Portapapeles bloqueado. Usa Cmd/Ctrl+C.','err')}}
+
+function renderCategories(){
+  const nav=$('categories');nav.replaceChildren();
+  const groups=index.groups||[];
+  const all=document.createElement('button');all.type='button';
+  all.className='cat parent'+(groupFilter==='all'?' active':'');
+  const allName=document.createElement('span');allName.textContent='Todos los componentes';
+  const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
+  all.append(allName,allCount);
+  all.onclick=()=>{groupFilter='all';subgroupFilter=null;renderCategories();renderItems()};nav.append(all);
+  groups.forEach(g=>{
+    const wrapper=document.createElement('div');wrapper.className='group-block';
+    const button=document.createElement('button');button.type='button';
+    button.className='cat parent'+(groupFilter===g.id?' active':'');
+    button.setAttribute('aria-expanded',String(expandedGroups.has(g.id)));
+    const label=document.createElement('span');label.className='group-name';
+    label.textContent=(expandedGroups.has(g.id)?'▾  ':'▸  ')+g.label;
+    const count=document.createElement('span');count.className='count';count.textContent=g.count;
+    button.append(label,count);
+    button.onclick=()=>{if(expandedGroups.has(g.id)){expandedGroups.delete(g.id)}else{expandedGroups.add(g.id)};
+      groupFilter=g.id;subgroupFilter=null;renderCategories();renderItems()};
+    wrapper.append(button);
+    if(expandedGroups.has(g.id)){
+      (g.children||[]).forEach(c=>{
+        const child=document.createElement('button');child.type='button';
+        child.className='cat child'+(groupFilter===g.id&&subgroupFilter===c.id?' active':'');
+        const name=document.createElement('span');name.textContent=c.label;
+        const n=document.createElement('span');n.className='count';n.textContent=c.count;
+        child.append(name,n);
+        child.onclick=()=>{groupFilter=g.id;subgroupFilter=c.id;renderCategories();renderItems()};
+        wrapper.append(child)
+      });
+    }
+    nav.append(wrapper)
+  });
+}
+function renderItems(){
+  const q=$('search').value.toLocaleLowerCase().trim();
+  const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
+    (!subgroupFilter||f.subgroup===subgroupFilter)&&
+    [f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+  // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
+  if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
+  const list=$('items');list.replaceChildren();
+  files.forEach(f=>{
+    const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');b.title=f.path;
+    const thumb=document.createElement('div');thumb.className='thumb';
+    // La imagen se busca por el NOMBRE DEL ARCHIVO JSON, sin depender del índice.thumb.
+    // Ej.: json/axfra_expression_anger.json -> thumbs/axfra_expression_anger.jpg
+    const stem=(f.path||'').split('/').pop().replace(/\.json$/i,'');
+    const img=document.createElement('img');img.alt='';img.loading='lazy';
+    const ph=document.createElement('div');ph.className='placeholder';
+    ph.textContent=thumbInitials(f);
+    const base=new URL('./thumbs/',window.location.href);
+    let extensionIndex=0;
+    const extensions=['.jpg','.png','.jpeg'];
+    img.onerror=()=>{
+      extensionIndex++;
+      if(extensionIndex<extensions.length){
+        img.src=new URL(encodeURIComponent(stem)+extensions[extensionIndex],base).href+'?v='+thumbVersion;
+      }else{
+        img.remove();thumb.append(ph);
+      }
+    };
+    thumb.append(img);
+    img.src=new URL(encodeURIComponent(stem)+extensions[0],base).href+'?v='+thumbVersion;
+    b.append(thumb);
+    const text=document.createElement('div');text.className='item-text';
+    const name=document.createElement('strong');name.textContent=f.group==='unclassified'?f.path.split('/').pop():(f.name_es||f.name||f.id||f.path);text.append(name);
+    if(f.group!=='unclassified'&&f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;text.append(en)}
+    const id=document.createElement('small');id.className='item-id';id.textContent=f.id||f.path.split('/').pop();text.append(id);
+    b.append(text);b.onclick=()=>loadFile(f);list.append(b);
+  });
+  $('loading').textContent=files.length+' componente(s)';
+}
+
+async function loadFile(f){
+  const seq=++requestSeq;selected=f;$('filename').textContent='Cargando…';status('Recuperando JSON…');renderItems();
+  try{
+    const r=await fetch(f.url,{cache:'no-cache'});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const data=await r.json();
+    if(seq!==requestSeq)return;
+    $('editor').value=JSON.stringify(data,null,2);
+    $('filename').textContent=f.path;
+    status('JSON cargado.','ok');
+  }catch(e){if(seq!==requestSeq)return;status('No se pudo cargar: '+e.message,'err')}
+}
+
+function makeComposition(){return {id:'AXFRA_test_composition',name:'AXFRA Test Composition',meta:{developer:'ALARSI',brand:'AXFRA',system:'AXFRA JSON prompt system'},modules:composition.map(x=>({source_path:x.path,content:x.data}))}}
+function renderComposition(){const c=$('chips');c.replaceChildren();$('nSelected').textContent='('+composition.length+')';if(!composition.length){const span=document.createElement('span');span.className='muted';span.textContent='Sin módulos.';c.append(span)}composition.forEach((x,i)=>{const el=document.createElement('span');el.className='chip';el.append(document.createTextNode(x.label));const rm=document.createElement('button');rm.textContent='×';rm.onclick=()=>{composition.splice(i,1);renderComposition()};el.append(rm);c.append(el)})}
+
+$('search').addEventListener('input',()=>index&&renderItems());
+$('new').onclick=()=>{++requestSeq;selected=null;$('editor').value='';$('filename').textContent='JSON nuevo';status('Editor vacío.');if(index)renderItems();$('editor').focus()};
+$('reload').onclick=()=>{if(selected)loadFile(selected);else status('No hay archivo seleccionado.','err')};
+$('validate').onclick=()=>{const data=getJSON();if(data!==null)status('JSON válido.','ok')};
+$('copy').onclick=()=>{const data=getJSON();if(data!==null)copyText(JSON.stringify(data,null,2))};
+$('download').onclick=()=>{const data=getJSON();if(data!==null)download(selected?.path.split('/').pop()||'axfra.json',JSON.stringify(data,null,2)+'\n')};
+$('add').onclick=()=>{const data=getJSON();if(data===null)return;const path=selected?.path||'local/'+(data.id||'custom')+'.json';const i=composition.findIndex(x=>x.path===path);const x={path,label:data.name||data.id||path,data};if(i>=0)composition[i]=x;else composition.push(x);renderComposition();status(i>=0?'Actualizado.':'Añadido.','ok')};
+$('copyComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');copyText(JSON.stringify(makeComposition(),null,2))};
+$('downloadComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');download('axfra_test_composition.json',JSON.stringify(makeComposition(),null,2)+'\n')};
+$('clearComposition').onclick=()=>{composition=[];renderComposition();status('Vacío.','ok')};
+
+async function initializeLibrary(){
+  try{
+    const url=new URL(INDEX_URL, window.location.href);url.searchParams.set('v',String(Date.now()));
+    const r=await fetch(url.href,{cache:'no-store'});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    index=await r.json();
+    if(!Array.isArray(index.files))throw new Error('Índice sin files[]');
+    $('summary').textContent=index.files.length+' JSON · '+Object.keys(index.categories||{}).length+' categorías';
+    if(!Array.isArray(index.groups))throw new Error('El índice no contiene groups[]. Genera el índice con axfra_generar_biblioteca.py');
+    expandedGroups.add('appearance');renderCategories();renderItems();status('Índice cargado.','ok');
+  }catch(e){
+    $('summary').textContent='Error al cargar índice';
+    $('loading').textContent=e.message;
+    status(e.message,'err');
+  }
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initializeLibrary,{once:true});
+else initializeLibrary();
+</script>
+<script defer src="/shared-layout.js"></script>
+</body>
+</html>
