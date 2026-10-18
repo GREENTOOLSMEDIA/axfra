@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/axfra_json_library/",
-  "total_json": 397,
+  "total_json": 407,
   "categories": {
     "camera": 9,
     "dummy": 8,
@@ -22,7 +22,8 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 29,
-    "wardrobe": 165
+    "wardrobe": 165,
+    "appearance": 10
   },
   "groups": [
     {
@@ -77,7 +78,7 @@
     {
       "id": "appearance",
       "label": "Expresión y apariencia",
-      "count": 24,
+      "count": 34,
       "children": [
         {
           "id": "expressions",
@@ -88,6 +89,11 @@
           "id": "hair",
           "label": "Peinados",
           "count": 12
+        },
+        {
+          "id": "makeup",
+          "label": "Maquillaje",
+          "count": 10
         }
       ]
     },
@@ -4588,6 +4594,116 @@
       "thumb": null,
       "group": "composition",
       "subgroup": "movement"
+    },
+    {
+      "id": "AXFRA_makeup_chromatic_avant_garde",
+      "name": "Chromatic Avant-Garde",
+      "name_es": "Vanguardia cromática",
+      "category": "appearance",
+      "path": "json/axfra_makeup_chromatic_avant_garde.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_chromatic_avant_garde.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_classic_hollywood",
+      "name": "Classic Hollywood",
+      "name_es": "Hollywood clásico",
+      "category": "appearance",
+      "path": "json/axfra_makeup_classic_hollywood.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_classic_hollywood.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_glass_skin",
+      "name": "Glass Skin",
+      "name_es": "Piel luminosa",
+      "category": "appearance",
+      "path": "json/axfra_makeup_glass_skin.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_glass_skin.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_gothic_noir",
+      "name": "Gothic Noir",
+      "name_es": "Gótico noir",
+      "category": "appearance",
+      "path": "json/axfra_makeup_gothic_noir.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_gothic_noir.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_graphic_editorial",
+      "name": "Graphic Editorial",
+      "name_es": "Delineado gráfico editorial",
+      "category": "appearance",
+      "path": "json/axfra_makeup_graphic_editorial.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_graphic_editorial.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_metallic_futurism",
+      "name": "Metallic Futurism",
+      "name_es": "Futurismo metálico",
+      "category": "appearance",
+      "path": "json/axfra_makeup_metallic_futurism.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_metallic_futurism.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_natural_skin",
+      "name": "Natural Skin",
+      "name_es": "Maquillaje natural",
+      "category": "appearance",
+      "path": "json/axfra_makeup_natural_skin.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_natural_skin.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_smokey_eyes",
+      "name": "Smokey Eyes",
+      "name_es": "Ojos ahumados",
+      "category": "appearance",
+      "path": "json/axfra_makeup_smokey_eyes.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_smokey_eyes.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_soft_glam",
+      "name": "Soft Glam",
+      "name_es": "Glamour suave",
+      "category": "appearance",
+      "path": "json/axfra_makeup_soft_glam.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_soft_glam.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_makeup_sun_kissed",
+      "name": "Sun-Kissed Bronze",
+      "name_es": "Bronceado solar",
+      "category": "appearance",
+      "path": "json/axfra_makeup_sun_kissed.json",
+      "url": "https://axfra.com/axfra_json_library/json/axfra_makeup_sun_kissed.json",
+      "thumb": null,
+      "group": "appearance",
+      "subgroup": "makeup"
     }
   ]
 }
