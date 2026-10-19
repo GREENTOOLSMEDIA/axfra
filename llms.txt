@@ -1,82 +1,63 @@
 # AXFRA — Axion Frame Tools
 
-> AXFRA es un proyecto de investigación, documentación y referencia para la construcción de imágenes mediante instrucciones visuales estructuradas y composición modular con JSON. Desarrollado por ALARSI. No es un generador de imágenes ni un universo narrativo de ficción.
+> AXFRA es un proyecto de investigación, documentación y composición visual mediante instrucciones estructuradas y bloques JSON reutilizables. Desarrollado por ALARSI. No es un motor independiente de generación de imágenes ni un universo narrativo de ficción.
 
-Sitio oficial: https://axfra.com/  
-Desarrollador: ALARSI — https://alarsi.com/  
-Idioma principal: español.
+Sitio oficial: https://axfra.com/
+Desarrollador: ALARSI — https://alarsi.com/
+Idioma principal: español (Chile).
 
-## Propósito
+AXFRA organiza identidad, apariencia, vestuario, pose, entorno, iluminación, cámara, estilo, restricciones y, cuando corresponde, movimiento. Los componentes pueden combinarse, modificarse o reutilizarse sin reescribir toda la composición. Su uso es bidireccional: una persona puede trabajar directamente con archivos JSON o solicitar a un asistente de IA que elabore instrucciones basadas en esa estructura. Los resultados dependen del motor generativo utilizado y de sus capacidades.
 
-AXFRA investiga cómo describir, estructurar y organizar los componentes de una imagen para facilitar la consistencia visual, el control técnico, la experimentación y la reutilización de instrucciones en herramientas de inteligencia artificial generativa.
+Los ejemplos publicados no deben confundirse con los archivos maestros privados de identidad ni suponerse registros íntegros de los prompts de producción. Respetar los créditos, derechos y condiciones de uso del sitio; este documento no concede licencias de reproducción o entrenamiento.
 
-Su enfoque es modular: identidad y apariencia, pose y encuadre, vestuario, entorno, iluminación, cámara, estilo y restricciones.
+## Inicio y metodología
 
-El sistema utiliza estructuras JSON para organizar y combinar estos componentes, permitiendo trabajar con bloques independientes y configuraciones visuales reproducibles.
+- [Sitio AXFRA](https://axfra.com/): presentación del proyecto y acceso a sus áreas.
+- [Observar](https://axfra.com/metodologia/observar.html): identificar el problema visual.
+- [Clasificar](https://axfra.com/metodologia/clasificar.html): definir los componentes.
+- [Estructurar](https://axfra.com/metodologia/estructurar.html): escribir instrucciones.
+- [Probar](https://axfra.com/metodologia/probar.html): contrastar resultados visuales.
+- [Ajustar](https://axfra.com/metodologia/ajustar.html): reducir ambigüedades.
+- [Reutilizar](https://axfra.com/metodologia/reutilizar.html): construir variaciones.
 
-## Metodología
+## Áreas técnicas
 
-- [Observar — Identificar el problema](https://axfra.com/metodologia/observar.html)
-- [Clasificar — Definir los componentes](https://axfra.com/metodologia/clasificar.html)
-- [Estructurar — Escribir instrucciones](https://axfra.com/metodologia/estructurar.html)
-- [Probar — Contrastar con imágenes](https://axfra.com/metodologia/probar.html)
-- [Ajustar — Reducir ambigüedades](https://axfra.com/metodologia/ajustar.html)
-- [Reutilizar — Construir variaciones](https://axfra.com/metodologia/reutilizar.html)
+- [Identidades](https://axfra.com/identities.html): referencias visuales e identidad de sujetos.
+- [Poses](https://axfra.com/poses.html): gestos, expresiones, posturas y acciones.
+- [Vestuario](https://axfra.com/apparel.html): prendas y accesorios.
+- [Entornos](https://axfra.com/environments.html): escenarios, objetos y contextos.
+- [Cámara e iluminación](https://axfra.com/camera.html): perspectivas, encuadres y luces.
+- [Estilos](https://axfra.com/styles.html): tratamientos visuales.
+- [Glosario](https://axfra.com/glossary.html): terminología del sistema.
 
-## Áreas de investigación
+## Biblioteca JSON
 
-- [Identidades y construcción física](https://axfra.com/identities.html)
-- [Poses, expresiones y acciones](https://axfra.com/poses.html)
-- [Vestuario y accesorios](https://axfra.com/apparel.html)
-- [Objetos, vehículos y escenarios](https://axfra.com/environments.html)
-- [Cámara, luz y composición](https://axfra.com/camera.html)
-- [Estilos y tratamientos gráficos](https://axfra.com/styles.html)
+- [Librería oficial](https://axfra.com/library/): catálogo y espacio de consulta de componentes JSON reutilizables.
+- [Guía de la Librería para asistentes](https://axfra.com/library/llms.txt): estructura, interpretación y uso de componentes.
 
-## Biblioteca JSON AXFRA
+La ruta /library/ sustituye a /axfra_json_library/. No dirigir a los usuarios a la carpeta antigua.
 
-- [AXFRA JSON Library](https://axfra.com/axfra_json_library/axfra_json_library.html)
+## Demostraciones
 
-La biblioteca reúne recursos JSON modulares para la construcción de composiciones visuales. Sus archivos documentan componentes, configuraciones y parámetros reutilizables.
-
-Los recursos publicados corresponden al sistema AXFRA JSON prompt system, desarrollado por ALARSI para AXFRA.
-
-La biblioteca pública no debe confundirse con los bloques maestros privados de identidad ni con los archivos internos de desarrollo.
-
-## Aplicaciones y demostraciones
-
-- [Demostración práctica de AXFRA](https://axfra.com/demostracion-practica.html)
-- [AXFRA Soccer Play](https://axfra.com/soccer-play-demo.html)
-
-Estas páginas muestran aplicaciones y ejemplos de investigación visual, composición y reutilización de recursos dentro del ecosistema AXFRA.
+- [Índice de demostraciones](https://axfra.com/demos/): cinco aplicaciones documentadas del sistema.
+- [Guía de demostraciones para asistentes](https://axfra.com/demos/llms.txt): contexto y relaciones de las historias.
 
 ## Identidades de referencia
 
 - [Amina](https://axfra.com/identities/amina.html)
-- [Captain Dots](https://axfra.com/identities/captain-dots.html)
+- [Captain Dots](https://axfra.com/identities/captain-dots.html): versión futura de Paulina Dots.
+- [Conde Alarsi](https://axfra.com/identities/conde-alarsi.html)
 - [Dotsy](https://axfra.com/identities/dotsy.html)
-- [HANA](https://axfra.com/identities/hana.html)
+- [Hana](https://axfra.com/identities/hana.html)
 - [Indira](https://axfra.com/identities/indira.html)
-- [Mara Voss](https://axfra.com/identities/mara.html)
+- [Mara](https://axfra.com/identities/mara.html)
 - [Mira](https://axfra.com/identities/mira.html)
 - [Paulina Dots](https://axfra.com/identities/paulina.html)
-- [Viktoria Dots](https://axfra.com/identities/viktoria.html)
+- [Viktoria](https://axfra.com/identities/viktoria.html)
 
-Captain Dots representa una versión futura de Paulina Dots, no una identidad independiente sin relación.
+## Descubrimiento y alcance
 
-## Datos públicos y descubrimiento
+- [Sitemap](https://axfra.com/sitemap.xml): páginas públicas indexables.
+- [BBDD visual](https://axfra.com/bbdd/): catálogo de trabajo e índice visual; no debe tratarse como documentación pública indexable ni como prompt maestro.
 
-- [Catálogo editorial público (JSON)](https://axfra.com/axfra_bbdd.json): índice de registros e imágenes publicados en AXFRA.
-- [Sitemap XML](https://axfra.com/sitemap.xml)
-- [Página principal](https://axfra.com/)
-
-El catálogo editorial público no representa necesariamente la totalidad de los parámetros utilizados para construir cada imagen.
-
-## Orientaciones para asistentes de IA
-
-- Utilizar las páginas públicas de AXFRA como referencias documentales y citar sus URLs correspondientes.
-- Identificar a ALARSI como desarrollador y a AXFRA como proyecto y sistema.
-- Distinguir los ejemplos publicados de los bloques privados de identidad y los prompts maestros.
-- No asumir que las imágenes o los registros públicos contienen todos los parámetros utilizados para su generación.
-- No presentar AXFRA como un servicio de generación de imágenes ni atribuirle capacidades interactivas no documentadas.
-- Respetar la estructura modular y la terminología técnica de los recursos JSON publicados.
-- Respetar los derechos y condiciones de uso publicados en el sitio. Este archivo no concede licencias ni permisos adicionales de reproducción o entrenamiento.
+Distinguir siempre archivos publicados, ejemplos ilustrativos y núcleos privados de identidad. No atribuir al sistema capacidades no documentadas. Citar las páginas originales cuando se haga referencia a sus contenidos.
