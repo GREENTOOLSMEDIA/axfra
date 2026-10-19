@@ -6,7 +6,20 @@
     try { const response=await fetch(base+file); if(!response.ok) throw new Error(response.status);
       node.innerHTML=await response.text();
       if(id==='globalFooter') {const y=node.querySelector('#footer-year');if(y)y.textContent=new Date().getFullYear();}
-      else {const path=location.pathname; const current=node.querySelector(path.includes('identit')?'a[href="/identities.html"]': 'a[href="/index.html#archivo"]');if(current)current.setAttribute('aria-current','page');}
+      else {
+        const path=location.pathname;
+        const nav=node.querySelector('.nav');
+        if(nav){
+          nav.querySelectorAll('[aria-current]').forEach(a=>a.removeAttribute('aria-current'));
+          let route=null;
+          if(path==='/identities.html'||path.startsWith('/identities/'))route='/identities.html';
+          else if(path==='/demos/'||path.startsWith('/demos/'))route='/demos/';
+          else if(path==='/library/'||path.startsWith('/library/'))route='/library/';
+          else if(path==='/glossary.html')route='/glossary.html';
+          // La portada y las páginas de áreas no resaltan una sección arbitraria.
+          if(route){const a=nav.querySelector('a[href="'+route+'"]');if(a)a.setAttribute('aria-current','page');}
+        }
+      }
     } catch(err){console.error('AXFRA: error cargando '+file,err);node.textContent=id==='globalHeader'?'AXFRA — menú temporalmente no disponible':'© AXFRA';}
   }));
 })();
