@@ -1,0 +1,37 @@
+# AXFRA — Librería JSON
+
+> Biblioteca de componentes visuales estructurados en JSON, desarrollada por ALARSI para AXFRA. Los módulos permiten describir y combinar partes de una composición visual en motores de IA compatibles con instrucciones textuales o estructuradas.
+
+Librería oficial: https://axfra.com/library/
+Proyecto: https://axfra.com/
+Desarrollador: ALARSI — https://alarsi.com/
+
+La Librería reúne piezas individuales, no un único prompt monolítico. Al reutilizar una pieza se debe respetar su ID, categoría, slot y reglas propias. Algunos módulos incluyen swap_rule, atributos editables, bloqueos y metadatos de procedencia. No asumir que todos los archivos poseen exactamente el mismo esquema: inspeccionar el JSON específico antes de utilizarlo.
+
+El uso puede ser directo, seleccionando y combinando archivos JSON, o mediado por un asistente de IA que elabore instrucciones equivalentes conforme a los módulos publicados. La compatibilidad efectiva y fidelidad de los resultados dependen del modelo utilizado.
+
+## Acceso al catálogo
+
+- [Interfaz de la Librería JSON](https://axfra.com/library/): navegación y consulta de recursos publicados.
+- [Índice JSON de la Librería](https://axfra.com/library/axfra_json_library_index.json): inventario publicado de módulos.
+
+## Áreas relacionadas
+
+- [Identidades](https://axfra.com/identities.html): referencias de sujetos; los núcleos maestros privados de identidad no están incluidos necesariamente en la Librería.
+- [Poses](https://axfra.com/poses.html): poses y expresiones.
+- [Vestuario](https://axfra.com/apparel.html): prendas y accesorios.
+- [Entornos](https://axfra.com/environments.html): escenarios y elementos de ambiente.
+- [Cámara e iluminación](https://axfra.com/camera.html): orientación de cámara, perspectiva e iluminación.
+- [Estilos](https://axfra.com/styles.html): lenguajes y tratamientos visuales.
+- [Glosario](https://axfra.com/glossary.html): conceptos técnicos.
+- [Demostraciones](https://axfra.com/demos/): usos narrativos de la arquitectura modular.
+
+## Orientaciones para asistentes de IA
+
+- Leer el archivo JSON específico antes de describir sus parámetros o modificarlo.
+- Conservar IDs, cortes de prendas, estructuras y bloqueos salvo instrucciones expresas de cambio.
+- Mantener separados la identidad, el vestuario, el entorno, la cámara y otros módulos para evitar cambios no solicitados.
+- Diferenciar un módulo de ejemplo, una composición ilustrativa y un prompt completo de producción.
+- No presentar los recursos públicos como autorización para reproducir imágenes, identidades o material protegido.
+
+La carpeta /axfra_json_library/ es una estructura anterior y no debe usarse como destino oficial de enlaces.
