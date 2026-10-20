@@ -11,34 +11,113 @@
     "license": "all rights reserved",
     "version": "1.0"
   },
-  "archive": "AXFRA",
   "category": "wardrobe",
   "slot": "look",
-  "piece_family": "flat_lay",
-  "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
-  "source_reference": "image(5).jpeg",
-  "components": {
-    "top": {
-      "type": "rainbow rhinestone/sequin triangle halter top",
-      "details": "horizontal red, orange, yellow, green, blue and violet bands; multicolored neck ties, underbust ring and slim crossing straps"
-    },
-    "bottom": {
-      "type": "white tiered mini skirt",
-      "details": "multiple soft pleated or ruffled layers"
-    },
-    "shoes": {
-      "type": "white platform high-heel sandals with rainbow color straps"
-    },
-    "bag": {
-      "type": "small rainbow-stripe shoulder handbag"
-    },
-    "accessories": {
-      "type": "rainbow-tint wraparound sunglasses, multicolor beaded bracelets and charm chain belt with rainbow flag charms"
-    }
+  "piece_family": "flat",
+  "source_id": "look.rainbow.sequin.halter.white.skirt",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "rainbow rhinestone/sequin triangle halter top",
+    "details": "horizontal red, orange, yellow, green, blue and violet bands; multicolored neck ties, underbust ring and slim crossing straps",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
   },
-  "constraints": [
-    "Keep all listed wardrobe pieces and accessories within the same look.",
-    "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
-    "Do not invent missing footwear or accessories."
-  ]
+  "bottom": {
+    "type": "white tiered mini skirt",
+    "details": "multiple soft pleated or ruffled layers",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "shoes": {
+    "type": "white platform high-heel sandals with rainbow color straps",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "bag": {
+    "type": "small rainbow-stripe shoulder handbag",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "accessories": {
+    "type": "rainbow-tint wraparound sunglasses, multicolor beaded bracelets and charm chain belt with rainbow flag charms",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "original_specification": {
+    "id": "AXFRA_wardrobe_look_rainbow_sequin_halter_white_skirt",
+    "name": "Rainbow Sequin Halter and White Pleated Skirt",
+    "name_es": "Top arcoíris y falda blanca plisada",
+    "meta": {
+      "developer": "ALARSI",
+      "developer_site": "https://alarsi.com",
+      "brand": "AXFRA",
+      "brand_site": "https://axfra.com",
+      "system": "AXFRA JSON prompt system",
+      "license": "all rights reserved",
+      "version": "1.0"
+    },
+    "archive": "AXFRA",
+    "category": "wardrobe",
+    "slot": "look",
+    "piece_family": "flat_lay",
+    "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
+    "source_reference": "image(5).jpeg",
+    "components": {
+      "top": {
+        "type": "rainbow rhinestone/sequin triangle halter top",
+        "details": "horizontal red, orange, yellow, green, blue and violet bands; multicolored neck ties, underbust ring and slim crossing straps"
+      },
+      "bottom": {
+        "type": "white tiered mini skirt",
+        "details": "multiple soft pleated or ruffled layers"
+      },
+      "shoes": {
+        "type": "white platform high-heel sandals with rainbow color straps"
+      },
+      "bag": {
+        "type": "small rainbow-stripe shoulder handbag"
+      },
+      "accessories": {
+        "type": "rainbow-tint wraparound sunglasses, multicolor beaded bracelets and charm chain belt with rainbow flag charms"
+      }
+    },
+    "constraints": [
+      "Keep all listed wardrobe pieces and accessories within the same look.",
+      "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
+      "Do not invent missing footwear or accessories."
+    ]
+  },
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip"
 }

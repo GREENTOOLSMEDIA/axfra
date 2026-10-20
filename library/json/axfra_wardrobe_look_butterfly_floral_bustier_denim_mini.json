@@ -11,38 +11,124 @@
     "license": "all rights reserved",
     "version": "1.0"
   },
-  "archive": "AXFRA",
   "category": "wardrobe",
   "slot": "look",
-  "piece_family": "flat_lay",
-  "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
-  "source_reference": "image(9).jpeg",
-  "components": {
-    "top": {
-      "type": "colorful butterfly/floral corset bustier halter",
-      "details": "structured cups, fitted bodice, central sparkling butterfly ornament, multicolor scarf-like side ties",
-      "colors": "pink, orange, coral and turquoise"
-    },
-    "bottom": {
-      "type": "blue denim micro mini skirt",
-      "details": "distressed/frayed lace-trim hem, butterfly embroidery, decorative pink side lacing and jewel-trimmed waistband"
-    },
-    "belt": {
-      "type": "wide black studded belt with large ornate metallic buckle and hanging charms"
-    },
-    "shoes": {
-      "type": "white knee-high platform boots with colorful butterfly embroidery and block heels"
-    },
-    "bag": {
-      "type": "coral floral embroidered shoulder bag with butterfly motif"
-    },
-    "accessories": {
-      "type": "pink-tinted sunglasses, gold jewelry and floral charm bracelets"
-    }
+  "piece_family": "flat",
+  "source_id": "look.butterfly.floral.bustier.denim.mini",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "colorful butterfly/floral corset bustier halter",
+    "details": "structured cups, fitted bodice, central sparkling butterfly ornament, multicolor scarf-like side ties",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": "pink, orange, coral and turquoise"
   },
-  "constraints": [
-    "Keep all listed wardrobe pieces and accessories within the same look.",
-    "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
-    "Do not invent missing footwear or accessories."
-  ]
+  "bottom": {
+    "type": "blue denim micro mini skirt",
+    "details": "distressed/frayed lace-trim hem, butterfly embroidery, decorative pink side lacing and jewel-trimmed waistband",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "belt": {
+    "type": "wide black studded belt with large ornate metallic buckle and hanging charms",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "shoes": {
+    "type": "white knee-high platform boots with colorful butterfly embroidery and block heels",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "bag": {
+    "type": "coral floral embroidered shoulder bag with butterfly motif",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "accessories": {
+    "type": "pink-tinted sunglasses, gold jewelry and floral charm bracelets",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "original_specification": {
+    "id": "AXFRA_wardrobe_look_butterfly_floral_bustier_denim_mini",
+    "name": "Floral Butterfly Bustier and Denim Mini",
+    "name_es": "Bustier floral mariposas y falda denim",
+    "meta": {
+      "developer": "ALARSI",
+      "developer_site": "https://alarsi.com",
+      "brand": "AXFRA",
+      "brand_site": "https://axfra.com",
+      "system": "AXFRA JSON prompt system",
+      "license": "all rights reserved",
+      "version": "1.0"
+    },
+    "archive": "AXFRA",
+    "category": "wardrobe",
+    "slot": "look",
+    "piece_family": "flat_lay",
+    "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
+    "source_reference": "image(9).jpeg",
+    "components": {
+      "top": {
+        "type": "colorful butterfly/floral corset bustier halter",
+        "details": "structured cups, fitted bodice, central sparkling butterfly ornament, multicolor scarf-like side ties",
+        "colors": "pink, orange, coral and turquoise"
+      },
+      "bottom": {
+        "type": "blue denim micro mini skirt",
+        "details": "distressed/frayed lace-trim hem, butterfly embroidery, decorative pink side lacing and jewel-trimmed waistband"
+      },
+      "belt": {
+        "type": "wide black studded belt with large ornate metallic buckle and hanging charms"
+      },
+      "shoes": {
+        "type": "white knee-high platform boots with colorful butterfly embroidery and block heels"
+      },
+      "bag": {
+        "type": "coral floral embroidered shoulder bag with butterfly motif"
+      },
+      "accessories": {
+        "type": "pink-tinted sunglasses, gold jewelry and floral charm bracelets"
+      }
+    },
+    "constraints": [
+      "Keep all listed wardrobe pieces and accessories within the same look.",
+      "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
+      "Do not invent missing footwear or accessories."
+    ]
+  },
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip"
 }

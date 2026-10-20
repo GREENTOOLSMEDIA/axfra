@@ -11,37 +11,123 @@
     "license": "all rights reserved",
     "version": "1.0"
   },
-  "archive": "AXFRA",
   "category": "wardrobe",
   "slot": "look",
-  "piece_family": "flat_lay",
-  "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
-  "source_reference": "image(4).jpeg",
-  "components": {
-    "top": {
-      "type": "black short-sleeve zip-front high-neck racing crop top",
-      "details": "red and white shoulder inserts, white piping, CHICAGO and 23 front graphics"
-    },
-    "bottom": {
-      "type": "black oversized wide-leg cargo jeans",
-      "details": "multiple strapped pockets, metal buckles, belts, side chains and contrast stitching"
-    },
-    "hat": {
-      "type": "black flat-brim baseball cap with red NY monogram and red visor"
-    },
-    "shoes": {
-      "type": "red black and white high-top basketball sneakers"
-    },
-    "bag": {
-      "type": "glossy red slouchy shoulder bag with buckles and cross ornament"
-    },
-    "accessories": {
-      "type": "black rectangular sunglasses, silver cross necklace, earrings, chain bracelet and silver wristwatch"
-    }
+  "piece_family": "flat",
+  "source_id": "look.chicago.23.racer.cargo",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "top": {
+    "type": "black short-sleeve zip-front high-neck racing crop top",
+    "details": "red and white shoulder inserts, white piping, CHICAGO and 23 front graphics",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
   },
-  "constraints": [
-    "Keep all listed wardrobe pieces and accessories within the same look.",
-    "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
-    "Do not invent missing footwear or accessories."
-  ]
+  "bottom": {
+    "type": "black oversized wide-leg cargo jeans",
+    "details": "multiple strapped pockets, metal buckles, belts, side chains and contrast stitching",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "hat": {
+    "type": "black flat-brim baseball cap with red NY monogram and red visor",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "shoes": {
+    "type": "red black and white high-top basketball sneakers",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "bag": {
+    "type": "glossy red slouchy shoulder bag with buckles and cross ornament",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "accessories": {
+    "type": "black rectangular sunglasses, silver cross necklace, earrings, chain bracelet and silver wristwatch",
+    "material": null,
+    "thickness": null,
+    "transparency": null,
+    "color": null
+  },
+  "original_specification": {
+    "id": "AXFRA_wardrobe_look_chicago_23_racer_cargo",
+    "name": "Chicago 23 Racer Crop and Black Cargo Jeans",
+    "name_es": "Top Chicago 23 y pantalones cargo negros",
+    "meta": {
+      "developer": "ALARSI",
+      "developer_site": "https://alarsi.com",
+      "brand": "AXFRA",
+      "brand_site": "https://axfra.com",
+      "system": "AXFRA JSON prompt system",
+      "license": "all rights reserved",
+      "version": "1.0"
+    },
+    "archive": "AXFRA",
+    "category": "wardrobe",
+    "slot": "look",
+    "piece_family": "flat_lay",
+    "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
+    "source_reference": "image(4).jpeg",
+    "components": {
+      "top": {
+        "type": "black short-sleeve zip-front high-neck racing crop top",
+        "details": "red and white shoulder inserts, white piping, CHICAGO and 23 front graphics"
+      },
+      "bottom": {
+        "type": "black oversized wide-leg cargo jeans",
+        "details": "multiple strapped pockets, metal buckles, belts, side chains and contrast stitching"
+      },
+      "hat": {
+        "type": "black flat-brim baseball cap with red NY monogram and red visor"
+      },
+      "shoes": {
+        "type": "red black and white high-top basketball sneakers"
+      },
+      "bag": {
+        "type": "glossy red slouchy shoulder bag with buckles and cross ornament"
+      },
+      "accessories": {
+        "type": "black rectangular sunglasses, silver cross necklace, earrings, chain bracelet and silver wristwatch"
+      }
+    },
+    "constraints": [
+      "Keep all listed wardrobe pieces and accessories within the same look.",
+      "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
+      "Do not invent missing footwear or accessories."
+    ]
+  },
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip"
 }
