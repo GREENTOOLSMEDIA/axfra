@@ -1,0 +1,134 @@
+{
+  "id": "AXFRA_wardrobe_look_butterfly_floral_bustier_denim_mini",
+  "name": "Floral Butterfly Bustier and Denim Mini",
+  "name_es": "Bustier floral mariposas y falda denim",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.butterfly.floral.bustier.denim.mini",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "top": {
+    "type": "colorful butterfly/floral corset bustier halter",
+    "details": "structured cups, fitted bodice, central sparkling butterfly ornament, multicolor scarf-like side ties",
+    "material": "printed satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "pink, orange, coral and turquoise"
+  },
+  "bottom": {
+    "type": "blue denim micro mini skirt",
+    "details": "distressed/frayed lace-trim hem, butterfly embroidery, decorative pink side lacing and jewel-trimmed waistband",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "blue with pink accents"
+  },
+  "belt": {
+    "type": "wide black studded belt with large ornate metallic buckle and hanging charms",
+    "material": "leather and metal",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black and silver"
+  },
+  "shoes": {
+    "type": "white knee-high platform boots with colorful butterfly embroidery and block heels",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white with multicolor embroidery"
+  },
+  "bag": {
+    "type": "coral floral embroidered shoulder bag with butterfly motif",
+    "material": "embroidered fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "coral"
+  },
+  "accessories": {
+    "type": "pink-tinted sunglasses, gold jewelry and floral charm bracelets",
+    "material": "metal and tinted lenses",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "pink and gold"
+  },
+  "original_specification": {
+    "id": "look.butterfly.floral.bustier.denim.mini",
+    "name_es": "Bustier floral mariposas y falda denim",
+    "top": {
+      "type": "colorful butterfly/floral corset bustier halter",
+      "details": "structured cups, fitted bodice, central sparkling butterfly ornament, multicolor scarf-like side ties",
+      "material": "printed satin",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "pink, orange, coral and turquoise"
+    },
+    "bottom": {
+      "type": "blue denim micro mini skirt",
+      "details": "distressed/frayed lace-trim hem, butterfly embroidery, decorative pink side lacing and jewel-trimmed waistband",
+      "material": "denim",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "blue with pink accents"
+    },
+    "belt": {
+      "type": "wide black studded belt with large ornate metallic buckle and hanging charms",
+      "material": "leather and metal",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black and silver"
+    },
+    "shoes": {
+      "type": "white knee-high platform boots with colorful butterfly embroidery and block heels",
+      "material": "leather",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "white with multicolor embroidery"
+    },
+    "bag": {
+      "type": "coral floral embroidered shoulder bag with butterfly motif",
+      "material": "embroidered fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "coral"
+    },
+    "accessories": {
+      "type": "pink-tinted sunglasses, gold jewelry and floral charm bracelets",
+      "material": "metal and tinted lenses",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "pink and gold"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "AXFRA_wardrobe_look_black_pinstripe_blazer_bodysuit",
+  "name": "Black Pinstripe Blazer Bodysuit",
+  "name_es": "Body blazer negro diplomático",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.black.pinstripe.blazer.bodysuit",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "bodysuit": {
+    "type": "double-breasted tailored blazer bodysuit",
+    "cut": "long sleeves, structured shoulders, notched lapels, fitted waist and high-cut bodysuit bottom",
+    "material": "pinstripe suiting fabric",
+    "color": "black",
+    "pattern": "fine white vertical pinstripes",
+    "details": "double rows of dark buttons, flap pockets, small welt breast pocket",
+    "thickness": "normal",
+    "transparency": "no"
+  },
+  "hat": {
+    "type": "black pinstripe newsboy cap with short visor",
+    "material": "pinstripe suiting fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black"
+  },
+  "hosiery": {
+    "type": "sheer black full-length tights",
+    "material": "mesh",
+    "thickness": "very thin",
+    "transparency": "yes",
+    "color": "black"
+  },
+  "shoes": {
+    "type": "black pointed-toe slingback stiletto heels with fluffy feather trim",
+    "material": "leather with feather trim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black"
+  },
+  "accessory": {
+    "type": "small black quilted belt pouch, black belt with gold-tone hardware and decorative monogram clasp",
+    "material": "leather and metal",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black and gold"
+  },
+  "original_specification": {
+    "id": "look.black.pinstripe.blazer.bodysuit",
+    "name_es": "Body blazer negro diplomático",
+    "bodysuit": {
+      "type": "double-breasted tailored blazer bodysuit",
+      "cut": "long sleeves, structured shoulders, notched lapels, fitted waist and high-cut bodysuit bottom",
+      "material": "pinstripe suiting fabric",
+      "color": "black",
+      "pattern": "fine white vertical pinstripes",
+      "details": "double rows of dark buttons, flap pockets, small welt breast pocket",
+      "thickness": "normal",
+      "transparency": "no"
+    },
+    "hat": {
+      "type": "black pinstripe newsboy cap with short visor",
+      "material": "pinstripe suiting fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black"
+    },
+    "hosiery": {
+      "type": "sheer black full-length tights",
+      "material": "mesh",
+      "thickness": "very thin",
+      "transparency": "yes",
+      "color": "black"
+    },
+    "shoes": {
+      "type": "black pointed-toe slingback stiletto heels with fluffy feather trim",
+      "material": "leather with feather trim",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black"
+    },
+    "accessory": {
+      "type": "small black quilted belt pouch, black belt with gold-tone hardware and decorative monogram clasp",
+      "material": "leather and metal",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black and gold"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "AXFRA_wardrobe_look_chicago_23_racer_cargo",
+  "name": "Chicago 23 Racer Crop and Black Cargo Jeans",
+  "name_es": "Top Chicago 23 y pantalones cargo negros",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.chicago.23.racer.cargo",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "top": {
+    "type": "black short-sleeve zip-front high-neck racing crop top",
+    "details": "red and white shoulder inserts, white piping, CHICAGO and 23 front graphics",
+    "material": "stretch knit",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "black, red and white"
+  },
+  "bottom": {
+    "type": "black oversized wide-leg cargo jeans",
+    "details": "multiple strapped pockets, metal buckles, belts, side chains and contrast stitching",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black"
+  },
+  "hat": {
+    "type": "black flat-brim baseball cap with red NY monogram and red visor",
+    "material": "cotton",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black and red"
+  },
+  "shoes": {
+    "type": "red black and white high-top basketball sneakers",
+    "material": "leather and rubber",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red, black and white"
+  },
+  "bag": {
+    "type": "glossy red slouchy shoulder bag with buckles and cross ornament",
+    "material": "patent leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red"
+  },
+  "accessories": {
+    "type": "black rectangular sunglasses, silver cross necklace, earrings, chain bracelet and silver wristwatch",
+    "material": "metal and tinted lenses",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "silver and black"
+  },
+  "original_specification": {
+    "id": "look.chicago.23.racer.cargo",
+    "name_es": "Top Chicago 23 y pantalones cargo negros",
+    "top": {
+      "type": "black short-sleeve zip-front high-neck racing crop top",
+      "details": "red and white shoulder inserts, white piping, CHICAGO and 23 front graphics",
+      "material": "stretch knit",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "black, red and white"
+    },
+    "bottom": {
+      "type": "black oversized wide-leg cargo jeans",
+      "details": "multiple strapped pockets, metal buckles, belts, side chains and contrast stitching",
+      "material": "denim",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black"
+    },
+    "hat": {
+      "type": "black flat-brim baseball cap with red NY monogram and red visor",
+      "material": "cotton",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black and red"
+    },
+    "shoes": {
+      "type": "red black and white high-top basketball sneakers",
+      "material": "leather and rubber",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "red, black and white"
+    },
+    "bag": {
+      "type": "glossy red slouchy shoulder bag with buckles and cross ornament",
+      "material": "patent leather",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "red"
+    },
+    "accessories": {
+      "type": "black rectangular sunglasses, silver cross necklace, earrings, chain bracelet and silver wristwatch",
+      "material": "metal and tinted lenses",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "silver and black"
+    }
+  }
+}

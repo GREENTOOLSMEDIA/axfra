@@ -1,0 +1,98 @@
+{
+  "id": "AXFRA_wardrobe_look_red_gingham_top_shorts_gloves",
+  "name": "Red Gingham Top and Shorts with Gloves",
+  "name_es": "Top y shorts de cuadros rojos con guantes",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.red.gingham.top.shorts.gloves",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "top": {
+    "type": "fitted scoop-neck sleeveless tank or corset-style top",
+    "material": "stretch fabric",
+    "pattern": "red and white gingham check",
+    "details": "red trim, wide straps, shaped waist",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red and white"
+  },
+  "bottom": {
+    "type": "matching very short tailored shorts",
+    "pattern": "red and white gingham check",
+    "details": "red piping, white contrast waistband, belt loops, front pockets",
+    "material": "stretch fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "red and white"
+  },
+  "gloves": {
+    "type": "extra-long fitted red opera gloves",
+    "length": "above elbow",
+    "material": "stretch satin",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "red"
+  },
+  "original_specification": {
+    "id": "look.red.gingham.top.shorts.gloves",
+    "name_es": "Top y shorts de cuadros rojos con guantes",
+    "top": {
+      "type": "fitted scoop-neck sleeveless tank or corset-style top",
+      "material": "stretch fabric",
+      "pattern": "red and white gingham check",
+      "details": "red trim, wide straps, shaped waist",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "red and white"
+    },
+    "bottom": {
+      "type": "matching very short tailored shorts",
+      "pattern": "red and white gingham check",
+      "details": "red piping, white contrast waistband, belt loops, front pockets",
+      "material": "stretch fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "red and white"
+    },
+    "gloves": {
+      "type": "extra-long fitted red opera gloves",
+      "length": "above elbow",
+      "material": "stretch satin",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "red"
+    }
+  }
+}

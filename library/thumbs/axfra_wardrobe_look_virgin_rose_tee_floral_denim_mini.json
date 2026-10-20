@@ -1,0 +1,134 @@
+{
+  "id": "AXFRA_wardrobe_look_virgin_rose_tee_floral_denim_mini",
+  "name": "Rose Graphic Tee and Floral Denim Mini",
+  "name_es": "Polera rosas y minifalda denim bordada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.virgin.rose.tee.floral.denim.mini",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "top": {
+    "type": "white fitted baby tee with red lettuce edging",
+    "details": "short cap sleeves, cropped hem, rose embroidery on shoulders and central religious portrait with cherubs and roses",
+    "material": "cotton",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white with red edging"
+  },
+  "bottom": {
+    "type": "blue denim micro mini skirt",
+    "details": "distressed frayed hem, large red floral embroidery and ornate scroll patterns",
+    "material": "denim",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "blue with red embroidery"
+  },
+  "belt": {
+    "type": "black studded leather belt with oversized engraved silver buckle",
+    "material": "leather and metal",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "black and silver"
+  },
+  "shoes": {
+    "type": "white knee-high platform boots with red rose embroidery and high block heels",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white with red embroidery"
+  },
+  "bag": {
+    "type": "burgundy embroidered shoulder bag with flowers and religious icon",
+    "material": "embroidered fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "burgundy"
+  },
+  "accessories": {
+    "type": "gold hoop earrings, gold necklaces and rose-tinted sunglasses",
+    "material": "metal and tinted lenses",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "gold and rose"
+  },
+  "original_specification": {
+    "id": "look.virgin.rose.tee.floral.denim.mini",
+    "name_es": "Polera rosas y minifalda denim bordada",
+    "top": {
+      "type": "white fitted baby tee with red lettuce edging",
+      "details": "short cap sleeves, cropped hem, rose embroidery on shoulders and central religious portrait with cherubs and roses",
+      "material": "cotton",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "white with red edging"
+    },
+    "bottom": {
+      "type": "blue denim micro mini skirt",
+      "details": "distressed frayed hem, large red floral embroidery and ornate scroll patterns",
+      "material": "denim",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "blue with red embroidery"
+    },
+    "belt": {
+      "type": "black studded leather belt with oversized engraved silver buckle",
+      "material": "leather and metal",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "black and silver"
+    },
+    "shoes": {
+      "type": "white knee-high platform boots with red rose embroidery and high block heels",
+      "material": "leather",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "white with red embroidery"
+    },
+    "bag": {
+      "type": "burgundy embroidered shoulder bag with flowers and religious icon",
+      "material": "embroidered fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "burgundy"
+    },
+    "accessories": {
+      "type": "gold hoop earrings, gold necklaces and rose-tinted sunglasses",
+      "material": "metal and tinted lenses",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "gold and rose"
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "AXFRA_wardrobe_look_rainbow_sequin_halter_white_skirt",
+  "name": "Rainbow Sequin Halter and White Pleated Skirt",
+  "name_es": "Top arcoíris y falda blanca plisada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat",
+  "source_id": "look.rainbow.sequin.halter.white.skirt",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
+  "material_catalog": [
+    "cotton",
+    "knit",
+    "denim",
+    "leather",
+    "satin",
+    "lace",
+    "chiffon",
+    "mesh",
+    "fur",
+    "metal"
+  ],
+  "thickness_catalog": [
+    "very thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip",
+  "top": {
+    "type": "rainbow rhinestone/sequin triangle halter top",
+    "details": "horizontal red, orange, yellow, green, blue and violet bands; multicolored neck ties, underbust ring and slim crossing straps",
+    "material": "sequin-covered fabric",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "red, orange, yellow, green, blue and violet"
+  },
+  "bottom": {
+    "type": "white tiered mini skirt",
+    "details": "multiple soft pleated or ruffled layers",
+    "material": "chiffon with opaque lining",
+    "thickness": "thin",
+    "transparency": "no",
+    "color": "white"
+  },
+  "shoes": {
+    "type": "white platform high-heel sandals with rainbow color straps",
+    "material": "leather",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "white with rainbow straps"
+  },
+  "bag": {
+    "type": "small rainbow-stripe shoulder handbag",
+    "material": "fabric",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "rainbow stripes"
+  },
+  "accessories": {
+    "type": "rainbow-tint wraparound sunglasses, multicolor beaded bracelets and charm chain belt with rainbow flag charms",
+    "material": "metal, beads and tinted lenses",
+    "thickness": "normal",
+    "transparency": "no",
+    "color": "rainbow colors"
+  },
+  "original_specification": {
+    "id": "look.rainbow.sequin.halter.white.skirt",
+    "name_es": "Top arcoíris y falda blanca plisada",
+    "top": {
+      "type": "rainbow rhinestone/sequin triangle halter top",
+      "details": "horizontal red, orange, yellow, green, blue and violet bands; multicolored neck ties, underbust ring and slim crossing straps",
+      "material": "sequin-covered fabric",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "red, orange, yellow, green, blue and violet"
+    },
+    "bottom": {
+      "type": "white tiered mini skirt",
+      "details": "multiple soft pleated or ruffled layers",
+      "material": "chiffon with opaque lining",
+      "thickness": "thin",
+      "transparency": "no",
+      "color": "white"
+    },
+    "shoes": {
+      "type": "white platform high-heel sandals with rainbow color straps",
+      "material": "leather",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "white with rainbow straps"
+    },
+    "bag": {
+      "type": "small rainbow-stripe shoulder handbag",
+      "material": "fabric",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "rainbow stripes"
+    },
+    "accessories": {
+      "type": "rainbow-tint wraparound sunglasses, multicolor beaded bracelets and charm chain belt with rainbow flag charms",
+      "material": "metal, beads and tinted lenses",
+      "thickness": "normal",
+      "transparency": "no",
+      "color": "rainbow colors"
+    }
+  }
+}
