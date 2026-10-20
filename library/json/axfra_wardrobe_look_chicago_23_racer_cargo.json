@@ -1,7 +1,7 @@
 {
-  "id": "AXFRA_wardrobe_look_chicago_23_racer_cargo",
+  "id": "AXFRA_wardrobe_look_chicago_69_racer_cargo",
   "name": "Chicago 23 Racer Crop and Cargo Jeans",
-  "name_es": "Crop racing Chicago 23 y jeans cargo",
+  "name_es": "Crop racing Chicago 69 y jeans cargo",
   "meta": {
     "developer": "ALARSI",
     "developer_site": "https://alarsi.com",
@@ -13,12 +13,12 @@
   "category": "wardrobe",
   "slot": "look",
   "piece_family": "flat_lay",
-  "source_id": "look.chicago.23.racer.cargo",
+  "source_id": "look.chicago.69.racer.cargo",
   "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
   "top": {
     "type": "short-sleeve zip-front high-neck racing crop top",
     "color": "black with red and white shoulder inserts",
-    "details": "white piping and CHICAGO 23 front graphics"
+    "details": "white piping and AXFRA 69 front graphics"
   },
   "bottom": {
     "type": "oversized wide-leg cargo jeans",
@@ -27,7 +27,7 @@
     "details": "strapped pockets, metal buckles, belts, side chains and contrast stitching"
   },
   "accessories": [
-    "black flat-brim baseball cap with red NY monogram and red visor",
+    "black flat-brim baseball cap with red A monogram and red visor",
     "red, black and white high-top basketball sneakers",
     "glossy red slouchy shoulder bag with buckles and cross ornament",
     "black rectangular sunglasses",

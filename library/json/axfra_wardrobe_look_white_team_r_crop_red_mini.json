@@ -1,7 +1,7 @@
 {
   "id": "AXFRA_wardrobe_look_white_team_r_crop_red_mini",
   "name": "White R Crop Top and Red Vinyl Mini",
-  "name_es": "Crop top blanco R y minifalda roja",
+  "name_es": "Crop top blanco A y minifalda roja",
   "meta": {
     "developer": "ALARSI",
     "developer_site": "https://alarsi.com",
@@ -18,7 +18,7 @@
   "top": {
     "type": "short-sleeve fitted cropped tee",
     "color": "white",
-    "graphic": "large bold red capital R on the front"
+    "graphic": "large bold red capital A on the front"
   },
   "bottom": {
     "type": "high-waisted fitted mini skirt with smooth front and narrow hem",
@@ -28,8 +28,8 @@
   },
   "accessories": [
     "black patent thigh-high pointed-toe stiletto boots",
-    "red metallic rectangular clutch with white R emblem",
-    "silver hoop earrings with red R charms",
+    "red metallic rectangular clutch with white A emblem",
+    "silver hoop earrings with red A charms",
     "red crystal bracelet"
   ]
 }
