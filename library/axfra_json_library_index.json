@@ -8,28 +8,28 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 407,
+  "total_json": 417,
   "categories": {
-    "camera": 9,
-    "dummy": 8,
-    "environment": 3,
-    "general": 15,
-    "identity": 24,
-    "lighting": 15,
-    "motion": 7,
+    "wardrobe": 175,
     "pose": 115,
+    "dummy": 8,
+    "general": 15,
+    "environment": 3,
+    "motion": 7,
     "prop": 5,
-    "rotation": 1,
-    "sports_uniform": 1,
+    "identity": 24,
     "style": 29,
-    "wardrobe": 165,
+    "lighting": 15,
+    "camera": 9,
+    "sports_uniform": 1,
+    "rotation": 1,
     "appearance": 10
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 165,
+      "count": 175,
       "children": [
         {
           "id": "tops",
@@ -49,7 +49,7 @@
         {
           "id": "looks",
           "label": "Looks y conjuntos",
-          "count": 124
+          "count": 134
         },
         {
           "id": "stage",
@@ -4704,6 +4704,116 @@
       "thumb": null,
       "group": "appearance",
       "subgroup": "makeup"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_black_pinstripe_blazer_bodysuit",
+      "name": "Black Pinstripe Blazer Bodysuit",
+      "name_es": "Body blazer negro diplomático",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_black_pinstripe_blazer_bodysuit.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_black_pinstripe_blazer_bodysuit.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_black_white_ruched_bustier_mini",
+      "name": "Black and White Ruched Bustier Mini Dress",
+      "name_es": "Minivestido drapeado blanco y negro",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_black_white_ruched_bustier_mini.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_black_white_ruched_bustier_mini.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_butterfly_floral_bustier_denim_mini",
+      "name": "Floral Butterfly Bustier and Denim Mini",
+      "name_es": "Bustier floral mariposas y falda denim",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_butterfly_floral_bustier_denim_mini.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_butterfly_floral_bustier_denim_mini.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_chicago_23_racer_cargo",
+      "name": "Chicago 23 Racer Crop and Black Cargo Jeans",
+      "name_es": "Top Chicago 23 y pantalones cargo negros",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_chicago_23_racer_cargo.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_chicago_23_racer_cargo.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_cognac_leather_corset_trench_boots",
+      "name": "Cognac Leather Corset Bodysuit and Trench Coat",
+      "name_es": "Body corsé, gabardina y botas de cuero coñac",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_cognac_leather_corset_trench_boots.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_cognac_leather_corset_trench_boots.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_rainbow_sequin_halter_white_skirt",
+      "name": "Rainbow Sequin Halter and White Pleated Skirt",
+      "name_es": "Top arcoíris y falda blanca plisada",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_rainbow_sequin_halter_white_skirt.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_rainbow_sequin_halter_white_skirt.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_red_gingham_top_shorts_gloves",
+      "name": "Red Gingham Top and Shorts with Gloves",
+      "name_es": "Top y shorts de cuadros rojos con guantes",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_red_gingham_top_shorts_gloves.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_red_gingham_top_shorts_gloves.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_teal_mockneck_crop_thong",
+      "name": "Teal Mock-Neck Crop and Matching Thong",
+      "name_es": "Crop cuello alto y tanga verde azulado",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_teal_mockneck_crop_thong.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_teal_mockneck_crop_thong.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_virgin_rose_tee_floral_denim_mini",
+      "name": "Rose Graphic Tee and Floral Denim Mini",
+      "name_es": "Polera rosas y minifalda denim bordada",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_virgin_rose_tee_floral_denim_mini.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_virgin_rose_tee_floral_denim_mini.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_white_team_r_crop_red_mini",
+      "name": "White R Crop Top and Red Vinyl Mini",
+      "name_es": "Crop top blanco R y minifalda roja",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_white_team_r_crop_red_mini.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_white_team_r_crop_red_mini.json",
+      "thumb": null,
+      "group": "wardrobe",
+      "subgroup": "looks"
     }
   ]
 }
