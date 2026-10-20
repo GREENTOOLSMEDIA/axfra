@@ -1,105 +1,32 @@
 {
   "id": "AXFRA_wardrobe_look_cognac_leather_corset_trench_boots",
-  "name": "Cognac Leather Corset Bodysuit and Trench Coat",
-  "name_es": "Body corsé, gabardina y botas de cuero coñac",
+  "name": "Cognac Leather Corset, Trench and Boots",
+  "name_es": "Corset de cuero, trench y botas coñac",
   "meta": {
     "developer": "ALARSI",
     "developer_site": "https://alarsi.com",
     "brand": "AXFRA",
     "brand_site": "https://axfra.com",
     "system": "AXFRA JSON prompt system",
-    "license": "all rights reserved",
     "version": "1.0"
   },
   "category": "wardrobe",
   "slot": "look",
-  "piece_family": "flat",
+  "piece_family": "flat_lay",
   "source_id": "look.cognac.leather.corset.trench.boots",
-  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia y color en cada pieza. El corte no se reescribe.",
-  "material_catalog": [
-    "cotton",
-    "knit",
-    "denim",
-    "leather",
-    "satin",
-    "lace",
-    "chiffon",
-    "mesh",
-    "fur",
-    "metal"
-  ],
-  "thickness_catalog": [
-    "very thin",
-    "thin",
-    "normal",
-    "thick"
-  ],
-  "transparency_catalog": [
-    "yes",
-    "no"
-  ],
+  "swap_rule": "El corte y la silueta del look quedan fijos. Citar por id y solo intercambiar atributos de color, material, grosor, transparencia, estampado o acabado.",
   "bodysuit": {
-    "type": "structured brown leather corset bodysuit over sheer fitted long sleeves",
-    "details": "underwire cups, seaming, high-cut bottom, high mock-neck translucent upper layer",
-    "material": null,
-    "thickness": null,
-    "transparency": null,
-    "color": null
+    "type": "structured leather corset bodysuit worn over a sheer fitted long-sleeve layer with high mock neck",
+    "color": "brown",
+    "details": "underwire cups, structured seams and high-cut bottom"
   },
   "outer": {
-    "type": "long brown leather trench coat",
-    "cut": "long open front, large lapels, belted cuffs, waist belt and flowing hem",
-    "lining": "black",
-    "material": null,
-    "thickness": null,
-    "transparency": null,
-    "color": null
+    "type": "long open-front trench coat with large lapels, belted cuffs and waist belt",
+    "material": "leather",
+    "color": "brown",
+    "lining": "black"
   },
-  "shoes": {
-    "type": "cognac leather thigh-high ruched pointed-toe stiletto boots",
-    "material": null,
-    "thickness": null,
-    "transparency": null,
-    "color": null
-  },
-  "original_specification": {
-    "id": "AXFRA_wardrobe_look_cognac_leather_corset_trench_boots",
-    "name": "Cognac Leather Corset Bodysuit and Trench Coat",
-    "name_es": "Body corsé, gabardina y botas de cuero coñac",
-    "meta": {
-      "developer": "ALARSI",
-      "developer_site": "https://alarsi.com",
-      "brand": "AXFRA",
-      "brand_site": "https://axfra.com",
-      "system": "AXFRA JSON prompt system",
-      "license": "all rights reserved",
-      "version": "1.0"
-    },
-    "archive": "AXFRA",
-    "category": "wardrobe",
-    "slot": "look",
-    "piece_family": "flat_lay",
-    "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
-    "source_reference": "image(8).jpeg",
-    "components": {
-      "bodysuit": {
-        "type": "structured brown leather corset bodysuit over sheer fitted long sleeves",
-        "details": "underwire cups, seaming, high-cut bottom, high mock-neck translucent upper layer"
-      },
-      "outer": {
-        "type": "long brown leather trench coat",
-        "cut": "long open front, large lapels, belted cuffs, waist belt and flowing hem",
-        "lining": "black"
-      },
-      "shoes": {
-        "type": "cognac leather thigh-high ruched pointed-toe stiletto boots"
-      }
-    },
-    "constraints": [
-      "Keep all listed wardrobe pieces and accessories within the same look.",
-      "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
-      "Do not invent missing footwear or accessories."
-    ]
-  },
-  "source_batch": "axfra_wardrobe_flatlays_10_normalized.zip"
+  "accessories": [
+    "cognac leather thigh-high ruched pointed-toe stiletto boots"
+  ]
 }
