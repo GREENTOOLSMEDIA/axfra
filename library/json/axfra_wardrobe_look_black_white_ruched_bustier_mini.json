@@ -1,0 +1,41 @@
+{
+  "id": "AXFRA_wardrobe_look_black_white_ruched_bustier_mini",
+  "name": "Black and White Ruched Bustier Mini Dress",
+  "name_es": "Minivestido drapeado blanco y negro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
+  "source_reference": "image(3).jpeg",
+  "components": {
+    "dress": {
+      "type": "figure-hugging mini dress with two-tone black and ivory panels",
+      "cut": "built-in structured bustier cups, narrow shoulder straps, body-hugging silhouette",
+      "details": "asymmetric two-color panels, gathered ruched seams along torso and hips"
+    },
+    "bag": {
+      "type": "small structured two-tone black and ivory handbag with gold-tone clasp"
+    },
+    "shoes": {
+      "type": "black and ivory pointed-toe stiletto pumps"
+    },
+    "jewelry": {
+      "type": "black-stone gold-tone earrings and matching bracelet"
+    }
+  },
+  "constraints": [
+    "Keep all listed wardrobe pieces and accessories within the same look.",
+    "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
+    "Do not invent missing footwear or accessories."
+  ]
+}

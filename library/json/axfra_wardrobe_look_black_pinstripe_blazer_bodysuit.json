@@ -1,0 +1,47 @@
+{
+  "id": "AXFRA_wardrobe_look_black_pinstripe_blazer_bodysuit",
+  "name": "Black Pinstripe Blazer Bodysuit",
+  "name_es": "Body blazer negro diplomático",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "flat_lay",
+  "swap_rule": "Reference this look by ID. Garment cuts and silhouettes remain unchanged; material, thickness, transparency, pattern, finish and color may be adjusted per component.",
+  "source_reference": "image.jpeg",
+  "components": {
+    "bodysuit": {
+      "type": "double-breasted tailored blazer bodysuit",
+      "cut": "long sleeves, structured shoulders, notched lapels, fitted waist and high-cut bodysuit bottom",
+      "material": "pinstripe suiting fabric",
+      "color": "black",
+      "pattern": "fine white vertical pinstripes",
+      "details": "double rows of dark buttons, flap pockets, small welt breast pocket"
+    },
+    "hat": {
+      "type": "black pinstripe newsboy cap with short visor"
+    },
+    "hosiery": {
+      "type": "sheer black full-length tights"
+    },
+    "shoes": {
+      "type": "black pointed-toe slingback stiletto heels with fluffy feather trim"
+    },
+    "accessory": {
+      "type": "small black quilted belt pouch, black belt with gold-tone hardware and decorative monogram clasp"
+    }
+  },
+  "constraints": [
+    "Keep all listed wardrobe pieces and accessories within the same look.",
+    "Do not add a model identity, facial attributes, hairstyle, pose or environment.",
+    "Do not invent missing footwear or accessories."
+  ]
+}
