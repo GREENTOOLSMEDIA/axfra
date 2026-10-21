@@ -1,0 +1,45 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_runway_garter_set",
+  "name": "Runway Garter Lingerie Set",
+  "name_es": "Set de pasarela con liguero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "runway",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte no se reescribe.",
+  "material_catalog": ["encaje", "malla", "satin"],
+  "grosor_catalog": ["muy_delgada", "delgada", "normal"],
+  "transparencia_range": {
+    "min": 0.0,
+    "max": 1.0,
+    "interpretation": "Fabric opacity: 1.0 = fully opaque, no transparency; 0.0 = fully transparent. Lower values make the fabric more see-through. Preserve the garment cut, seams, edges and decorative details."
+  },
+  "estampado_catalog": ["liso", "floral", "estrellas"],
+  "pieces": [
+    {
+      "id": "lingerie.runway.garter",
+      "name_es": "Set de pasarela con liguero",
+      "name_en": "Runway garter set",
+      "bra": "underwire bra, thin straps",
+      "panties": "lace panties with garter straps and chain at the hip",
+      "gloves": "long lace gloves extending up the arm",
+      "stockings": "thigh-high stockings with star-like shimmer",
+      "cape": "long open fabric drape, held at the sides",
+      "detail": "long earrings",
+      "material": "encaje",
+      "grosor": "muy_delgada",
+      "transparencia": 0.1,
+      "estampado": "estrellas",
+      "color": "negro"
+    }
+  ]
+}
