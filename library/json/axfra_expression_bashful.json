@@ -1,0 +1,53 @@
+{
+  "id": "AXFRA_expression_bashful",
+  "name": "Bashful",
+  "name_es": "Avergonzada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "identity",
+  "slot": "facial_expression",
+  "piece_family": "expression",
+  "source_id": "expression.bashful",
+  "swap_rule": "Reference the expression ID. Modify only the facial muscle configuration and facial gestures. Preserve facial identity, anatomy, proportions, hairstyle, and all other attributes not explicitly requested.",
+  "intensity_catalog": {
+    "subtle": 0.25,
+    "moderate": 0.5,
+    "strong": 0.75,
+    "extreme": 1.0
+  },
+  "default_intensity": "moderate",
+  "lock": [
+    "facial_identity",
+    "facial_anatomy",
+    "facial_proportions",
+    "eye_color",
+    "hair_style",
+    "hair_color",
+    "body_proportions",
+    "wardrobe",
+    "environment",
+    "camera"
+  ],
+  "editable": [
+    "eyebrows",
+    "eyes",
+    "mouth",
+    "cheeks",
+    "jaw",
+    "facial_muscle_tension"
+  ],
+  "eyebrows": "inner ends slightly raised, otherwise relaxed",
+  "eyes": "lowered gaze, eyelids softly lowered",
+  "mouth": "restrained smile, lips gently pressed together",
+  "cheeks": "slightly lifted",
+  "jaw": "relaxed",
+  "facial_muscle_tension": "mild around the mouth and inner eyebrows",
+  "intensity": "moderate"
+}
