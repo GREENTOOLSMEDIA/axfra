@@ -1,0 +1,34 @@
+{
+"id": "AXFRA_style_interior_glamour_mirror",
+"name": "Interior Glamour Mirror Photography",
+"name_es": "Fotografía de glamour interior frente al espejo",
+"meta": {
+"developer": "ALARSI",
+"developer_site": "https://alarsi.com",
+"brand": "AXFRA",
+"brand_site": "https://axfra.com",
+"system": "AXFRA JSON prompt system",
+"version": "1.0"
+},
+"category": "style",
+"slot": "photographic_style",
+"pose_and_framing_block": {
+"framing": "vertical composition. Mirror on the left showing the face and front of the torso; actual subject on the right, closer to the camera. Subject and reflection slightly overlap in the composition",
+"reflection": "two views of the same person: actual body seen from behind and frontal mirror reflection, with physically consistent anatomy and perspective"
+},
+"environment_block": {
+"location": "interior bedroom or dressing room",
+"background": "cool blue-gray walls, large metal-framed wall mirror, side cabinet with a small decorative figurine or box",
+"elements": "cylindrical white wall sconce on the right, softly blurred foreground furniture"
+},
+"lighting_block": {
+"lighting": "warm interior illumination mainly from the wall sconce on the right, creating a golden edge along the shoulder, hair and side of the body. Softer illumination on the left, warm skin tones contrasting with the cooler blue-gray room"
+},
+"camera_and_style_block": {
+"camera": "sharp focus on the subject and mirror reflection, slightly softer background, vertical framing",
+"style": "editorial glamour photography, realistic visible skin texture with a soft sheen, restrained contrast, clean photographic finish"
+},
+"constraints_block": {
+"preserve": "subject identity, facial features and body proportions"
+}
+}
