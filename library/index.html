@@ -166,7 +166,7 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 <main class="library-main" id="contenido">
 <aside class="sidebar"><h2>Categorías</h2><div class="library-summary" id="summary">Conectando…</div><nav id="categories"></nav><p class="hint">Catálogo automático · JSON originales intactos.</p></aside>
 <section class="catalog"><h2>Componentes</h2><input id="search" class="search" type="search" placeholder="Buscar nombre, ID o archivo…" aria-label="Buscar módulos"><div id="loading">Cargando biblioteca…</div><div id="items"></div></section>
-<section class="work"><div class="bar"><h2>Editor / pruebas JSON</h2><button id="new">Nuevo / pegar</button><button id="reload">Restaurar original</button></div><div id="filename" class="file">Selecciona un módulo o pega tu propio JSON.</div><textarea id="editor" class="editor" spellcheck="false" placeholder="Pega aquí cualquier JSON…"></textarea><div class="bar"><button id="validate">Validar JSON</button><button class="primary" id="copy">Copiar JSON</button><button id="download">Descargar .json</button><button id="add">Añadir a composición</button></div><div class="status" id="status"></div><div class="collection"><div class="bar"><h2>Composición de prueba <span id="nSelected" class="count">(0)</span></h2><button id="copyComposition">Copiar composición</button><button id="downloadComposition">Descargar composición</button><button id="clearComposition">Vaciar</button></div><div id="chips" class="chips"><span class="muted">Añade módulos desde el editor.</span></div><p class="hint">La composición agrupa los JSON íntegros por módulo.</p></div></section>
+<section class="work"><div class="bar"><h2>Editor / pruebas JSON</h2><button id="importJSON">Importar JSON</button><input id="importFile" type="file" accept=".json,application/json" hidden><button id="new">Nuevo / pegar</button><button id="reload">Restaurar JSON</button></div><div id="filename" class="file">Selecciona un módulo o pega tu propio JSON.</div><textarea id="editor" class="editor" spellcheck="false" placeholder="Pega aquí cualquier JSON…"></textarea><div class="bar"><button id="validate">Validar JSON</button><button class="primary" id="copy">Copiar JSON</button><button id="download">Descargar .json</button><button id="add">Añadir a composición</button></div><div class="status" id="status"></div><div class="collection"><div class="bar"><h2>Composición de prueba <span id="nSelected" class="count">(0)</span></h2><button id="copyComposition">Copiar composición</button><button id="downloadComposition">Descargar composición</button><button id="clearComposition">Vaciar</button></div><div id="chips" class="chips"><span class="muted">Añade módulos desde el editor.</span></div><p class="hint">La composición agrupa los JSON íntegros por módulo.</p></div></section>
 </main>
 <div id="globalFooter"></div>
 <script>
@@ -174,7 +174,7 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 const INDEX_URL='./axfra_json_library_index.json';
 const thumbVersion=Date.now(); // Verifica referencias nuevas en cada apertura
 const $=id=>document.getElementById(id);
-let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0;
+let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0,originalJSON=null;
 
 function thumbInitials(f){
   const name=(f.name_es||f.name||f.id||'??').trim();
@@ -264,13 +264,14 @@ function renderItems(){
 }
 
 async function loadFile(f){
-  const seq=++requestSeq;selected=f;$('filename').textContent='Cargando…';status('Recuperando JSON…');renderItems();
+  const seq=++requestSeq;originalJSON=null;selected=f;$('filename').textContent='Cargando…';status('Recuperando JSON…');renderItems();
   try{
     const r=await fetch(f.url,{cache:'no-cache'});
     if(!r.ok)throw new Error('HTTP '+r.status);
     const data=await r.json();
     if(seq!==requestSeq)return;
     $('editor').value=JSON.stringify(data,null,2);
+    originalJSON={text:$('editor').value,path:f.path};
     $('filename').textContent=f.path;
     status('JSON cargado.','ok');
   }catch(e){if(seq!==requestSeq)return;status('No se pudo cargar: '+e.message,'err')}
@@ -280,8 +281,28 @@ function makeComposition(){return {id:'AXFRA_test_composition',name:'AXFRA Test 
 function renderComposition(){const c=$('chips');c.replaceChildren();$('nSelected').textContent='('+composition.length+')';if(!composition.length){const span=document.createElement('span');span.className='muted';span.textContent='Sin módulos.';c.append(span)}composition.forEach((x,i)=>{const el=document.createElement('span');el.className='chip';el.append(document.createTextNode(x.label));const rm=document.createElement('button');rm.textContent='×';rm.onclick=()=>{composition.splice(i,1);renderComposition()};el.append(rm);c.append(el)})}
 
 $('search').addEventListener('input',()=>index&&renderItems());
-$('new').onclick=()=>{++requestSeq;selected=null;$('editor').value='';$('filename').textContent='JSON nuevo';status('Editor vacío.');if(index)renderItems();$('editor').focus()};
-$('reload').onclick=()=>{if(selected)loadFile(selected);else status('No hay archivo seleccionado.','err')};
+$('new').onclick=()=>{++requestSeq;selected=null;originalJSON=null;$('editor').value='';$('filename').textContent='JSON nuevo';status('Editor vacío.');if(index)renderItems();$('editor').focus()};
+$('importJSON').onclick=()=>{$('importFile').value='';$('importFile').click()};
+$('importFile').onchange=async()=>{
+  const file=$('importFile').files[0];if(!file)return;
+  const seq=++requestSeq;
+  try{
+    const text=await file.text();
+    const data=JSON.parse(text.replace(/^\uFEFF/,''));
+    if(seq!==requestSeq)return;
+    const formatted=JSON.stringify(data,null,2);
+    selected={path:'local/'+file.name};
+    originalJSON={text:formatted,path:selected.path};
+    $('editor').value=formatted;$('filename').textContent=selected.path;
+    if(index)renderItems();
+    status('JSON importado. Puedes editarlo o añadirlo a composición.','ok');
+  }catch(e){if(seq===requestSeq)status('No se pudo importar: '+e.message,'err')}
+};
+$('reload').onclick=()=>{
+  if(!originalJSON)return status('No hay un JSON original cargado para restaurar.','err');
+  ++requestSeq;$('editor').value=originalJSON.text;
+  $('filename').textContent=originalJSON.path;status('JSON restaurado.','ok');
+};
 $('validate').onclick=()=>{const data=getJSON();if(data!==null)status('JSON válido.','ok')};
 $('copy').onclick=()=>{const data=getJSON();if(data!==null)copyText(JSON.stringify(data,null,2))};
 $('download').onclick=()=>{const data=getJSON();if(data!==null)download(selected?.path.split('/').pop()||'axfra.json',JSON.stringify(data,null,2)+'\n')};
