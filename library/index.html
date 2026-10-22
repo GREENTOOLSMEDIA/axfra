@@ -125,6 +125,7 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 @media(max-width:1000px){.library-main{grid-template-columns:175px 255px minmax(0,1fr)}}
 @media(max-width:800px){.library-main{grid-template-columns:190px minmax(0,1fr);height:auto;overflow:visible}.sidebar{grid-row:1/3}.catalog{height:370px}.work{grid-column:2;height:700px}}
 @media(max-width:600px){.library-main{display:block}.sidebar{max-height:340px}.catalog{max-height:350px}.work{height:700px}}
+.library-main .cat.pose-sub{padding-left:30px;font-size:11px;min-height:30px;border-left:2px solid #494040;border-radius:0;margin-left:10px;width:calc(100% - 10px)}
 /* Título accesible sin alterar el panel de trabajo */
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
@@ -174,6 +175,7 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 const INDEX_URL='./axfra_json_library_index.json';
 const thumbVersion=Date.now(); // Verifica referencias nuevas en cada apertura
 const $=id=>document.getElementById(id);
+let poseFilter=null;
 let index=null,groupFilter='all',subgroupFilter=null,expandedGroups=new Set(),selected=null,composition=[],requestSeq=0,originalJSON=null;
 
 function thumbInitials(f){
@@ -328,7 +330,7 @@ function renderCategories(){
   const allName=document.createElement('span');allName.textContent='Todos los componentes';
   const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
   all.append(allName,allCount);
-  all.onclick=()=>{groupFilter='all';subgroupFilter=null;renderCategories();renderItems()};nav.append(all);
+  all.onclick=()=>{groupFilter='all';subgroupFilter=null;poseFilter=null;renderCategories();renderItems()};nav.append(all);
   groups.forEach(g=>{
     const wrapper=document.createElement('div');wrapper.className='group-block';
     const button=document.createElement('button');button.type='button';
@@ -339,7 +341,7 @@ function renderCategories(){
     const count=document.createElement('span');count.className='count';count.textContent=g.count;
     button.append(label,count);
     button.onclick=()=>{if(expandedGroups.has(g.id)){expandedGroups.delete(g.id)}else{expandedGroups.add(g.id)};
-      groupFilter=g.id;subgroupFilter=null;renderCategories();renderItems()};
+      groupFilter=g.id;subgroupFilter=null;poseFilter=null;renderCategories();renderItems()};
     wrapper.append(button);
     if(expandedGroups.has(g.id)){
       (g.children||[]).forEach(c=>{
@@ -348,8 +350,24 @@ function renderCategories(){
         const name=document.createElement('span');name.textContent=c.label;
         const n=document.createElement('span');n.className='count';n.textContent=c.count;
         child.append(name,n);
-        child.onclick=()=>{groupFilter=g.id;subgroupFilter=c.id;renderCategories();renderItems()};
-        wrapper.append(child)
+        child.onclick=()=>{groupFilter=g.id;subgroupFilter=c.id;poseFilter=null;renderCategories();renderItems()};
+        wrapper.append(child);
+        if(c.id==='poses'&&groupFilter===g.id&&subgroupFilter==='poses'){
+          const poses=index.files.filter(isPose);
+          const counts=new Map();
+          poses.forEach(f=>{const key=displayName(f).split(':')[0];counts.set(key,(counts.get(key)||0)+1)});
+          const options=[[null,'Todas las poses',poses.length],...Array.from(counts).sort((a,b)=>a[0].localeCompare(b[0],'es')).map(([key,n])=>[key,key,n])];
+          options.forEach(([key,label,total])=>{
+            const sub=document.createElement('button');sub.type='button';
+            sub.className='cat child pose-sub'+(poseFilter===key?' active':'');
+            sub.setAttribute('aria-pressed',String(poseFilter===key));
+            const title=document.createElement('span');title.textContent=label;
+            const count=document.createElement('span');count.className='count';count.textContent=total;
+            sub.append(title,count);
+            sub.onclick=()=>{poseFilter=key;renderCategories();renderItems();$('items').parentElement.scrollTop=0};
+            wrapper.append(sub);
+          });
+        }
       });
     }
     nav.append(wrapper)
@@ -359,6 +377,7 @@ function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
   const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
     (!subgroupFilter||f.subgroup===subgroupFilter)&&
+    (!poseFilter||(isPose(f)&&displayName(f).split(':')[0]===poseFilter))&&
     [displayName(f),f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
   // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
   if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
