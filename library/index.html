@@ -188,6 +188,138 @@ function getJSON(){try{return JSON.parse($('editor').value)}catch(e){status('JSO
 function download(name,text){const blob=new Blob([text],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 async function copyText(t){try{await navigator.clipboard.writeText(t);status('Copiado al portapapeles.','ok')}catch(e){$('editor').focus();$('editor').select();status('Portapapeles bloqueado. Usa Cmd/Ctrl+C.','err')}}
 
+// Etiquetas de catálogo: no modifican el índice ni los JSON originales.
+const POSE_LABELS = {
+  "axfra_pose_all_fours_rear_three_quarter": "En cuatro apoyos: Vista trasera en tres cuartos",
+  "axfra_pose_arm_reaching_toward_lens": "De pie: Brazo extendido hacia el objetivo",
+  "axfra_pose_back_lean_hands_on_hips": "De pie: Inclinación hacia atrás con manos en las caderas",
+  "axfra_pose_back_step_circular_hip_roll": "En movimiento: Paso atrás y círculo de caderas",
+  "axfra_pose_chest_pop_and_head_tilt": "En movimiento: Impulso de pecho e inclinación de cabeza",
+  "axfra_pose_chin_on_interlaced_hands_animation": "Gestos y retratos: Mentón sobre manos entrelazadas, animación",
+  "axfra_pose_chin_resting_on_interlaced_hands": "Gestos y retratos: Mentón apoyado en manos entrelazadas",
+  "axfra_pose_cold_applause": "Gestos y retratos: Aplauso frío",
+  "axfra_pose_continuous_funk_dance_loop": "En movimiento: Baile funk continuo",
+  "axfra_pose_cross_legged_seated": "Sentada: Piernas cruzadas",
+  "axfra_pose_crouching_look_up": "Agachada: En cuclillas mirando hacia arriba",
+  "axfra_pose_curled_up_on_chair": "Sentada: Acurrucada en una silla",
+  "axfra_pose_dance_reference_sequence_1_to_43": "En movimiento: Secuencia de baile de referencia, 1 a 43",
+  "axfra_pose_feet_together_initial_stance": "De pie: Postura inicial con pies juntos",
+  "axfra_pose_final_confident_victory_pose": "De pie: Pose final de victoria y confianza",
+  "axfra_pose_final_scheme": "Otras: Esquema final",
+  "axfra_pose_flamingo_standing_pose": "De pie: Equilibrio de flamenco",
+  "axfra_pose_flirty_side_profile": "Gestos y retratos: Perfil coqueto",
+  "axfra_pose_foreshortened_power_punch": "En movimiento: Puñetazo en escorzo",
+  "axfra_pose_forward_lean_laugh": "De pie: Risa con inclinación hacia delante",
+  "axfra_pose_forward_leaning_kneel": "Arrodillada: Inclinación hacia delante",
+  "axfra_pose_forward_open_palm_reach": "De pie: Mano extendida con palma abierta",
+  "axfra_pose_forward_point_at_camera": "De pie: Señalando a la cámara",
+  "axfra_pose_front_standing_hands_together": "De pie: Frontal con manos juntas",
+  "axfra_pose_front_three_quarter_contrapposto": "De pie: Contrapposto frontal en tres cuartos",
+  "axfra_pose_front_three_quarter_s_curve": "De pie: Curva en S frontal en tres cuartos",
+  "axfra_pose_grounded_action_stance": "De pie: Postura de acción firme",
+  "axfra_pose_grounded_kneeling_twist": "Arrodillada: Giro de torso a ras de suelo",
+  "axfra_pose_hair_flip_and_finger_snap": "En movimiento: Movimiento de cabello y chasquido de dedos",
+  "axfra_pose_hand_behind_head_standing_and_low_squat": "Secuencias: Mano detrás de la cabeza, de pie y en cuclillas",
+  "axfra_pose_hands_behind_head_low_squat": "Agachada: Cuclillas bajas con manos detrás de la cabeza",
+  "axfra_pose_heroic_ground_level_stance": "Otras: Postura heroica a ras de suelo",
+  "axfra_pose_high_angle_reclined_on_sofa": "Recostada: En sofá, vista desde arriba",
+  "axfra_pose_high_side_kick": "En movimiento: Patada lateral alta",
+  "axfra_pose_high_v_arms_jump": "En movimiento: Salto con brazos en V alta",
+  "axfra_pose_knees_together_inverted_v_shins": "Otras: Rodillas juntas y tibias en V invertida",
+  "axfra_pose_knees_up_seated_together": "Sentada: Rodillas elevadas y juntas",
+  "axfra_pose_knees_up_seated_together_white_background": "Sentada: Rodillas elevadas y juntas, fondo blanco",
+  "axfra_pose_knees_up_seated_wide_v": "Sentada: Rodillas elevadas y abiertas en V",
+  "axfra_pose_knees_up_seated_wide_v_with_heels": "Sentada: Rodillas elevadas en V con tacones",
+  "axfra_pose_left_360_turn": "En movimiento: Giro de 360° hacia la izquierda",
+  "axfra_pose_left_crossover_step": "En movimiento: Paso cruzado hacia la izquierda",
+  "axfra_pose_left_three_quarter_low_squat": "Agachada: Cuclillas bajas en tres cuartos izquierdos",
+  "axfra_pose_left_torso_twist_shoulder_shimmy": "En movimiento: Giro de torso a la izquierda y vibración de hombros",
+  "axfra_pose_low_grounded_crouch": "Agachada: Cuclillas a ras de suelo",
+  "axfra_pose_low_squat_ground_hand": "Agachada: Cuclillas bajas con mano en el suelo",
+  "axfra_pose_mastermind": "Gestos y retratos: Mente maestra",
+  "axfra_pose_midair_leap_toward_camera": "En movimiento: Salto hacia la cámara",
+  "axfra_pose_mocking_bow": "De pie: Reverencia burlona",
+  "axfra_pose_one_hand_shaka_gesture": "Gestos y retratos: Gesto shaka con una mano",
+  "axfra_pose_open_arms_attitude": "De pie: Brazos abiertos con actitud",
+  "axfra_pose_overhead_s_curve_balance": "De pie: Equilibrio en curva S, vista cenital",
+  "axfra_pose_overhead_y_arms_cross": "De pie: Brazos en Y y cruce, vista cenital",
+  "axfra_pose_platform_edge_seated_wide_legs": "Sentada: Al borde de plataforma con piernas abiertas",
+  "axfra_pose_playful_bodysuit_point": "De pie: Señalando con actitud juguetona y body",
+  "axfra_pose_playful_dynamic_pose": "En movimiento: Pose dinámica juguetona",
+  "axfra_pose_playful_wink_freeze": "Gestos y retratos: Guiño juguetón en pausa",
+  "axfra_pose_power_pointing_pose": "De pie: Señalando con firmeza",
+  "axfra_pose_prone_elbows_hair_hold_feet_raised": "Recostada: Boca abajo, sobre codos, manos en cabello y pies elevados",
+  "axfra_pose_quick_hip_drop": "En movimiento: Descenso rápido de cadera",
+  "axfra_pose_quick_landing_squat": "Agachada: Aterrizaje rápido en cuclillas",
+  "axfra_pose_raised_arm_greeting": "De pie: Saludo con brazo elevado",
+  "axfra_pose_rear_three_quarter_low_squat": "Agachada: Cuclillas bajas en tres cuartos traseros",
+  "axfra_pose_rear_three_quarter_raised_knee_punch": "En movimiento: Rodilla elevada y puñetazo en tres cuartos traseros",
+  "axfra_pose_rear_three_quarter_s_curve": "De pie: Curva en S en tres cuartos traseros",
+  "axfra_pose_rear_three_quarter_wide_stance_pool": "De pie: Piernas separadas en tres cuartos traseros, piscina",
+  "axfra_pose_rear_view_ankle_cross": "De pie: Vista trasera con tobillos cruzados",
+  "axfra_pose_rear_view_raised_knee_reach": "De pie: Vista trasera con rodilla elevada y brazo extendido",
+  "axfra_pose_reclining_on_window_ledge": "Recostada: En el alféizar de una ventana",
+  "axfra_pose_relaxed_standing_turn": "De pie: Giro relajado",
+  "axfra_pose_right_foot_pivot": "En movimiento: Pivote sobre el pie derecho",
+  "axfra_pose_right_wide_side_step": "En movimiento: Paso lateral amplio a la derecha",
+  "axfra_pose_rising_body_wave": "En movimiento: Onda corporal ascendente",
+  "axfra_pose_school_desk_inverted_v_shins": "Sentada: En pupitre con tibias en V invertida",
+  "axfra_pose_seated_ankle_hold": "Sentada: Sujetando el tobillo",
+  "axfra_pose_seated_arms_crossed_knees_raised": "Sentada: Brazos cruzados y rodillas elevadas",
+  "axfra_pose_seated_arms_crossed_raising_top": "Sentada: Brazos cruzados levantando el top",
+  "axfra_pose_seated_asymmetric_leg_support": "Sentada: Apoyo asimétrico de piernas",
+  "axfra_pose_seated_finger_to_lips_black_background": "Sentada: Dedo en los labios, fondo negro",
+  "axfra_pose_seated_forward_lean_crossed_forearms": "Sentada: Inclinación hacia delante con antebrazos cruzados",
+  "axfra_pose_seated_hands_under_chin": "Sentada: Manos bajo el mentón",
+  "axfra_pose_seated_knees_wide_feet_behind": "Sentada: Rodillas separadas y pies hacia atrás",
+  "axfra_pose_seated_left_knee_raised_right_leg_extended": "Sentada: Rodilla izquierda elevada y pierna derecha extendida",
+  "axfra_pose_seated_open_v_hands_between_thighs": "Sentada: Piernas en V y manos entre los muslos",
+  "axfra_pose_seated_raised_knee": "Sentada: Rodilla elevada",
+  "axfra_pose_seated_side_leg_finger_to_lips": "Sentada: Pierna lateral y dedo en los labios",
+  "axfra_pose_seated_wide_legs_hand_near_face": "Sentada: Piernas abiertas y mano cerca del rostro",
+  "axfra_pose_shadow_crouch": "Agachada: Cuclillas en la sombra",
+  "axfra_pose_side_profile_kneeling_look_back": "Arrodillada: De perfil mirando hacia atrás",
+  "axfra_pose_side_sit": "Sentada: De lado",
+  "axfra_pose_side_sit_hair_touch_point": "Sentada: De lado, tocando el cabello y señalando",
+  "axfra_pose_sideways_stool_sit": "Sentada: De lado en un taburete",
+  "axfra_pose_single_leg_raised_knee_reach": "De pie: Apoyo en una pierna, rodilla elevada y brazo extendido",
+  "axfra_pose_slow_body_roll": "En movimiento: Onda corporal lenta",
+  "axfra_pose_sofa_seated_hands_on_knee": "Sentada: En sofá con manos sobre la rodilla",
+  "axfra_pose_standing_against_wall_contrapposto": "De pie: Contrapposto apoyada en la pared",
+  "axfra_pose_standing_crossed_arms": "De pie: Brazos cruzados",
+  "axfra_pose_standing_hands_on_waist": "De pie: Manos en la cintura",
+  "axfra_pose_standing_hip_hinge_camera_gaze_low_angle": "De pie: Flexión de cadera mirando a cámara, ángulo bajo",
+  "axfra_pose_standing_hip_hinge_downward_gaze": "De pie: Flexión de cadera con mirada hacia abajo",
+  "axfra_pose_standing_hip_hinge_rear_side_view": "De pie: Flexión de cadera, vista lateral trasera",
+  "axfra_pose_stool_raised_knee_hand_on_forehead": "Sentada: En taburete con rodilla elevada y mano en la frente",
+  "axfra_pose_supine_bed_foreshortened_camera_gaze": "Recostada: Boca arriba en cama, escorzo y mirada a cámara",
+  "axfra_pose_supine_bed_foreshortened_downward_gaze": "Recostada: Boca arriba en cama, escorzo y mirada hacia abajo",
+  "axfra_pose_supine_bed_knees_up": "Recostada: Boca arriba en cama con rodillas elevadas",
+  "axfra_pose_supine_knees_bent_hands_on_body": "Recostada: Boca arriba, rodillas flexionadas y manos sobre el cuerpo",
+  "axfra_pose_supine_symmetrical": "Recostada: Boca arriba, postura simétrica",
+  "axfra_pose_top_down_twist": "Otras: Giro visto desde arriba",
+  "axfra_pose_victory_claim": "De pie: Reivindicación de victoria",
+  "axfra_pose_waistband_holding_head_tilt": "De pie: Sujetando la cintura de la prenda y cabeza inclinada",
+  "axfra_pose_wall_back_arch_full_body": "De pie: Espalda arqueada contra pared, cuerpo completo",
+  "axfra_pose_wall_back_arch_pose_only": "De pie: Espalda arqueada contra pared, solo pose",
+  "axfra_pose_wide_leg_hand_on_hip_finish": "De pie: Pose final con piernas abiertas y mano en la cadera",
+  "axfra_pose_wide_stance_forward_reach": "De pie: Piernas separadas y brazos hacia delante",
+  "axfra_pose_wide_stance_forward_reach_pool": "De pie: Piernas separadas y brazos hacia delante, piscina"
+};
+function isPose(f){return f.category==='pose'||f.subgroup==='poses'}
+function displayName(f){
+  if(f.group==='unclassified')return f.path.split('/').pop();
+  if(!isPose(f))return f.name_es||f.name||f.id||f.path;
+  const key=String(f.id||'').toLowerCase();
+  const pathKey=(f.path||'').split('/').pop().replace(/\.json$/i,'').toLowerCase();
+  if(POSE_LABELS[key]||POSE_LABELS[pathKey])return POSE_LABELS[key]||POSE_LABELS[pathKey];
+  const label=f.name_es||f.name||f.id||f.path;
+  const hint=[f.id,f.name_es,f.name,f.subcategory].join(' ').toLowerCase();
+  const rules=[[/all.fours|cuatro apoyos/,'En cuatro apoyos'],[/kneel|arrodill/,'Arrodillada'],[/crouch|squat|cuclillas|agachad/,'Agachada'],[/supine|prone|reclin|lying|recostad|acostad/,'Recostada'],[/seated|\bsit\b|sentad/,'Sentada'],[/dance|jump|leap|step|walk|run|baile|salto/,'En movimiento'],[/standing|stance|de pie|contrapposto/,'De pie']];
+  const category=rules.find(([pattern])=>pattern.test(hint))?.[1]||'Otras';
+  return /^(De pie|Sentada|Agachada|Arrodillada|Recostada|En movimiento|En cuatro apoyos|Gestos y retratos|Secuencias|Otras):/i.test(label)?label:category+': '+label;
+}
+
 function renderCategories(){
   const nav=$('categories');nav.replaceChildren();
   const groups=index.groups||[];
@@ -227,9 +359,14 @@ function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
   const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
     (!subgroupFilter||f.subgroup===subgroupFilter)&&
-    [f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
+    [displayName(f),f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
   // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
   if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
+  else {
+    // Ordena las poses entre sí, conservando las posiciones de otros módulos.
+    const poses=files.filter(isPose).sort((a,b)=>displayName(a).localeCompare(displayName(b),'es',{numeric:true,sensitivity:'base'}));
+    let poseIndex=0;files.forEach((f,i)=>{if(isPose(f))files[i]=poses[poseIndex++]});
+  }
   const list=$('items');list.replaceChildren();
   files.forEach(f=>{
     const b=document.createElement('button');b.className='item'+(selected?.path===f.path?' active':'');b.title=f.path;
@@ -255,8 +392,8 @@ function renderItems(){
     img.src=new URL(encodeURIComponent(stem)+extensions[0],base).href+'?v='+thumbVersion;
     b.append(thumb);
     const text=document.createElement('div');text.className='item-text';
-    const name=document.createElement('strong');name.textContent=f.group==='unclassified'?f.path.split('/').pop():(f.name_es||f.name||f.id||f.path);text.append(name);
-    if(f.group!=='unclassified'&&f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;text.append(en)}
+    const name=document.createElement('strong');name.textContent=displayName(f);text.append(name);
+    if(!isPose(f)&&f.group!=='unclassified'&&f.name&&f.name!==f.name_es){const en=document.createElement('span');en.className='item-en';en.textContent=f.name;text.append(en)}
     const id=document.createElement('small');id.className='item-id';id.textContent=f.id||f.path.split('/').pop();text.append(id);
     b.append(text);b.onclick=()=>loadFile(f);list.append(b);
   });
