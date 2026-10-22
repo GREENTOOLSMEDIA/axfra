@@ -1,0 +1,204 @@
+{
+  "id": "AXFRA_environment_house_master_exterior",
+  "name": "AXFRA House — Master Exterior",
+  "name_es": "AXFRA House — Exterior maestro",
+  "mood": "luxury residential, contemporary, welcoming, mountain retreat",
+  "palette": [
+    "warm white concrete",
+    "natural gray stone",
+    "warm timber",
+    "matte black",
+    "turquoise water",
+    "mountain earth tones"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "handle": "@axfratools",
+    "site": "https://axfra.com",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-20"
+  },
+  "style": "Alarsi editorial style, ultra photorealistic architectural photography, cinematic natural lighting, luxury residential aesthetic, hyper-detailed materials, realistic reflections, accurate water physics, no plastic look, masterpiece, best quality",
+  "environment_block": {
+    "environment_identity": "AXFRA House",
+    "purpose": "Permanent residential exterior set for recurring scenes involving the eight AXFRA identities and Conde Alarsi.",
+    "location": {
+      "area": "San José de Maipo, Chile",
+      "setting": "Spacious private property in the Andean foothills, surrounded by native central Chilean mountain vegetation.",
+      "terrain": "Gently sloping land with a broad level platform supporting the house, pool and vehicle areas.",
+      "background": "A continuous rugged Andean mountain ridge rises behind the house. Dry rocky slopes, muted brown and gray terrain, sparse vegetation and small patches of snow on the highest distant peaks.",
+      "landscape_rule": "Preserve the same mountain silhouette and its alignment behind the house across all scenes."
+    },
+    "spatial_reference": {
+      "reference_view": "Standing at the front entrance of the property, looking toward the main facade.",
+      "left": "Left side of the image in the reference view.",
+      "right": "Right side of the image in the reference view.",
+      "front": "The garden and pool side facing the property entrance.",
+      "rear": "The mountain-facing side behind the house.",
+      "rule": "These directions describe permanent world positions. Camera changes must not mirror or rearrange the property."
+    },
+    "architecture": {
+      "type": "Large contemporary luxury mansion",
+      "floors": 2,
+      "approximate_width_m": 38,
+      "approximate_depth_m": 20,
+      "roof": "Flat roofs with clean horizontal parapets.",
+      "composition": "Three connected rectangular volumes: a central double-height entrance, a left social wing and a right residential wing.",
+      "materials": {
+        "primary": "Warm white exposed architectural concrete",
+        "secondary": "Natural gray stone cladding on the central entrance volume",
+        "accent": "Warm timber soffits and recessed wall panels",
+        "window_frames": "Slim matte black metal",
+        "glazing": "Large clear floor-to-ceiling windows",
+        "terrace_railings": "Clear glass with minimal dark fittings"
+      },
+      "central_volume": "A recessed double-height glazed entrance framed by natural gray stone, with a large warm timber pivot door.",
+      "left_wing": "Ground-floor living room, dining room and kitchen behind continuous glazing, opening directly onto the front pool terrace. Upper-floor bedrooms open onto a continuous terrace.",
+      "right_wing": "Private residential rooms distributed across both floors, with an attached music rehearsal room at the far right of the ground floor.",
+      "residential_capacity": "Nine individual bedroom suites distributed across both wings and both floors.",
+      "signature_feature": "A large warm white rectangular architectural frame surrounds the entire upper terrace of the left wing. This frame is the main visual identifier of AXFRA House.",
+      "branding": "One small matte black AXFRA wordmark beside the main entrance, in Helvetica Bold, occupying approximately 3 percent of the visible central entrance wall."
+    },
+    "site_layout": {
+      "house": "Rear central portion of the developed platform, with the main facade facing the front garden.",
+      "pool": {
+        "position": "In front of the left social wing.",
+        "shape": "Single rectangular swimming pool",
+        "dimensions_m": {
+          "length": 15,
+          "width": 5
+        },
+        "orientation": "Long edge parallel to the main facade.",
+        "finish": "Pale blue interior, clear turquoise water and light natural stone coping.",
+        "terrace": "Wide light stone terrace with four neutral beige sun loungers arranged in two pairs.",
+        "rule": "Keep the pool entirely to the left of the central entrance axis. Never place it across the entrance path."
+      },
+      "pedestrian_access": "A straight light stone walkway leads from the front garden to the central entrance, passing along the right edge of the pool terrace.",
+      "car_parking": {
+        "position": "To the right of the central entrance, directly in front of the right wing.",
+        "capacity": 2,
+        "surface": "Large light gray concrete paving slabs",
+        "cover": "Flat-roofed carport with slim matte black columns.",
+        "layout": "Two adjacent parking spaces."
+      },
+      "tour_bus_bay": {
+        "position": "At the far right boundary of the property, beyond the two-car parking area.",
+        "surface": "Dedicated paved bay connected to a wide driveway.",
+        "orientation": "Bus parked with its long side visible from the front reference view.",
+        "clearance": "Enough space for a full-size touring coach to enter and maneuver.",
+        "rule": "The bus bay is separate from the two car spaces and does not obstruct the house entrance."
+      },
+      "garden": "Restrained landscaping with native grasses, low shrubs, scattered quillay trees and small areas of maintained lawn. Preserve an open view of the facade and mountains.",
+      "boundary": "Low natural stone perimeter walls and a simple matte black vehicle gate."
+    }
+  },
+  "vehicles_block": {
+    "presence_in_reference_scene": true,
+    "vehicles": [
+      {
+        "id": "AXFRA_house_vehicle_mustang_1970",
+        "type": "1970 Ford Mustang convertible",
+        "body_color": "Glossy red",
+        "roof": "Black convertible soft top, folded down",
+        "interior": "Black",
+        "position": "Left space of the two-car carport",
+        "orientation": "Front of the car facing toward the property entrance"
+      },
+      {
+        "id": "AXFRA_house_vehicle_wrangler_2026",
+        "type": "2026 Jeep Wrangler four-door",
+        "body_color": "Glossy red",
+        "roof": "Black hardtop",
+        "details": "Black wheel arches, rugged tires and rear-mounted spare wheel",
+        "position": "Right space of the two-car carport",
+        "orientation": "Front of the vehicle facing toward the property entrance"
+      },
+      {
+        "id": "AXFRA_house_vehicle_tour_bus",
+        "type": "Full-size luxury rock band touring coach",
+        "body_color": "Satin black",
+        "details": "Long modern coach body, dark tinted windows and polished metal wheels",
+        "branding": "Large white AXFRA lettering centered on the visible side, clean Helvetica Bold typography, correctly spelled.",
+        "position": "Dedicated bus bay at the far right boundary of the property"
+      }
+    ]
+  },
+  "animals_block": {
+    "presence_in_reference_scene": true,
+    "animals": [
+      {
+        "id": "AXFRA_house_dog_collie",
+        "name": null,
+        "type": "Adult Rough Collie",
+        "appearance": "Long sable and white coat, full white chest ruff, white paws and an elongated muzzle.",
+        "reference_position": "Resting on the lawn beside the pool terrace, away from the water."
+      },
+      {
+        "id": "AXFRA_house_cat",
+        "name": null,
+        "type": "Adult domestic short-haired cat",
+        "appearance": "Silver-gray tabby coat with dark stripes, white chest and green eyes.",
+        "reference_position": "Sitting beside the central entrance on the dry stone walkway."
+      }
+    ]
+  },
+  "camera_and_style_block": {
+    "scene_type": "Architectural establishing photograph",
+    "aspect_ratio": "16:9",
+    "camera_position": "Front of the property, slightly left of the central entrance axis, at approximately 3 meters above ground.",
+    "view": "Wide front three-quarter view showing the complete mansion, front pool, both parked cars and the tour bus bay.",
+    "lens": "28mm full-frame architectural lens",
+    "perspective": "Corrected vertical lines, natural building proportions, no fisheye distortion.",
+    "framing": "House as the main subject, pool in the foreground, vehicle areas on the right and mountains clearly visible behind the roofline.",
+    "focus": "Deep depth of field with detailed architecture and readable spatial relationships."
+  },
+  "lighting_block": {
+    "time_of_day": "Late afternoon",
+    "weather": "Clear sky with a few thin high clouds",
+    "sun_position": "Camera-left, illuminating the front facade at an angle",
+    "quality": "Warm natural sunlight with soft, physically consistent shadows",
+    "interior_lighting": "Subtle warm interior lights visible through the glazing",
+    "pool_reflections": "Realistic reflections of the facade and sky with gentle water ripples"
+  },
+  "continuity_block": {
+    "locked_elements": [
+      "Building footprint and two-floor height",
+      "Three-volume facade composition",
+      "Central stone entrance",
+      "Upper rectangular frame on the left wing",
+      "Material palette",
+      "Window and terrace arrangement",
+      "Pool dimensions and position",
+      "Entrance walkway",
+      "Two-car carport position",
+      "Separate tour bus bay",
+      "Mountain silhouette",
+      "Vehicle identities and colors",
+      "Animal coat patterns"
+    ],
+    "scene_variables": [
+      "Camera position and framing",
+      "Time of day",
+      "Weather",
+      "People present and their actions",
+      "Vehicle presence within their assigned areas",
+      "Animal presence and position",
+      "Temporary scene props"
+    ],
+    "reference_rule": "When an approved reference image is supplied, preserve its architecture, proportions, spatial layout and mountain silhouette. Describe camera changes as movement around the same property."
+  },
+  "constraints_block": {
+    "people": "No people in this initial exterior reference image.",
+    "architecture": "Exactly two floors. Preserve the specified facade and layout. No additional wings, towers, pitched roofs or duplicate buildings.",
+    "vehicles": "Exactly one red Mustang convertible, one red Jeep Wrangler and one black AXFRA touring bus in their assigned areas.",
+    "animals": "Exactly one Collie and one cat.",
+    "pool": "Exactly one rectangular pool. No additional pools or fountains.",
+    "landscape": "Central Chilean Andean foothills. No tropical vegetation, beach, ocean or dense alpine forest.",
+    "text": "Only the specified AXFRA wordmarks. No additional signage, captions or watermarks."
+  }
+}
