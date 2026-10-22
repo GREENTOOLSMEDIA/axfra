@@ -1,0 +1,47 @@
+{
+  "id": "AXFRA_wardrobe_look_steampunk_aviator",
+  "name": "Steampunk Aviator Look",
+  "name_es": "Look de aviadora steampunk",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "look",
+  "piece_family": "steampunk",
+  "swap_rule": "Se cita el id. Se cambian color, material, grosor, transparencia, estampado y acabados. El corte no se reescribe.",
+  "jacket": "Very cropped fitted bolero jacket in distressed dark brown leather, long sleeves, tall standing collar, leather straps, antique brass buckles and round metal buttons",
+  "top": "Ivory cropped top with a deep neckline, small ruffled edges and a wide fitted taupe underbust band, leaving the midriff exposed",
+  "bottom": "Tight low-rise pants with wide vertical stripes in dark brown and black",
+"shoes": "Knee-high fitted dark brown distressed leather boots with high stiletto heels, pointed toes, front lacing, buckled straps and antique brass hardware",
+
+  "belt": "Layered weathered brown leather hip belts with large antique brass buckles, short hanging chains and metal gear ornaments",
+  "gloves": "Short brown leather fingerless gloves with buckled wrist cuffs",
+  "headwear": "Wide olive-brown fabric headband with round dark-lensed aviator goggles resting on the forehead",
+  "accessories": "Oval green cameo pendant on a dark metal chain, mechanical earrings with small gears and dangling brass chains",
+  "hair": {
+    "style": "Very high long ponytail with strong volume, teased crown, tousled texture, loose elongated strands and a few thin braids",
+    "color_source": "character_identity",
+    "allow_color_override": true
+  },
+  "makeup": {
+    "foundation": "Matte finish",
+    "eyeshadow": "Intense black and charcoal smoky eyes",
+    "eyeliner": "Strong black eyeliner extended outward toward the temples",
+    "eyelashes": "Defined upper lashes",
+    "lips": "Rosy nude with a satin finish",
+    "highlighter": "Subtle",
+    "blush": "Soft muted rose"
+  },
+  "material": "Distressed leather, woven fabric, antique brass and dark metal",
+  "grosor": "normal",
+  "transparencia": "no",
+  "estampado": "Vertical stripes on the pants, solid colors on the remaining garments",
+  "color": "Dark brown, black, ivory, taupe and antique brass"
+}
