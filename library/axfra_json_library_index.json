@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 432,
+  "total_json": 434,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -22,14 +22,14 @@
     "prop": 5,
     "rotation": 1,
     "sports_uniform": 1,
-    "style": 29,
-    "wardrobe": 176
+    "style": 30,
+    "wardrobe": 177
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 176,
+      "count": 177,
       "children": [
         {
           "id": "tops",
@@ -49,7 +49,7 @@
         {
           "id": "looks",
           "label": "Looks y conjuntos",
-          "count": 134
+          "count": 135
         },
         {
           "id": "stage",
@@ -100,7 +100,7 @@
     {
       "id": "composition",
       "label": "Composición visual",
-      "count": 157,
+      "count": 158,
       "children": [
         {
           "id": "poses",
@@ -120,7 +120,7 @@
         {
           "id": "styles",
           "label": "Estilos visuales",
-          "count": 29
+          "count": 30
         },
         {
           "id": "props",
@@ -4398,6 +4398,17 @@
       "subgroup": "styles"
     },
     {
+      "id": "AXFRA_style_interior_glamour_mirror",
+      "name": "Interior Glamour Mirror Photography",
+      "name_es": "Fotografía de glamour interior frente al espejo",
+      "category": "style",
+      "path": "json/axfra_style_interior_glamour_mirror.json",
+      "url": "https://axfra.com/library/json/axfra_style_interior_glamour_mirror.json",
+      "group": "composition",
+      "subgroup": "styles",
+      "thumb": null
+    },
+    {
       "id": "AXFRA_style_outdoor_cafe_four_panel",
       "name": "Outdoor Café Four-Panel Collage",
       "name_es": "Collage de cuatro escenas en café exterior",
@@ -4869,6 +4880,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_red_gingham_top_shorts_gloves.jpg",
       "group": "wardrobe",
       "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_steampunk_aviator",
+      "name": "Steampunk Aviator Look",
+      "name_es": "Look de aviadora steampunk",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_steampunk_aviator.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_steampunk_aviator.json",
+      "group": "wardrobe",
+      "subgroup": "looks",
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_steampunk_aviator.jpg"
     },
     {
       "id": "AXFRA_wardrobe_look_teal_mockneck_crop_thong",
