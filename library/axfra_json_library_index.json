@@ -8,13 +8,13 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 431,
+  "total_json": 432,
   "categories": {
     "appearance": 10,
     "camera": 9,
     "dummy": 8,
     "environment": 4,
-    "general": 15,
+    "general": 16,
     "identity": 36,
     "lighting": 15,
     "motion": 7,
@@ -223,7 +223,7 @@
     {
       "id": "unclassified",
       "label": "Por clasificar",
-      "count": 0,
+      "count": 1,
       "children": []
     }
   ],
@@ -642,7 +642,7 @@
       "category": "general",
       "path": "json/axfra_env_glass_penthouse.json",
       "url": "https://axfra.com/library/json/axfra_env_glass_penthouse.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_env_glass_penthouse.jpg",
       "group": "environments",
       "subgroup": "luxury"
     },
@@ -711,6 +711,17 @@
       "group": "environments",
       "subgroup": "other",
       "thumb": null
+    },
+    {
+      "id": "AXFRA_environment_house_master_exterior",
+      "name": "AXFRA House — Master Exterior",
+      "name_es": "AXFRA House — Exterior maestro",
+      "category": "general",
+      "path": "json/axfra_environment_house_master_exterior.json",
+      "url": "https://axfra.com/library/json/axfra_environment_house_master_exterior.json",
+      "group": "unclassified",
+      "subgroup": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_environment_house_master_exterior.jpg"
     },
     {
       "id": "AXFRA_environment_rustic_beach_surf_shack",
@@ -4173,7 +4184,7 @@
       "category": "general",
       "path": "json/axfra_scene_cello_organic_spiral.json",
       "url": "https://axfra.com/library/json/axfra_scene_cello_organic_spiral.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_scene_cello_organic_spiral.jpg",
       "group": "environments",
       "subgroup": "other"
     },
@@ -4184,7 +4195,7 @@
       "category": "general",
       "path": "json/axfra_scene_red_thar_beach_sunset.json",
       "url": "https://axfra.com/library/json/axfra_scene_red_thar_beach_sunset.json",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_scene_red_thar_beach_sunset.jpg",
       "group": "environments",
       "subgroup": "nature"
     },
