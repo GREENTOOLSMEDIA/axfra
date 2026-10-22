@@ -23,6 +23,11 @@
     "version": "1.0",
     "updated": "2026-10-20"
   },
+  "category": "environment",
+  "slot": "exterior",
+  "piece_family": "residential_architecture",
+  "group": "environments",
+  "subgroup": "architecture",
   "style": "Alarsi editorial style, ultra photorealistic architectural photography, cinematic natural lighting, luxury residential aesthetic, hyper-detailed materials, realistic reflections, accurate water physics, no plastic look, masterpiece, best quality",
   "environment_block": {
     "environment_identity": "AXFRA House",
