@@ -1,0 +1,75 @@
+{
+
+ "id": "AXFRA_wardrobe_look_gothic_punk_laceup",
+ "name": "Gothic Punk Lace-Up Look",
+ "name_es": "Look gótico punk con shorts acordonados",
+ "meta": {
+ "developer": "ALARSI",
+ "developer_site": "https://alarsi.com",
+ "brand": "AXFRA",
+ "brand_site": "https://axfra.com",
+ "system": "AXFRA JSON prompt system",
+ "license": "all rights reserved",
+ "version": "1.0"
+
+ },
+
+ "archive": "AXFRA",
+
+ "category": "wardrobe",
+
+ "slot": "look",
+
+ "piece_family": "gothic_punk",
+
+ "swap_rule": "Se cita el id. Se cambian color, material, grosor, transparencia, estampado y acabados. El corte no se reescribe.",
+
+ "top": "Black cropped short-sleeve crew-neck T-shirt, fitted at the waist, with a large white rectangular front graphic depicting a skeletal nun and the words BAD RELIGION; small silver safety pins along the sleeve edges",
+
+ "bottom": "Very short fitted high-waisted black leather shorts with a deep V-shaped front waist opening, crisscross black cords across the opening, multiple vertical rows of silver eyelets and black lacing down the front and sides, with loose hanging lace ends",
+
+ "shoes": "Knee-high fitted black leather boots with high heels, thick platform soles, front lacing through silver eyelets and buckled straps with silver hardware",
+
+ "accessories": "Layered fine silver necklaces including a small cross pendant, small silver hoop earrings, a silver nostril hoop, silver rings and wide black leather wrist cuffs with silver buckles",
+
+ "nails": "Short nails with dark plum-black polish",
+
+ "hair": {
+
+ "style": "Long loose hair with soft irregular waves, deep side part, one temple shaved in a pronounced sidecut, and a voluminous side-swept fringe partially covering one eye",
+
+ "color_source": "character_identity",
+
+ "allow_color_override": true
+
+ },
+
+ "makeup": {
+
+ "foundation": "Matte finish",
+
+ "eyeshadow": "Intense charcoal-black smoky eyes",
+
+ "eyeliner": "Thick black eyeliner with long sharply extended wings and a defined lower lash line",
+
+ "eyelashes": "Dense defined upper lashes",
+
+ "lips": "Deep plum-burgundy lipstick with a darker outline and matte finish",
+
+ "highlighter": "Subtle",
+
+ "blush": "Muted mauve"
+
+ },
+
+ "material": "Cotton jersey, leather, black cord and silver-tone metal",
+
+ "grosor": "normal",
+
+ "transparencia": "no",
+
+ "estampado": "White skeletal nun graphic and AXFRA lettering on the T-shirt",
+
+ "color": "Black, white and silver"
+
+}
