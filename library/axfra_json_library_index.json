@@ -8,13 +8,13 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 435,
+  "total_json": 437,
   "categories": {
     "appearance": 10,
     "camera": 9,
     "dummy": 8,
     "environment": 4,
-    "general": 16,
+    "general": 17,
     "identity": 36,
     "lighting": 15,
     "motion": 7,
@@ -23,18 +23,18 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 30,
-    "wardrobe": 178
+    "wardrobe": 179
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 178,
+      "count": 179,
       "children": [
         {
           "id": "tops",
           "label": "Blusas y poleras",
-          "count": 12
+          "count": 13
         },
         {
           "id": "swim",
@@ -223,7 +223,7 @@
     {
       "id": "unclassified",
       "label": "Por clasificar",
-      "count": 1,
+      "count": 2,
       "children": []
     }
   ],
@@ -722,6 +722,17 @@
       "group": "unclassified",
       "subgroup": null,
       "thumb": "https://axfra.com/library/thumbs/axfra_environment_house_master_exterior.jpg"
+    },
+    {
+      "id": "AXFRA_environment_organic_spiral",
+      "name": "Organic Spiral",
+      "name_es": "Espiral orgánica",
+      "category": "general",
+      "path": "json/axfra_environment_organic_spiral.json",
+      "url": "https://axfra.com/library/json/axfra_environment_organic_spiral.json",
+      "group": "unclassified",
+      "subgroup": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_environment_organic_spiral.jpg"
     },
     {
       "id": "AXFRA_environment_rustic_beach_surf_shack",
@@ -5012,6 +5023,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_swim_pink_rhinestone_string_bikini.jpg",
       "group": "wardrobe",
       "subgroup": "swim"
+    },
+    {
+      "id": "AXFRA_wardrobe_tshirt_vintage_axion_frame_69",
+      "name": "Vintage AXION FRAME 69 T-Shirt",
+      "name_es": "Polera vintage AXION FRAME 69",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_tshirt_vintage_axion_frame_69.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_tshirt_vintage_axion_frame_69.json",
+      "group": "wardrobe",
+      "subgroup": "tops",
+      "thumb": null
     }
   ]
 }
