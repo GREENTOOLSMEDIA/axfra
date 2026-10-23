@@ -1,0 +1,50 @@
+{
+  "id": "AXFRA_wardrobe_tshirt_vintage_axion_frame_69",
+  "name": "Vintage AXION FRAME 69 T-Shirt",
+  "name_es": "Polera vintage AXION FRAME 69",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.4"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "top",
+  "piece_family": "t_shirt",
+  "swap_rule": "Reference the ID. Material, thickness, transparency, vintage finish and graphic colors may be adjusted without altering the garment cut or main graphic layout.",
+  "piece": {
+    "type": "vintage crew-neck t-shirt",
+    "cut": "relaxed regular fit, short sleeves, round ribbed crew neck, standard hip length and straight hem",
+    "fabric": "ultra-thin, extremely soft, heavily washed cotton jersey with naturally worn and softened fibers",
+    "drape": "very lightweight, loose and fluid fall, delicate folds, soft wrinkles and almost no fabric stiffness",
+    "finish": "heavily washed, faded, distressed vintage appearance with subtle uneven wear",
+    "color": "faded white charcoal"
+  },
+  "graphic": {
+    "placement": "centered front graphic",
+    "main_numbers": "69",
+    "number_style": "oversized faded crimson red varsity textile appliques, sewn onto the shirt, with heavily frayed edges, visible stitching and worn fabric texture",
+    "number_spacing": "negative horizontal spacing, with the 6 and 9 touching each other",
+    "middle_patch": "small faded crimson red horizontal textile patch overlapping the center of the 69",
+    "patch_icon": "small off-white bull silhouette",
+    "patch_text": "AXFRA",
+    "headline": "AXION FRAME",
+    "headline_style": "distressed uppercase serif lettering in faded crimson red",
+    "subheadline": "La imagen comienza antes del primer píxel.",
+    "subheadline_style": "distressed red serif lettering arranged in two lines",
+    "graphic_colors": [
+      "faded crimson red",
+      "off-white"
+    ]
+  },
+  "material": "ultra-thin heavily washed cotton jersey",
+  "thickness": "ultra-thin",
+  "transparency": "50%",
+  "pattern": "vintage front graphic with sewn textile appliques and distressed lettering",
+  "color": "faded dark charcoal",
+  "footwear": "not specified"
+}
