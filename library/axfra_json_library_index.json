@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 434,
+  "total_json": 435,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 30,
-    "wardrobe": 177
+    "wardrobe": 178
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 177,
+      "count": 178,
       "children": [
         {
           "id": "tops",
@@ -49,7 +49,7 @@
         {
           "id": "looks",
           "label": "Looks y conjuntos",
-          "count": 135
+          "count": 136
         },
         {
           "id": "stage",
@@ -4836,6 +4836,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_geometric_fitness_leggings.jpg",
       "group": "wardrobe",
       "subgroup": "looks"
+    },
+    {
+      "id": "AXFRA_wardrobe_look_gothic_punk_laceup",
+      "name": "Gothic Punk Lace-Up Look",
+      "name_es": "Look gótico punk con shorts acordonados",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_gothic_punk_laceup.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_gothic_punk_laceup.json",
+      "group": "wardrobe",
+      "subgroup": "looks",
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_gothic_punk_laceup.jpg"
     },
     {
       "id": "AXFRA_wardrobe_look_gray_crop_denim_shorts_black_belt",
