@@ -308,6 +308,7 @@ const POSE_LABELS = {
   "axfra_pose_wide_stance_forward_reach": "De pie: Piernas separadas y brazos hacia delante",
   "axfra_pose_wide_stance_forward_reach_pool": "De pie: Piernas separadas y brazos hacia delante, piscina"
 };
+function hasSubgroup(f,id){return f.subgroup===id||(Array.isArray(f.subgroups)&&f.subgroups.includes(id))}
 function isPose(f){return f.category==='pose'||f.subgroup==='poses'}
 function displayName(f){
   if(f.group==='unclassified')return f.path.split('/').pop();
@@ -376,7 +377,7 @@ function renderCategories(){
 function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
   const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
-    (!subgroupFilter||f.subgroup===subgroupFilter)&&
+    (!subgroupFilter||hasSubgroup(f,subgroupFilter))&&
     (!poseFilter||(isPose(f)&&displayName(f).split(':')[0]===poseFilter))&&
     [displayName(f),f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
   // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.

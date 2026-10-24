@@ -34,17 +34,62 @@
         {
           "id": "tops",
           "label": "Blusas y poleras",
-          "count": 13
+          "count": 99
+        },
+        {
+          "id": "jackets",
+          "label": "Chaquetas y abrigos",
+          "count": 17
+        },
+        {
+          "id": "dresses",
+          "label": "Vestidos",
+          "count": 45
+        },
+        {
+          "id": "skirts",
+          "label": "Faldas y minis",
+          "count": 50
+        },
+        {
+          "id": "shorts",
+          "label": "Shorts",
+          "count": 9
+        },
+        {
+          "id": "pants",
+          "label": "Pantalones y leggings",
+          "count": 23
+        },
+        {
+          "id": "bodysuits",
+          "label": "Bodies y monos",
+          "count": 4
         },
         {
           "id": "swim",
           "label": "Bikinis y trajes de baño",
-          "count": 7
+          "count": 10
         },
         {
           "id": "lingerie",
           "label": "Lencería",
-          "count": 16
+          "count": 21
+        },
+        {
+          "id": "sleepwear",
+          "label": "Pijamas y batas",
+          "count": 7
+        },
+        {
+          "id": "footwear",
+          "label": "Calzado",
+          "count": 4
+        },
+        {
+          "id": "accessories",
+          "label": "Accesorios",
+          "count": 4
         },
         {
           "id": "looks",
@@ -248,7 +293,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_bandeau_ring.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_bandeau_ring.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_bikini_triangle_crochet",
@@ -259,7 +307,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_triangle_crochet.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_triangle_crochet.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_bikini_triangle_floral",
@@ -270,7 +321,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_triangle_floral.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_triangle_floral.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_bikini_triangle_knit",
@@ -281,7 +335,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_triangle_knit.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_triangle_knit.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_bikini_triangle_lace",
@@ -292,7 +349,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_triangle_lace.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_triangle_lace.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_bikini_triangle_strappy",
@@ -303,7 +363,10 @@
       "url": "https://axfra.com/library/json/axfra_bikini_triangle_strappy.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_bikini_triangle_strappy.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_blouse_camisa",
@@ -314,7 +377,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_camisa.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_camisa.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_camiseta",
@@ -325,7 +391,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_camiseta.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_camiseta.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_corset",
@@ -336,7 +405,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_corset.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_corset.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_crop_top",
@@ -347,7 +419,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_crop_top.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_crop_top.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_cruzada",
@@ -358,7 +433,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_cruzada.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_cruzada.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_escote_cuadrado",
@@ -369,7 +447,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_escote_cuadrado.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_escote_cuadrado.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_eskeleto",
@@ -380,7 +461,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_eskeleto.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_eskeleto.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_hombro_descubierto",
@@ -391,7 +475,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_hombro_descubierto.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_hombro_descubierto.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_hombros_descubiertos",
@@ -402,7 +489,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_hombros_descubiertos.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_hombros_descubiertos.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_peplum",
@@ -413,7 +503,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_peplum.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_peplum.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_polo",
@@ -424,7 +517,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_polo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_polo.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_blouse_tirantes",
@@ -435,7 +531,10 @@
       "url": "https://axfra.com/library/json/axfra_blouse_tirantes.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_blouse_tirantes.jpg",
       "group": "wardrobe",
-      "subgroup": "tops"
+      "subgroup": "tops",
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_camera_dutch_angle",
@@ -545,7 +644,10 @@
       "url": "https://axfra.com/library/json/axfra_costume_crest_circular.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_costume_crest_circular.jpg",
       "group": "wardrobe",
-      "subgroup": "costumes"
+      "subgroup": "costumes",
+      "subgroups": [
+        "costumes"
+      ]
     },
     {
       "id": "AXFRA_dummy_dotsy",
@@ -1403,7 +1505,12 @@
       "url": "https://axfra.com/library/json/axfra_look_angel_raglan.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_angel_raglan.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_baddie_varsity_skirt",
@@ -1414,7 +1521,12 @@
       "url": "https://axfra.com/library/json/axfra_look_baddie_varsity_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_baddie_varsity_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets"
+      ]
     },
     {
       "id": "AXFRA_look_beach_crochet",
@@ -1425,7 +1537,11 @@
       "url": "https://axfra.com/library/json/axfra_look_beach_crochet.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_beach_crochet.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_look_beach_knit_coverup_bikini",
@@ -1436,7 +1552,11 @@
       "url": "https://axfra.com/library/json/axfra_look_beach_knit_coverup_bikini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_beach_knit_coverup_bikini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_look_black_babygirl_cutout",
@@ -1447,7 +1567,10 @@
       "url": "https://axfra.com/library/json/axfra_look_black_babygirl_cutout.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_babygirl_cutout.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_black_cutout_mini",
@@ -1458,7 +1581,11 @@
       "url": "https://axfra.com/library/json/axfra_look_black_cutout_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_cutout_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_black_offshoulder_flare",
@@ -1469,7 +1596,12 @@
       "url": "https://axfra.com/library/json/axfra_look_black_offshoulder_flare.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_offshoulder_flare.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_black_ruched",
@@ -1480,7 +1612,11 @@
       "url": "https://axfra.com/library/json/axfra_look_black_ruched.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_ruched.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_black_satin_gown",
@@ -1491,7 +1627,11 @@
       "url": "https://axfra.com/library/json/axfra_look_black_satin_gown.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_satin_gown.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_black_velvet_lace",
@@ -1502,7 +1642,11 @@
       "url": "https://axfra.com/library/json/axfra_look_black_velvet_lace.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_black_velvet_lace.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_blue_butterfly",
@@ -1513,7 +1657,12 @@
       "url": "https://axfra.com/library/json/axfra_look_blue_butterfly.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_blue_butterfly.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_blue_flare_shirt",
@@ -1524,7 +1673,12 @@
       "url": "https://axfra.com/library/json/axfra_look_blue_flare_shirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_blue_flare_shirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_blue_holo_chain",
@@ -1535,7 +1689,10 @@
       "url": "https://axfra.com/library/json/axfra_look_blue_holo_chain.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_blue_holo_chain.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_brown_corset_shorts",
@@ -1546,7 +1703,12 @@
       "url": "https://axfra.com/library/json/axfra_look_brown_corset_shorts.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_brown_corset_shorts.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts"
+      ]
     },
     {
       "id": "AXFRA_look_brown_lace_corset_plaid_skirt",
@@ -1557,7 +1719,12 @@
       "url": "https://axfra.com/library/json/axfra_look_brown_lace_corset_plaid_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_brown_lace_corset_plaid_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_brown_leather_pleated",
@@ -1568,7 +1735,11 @@
       "url": "https://axfra.com/library/json/axfra_look_brown_leather_pleated.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_brown_leather_pleated.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_brown_offshoulder_blackjeans",
@@ -1579,7 +1750,12 @@
       "url": "https://axfra.com/library/json/axfra_look_brown_offshoulder_blackjeans.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_brown_offshoulder_blackjeans.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_burgundy_leather_mini",
@@ -1590,7 +1766,12 @@
       "url": "https://axfra.com/library/json/axfra_look_burgundy_leather_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_burgundy_leather_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_burgundy_offshoulder",
@@ -1601,7 +1782,12 @@
       "url": "https://axfra.com/library/json/axfra_look_burgundy_offshoulder.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_burgundy_offshoulder.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_burgundy_pleat",
@@ -1612,7 +1798,12 @@
       "url": "https://axfra.com/library/json/axfra_look_burgundy_pleat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_burgundy_pleat.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_burgundy_satin_mini",
@@ -1623,7 +1814,11 @@
       "url": "https://axfra.com/library/json/axfra_look_burgundy_satin_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_burgundy_satin_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_camisole_satin_skirt",
@@ -1634,7 +1829,12 @@
       "url": "https://axfra.com/library/json/axfra_look_camisole_satin_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_camisole_satin_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_corset_denim_pink_platform",
@@ -1645,7 +1845,13 @@
       "url": "https://axfra.com/library/json/axfra_look_corset_denim_pink_platform.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_corset_denim_pink_platform.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants",
+        "footwear"
+      ]
     },
     {
       "id": "AXFRA_look_cream_lace_corset",
@@ -1656,7 +1862,12 @@
       "url": "https://axfra.com/library/json/axfra_look_cream_lace_corset.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_cream_lace_corset.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_denim_corset_pink_lace_skirt",
@@ -1667,7 +1878,12 @@
       "url": "https://axfra.com/library/json/axfra_look_denim_corset_pink_lace_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_denim_corset_pink_lace_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_denim_mermaid",
@@ -1678,7 +1894,11 @@
       "url": "https://axfra.com/library/json/axfra_look_denim_mermaid.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_denim_mermaid.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_fishnet_red",
@@ -1689,7 +1909,11 @@
       "url": "https://axfra.com/library/json/axfra_look_fishnet_red.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_fishnet_red.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_golf_pink_polo_set",
@@ -1700,7 +1924,12 @@
       "url": "https://axfra.com/library/json/axfra_look_golf_pink_polo_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_golf_pink_polo_set.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_golf_white",
@@ -1711,7 +1940,12 @@
       "url": "https://axfra.com/library/json/axfra_look_golf_white.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_golf_white.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_goth_flame_baby_skirt",
@@ -1722,7 +1956,12 @@
       "url": "https://axfra.com/library/json/axfra_look_goth_flame_baby_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_goth_flame_baby_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_goth_lace_corset_dress",
@@ -1733,7 +1972,12 @@
       "url": "https://axfra.com/library/json/axfra_look_goth_lace_corset_dress.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_goth_lace_corset_dress.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_gothic_lace_black_pink",
@@ -1744,7 +1988,11 @@
       "url": "https://axfra.com/library/json/axfra_look_gothic_lace_black_pink.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gothic_lace_black_pink.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_gothic_wicked_cargo",
@@ -1755,7 +2003,12 @@
       "url": "https://axfra.com/library/json/axfra_look_gothic_wicked_cargo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gothic_wicked_cargo.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_gown_pink_corset_satin",
@@ -1766,7 +2019,12 @@
       "url": "https://axfra.com/library/json/axfra_look_gown_pink_corset_satin.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gown_pink_corset_satin.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_gown_ruched_satin_pink",
@@ -1777,7 +2035,11 @@
       "url": "https://axfra.com/library/json/axfra_look_gown_ruched_satin_pink.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gown_ruched_satin_pink.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_gown_sequin_pink_mermaid",
@@ -1788,7 +2050,11 @@
       "url": "https://axfra.com/library/json/axfra_look_gown_sequin_pink_mermaid.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gown_sequin_pink_mermaid.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_gym_brown",
@@ -1799,7 +2065,10 @@
       "url": "https://axfra.com/library/json/axfra_look_gym_brown.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gym_brown.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_gym_pink_full",
@@ -1810,7 +2079,10 @@
       "url": "https://axfra.com/library/json/axfra_look_gym_pink_full.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_gym_pink_full.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_hello_kitty_mesh_set",
@@ -1821,7 +2093,10 @@
       "url": "https://axfra.com/library/json/axfra_look_hello_kitty_mesh_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_hello_kitty_mesh_set.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_hellokitty",
@@ -1832,7 +2107,12 @@
       "url": "https://axfra.com/library/json/axfra_look_hellokitty.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_hellokitty.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_juicy_white_pink_shorts",
@@ -1843,7 +2123,12 @@
       "url": "https://axfra.com/library/json/axfra_look_juicy_white_pink_shorts.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_juicy_white_pink_shorts.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts"
+      ]
     },
     {
       "id": "AXFRA_look_lace_bat_leather",
@@ -1854,7 +2139,12 @@
       "url": "https://axfra.com/library/json/axfra_look_lace_bat_leather.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_lace_bat_leather.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_lace_corset_pleated_skirt",
@@ -1865,7 +2155,12 @@
       "url": "https://axfra.com/library/json/axfra_look_lace_corset_pleated_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_lace_corset_pleated_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_mesh_white_pants_bikini",
@@ -1876,7 +2171,12 @@
       "url": "https://axfra.com/library/json/axfra_look_mesh_white_pants_bikini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_mesh_white_pants_bikini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "pants",
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_look_metallic_pink_fur_cargo",
@@ -1887,7 +2187,14 @@
       "url": "https://axfra.com/library/json/axfra_look_metallic_pink_fur_cargo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_metallic_pink_fur_cargo.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets",
+        "tops",
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_look_midi_pink_cardigan",
@@ -1898,7 +2205,12 @@
       "url": "https://axfra.com/library/json/axfra_look_midi_pink_cardigan.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_midi_pink_cardigan.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "jackets"
+      ]
     },
     {
       "id": "AXFRA_look_offshoulder_cargo_pink",
@@ -1909,7 +2221,12 @@
       "url": "https://axfra.com/library/json/axfra_look_offshoulder_cargo_pink.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_offshoulder_cargo_pink.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_offshoulder_ribbed_jeans",
@@ -1920,7 +2237,12 @@
       "url": "https://axfra.com/library/json/axfra_look_offshoulder_ribbed_jeans.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_offshoulder_ribbed_jeans.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pajama_champagne",
@@ -1931,7 +2253,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pajama_champagne.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pajama_champagne.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_beaded_mermaid",
@@ -1942,7 +2268,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_beaded_mermaid.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_beaded_mermaid.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_bomber_cargo",
@@ -1953,7 +2283,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_bomber_cargo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_bomber_cargo.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_corset_white_lace",
@@ -1964,7 +2299,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_corset_white_lace.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_corset_white_lace.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_denim_corset",
@@ -1975,7 +2315,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_denim_corset.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_denim_corset.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_denim_jacket_skirt",
@@ -1986,7 +2331,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_denim_jacket_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_denim_jacket_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feather_pajama",
@@ -1997,7 +2348,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feather_pajama.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feather_pajama.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_01",
@@ -2008,7 +2363,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_01.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_01.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_02",
@@ -2019,7 +2378,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_02.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_02.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_03",
@@ -2030,7 +2394,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_03.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_03.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_04",
@@ -2041,7 +2409,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_04.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_04.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_05",
@@ -2052,7 +2424,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_05.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_05.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_06",
@@ -2063,7 +2440,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_06.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_06.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "tops",
+        "shorts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_07",
@@ -2074,7 +2457,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_07.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_07.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_08",
@@ -2085,7 +2472,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_08.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_08.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_09",
@@ -2096,7 +2488,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_09.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_09.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_10",
@@ -2107,7 +2503,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_10.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_10.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "lingerie",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_11",
@@ -2118,7 +2519,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_11.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_11.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_12",
@@ -2129,7 +2534,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_12.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_12.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_13",
@@ -2140,7 +2550,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_13.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_13.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops",
+        "bodysuits"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_14",
@@ -2151,7 +2567,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_14.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_14.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_15",
@@ -2162,7 +2583,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_15.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_15.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_16",
@@ -2173,7 +2599,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_16.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_16.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_17",
@@ -2184,7 +2615,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_17.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_17.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_18",
@@ -2195,7 +2631,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_18.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_18.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_19",
@@ -2206,7 +2648,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_19.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_19.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_feminine_flat_lay_20",
@@ -2217,7 +2664,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_feminine_flat_lay_20.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_feminine_flat_lay_20.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_fur_ruched",
@@ -2228,7 +2680,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_fur_ruched.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_fur_ruched.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_lace_corset_jeans",
@@ -2239,7 +2696,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_lace_corset_jeans.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_lace_corset_jeans.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_laceup_mini",
@@ -2250,7 +2712,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_laceup_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_laceup_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_leather_biker",
@@ -2261,7 +2727,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_leather_biker.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_leather_biker.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_leather_jacket_set",
@@ -2272,7 +2743,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_leather_jacket_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_leather_jacket_set.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_lingerie_robe",
@@ -2283,7 +2760,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_lingerie_robe.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_lingerie_robe.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "lingerie",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_metallic_cowboy",
@@ -2294,7 +2776,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_metallic_cowboy.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_metallic_cowboy.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts",
+        "footwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_metallic_mini",
@@ -2305,7 +2793,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_metallic_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_metallic_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_pajama_robe",
@@ -2316,7 +2808,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_pajama_robe.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_pajama_robe.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_rib_lounge",
@@ -2327,7 +2823,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_rib_lounge.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_rib_lounge.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "sleepwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_rib_pleat",
@@ -2338,7 +2838,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_rib_pleat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_rib_pleat.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_rock_biker",
@@ -2349,7 +2854,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_rock_biker.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_rock_biker.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_ruched_lace_mini",
@@ -2360,7 +2871,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_ruched_lace_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_ruched_lace_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_ruffle_corset",
@@ -2371,7 +2886,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_ruffle_corset.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_ruffle_corset.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_satin_corset_black_ruffle",
@@ -2382,7 +2902,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_satin_corset_black_ruffle.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_satin_corset_black_ruffle.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pink_satin_rhinestone",
@@ -2393,7 +2918,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_satin_rhinestone.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_satin_rhinestone.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_sequin_bustier",
@@ -2404,7 +2933,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_sequin_bustier.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_sequin_bustier.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_sequin_metallic",
@@ -2415,7 +2949,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_sequin_metallic.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_sequin_metallic.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_sheer_leather",
@@ -2426,7 +2965,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_sheer_leather.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_sheer_leather.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_pink_suede_cowboy",
@@ -2437,7 +2981,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_suede_cowboy.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_suede_cowboy.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "footwear"
+      ]
     },
     {
       "id": "AXFRA_look_pink_tank_wide",
@@ -2448,7 +2997,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_tank_wide.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_tank_wide.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_pink_tank_wide_jeans",
@@ -2459,7 +3013,13 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_tank_wide_jeans.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_tank_wide_jeans.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants",
+        "accessories"
+      ]
     },
     {
       "id": "AXFRA_look_pink_tennis",
@@ -2470,7 +3030,11 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_tennis.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_tennis.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_pink_wrap_bow_skirt",
@@ -2481,7 +3045,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pink_wrap_bow_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pink_wrap_bow_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_pool_pink_halter_pants",
@@ -2492,7 +3061,12 @@
       "url": "https://axfra.com/library/json/axfra_look_pool_pink_halter_pants.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_pool_pink_halter_pants.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_racer_pink_jacket_dress",
@@ -2503,7 +3077,12 @@
       "url": "https://axfra.com/library/json/axfra_look_racer_pink_jacket_dress.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_racer_pink_jacket_dress.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "jackets"
+      ]
     },
     {
       "id": "AXFRA_look_rhinestone_holo",
@@ -2514,7 +3093,12 @@
       "url": "https://axfra.com/library/json/axfra_look_rhinestone_holo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_rhinestone_holo.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_rock_baby_leather_jacket",
@@ -2525,7 +3109,12 @@
       "url": "https://axfra.com/library/json/axfra_look_rock_baby_leather_jacket.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_rock_baby_leather_jacket.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets"
+      ]
     },
     {
       "id": "AXFRA_look_rock_leather",
@@ -2536,7 +3125,12 @@
       "url": "https://axfra.com/library/json/axfra_look_rock_leather.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_rock_leather.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_satin_bow_blue",
@@ -2547,7 +3141,11 @@
       "url": "https://axfra.com/library/json/axfra_look_satin_bow_blue.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_satin_bow_blue.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_satin_cowl_mini",
@@ -2558,7 +3156,11 @@
       "url": "https://axfra.com/library/json/axfra_look_satin_cowl_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_satin_cowl_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_satin_mermaid_dusty",
@@ -2569,7 +3171,11 @@
       "url": "https://axfra.com/library/json/axfra_look_satin_mermaid_dusty.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_satin_mermaid_dusty.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_look_tennis_pink_nike_set",
@@ -2580,7 +3186,12 @@
       "url": "https://axfra.com/library/json/axfra_look_tennis_pink_nike_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_tennis_pink_nike_set.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_travel_pink_hoodie_sweats",
@@ -2591,7 +3202,12 @@
       "url": "https://axfra.com/library/json/axfra_look_travel_pink_hoodie_sweats.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_travel_pink_hoodie_sweats.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_tulle_corset_dress",
@@ -2602,7 +3218,13 @@
       "url": "https://axfra.com/library/json/axfra_look_tulle_corset_dress.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_tulle_corset_dress.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_tweed_corset_pleated",
@@ -2613,7 +3235,13 @@
       "url": "https://axfra.com/library/json/axfra_look_tweed_corset_pleated.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_tweed_corset_pleated.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "jackets",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_varsity_pink_m",
@@ -2624,7 +3252,11 @@
       "url": "https://axfra.com/library/json/axfra_look_varsity_pink_m.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_varsity_pink_m.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets"
+      ]
     },
     {
       "id": "AXFRA_look_velour_travel_pink",
@@ -2635,7 +3267,10 @@
       "url": "https://axfra.com/library/json/axfra_look_velour_travel_pink.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_velour_travel_pink.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_look_velvet_corset_heart_bag",
@@ -2646,7 +3281,12 @@
       "url": "https://axfra.com/library/json/axfra_look_velvet_corset_heart_bag.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_velvet_corset_heart_bag.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_velvet_gothic_pink",
@@ -2657,7 +3297,11 @@
       "url": "https://axfra.com/library/json/axfra_look_velvet_gothic_pink.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_velvet_gothic_pink.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_white_corset_pleat",
@@ -2668,7 +3312,12 @@
       "url": "https://axfra.com/library/json/axfra_look_white_corset_pleat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_white_corset_pleat.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_white_fishnet_red_ruffle",
@@ -2679,7 +3328,12 @@
       "url": "https://axfra.com/library/json/axfra_look_white_fishnet_red_ruffle.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_white_fishnet_red_ruffle.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "skirts"
+      ]
     },
     {
       "id": "AXFRA_look_white_lace_jeans",
@@ -2690,7 +3344,12 @@
       "url": "https://axfra.com/library/json/axfra_look_white_lace_jeans.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_white_lace_jeans.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_look_wrap_ribbed_satin_skirt",
@@ -2701,7 +3360,12 @@
       "url": "https://axfra.com/library/json/axfra_look_wrap_ribbed_satin_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_wrap_ribbed_satin_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_look_y2k_von_dutch_fur",
@@ -2712,7 +3376,13 @@
       "url": "https://axfra.com/library/json/axfra_look_y2k_von_dutch_fur.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_look_y2k_von_dutch_fur.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_makeup_chromatic_avant_garde",
@@ -4615,7 +5285,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_carnival_rio_red_feather_samba.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_carnival_rio_red_feather_samba.jpg",
       "group": "wardrobe",
-      "subgroup": "costumes"
+      "subgroup": "costumes",
+      "subgroups": [
+        "costumes"
+      ]
     },
     {
       "id": "dress.asymmetric",
@@ -4625,8 +5298,11 @@
       "path": "json/axfra_wardrobe_dress_asymmetric.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_asymmetric.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.blazer",
@@ -4636,8 +5312,11 @@
       "path": "json/axfra_wardrobe_dress_blazer.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_blazer.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.halter",
@@ -4647,8 +5326,11 @@
       "path": "json/axfra_wardrobe_dress_halter.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_halter.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.off_shoulder",
@@ -4658,8 +5340,11 @@
       "path": "json/axfra_wardrobe_dress_off_shoulder.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_off_shoulder.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.one_shoulder",
@@ -4669,8 +5354,11 @@
       "path": "json/axfra_wardrobe_dress_one_shoulder.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_one_shoulder.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.scoop_neck",
@@ -4680,8 +5368,11 @@
       "path": "json/axfra_wardrobe_dress_scoop_neck.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_scoop_neck.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.sheer_sleeves",
@@ -4691,8 +5382,11 @@
       "path": "json/axfra_wardrobe_dress_sheer_sleeves.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sheer_sleeves.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.slip",
@@ -4702,8 +5396,11 @@
       "path": "json/axfra_wardrobe_dress_slip.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_slip.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.square_neck",
@@ -4713,8 +5410,11 @@
       "path": "json/axfra_wardrobe_dress_square_neck.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_square_neck.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.strapless",
@@ -4724,8 +5424,11 @@
       "path": "json/axfra_wardrobe_dress_strapless.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_strapless.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.sweetheart",
@@ -4735,8 +5438,11 @@
       "path": "json/axfra_wardrobe_dress_sweetheart.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sweetheart.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "dress.turtleneck",
@@ -4746,8 +5452,11 @@
       "path": "json/axfra_wardrobe_dress_turtleneck.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_turtleneck.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "dresses",
+      "thumb": null,
+      "subgroups": [
+        "dresses"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_babydoll_floral",
@@ -4758,7 +5467,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_babydoll_floral.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_babydoll_floral.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_back_seam",
@@ -4769,7 +5481,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_back_seam.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_back_seam.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_classic_sheer",
@@ -4780,7 +5495,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_classic_sheer.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_classic_sheer.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_cross_lace_top",
@@ -4791,7 +5509,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_cross_lace_top.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_cross_lace_top.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_cross_strap_fishnet",
@@ -4802,7 +5524,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_cross_strap_fishnet.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_cross_strap_fishnet.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_fine_mesh",
@@ -4813,7 +5538,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_fine_mesh.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_fine_mesh.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_floral_lace",
@@ -4824,7 +5552,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_floral_lace.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_floral_lace.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_fringe_stripe",
@@ -4835,7 +5566,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_fringe_stripe.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_fringe_stripe.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_lace_top_fishnet",
@@ -4846,7 +5580,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_lace_top_fishnet.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_lace_top_fishnet.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_pink_lace_chain_set",
@@ -4857,7 +5595,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_pink_lace_chain_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_pink_lace_chain_set.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_pinstripe",
@@ -4868,7 +5609,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_pinstripe.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_pinstripe.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_polka_dot",
@@ -4879,7 +5623,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_polka_dot.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_polka_dot.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_runway_garter_set",
@@ -4890,7 +5637,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_runway_garter_set.json",
       "group": "wardrobe",
       "subgroup": "lingerie",
-      "thumb": null
+      "thumb": null,
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_side_lace",
@@ -4901,7 +5651,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_side_lace.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_side_lace.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_striped_fishnet",
@@ -4912,7 +5665,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_striped_fishnet.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_striped_fishnet.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_lingerie_white_basic_set",
@@ -4923,7 +5679,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_lingerie_white_basic_set.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_lingerie_white_basic_set.jpg",
       "group": "wardrobe",
-      "subgroup": "lingerie"
+      "subgroup": "lingerie",
+      "subgroups": [
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_black_pinstripe_blazer_bodysuit",
@@ -4934,7 +5693,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_black_pinstripe_blazer_bodysuit.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_black_pinstripe_blazer_bodysuit.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "bodysuits"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_black_white_ruched_bustier_mini",
@@ -4945,7 +5708,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_black_white_ruched_bustier_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_black_white_ruched_bustier_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "dresses",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_butterfly_floral_bustier_denim_mini",
@@ -4956,7 +5724,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_butterfly_floral_bustier_denim_mini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_butterfly_floral_bustier_denim_mini.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_chicago_69_racer_cargo",
@@ -4967,7 +5740,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_chicago_23_racer_cargo.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_chicago_23_racer_cargo.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_cognac_leather_corset_trench_boots",
@@ -4978,7 +5756,13 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_cognac_leather_corset_trench_boots.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_cognac_leather_corset_trench_boots.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "jackets",
+        "tops",
+        "footwear"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_geometric_fitness_leggings",
@@ -4989,7 +5773,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_geometric_fitness_leggings.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_geometric_fitness_leggings.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_gothic_punk_laceup",
@@ -5000,7 +5788,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_gothic_punk_laceup.json",
       "group": "wardrobe",
       "subgroup": "looks",
-      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_gothic_punk_laceup.jpg"
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_gothic_punk_laceup.jpg",
+      "subgroups": [
+        "looks",
+        "shorts"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_gray_crop_denim_shorts_black_belt",
@@ -5011,7 +5803,13 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_gray_crop_denim_shorts_black_belt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_gray_crop_denim_shorts_black_belt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts",
+        "accessories"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_ivory_cowl_neck_satin_romper",
@@ -5022,7 +5820,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_ivory_cowl_neck_satin_romper.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_ivory_cowl_neck_satin_romper.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "bodysuits"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_rainbow_sequin_halter_white_skirt",
@@ -5033,7 +5835,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_rainbow_sequin_halter_white_skirt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_rainbow_sequin_halter_white_skirt.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_red_gingham_top_shorts_gloves",
@@ -5044,7 +5851,13 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_red_gingham_top_shorts_gloves.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_red_gingham_top_shorts_gloves.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "shorts",
+        "accessories"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_steampunk_aviator",
@@ -5055,7 +5868,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_steampunk_aviator.json",
       "group": "wardrobe",
       "subgroup": "looks",
-      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_steampunk_aviator.jpg"
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_steampunk_aviator.jpg",
+      "subgroups": [
+        "looks"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_teal_mockneck_crop_thong",
@@ -5066,7 +5882,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_teal_mockneck_crop_thong.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_teal_mockneck_crop_thong.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "lingerie"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_virgin_rose_tee_floral_denim_mini",
@@ -5077,7 +5898,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_virgin_rose_tee_floral_denim_mini.json",
       "thumb": null,
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_white_crop_blue_leggings",
@@ -5088,7 +5914,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_white_crop_blue_leggings.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_white_crop_blue_leggings.jpg",
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "tops",
+        "pants"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_look_white_team_r_crop_red_mini",
@@ -5099,7 +5930,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_look_white_team_r_crop_red_mini.json",
       "thumb": null,
       "group": "wardrobe",
-      "subgroup": "looks"
+      "subgroup": "looks",
+      "subgroups": [
+        "looks",
+        "skirts",
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_stage_angelic_winged_white",
@@ -5110,7 +5946,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_stage_angelic_winged_white.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_stage_angelic_winged_white.jpg",
       "group": "wardrobe",
-      "subgroup": "stage"
+      "subgroup": "stage",
+      "subgroups": [
+        "stage"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_stage_metallic_white",
@@ -5121,7 +5960,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_stage_metallic_white.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_stage_metallic_white.jpg",
       "group": "wardrobe",
-      "subgroup": "stage"
+      "subgroup": "stage",
+      "subgroups": [
+        "stage"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_stage_overalls",
@@ -5132,7 +5974,11 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_stage_overalls.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_stage_overalls.jpg",
       "group": "wardrobe",
-      "subgroup": "stage"
+      "subgroup": "stage",
+      "subgroups": [
+        "stage",
+        "bodysuits"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_stage_schoolboy",
@@ -5143,7 +5989,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_stage_schoolboy.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_stage_schoolboy.jpg",
       "group": "wardrobe",
-      "subgroup": "stage"
+      "subgroup": "stage",
+      "subgroups": [
+        "stage"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_stage_tophat",
@@ -5154,7 +6003,12 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_stage_tophat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_stage_tophat.jpg",
       "group": "wardrobe",
-      "subgroup": "stage"
+      "subgroup": "stage",
+      "subgroups": [
+        "stage",
+        "tops",
+        "accessories"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_swim_pink_rhinestone_string_bikini",
@@ -5165,7 +6019,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_swim_pink_rhinestone_string_bikini.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_swim_pink_rhinestone_string_bikini.jpg",
       "group": "wardrobe",
-      "subgroup": "swim"
+      "subgroup": "swim",
+      "subgroups": [
+        "swim"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_tshirt_vintage_axion_frame_69",
@@ -5176,7 +6033,10 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_tshirt_vintage_axion_frame_69.json",
       "group": "wardrobe",
       "subgroup": "tops",
-      "thumb": null
+      "thumb": null,
+      "subgroups": [
+        "tops"
+      ]
     },
     {
       "id": "AXFRA_wardrobe_white_active_bra_shorts",
@@ -5186,8 +6046,13 @@
       "path": "json/axfra_wardrobe_white_active_bra_shorts.json",
       "url": "https://axfra.com/library/json/axfra_wardrobe_white_active_bra_shorts.json",
       "group": "wardrobe",
-      "subgroup": null,
-      "thumb": null
+      "subgroup": "tops",
+      "thumb": null,
+      "subgroups": [
+        "tops",
+        "shorts",
+        "lingerie"
+      ]
     }
   ]
 }
