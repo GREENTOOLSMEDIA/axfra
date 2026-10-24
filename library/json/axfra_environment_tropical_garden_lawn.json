@@ -1,0 +1,39 @@
+{
+  "id": "AXFRA_environment_tropical_garden_lawn",
+  "name": "Tropical Garden Lawn",
+  "name_es": "Jardín tropical con césped",
+  "mood": "sereno, exuberante, natural",
+  "palette": [
+    "verde tropical",
+    "verde césped",
+    "amarillo dorado",
+    "rosa",
+    "violeta"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "environment",
+  "slot": "exterior",
+  "piece_family": "garden",
+  "environment_block": {
+    "location": "jardín tropical privado",
+    "layout": "claro central de césped rodeado de vegetación abundante, con espacio abierto en el centro para integrar un sujeto",
+    "foreground": "césped verde corto con briznas definidas y pequeñas variaciones naturales de color",
+    "background": "palmeras altas a ambos lados, grandes hojas tropicales y follaje denso que cierra el fondo",
+    "elements": "macizos curvos de flores rosas, violetas, blancas y amarillas bordeando el césped"
+  },
+  "lighting_block": {
+    "lighting": "luz solar cálida lateral filtrada entre las palmeras, con zonas iluminadas y sombras suaves sobre el césped"
+  },
+  "camera_and_style_block": {
+    "camera": "vista a nivel de un sujeto de pie, césped del primer plano definido y vegetación del fondo progresivamente desenfocada, bokeh suave",
+    "style": "fotografía realista de jardín tropical, texturas naturales, verdes exuberantes y luz cálida"
+  }
+}
