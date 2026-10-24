@@ -1,0 +1,32 @@
+{
+  "id": "AXFRA_wardrobe_biomechanical_full_suit",
+  "name": "Biomechanical Full Suit",
+  "name_es": "Traje completo biomecánico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "full_suit",
+  "piece_family": "biomechanical",
+  "swap_rule": "El corte y la silueta quedan fijos. Citar por id y solo intercambiar material, grosor, transparencia, estampado, color o acabado.",
+  "garment": "traje completo de una pieza, ajustado al cuerpo, cuello alto, mangas largas y piernas largas",
+  "construction": "paneles de armadura articulados sobre una base flexible, distribución simétrica, relieves orgánicos y canales longitudinales que recorren torso, brazos y piernas",
+  "torso": "pecho con placas curvas moldeadas, abdomen con panel central alargado y segmentos laterales que definen la cintura, cierre frontal vertical desde el cuello hasta el abdomen bajo",
+  "shoulders": "hombreras compactas integradas con placas superpuestas",
+  "arms": "mangas ajustadas con paneles segmentados en codos y antebrazos",
+  "hands": "guantes completos con dedos cubiertos y placas articuladas sobre nudillos y falanges",
+  "legs": "piernas ajustadas con placas alargadas sobre los muslos y refuerzos articulados en las rodillas",
+  "material": "compuesto flexible de apariencia metálica con placas rígidas",
+  "grosor": "normal",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "bronce oscuro con matices de grafito",
+  "acabado": "metal satinado envejecido, reflejos suaves, bordes pulidos y microarañazos"
+}
