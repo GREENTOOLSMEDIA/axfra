@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 437,
+  "total_json": 438,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 30,
-    "wardrobe": 179
+    "wardrobe": 180
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 179,
+      "count": 180,
       "children": [
         {
           "id": "tops",
@@ -5033,6 +5033,17 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_tshirt_vintage_axion_frame_69.json",
       "group": "wardrobe",
       "subgroup": "tops",
+      "thumb": null
+    },
+    {
+      "id": "AXFRA_wardrobe_white_active_bra_shorts",
+      "name": "Seamless Bra and Short Shorts",
+      "name_es": "Top y short corto sin costuras",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_white_active_bra_shorts.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_white_active_bra_shorts.json",
+      "group": "wardrobe",
+      "subgroup": null,
       "thumb": null
     }
   ]
