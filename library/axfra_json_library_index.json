@@ -8,12 +8,12 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 452,
+  "total_json": 453,
   "categories": {
     "appearance": 10,
     "camera": 9,
     "dummy": 8,
-    "environment": 5,
+    "environment": 6,
     "general": 17,
     "identity": 36,
     "lighting": 15,
@@ -177,7 +177,7 @@
     {
       "id": "environments",
       "label": "Entornos y fondos",
-      "count": 21,
+      "count": 22,
       "children": [
         {
           "id": "studio",
@@ -227,7 +227,7 @@
         {
           "id": "other",
           "label": "Otros entornos",
-          "count": 3
+          "count": 4
         }
       ]
     },
@@ -846,6 +846,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_environment_rustic_beach_surf_shack.jpg",
       "group": "environments",
       "subgroup": "nature"
+    },
+    {
+      "id": "AXFRA_environment_spaceship_command_room",
+      "name": "Spaceship Command Room",
+      "name_es": "Sala de mando de nave espacial",
+      "category": "environment",
+      "path": "json/axfra_environment_spaceship_command_room.json",
+      "url": "https://axfra.com/library/json/axfra_environment_spaceship_command_room.json",
+      "group": "environments",
+      "subgroup": "other",
+      "thumb": "https://axfra.com/library/thumbs/axfra_environment_spaceship_command_room.jpg"
     },
     {
       "id": "AXFRA_stage_backdrop_illuminated_axfra",
