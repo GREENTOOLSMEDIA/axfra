@@ -1,0 +1,28 @@
+{
+  "id": "dress.square_neck",
+  "name": "Square Neck",
+  "name_es": "Cuello cuadrado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "dress",
+  "piece_family": "dress.styles",
+  "swap_rule": "El corte y la silueta quedan fijos. Citar por id y solo intercambiar material, grosor, transparencia, estampado, color o acabado.",
+  "neckline": "cuadrado",
+  "sleeves": "tirantes anchos",
+  "hem": "mini con falda A-line",
+  "fit": "ajustado en el torso, suelto en la falda",
+  "material": "seda",
+  "grosor": "normal",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "blanco"
+}

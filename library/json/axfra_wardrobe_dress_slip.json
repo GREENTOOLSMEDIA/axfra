@@ -1,0 +1,28 @@
+{
+  "id": "dress.slip",
+  "name": "Slip Dress",
+  "name_es": "Slip dress",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "dress",
+  "piece_family": "dress.styles",
+  "swap_rule": "El corte y la silueta quedan fijos. Citar por id y solo intercambiar material, grosor, transparencia, estampado, color o acabado.",
+  "neckline": "corazón suave",
+  "sleeves": "tirantes finos",
+  "hem": "mini bodycon",
+  "fit": "ajustado",
+  "material": "seda",
+  "grosor": "delgada",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "blanco"
+}

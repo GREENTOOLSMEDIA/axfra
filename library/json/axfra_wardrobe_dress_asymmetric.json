@@ -1,0 +1,28 @@
+{
+  "id": "dress.asymmetric",
+  "name": "Asymmetric",
+  "name_es": "Asimétrico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "dress",
+  "piece_family": "dress.styles",
+  "swap_rule": "El corte y la silueta quedan fijos. Citar por id y solo intercambiar material, grosor, transparencia, estampado, color o acabado.",
+  "neckline": "alto redondo",
+  "sleeves": "sin mangas",
+  "hem": "mini asimétrico con drapeado",
+  "fit": "ajustado con detalle lateral",
+  "material": "seda",
+  "grosor": "normal",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "blanco"
+}

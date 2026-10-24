@@ -1,0 +1,28 @@
+{
+  "id": "dress.turtleneck",
+  "name": "Turtleneck",
+  "name_es": "Cuello tortuga",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "dress",
+  "piece_family": "dress.styles",
+  "swap_rule": "El corte y la silueta quedan fijos. Citar por id y solo intercambiar material, grosor, transparencia, estampado, color o acabado.",
+  "neckline": "alto tortuga",
+  "sleeves": "manga larga ajustada",
+  "hem": "mini bodycon",
+  "fit": "ajustado al cuerpo",
+  "material": "seda",
+  "grosor": "normal",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "blanco"
+}
