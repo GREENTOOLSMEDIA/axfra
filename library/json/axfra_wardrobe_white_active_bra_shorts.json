@@ -1,0 +1,52 @@
+{
+  "id": "AXFRA_wardrobe_white_active_bra_shorts",
+  "name": "Seamless Bra and Short Shorts",
+  "name_es": "Top y short corto sin costuras",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "active",
+  "piece_family": "set",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte no se reescribe.",
+  "material_catalog": [
+    "poliamida",
+    "lycra",
+    "nylon",
+    "punto",
+    "encaje",
+    "malla",
+    "algodón"
+  ],
+  "grosor_catalog": [
+    "muy_delgada",
+    "delgada",
+    "normal",
+    "gruesa"
+  ],
+  "transparencia_catalog": [
+    "si",
+    "no"
+  ],
+  "estampado_catalog": [
+    "liso",
+    "carbono",
+    "rayas",
+    "floral"
+  ],
+  "top": "top corto, tirantes finos, escote redondo, sin costuras, banda elástica negra en el bajo",
+  "bottom": "short deportivo muy corto y ajustado, de tiro bajo, con el bajo justo debajo del pliegue de los glúteos, tejido continuo sin costura central frontal, banda elástica negra en la cintura",
+  "detail": "la banda inferior del top y la banda de cintura del short llevan cada una la palabra AXFRA repetida 5 veces, en tipografía Times New Roman blanca sobre fondo negro",
+  "material": "algodón",
+  "grosor": "muy_delgada",
+  "transparencia": "no",
+  "estampado": "liso",
+  "color": "white"
+}
