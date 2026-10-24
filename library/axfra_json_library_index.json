@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 451,
+  "total_json": 452,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,73 +23,73 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 30,
-    "wardrobe": 192
+    "wardrobe": 193
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 192,
+      "count": 193,
       "children": [
         {
           "id": "tops",
           "label": "Blusas y poleras",
-          "count": 99
+          "count": 14
         },
         {
           "id": "jackets",
           "label": "Chaquetas y abrigos",
-          "count": 17
+          "count": 0
         },
         {
           "id": "dresses",
           "label": "Vestidos",
-          "count": 45
+          "count": 12
         },
         {
           "id": "skirts",
           "label": "Faldas y minis",
-          "count": 50
+          "count": 0
         },
         {
           "id": "shorts",
           "label": "Shorts",
-          "count": 9
+          "count": 0
         },
         {
           "id": "pants",
           "label": "Pantalones y leggings",
-          "count": 23
+          "count": 0
         },
         {
           "id": "bodysuits",
           "label": "Bodies y monos",
-          "count": 4
+          "count": 0
         },
         {
           "id": "swim",
           "label": "Bikinis y trajes de baño",
-          "count": 10
+          "count": 7
         },
         {
           "id": "lingerie",
           "label": "Lencería",
-          "count": 21
+          "count": 16
         },
         {
           "id": "sleepwear",
           "label": "Pijamas y batas",
-          "count": 7
+          "count": 0
         },
         {
           "id": "footwear",
           "label": "Calzado",
-          "count": 4
+          "count": 0
         },
         {
           "id": "accessories",
           "label": "Accesorios",
-          "count": 4
+          "count": 0
         },
         {
           "id": "looks",
@@ -5277,6 +5277,17 @@
       "subgroup": "dummies"
     },
     {
+      "id": "AXFRA_wardrobe_biomechanical_full_suit",
+      "name": "Biomechanical Full Suit",
+      "name_es": "Traje completo biomecánico",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_biomechanical_full_suit.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_biomechanical_full_suit.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_biomechanical_full_suit.jpg"
+    },
+    {
       "id": "AXFRA_wardrobe_carnival_rio_red_feather_samba",
       "name": "Rio Carnival Red Feather Samba Costume",
       "name_es": "Vestuario de samba del Carnaval de Río con plumas rojas",
@@ -5299,7 +5310,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_asymmetric.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_asymmetric.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5313,7 +5324,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_blazer.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_blazer.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5327,7 +5338,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_halter.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_halter.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5341,7 +5352,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_off_shoulder.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_off_shoulder.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5355,7 +5366,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_one_shoulder.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_one_shoulder.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5369,7 +5380,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_scoop_neck.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_scoop_neck.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5383,7 +5394,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sheer_sleeves.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_sheer_sleeves.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5397,7 +5408,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_slip.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_slip.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5411,7 +5422,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_square_neck.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_square_neck.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5425,7 +5436,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_strapless.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_strapless.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5439,7 +5450,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sweetheart.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_sweetheart.jpg",
       "subgroups": [
         "dresses"
       ]
@@ -5453,7 +5464,7 @@
       "url": "https://axfra.com/library/json/axfra_wardrobe_dress_turtleneck.json",
       "group": "wardrobe",
       "subgroup": "dresses",
-      "thumb": null,
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_dress_turtleneck.jpg",
       "subgroups": [
         "dresses"
       ]
