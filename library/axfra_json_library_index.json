@@ -8,12 +8,12 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 438,
+  "total_json": 439,
   "categories": {
     "appearance": 10,
     "camera": 9,
     "dummy": 8,
-    "environment": 4,
+    "environment": 5,
     "general": 17,
     "identity": 36,
     "lighting": 15,
@@ -132,7 +132,7 @@
     {
       "id": "environments",
       "label": "Entornos y fondos",
-      "count": 20,
+      "count": 21,
       "children": [
         {
           "id": "studio",
@@ -182,7 +182,7 @@
         {
           "id": "other",
           "label": "Otros entornos",
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -755,6 +755,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_environment_stage_backdrop_illuminated.jpg",
       "group": "environments",
       "subgroup": "studio"
+    },
+    {
+      "id": "AXFRA_environment_tropical_garden_lawn",
+      "name": "Tropical Garden Lawn",
+      "name_es": "Jardín tropical con césped",
+      "category": "environment",
+      "path": "json/axfra_environment_tropical_garden_lawn.json",
+      "url": "https://axfra.com/library/json/axfra_environment_tropical_garden_lawn.json",
+      "group": "environments",
+      "subgroup": "other",
+      "thumb": null
     },
     {
       "id": "AXFRA_expression_anger",
