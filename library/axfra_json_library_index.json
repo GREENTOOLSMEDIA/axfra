@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 439,
+  "total_json": 451,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 30,
-    "wardrobe": 180
+    "wardrobe": 192
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 180,
+      "count": 192,
       "children": [
         {
           "id": "tops",
@@ -4616,6 +4616,138 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_carnival_rio_red_feather_samba.jpg",
       "group": "wardrobe",
       "subgroup": "costumes"
+    },
+    {
+      "id": "dress.asymmetric",
+      "name": "Asymmetric",
+      "name_es": "Asimétrico",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_asymmetric.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_asymmetric.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.blazer",
+      "name": "Blazer Dress",
+      "name_es": "Vestido blazer",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_blazer.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_blazer.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.halter",
+      "name": "Halter Neck",
+      "name_es": "Cuello halter",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_halter.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_halter.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.off_shoulder",
+      "name": "Off Shoulder",
+      "name_es": "Hombros descubiertos",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_off_shoulder.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_off_shoulder.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.one_shoulder",
+      "name": "One Shoulder",
+      "name_es": "Un hombro",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_one_shoulder.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_one_shoulder.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.scoop_neck",
+      "name": "Scoop Neck",
+      "name_es": "Cuello redondo",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_scoop_neck.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_scoop_neck.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.sheer_sleeves",
+      "name": "Sheer Sleeves",
+      "name_es": "Mangas transparentes",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_sheer_sleeves.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sheer_sleeves.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.slip",
+      "name": "Slip Dress",
+      "name_es": "Slip dress",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_slip.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_slip.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.square_neck",
+      "name": "Square Neck",
+      "name_es": "Cuello cuadrado",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_square_neck.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_square_neck.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.strapless",
+      "name": "Strapless",
+      "name_es": "Sin tirantes",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_strapless.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_strapless.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.sweetheart",
+      "name": "Sweetheart",
+      "name_es": "Cuello corazón",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_sweetheart.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_sweetheart.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
+    },
+    {
+      "id": "dress.turtleneck",
+      "name": "Turtleneck",
+      "name_es": "Cuello tortuga",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_dress_turtleneck.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_dress_turtleneck.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
     },
     {
       "id": "AXFRA_wardrobe_lingerie_babydoll_floral",
