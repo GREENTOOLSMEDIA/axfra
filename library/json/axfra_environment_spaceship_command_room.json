@@ -1,0 +1,48 @@
+{
+  "id": "AXFRA_environment_spaceship_command_room",
+  "name": "Spaceship Command Room",
+  "name_es": "Sala de mando de nave espacial",
+  "mood": "tecnológico, futurista, inmersivo",
+  "palette": [
+    "gris grafito",
+    "gris acero",
+    "negro",
+    "azul eléctrico",
+    "cian",
+    "blanco frío"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "environment",
+  "slot": "interior",
+  "piece_family": "spaceship",
+  "environment_block": {
+    "location": "sala de mando interior de una nave espacial",
+    "architecture": "cabina de techo bajo con paneles metálicos angulares, vigas estructurales gruesas, paredes técnicas modulares y mecanismos expuestos integrados en columnas",
+    "layout": "consolas de control a ambos lados, asiento técnico articulado en primer plano a la izquierda, segundo asiento al fondo a la derecha, gran mesa táctica rectangular en primer plano a la derecha y corredor central despejado",
+    "background": "acceso abierto de marco poligonal al fondo a la izquierda, conectado con un pasillo interior iluminado",
+    "consoles": "paneles inclinados con teclados, interruptores, botones luminosos y monitores de distintos tamaños; bancos de controles alineados sobre las paredes laterales",
+    "screens": "pantallas con diagramas técnicos y gráficos luminosos azules y cian. La palabra AXFRA aparece en mayúsculas, claramente legible, como una proyección holográfica de letras translúcidas con profundidad y resplandor suave",
+    "tactical_table": "superficie horizontal luminosa con planos y esquemas técnicos en cian y azul, con un holograma AXFRA suspendido ligeramente sobre el centro de la mesa",
+    "ceiling": "estructura central poligonal con pequeños monitores inclinados hacia el interior y luminarias lineales empotradas",
+    "floor": "placas metálicas grises, rejillas de ventilación y franjas luminosas integradas",
+    "materials": "metal satinado, superficies pintadas en gris oscuro, vidrio técnico y detalles mecánicos con desgaste sutil"
+  },
+  "lighting_block": {
+    "lighting": "iluminación ambiental tenue y fría, luminarias blancas empotradas en techo y suelo, luz azul y cian procedente de las pantallas y la mesa táctica, reflejos suaves sobre las superficies metálicas"
+  },
+  "camera_and_style_block": {
+    "camera": "vista amplia horizontal desde una esquina de la sala, a la altura de los ojos, perspectiva ligeramente oblicua que muestra las consolas laterales, la mesa táctica y el acceso posterior",
+    "style": "fotografía cinematográfica fotorrealista de interior de nave espacial, arquitectura funcional y creíble, materiales detallados, profundidad natural y luces prácticas"
+  },
+  "constraints_block": {
+    "negatives": "sin personas, sin personajes, sin siluetas humanas, sin maniquíes, sin robots humanoides, sin marcas de agua"
+  }
+}
