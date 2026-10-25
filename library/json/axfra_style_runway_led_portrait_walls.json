@@ -1,0 +1,18 @@
+{
+  "id": "AXFRA_style_runway_led_portrait_walls",
+  "name": "Runway LED Portrait Walls",
+  "name_es": "Pasarela con muros LED de retratos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "style",
+  "slot": "graphic_style",
+  "content_language": "Spanish",
+  "source_content": "Fotografía editorial de desfile de moda en formato vertical. El sujeto camina hacia la cámara por el centro de una pasarela, capturado de cuerpo completo a mitad de un paso, con postura segura y mirada al frente.\n\nGrandes pantallas LED rectangulares, dispuestas en varios niveles a ambos lados y al fondo, forman un corredor monumental. Todas muestran primeros planos del rostro del mismo sujeto que camina por la pasarela, en distintos ángulos frontales, de perfil y de tres cuartos. Conservar su identidad y rasgos faciales en cada pantalla. Los retratos son contenido de las pantallas, con una trama de píxeles LED visible y luminosidad propia.\n\nPúblico sentado en filas a ambos lados de la pasarela, dejando libre el corredor central. Composición frontal con perspectiva profunda y líneas convergentes hacia el fondo. El sujeto destaca en primer plano; las pantallas más cercanas quedan parcialmente cortadas por los bordes del encuadre.\n\nEspacio interior oscuro, focos blancos cenitales y acentos luminosos azules, cian y magenta entre las pantallas. Los retratos mantienen tonos de piel naturales con matices cálidos. Suelo oscuro pulido que refleja las luces, las pantallas y la silueta del sujeto.\n\nTratamiento fotográfico fotorrealista de alta moda, detalle nítido en el sujeto, textura electrónica reconocible en las pantallas y público ligeramente más suave. Conservar identidad, rostro y proporciones del sujeto. El vestuario se define por separado y no se modifica mediante este estilo.\n\nSin texto, logotipos ni marcas de agua."
+}
