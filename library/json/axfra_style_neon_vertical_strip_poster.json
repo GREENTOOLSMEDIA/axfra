@@ -1,0 +1,18 @@
+{
+  "id": "AXFRA_style_neon_vertical_strip_poster",
+  "name": "Neon Vertical Strip Poster",
+  "name_es": "Afiche neón en franjas verticales",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "category": "style",
+  "slot": "graphic_style",
+  "content_language": "Spanish",
+  "source_content": "Diseño gráfico de afiche de club en formato vertical, dividido en tres o cuatro franjas verticales parcialmente superpuestas que repiten el rostro del mismo sujeto sonriendo. El rostro ocupa casi todo el alto disponible entre los márgenes superior e inferior, que quedan vacíos.\n\nLa franja central es más ancha y muestra el rostro de frente, desaturado o en blanco y negro. Las franjas laterales muestran el mismo rostro en tres cuartos y con pequeñas variaciones de escala: rojo intenso a un lado y verde o cian al otro. Las imágenes laterales quedan parcialmente cortadas por los bordes del afiche.\n\nUna línea vertical de luz neón verde o cian recorre el centro de arriba abajo y separa las franjas, con un resplandor suave. Los bordes de las franjas son duros o ligeramente brillantes. Fondo plano negro o azul muy oscuro, sin entorno reconocible.\n\nContraste alto y tratamiento de color lateral similar a geles de estudio. Sin iluminación ambiental ni cielo. Acabado de montaje fotográfico para afiche de evento.\n\nConservar la identidad, el rostro y las proporciones del sujeto en todas las columnas. Todas las vistas corresponden a la misma persona. Encuadre centrado en el rostro, sin incluir vestuario.\n\nSin texto, nombre de club, fecha, dirección, logotipos ni marcas de agua."
+}
