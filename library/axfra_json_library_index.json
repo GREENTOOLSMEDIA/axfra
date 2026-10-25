@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 454,
+  "total_json": 455,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -22,7 +22,7 @@
     "prop": 5,
     "rotation": 1,
     "sports_uniform": 1,
-    "style": 31,
+    "style": 32,
     "wardrobe": 193
   },
   "groups": [
@@ -145,7 +145,7 @@
     {
       "id": "composition",
       "label": "Composición visual",
-      "count": 159,
+      "count": 160,
       "children": [
         {
           "id": "poses",
@@ -165,7 +165,7 @@
         {
           "id": "styles",
           "label": "Estilos visuales",
-          "count": 31
+          "count": 32
         },
         {
           "id": "props",
@@ -878,7 +878,7 @@
       "url": "https://axfra.com/library/json/axfra_environment_tropical_garden_lawn.json",
       "group": "environments",
       "subgroup": "other",
-      "thumb": null
+      "thumb": "https://axfra.com/library/thumbs/axfra_environment_tropical_garden_lawn.jpg"
     },
     {
       "id": "AXFRA_expression_anger",
@@ -5231,6 +5231,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_style_robot_damsel_pulp_poster.jpg",
       "group": "composition",
       "subgroup": "styles"
+    },
+    {
+      "id": "AXFRA_style_runway_led_portrait_walls",
+      "name": "Runway LED Portrait Walls",
+      "name_es": "Pasarela con muros LED de retratos",
+      "category": "style",
+      "path": "json/axfra_style_runway_led_portrait_walls.json",
+      "url": "https://axfra.com/library/json/axfra_style_runway_led_portrait_walls.json",
+      "group": "composition",
+      "subgroup": "styles",
+      "thumb": "https://axfra.com/library/thumbs/axfra_style_runway_led_portrait_walls.jpg"
     },
     {
       "id": "AXFRA_style_tarot_pulp_village_poster",
