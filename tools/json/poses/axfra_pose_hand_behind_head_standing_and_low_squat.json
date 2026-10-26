@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_hand_behind_head_standing_and_low_squat",
+  "name": "Hand Behind Head Standing And Low Squat",
+  "name_es": "Hand Behind Head Standing And Low Squat",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "standing with one hand behind her head and the other arm relaxed down, weight on one leg with a slight hip shift, elongated torso, relaxed yet posed expression, cinematic 85mm lens, f/2.8, high fashion lighting, ultra detailed\n\nEstá en una cuclilla baja y dinámica\n\n* Pierna izquierda flexionada con la rodilla alta y el pie plantado.\n\n* Pierna derecha más baja y también flexionada, casi a la altura del suelo.\n\n* Torso ligeramente girado e inclinado hacia adelante.\n\n* Brazo derecho levantado, mano detrás de la cabeza (tocando o sosteniendo el pelo).\n\n* Brazo izquierdo caído, apoyado sobre el muslo/rodilla izquierda.\n\n* Cabeza un poco inclinada, mirada directa y confiada hacia la cámara.\n\n* El cuerpo forma una línea diagonal que da sensación de movimiento y sensualidad.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

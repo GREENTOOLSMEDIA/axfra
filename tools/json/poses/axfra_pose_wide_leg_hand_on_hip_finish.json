@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_wide_leg_hand_on_hip_finish",
+  "name": "Wide Leg Hand On Hip Finish",
+  "name_es": "Wide Leg Hand On Hip Finish",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "• 1. Termina en pose final: piernas abiertas, una mano en la cadera, pecho erguido y mirada intensa y confiada.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

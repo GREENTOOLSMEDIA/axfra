@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_supine_bed_knees_up",
+  "name": "Supine Bed Knees Up",
+  "name_es": "Supine Bed Knees Up",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto boca arriba en la cama. Cabeza en la almohada, cuello extendido, mentón arriba. Ambas rodillas flexionadas y alzadas, pies sobre el colchón. Una mano sobre el pubis; el otro brazo junto a la cabeza o sobre la almohada. Cadera apoyada, sin girar de lado.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

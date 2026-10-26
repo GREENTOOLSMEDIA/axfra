@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_seated_arms_crossed_raising_top",
+  "name": "Seated Arms Crossed Raising Top",
+  "name_es": "Seated Arms Crossed Raising Top",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto sentado sobre una superficie blanda, piernas recogidas a un lado o bajo el cuerpo. Torso de frente o en leve tres cuartos. Ambos brazos se cruzan delante del pecho: las manos toman el borde inferior de la prenda superior y la suben. Codos hacia afuera. Cabeza girada hacia cámara, mirada al lente. Hombros un poco encogidos por el gesto.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

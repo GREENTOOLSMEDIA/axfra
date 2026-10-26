@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_seated_forward_lean_crossed_forearms",
+  "name": "Seated Forward Lean Crossed Forearms",
+  "name_es": "Seated Forward Lean Crossed Forearms",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto sentado, torso inclinado hacia adelante desde la cadera. Hombros caídos y adelantados. Ambos brazos bajan al regazo: un antebrazo cruza sobre el otro, manos cerca de los muslos. Piernas juntas o apenas abiertas. Cabeza un poco inclinada, mirada fija a cámara. El peso queda sobre los isquiones, no de pie.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

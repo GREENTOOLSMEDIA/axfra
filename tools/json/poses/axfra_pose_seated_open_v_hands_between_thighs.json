@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_seated_open_v_hands_between_thighs",
+  "name": "Seated Open V Hands Between Thighs",
+  "name_es": "Seated Open V Hands Between Thighs",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto sentado de frente. Rodillas abiertas, muslos en V. Torso erguido o con una inclinación mínima hacia adelante. Ambos brazos caen entre los muslos, manos juntas o casi juntas en el hueco del regazo. Hombros bajos, clavículas abiertas. Cabeza un poco girada, mirada a cámara.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

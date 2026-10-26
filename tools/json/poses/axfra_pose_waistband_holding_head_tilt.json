@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_waistband_holding_head_tilt",
+  "name": "Waistband Holding Head Tilt",
+  "name_es": "Waistband Holding Head Tilt",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto de pie. Torso en tres cuartos hacia cámara, cadera un poco desplazada. Ambas manos en la cintura, bajando el borde de la prenda (o simulando ese gesto). Cabeza echada atrás y a un lado, ojos cerrados o casi cerrados. Cabello cayendo sobre la cara. Hombros bajos. Piernas juntas o apenas abiertas, peso repartido.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_rear_three_quarter_raised_knee_punch",
+  "name": "Rear Three Quarter Raised Knee Punch",
+  "name_es": "Rear Three Quarter Raised Knee Punch",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Cuerpo de espaldas en tres cuartos. Una rodilla se flexiona y queda alta; la otra pierna se alarga atrás o abajo. Un brazo se dispara arriba, puño o mano abierta. El otro brazo se dobla a media altura. Torso en torsión. Cabeza rotada hacia atrás y arriba, buscando el lente por encima del hombro.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

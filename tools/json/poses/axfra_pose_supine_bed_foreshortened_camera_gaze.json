@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_supine_bed_foreshortened_camera_gaze",
+  "name": "Supine Bed Foreshortened Camera Gaze",
+  "name_es": "Supine Bed Foreshortened Camera Gaze",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto recostado boca arriba. Cabeza apoyada, ligeramente girada hacia un lado, mirada hacia la camra. Torso de frente, hombros relajados. Una rodilla flexionada y abierta hacia afuera; la otra pierna más larga, también con rodilla suave. Un pie más cerca del primer plano. Ambos brazos adelantados: una mano sobre el pubis, la otra sobre el muslo interno, cerca de la ingle. Cadera apoyada, sin sentarse ni girar de lado.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

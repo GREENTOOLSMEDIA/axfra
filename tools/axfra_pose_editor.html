@@ -84,7 +84,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 </section>
 
 <aside>
-<h2>Catálogo de poses AXFRA</h2>
+<h2>Catálogo de poses AXFRA · Laboratorio</h2>
+<p class="hint">Fuente: /tools/json/poses/ · La librería oficial permanece intacta. Vista 3D aproximada hasta validar las articulaciones.</p>
 <input id="search" type="search" placeholder="Buscar por nombre o ID" aria-label="Buscar poses">
 <select id="catalog" aria-label="Catálogo de poses" size="8" style="height:auto;margin-bottom:10px"></select>
 <div id="status" role="status">Cargando catálogo…</div>
@@ -204,7 +205,8 @@ $('usePreset').onclick=()=>{if(!ready())return;checkpoint();pose=template($('pre
 $('undo').onclick=()=>{if(!ready()||!history.length)return;const h=history.pop();pose=h.pose;view=h.view;doc=h.doc;geometryActive=h.geometryActive;selected=-1;serialize();sync();draw();};
 function textOf(x){return JSON.stringify(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[_-]/g,' ');}
 function approximateJointPose(data){
- const t=textOf(data), raw=JSON.stringify(data).toLowerCase();
+ const normalized=typeof data.pose_description==='string';
+ const t=textOf(normalized ? {pose_description:data.pose_description,anatomy_description:data.anatomy_description||{}} : data), raw=t;
  const has=r=>r.test(t),hits=[];
  const types=[
   ['all_fours',/all fours|cuatro apoyos|a cuatro patas|quadruped/],
@@ -259,8 +261,9 @@ function approximateJointPose(data){
  use(/reaching|extended arm|brazo extendido|senaland|pointing|palma abierta/,()=>{p[8]=[.23,p[1][1]+.06,.33];p[9]=[.24,p[1][1]+.10,.85];},'brazo adelante');
  use(/chin (resting|on)|menton (apoyado|sobre)|manos bajo el menton/,()=>{p[5]=[-.25,p[2][1]-.09,.19];p[6]=[-.08,p[3][1]-.16,.19];p[8]=[.25,p[2][1]-.09,.19];p[9]=[.08,p[3][1]-.16,.19];},'manos bajo mentón');
  use(/look up|mirando hacia arriba|looking upward/,()=>{p[16][1]+=.10;},'mirada arriba');
- const camera=data.camera||data.camera_and_style_block||{};
- if(typeof camera.azimuth_deg==='number')v.azimuth=camera.azimuth_deg;
+ const camera=normalized ? {} : (data.camera||data.camera_and_style_block||{});
+ if(normalized){v.azimuth=0;v.elevation=8;}
+ else if(typeof camera.azimuth_deg==='number')v.azimuth=camera.azimuth_deg;
  else if(typeof camera.relative_azimuth_corrected==='number')v.azimuth=-camera.relative_azimuth_corrected;
  else if(typeof camera.view==='string'){
   const cv=camera.view.toLowerCase();v.azimuth=cv.includes('rear')?180:cv.includes('profile')?90:cv.includes('quarter')?45:0;
@@ -269,7 +272,8 @@ function approximateJointPose(data){
   !use(/side profile|profile|perfil|side view|vista lateral/,()=>v.azimuth=90,'cámara lateral')){
     use(/three quarter|tres cuartos|3\/4/,()=>v.azimuth=45,'cámara ¾');
  }
- if(typeof camera.elevation_deg==='number')v.elevation=camera.elevation_deg;
+ if(normalized){v.elevation=8;}
+ else if(typeof camera.elevation_deg==='number')v.elevation=camera.elevation_deg;
  else if(!use(/low angle|contrapicado|camara baja|altura de cadera/,()=>v.elevation=-15,'cámara baja'))use(/high angle|picado|desde arriba|overhead|cenital/,()=>v.elevation=60,'cámara alta');
  return {p,v,hits};
 }
@@ -283,7 +287,7 @@ function importData(data,name){
   p=clone(state.joints);v={...defaults,...state.view};active=false;level='exact';message='Proyecto 3D recuperado: articulaciones exactas.';
  }else{
   const result=interpret(data);
-  if(result){p=result.p;v=result.v;message='Vista aproximada: '+result.hits.join(' · ')+'.';}
+  if(result){p=result.p;v=result.v;message='Vista aproximada: '+result.hits.join(' · ')+'.'+(data.normalization?.stage==='review_required'?' · Pendiente de revisión manual.':'');}
   else{p=template('standing');v={...defaults};message='Sin equivalencia 3D automática: se muestra una figura neutra, NO la pose del archivo.';}
  }
  checkpoint();doc=data;pose=p;view=v;geometryActive=active;filename=name||filename;selected=-1;
@@ -294,25 +298,25 @@ function importData(data,name){
   (message.startsWith('Sin equivalencia')?'La figura neutra NO representa esta pose. Para una representación exacta, importa un proyecto 3D guardado.':'Interpretación aproximada del texto: revisa el dibujo y ajusta articulaciones. El JSON importado se conserva hasta que edites.'));
 }
 $('apply').onclick=()=>{try{importData(JSON.parse($('json').value));}catch(e){status('No se aplicó: '+e.message);}};
-async function getJSON(url){const u=new URL(url,'https://axfra.com/library/');if(!['http:','https:'].includes(u.protocol))throw Error('URL inválida.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(u,{signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(timer);}}
+async function getJSON(url){const u=new URL(url,window.location.href);if(!['http:','https:'].includes(u.protocol))throw Error('URL inválida.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(u,{signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(timer);}}
 function renderFiles(){const q=$('search').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');filtered=files.filter(f=>[f.name,f.name_es,f.id,f.path].join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(q));$('catalog').replaceChildren();filtered.forEach((f,i)=>{const o=document.createElement('option');o.value=i;o.textContent=f.name_es||f.name||f.id||f.path;$('catalog').append(o);});}
 $('search').oninput=()=>{++catalogRequest;renderFiles();};
-async function loadCatalog(){try{const x=await getJSON('https://axfra.com/library/axfra_json_library_index.json');if(!Array.isArray(x.files))throw Error('Índice inválido');files=x.files.filter(f=>f.category==='pose'||f.subgroup==='poses'||/axfra_pose_/i.test(f.id||''));renderFiles();status(files.length+' poses disponibles. Selecciona una.');}catch(e){status('No se cargó el catálogo: '+e.message);}}
+async function loadCatalog(){try{const x=await getJSON('/tools/json/poses/index.json');if(!Array.isArray(x.files))throw Error('Índice inválido');files=x.files.filter(f=>f.category==='pose');renderFiles();status(files.length+' poses disponibles. Selecciona una.');}catch(e){status('No se cargó el catálogo: '+e.message);}}
 let catalogRequest=0;
 async function selectCatalogPose(){
  const f=filtered[$('catalog').value];if(!f)return;
  const request=++catalogRequest;status('Cargando «'+(f.name_es||f.id||'pose')+'»…');
  try{
-  const data=await getJSON(f.url||new URL(f.path,'https://axfra.com/library/').href);
+  const data=await getJSON('/tools/json/poses/'+encodeURIComponent(f.path));
   if(request!==catalogRequest)return;
-  importData(data,f.id||'pose.json');
+  importData(data,f.path||'pose.json');
  }catch(e){if(request===catalogRequest)status('Error al cargar: '+e.message);}
 }
 $('catalog').onchange=selectCatalogPose;
 $('catalog').ondblclick=selectCatalogPose;
 $('file').onchange=async e=>{const f=e.target.files[0];if(!f||!ready())return;try{const x=JSON.parse(await f.text());if(ready())importData(x,f.name);}catch(e){status('No se pudo importar: '+e.message);}finally{$('file').value='';}};
 $('copy').onclick=async()=>{try{validateObject(JSON.parse($('json').value));await navigator.clipboard.writeText($('json').value);status('JSON copiado.');}catch(e){$('json').focus();$('json').select();status('Seleccionado: copia con Ctrl/Cmd+C.');}};
-$('download').onclick=()=>{try{const x=JSON.parse($('json').value);validateObject(x);saveJSON(x,'axfra_pose_parametric.json');status('Exportado.');}catch(e){status('No se puede exportar: '+e.message);}};
+$('download').onclick=()=>{try{const x=JSON.parse($('json').value);validateObject(x);saveJSON(x,filename.endsWith('.json')?filename:(String(x.id||'axfra_pose_parametric').toLowerCase()+'.json'));status('Exportado.');}catch(e){status('No se puede exportar: '+e.message);}};
 $('saveProject').onclick=()=>{if(!ready())return;const project={...clone(doc),axfra_pose_editor:{version:'3.2',space:'3d',joint_names:names,joints:clone(pose),view:{...view}}};saveJSON(project,'axfra_pose_project.json');status('Proyecto guardado.');};
 
 pose=template('standing');doc={id:'AXFRA_pose_editor_alfa',name:'Pose Editor Alfa',name_es:'Editor de poses alfa',meta:{developer:'ALARSI',developer_site:'https://alarsi.com',brand:'AXFRA',brand_site:'https://axfra.com',system:'AXFRA JSON prompt system',version:'alfa'}};serialize();sync();new ResizeObserver(resize).observe(canvas);resize();

@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_heroic_ground_level_stance",
+  "name": "Heroic Ground-Level Stance",
+  "name_es": "Postura heroica a ras de suelo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto de pie, de frente. Pies separados al ancho de los hombros, peso repartido. Brazos caen a los lados, manos en puño suave. Torso erguido, pecho abierto. Hombros anchos. Cabeza un poco alzada, mirada hacia adelante y arriba. Capa o prenda larga cae por detrás, no tapa el torso.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

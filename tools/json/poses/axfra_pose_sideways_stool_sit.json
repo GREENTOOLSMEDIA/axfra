@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_sideways_stool_sit",
+  "name": "Sideways Stool Sit",
+  "name_es": "Sideways Stool Sit",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sentado de lado en un taburete, una pierna extendida ligeramente hacia adelante y la otra doblada naturalmente. Un codo descansa libremente sobre su rodilla levantada mientras que la mano opuesta descansa cerca de su muslo, con una expresión editorial equilibrada.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": [
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+    ]
+  }
+}

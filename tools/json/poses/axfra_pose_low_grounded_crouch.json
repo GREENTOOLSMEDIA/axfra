@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_low_grounded_crouch",
+  "name": "Low Grounded Crouch",
+  "name_es": "Low Grounded Crouch",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "low crouched stance, left hand on the ground, right arm extended back, looking to the side, athletic tension in the body, f/2.8, shallow depth of field, cinematic lighting",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+    ]
+  }
+}

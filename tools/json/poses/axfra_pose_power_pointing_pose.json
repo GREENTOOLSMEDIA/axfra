@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_power_pointing_pose",
+  "name": "Power Pointing Pose",
+  "name_es": "Power Pointing Pose",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Pose power: mano izquierda en la cadera,",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": [
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Descripción corporal muy breve; geometría insuficiente."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_standing_hip_hinge_downward_gaze",
+  "name": "Standing Hip Hinge Downward Gaze",
+  "name_es": "Standing Hip Hinge Downward Gaze",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "POSE\n\nSujeto de pie, peso mayormente sobre la pierna adelantada. La otra pierna queda un paso atrás, rodillas suaves. Cadera empujada hacia atrás, torso flexionado hacia adelante desde la cadera (bisagra), columna en curva larga. Un brazo flexionado a la espalda, dorso de la mano cerca de la zona lumbar. El otro brazo cuelga relajado junto al muslo. Cabeza alineada con el torso, mirada baja hacia el suelo unos pasos adelante. Ambos pies apoyados, talones en el piso.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

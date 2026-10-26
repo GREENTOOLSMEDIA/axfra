@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_forward_open_palm_reach",
+  "name": "Forward Open Palm Reach",
+  "name_es": "Forward Open Palm Reach",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Es una pose de alcance hacia la cámara, con el cuerpo inclinado hacia adelante.\n\n* Un brazo está extendido hacia el espectador con la palma abierta y los dedos separados (gesto de “espera”, “alto”, “ven” o simplemente alcanzando).\n\n* El otro brazo cuelga relajado al costado.\n\n* El torso se inclina hacia adelante.\n\n* Una rodilla está flexionada y más cerca (parece estar arrodillada o en una posición de avance/lunge), mientras la otra pierna se extiende hacia atrás.\n\nEs una pose dinámica y expresiva, como si estuviera tendiendo la mano hacia el espectador o deteniéndolo.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

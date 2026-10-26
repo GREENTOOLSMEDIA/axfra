@@ -1,0 +1,46 @@
+{
+  "id": "AXFRA_pose_knees_up_seated_wide_v_with_heels",
+  "name": "Knees Up Seated Wide V With Heels",
+  "name_es": "Knees Up Seated Wide V With Heels",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "bodyPosition: Seated on the floor, torso facing camera. Knees pulled up and opened, creating a wide V-shape with the legs.\nlegs: bothLegs: Knees raised and spread apart, thighs forming a wide angle. Feet planted on the floor wearing black high-heel sandals. Heels visible.\ntorso: Upright, slight forward lean. Shoulders squared to camera.\narms: bothArms: Resting along the sides of the body, hands near the hips or slightly behind for support\nhands: Relaxed, fingers slightly curled\nhead: Facing camera directly, chin level",
+  "anatomy_description": {
+    "bodyPosition": "Seated on the floor, torso facing camera. Knees pulled up and opened, creating a wide V-shape with the legs.",
+    "legs": {
+      "bothLegs": "Knees raised and spread apart, thighs forming a wide angle. Feet planted on the floor wearing black high-heel sandals. Heels visible."
+    },
+    "torso": "Upright, slight forward lean. Shoulders squared to camera.",
+    "arms": {
+      "bothArms": "Resting along the sides of the body, hands near the hips or slightly behind for support"
+    },
+    "hands": "Relaxed, fingers slightly curled",
+    "head": "Facing camera directly, chin level"
+  },
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Campo contextual no anatómico en original: gaze",
+      "Campo contextual no anatómico en original: expression"
+    ]
+  }
+}

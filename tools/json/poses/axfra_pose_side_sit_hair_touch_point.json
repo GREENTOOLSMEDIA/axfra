@@ -1,0 +1,52 @@
+{
+  "id": "AXFRA_pose_side_sit_hair_touch_point",
+  "name": "Side Sit Hair Touch Point",
+  "name_es": "Side Sit Hair Touch Point",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "bodyPosition: Seated on the floor with torso slightly twisted toward camera. Weight on the right hip and right thigh. Left leg folded underneath, right leg extended forward and slightly bent at the knee.\nlegs: rightLeg: Extended forward, knee softly bent, foot pointed and wearing black strappy high-heel sandal leftLeg: Folded under the body, knee pointing outward, foot also in black strappy high-heel sandal\ntorso: Upright with a slight arch in the lower back. Shoulders relaxed and open.\narms: leftArm: Raised, hand running through long dark hair, elbow bent rightArm: Extended downward and slightly forward, index finger pointing toward the floor\nhands: leftHand: Fingers loosely tangled in hair rightHand: Index finger extended, other fingers relaxed\nhead: Turned toward camera, chin slightly down",
+  "anatomy_description": {
+    "bodyPosition": "Seated on the floor with torso slightly twisted toward camera. Weight on the right hip and right thigh. Left leg folded underneath, right leg extended forward and slightly bent at the knee.",
+    "legs": {
+      "rightLeg": "Extended forward, knee softly bent, foot pointed and wearing black strappy high-heel sandal",
+      "leftLeg": "Folded under the body, knee pointing outward, foot also in black strappy high-heel sandal"
+    },
+    "torso": "Upright with a slight arch in the lower back. Shoulders relaxed and open.",
+    "arms": {
+      "leftArm": "Raised, hand running through long dark hair, elbow bent",
+      "rightArm": "Extended downward and slightly forward, index finger pointing toward the floor"
+    },
+    "hands": {
+      "leftHand": "Fingers loosely tangled in hair",
+      "rightHand": "Index finger extended, other fingers relaxed"
+    },
+    "head": "Turned toward camera, chin slightly down"
+  },
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Campo contextual no anatómico en original: gaze",
+      "Campo contextual no anatómico en original: expression",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

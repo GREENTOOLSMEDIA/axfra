@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_seated_wide_legs_hand_near_face",
+  "name": "Seated Wide Legs Hand Near Face",
+  "name_es": "Seated Wide Legs Hand Near Face",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto sentado. Piernas abiertas y flexionadas, plantas hacia adentro o una sobre la otra a la altura del tobillo. Una mano apoyada en el tobillo o la espinilla contraria. La otra mano sube al rostro: dedos cerca de labios o mentón. Torso de frente o en leve tres cuartos. Mirada a cámara.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

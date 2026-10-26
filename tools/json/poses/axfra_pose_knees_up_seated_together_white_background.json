@@ -1,0 +1,50 @@
+{
+  "id": "AXFRA_pose_knees_up_seated_together_white_background",
+  "name": "Knees Up Seated Together White Background",
+  "name_es": "Knees Up Seated Together White Background",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "bodyPosition: Seated on the floor on a seamless white background. Buttocks on the ground, torso facing the camera with a slight forward lean of the upper body.\nlegs: bothLegs: Knees bent and pulled upward toward the torso, kept together (knees touching or nearly touching). Thighs close to each other. Feet planted on the floor. leftLeg: Knee raised and held close to the other knee. rightLeg: Knee raised and held close to the other knee.\nfeet: Planted on the floor. Toes pointing slightly outward.\ntorso: Upright with a subtle forward lean. Shoulders squared and relaxed, facing the camera.\narms: bothArms: Extended downward along the sides of the body. Hands placed on the floor beside or slightly behind the hips for support.\nhands: Relaxed, fingers lightly curled, palms down on the floor providing balance.\nhead: Facing the camera directly, chin level to slightly lowered.",
+  "anatomy_description": {
+    "bodyPosition": "Seated on the floor on a seamless white background. Buttocks on the ground, torso facing the camera with a slight forward lean of the upper body.",
+    "legs": {
+      "bothLegs": "Knees bent and pulled upward toward the torso, kept together (knees touching or nearly touching). Thighs close to each other. Feet planted on the floor.",
+      "leftLeg": "Knee raised and held close to the other knee.",
+      "rightLeg": "Knee raised and held close to the other knee."
+    },
+    "feet": "Planted on the floor. Toes pointing slightly outward.",
+    "torso": "Upright with a subtle forward lean. Shoulders squared and relaxed, facing the camera.",
+    "arms": {
+      "bothArms": "Extended downward along the sides of the body. Hands placed on the floor beside or slightly behind the hips for support."
+    },
+    "hands": "Relaxed, fingers lightly curled, palms down on the floor providing balance.",
+    "head": "Facing the camera directly, chin level to slightly lowered."
+  },
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Campo contextual no anatómico en original: gaze",
+      "Campo contextual no anatómico en original: expression",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

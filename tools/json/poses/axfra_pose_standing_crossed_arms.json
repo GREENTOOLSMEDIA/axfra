@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_standing_crossed_arms",
+  "name": "Standing Crossed Arms",
+  "name_es": "Standing Crossed Arms",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto de pie en tres cuartos. Peso sobre una pierna. Ambos brazos cruzados sobre el torso: un antebrazo cubre el pecho, el otro baja y la mano se apoya en el costado o la cadera contraria. Hombros un poco alzados por el cruce. Cabeza girada al lente, mirada a cámara.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

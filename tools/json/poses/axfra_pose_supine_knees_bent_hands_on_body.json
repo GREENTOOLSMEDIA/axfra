@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_supine_knees_bent_hands_on_body",
+  "name": "Supine Knees Bent Hands On Body",
+  "name_es": "Supine Knees Bent Hands On Body",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto boca arriba. Una rodilla alzada y abierta hacia cámara; la otra también flexionada. Una mano sobre el pecho; la otra sobre el pubis. Cabeza girada un poco a un lado, mirada a cámara.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

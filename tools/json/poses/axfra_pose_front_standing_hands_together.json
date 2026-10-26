@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_front_standing_hands_together",
+  "name": "Front Standing Hands Together",
+  "name_es": "Front Standing Hands Together",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto de pie, de frente. Peso un poco más en una pierna; la otra suave, pie apenas abierto. Torso erguido. Ambos brazos flexionados: las manos se juntan a la altura del pecho (una sobre la otra o en pinza). Codos cerca del cuerpo. Cabeza al frente, alineada con los hombros.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

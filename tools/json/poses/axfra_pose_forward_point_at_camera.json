@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_forward_point_at_camera",
+  "name": "Forward Point At Camera",
+  "name_es": "Forward Point At Camera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Es una pose dinámica, de avance hacia la cámara.\n\n* Un brazo extendido hacia el espectador, con el dedo índice apuntando directo a la cámara (el brazo está muy foreshortened).\n\n* El otro brazo cuelga relajado al costado.\n\n* El cuerpo está ligeramente inclinado hacia adelante, como si estuviera caminando o dando un paso hacia nosotros.\n\n* Una pierna adelantada (la de apoyo más atrás), lo que genera sensación de movimiento.\n\n* La cabeza mira de frente al espectador.\n\nEs una pose de “te estoy señalando a ti”, con actitud directa y un poco confrontacional o llamativa.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Orientación relativa a cámara: convertir a orientación local al revisar."
+    ]
+  }
+}

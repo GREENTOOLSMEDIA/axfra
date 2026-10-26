@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_rear_view_raised_knee_reach",
+  "name": "Rear View Raised Knee Reach",
+  "name_es": "Rear View Raised Knee Reach",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "back view: standing on one leg with the other knee lifted, one arm reaching high above her head and the other arm extended to the side, body aligned on a vertical center line, graceful and controlled expression, f/2.8, clean studio lighting, ultra detailed anatomy",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+    ]
+  }
+}
