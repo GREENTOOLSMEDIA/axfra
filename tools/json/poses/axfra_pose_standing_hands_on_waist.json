@@ -22,11 +22,136 @@
   },
   "pose_description": "Standing with hands resting confidently at the waist.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "geometry_draft_thumbnail_guided",
     "method": "non_destructive_text_normalization",
-    "geometry": "not_calibrated",
+    "geometry": "approximate_17_joint_3d",
     "camera_in_pose": false,
-    "notes": []
+    "notes": [],
+    "review_required": true
   },
-  "source_pose_description": "Standing with hands resting confidently at the waist."
+  "source_pose_description": "Standing with hands resting confidently at the waist.",
+  "axfra_pose_editor": {
+    "version": "3.3-lab",
+    "space": "3d",
+    "joint_names": [
+      "pelvis",
+      "spine",
+      "neck",
+      "head",
+      "r_shoulder",
+      "r_elbow",
+      "r_wrist",
+      "l_shoulder",
+      "l_elbow",
+      "l_wrist",
+      "r_hip",
+      "r_knee",
+      "r_ankle",
+      "l_hip",
+      "l_knee",
+      "l_ankle",
+      "nose"
+    ],
+    "joints": [
+      [
+        0,
+        0.93,
+        0
+      ],
+      [
+        0,
+        1.2,
+        0
+      ],
+      [
+        0,
+        1.52,
+        0
+      ],
+      [
+        0,
+        1.68,
+        0
+      ],
+      [
+        -0.23,
+        1.46,
+        0
+      ],
+      [
+        -0.34,
+        1.25,
+        0.04
+      ],
+      [
+        -0.17,
+        1.03,
+        0.17
+      ],
+      [
+        0.23,
+        1.46,
+        0
+      ],
+      [
+        0.34,
+        1.25,
+        0.04
+      ],
+      [
+        0.17,
+        1.03,
+        0.17
+      ],
+      [
+        -0.41000000000000003,
+        0.9,
+        0
+      ],
+      [
+        -0.42000000000000004,
+        0.48,
+        0.01
+      ],
+      [
+        -0.42000000000000004,
+        0.06,
+        0.04
+      ],
+      [
+        0.41000000000000003,
+        0.9,
+        0
+      ],
+      [
+        0.42000000000000004,
+        0.48,
+        0.01
+      ],
+      [
+        0.42000000000000004,
+        0.06,
+        0.04
+      ],
+      [
+        0,
+        1.68,
+        0.13
+      ]
+    ],
+    "view": {
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "azimuth": 0,
+      "elevation": 8,
+      "distance": 4.5,
+      "fov": 40,
+      "targetY": 0.9
+    },
+    "calibration": "thumbnail_guided_approximation",
+    "camera_independent": true,
+    "keyframe": "single_static_pose",
+    "geometry_source": "thumbnail_guided_manual_approximation"
+  }
 }

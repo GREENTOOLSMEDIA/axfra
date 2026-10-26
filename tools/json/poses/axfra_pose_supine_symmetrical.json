@@ -22,11 +22,136 @@
   },
   "pose_description": "Lying flat on the back, face looking straight upward, symmetrical composition.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "geometry_draft_thumbnail_guided",
     "method": "non_destructive_text_normalization",
-    "geometry": "not_calibrated",
+    "geometry": "approximate_17_joint_3d",
     "camera_in_pose": false,
-    "notes": []
+    "notes": [],
+    "review_required": true
   },
-  "source_pose_description": "Lying flat on the back, face looking straight upward, symmetrical composition."
+  "source_pose_description": "Lying flat on the back, face looking straight upward, symmetrical composition.",
+  "axfra_pose_editor": {
+    "version": "3.3-lab",
+    "space": "3d",
+    "joint_names": [
+      "pelvis",
+      "spine",
+      "neck",
+      "head",
+      "r_shoulder",
+      "r_elbow",
+      "r_wrist",
+      "l_shoulder",
+      "l_elbow",
+      "l_wrist",
+      "r_hip",
+      "r_knee",
+      "r_ankle",
+      "l_hip",
+      "l_knee",
+      "l_ankle",
+      "nose"
+    ],
+    "joints": [
+      [
+        0,
+        0.2,
+        0
+      ],
+      [
+        0,
+        0.2,
+        0.3
+      ],
+      [
+        0,
+        0.2,
+        0.55
+      ],
+      [
+        0,
+        0.2,
+        0.76
+      ],
+      [
+        -0.23,
+        0.2,
+        0.52
+      ],
+      [
+        -0.43,
+        0.2,
+        0.28
+      ],
+      [
+        -0.46,
+        0.2,
+        0.1
+      ],
+      [
+        0.23,
+        0.2,
+        0.52
+      ],
+      [
+        0.43,
+        0.2,
+        0.28
+      ],
+      [
+        0.46,
+        0.2,
+        0.1
+      ],
+      [
+        -0.16,
+        0.2,
+        -0.13
+      ],
+      [
+        -0.19,
+        0.2,
+        -0.65
+      ],
+      [
+        -0.19,
+        0.77,
+        -0.5
+      ],
+      [
+        0.16,
+        0.2,
+        -0.13
+      ],
+      [
+        0.19,
+        0.2,
+        -0.65
+      ],
+      [
+        0.19,
+        0.77,
+        -0.5
+      ],
+      [
+        0,
+        0.26,
+        0.83
+      ]
+    ],
+    "view": {
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "azimuth": 0,
+      "elevation": 8,
+      "distance": 4.5,
+      "fov": 40,
+      "targetY": 0.9
+    },
+    "calibration": "thumbnail_guided_approximation",
+    "camera_independent": true,
+    "keyframe": "supine_legs_vertical",
+    "geometry_source": "thumbnail_guided_manual_approximation"
+  }
 }
