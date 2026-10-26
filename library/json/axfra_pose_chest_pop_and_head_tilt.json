@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Rompe el freeze: baja el brazo derecho lentamente mientras haces un chest pop (pecho hacia adelante) + pequeño head tilt hacia la derecha. (beat 8)",
-  "source_index": 38
+  "source_index": 38,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "mastermind",
-  "source_index": 67
+  "source_index": 67,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

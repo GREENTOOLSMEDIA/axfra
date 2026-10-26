@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Final Scheme",
-  "source_index": 69
+  "source_index": 69,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

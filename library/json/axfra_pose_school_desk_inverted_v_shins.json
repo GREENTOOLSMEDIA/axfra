@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "content_language": "Spanish",
-  "source_content": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho, sosteniendo un objeto fino. Mirada a cámara."
+  "source_content": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho, sosteniendo un objeto fino. Mirada a cámara.",
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Paso atrás con pierna derecha + inmediato hip roll circular hacia la izquierda (cadera da una vuelta completa).",
-  "source_index": 39
+  "source_index": 39,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

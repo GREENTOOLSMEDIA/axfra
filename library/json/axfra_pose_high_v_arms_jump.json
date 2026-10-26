@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Abre brazos en V alto mientras haces un pequeño jump en el lugar.",
-  "source_index": 32
+  "source_index": 32,
+  "classification": {
+    "category": "suspended",
+    "category_es": "Suspendido",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

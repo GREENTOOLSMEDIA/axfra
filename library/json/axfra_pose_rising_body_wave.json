@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Sube lentamente el cuerpo haciendo un body wave desde las rodillas hasta la cabeza.",
-  "source_index": 46
+  "source_index": 46,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

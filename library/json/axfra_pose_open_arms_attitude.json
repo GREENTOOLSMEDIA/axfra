@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Brazos abiertos en actitud (palmas hacia arriba o una mano cerca de la cara). (beat 9)",
-  "source_index": 40
+  "source_index": 40,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

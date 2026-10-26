@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Standing with one arm raised gently as if signaling or acknowledging.",
-  "source_content": "Standing with one arm raised gently as if signaling or acknowledging."
+  "source_content": "Standing with one arm raised gently as if signaling or acknowledging.",
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

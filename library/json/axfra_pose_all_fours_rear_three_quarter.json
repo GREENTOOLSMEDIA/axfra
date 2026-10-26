@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto a cuatro apoyos. Ambas manos plantadas en el suelo, brazos extendidos. Una rodilla en el piso; la otra pierna estirada atrás, pie apoyado. Cadera alta. Torso paralelo al suelo o un poco abierto. Cabeza rotada por el hombro, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás y de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja. Distancia media. Deben verse las dos manos, la rodilla de apoyo y el pie de atrás.",
-  "source_index": 98
+  "source_index": 98,
+  "classification": {
+    "category": "all_fours",
+    "category_es": "Cuatro apoyos",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

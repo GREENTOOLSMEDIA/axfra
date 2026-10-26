@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Powerful punch toward camera with extreme foreshortening, right fist large in foreground, left fist pulled back, body leaning forward, intense expression, cinematic 85mm lens, f/2.8, shallow DOF, high contrast lighting, ultra detailed anatomy",
-  "source_index": 3
+  "source_index": 3,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Gira hacia la derecha (giro sobre el pie derecho).",
-  "source_index": 34
+  "source_index": 34,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

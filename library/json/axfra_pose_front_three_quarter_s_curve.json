@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "front three-quarter view of the body, wide stance, hips shifted with a clear upward S-curve on the near hip, torso slightly rotated away from camera, one arm reaching forward, the other arm extended back",
-  "source_index": 13
+  "source_index": 13,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

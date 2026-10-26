@@ -24,5 +24,10 @@
   "expression": "Neutral to slightly intense, lips closed, serious/seductive look",
   "gaze": "Strong direct eye contact",
   "source_id": "pose_02_knees_up_spread",
-  "source_index": 57
+  "source_index": 57,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

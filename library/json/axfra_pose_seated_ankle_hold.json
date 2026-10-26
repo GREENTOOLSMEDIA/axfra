@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "sitting on the ground with one leg extended and the other bent, torso twisted, both hands holding the raised foot/ankle, head turned toward the extended leg. Camera 2.5 meters in front and slightly to the side of the extended leg, at waist height, pointing at her torso and the held foot, 85mm lens, f/2.8, soft dramatic lighting, ultra detailed",
-  "source_index": 18
+  "source_index": 18,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

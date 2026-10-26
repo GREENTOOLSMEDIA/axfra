@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Durante el giro: hair flip dramático (o mano lenta por el pelo) + snap fuerte con dedos de la mano derecha al terminar el giro. (beat 6)",
-  "source_index": 35
+  "source_index": 35,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

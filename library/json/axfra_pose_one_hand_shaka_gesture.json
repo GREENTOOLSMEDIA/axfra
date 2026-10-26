@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Gesto shaka (hang loose) con una mano mientras sigue el balanceo.",
-  "source_index": 51
+  "source_index": 51,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

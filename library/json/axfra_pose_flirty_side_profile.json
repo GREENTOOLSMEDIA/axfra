@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Pose sexy de perfil. Mirada coqueta y intensa.",
-  "source_index": 53
+  "source_index": 53,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "mid-air leaping pose toward the camera, both arms extended, one knee tucked, body slightly twisted, hair floating, confident gaze, cinematic 85mm lens, f/2.8, motion freeze, dramatic lighting, ultra detailed, Vogue editorial style",
-  "source_index": 2
+  "source_index": 2,
+  "classification": {
+    "category": "suspended",
+    "category_es": "Suspendido",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

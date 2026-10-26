@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "high side kick, one leg fully extended upward, arms used for balance, body slightly twisted, athletic and elegant, cinematic 85mm lens, f/2.8, frozen motion, dramatic lighting, ultra detailed",
-  "source_index": 4
+  "source_index": 4,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

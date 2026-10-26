@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Manos suben al pecho. Dedos índices tocan o apuntan ligeramente el bodysuit (gesto juguetón).",
-  "source_index": 50
+  "source_index": 50,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

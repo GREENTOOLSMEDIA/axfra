@@ -27,5 +27,10 @@
   "expression": "Neutral to slightly intense. Lips closed, serious and composed look with a hint of seduction.",
   "gaze": "Strong, direct eye contact with the camera.",
   "source_id": "pose_02_knees_up_together",
-  "source_index": 61
+  "source_index": 61,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

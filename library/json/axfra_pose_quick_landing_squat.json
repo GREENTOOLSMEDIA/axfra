@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Al aterrizar: squat rápido (baja cadera) y sube inmediatamente con energía. (beat 5)",
-  "source_index": 33
+  "source_index": 33,
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

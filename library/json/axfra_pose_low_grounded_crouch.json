@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "low crouched stance, left hand on the ground, right arm extended back, looking to the side, athletic tension in the body, cinematic 85mm lens, f/2.8, shallow depth of field, cinematic lighting",
-  "source_index": 6
+  "source_index": 6,
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

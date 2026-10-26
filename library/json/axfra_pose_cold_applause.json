@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "cold applause",
-  "source_index": 68
+  "source_index": 68,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

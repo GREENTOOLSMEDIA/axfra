@@ -41,5 +41,10 @@
       "No pure side profile",
       "No rear view"
     ]
+  },
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
   }
 }

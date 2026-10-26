@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante desde la cadera. Hombros caídos y adelantados. Ambos brazos bajan al regazo: un antebrazo cruza sobre el otro, manos cerca de los muslos. Piernas juntas o apenas abiertas. Cabeza un poco inclinada, mirada fija a cámara. El peso queda sobre los isquiones, no de pie.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio (muslos a cabeza). Cámara a la altura del pecho o un poco más baja, ligero contrapicado. Distancia corta-media. El rostro llena el tercio superior; los brazos cruzados deben verse enteros.",
-  "source_index": 83
+  "source_index": 83,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

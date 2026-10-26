@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Inclinación hacia adelante con manos en los muslos. Risa grande y abierta.",
-  "source_index": 52
+  "source_index": 52,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

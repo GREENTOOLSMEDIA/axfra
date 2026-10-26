@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_pose_all_fours_three_point_reach",
+  "name": "All Fours Three Point Reach",
+  "name_es": "Tres apoyos, brazo extendido",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "all_fours",
+    "category_es": "Cuatro apoyos",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración con apoyos de manos o antebrazos y rodillas. Tres apoyos, brazo extendido.",
+    "anatomy": {
+      "support_points": [
+        "left_palm",
+        "left_knee",
+        "right_knee"
+      ],
+      "left_arm": "vertical_support_below_shoulder",
+      "right_arm": "extended_forward_parallel_to_floor",
+      "knees": "hip_width_apart",
+      "pelvis": "level",
+      "torso": "parallel_to_floor",
+      "head": "aligned_with_spine"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

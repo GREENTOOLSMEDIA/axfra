@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_pose_kneeling_forward_hands_on_floor",
+  "name": "Kneeling Forward Hands On Floor",
+  "name_es": "De rodillas, torso adelante, manos al suelo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "kneeling",
+    "category_es": "De rodillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración arrodillada. De rodillas, torso adelante, manos al suelo.",
+    "anatomy": {
+      "support_points": [
+        "left_knee",
+        "right_knee",
+        "left_palm",
+        "right_palm"
+      ],
+      "knees": "hip_width_apart",
+      "pelvis": "above_knees",
+      "torso": "inclined_forward",
+      "arms": "extended_down",
+      "hands": "palms_on_floor_forward_of_knees",
+      "head": "aligned_with_spine"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

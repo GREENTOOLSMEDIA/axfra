@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Paso lateral amplio con pierna derecha → posición más abierta.",
-  "source_index": 28
+  "source_index": 28,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

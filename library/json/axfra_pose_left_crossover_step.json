@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Cruza pierna izquierda por delante de la derecha (paso cruzado).",
-  "source_index": 30
+  "source_index": 30,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

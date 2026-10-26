@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Gira torso \\~45° izquierda + shoulder shimmy rápido (o punch fuerte con mano derecha hacia cámara). (beat 4)",
-  "source_index": 31
+  "source_index": 31,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

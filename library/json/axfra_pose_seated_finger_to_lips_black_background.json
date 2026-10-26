@@ -29,5 +29,10 @@
   "expression": "Playful, lips slightly parted, finger near mouth",
   "gaze": "Direct, seductive eye contact",
   "source_id": "pose_03_black_bg_finger_to_lips",
-  "source_index": 55
+  "source_index": 55,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

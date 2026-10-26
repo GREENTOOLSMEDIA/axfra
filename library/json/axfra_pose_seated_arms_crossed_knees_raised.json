@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Tiene la barbilla ligeramente levantada, los brazos cruzados libremente frente al cuerpo, y presenta una postura sentada con ambas piernas dobladas y rodillas levantadas, los pies descansando naturalmente",
-  "source_index": 24
+  "source_index": 24,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

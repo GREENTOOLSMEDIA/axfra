@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto agachado a muy baja altura. Ambas rodillas flexionadas y abiertas. Un pie adelantado, el otro más atrás, talones que pueden levantarse. Una mano plantada en el suelo al frente, dedos abiertos, brazo extendido sosteniendo parte del peso. El otro brazo flexionado, antebrazo o mano apoyados sobre el muslo de la rodilla alzada. Torso inclinado hacia adelante, pecho de frente. Cabeza al frente, alineada con los hombros.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cámara baja, a la altura del torso o un poco más abajo (casi a nivel de la mano apoyada). Encuadre de cuerpo entero. La mano del suelo y ambos pies deben verse. Distancia corta-media. Sin picado desde arriba.",
-  "source_index": 81
+  "source_index": 81,
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Al mismo tiempo: hip drop rápido (baja–sube la cadera una vez, acentuado). (beat 3)",
-  "source_index": 29
+  "source_index": 29,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

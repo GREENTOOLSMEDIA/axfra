@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Squatting slightly with knees bent, arms resting near thighs, looking up at the camera.",
-  "source_content": "Squatting slightly with knees bent, arms resting near thighs, looking up at the camera."
+  "source_content": "Squatting slightly with knees bent, arms resting near thighs, looking up at the camera.",
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

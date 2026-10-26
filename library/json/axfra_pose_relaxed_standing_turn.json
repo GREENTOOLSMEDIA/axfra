@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Standing upright, relaxed posture, head slightly turned.",
-  "source_content": "Standing upright, relaxed posture, head slightly turned."
+  "source_content": "Standing upright, relaxed posture, head slightly turned.",
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

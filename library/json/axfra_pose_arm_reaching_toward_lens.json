@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Standing while extending one arm toward the camera in an elegant, interactive gesture.",
-  "source_content": "Standing while extending one arm toward the camera in an elegant, interactive gesture."
+  "source_content": "Standing while extending one arm toward the camera in an elegant, interactive gesture.",
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

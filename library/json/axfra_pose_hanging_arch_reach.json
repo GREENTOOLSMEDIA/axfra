@@ -1,0 +1,41 @@
+{
+  "id": "AXFRA_pose_hanging_arch_reach",
+  "name": "Hanging Arch Reach",
+  "name_es": "Suspendido de ambas manos, cuerpo arqueado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "suspended",
+    "category_es": "Suspendido",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración de suspensión o fase aérea. Suspendido de ambas manos, cuerpo arqueado.",
+    "anatomy": {
+      "support_points": [
+        "left_hand_overhead_grip",
+        "right_hand_overhead_grip"
+      ],
+      "legs": "hanging_below_body",
+      "knees": "softly_flexed",
+      "torso": "slightly_arched_back",
+      "shoulders": "elevated_in_overhead_grip",
+      "head": "aligned_with_spine",
+      "external_support": "stable_overhead_bar"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

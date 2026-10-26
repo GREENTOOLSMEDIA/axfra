@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Kneeling and leaning slightly forward, head tilted up, engaged gaze.",
-  "source_content": "Kneeling and leaning slightly forward, head tilted up, engaged gaze."
+  "source_content": "Kneeling and leaning slightly forward, head tilted up, engaged gaze.",
+  "classification": {
+    "category": "kneeling",
+    "category_es": "De rodillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

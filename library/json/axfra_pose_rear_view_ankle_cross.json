@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "back view: standing in a crossover pose with legs crossed at the ankles, arms relaxed at her sides, elegant and balanced posture, confident calm expression, cinematic 85mm lens, f/2.8, shallow depth of field, clean fashion lighting, ultra detailed, high fashion editorial quality",
-  "source_index": 23
+  "source_index": 23,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

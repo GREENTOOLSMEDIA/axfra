@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Sitting cross-legged, calm and composed posture.",
-  "source_content": "Sitting cross-legged, calm and composed posture."
+  "source_content": "Sitting cross-legged, calm and composed posture.",
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

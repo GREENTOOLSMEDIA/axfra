@@ -1,0 +1,41 @@
+{
+  "id": "AXFRA_pose_chaise_longue_full_recline",
+  "name": "Chaise Longue Full Recline",
+  "name_es": "Reclinado largo sobre superficie inclinada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "reclining",
+    "category_es": "Reclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración semirrecostada. Reclinado largo sobre superficie inclinada.",
+    "anatomy": {
+      "support_points": [
+        "back",
+        "pelvis",
+        "legs"
+      ],
+      "surface": "inclined_support",
+      "torso": "reclined_about_30_degrees_above_horizontal",
+      "arms": "resting_at_sides",
+      "legs": "extended_along_support",
+      "head": "aligned_with_spine"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

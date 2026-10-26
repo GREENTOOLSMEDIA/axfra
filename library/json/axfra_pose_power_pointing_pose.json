@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Pose power: mano izquierda en la cadera, mano derecha apunta/index arriba hacia cámara.",
-  "source_index": 36
+  "source_index": 36,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "De pie, pies juntos, mirada fija a cámara (seria o sonrisa pícara).",
-  "source_index": 26
+  "source_index": 26,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

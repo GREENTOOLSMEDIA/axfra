@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Barbilla apoyada suavemente sobre las manos entrelazadas. Dedos elegantemente colocados. Mirada directa a cámara con expresión suave y cariñosa.",
-  "source_index": 49
+  "source_index": 49,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

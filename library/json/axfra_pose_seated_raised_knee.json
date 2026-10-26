@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Sitting with one knee raised, composed introspective pose.",
-  "source_content": "Sitting with one knee raised, composed introspective pose."
+  "source_content": "Sitting with one knee raised, composed introspective pose.",
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

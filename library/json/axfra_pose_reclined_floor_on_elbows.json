@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_pose_reclined_floor_on_elbows",
+  "name": "Reclined Floor On Elbows",
+  "name_es": "Semirreclinado en suelo sobre ambos codos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "reclining",
+    "category_es": "Reclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración semirrecostada. Semirreclinado en suelo sobre ambos codos.",
+    "anatomy": {
+      "support_points": [
+        "pelvis",
+        "left_elbow",
+        "right_elbow",
+        "legs"
+      ],
+      "pelvis": "on_floor",
+      "torso": "inclined_backward_about_45_degrees",
+      "arms": "elbows_on_floor_behind_torso",
+      "legs": "extended_relaxed",
+      "head": "aligned_with_torso"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

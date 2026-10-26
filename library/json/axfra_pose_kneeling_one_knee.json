@@ -1,0 +1,41 @@
+{
+  "id": "AXFRA_pose_kneeling_one_knee",
+  "name": "Kneeling One Knee",
+  "name_es": "Una rodilla apoyada, pierna contraria adelantada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "kneeling",
+    "category_es": "De rodillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración arrodillada. Una rodilla apoyada, pierna contraria adelantada.",
+    "anatomy": {
+      "support_points": [
+        "left_knee",
+        "right_foot"
+      ],
+      "left_leg": "knee_on_floor_shin_back",
+      "right_leg": "foot_planted_knee_about_90_degrees",
+      "pelvis": "centered_between_supports",
+      "torso": "upright",
+      "arms": "relaxed_at_sides",
+      "head": "neutral"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

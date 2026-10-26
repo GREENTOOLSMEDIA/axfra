@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_pose_all_fours_neutral",
+  "name": "All Fours Neutral",
+  "name_es": "Cuatro apoyos simétricos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "all_fours",
+    "category_es": "Cuatro apoyos",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración con apoyos de manos o antebrazos y rodillas. Cuatro apoyos simétricos.",
+    "anatomy": {
+      "support_points": [
+        "left_palm",
+        "right_palm",
+        "left_knee",
+        "right_knee"
+      ],
+      "palms": "directly_below_shoulders",
+      "knees": "directly_below_hips",
+      "spine": "neutral",
+      "pelvis": "level",
+      "head": "aligned_with_spine"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

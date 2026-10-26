@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "pose dinamica sexy y coqueta",
-  "source_index": 17
+  "source_index": 17,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

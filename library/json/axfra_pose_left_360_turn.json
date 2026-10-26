@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Gira rápido 360° hacia la izquierda (giro completo sobre el pie izquierdo).",
-  "source_index": 41
+  "source_index": 41,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

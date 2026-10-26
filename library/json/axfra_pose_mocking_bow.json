@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "mocking bow",
-  "source_index": 66
+  "source_index": 66,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

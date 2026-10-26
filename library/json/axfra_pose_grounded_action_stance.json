@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "dynamic action pose, right hand planted on the ground, left arm swept back, weight on the balls of her feet, intense focused expression, cinematic 85mm lens, f/2.8, shallow depth of field, dramatic side lighting, ultra detailed skin and anatomy, high fashion editorial quality",
-  "source_index": 1
+  "source_index": 1,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

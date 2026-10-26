@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto en cuclillas bajas. Pies separados, talones que pueden despegarse. Torso girado: la espalda y la cadera quedan hacia cámara. La cabeza rota por encima del hombro, mirada al lente. Una mano sobre el muslo delantero; la otra sobre la cadera o el glúteo. Rodillas abiertas.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás. Cuerpo entero. Cámara a altura de cadera o torso. Distancia media. Deben verse la rotación de la cabeza, ambas manos y los pies.",
-  "source_index": 93
+  "source_index": 93,
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

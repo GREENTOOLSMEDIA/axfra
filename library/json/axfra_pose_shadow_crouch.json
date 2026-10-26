@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "shadow crouch",
-  "source_index": 71
+  "source_index": 71,
+  "classification": {
+    "category": "squatting",
+    "category_es": "Cuclillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

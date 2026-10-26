@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto sentado en el suelo. Ambas manos plantadas detrás del cuerpo, brazos extendidos, sosteniendo el torso. Una pierna se pliega a un lado, rodilla en el piso, pie hacia afuera. La otra pierna se adelanta hacia cámara, rodilla suave, pie de frente. Torso erguido de frente. Cabeza al frente.\n\nÁNGULO DE CÁMARA\n\nFrontal, un poco por encima. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse las dos manos detrás y los dos pies.",
-  "source_index": 107
+  "source_index": 107,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

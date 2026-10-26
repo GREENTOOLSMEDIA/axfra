@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "• 1. Inclínate hacia atrás con el pecho abierto y las manos en las caderas.",
-  "source_index": 45
+  "source_index": 45,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

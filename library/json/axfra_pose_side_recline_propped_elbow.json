@@ -1,0 +1,42 @@
+{
+  "id": "AXFRA_pose_side_recline_propped_elbow",
+  "name": "Side Recline Propped Elbow",
+  "name_es": "Reclinado lateral apoyado sobre un codo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "reclining",
+    "category_es": "Reclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración semirrecostada. Reclinado lateral apoyado sobre un codo.",
+    "anatomy": {
+      "support_points": [
+        "left_hip",
+        "left_elbow",
+        "left_leg"
+      ],
+      "body_orientation": "left_side",
+      "torso": "oblique_lifted_by_left_forearm",
+      "left_arm": "elbow_under_shoulder",
+      "right_arm": "relaxed_along_side",
+      "legs": "stacked_slightly_bent",
+      "head": "upright_neutral"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "kneeling on one knee with the other knee down, one hand planted on the ground, the other hand raised near her face, chest open toward camera, body slightly twisted. Camera 2.8 meters in front and slightly above, pointing down at her chest and the hand on the ground, 85mm lens, f/2.8, clean studio lighting, ultra detailed anatomy",
-  "source_index": 20
+  "source_index": 20,
+  "classification": {
+    "category": "kneeling",
+    "category_es": "De rodillas",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto recostado a lo largo de un alféizar o banco estrecho. Espalda y un hombro apoyados en el muro vertical. Un brazo baja, palma plantada en el borde. El otro brazo queda junto al cuerpo o atrás. Cadera sobre la superficie; piernas extendidas a lo largo del alféizar, rodillas suaves, pies hacia el extremo. Cabeza contra la pared, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos de lado. Cuerpo entero sobre la cornisa. Cámara a altura de torso. Distancia media. Deben verse la mano de apoyo, las piernas completas y el contacto con el muro.",
-  "source_index": 95
+  "source_index": 95,
+  "classification": {
+    "category": "reclining",
+    "category_es": "Reclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

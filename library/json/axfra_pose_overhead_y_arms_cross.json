@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Durante el giro: brazos suben en forma de “Y” y luego bajan cruzando el pecho (dramatic cross). (beat 10)",
-  "source_index": 42
+  "source_index": 42,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

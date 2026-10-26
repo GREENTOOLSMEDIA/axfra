@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Cara de “¿y ahora qué?” + guiño rápido → freeze 1 segundo. (beat 7)",
-  "source_index": 37
+  "source_index": 37,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

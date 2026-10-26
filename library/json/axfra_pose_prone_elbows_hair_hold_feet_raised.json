@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto tendido boca abajo. Peso sobre antebrazos y codos. Manos a cada lado de la cabeza, sujetando el cabello. Torso de frente al suelo, pecho apenas levantado. Rodillas flexionadas, pies alzados detrás. Cabeza erguida, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nDesde la cabecera, frontal con leve tres cuartos. Plano medio-largo (cabeza a pies). Cámara un poco por encima del su cabeza. Distancia media. Deben verse los pies en el aire y ambos antebrazos.",
-  "source_index": 91
+  "source_index": 91,
+  "classification": {
+    "category": "lying",
+    "category_es": "Acostado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }
