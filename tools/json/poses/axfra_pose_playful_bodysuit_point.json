@@ -27,5 +27,6 @@
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": []
-  }
+  },
+  "source_pose_description": "Manos suben al pecho. Dedos índices tocan o apuntan ligeramente el bodysuit (gesto juguetón)."
 }

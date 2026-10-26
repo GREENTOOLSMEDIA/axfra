@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto tendido boca abajo. Peso sobre antebrazos y codos. Manos a cada lado de la cabeza, sujetando el cabello. Torso de frente al suelo, pecho apenas levantado. Rodillas flexionadas, pies alzados detrás. Cabeza erguida, mirada a cámara.",
+  "pose_description": "POSE\n\nSujeto tendido boca abajo. Peso sobre antebrazos y codos. Manos a cada lado de la cabeza, sujetando el cabello. Torso de frente al suelo, pecho apenas levantado. Rodillas flexionadas, pies alzados detrás. Cabeza erguida, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nDesde la cabecera, frontal con leve tres cuartos. Plano medio-largo (cabeza a pies). Cámara un poco por encima del su cabeza. Distancia media. Deben verse los pies en el aire y ambos antebrazos.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto tendido boca abajo. Peso sobre antebrazos y codos. Manos a cada lado de la cabeza, sujetando el cabello. Torso de frente al suelo, pecho apenas levantado. Rodillas flexionadas, pies alzados detrás. Cabeza erguida, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nDesde la cabecera, frontal con leve tres cuartos. Plano medio-largo (cabeza a pies). Cámara un poco por encima del su cabeza. Distancia media. Deben verse los pies en el aire y ambos antebrazos."
 }

@@ -31,5 +31,6 @@
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
       "Orientación relativa a cámara: convertir a orientación local al revisar."
     ]
-  }
+  },
+  "source_pose_description": "Gira torso \\~45° izquierda + shoulder shimmy rápido (o punch fuerte con mano derecha hacia cámara). (beat 4)"
 }

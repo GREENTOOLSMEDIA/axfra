@@ -29,5 +29,6 @@
     "notes": [
       "Descripción corporal muy breve; geometría insuficiente."
     ]
-  }
+  },
+  "source_pose_description": "Top-Down Twist"
 }

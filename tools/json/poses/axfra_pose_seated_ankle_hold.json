@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "sitting on the ground with one leg extended and the other bent, torso twisted, both hands holding the raised foot/ankle, at waist height, pointing at her torso and the held foot, f/2.8, soft dramatic lighting, ultra detailed",
+  "pose_description": "sitting on the ground with one leg extended and the other bent, torso twisted, both hands holding the raised foot/ankle, head turned toward the extended leg. Camera 2.5 meters in front and slightly to the side of the extended leg, at waist height, pointing at her torso and the held foot, 85mm lens, f/2.8, soft dramatic lighting, ultra detailed",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "sitting on the ground with one leg extended and the other bent, torso twisted, both hands holding the raised foot/ankle, head turned toward the extended leg. Camera 2.5 meters in front and slightly to the side of the extended leg, at waist height, pointing at her torso and the held foot, 85mm lens, f/2.8, soft dramatic lighting, ultra detailed"
 }

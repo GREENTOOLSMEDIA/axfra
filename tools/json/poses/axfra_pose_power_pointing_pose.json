@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Pose power: mano izquierda en la cadera,",
+  "pose_description": "Pose power: mano izquierda en la cadera, mano derecha apunta/index arriba hacia cámara.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": false,
     "notes": [
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
-      "Descripción corporal muy breve; geometría insuficiente."
+      "Descripción corporal muy breve; geometría insuficiente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Pose power: mano izquierda en la cadera, mano derecha apunta/index arriba hacia cámara."
 }

@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado en el suelo. Ambas manos plantadas detrás del cuerpo, brazos extendidos, sosteniendo el torso. Una pierna se pliega a un lado, rodilla en el piso, pie hacia afuera. La otra pierna se adelanta hacia cámara, rodilla suave, pie de frente. Torso erguido de frente. Cabeza al frente.",
+  "pose_description": "POSE\n\nSujeto sentado en el suelo. Ambas manos plantadas detrás del cuerpo, brazos extendidos, sosteniendo el torso. Una pierna se pliega a un lado, rodilla en el piso, pie hacia afuera. La otra pierna se adelanta hacia cámara, rodilla suave, pie de frente. Torso erguido de frente. Cabeza al frente.\n\nÁNGULO DE CÁMARA\n\nFrontal, un poco por encima. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse las dos manos detrás y los dos pies.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado en el suelo. Ambas manos plantadas detrás del cuerpo, brazos extendidos, sosteniendo el torso. Una pierna se pliega a un lado, rodilla en el piso, pie hacia afuera. La otra pierna se adelanta hacia cámara, rodilla suave, pie de frente. Torso erguido de frente. Cabeza al frente.\n\nÁNGULO DE CÁMARA\n\nFrontal, un poco por encima. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse las dos manos detrás y los dos pies."
 }

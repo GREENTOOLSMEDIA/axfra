@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto en cuclillas bajas. Pies separados, talones que pueden despegarse. Torso girado: la espalda y la cadera quedan hacia cámara. La cabeza rota por encima del hombro, mirada al lente. Una mano sobre el muslo delantero; la otra sobre la cadera o el glúteo. Rodillas abiertas.",
+  "pose_description": "POSE\n\nSujeto en cuclillas bajas. Pies separados, talones que pueden despegarse. Torso girado: la espalda y la cadera quedan hacia cámara. La cabeza rota por encima del hombro, mirada al lente. Una mano sobre el muslo delantero; la otra sobre la cadera o el glúteo. Rodillas abiertas.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás. Cuerpo entero. Cámara a altura de cadera o torso. Distancia media. Deben verse la rotación de la cabeza, ambas manos y los pies.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto en cuclillas bajas. Pies separados, talones que pueden despegarse. Torso girado: la espalda y la cadera quedan hacia cámara. La cabeza rota por encima del hombro, mirada al lente. Una mano sobre el muslo delantero; la otra sobre la cadera o el glúteo. Rodillas abiertas.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás. Cuerpo entero. Cámara a altura de cadera o torso. Distancia media. Deben verse la rotación de la cabeza, ambas manos y los pies."
 }

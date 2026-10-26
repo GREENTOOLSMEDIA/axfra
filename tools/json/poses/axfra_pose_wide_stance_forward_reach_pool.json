@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "2.8 meters in front of her and slightly to the side of the reaching arm, pointing directly at her extended hand and then her chest, f/2.8, focus on the forward hand and her face, pool and palm trees behind, bright sun",
+  "pose_description": "wide stance with one arm reaching forward and the other back. Camera placed at chest height, 2.8 meters in front of her and slightly to the side of the reaching arm, pointing directly at her extended hand and then her chest, 85mm lens, f/2.8, focus on the forward hand and her face, pool and palm trees behind, bright sun",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "wide stance with one arm reaching forward and the other back. Camera placed at chest height, 2.8 meters in front of her and slightly to the side of the reaching arm, pointing directly at her extended hand and then her chest, 85mm lens, f/2.8, focus on the forward hand and her face, pool and palm trees behind, bright sun"
 }

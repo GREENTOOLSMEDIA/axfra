@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "kneeling on both knees in side profile facing left, feet pointed back, torso upright, one hand on her hip, at hip height, pointing at her waist and the turned shoulder, f/2.8, shallow depth of field, fashion editorial lighting, ultra detailed",
+  "pose_description": "kneeling on both knees in side profile facing left, feet pointed back, torso upright, one hand on her hip, head turned looking back over her shoulder. Camera 2.5 meters to her side, at hip height, pointing at her waist and the turned shoulder, 85mm lens, f/2.8, shallow depth of field, fashion editorial lighting, ultra detailed",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "kneeling on both knees in side profile facing left, feet pointed back, torso upright, one hand on her hip, head turned looking back over her shoulder. Camera 2.5 meters to her side, at hip height, pointing at her waist and the turned shoulder, 85mm lens, f/2.8, shallow depth of field, fashion editorial lighting, ultra detailed"
 }

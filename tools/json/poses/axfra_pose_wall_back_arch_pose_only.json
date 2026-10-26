@@ -27,5 +27,6 @@
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": []
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo."
 }

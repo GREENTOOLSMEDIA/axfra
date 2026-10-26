@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sentado en el suelo. Rodillas flexionadas y abiertas a los lados. Espinillas y pies van hacia atrás, a ambos lados de la cadera (no delante). Ambas manos plantadas en el suelo detrás o a los costados de la cadera, brazos extendidos sosteniendo el torso. Torso de frente, erguido. Cabeza al frente, apenas gacha.",
+  "pose_description": "POSE\n\nSentado en el suelo. Rodillas flexionadas y abiertas a los lados. Espinillas y pies van hacia atrás, a ambos lados de la cadera (no delante). Ambas manos plantadas en el suelo detrás o a los costados de la cadera, brazos extendidos sosteniendo el torso. Torso de frente, erguido. Cabeza al frente, apenas gacha.\n\nÁNGULO DE CÁMARA\n\n* Posición: justo delante del sujeto, en el eje del pecho.\n\n* Altura del lente: por encima de la cabeza, mirando hacia abajo (\\~25–40°).\n\n* Lo más cerca: rodillas y muslos.\n\n* Lo más lejos: manos de atrás y pies.\n\n* Se debe ver el suelo entre las rodillas y las dos manos detrás de la cadera.\n\n* No perfil. No a ras de suelo. No contrapicado.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSentado en el suelo. Rodillas flexionadas y abiertas a los lados. Espinillas y pies van hacia atrás, a ambos lados de la cadera (no delante). Ambas manos plantadas en el suelo detrás o a los costados de la cadera, brazos extendidos sosteniendo el torso. Torso de frente, erguido. Cabeza al frente, apenas gacha.\n\nÁNGULO DE CÁMARA\n\n* Posición: justo delante del sujeto, en el eje del pecho.\n\n* Altura del lente: por encima de la cabeza, mirando hacia abajo (\\~25–40°).\n\n* Lo más cerca: rodillas y muslos.\n\n* Lo más lejos: manos de atrás y pies.\n\n* Se debe ver el suelo entre las rodillas y las dos manos detrás de la cadera.\n\n* No perfil. No a ras de suelo. No contrapicado."
 }

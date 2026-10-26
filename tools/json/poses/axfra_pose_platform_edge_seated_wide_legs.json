@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado al borde de una plataforma. Piernas abiertas en V, pies en el suelo. Manos apoyadas sobre las rodillas, brazos extendidos. Torso de frente, ligera inclinación adelante. Cabeza gacha, mirada hacia la cmara. Espalda no recostada.",
+  "pose_description": "POSE\n\nSujeto sentado al borde de una plataforma. Piernas abiertas en V, pies en el suelo. Manos apoyadas sobre las rodillas, brazos extendidos. Torso de frente, ligera inclinación adelante. Cabeza gacha, mirada hacia la cmara. Espalda no recostada.\n\nÁNGULO DE CÁMARA\n\nFrontal. Cuerpo entero, de cabeza a pies. Cámara a altura de pecho o un poco más alta. Distancia media. Deben verse ambas manos en las rodillas y los pies en el piso.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado al borde de una plataforma. Piernas abiertas en V, pies en el suelo. Manos apoyadas sobre las rodillas, brazos extendidos. Torso de frente, ligera inclinación adelante. Cabeza gacha, mirada hacia la cmara. Espalda no recostada.\n\nÁNGULO DE CÁMARA\n\nFrontal. Cuerpo entero, de cabeza a pies. Cámara a altura de pecho o un poco más alta. Distancia media. Deben verse ambas manos en las rodillas y los pies en el piso."
 }

@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado, torso inclinado hacia adelante. Ambos brazos flexionados: las manos se apilan bajo el mentón o rodean la base de la mandíbula. Codos hacia adentro, cerca del pecho. Hombros un poco altos. Cabeza inclinada hacia cámara, mirada al lente.",
+  "pose_description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante. Ambos brazos flexionados: las manos se apilan bajo el mentón o rodean la base de la mandíbula. Codos hacia adentro, cerca del pecho. Hombros un poco altos. Cabeza inclinada hacia cámara, mirada al lente.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio-corto (pecho o cintura a cabeza). Cámara a altura de la cara o un poco más alta. Distancia corta. Deben verse las dos manos bajo el mentón.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante. Ambos brazos flexionados: las manos se apilan bajo el mentón o rodean la base de la mandíbula. Codos hacia adentro, cerca del pecho. Hombros un poco altos. Cabeza inclinada hacia cámara, mirada al lente.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio-corto (pecho o cintura a cabeza). Cámara a altura de la cara o un poco más alta. Distancia corta. Deben verse las dos manos bajo el mentón."
 }

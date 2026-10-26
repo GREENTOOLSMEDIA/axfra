@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto recostado a lo largo de un alféizar o banco estrecho. Espalda y un hombro apoyados en el muro vertical. Un brazo baja, palma plantada en el borde. El otro brazo queda junto al cuerpo o atrás. Cadera sobre la superficie; piernas extendidas a lo largo del alféizar, rodillas suaves, pies hacia el extremo. Cabeza contra la pared, mirada a cámara.",
+  "pose_description": "POSE\n\nSujeto recostado a lo largo de un alféizar o banco estrecho. Espalda y un hombro apoyados en el muro vertical. Un brazo baja, palma plantada en el borde. El otro brazo queda junto al cuerpo o atrás. Cadera sobre la superficie; piernas extendidas a lo largo del alféizar, rodillas suaves, pies hacia el extremo. Cabeza contra la pared, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos de lado. Cuerpo entero sobre la cornisa. Cámara a altura de torso. Distancia media. Deben verse la mano de apoyo, las piernas completas y el contacto con el muro.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto recostado a lo largo de un alféizar o banco estrecho. Espalda y un hombro apoyados en el muro vertical. Un brazo baja, palma plantada en el borde. El otro brazo queda junto al cuerpo o atrás. Cadera sobre la superficie; piernas extendidas a lo largo del alféizar, rodillas suaves, pies hacia el extremo. Cabeza contra la pared, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos de lado. Cuerpo entero sobre la cornisa. Cámara a altura de torso. Distancia media. Deben verse la mano de apoyo, las piernas completas y el contacto con el muro."
 }

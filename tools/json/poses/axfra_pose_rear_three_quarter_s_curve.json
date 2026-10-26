@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "rear three-quarter view of the body, wide stance, hips shifted with a clear upward S-curve on the near hip, one arm reaching forward, at waist height, angled a few degrees up, pointing at her lower back and the raised hip. Full body in frame, 85mm, f/2.8. Do not change face, outfit, hair, or background.",
+  "pose_description": "rear three-quarter view of the body, wide stance, hips shifted with a clear upward S-curve on the near hip, torso slightly rotated away from camera, one arm reaching forward, the other arm extended back. Camera 3 meters behind her and slightly to her left, at waist height, angled a few degrees up, pointing at her lower back and the raised hip. Full body in frame, 85mm, f/2.8. Do not change face, outfit, hair, or background.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "rear three-quarter view of the body, wide stance, hips shifted with a clear upward S-curve on the near hip, torso slightly rotated away from camera, one arm reaching forward, the other arm extended back. Camera 3 meters behind her and slightly to her left, at waist height, angled a few degrees up, pointing at her lower back and the raised hip. Full body in frame, 85mm, f/2.8. Do not change face, outfit, hair, or background."
 }

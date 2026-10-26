@@ -27,5 +27,6 @@
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": []
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie, peso mayormente sobre la pierna adelantada. La otra pierna queda un paso atrás, rodillas suaves. Cadera empujada hacia atrás, torso flexionado hacia adelante desde la cadera (bisagra), columna en curva larga. Un brazo flexionado a la espalda, dorso de la mano cerca de la zona lumbar. El otro brazo cuelga relajado junto al muslo. Cabeza alineada con el torso, mirada baja hacia el suelo unos pasos adelante. Ambos pies apoyados, talones en el piso."
 }

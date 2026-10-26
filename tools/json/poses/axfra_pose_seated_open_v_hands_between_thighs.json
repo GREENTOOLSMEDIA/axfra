@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado de frente. Rodillas abiertas, muslos en V. Torso erguido o con una inclinación mínima hacia adelante. Ambos brazos caen entre los muslos, manos juntas o casi juntas en el hueco del regazo. Hombros bajos, clavículas abiertas. Cabeza un poco girada, mirada a cámara.",
+  "pose_description": "POSE\n\nSujeto sentado de frente. Rodillas abiertas, muslos en V. Torso erguido o con una inclinación mínima hacia adelante. Ambos brazos caen entre los muslos, manos juntas o casi juntas en el hueco del regazo. Hombros bajos, clavículas abiertas. Cabeza un poco girada, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nFrontal. Plano medio (mitad de muslo a cabeza). Cámara a la altura de la cara o del pecho, eje recto. Distancia corta-media. Se deben ver ambos muslos y los dos brazos enteros.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado de frente. Rodillas abiertas, muslos en V. Torso erguido o con una inclinación mínima hacia adelante. Ambos brazos caen entre los muslos, manos juntas o casi juntas en el hueco del regazo. Hombros bajos, clavículas abiertas. Cabeza un poco girada, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nFrontal. Plano medio (mitad de muslo a cabeza). Cámara a la altura de la cara o del pecho, eje recto. Distancia corta-media. Se deben ver ambos muslos y los dos brazos enteros."
 }

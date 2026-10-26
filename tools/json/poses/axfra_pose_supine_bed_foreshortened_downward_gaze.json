@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto recostado boca arriba sobre una superficie blanda. Cabeza apoyada, ligeramente girada hacia un lado, mirada baja. Torso de frente, hombros relajados. Una rodilla flexionada y abierta hacia afuera; la otra pierna más larga, también con rodilla suave. Un pie más cerca del primer plano. Ambos brazos adelantados: una mano sobre el pubis, la otra sobre el muslo interno, cerca de la ingle. Cadera apoyada, sin sentarse ni girar de lado.",
+  "pose_description": "POSE\n\nSujeto recostado boca arriba sobre una superficie blanda. Cabeza apoyada, ligeramente girada hacia un lado, mirada baja. Torso de frente, hombros relajados. Una rodilla flexionada y abierta hacia afuera; la otra pierna más larga, también con rodilla suave. Un pie más cerca del primer plano. Ambos brazos adelantados: una mano sobre el pubis, la otra sobre el muslo interno, cerca de la ingle. Cadera apoyada, sin sentarse ni girar de lado.\n\nÁNGULO DE CÁMARA\n\nPicado suave desde el extremo de los pies hacia la cabeza. Cámara por encima de la cama, no a ras. Encuadre de cuerpo casi entero (cabeza a pies). El pie más cercano entra en primer plano; el rostro queda en el tercio superior. Eje ligeramente descentrado, no cenital puro.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSujeto recostado boca arriba sobre una superficie blanda. Cabeza apoyada, ligeramente girada hacia un lado, mirada baja. Torso de frente, hombros relajados. Una rodilla flexionada y abierta hacia afuera; la otra pierna más larga, también con rodilla suave. Un pie más cerca del primer plano. Ambos brazos adelantados: una mano sobre el pubis, la otra sobre el muslo interno, cerca de la ingle. Cadera apoyada, sin sentarse ni girar de lado.\n\nÁNGULO DE CÁMARA\n\nPicado suave desde el extremo de los pies hacia la cabeza. Cámara por encima de la cama, no a ras. Encuadre de cuerpo casi entero (cabeza a pies). El pie más cercano entra en primer plano; el rostro queda en el tercio superior. Eje ligeramente descentrado, no cenital puro."
 }

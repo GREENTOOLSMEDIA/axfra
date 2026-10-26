@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto de pie. Torso en tres cuartos hacia cámara, cadera un poco desplazada. Ambas manos en la cintura, bajando el borde de la prenda (o simulando ese gesto). Cabeza echada atrás y a un lado, ojos cerrados o casi cerrados. Cabello cayendo sobre la cara. Hombros bajos. Piernas juntas o apenas abiertas, peso repartido.",
+  "pose_description": "POSE\n\nSujeto de pie. Torso en tres cuartos hacia cámara, cadera un poco desplazada. Ambas manos en la cintura, bajando el borde de la prenda (o simulando ese gesto). Cabeza echada atrás y a un lado, ojos cerrados o casi cerrados. Cabello cayendo sobre la cara. Hombros bajos. Piernas juntas o apenas abiertas, peso repartido.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio-largo (caderas o muslos a cabeza) o cuerpo entero. Cámara a altura de pecho. Distancia media. El gesto de las dos manos en la cintura debe verse claro.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie. Torso en tres cuartos hacia cámara, cadera un poco desplazada. Ambas manos en la cintura, bajando el borde de la prenda (o simulando ese gesto). Cabeza echada atrás y a un lado, ojos cerrados o casi cerrados. Cabello cayendo sobre la cara. Hombros bajos. Piernas juntas o apenas abiertas, peso repartido.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio-largo (caderas o muslos a cabeza) o cuerpo entero. Cámara a altura de pecho. Distancia media. El gesto de las dos manos en la cintura debe verse claro."
 }

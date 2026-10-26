@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado sobre una superficie blanda, piernas recogidas a un lado o bajo el cuerpo. Torso de frente o en leve tres cuartos. Ambos brazos se cruzan delante del pecho: las manos toman el borde inferior de la prenda superior y la suben. Codos hacia afuera. Cabeza girada hacia cámara, mirada al lente. Hombros un poco encogidos por el gesto.",
+  "pose_description": "POSE\n\nSujeto sentado sobre una superficie blanda, piernas recogidas a un lado o bajo el cuerpo. Torso de frente o en leve tres cuartos. Ambos brazos se cruzan delante del pecho: las manos toman el borde inferior de la prenda superior y la suben. Codos hacia afuera. Cabeza girada hacia cámara, mirada al lente. Hombros un poco encogidos por el gesto.\n\nÁNGULO DE CÁMARA\n\nFrontal o leve tres cuartos. Plano medio (cadera a cabeza). Cámara a altura de pecho. Distancia corta-media. Deben verse los dos brazos cruzados y el borde de la prenda entre las manos.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado sobre una superficie blanda, piernas recogidas a un lado o bajo el cuerpo. Torso de frente o en leve tres cuartos. Ambos brazos se cruzan delante del pecho: las manos toman el borde inferior de la prenda superior y la suben. Codos hacia afuera. Cabeza girada hacia cámara, mirada al lente. Hombros un poco encogidos por el gesto.\n\nÁNGULO DE CÁMARA\n\nFrontal o leve tres cuartos. Plano medio (cadera a cabeza). Cámara a altura de pecho. Distancia corta-media. Deben verse los dos brazos cruzados y el borde de la prenda entre las manos."
 }

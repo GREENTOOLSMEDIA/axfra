@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo.",
+  "pose_description": "POSE\n\nSujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo.\n\nÁNGULO DE CÁMARA\n\nPerfil o tres cuartos de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja, para leer el arco. Distancia media. Debe verse el apoyo de la cabeza en el muro y los pies en el suelo.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo.\n\nÁNGULO DE CÁMARA\n\nPerfil o tres cuartos de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja, para leer el arco. Distancia media. Debe verse el apoyo de la cabeza en el muro y los pies en el suelo."
 }

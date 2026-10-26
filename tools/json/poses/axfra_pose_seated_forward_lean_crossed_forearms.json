@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado, torso inclinado hacia adelante desde la cadera. Hombros caídos y adelantados. Ambos brazos bajan al regazo: un antebrazo cruza sobre el otro, manos cerca de los muslos. Piernas juntas o apenas abiertas. Cabeza un poco inclinada, mirada fija a cámara. El peso queda sobre los isquiones, no de pie.",
+  "pose_description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante desde la cadera. Hombros caídos y adelantados. Ambos brazos bajan al regazo: un antebrazo cruza sobre el otro, manos cerca de los muslos. Piernas juntas o apenas abiertas. Cabeza un poco inclinada, mirada fija a cámara. El peso queda sobre los isquiones, no de pie.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio (muslos a cabeza). Cámara a la altura del pecho o un poco más baja, ligero contrapicado. Distancia corta-media. El rostro llena el tercio superior; los brazos cruzados deben verse enteros.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado, torso inclinado hacia adelante desde la cadera. Hombros caídos y adelantados. Ambos brazos bajan al regazo: un antebrazo cruza sobre el otro, manos cerca de los muslos. Piernas juntas o apenas abiertas. Cabeza un poco inclinada, mirada fija a cámara. El peso queda sobre los isquiones, no de pie.\n\nÁNGULO DE CÁMARA\n\nFrontal, plano medio (muslos a cabeza). Cámara a la altura del pecho o un poco más baja, ligero contrapicado. Distancia corta-media. El rostro llena el tercio superior; los brazos cruzados deben verse enteros."
 }

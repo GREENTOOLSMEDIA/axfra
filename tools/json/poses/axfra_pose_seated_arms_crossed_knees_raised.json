@@ -27,5 +27,6 @@
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": []
-  }
+  },
+  "source_pose_description": "Tiene la barbilla ligeramente levantada, los brazos cruzados libremente frente al cuerpo, y presenta una postura sentada con ambas piernas dobladas y rodillas levantadas, los pies descansando naturalmente"
 }

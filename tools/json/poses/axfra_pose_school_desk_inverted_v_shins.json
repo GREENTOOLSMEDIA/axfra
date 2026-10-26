@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho,",
+  "pose_description": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho, sosteniendo un objeto fino. Mirada a cámara.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": [
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado en un pupitre antiguo old school con cuadernos encima , de frente. Muslos bajan casi paralelos. Las rodillas quedan más juntas y forman una V invertida (Λ): el vértice está en las rodillas. Desde ahí las pantorrillas se abren hacia afuera y los pies quedan más separados que las rodillas, plantados en el suelo. Torso erguido o apenas inclinado adelante. Ambos brazos flexionados: las manos se juntan delante del pecho, sosteniendo un objeto fino. Mirada a cámara."
 }

@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sentado en un taburete. Una rodilla sube al pecho, pie plantado en el asiento. La otra pierna muy separada cuelga, pie hacia el suelo. Un brazo se alza: el dorso de la mano o el antebrazo descansa en la frente. La otra mano cubre su puvis. Torso de frente o en leve tres cuartos. Mirada a cámara.",
+  "pose_description": "POSE\n\nSentado en un taburete. Una rodilla sube al pecho, pie plantado en el asiento. La otra pierna muy separada cuelga, pie hacia el suelo. Un brazo se alza: el dorso de la mano o el antebrazo descansa en la frente. La otra mano cubre su puvis. Torso de frente o en leve tres cuartos. Mirada a cámara.\n\nÁNGULO DE CÁMARA\n\n* Posición: delante del sujeto, un poco hacia el lado de la pierna que cuelga.\n\n* Altura del lente: a la cara / pecho alto. Eje casi horizontal.\n\n* Lo más cerca: rodilla alzada y muslo que cuelga.\n\n* Lo más lejos: hombro contra el muro y pie del asiento.\n\n* Cuadro de muslo a cabeza o cuerpo casi entero.\n\n* No picado fuerte. No contrapicado. No perfil.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSentado en un taburete. Una rodilla sube al pecho, pie plantado en el asiento. La otra pierna muy separada cuelga, pie hacia el suelo. Un brazo se alza: el dorso de la mano o el antebrazo descansa en la frente. La otra mano cubre su puvis. Torso de frente o en leve tres cuartos. Mirada a cámara.\n\nÁNGULO DE CÁMARA\n\n* Posición: delante del sujeto, un poco hacia el lado de la pierna que cuelga.\n\n* Altura del lente: a la cara / pecho alto. Eje casi horizontal.\n\n* Lo más cerca: rodilla alzada y muslo que cuelga.\n\n* Lo más lejos: hombro contra el muro y pie del asiento.\n\n* Cuadro de muslo a cabeza o cuerpo casi entero.\n\n* No picado fuerte. No contrapicado. No perfil."
 }

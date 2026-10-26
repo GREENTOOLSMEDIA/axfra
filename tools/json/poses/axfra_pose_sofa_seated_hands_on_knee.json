@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado en un sofá, cuerpo en tres cuartos. Rodillas juntas, piernas cruzadas a la altura de los tobillos o muy próximas. Ambos brazos bajan: las manos se apilan sobre la rodilla más cercana a cámara. Torso un poco girado hacia el lente. Cabeza en la misma dirección, mirada a cámara. Glúteos apoyados, no al borde extremo.",
+  "pose_description": "POSE\n\nSujeto sentado en un sofá, cuerpo en tres cuartos. Rodillas juntas, piernas cruzadas a la altura de los tobillos o muy próximas. Ambos brazos bajan: las manos se apilan sobre la rodilla más cercana a cámara. Torso un poco girado hacia el lente. Cabeza en la misma dirección, mirada a cámara. Glúteos apoyados, no al borde extremo.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Cuerpo entero o tres cuartos largo (pies visibles). Cámara a altura de pecho. Distancia media. Deben verse las manos sobre la rodilla y ambos pies.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado en un sofá, cuerpo en tres cuartos. Rodillas juntas, piernas cruzadas a la altura de los tobillos o muy próximas. Ambos brazos bajan: las manos se apilan sobre la rodilla más cercana a cámara. Torso un poco girado hacia el lente. Cabeza en la misma dirección, mirada a cámara. Glúteos apoyados, no al borde extremo.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Cuerpo entero o tres cuartos largo (pies visibles). Cámara a altura de pecho. Distancia media. Deben verse las manos sobre la rodilla y ambos pies."
 }

@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Cuerpo de espaldas en tres cuartos. Una rodilla se flexiona y queda alta; la otra pierna se alarga atrás o abajo. Un brazo se dispara arriba, puño o mano abierta. El otro brazo se dobla a media altura. Torso en torsión. Cabeza rotada hacia atrás y arriba, buscando el lente por encima del hombro.",
+  "pose_description": "POSE\n\nCuerpo de espaldas en tres cuartos. Una rodilla se flexiona y queda alta; la otra pierna se alarga atrás o abajo. Un brazo se dispara arriba, puño o mano abierta. El otro brazo se dobla a media altura. Torso en torsión. Cabeza rotada hacia atrás y arriba, buscando el lente por encima del hombro.\n\nÁNGULO DE CÁMARA\n\n* Posición: detrás del sujeto, un poco a un costado, bajo la cadera.\n\n* Altura del lente: por debajo de los glúteos, casi a la altura del muslo de atrás.\n\n* El lente apunta hacia arriba (\\~30–50°).\n\n* Lo más cerca: parte de atrás del muslo cercano y el glúteo.\n\n* Lo más lejos: cabeza y la mano alta.\n\n* En el cuadro la cabeza queda arriba; la pierna de apoyo, abajo.\n\n* No frontal. No picado. No cámara a la cara.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nCuerpo de espaldas en tres cuartos. Una rodilla se flexiona y queda alta; la otra pierna se alarga atrás o abajo. Un brazo se dispara arriba, puño o mano abierta. El otro brazo se dobla a media altura. Torso en torsión. Cabeza rotada hacia atrás y arriba, buscando el lente por encima del hombro.\n\nÁNGULO DE CÁMARA\n\n* Posición: detrás del sujeto, un poco a un costado, bajo la cadera.\n\n* Altura del lente: por debajo de los glúteos, casi a la altura del muslo de atrás.\n\n* El lente apunta hacia arriba (\\~30–50°).\n\n* Lo más cerca: parte de atrás del muslo cercano y el glúteo.\n\n* Lo más lejos: cabeza y la mano alta.\n\n* En el cuadro la cabeza queda arriba; la pierna de apoyo, abajo.\n\n* No frontal. No picado. No cámara a la cara."
 }

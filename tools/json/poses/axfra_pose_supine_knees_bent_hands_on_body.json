@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto boca arriba. Una rodilla alzada y abierta hacia cámara; la otra también flexionada. Una mano sobre el pecho; la otra sobre el pubis. Cabeza girada un poco a un lado, mirada a cámara.",
+  "pose_description": "POSE\n\nSujeto boca arriba. Una rodilla alzada y abierta hacia cámara; la otra también flexionada. Una mano sobre el pecho; la otra sobre el pubis. Cabeza girada un poco a un lado, mirada a cámara. \n\nÁNGULO DE CÁMARA\n\nDesde los pies hacia la cabeza, picado suave. Plano de cuerpo casi entero. Cámara por encima. El rostro queda al fondo; las rodillas, más cerca.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto boca arriba. Una rodilla alzada y abierta hacia cámara; la otra también flexionada. Una mano sobre el pecho; la otra sobre el pubis. Cabeza girada un poco a un lado, mirada a cámara. \n\nÁNGULO DE CÁMARA\n\nDesde los pies hacia la cabeza, picado suave. Plano de cuerpo casi entero. Cámara por encima. El rostro queda al fondo; las rodillas, más cerca."
 }

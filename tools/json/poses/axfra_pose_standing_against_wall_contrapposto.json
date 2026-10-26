@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "* Está de pie apoyada contra la pared, con el cuerpo ligeramente girado y la cadera bien marcada (contrapposto).\n\n* La pierna de apoyo está recta y la otra flexionada, con la rodilla adelantada, lo que acentúa las curvas.\n\n* Una mano (la izquierda) subida tocándose el pelo/sombrero de forma juguetona.\n\n* El otro brazo cae relajado a lo largo del cuerpo.\n\n* Cabeza ligeramente inclinada,",
+  "pose_description": "* Está de pie apoyada contra la pared, con el cuerpo ligeramente girado y la cadera bien marcada (contrapposto).\n\n* La pierna de apoyo está recta y la otra flexionada, con la rodilla adelantada, lo que acentúa las curvas.\n\n* Una mano (la izquierda) subida tocándose el pelo/sombrero de forma juguetona.\n\n* El otro brazo cae relajado a lo largo del cuerpo.\n\n* Cabeza ligeramente inclinada, mirada directa a cámara y sonrisa coqueta/provocativa.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": [
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "* Está de pie apoyada contra la pared, con el cuerpo ligeramente girado y la cadera bien marcada (contrapposto).\n\n* La pierna de apoyo está recta y la otra flexionada, con la rodilla adelantada, lo que acentúa las curvas.\n\n* Una mano (la izquierda) subida tocándose el pelo/sombrero de forma juguetona.\n\n* El otro brazo cae relajado a lo largo del cuerpo.\n\n* Cabeza ligeramente inclinada, mirada directa a cámara y sonrisa coqueta/provocativa."
 }

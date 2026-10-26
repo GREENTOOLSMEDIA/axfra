@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "3/4 left view. Está en una cuclilla baja y dinámica\n\n* Pierna izquierda flexionada con la rodilla alta y el pie plantado.\n\n* Pierna derecha más baja y también flexionada, casi a la altura del suelo.\n\n* Torso ligeramente girado e inclinado hacia adelante.\n\n* Brazo derecho levantado, mano detrás de la cabeza (tocando o sosteniendo el pelo).\n\n* Brazo izquierdo caído, apoyado sobre el muslo/rodilla izquierda.\n\n* Cabeza un poco inclinada, mirada directa y confiada hacia la cámara.\n\n* El cuerpo forma una línea diagonal que da sensación de movimiento y sensualidad.",
+  "pose_description": "3/4 left view. Está en una cuclilla baja y dinámica\n\n* Pierna izquierda flexionada con la rodilla alta y el pie plantado.\n\n* Pierna derecha más baja y también flexionada, casi a la altura del suelo.\n\n* Torso ligeramente girado e inclinado hacia adelante.\n\n* Brazo derecho levantado, mano detrás de la cabeza (tocando o sosteniendo el pelo).\n\n* Brazo izquierdo caído, apoyado sobre el muslo/rodilla izquierda.\n\n* Cabeza un poco inclinada, mirada directa y confiada hacia la cámara.\n\n* El cuerpo forma una línea diagonal que da sensación de movimiento y sensualidad.\n\nÁngulo de cámara\n\n* Plano entero (full body), se ve todo el cuerpo agachado.\n\n* Ángulo ligeramente picado (cámara un poco por encima de ella) para que se lea bien la cuclilla y las piernas.\n\n* Composición frontal-tres cuartos: el cuerpo no está de perfil ni de frente puro, está girado hacia la cámara.\n\n* extreme low angle",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "3/4 left view. Está en una cuclilla baja y dinámica\n\n* Pierna izquierda flexionada con la rodilla alta y el pie plantado.\n\n* Pierna derecha más baja y también flexionada, casi a la altura del suelo.\n\n* Torso ligeramente girado e inclinado hacia adelante.\n\n* Brazo derecho levantado, mano detrás de la cabeza (tocando o sosteniendo el pelo).\n\n* Brazo izquierdo caído, apoyado sobre el muslo/rodilla izquierda.\n\n* Cabeza un poco inclinada, mirada directa y confiada hacia la cámara.\n\n* El cuerpo forma una línea diagonal que da sensación de movimiento y sensualidad.\n\nÁngulo de cámara\n\n* Plano entero (full body), se ve todo el cuerpo agachado.\n\n* Ángulo ligeramente picado (cámara un poco por encima de ella) para que se lea bien la cuclilla y las piernas.\n\n* Composición frontal-tres cuartos: el cuerpo no está de perfil ni de frente puro, está girado hacia la cámara.\n\n* extreme low angle"
 }

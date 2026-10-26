@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "both arms extended, one knee tucked, body slightly twisted, hair floating, confident gaze, f/2.8, motion freeze, dramatic lighting, ultra detailed, Vogue editorial style",
+  "pose_description": "mid-air leaping pose toward the camera, both arms extended, one knee tucked, body slightly twisted, hair floating, confident gaze, cinematic 85mm lens, f/2.8, motion freeze, dramatic lighting, ultra detailed, Vogue editorial style",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -29,7 +29,9 @@
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
-      "Secuencia/movimiento: requiere pose clave antes de representación 3D exacta."
+      "Secuencia/movimiento: requiere pose clave antes de representación 3D exacta.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "mid-air leaping pose toward the camera, both arms extended, one knee tucked, body slightly twisted, hair floating, confident gaze, cinematic 85mm lens, f/2.8, motion freeze, dramatic lighting, ultra detailed, Vogue editorial style"
 }
