@@ -1,0 +1,43 @@
+{
+  "id": "AXFRA_wardrobe_look_black_lace_bustier_laceup_jeans",
+  "name": "Black Lace Bustier and Lace-Up Jeans",
+  "name_es": "Bustier de encaje negro y jeans con cordones",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "full_look",
+  "piece_family": "edgy",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "top": {
+    "type": "bustier corto tipo corset",
+    "construction": "copas estructuradas de encaje negro, paneles de mesh transparente bajo las copas, borde inferior con encaje bordado y tirantes finos tipo spaghetti",
+    "hem": "termina bajo las costillas, dejando el abdomen completamente descubierto",
+    "material": "encaje bordado y mesh",
+    "grosor": "delgada",
+    "transparencia": "paneles de mesh transparentes",
+    "color": "negro"
+  },
+  "bottom": {
+    "type": "jeans largos de corte bootcut con bajo acampanado",
+    "construction": "ajustados en caderas y muslos, ensanchados desde las rodillas hasta el bajo",
+    "waist": "tiro medio-bajo",
+    "lacing": "abertura longitudinal en el lateral exterior de cada pierna, desde la cadera hasta el bajo, recorrida por cordones negros entrecruzados a través de ojales metálicos dorados envejecidos; la piel queda visible entre los cruces",
+    "material": "denim",
+    "grosor": "normal",
+    "transparencia": "no",
+    "color": "negro con lavado grisáceo oscuro"
+  },
+  "belt": {
+    "type": "cinturón de cuero negro",
+    "buckle": "hebilla grande plateada de diseño barroco, con una letra A central integrada en una filigrana elaborada"
+  },
+  "style": "sexy-edgy, contraste entre la delicadeza del encaje y el mesh del bustier y la estructura del denim con cordones y herrajes metálicos"
+}
