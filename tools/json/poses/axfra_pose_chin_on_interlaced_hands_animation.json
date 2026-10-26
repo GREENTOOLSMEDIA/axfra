@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_chin_on_interlaced_hands_animation",
+  "name": "Chin On Interlaced Hands Animation",
+  "name_es": "Chin On Interlaced Hands Animation",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Ella está apoyando su barbilla suavemente en sus manos entrelazadas con los dedos elegantemente colocados, suaves inclinaciones de la cabeza y microexpresiones, ligero balanceo del cabello, movimientos expresivos de la boca como si hablara o cantara suavemente, sonrisa cálida que se forma naturalmente hacia el final, ojos brillantes con emoción y mantener el contacto visual.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": [
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+    ]
+  }
+}

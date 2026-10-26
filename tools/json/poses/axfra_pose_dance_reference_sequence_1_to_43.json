@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_pose_dance_reference_sequence_1_to_43",
+  "name": "Dance Reference Sequence 1 To 43",
+  "name_es": "Dance Reference Sequence 1 To 43",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "iamgens de referencia de esto: 1-2: (Entrada + Pose inicial)\n\n3-5 (Body Roll + Hip Sway + Hair Flip)\n\n6-8 (Media vuelta + Shoulder Rolls + Paso cruzado)\n\n9-11 (Deslizamiento + Sentadilla + Figure Eight)\n\n12-14 (Brazo envolvente + Giro completo + Caminata lateral)\n\n15-18 (Chest Isolation + Paso atrás + Hip Circle + Diagonal)\n\n19-22 (Knee Dip + Arm Wave + Paso cruzado atrás + Torso Twist)\n\n23-26 (Slide + Pause + Double Hip Sway + Media vuelta invertida + Elevación de brazos)\n\n27-30 (Caminata final + Figure Eight combinado + Preparación + Pose)\n\n31-37 (Secuencia de manos y gestos finales)\n\n38 Sube las manos a la cabeza.\n\n39 Extiende los brazos.\n\n40 Mantiene las manos arriba y luego las baja controladamente.\n\n41  Micro-movimientos de hombros y manos.\n\n42 Forma el corazón con las manos.\n\n43 Eleva ambos brazos completamente y se estabiliza en la pose final de brazos arriba.",
+  "normalization": {
+    "stage": "body_text_separated",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": []
+  }
+}

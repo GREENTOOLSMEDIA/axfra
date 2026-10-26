@@ -1,0 +1,33 @@
+{
+  "id": "AXFRA_pose_all_fours_rear_three_quarter",
+  "name": "All Fours Rear Three Quarter",
+  "name_es": "All Fours Rear Three Quarter",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Sujeto a cuatro apoyos. Ambas manos plantadas en el suelo, brazos extendidos. Una rodilla en el piso; la otra pierna estirada atrás, pie apoyado. Cadera alta. Torso paralelo al suelo o un poco abierto. Cabeza rotada por el hombro, mirada a cámara.",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": "review",
+    "notes": [
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+    ]
+  }
+}

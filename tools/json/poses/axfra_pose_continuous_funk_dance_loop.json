@@ -1,0 +1,34 @@
+{
+  "id": "AXFRA_pose_continuous_funk_dance_loop",
+  "name": "Continuous Funk Dance Loop",
+  "name_es": "Continuous Funk Dance Loop",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "category": "pose",
+  "slot": "pose",
+  "coordinate_system": {
+    "front": "+Z",
+    "up": "+Y",
+    "subject_yaw_deg": 0,
+    "subject_pitch_deg": 0,
+    "subject_roll_deg": 0,
+    "camera": "independent_in_editor"
+  },
+  "pose_description": "Dance (continuous loop, genki / cute / playful, never speaking):\n\nGroovy, funky, Michael Jackson energy. Feet always sliding and gliding. Melbourne shuffle + hip-hop footwork, prancing, cutting shapes. Hip isolations, bodyrolls, shimmies, popping and locking. Complex quick hand gestures traveling up and down the body. Arms point up / down / left / right. Voguing arms, tutting, dabbing, pointing. Hits cool poses. Mix of K-pop / J-pop, hip-hop, musical theatre, tap. Rhythmic, staccato, extreme depth, extreme vanishing point, ultra foreshortening, near misses. Dynamically rolls side to side, pushes in and out, orbiting,",
+  "normalization": {
+    "stage": "review_required",
+    "method": "non_destructive_text_normalization",
+    "geometry": "not_calibrated",
+    "camera_in_pose": false,
+    "notes": [
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Secuencia/movimiento: requiere pose clave antes de representación 3D exacta."
+    ]
+  }
+}
