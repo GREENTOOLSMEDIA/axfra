@@ -22,14 +22,139 @@
   },
   "pose_description": "dynamic action pose, right hand planted on the ground, left arm swept back, weight on the balls of her feet, intense focused expression, f/2.8, shallow depth of field, dramatic side lighting, ultra detailed skin and anatomy, high fashion editorial quality",
   "normalization": {
-    "stage": "review_required",
+    "stage": "geometry_draft_thumbnail_guided",
     "method": "non_destructive_text_normalization",
-    "geometry": "not_calibrated",
+    "geometry": "approximate_17_joint_3d",
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
-    ]
+    ],
+    "review_required": true
   },
-  "source_pose_description": "dynamic action pose, right hand planted on the ground, left arm swept back, weight on the balls of her feet, intense focused expression, cinematic 85mm lens, f/2.8, shallow depth of field, dramatic side lighting, ultra detailed skin and anatomy, high fashion editorial quality"
+  "source_pose_description": "dynamic action pose, right hand planted on the ground, left arm swept back, weight on the balls of her feet, intense focused expression, cinematic 85mm lens, f/2.8, shallow depth of field, dramatic side lighting, ultra detailed skin and anatomy, high fashion editorial quality",
+  "axfra_pose_editor": {
+    "version": "3.3-lab",
+    "space": "3d",
+    "joint_names": [
+      "pelvis",
+      "spine",
+      "neck",
+      "head",
+      "r_shoulder",
+      "r_elbow",
+      "r_wrist",
+      "l_shoulder",
+      "l_elbow",
+      "l_wrist",
+      "r_hip",
+      "r_knee",
+      "r_ankle",
+      "l_hip",
+      "l_knee",
+      "l_ankle",
+      "nose"
+    ],
+    "joints": [
+      [
+        0,
+        0.32,
+        0
+      ],
+      [
+        0,
+        0.5299999999999999,
+        0
+      ],
+      [
+        0,
+        0.85,
+        0
+      ],
+      [
+        0,
+        1.0099999999999998,
+        0
+      ],
+      [
+        -0.23,
+        0.7899999999999999,
+        0
+      ],
+      [
+        -0.32,
+        1.4,
+        0.18
+      ],
+      [
+        -0.025,
+        1.42,
+        0.35
+      ],
+      [
+        0.23,
+        0.7899999999999999,
+        0
+      ],
+      [
+        0.32,
+        1.4,
+        0.18
+      ],
+      [
+        0.025,
+        1.42,
+        0.35
+      ],
+      [
+        -0.23,
+        0.32,
+        0
+      ],
+      [
+        -0.42,
+        0.24,
+        0.45
+      ],
+      [
+        -0.45,
+        0.04,
+        0.24
+      ],
+      [
+        0.23,
+        0.32,
+        0
+      ],
+      [
+        0.42,
+        0.24,
+        0.45
+      ],
+      [
+        0.45,
+        0.04,
+        0.24
+      ],
+      [
+        0,
+        1.0099999999999998,
+        0.13
+      ]
+    ],
+    "view": {
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "azimuth": 0,
+      "elevation": 8,
+      "distance": 4.5,
+      "fov": 40,
+      "targetY": 0.9
+    },
+    "calibration": "thumbnail_guided_approximation",
+    "camera_independent": true,
+    "keyframe": "single_static_pose",
+    "geometry_source": "thumbnail_guided_manual_approximation"
+  }
 }
