@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 455,
+  "total_json": 456,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 32,
-    "wardrobe": 193
+    "wardrobe": 194
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 193,
+      "count": 194,
       "children": [
         {
           "id": "tops",
@@ -5308,6 +5308,17 @@
       "thumb": "https://axfra.com/library/thumbs/axfra_viktoria_dots_dummy_version.jpg",
       "group": "characters",
       "subgroup": "dummies"
+    },
+    {
+      "id": "AXFRA_wardrobe_armor_biomech_full",
+      "name": "Biomechanical Armor",
+      "name_es": "Armadura biomecánica",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_armor_biomech_full.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_armor_biomech_full.json",
+      "group": "wardrobe",
+      "subgroup": null,
+      "thumb": null
     },
     {
       "id": "AXFRA_wardrobe_biomechanical_full_suit",
