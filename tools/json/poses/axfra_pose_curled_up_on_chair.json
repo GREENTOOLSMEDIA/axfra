@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto sentado en una silla. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.",
+  "pose_description": "POSE\n\nSujeto sentado en una silla. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara.\n\nPOSE\n\nSujeto sentado en una silla vintage blanca. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto sentado en una silla. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara.\n\nPOSE\n\nSujeto sentado en una silla vintage blanca. Rodillas juntas y recogidas hacia el pecho; pies sobre el asiento o muy cerca. Un codo apoyado en la rodilla, esa mano sostiene la mejilla. El otro brazo rodea las espinillas. Torso un poco girado. Mirada a cámara. Espalda no pegada del todo al respaldo.\n\nÁNGULO DE CÁMARA\n\nFrontal con leve tres cuartos. Cuerpo entero, incluyendo pies y asiento. Cámara a altura de pecho. Distancia media. Deben verse las rodillas juntas y la mano en la cara."
 }

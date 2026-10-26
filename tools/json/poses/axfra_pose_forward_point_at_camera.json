@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Es una pose dinámica, de avance hacia la cámara.\n\n* Un brazo extendido hacia el espectador, con el dedo índice apuntando directo a la cámara (el brazo está muy foreshortened).\n\n* El otro brazo cuelga relajado al costado.\n\n* El cuerpo está ligeramente inclinado hacia adelante, como si estuviera caminando o dando un paso hacia nosotros.\n\n* Una pierna adelantada (la de apoyo más atrás), lo que genera sensación de movimiento.\n\n* La cabeza mira de frente al espectador.\n\nEs una pose de “te estoy señalando a ti”, con actitud directa y un poco confrontacional o llamativa.",
+  "pose_description": "Pose\n\nEs una pose dinámica, de avance hacia la cámara.\n\n* Un brazo extendido hacia el espectador, con el dedo índice apuntando directo a la cámara (el brazo está muy foreshortened).\n\n* El otro brazo cuelga relajado al costado.\n\n* El cuerpo está ligeramente inclinado hacia adelante, como si estuviera caminando o dando un paso hacia nosotros.\n\n* Una pierna adelantada (la de apoyo más atrás), lo que genera sensación de movimiento.\n\n* La cabeza mira de frente al espectador.\n\nEs una pose de “te estoy señalando a ti”, con actitud directa y un poco confrontacional o llamativa.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal, con fuerte perspectiva.\n\nLa cámara está relativamente cerca y a una altura media-baja (más o menos a la altura del pecho o un poco por debajo), lo que hace que el brazo que apunta se vea muy grande y cercano (foreshortening pronunciado). El resto del cuerpo se aleja en profundidad.\n\nEl plano es de cuerpo completo, pero el elemento dominante es la mano en primer plano.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Pose\n\nEs una pose dinámica, de avance hacia la cámara.\n\n* Un brazo extendido hacia el espectador, con el dedo índice apuntando directo a la cámara (el brazo está muy foreshortened).\n\n* El otro brazo cuelga relajado al costado.\n\n* El cuerpo está ligeramente inclinado hacia adelante, como si estuviera caminando o dando un paso hacia nosotros.\n\n* Una pierna adelantada (la de apoyo más atrás), lo que genera sensación de movimiento.\n\n* La cabeza mira de frente al espectador.\n\nEs una pose de “te estoy señalando a ti”, con actitud directa y un poco confrontacional o llamativa.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal, con fuerte perspectiva.\n\nLa cámara está relativamente cerca y a una altura media-baja (más o menos a la altura del pecho o un poco por debajo), lo que hace que el brazo que apunta se vea muy grande y cercano (foreshortening pronunciado). El resto del cuerpo se aleja en profundidad.\n\nEl plano es de cuerpo completo, pero el elemento dominante es la mano en primer plano."
 }

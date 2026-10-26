@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto de pie, de frente. Peso un poco más en una pierna; la otra suave, pie apenas abierto. Torso erguido. Ambos brazos flexionados: las manos se juntan a la altura del pecho (una sobre la otra o en pinza). Codos cerca del cuerpo. Cabeza al frente, alineada con los hombros.",
+  "pose_description": "POSE\n\nSujeto de pie, de frente. Peso un poco más en una pierna; la otra suave, pie apenas abierto. Torso erguido. Ambos brazos flexionados: las manos se juntan a la altura del pecho (una sobre la otra o en pinza). Codos cerca del cuerpo. Cabeza al frente, alineada con los hombros.\n\nÁNGULO DE CÁMARA\n\nFrontal. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse pies y el gesto de las dos manos juntas.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie, de frente. Peso un poco más en una pierna; la otra suave, pie apenas abierto. Torso erguido. Ambos brazos flexionados: las manos se juntan a la altura del pecho (una sobre la otra o en pinza). Codos cerca del cuerpo. Cabeza al frente, alineada con los hombros.\n\nÁNGULO DE CÁMARA\n\nFrontal. Cuerpo entero. Cámara a altura de pecho. Distancia media. Deben verse pies y el gesto de las dos manos juntas."
 }

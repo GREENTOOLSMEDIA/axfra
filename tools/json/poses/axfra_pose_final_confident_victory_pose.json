@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "mirada intensa + sonrisa lenta y triunfal\n\n→ Freeze fuerte hasta que corte el video",
+  "pose_description": "Termina en pose final ultra-confiada: • Piernas un poco más abiertas que el ancho de hombros • Mano derecha en la nuca / pelo • Mano izquierda señala directo a cámara con dedo índice o forma de pistola • Mentón ligeramente levantado, mirada intensa + sonrisa lenta y triunfal\n\n→ Freeze fuerte hasta que corte el video",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": [
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Termina en pose final ultra-confiada: • Piernas un poco más abiertas que el ancho de hombros • Mano derecha en la nuca / pelo • Mano izquierda señala directo a cámara con dedo índice o forma de pistola • Mentón ligeramente levantado, mirada intensa + sonrisa lenta y triunfal\n\n→ Freeze fuerte hasta que corte el video"
 }

@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto de pie, de frente. Pies separados al ancho de los hombros, peso repartido. Brazos caen a los lados, manos en puño suave. Torso erguido, pecho abierto. Hombros anchos. Cabeza un poco alzada, mirada hacia adelante y arriba. Capa o prenda larga cae por detrás, no tapa el torso.",
+  "pose_description": "POSE\n\nSujeto de pie, de frente. Pies separados al ancho de los hombros, peso repartido. Brazos caen a los lados, manos en puño suave. Torso erguido, pecho abierto. Hombros anchos. Cabeza un poco alzada, mirada hacia adelante y arriba. Capa o prenda larga cae por detrás, no tapa el torso.\nÁNGULO DE CÁMARA\n* Posición: justo delante del sujeto, en el eje del cuerpo.\n* Altura del lente: por debajo de las rodillas, casi a ras de suelo.\n* El lente apunta hacia arriba (~40–60°).\n* Lo más cerca: botas y parte baja de las piernas.\n* Lo más lejos: cabeza y hombros, que quedan pequeños en el tercio superior.\n* El edificio o el fondo se lee por encima de la cabeza.\n* No a la altura de la cara. No picado. No perfil.",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "POSE\n\nSujeto de pie, de frente. Pies separados al ancho de los hombros, peso repartido. Brazos caen a los lados, manos en puño suave. Torso erguido, pecho abierto. Hombros anchos. Cabeza un poco alzada, mirada hacia adelante y arriba. Capa o prenda larga cae por detrás, no tapa el torso.\nÁNGULO DE CÁMARA\n* Posición: justo delante del sujeto, en el eje del cuerpo.\n* Altura del lente: por debajo de las rodillas, casi a ras de suelo.\n* El lente apunta hacia arriba (~40–60°).\n* Lo más cerca: botas y parte baja de las piernas.\n* Lo más lejos: cabeza y hombros, que quedan pequeños en el tercio superior.\n* El edificio o el fondo se lee por encima de la cabeza.\n* No a la altura de la cara. No picado. No perfil."
 }

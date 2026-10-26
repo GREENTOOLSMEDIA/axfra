@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Ella está apoyando su barbilla suavemente en sus manos entrelazadas con los dedos elegantemente colocados, suaves inclinaciones de la cabeza y microexpresiones, ligero balanceo del cabello, movimientos expresivos de la boca como si hablara o cantara suavemente, sonrisa cálida que se forma naturalmente hacia el final, ojos brillantes con emoción y mantener el contacto visual.",
+  "pose_description": "Ella está apoyando su barbilla suavemente en sus manos entrelazadas con los dedos elegantemente colocados, mirando directamente a la cámara con una expresión suave y cariñosa. Movimientos naturales sutiles: parpadeos lentos, suaves inclinaciones de la cabeza y microexpresiones, ligero balanceo del cabello, movimientos expresivos de la boca como si hablara o cantara suavemente, sonrisa cálida que se forma naturalmente hacia el final, ojos brillantes con emoción y mantener el contacto visual.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": [
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Ella está apoyando su barbilla suavemente en sus manos entrelazadas con los dedos elegantemente colocados, mirando directamente a la cámara con una expresión suave y cariñosa. Movimientos naturales sutiles: parpadeos lentos, suaves inclinaciones de la cabeza y microexpresiones, ligero balanceo del cabello, movimientos expresivos de la boca como si hablara o cantara suavemente, sonrisa cálida que se forma naturalmente hacia el final, ojos brillantes con emoción y mantener el contacto visual."
 }

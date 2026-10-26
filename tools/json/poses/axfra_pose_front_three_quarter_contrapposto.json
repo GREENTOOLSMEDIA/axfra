@@ -20,12 +20,15 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Es una pose de pie con contrapposto (peso desplazado hacia una pierna, cadera inclinada).\n\n* Una mano apoyada en la cadera con el codo hacia afuera (actitud segura / “sassy”).\n\n* El otro brazo cruzado por delante del torso, con la mano cerca de la cintura del lado opuesto.\n\n* El torso tiene un ligero giro.\n\n* Una pierna más de apoyo y la otra con la rodilla flexionada y el pie adelantado.\n\n* La cabeza está de frente al espectador, ligeramente inclinada.\n\nEs una pose típica de modelo / character design: segura, con actitud y un poco de contrapposto.",
+  "pose_description": "Pose\n\nEs una pose de pie con contrapposto (peso desplazado hacia una pierna, cadera inclinada).\n\n* Una mano apoyada en la cadera con el codo hacia afuera (actitud segura / “sassy”).\n\n* El otro brazo cruzado por delante del torso, con la mano cerca de la cintura del lado opuesto.\n\n* El torso tiene un ligero giro.\n\n* Una pierna más de apoyo y la otra con la rodilla flexionada y el pie adelantado.\n\n* La cabeza está de frente al espectador, ligeramente inclinada.\n\nEs una pose típica de modelo / character design: segura, con actitud y un poco de contrapposto.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal (el cuerpo no está de frente puro ni de perfil).\n\nEl encuadre es ligeramente picado (high angle): la cámara está un poco por encima del nivel de los ojos, mirando hacia abajo. Por eso se ve la parte superior de la cabeza y hay una perspectiva suave que recorre el cuerpo de arriba hacia abajo.\n\nEl plano es de cuerpo completo (full body).",
   "normalization": {
-    "stage": "body_text_separated",
+    "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": false,
-    "notes": []
-  }
+    "notes": [
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
+    ]
+  },
+  "source_pose_description": "Pose\n\nEs una pose de pie con contrapposto (peso desplazado hacia una pierna, cadera inclinada).\n\n* Una mano apoyada en la cadera con el codo hacia afuera (actitud segura / “sassy”).\n\n* El otro brazo cruzado por delante del torso, con la mano cerca de la cintura del lado opuesto.\n\n* El torso tiene un ligero giro.\n\n* Una pierna más de apoyo y la otra con la rodilla flexionada y el pie adelantado.\n\n* La cabeza está de frente al espectador, ligeramente inclinada.\n\nEs una pose típica de modelo / character design: segura, con actitud y un poco de contrapposto.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal (el cuerpo no está de frente puro ni de perfil).\n\nEl encuadre es ligeramente picado (high angle): la cámara está un poco por encima del nivel de los ojos, mirando hacia abajo. Por eso se ve la parte superior de la cabeza y hay una perspectiva suave que recorre el cuerpo de arriba hacia abajo.\n\nEl plano es de cuerpo completo (full body)."
 }

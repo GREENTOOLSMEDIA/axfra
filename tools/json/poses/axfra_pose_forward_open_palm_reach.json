@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Es una pose de alcance hacia la cámara, con el cuerpo inclinado hacia adelante.\n\n* Un brazo está extendido hacia el espectador con la palma abierta y los dedos separados (gesto de “espera”, “alto”, “ven” o simplemente alcanzando).\n\n* El otro brazo cuelga relajado al costado.\n\n* El torso se inclina hacia adelante.\n\n* Una rodilla está flexionada y más cerca (parece estar arrodillada o en una posición de avance/lunge), mientras la otra pierna se extiende hacia atrás.\n\nEs una pose dinámica y expresiva, como si estuviera tendiendo la mano hacia el espectador o deteniéndolo.",
+  "pose_description": "Pose\n\nEs una pose de alcance hacia la cámara, con el cuerpo inclinado hacia adelante.\n\n* Un brazo está extendido hacia el espectador con la palma abierta y los dedos separados (gesto de “espera”, “alto”, “ven” o simplemente alcanzando).\n\n* El otro brazo cuelga relajado al costado.\n\n* El torso se inclina hacia adelante.\n\n* Una rodilla está flexionada y más cerca (parece estar arrodillada o en una posición de avance/lunge), mientras la otra pierna se extiende hacia atrás.\n\nEs una pose dinámica y expresiva, como si estuviera tendiendo la mano hacia el espectador o deteniéndolo.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal con fuerte foreshortening.\n\nLa cámara está relativamente cerca y un poco elevada (ángulo ligeramente picado), lo que hace que la mano abierta se vea muy grande y dominante en primer plano. El resto del cuerpo se aleja en profundidad hacia abajo.\n\nEl plano es de cuerpo completo, pero el elemento principal es la mano extendida hacia el lente.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Orientación relativa a cámara: convertir a orientación local al revisar."
+      "Orientación relativa a cámara: convertir a orientación local al revisar.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Pose\n\nEs una pose de alcance hacia la cámara, con el cuerpo inclinado hacia adelante.\n\n* Un brazo está extendido hacia el espectador con la palma abierta y los dedos separados (gesto de “espera”, “alto”, “ven” o simplemente alcanzando).\n\n* El otro brazo cuelga relajado al costado.\n\n* El torso se inclina hacia adelante.\n\n* Una rodilla está flexionada y más cerca (parece estar arrodillada o en una posición de avance/lunge), mientras la otra pierna se extiende hacia atrás.\n\nEs una pose dinámica y expresiva, como si estuviera tendiendo la mano hacia el espectador o deteniéndolo.\n\nÁngulo de cámara\n\nVista de tres cuartos frontal con fuerte foreshortening.\n\nLa cámara está relativamente cerca y un poco elevada (ángulo ligeramente picado), lo que hace que la mano abierta se vea muy grande y dominante en primer plano. El resto del cuerpo se aleja en profundidad hacia abajo.\n\nEl plano es de cuerpo completo, pero el elemento principal es la mano extendida hacia el lente."
 }

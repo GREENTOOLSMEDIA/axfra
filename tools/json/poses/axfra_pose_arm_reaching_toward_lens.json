@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "interactive gesture.",
+  "pose_description": "Standing upright, extending the right arm forward along the subject-local +Z axis, with a natural elegant reaching gesture. The left arm stays relaxed beside the torso.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,39 @@
     "camera_in_pose": false,
     "notes": [
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
-      "Descripción corporal muy breve; geometría insuficiente."
+      "Descripción corporal muy breve; geometría insuficiente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas.",
+      "Brazo derecho elegido como convención editable: el original no especifica el lado. Pose orientada +Z, sin cámara fija."
     ]
+  },
+  "source_pose_description": "Standing while extending one arm toward the camera in an elegant, interactive gesture.",
+  "pose_type": "standing",
+  "torso": {
+    "orientation": "upright",
+    "lean": "none",
+    "twist": "none"
+  },
+  "arms": {
+    "right": {
+      "elbow_bend": "almost_straight",
+      "hand_height": "chest",
+      "hand_depth": "in_front"
+    },
+    "left": {
+      "elbow_bend": "slightly_bent",
+      "hand_height": "hip",
+      "hand_depth": "beside_body"
+    }
+  },
+  "legs": {
+    "right": {
+      "knee_bend": "almost_straight",
+      "foot_position": "under_hip"
+    },
+    "left": {
+      "knee_bend": "almost_straight",
+      "foot_position": "under_hip"
+    },
+    "knee_separation": "slight"
   }
 }

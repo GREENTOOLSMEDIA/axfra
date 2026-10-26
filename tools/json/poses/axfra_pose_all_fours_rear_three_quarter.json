@@ -20,14 +20,16 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Sujeto a cuatro apoyos. Ambas manos plantadas en el suelo, brazos extendidos. Una rodilla en el piso; la otra pierna estirada atrás, pie apoyado. Cadera alta. Torso paralelo al suelo o un poco abierto. Cabeza rotada por el hombro, mirada a cámara.",
+  "pose_description": "POSE\n\nSujeto a cuatro apoyos. Ambas manos plantadas en el suelo, brazos extendidos. Una rodilla en el piso; la otra pierna estirada atrás, pie apoyado. Cadera alta. Torso paralelo al suelo o un poco abierto. Cabeza rotada por el hombro, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás y de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja. Distancia media. Deben verse las dos manos, la rodilla de apoyo y el pie de atrás.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
     "geometry": "not_calibrated",
     "camera_in_pose": "review",
     "notes": [
-      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente."
+      "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "POSE\n\nSujeto a cuatro apoyos. Ambas manos plantadas en el suelo, brazos extendidos. Una rodilla en el piso; la otra pierna estirada atrás, pie apoyado. Cadera alta. Torso paralelo al suelo o un poco abierto. Cabeza rotada por el hombro, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos desde atrás y de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja. Distancia media. Deben verse las dos manos, la rodilla de apoyo y el pie de atrás."
 }

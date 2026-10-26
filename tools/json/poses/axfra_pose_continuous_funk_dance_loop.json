@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Dance (continuous loop, genki / cute / playful, never speaking):\n\nGroovy, funky, Michael Jackson energy. Feet always sliding and gliding. Melbourne shuffle + hip-hop footwork, prancing, cutting shapes. Hip isolations, bodyrolls, shimmies, popping and locking. Complex quick hand gestures traveling up and down the body. Arms point up / down / left / right. Voguing arms, tutting, dabbing, pointing. Hits cool poses. Mix of K-pop / J-pop, hip-hop, musical theatre, tap. Rhythmic, staccato, extreme depth, extreme vanishing point, ultra foreshortening, near misses. Dynamically rolls side to side, pushes in and out, orbiting,",
+  "pose_description": "Dance (continuous loop, genki / cute / playful, never speaking):\n\nGroovy, funky, Michael Jackson energy. Feet always sliding and gliding. Melbourne shuffle + hip-hop footwork, prancing, cutting shapes. Hip isolations, bodyrolls, shimmies, popping and locking. Complex quick hand gestures traveling up and down the body. Arms point up / down / left / right. Voguing arms, tutting, dabbing, pointing. Hits cool poses. Mix of K-pop / J-pop, hip-hop, musical theatre, tap. Rhythmic, staccato, advanced steps. Direct playful glances and inviting motions to camera.\n\nCamera (one continuous shot, never cuts):\n\nStarts extreme low angle looking up. Stays low-framed the whole time. Ultra wide angle, extreme depth, extreme vanishing point, ultra foreshortening, near misses. Dynamically rolls side to side, pushes in and out, moves all over to match the beat. Disorienting K-pop MV camera: rolling, orbiting, sudden push-ins. Extreme angles. Subject reads very long and tall because of the low wide lens.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": false,
     "notes": [
       "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
-      "Secuencia/movimiento: requiere pose clave antes de representación 3D exacta."
+      "Secuencia/movimiento: requiere pose clave antes de representación 3D exacta.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Dance (continuous loop, genki / cute / playful, never speaking):\n\nGroovy, funky, Michael Jackson energy. Feet always sliding and gliding. Melbourne shuffle + hip-hop footwork, prancing, cutting shapes. Hip isolations, bodyrolls, shimmies, popping and locking. Complex quick hand gestures traveling up and down the body. Arms point up / down / left / right. Voguing arms, tutting, dabbing, pointing. Hits cool poses. Mix of K-pop / J-pop, hip-hop, musical theatre, tap. Rhythmic, staccato, advanced steps. Direct playful glances and inviting motions to camera.\n\nCamera (one continuous shot, never cuts):\n\nStarts extreme low angle looking up. Stays low-framed the whole time. Ultra wide angle, extreme depth, extreme vanishing point, ultra foreshortening, near misses. Dynamically rolls side to side, pushes in and out, moves all over to match the beat. Disorienting K-pop MV camera: rolling, orbiting, sudden push-ins. Extreme angles. Subject reads very long and tall because of the low wide lens."
 }

@@ -27,5 +27,6 @@
     "geometry": "not_calibrated",
     "camera_in_pose": false,
     "notes": []
-  }
+  },
+  "source_pose_description": "• 1. Inclínate hacia atrás con el pecho abierto y las manos en las caderas."
 }

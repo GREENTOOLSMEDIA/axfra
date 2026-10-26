@@ -20,7 +20,7 @@
     "subject_roll_deg": 0,
     "camera": "independent_in_editor"
   },
-  "pose_description": "Mujer en una sentadilla baja precisa que combina con la postura de referencia: el peso cayó bajo, una rodilla levantada y doblada hacia adelante con el muslo inclinado hacia abajo, la otra rodilla doblada firmemente debajo del cuerpo cerca del suelo, s, las caderas desplazadas creando una caída clara en un lado y una curva en S a través del torso, ambas manos colocadas detrás de la cabeza con los codos acampanados hacia afuera, los hombros abiertos, 5 metros directamente frente a ella, altura a nivel de rodilla a cadera, ligeramente inclinada hacia arriba, enmarcando el torso y las manos detrás de la cabeza, f/2.8, profundidad de campo poco profunda, iluminación lateral cinematográfica con fuertes reflejos de forma y luz de borde, piel fotorrealista ultra detallada, anatomía y cuerpo libre de tela.",
+  "pose_description": "Mujer en una sentadilla baja precisa que combina con la postura de referencia: el peso cayó bajo, una rodilla levantada y doblada hacia adelante con el muslo inclinado hacia abajo, la otra rodilla doblada firmemente debajo del cuerpo cerca del suelo, s, las caderas desplazadas creando una caída clara en un lado y una curva en S a través del torso, ambas manos colocadas detrás de la cabeza con los codos acampanados hacia afuera, el pecho mirando hacia la cámara y ligeramente empujado hacia adelante, los hombros abiertos, la cabeza hacia adelante. Cámara de 2,5 metros directamente frente a ella, altura a nivel de rodilla a cadera, ligeramente inclinada hacia arriba, enmarcando el torso y las manos detrás de la cabeza, lente de 85 mm, f/2.8, profundidad de campo poco profunda, iluminación lateral cinematográfica con fuertes reflejos de forma y luz de borde, piel fotorrealista ultra detallada, anatomía y cuerpo libre de tela.",
   "normalization": {
     "stage": "review_required",
     "method": "non_destructive_text_normalization",
@@ -28,7 +28,9 @@
     "camera_in_pose": "review",
     "notes": [
       "Posibles referencias de cámara mezcladas en la descripción: revisar manualmente.",
-      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro."
+      "Cámara separada por cláusulas: comprobar que el texto corporal siga íntegro.",
+      "Texto original restaurado: el recorte automático podía eliminar instrucciones anatómicas."
     ]
-  }
+  },
+  "source_pose_description": "Mujer en una sentadilla baja precisa que combina con la postura de referencia: el peso cayó bajo, una rodilla levantada y doblada hacia adelante con el muslo inclinado hacia abajo, la otra rodilla doblada firmemente debajo del cuerpo cerca del suelo, s, las caderas desplazadas creando una caída clara en un lado y una curva en S a través del torso, ambas manos colocadas detrás de la cabeza con los codos acampanados hacia afuera, el pecho mirando hacia la cámara y ligeramente empujado hacia adelante, los hombros abiertos, la cabeza hacia adelante. Cámara de 2,5 metros directamente frente a ella, altura a nivel de rodilla a cadera, ligeramente inclinada hacia arriba, enmarcando el torso y las manos detrás de la cabeza, lente de 85 mm, f/2.8, profundidad de campo poco profunda, iluminación lateral cinematográfica con fuertes reflejos de forma y luz de borde, piel fotorrealista ultra detallada, anatomía y cuerpo libre de tela."
 }
