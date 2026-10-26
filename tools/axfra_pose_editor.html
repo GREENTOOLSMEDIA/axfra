@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>AXFRA Pose Editor · Alfa</title>
+<meta name="description" content="Editor 3D de poses AXFRA. Ajusta poses de la biblioteca y exporta JSON paramétrico limpio.">
+<link rel="canonical" href="https://axfra.com/pose-editor.html">
+<link href="shared-layout.css" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#000;--panel:#111519;--line:#303a3c;--text:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13px/1.5 system-ui,sans-serif}
+main.editor{display:grid;grid-template-columns:minmax(420px,1fr) 460px;min-height:calc(100vh - 120px)}
+.stage{padding:18px;min-width:0}
+canvas{display:block;background:#07090c;width:100%;height:min(62vh,640px);border:1px solid var(--line);border-radius:8px;touch-action:none}
+.row{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:9px 0}
+button,select,input,textarea{font:inherit;background:#191f25;color:var(--text);border:1px solid #35404a;border-radius:5px;padding:8px}
+button{cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);color:#062325;font-weight:650}
+aside{background:var(--panel);border-left:1px solid var(--line);padding:16px 18px;min-width:0;display:flex;flex-direction:column}
+h2{font-size:13px;margin:14px 0 8px;color:var(--accent)}
+h2:first-child{margin-top:0}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+label{display:block;color:var(--muted);font-size:12px}
+label input[type=range]{display:block;width:100%;padding:0;margin-top:6px}
+output{float:right;color:var(--text)}
+input[type=number]{width:78px}
+select,textarea{width:100%}
+textarea{flex:1;min-height:420px;resize:vertical;font:11.5px/1.5 ui-monospace,monospace;color:#c8e6d0;background:#0b1014;border:1px solid var(--line)}
+small,.hint{color:var(--muted);font-size:12px;line-height:1.55}
+#status{padding:8px 10px;background:#0b1014;border-left:2px solid var(--accent);line-height:1.5;white-space:pre-wrap;margin:8px 0;font-size:12px}
+#selected{color:var(--accent)}
+.joint{padding:8px;border:1px solid var(--line);border-radius:6px}
+a{color:var(--accent)}
+@media(max-width:980px){main.editor{grid-template-columns:1fr}aside{border-left:0;border-top:1px solid var(--line)}.controls{grid-template-columns:1fr 1fr}canvas{height:52vh}textarea{min-height:320px}}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent)}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+
+<main id="contenido" class="editor">
+<section class="stage">
+<canvas id="canvas" aria-label="Esqueleto 3D editable"></canvas>
+<div class="row">
+<button id="editMode" class="primary">Editar articulaciones</button>
+<button id="orbitMode">Orbitar cámara</button>
+<button id="resetView">Restaurar cámara</button>
+<button id="fit">Encuadrar pose</button>
+</div>
+<p class="hint">Arrastra una articulación (un dedo). Trackpad: dos dedos vertical = zoom · horizontal = órbita · Shift + vertical = altura de cámara. Rojo: derecho · azul: izquierdo. Frente = +Z.</p>
+<div class="row">
+<label>Plantilla <select id="preset"><option value="standing">De pie</option><option value="seated">Sentada</option><option value="kneeling">Arrodillada</option><option value="all_fours">Cuatro apoyos</option><option value="contrapposto">Contrapposto</option><option value="arms_up">Brazos arriba</option></select></label>
+<button id="usePreset">Aplicar plantilla</button>
+<button id="undo">Deshacer</button>
+</div>
+<div class="controls" id="controls"></div>
+<h2>Articulación: <span id="selected">—</span></h2>
+<div class="row joint">
+<label>X <input id="jointX" type="number" step="0.01" disabled></label>
+<label>Y <input id="jointY" type="number" step="0.01" disabled></label>
+<label>Z <input id="jointZ" type="number" step="0.01" disabled></label>
+</div>
+</section>
+
+<aside>
+<h2>Catálogo de poses AXFRA</h2>
+<input id="search" type="search" placeholder="Buscar por nombre o ID" aria-label="Buscar poses">
+<select id="catalog" aria-label="Catálogo de poses" size="8" style="height:auto;margin-bottom:10px"></select>
+<div id="status" role="status">Cargando catálogo…</div>
+
+<h2>Importar archivo JSON</h2>
+<input id="file" type="file" accept=".json,application/json" aria-label="Archivo JSON">
+
+<h2>JSON paramétrico</h2>
+<textarea id="json" spellcheck="false" aria-label="JSON paramétrico"></textarea>
+<div class="row" style="margin-top:10px">
+<button id="apply">Aplicar JSON</button>
+<button id="copy">Copiar</button>
+<button id="download" class="primary">Exportar paramétrico</button>
+<button id="saveProject">Guardar proyecto</button>
+</div>
+<p class="hint" style="margin-top:8px">El JSON se actualiza al editar. Exportar genera el bloque paramétrico limpio. Guardar proyecto conserva el esqueleto 3D exacto.</p>
+</aside>
+</main>
+
+<div id="globalFooter"></div>
+<script defer src="shared-layout.js"></script>
+
+<script>
+'use strict';
+const $=id=>document.getElementById(id), canvas=$('canvas'),ctx=canvas.getContext('2d');
+const names=['pelvis','spine','neck','head','r_shoulder','r_elbow','r_wrist','l_shoulder','l_elbow','l_wrist','r_hip','r_knee','r_ankle','l_hip','l_knee','l_ankle','nose'];
+const labels=['Pelvis','Torso','Cuello','Cabeza','Hombro derecho','Codo derecho','Muñeca derecha','Hombro izquierdo','Codo izquierdo','Muñeca izquierda','Cadera derecha','Rodilla derecha','Tobillo derecho','Cadera izquierda','Rodilla izquierda','Tobillo izquierdo','Nariz'];
+const edges=[[0,1],[1,2],[2,3],[3,16],[2,4],[4,5],[5,6],[2,7],[7,8],[8,9],[0,10],[10,11],[11,12],[0,13],[13,14],[14,15]];
+const defaults={yaw:0,pitch:0,roll:0,azimuth:0,elevation:8,distance:4.5,fov:40,targetY:.9};
+let pose=[],view={...defaults},selected=-1,mode='edit',doc=null,filename='axfra_pose.json',lastText='',history=[],files=[],filtered=[],drag=null,geometryActive=true,loading=false;
+const clone=x=>JSON.parse(JSON.stringify(x));const rad=x=>x*Math.PI/180;const add=(a,b)=>a.map((v,i)=>v+b[i]);const sub=(a,b)=>a.map((v,i)=>v-b[i]);const mul=(a,t)=>a.map(v=>v*t);const dot=(a,b)=>a.reduce((s,v,i)=>s+v*b[i],0);const norm=a=>mul(a,1/Math.hypot(...a));const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+function rot(p,inverse=false){let a=rad(view.pitch),b=rad(view.yaw),c=rad(view.roll);const rx=(p,t)=>[p[0],p[1]*Math.cos(t)-p[2]*Math.sin(t),p[1]*Math.sin(t)+p[2]*Math.cos(t)];const ry=(p,t)=>[p[0]*Math.cos(t)+p[2]*Math.sin(t),p[1],-p[0]*Math.sin(t)+p[2]*Math.cos(t)];const rz=(p,t)=>[p[0]*Math.cos(t)-p[1]*Math.sin(t),p[0]*Math.sin(t)+p[1]*Math.cos(t),p[2]];return inverse?rx(ry(rz(p,-c),-b),-a):rz(ry(rx(p,a),b),c);}
+function toWorld(p){return add(rot(sub(p,[0,.9,0])),[0,.9,0]);}function toLocal(p){return add(rot(sub(p,[0,.9,0]),true),[0,.9,0]);}
+function basis(){const a=rad(view.azimuth),e=rad(view.elevation),target=[0,view.targetY,0],eye=add(target,[view.distance*Math.sin(a)*Math.cos(e),view.distance*Math.sin(e),view.distance*Math.cos(a)*Math.cos(e)]),forward=norm(sub(target,eye)),right=norm(cross(forward,[0,1,0])),up=cross(right,forward);return {eye,forward,right,up};}
+function project(p){const b=basis(),d=sub(p,b.eye),z=dot(d,b.forward),f=canvas.height/(2*Math.tan(rad(view.fov)/2));return {x:canvas.width/2+dot(d,b.right)*f/z,y:canvas.height/2-dot(d,b.up)*f/z,z};}
+function colour(i){return names[i].startsWith('r_')?'#ff785e':names[i].startsWith('l_')?'#55b9ff':'#f4d276';}
+function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);ctx.fillStyle='#07090c';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.lineWidth=1;ctx.strokeStyle='#202a32';for(let i=-5;i<=5;i++){line(project([i*.4,0,-2]),project([i*.4,0,2]));line(project([-2,0,i*.4]),project([2,0,i*.4]));}const pp=pose.map(p=>project(toWorld(p)));const sorted=edges.map(([a,b])=>({a,b,z:(pp[a].z+pp[b].z)/2})).sort((a,b)=>b.z-a.z);for(const {a,b} of sorted){ctx.strokeStyle=colour(b);ctx.lineWidth=5;line(pp[a],pp[b]);}pp.map((p,i)=>({p,i})).sort((a,b)=>b.p.z-a.p.z).forEach(({p,i})=>{if(p.z<.05)return;ctx.beginPath();ctx.arc(p.x,p.y,i===selected?9:6,0,Math.PI*2);ctx.fillStyle=colour(i);ctx.fill();ctx.lineWidth=i===selected?3:1;ctx.strokeStyle=i===selected?'#fff':'#111';ctx.stroke();});ctx.fillStyle='#93a5b1';ctx.font='12px system-ui';ctx.fillText('Y ↑  ·  Frente +Z  ·  '+(mode==='edit'?'Editar':'Orbitar'),14,22);}
+function line(a,b){if(a.z<.05||b.z<.05)return;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+function resize(){const clean=$("json").value===lastText;const r=canvas.getBoundingClientRect();canvas.width=Math.max(300,Math.round(r.width));canvas.height=Math.max(250,Math.round(r.height));draw();if(doc&&geometryActive&&clean)serialize();}
+function template(type){let p=[[0,.93,0],[0,1.2,0],[0,1.52,0],[0,1.68,0],[-.23,1.46,0],[-.31,1.18,.02],[-.31,.92,.06],[.23,1.46,0],[.31,1.18,.02],[.31,.92,.06],[-.13,.9,0],[-.14,.48,.01],[-.14,.06,.04],[.13,.9,0],[.14,.48,.01],[.14,.06,.04],[0,1.68,.13]];
+if(type==='seated'){for(let i=0;i<10;i++)p[i][1]-=.35;p[16][1]-=.35;p[10]=[-.13,.55,0];p[13]=[.13,.55,0];p[11]=[-.16,.51,.43];p[14]=[.16,.51,.43];p[12]=[-.16,.06,.45];p[15]=[.16,.06,.45];}
+if(type==='kneeling'){for(let i=0;i<11;i++)p[i][1]-=.42;p[13][1]-=.42;p[16][1]-=.42;p[11]=[-.15,.06,.08];p[14]=[.15,.06,.08];p[12]=[-.15,.06,-.4];p[15]=[.15,.06,-.4];}
+if(type==='all_fours'){p=[[0,.65,-.3],[0,.67,0],[0,.68,.35],[0,.76,.5],[-.23,.65,.3],[-.23,.36,.34],[-.23,.04,.4],[.23,.65,.3],[.23,.36,.34],[.23,.04,.4],[-.13,.63,-.3],[-.16,.06,-.28],[-.16,.05,-.7],[.13,.63,-.3],[.16,.06,-.28],[.16,.05,-.7],[0,.76,.63]];}
+if(type==='contrapposto'){p[0][0]=.08;p[10][1]+=.05;p[13][1]-=.03;p[4][1]-=.04;p[7][1]+=.04;p[14]=[.24,.47,.08];p[15]=[.28,.06,.1];p[5]=[-.46,1.15,0];p[6]=[-.14,1,.05];}
+if(type==='arms_up'){p[5]=[-.36,1.7,0];p[6]=[-.29,1.98,0];p[8]=[.36,1.7,0];p[9]=[.29,1.98,0];}return p;}
+function status(s){$('status').textContent=s;}
+function ready(){if($('json').value!==lastText){status('Aplica primero los cambios del texto JSON.');sync();return false;}return true;}
+function checkpoint(){history.push({pose:clone(pose),view:{...view},doc:clone(doc),geometryActive});if(history.length>40)history.shift();}
+
+function parametricPose(){
+  const world = pose.map(toWorld);
+  const angle = (a,b,c)=>{const u=sub(pose[a],pose[b]),v=sub(pose[c],pose[b]),d=Math.hypot(...u)*Math.hypot(...v);return d>1e-8?Math.acos(Math.max(-1,Math.min(1,dot(u,v)/d)))*180/Math.PI:180;};
+  const bend = deg => deg>150?"almost_straight":deg>105?"slightly_bent":deg>60?"bent":"very_bent";
+  const handHeight = (y, refChest, refHip) => y>refChest+0.2?"above_head":y>refChest-0.05?"chest":y>refHip-0.1?"hip":"below_hip";
+  const handDepth = z => z>0.15?"in_front":z<-0.15?"behind":"beside_body";
+  const pelvisY = world[0][1], avgKneeY=(world[11][1]+world[14][1])/2, avgAnkleY=(world[12][1]+world[15][1])/2;
+  const handsLow = world[6][1]<pelvisY+0.3 && world[9][1]<pelvisY+0.3;
+  let pose_type = "standing";
+  if(avgAnkleY>0.3 && avgKneeY>pelvisY-0.1) pose_type="low_squat";
+  else if(avgKneeY>pelvisY-0.15) pose_type="seated_or_squat";
+  else if(handsLow && avgAnkleY>0.15) pose_type="all_fours";
+  else if(Math.min(world[11][1],world[14][1])<0.2) pose_type="kneeling";
+  const torsoVec = sub(world[2],world[0]);
+  const tilt = Math.atan2(Math.hypot(torsoVec[0],torsoVec[2]), Math.abs(torsoVec[1]))*180/Math.PI;
+  const torso = {orientation:tilt<25?"upright":tilt<75?"leaning":"horizontal", lean:torsoVec[2]>0.12?"forward":torsoVec[2]<-0.12?"backward":"none", twist:Math.abs(torsoVec[0])>0.12?"slight":"none"};
+  const arms = {right:{elbow_bend:bend(angle(4,5,6)), hand_height:handHeight(world[6][1],world[1][1],world[0][1]), hand_depth:handDepth(world[6][2])}, left:{elbow_bend:bend(angle(7,8,9)), hand_height:handHeight(world[9][1],world[1][1],world[0][1]), hand_depth:handDepth(world[9][2])}};
+  const legInfo = (h,k,a)=>({knee_bend:bend(angle(h,k,a)), foot_position:world[a][2]>world[h][2]+0.12?"forward":world[a][2]<world[h][2]-0.12?"backward":"under_hip"});
+  const gapK = Math.abs(pose[11][0]-pose[14][0]);
+  const legs = {right:legInfo(10,11,12), left:legInfo(13,14,15), knee_separation:gapK<0.18?"close":gapK>0.45?"wide":"slight"};
+  const relativeAz = ((view.azimuth - view.yaw + 540)%360)-180;
+  const relativeAzFixed = -relativeAz;
+  const azAbs = Math.abs(relativeAzFixed);
+  let viewCat = "front";
+  if(azAbs>=22 && azAbs<67) viewCat="three_quarter_front";
+  else if(azAbs>=67 && azAbs<112) viewCat="profile";
+  else if(azAbs>=112 && azAbs<157) viewCat="three_quarter_rear";
+  else if(azAbs>=157) viewCat="rear";
+  const elev = view.elevation;
+  const elevationCat = elev>18?"high":elev>6?"slightly_high":elev<-18?"low":elev<-6?"slightly_low":"level";
+  const camera = {view:viewCat, elevation:elevationCat, framing:"full_body", azimuth_deg:Math.round(view.azimuth), elevation_deg:Math.round(view.elevation), relative_azimuth_corrected:Math.round(relativeAzFixed)};
+  return {pose_type, torso, arms, legs, camera};
+}
+
+function serialize(){
+  if(geometryActive){
+    const meta = {...(doc?.meta||{}), developer:'ALARSI', developer_site:'https://alarsi.com', brand:'AXFRA', brand_site:'https://axfra.com', system:'AXFRA JSON prompt system'};
+    doc = {id:'AXFRA_pose_edited', name:'Edited Pose', name_es:'Pose editada', meta, ...parametricPose()};
+  }
+  lastText = JSON.stringify(doc, null, 2);
+  $('json').value = lastText;
+}
+function saveJSON(data,name){const u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'})),a=document.createElement('a');a.href=u;a.download=name.replace(/[^a-zA-Z0-9_.-]/g,'_');a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
+function changed(){geometryActive=true;serialize();sync();draw();}
+function sync(){for(const k of Object.keys(defaults)){if($(k)){$(k).value=view[k];$(k+'Out').value=Number(view[k]).toFixed(['distance','targetY'].includes(k)?2:0);}}$('selected').textContent=selected<0?'—':labels[selected];for(const [j,k] of ['X','Y','Z'].entries()){$('joint'+k).disabled=selected<0;$('joint'+k).value=selected<0?'':pose[selected][j].toFixed(3);}}
+const controlDefs=[['yaw','Sujeto · giro',-180,180,1],['pitch','Sujeto · inclinación frontal',-180,180,1],['roll','Sujeto · inclinación lateral',-180,180,1],['azimuth','Cámara · órbita',-180,180,1],['elevation','Cámara · altura angular',-85,85,1],['distance','Cámara · distancia',1,12,.05],['fov','Cámara · focal',15,90,1],['targetY','Cámara · altura destino',-1,3,.01]];
+for(const[k,title,min,max,step]of controlDefs){const l=document.createElement('label');l.textContent=title;const o=document.createElement('output');o.id=k+'Out';l.append(o);const input=document.createElement('input');Object.assign(input,{type:'range',id:k,min,max,step,value:view[k]});input.addEventListener('pointerdown',()=>{if(ready())checkpoint();});input.addEventListener('keydown',()=>{if(ready())checkpoint();});input.oninput=()=>{if(!ready())return;view[k]=Number(input.value);changed();};l.append(input);$('controls').append(l);}
+function position(e){const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height};}
+canvas.addEventListener('pointerdown',e=>{if(!ready())return;const m=position(e);checkpoint();if(mode==='edit'){let best=15;selected=-1;pose.forEach((p,i)=>{const s=project(toWorld(p)),d=Math.hypot(s.x-m.x,s.y-m.y);if(s.z>.05&&d<best){best=d;selected=i;}});if(selected>=0){const b=basis();drag={kind:'joint',start:m,world:toWorld(pose[selected]),b,depth:project(toWorld(pose[selected])).z};}sync();draw();}else drag={kind:'orbit',start:m,azimuth:view.azimuth,elevation:view.elevation};if(drag)canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointermove',e=>{if(!drag)return;const m=position(e),dx=m.x-drag.start.x,dy=m.y-drag.start.y;if(drag.kind==='orbit'){view.azimuth=((drag.azimuth+dx*.4+540)%360)-180;view.elevation=Math.max(-85,Math.min(85,drag.elevation+dy*.3));}else{const scale=2*drag.depth*Math.tan(rad(view.fov)/2)/canvas.height;pose[selected]=toLocal(add(drag.world,add(mul(drag.b.right,dx*scale),mul(drag.b.up,-dy*scale))));}changed();});
+for(const e of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(e,()=>{drag=null;});
+canvas.addEventListener('wheel', e => {
+  e.preventDefault(); if(!ready()) return; checkpoint();
+  const dx=e.deltaX, dy=e.deltaY;
+  if(e.shiftKey) view.elevation=Math.max(-85,Math.min(85,view.elevation-dy*0.08));
+  else if(Math.abs(dx)>Math.abs(dy)) view.azimuth=((view.azimuth+dx*0.25+540)%360)-180;
+  else view.distance=Math.max(1,Math.min(12,view.distance+dy*0.004));
+  changed();
+}, {passive:false});
+for(const[j,k] of ['X','Y','Z'].entries())$('joint'+k).onchange=()=>{if(selected<0||!ready())return;const n=Number($('joint'+k).value);if(!Number.isFinite(n)||Math.abs(n)>100){status('Coordenada inválida.');sync();return;}checkpoint();pose[selected][j]=n;changed();};
+$('editMode').onclick=()=>{mode='edit';$('editMode').className='primary';$('orbitMode').className='';draw();};
+$('orbitMode').onclick=()=>{mode='orbit';$('orbitMode').className='primary';$('editMode').className='';draw();};
+$('resetView').onclick=()=>{if(!ready())return;checkpoint();for(const k of ['azimuth','elevation','distance','fov','targetY'])view[k]=defaults[k];changed();};
+$('fit').onclick=()=>{if(!ready())return;checkpoint();const pp=pose.map(toWorld),ys=pp.map(p=>p[1]);view.targetY=(Math.max(...ys)+Math.min(...ys))/2;const radius=Math.max(.3,...pp.map(p=>Math.hypot(p[0],p[1]-view.targetY,p[2])));const half=Math.min(rad(view.fov)/2,Math.atan(Math.tan(rad(view.fov)/2)*canvas.width/canvas.height));view.distance=Math.max(1,Math.min(12,radius/Math.sin(half)*1.12));changed();};
+$('usePreset').onclick=()=>{if(!ready())return;checkpoint();pose=template($('preset').value);selected=-1;changed();status('Plantilla aplicada.');};
+$('undo').onclick=()=>{if(!ready()||!history.length)return;const h=history.pop();pose=h.pose;view=h.view;doc=h.doc;geometryActive=h.geometryActive;selected=-1;serialize();sync();draw();};
+function textOf(x){return JSON.stringify(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[_-]/g,' ');}
+function interpret(data){const t=textOf(data);let type=null,hits=[];if(/all fours|cuatro apoyos|a cuatro patas|quadruped/.test(t))type='all_fours';else if(/kneel|arrodill/.test(t))type='kneeling';else if(/seated|sitting|sentad/.test(t))type='seated';else if(/contrapposto/.test(t))type='contrapposto';else if(/arms up|arms raised|brazos arriba|brazos elevados/.test(t))type='arms_up';else if(/standing|de pie|erguid/.test(t))type='standing';if(!type)return null;const p=template(type),v={...defaults};hits.push(type);
+if(/rear three quarter|tres cuartos desde atras|tres cuartos posterior/.test(t)){v.azimuth=135;hits.push('cámara trasera ¾');}else if(/rear view|from behind|desde atras|vista posterior/.test(t)){v.azimuth=180;hits.push('cámara posterior');}else if(/profile|perfil|side view/.test(t)){v.azimuth=90;hits.push('cámara lateral');}else if(/three quarter|tres cuartos|3\/4/.test(t)){v.azimuth=45;hits.push('cámara ¾');}
+if(/low angle|contrapicado|mas baja|altura de cadera/.test(t)){v.elevation=-12;hits.push('cámara baja');}else if(/high angle|picado|desde arriba/.test(t)){v.elevation=35;hits.push('cámara alta');}
+return {p,v,hits};}
+function validateObject(x){if(!x||typeof x!=='object'||Array.isArray(x))throw Error('El JSON debe ser un objeto.');}
+function importData(data,name){validateObject(data);let p,v,active=false,message;const s=data.axfra_pose_editor;
+if(s?.space==='3d'){if(!Array.isArray(s.joints)||s.joints.length!==names.length)throw Error('Esqueleto 3D incompatible.');p=clone(s.joints);v={...defaults,...s.view};active=true;message='Pose 3D recuperada.';
+}else{const result=interpret(data);if(result){p=result.p;v=result.v;active=true;message='Interpretación por reglas: '+result.hits.join(' · ')+'.';}else{p=template('standing');v={...defaults};message='No se interpretó. Referencia neutra.';}}
+checkpoint();doc=data;pose=p;view=v;geometryActive=active;filename=name||filename;selected=-1;serialize();sync();draw();status(message);}
+$('apply').onclick=()=>{try{importData(JSON.parse($('json').value));}catch(e){status('No se aplicó: '+e.message);}};
+async function getJSON(url){const u=new URL(url,'https://axfra.com/library/');if(!['http:','https:'].includes(u.protocol))throw Error('URL inválida.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(u,{signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(timer);}}
+function renderFiles(){const q=$('search').value.toLowerCase();filtered=files.filter(f=>[f.name,f.name_es,f.id,f.path].join(' ').toLowerCase().includes(q));$('catalog').replaceChildren();filtered.forEach((f,i)=>{const o=document.createElement('option');o.value=i;o.textContent=f.name_es||f.name||f.id;$('catalog').append(o);});}
+$('search').oninput=renderFiles;
+async function loadCatalog(){try{const x=await getJSON('https://axfra.com/library/axfra_json_library_index.json');if(!Array.isArray(x.files))throw Error('Índice inválido');files=x.files.filter(f=>f.category==='pose'||f.subgroup==='poses'||/axfra_pose_/i.test(f.id||''));renderFiles();status(files.length+' poses disponibles. Selecciona una.');}catch(e){status('No se cargó el catálogo: '+e.message);}}
+$('catalog').onchange=async()=>{const f=filtered[$('catalog').value];if(!f)return;status('Cargando…');try{const data=await getJSON(f.url||new URL(f.path,'https://axfra.com/library/').href);importData(data,f.id||'pose.json');}catch(e){status('Error al cargar: '+e.message);}};
+$('file').onchange=async e=>{const f=e.target.files[0];if(!f||!ready())return;try{const x=JSON.parse(await f.text());if(ready())importData(x,f.name);}catch(e){status('No se pudo importar: '+e.message);}finally{$('file').value='';}};
+$('copy').onclick=async()=>{try{validateObject(JSON.parse($('json').value));await navigator.clipboard.writeText($('json').value);status('JSON copiado.');}catch(e){$('json').focus();$('json').select();status('Seleccionado: copia con Ctrl/Cmd+C.');}};
+$('download').onclick=()=>{try{const x=JSON.parse($('json').value);validateObject(x);saveJSON(x,'axfra_pose_parametric.json');status('Exportado.');}catch(e){status('No se puede exportar: '+e.message);}};
+$('saveProject').onclick=()=>{if(!ready())return;const project={...clone(doc),axfra_pose_editor:{version:'3.2',space:'3d',joint_names:names,joints:clone(pose),view:{...view}}};saveJSON(project,'axfra_pose_project.json');status('Proyecto guardado.');};
+
+pose=template('standing');doc={id:'AXFRA_pose_editor_alfa',name:'Pose Editor Alfa',name_es:'Editor de poses alfa',meta:{developer:'ALARSI',developer_site:'https://alarsi.com',brand:'AXFRA',brand_site:'https://axfra.com',system:'AXFRA JSON prompt system',version:'alfa'}};serialize();sync();new ResizeObserver(resize).observe(canvas);resize();
+loadCatalog();
+</script>
+</body>
+</html>
