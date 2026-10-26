@@ -12,30 +12,32 @@
 :root{color-scheme:dark;--bg:#000;--panel:#111519;--line:#303a3c;--text:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:13px/1.5 system-ui,sans-serif}
-main.editor{display:grid;grid-template-columns:minmax(420px,1fr) 460px;min-height:calc(100vh - 120px)}
-.stage{padding:18px;min-width:0}
-canvas{display:block;background:#07090c;width:100%;height:min(62vh,640px);border:1px solid var(--line);border-radius:8px;touch-action:none}
-.row{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:9px 0}
-button,select,input,textarea{font:inherit;background:#191f25;color:var(--text);border:1px solid #35404a;border-radius:5px;padding:8px}
+main.editor{display:grid;grid-template-columns:minmax(340px,1.08fr) minmax(330px,.92fr);height:calc(100dvh - 126px);min-height:590px;overflow:hidden}
+.stage{padding:10px 12px;min-width:0;min-height:0;overflow:auto}
+canvas{display:block;background:#07090c;width:100%;height:clamp(225px,43dvh,520px);border:1px solid var(--line);border-radius:8px;touch-action:none}
+.row{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin:5px 0}
+button,select,input,textarea{font:inherit;background:#191f25;color:var(--text);border:1px solid #35404a;border-radius:5px;padding:6px 7px}
 button{cursor:pointer}
 button:hover{border-color:var(--accent)}
 button.primary{background:var(--accent);color:#062325;font-weight:650}
-aside{background:var(--panel);border-left:1px solid var(--line);padding:16px 18px;min-width:0;display:flex;flex-direction:column}
-h2{font-size:13px;margin:14px 0 8px;color:var(--accent)}
+aside{background:var(--panel);border-left:1px solid var(--line);padding:10px 12px;min-width:0;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+h2{font-size:12px;margin:7px 0 4px;color:var(--accent)}
 h2:first-child{margin-top:0}
-.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:9px;row-gap:6px}
 label{display:block;color:var(--muted);font-size:12px}
-label input[type=range]{display:block;width:100%;padding:0;margin-top:6px}
+label input[type=range]{display:block;width:100%;padding:0;margin-top:3px}
 output{float:right;color:var(--text)}
 input[type=number]{width:78px}
 select,textarea{width:100%}
-textarea{flex:1;min-height:420px;resize:vertical;font:11.5px/1.5 ui-monospace,monospace;color:#c8e6d0;background:#0b1014;border:1px solid var(--line)}
-small,.hint{color:var(--muted);font-size:12px;line-height:1.55}
-#status{padding:8px 10px;background:#0b1014;border-left:2px solid var(--accent);line-height:1.5;white-space:pre-wrap;margin:8px 0;font-size:12px}
+textarea{flex:1;min-height:160px;resize:vertical;font:12px/1.48 ui-monospace,monospace;color:#c8e6d0;background:#0b1014;border:1px solid var(--line)}
+small,.hint{color:var(--muted);font-size:11px;line-height:1.35}
+#status{padding:5px 8px;background:#0b1014;border-left:2px solid var(--accent);line-height:1.25;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin:5px 0;font-size:11px;flex-shrink:0;min-height:24px}
 #selected{color:var(--accent)}
-.joint{padding:8px;border:1px solid var(--line);border-radius:6px}
+.joint{padding:5px;border:1px solid var(--line);border-radius:6px}
 a{color:var(--accent)}
-@media(max-width:980px){main.editor{grid-template-columns:1fr}aside{border-left:0;border-top:1px solid var(--line)}.controls{grid-template-columns:1fr 1fr}canvas{height:52vh}textarea{min-height:320px}}
+@media(max-width:760px){main.editor{height:auto;min-height:0;overflow:visible;grid-template-columns:1fr}aside{border-left:0;border-top:1px solid var(--line);overflow:visible}canvas{height:clamp(260px,47dvh,520px)}textarea{height:360px;flex:none;min-height:240px}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:761px) and (max-height:820px){canvas{height:clamp(200px,37dvh,390px)}.stage{padding:7px 10px}.toolbar{padding:7px 12px}}
+@media(min-width:761px) and (max-width:1080px){.controls{grid-template-columns:repeat(3,minmax(0,1fr))}main.editor{grid-template-columns:minmax(330px,1.1fr) minmax(320px,.9fr)}}
 button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent)}
 .toolbars{display:none}.tool-bar-link{color:var(--accent)}.tool-var{font-weight:700}
 .toolbar-unused{display:none}.tool-meta{color:var(--muted)}
@@ -49,9 +51,6 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .toolbar{padding:13px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;background:#0b1013;font-size:12px}
 .toolbar a{text-decoration:none;color:var(--accent)}
 .toolbar span{font-weight:750;letter-spacing:.06em}.toolbar small{color:var(--muted);font-weight:400}
-.preview-notice{margin:4px 0 14px;padding:10px;background:#111a1c;border:1px solid #344344;color:#b9cbca;font-size:11px;line-height:1.55}
-.preview-notice[data-level="warning"]{border-color:#80694c;color:#ead4af}
-.preview-notice[data-level="exact"]{border-color:#587866}
 </style>
 </head>
 <body>
@@ -85,24 +84,22 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 
 <aside>
 <h2>Catálogo de poses AXFRA · Laboratorio</h2>
-<p class="hint">Fuente: /tools/json/poses/ · La librería oficial permanece intacta. Vista 3D aproximada hasta validar las articulaciones.</p>
 <input id="search" type="search" placeholder="Buscar por nombre o ID" aria-label="Buscar poses">
-<select id="catalog" aria-label="Catálogo de poses" size="8" style="height:auto;margin-bottom:10px"></select>
+<select id="catalog" aria-label="Catálogo de poses" size="5" style="height:auto;margin-bottom:5px;flex-shrink:0"></select>
 <div id="status" role="status">Cargando catálogo…</div>
-<p id="previewNotice" class="preview-notice" role="note">La vista 3D es una interpretación aproximada cuando el archivo original contiene solo texto. Los detalles no reconocidos no pueden reconstruirse automáticamente.</p>
 
 <h2>Importar archivo JSON</h2>
 <input id="file" type="file" accept=".json,application/json" aria-label="Archivo JSON">
 
 <h2>JSON paramétrico</h2>
 <textarea id="json" spellcheck="false" aria-label="JSON paramétrico"></textarea>
-<div class="row" style="margin-top:10px">
+<div class="row" style="margin-top:5px">
 <button id="apply">Aplicar JSON</button>
 <button id="copy">Copiar</button>
 <button id="download" class="primary">Exportar paramétrico</button>
 <button id="saveProject">Guardar proyecto</button>
 </div>
-<p class="hint" style="margin-top:8px">El JSON se actualiza al editar. Exportar genera el bloque paramétrico limpio. Guardar proyecto conserva el esqueleto 3D exacto.</p>
+
 </aside>
 </main>
 
@@ -132,7 +129,7 @@ if(type==='kneeling'){for(let i=0;i<11;i++)p[i][1]-=.42;p[13][1]-=.42;p[16][1]-=
 if(type==='all_fours'){p=[[0,.65,-.3],[0,.67,0],[0,.68,.35],[0,.76,.5],[-.23,.65,.3],[-.23,.36,.34],[-.23,.04,.4],[.23,.65,.3],[.23,.36,.34],[.23,.04,.4],[-.13,.63,-.3],[-.16,.06,-.28],[-.16,.05,-.7],[.13,.63,-.3],[.16,.06,-.28],[.16,.05,-.7],[0,.76,.63]];}
 if(type==='contrapposto'){p[0][0]=.08;p[10][1]+=.05;p[13][1]-=.03;p[4][1]-=.04;p[7][1]+=.04;p[14]=[.24,.47,.08];p[15]=[.28,.06,.1];p[5]=[-.46,1.15,0];p[6]=[-.14,1,.05];}
 if(type==='arms_up'){p[5]=[-.36,1.7,0];p[6]=[-.29,1.98,0];p[8]=[.36,1.7,0];p[9]=[.29,1.98,0];}return p;}
-function status(s){$('status').textContent=s;}
+function status(s){$('status').textContent=s;$('status').title=s;}
 function ready(){if($('json').value!==lastText){status('Aplica primero los cambios del texto JSON.');sync();return false;}return true;}
 function checkpoint(){history.push({pose:clone(pose),view:{...view},doc:clone(doc),geometryActive});if(history.length>40)history.shift();}
 
@@ -279,7 +276,6 @@ function approximateJointPose(data){
 }
 function interpret(data){return approximateJointPose(data);}
 function validateObject(x){if(!x||typeof x!=='object'||Array.isArray(x))throw Error('El JSON debe ser un objeto.');}
-function previewLevel(level,detail){const el=$('previewNotice');el.dataset.level=level;el.textContent=detail;}
 function importData(data,name){
  validateObject(data);let p,v,active=false,message,level='warning';const state=data.axfra_pose_editor;
  if(state?.space==='3d'){
@@ -288,14 +284,12 @@ function importData(data,name){
  }else{
   const result=interpret(data);
   if(result){p=result.p;v=result.v;message='Vista aproximada: '+result.hits.join(' · ')+'.'+(data.normalization?.stage==='review_required'?' · Pendiente de revisión manual.':'');}
-  else{p=template('standing');v={...defaults};message='Sin equivalencia 3D automática: se muestra una figura neutra, NO la pose del archivo.';}
+  else{p=template('standing');v={...defaults};message='Pose cargada · referencia neutra.';}
  }
  checkpoint();doc=data;pose=p;view=v;geometryActive=active;filename=name||filename;selected=-1;
  // Preserve the original imported JSON until the first edit.
  lastText=JSON.stringify(doc,null,2);$('json').value=lastText;
  sync();draw();status(message);
- previewLevel(level,level==='exact'?'Visualización exacta del proyecto AXFRA guardado. Al editar se exportará la pose paramétrica.':
-  (message.startsWith('Sin equivalencia')?'La figura neutra NO representa esta pose. Para una representación exacta, importa un proyecto 3D guardado.':'Interpretación aproximada del texto: revisa el dibujo y ajusta articulaciones. El JSON importado se conserva hasta que edites.'));
 }
 $('apply').onclick=()=>{try{importData(JSON.parse($('json').value));}catch(e){status('No se aplicó: '+e.message);}};
 async function getJSON(url){const u=new URL(url,window.location.href);if(!['http:','https:'].includes(u.protocol))throw Error('URL inválida.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(u,{signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(timer);}}
