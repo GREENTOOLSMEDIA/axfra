@@ -1,0 +1,38 @@
+{
+  "id": "AXFRA_pose_suspended_split_reach",
+  "name": "Suspended Split Reach",
+  "name_es": "Salto abierto con piernas separadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0",
+    "updated": "2026-10-26"
+  },
+  "classification": {
+    "category": "suspended",
+    "category_es": "Suspendido",
+    "taxonomy": "AXFRA Poses 1.0"
+  },
+  "pose_and_framing_block": {
+    "pose": "Configuración de suspensión o fase aérea. Salto abierto con piernas separadas.",
+    "anatomy": {
+      "support_points": [],
+      "phase": "midair",
+      "legs": "wide_lateral_split_with_extended_knees",
+      "pelvis": "centered",
+      "torso": "upright",
+      "arms": "extended_laterally",
+      "head": "neutral"
+    }
+  },
+  "constraints_block": {
+    "keep_human_anatomy_consistent": true,
+    "do_not_change_identity": true,
+    "camera_control": "external_module",
+    "wardrobe_control": "external_module"
+  }
+}

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Victory claim",
-  "source_index": 70
+  "source_index": 70,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

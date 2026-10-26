@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "• 1. Termina en pose final: piernas abiertas, una mano en la cadera, pecho erguido y mirada intensa y confiada.",
-  "source_index": 44
+  "source_index": 44,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

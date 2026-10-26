@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto de pie, peso mayormente sobre la pierna adelantada. La otra pierna queda un paso atrás, rodillas suaves. Cadera empujada hacia atrás, torso flexionado hacia adelante desde la cadera (bisagra), columna en curva larga. Un brazo flexionado a la espalda, dorso de la mano cerca de la zona lumbar. El otro brazo cuelga relajado junto al muslo. Cabeza alineada con el torso, mirada baja hacia el suelo unos pasos adelante. Ambos pies apoyados, talones en el piso.",
-  "source_index": 76
+  "source_index": 76,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

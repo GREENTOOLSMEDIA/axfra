@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "wide balanced stance with one arm reaching forward and the other arm back, hips shifted, torso slightly rotated, strong and open posture, confident gaze, cinematic 85mm lens, f/2.8, fashion studio lighting, ultra detailed",
-  "source_index": 9
+  "source_index": 9,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

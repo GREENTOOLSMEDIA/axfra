@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto boca arriba en la cama. Cabeza en la almohada, cuello extendido, mentón arriba. Ambas rodillas flexionadas y alzadas, pies sobre el colchón. Una mano sobre el pubis; el otro brazo junto a la cabeza o sobre la almohada. Cadera apoyada, sin girar de lado.\n\nÁNGULO DE CÁMARA\n\nDesde el costado de la cama, a media altura, mirando hacia la cabecera. Plano que cubre de pies a cabeza. Cámara no cenital. Deben verse las dos rodillas alzadas y la mano en el pubis.",
-  "source_index": 99
+  "source_index": 99,
+  "classification": {
+    "category": "lying",
+    "category_es": "Acostado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

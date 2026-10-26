@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto de pie en tres cuartos. Peso sobre una pierna. Ambos brazos cruzados sobre el torso: un antebrazo cubre el pecho, el otro baja y la mano se apoya en el costado o la cadera contraria. Hombros un poco alzados por el cruce. Cabeza girada al lente, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio (cadera o muslo a cabeza). Cámara a altura de pecho. Distancia corta-media. Deben verse los dos brazos cruzados.",
-  "source_index": 100
+  "source_index": 100,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

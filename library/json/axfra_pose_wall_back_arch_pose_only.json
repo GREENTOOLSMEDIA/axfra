@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo.",
-  "source_index": 86
+  "source_index": 86,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

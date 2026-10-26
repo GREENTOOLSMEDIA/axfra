@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Sentado de lado en un taburete, el torso girado hacia la cámara, una pierna extendida ligeramente hacia adelante y la otra doblada naturalmente. Un codo descansa libremente sobre su rodilla levantada mientras que la mano opuesta descansa cerca de su muslo, con una expresión editorial equilibrada.",
-  "source_index": 5
+  "source_index": 5,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Body roll lento y sensual: hombros → pecho → abdomen → cadera (baja la energía al final del roll). (beat 2)",
-  "source_index": 27
+  "source_index": 27,
+  "classification": {
+    "category": "dynamic",
+    "category_es": "Movimiento",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

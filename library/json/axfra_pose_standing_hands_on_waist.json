@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Standing with hands resting confidently at the waist.",
-  "source_content": "Standing with hands resting confidently at the waist."
+  "source_content": "Standing with hands resting confidently at the waist.",
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSentado en un taburete. Una rodilla sube al pecho, pie plantado en el asiento. La otra pierna muy separada cuelga, pie hacia el suelo. Un brazo se alza: el dorso de la mano o el antebrazo descansa en la frente. La otra mano cubre su puvis. Torso de frente o en leve tres cuartos. Mirada a cámara.\n\nÁNGULO DE CÁMARA\n\n* Posición: delante del sujeto, un poco hacia el lado de la pierna que cuelga.\n\n* Altura del lente: a la cara / pecho alto. Eje casi horizontal.\n\n* Lo más cerca: rodilla alzada y muslo que cuelga.\n\n* Lo más lejos: hombro contra el muro y pie del asiento.\n\n* Cuadro de muslo a cabeza o cuerpo casi entero.\n\n* No picado fuerte. No contrapicado. No perfil.",
-  "source_index": 105
+  "source_index": 105,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

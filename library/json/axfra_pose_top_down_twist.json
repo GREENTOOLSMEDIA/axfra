@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "Top-Down Twist",
-  "source_index": 72
+  "source_index": 72,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

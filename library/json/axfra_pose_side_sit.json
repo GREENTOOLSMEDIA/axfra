@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "side sit",
-  "source_index": 65
+  "source_index": 65,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

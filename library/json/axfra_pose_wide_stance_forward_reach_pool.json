@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "wide stance with one arm reaching forward and the other back. Camera placed at chest height, 2.8 meters in front of her and slightly to the side of the reaching arm, pointing directly at her extended hand and then her chest, 85mm lens, f/2.8, focus on the forward hand and her face, pool and palm trees behind, bright sun",
-  "source_index": 10
+  "source_index": 10,
+  "classification": {
+    "category": "standing",
+    "category_es": "De pie",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

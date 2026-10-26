@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "pose_description": "Lying flat on the back, face looking straight upward, symmetrical composition.",
-  "source_content": "Lying flat on the back, face looking straight upward, symmetrical composition."
+  "source_content": "Lying flat on the back, face looking straight upward, symmetrical composition.",
+  "classification": {
+    "category": "lying",
+    "category_es": "Acostado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

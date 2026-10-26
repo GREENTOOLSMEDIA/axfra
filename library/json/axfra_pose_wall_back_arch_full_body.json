@@ -11,5 +11,10 @@
     "version": "1.0"
   },
   "description": "POSE\n\nSujeto de pie junto a un muro. Cabeza y omóplatos apoyados en la pared. Torso en arco fuerte: pecho hacia arriba, cadera empujada atrás y afuera. Un brazo cae a lo largo del muro, mano abierta y suelta. El otro brazo queda atrás o pegado al cuerpo. Piernas casi juntas, una un paso mínimo adelante, rodillas suaves. Mentón alto, mirada al techo.\n\nÁNGULO DE CÁMARA\n\nPerfil o tres cuartos de lado. Cuerpo entero. Cámara a altura de cadera o un poco más baja, para leer el arco. Distancia media. Debe verse el apoyo de la cabeza en el muro y los pies en el suelo.",
-  "source_index": 85
+  "source_index": 85,
+  "classification": {
+    "category": "bending",
+    "category_es": "Inclinado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }

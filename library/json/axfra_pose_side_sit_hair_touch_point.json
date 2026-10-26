@@ -29,5 +29,10 @@
   "expression": "Soft smile, lips parted, playful and inviting",
   "gaze": "Direct eye contact with camera",
   "source_id": "pose_01_side_sit_hair_flip",
-  "source_index": 56
+  "source_index": 56,
+  "classification": {
+    "category": "sitting",
+    "category_es": "Sentado",
+    "taxonomy": "AXFRA Poses 1.0"
+  }
 }
