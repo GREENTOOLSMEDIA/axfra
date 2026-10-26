@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 456,
+  "total_json": 468,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -18,7 +18,7 @@
     "identity": 36,
     "lighting": 15,
     "motion": 7,
-    "pose": 115,
+    "pose": 127,
     "prop": 5,
     "rotation": 1,
     "sports_uniform": 1,
@@ -145,12 +145,12 @@
     {
       "id": "composition",
       "label": "Composición visual",
-      "count": 160,
+      "count": 172,
       "children": [
         {
           "id": "poses",
           "label": "Poses",
-          "count": 115
+          "count": 127
         },
         {
           "id": "movement",
@@ -3624,7 +3624,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_all_fours_rear_three_quarter.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_rear_three_quarter.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
     },
     {
       "id": "AXFRA_pose_arm_reaching_toward_lens",
@@ -3635,7 +3637,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_arm_reaching_toward_lens.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_arm_reaching_toward_lens.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_back_lean_hands_on_hips",
@@ -3646,7 +3650,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_back_lean_hands_on_hips.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_back_lean_hands_on_hips.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_back_step_circular_hip_roll",
@@ -3657,7 +3663,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_back_step_circular_hip_roll.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_back_step_circular_hip_roll.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_chest_pop_and_head_tilt",
@@ -3668,7 +3676,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_chest_pop_and_head_tilt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_chest_pop_and_head_tilt.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_chin_on_interlaced_hands_animation",
@@ -3679,7 +3689,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_chin_on_interlaced_hands_animation.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_chin_on_interlaced_hands_animation.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_chin_resting_on_interlaced_hands",
@@ -3690,7 +3702,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_chin_resting_on_interlaced_hands.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_chin_resting_on_interlaced_hands.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_cold_applause",
@@ -3701,7 +3715,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_cold_applause.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_cold_applause.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_continuous_funk_dance_loop",
@@ -3712,7 +3728,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_continuous_funk_dance_loop.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_continuous_funk_dance_loop.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_cross_legged_seated",
@@ -3723,7 +3741,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_cross_legged_seated.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_cross_legged_seated.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_crouching_look_up",
@@ -3734,7 +3754,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_crouching_look_up.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_crouching_look_up.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_curled_up_on_chair",
@@ -3745,7 +3767,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_curled_up_on_chair.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_curled_up_on_chair.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_dance_reference_sequence_1_to_43",
@@ -3756,7 +3780,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_dance_reference_sequence_1_to_43.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_dance_reference_sequence_1_to_43.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_feet_together_initial_stance",
@@ -3767,7 +3793,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_feet_together_initial_stance.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_feet_together_initial_stance.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_final_confident_victory_pose",
@@ -3778,7 +3806,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_final_confident_victory_pose.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_final_confident_victory_pose.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_final_scheme",
@@ -3789,7 +3819,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_final_scheme.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_final_scheme.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_flamingo_standing_pose",
@@ -3800,7 +3832,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_flamingo_standing_pose.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_flamingo_standing_pose.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_flirty_side_profile",
@@ -3811,7 +3845,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_flirty_side_profile.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_flirty_side_profile.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_foreshortened_power_punch",
@@ -3822,7 +3858,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_foreshortened_power_punch.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_foreshortened_power_punch.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_forward_lean_laugh",
@@ -3833,7 +3871,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_forward_lean_laugh.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_forward_lean_laugh.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_forward_leaning_kneel",
@@ -3844,7 +3884,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_forward_leaning_kneel.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_forward_leaning_kneel.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
     },
     {
       "id": "AXFRA_pose_forward_open_palm_reach",
@@ -3855,7 +3897,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_forward_open_palm_reach.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_forward_open_palm_reach.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_forward_point_at_camera",
@@ -3866,7 +3910,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_forward_point_at_camera.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_forward_point_at_camera.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_front_standing_hands_together",
@@ -3877,7 +3923,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_front_standing_hands_together.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_front_standing_hands_together.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_front_three_quarter_contrapposto",
@@ -3888,7 +3936,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_front_three_quarter_contrapposto.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_front_three_quarter_contrapposto.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_front_three_quarter_s_curve",
@@ -3899,7 +3949,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_front_three_quarter_s_curve.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_front_three_quarter_s_curve.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_grounded_action_stance",
@@ -3910,7 +3962,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_grounded_action_stance.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_grounded_action_stance.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_grounded_kneeling_twist",
@@ -3921,7 +3975,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_grounded_kneeling_twist.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_grounded_kneeling_twist.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
     },
     {
       "id": "AXFRA_pose_hair_flip_and_finger_snap",
@@ -3932,7 +3988,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_hair_flip_and_finger_snap.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_hair_flip_and_finger_snap.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_hand_behind_head_standing_and_low_squat",
@@ -3943,7 +4001,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_hand_behind_head_standing_and_low_squat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_hand_behind_head_standing_and_low_squat.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_hands_behind_head_low_squat",
@@ -3954,7 +4014,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_hands_behind_head_low_squat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_hands_behind_head_low_squat.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_heroic_ground_level_stance",
@@ -3965,7 +4027,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_heroic_ground_level_stance.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_heroic_ground_level_stance.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_high_angle_reclined_on_sofa",
@@ -3976,7 +4040,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_high_angle_reclined_on_sofa.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_high_angle_reclined_on_sofa.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
     },
     {
       "id": "AXFRA_pose_high_side_kick",
@@ -3987,7 +4053,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_high_side_kick.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_high_side_kick.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_high_v_arms_jump",
@@ -3998,7 +4066,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_high_v_arms_jump.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_high_v_arms_jump.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
     },
     {
       "id": "AXFRA_pose_knees_together_inverted_v_shins",
@@ -4009,7 +4079,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_knees_together_inverted_v_shins.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_knees_together_inverted_v_shins.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_knees_up_seated_together",
@@ -4020,7 +4092,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_knees_up_seated_together.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_knees_up_seated_together.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_knees_up_seated_together_white_background",
@@ -4031,7 +4105,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_knees_up_seated_together_white_background.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_knees_up_seated_together_white_background.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_knees_up_seated_wide_v",
@@ -4042,7 +4118,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_knees_up_seated_wide_v_white_background.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_knees_up_seated_wide_v_white_background.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_knees_up_seated_wide_v_with_heels",
@@ -4053,7 +4131,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_knees_up_seated_wide_v_with_heels.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_knees_up_seated_wide_v_with_heels.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_left_360_turn",
@@ -4064,7 +4144,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_left_360_turn.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_left_360_turn.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_left_crossover_step",
@@ -4075,7 +4157,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_left_crossover_step.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_left_crossover_step.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_left_three_quarter_low_squat",
@@ -4086,7 +4170,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_left_three_quarter_low_squat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_left_three_quarter_low_squat.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_left_torso_twist_shoulder_shimmy",
@@ -4097,7 +4183,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_left_torso_twist_shoulder_shimmy.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_left_torso_twist_shoulder_shimmy.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_low_grounded_crouch",
@@ -4108,7 +4196,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_low_grounded_crouch.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_low_grounded_crouch.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_low_squat_ground_hand",
@@ -4119,7 +4209,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_low_squat_ground_hand.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_low_squat_ground_hand.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_mastermind",
@@ -4130,7 +4222,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_mastermind.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_mastermind.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_midair_leap_toward_camera",
@@ -4141,7 +4235,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_midair_leap_toward_camera.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_midair_leap_toward_camera.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
     },
     {
       "id": "AXFRA_pose_mocking_bow",
@@ -4152,7 +4248,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_mocking_bow.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_mocking_bow.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_one_hand_shaka_gesture",
@@ -4163,7 +4261,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_one_hand_shaka_gesture.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_one_hand_shaka_gesture.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_open_arms_attitude",
@@ -4174,7 +4274,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_open_arms_attitude.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_open_arms_attitude.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_overhead_s_curve_balance",
@@ -4185,7 +4287,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_overhead_s_curve_balance.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_overhead_s_curve_balance.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_overhead_y_arms_cross",
@@ -4196,7 +4300,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_overhead_y_arms_cross.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_overhead_y_arms_cross.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_platform_edge_seated_wide_legs",
@@ -4207,7 +4313,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_platform_edge_seated_wide_legs.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_platform_edge_seated_wide_legs.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_playful_bodysuit_point",
@@ -4218,7 +4326,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_playful_bodysuit_point.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_playful_bodysuit_point.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_playful_dynamic_pose",
@@ -4229,7 +4339,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_playful_dynamic_pose.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_playful_dynamic_pose.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_playful_wink_freeze",
@@ -4240,7 +4352,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_playful_wink_freeze.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_playful_wink_freeze.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_power_pointing_pose",
@@ -4251,7 +4365,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_power_pointing_pose.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_power_pointing_pose.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_prone_elbows_hair_hold_feet_raised",
@@ -4262,7 +4378,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_prone_elbows_hair_hold_feet_raised.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_prone_elbows_hair_hold_feet_raised.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_quick_hip_drop",
@@ -4273,7 +4391,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_quick_hip_drop.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_quick_hip_drop.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_quick_landing_squat",
@@ -4284,7 +4404,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_quick_landing_squat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_quick_landing_squat.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_raised_arm_greeting",
@@ -4295,7 +4417,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_raised_arm_greeting.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_raised_arm_greeting.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_rear_three_quarter_low_squat",
@@ -4306,7 +4430,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_three_quarter_low_squat.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_three_quarter_low_squat.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_rear_three_quarter_raised_knee_punch",
@@ -4317,7 +4443,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_three_quarter_raised_knee_punch.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_three_quarter_raised_knee_punch.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_rear_three_quarter_s_curve",
@@ -4328,7 +4456,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_three_quarter_s_curve.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_three_quarter_s_curve.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_rear_three_quarter_wide_stance_pool",
@@ -4339,7 +4469,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_three_quarter_wide_stance_pool.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_three_quarter_wide_stance_pool.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_rear_view_ankle_cross",
@@ -4350,7 +4482,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_view_ankle_cross.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_view_ankle_cross.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_rear_view_raised_knee_reach",
@@ -4361,7 +4495,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rear_view_raised_knee_reach.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rear_view_raised_knee_reach.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_reclining_on_window_ledge",
@@ -4372,7 +4508,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_reclining_on_window_ledge.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_reclining_on_window_ledge.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
     },
     {
       "id": "AXFRA_pose_relaxed_standing_turn",
@@ -4383,7 +4521,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_relaxed_standing_turn.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_relaxed_standing_turn.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_right_foot_pivot",
@@ -4394,7 +4534,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_right_foot_pivot.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_right_foot_pivot.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_right_wide_side_step",
@@ -4405,7 +4547,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_right_wide_side_step.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_right_wide_side_step.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_rising_body_wave",
@@ -4416,7 +4560,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_rising_body_wave.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_rising_body_wave.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_school_desk_inverted_v_shins",
@@ -4427,7 +4573,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_school_desk_inverted_v_shins.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_school_desk_inverted_v_shins.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_ankle_hold",
@@ -4438,7 +4586,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_ankle_hold.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_ankle_hold.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_arms_crossed_knees_raised",
@@ -4449,7 +4599,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_arms_crossed_knees_raised.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_arms_crossed_knees_raised.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_arms_crossed_raising_top",
@@ -4460,7 +4612,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_arms_crossed_raising_top.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_arms_crossed_raising_top.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_asymmetric_leg_support",
@@ -4471,7 +4625,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_asymmetric_leg_support.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_asymmetric_leg_support.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_finger_to_lips_black_background",
@@ -4482,7 +4638,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_finger_to_lips_black_background.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_finger_to_lips_black_background.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_forward_lean_crossed_forearms",
@@ -4493,7 +4651,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_forward_lean_crossed_forearms.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_forward_lean_crossed_forearms.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_hands_under_chin",
@@ -4504,7 +4664,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_hands_under_chin.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_hands_under_chin.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_knees_wide_feet_behind",
@@ -4515,7 +4677,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_knees_wide_feet_behind.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_knees_wide_feet_behind.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_left_knee_raised_right_leg_extended",
@@ -4526,7 +4690,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_left_knee_raised_right_leg_extended.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_left_knee_raised_right_leg_extended.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_open_v_hands_between_thighs",
@@ -4537,7 +4703,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_open_v_hands_between_thighs.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_open_v_hands_between_thighs.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_raised_knee",
@@ -4548,7 +4716,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_raised_knee.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_raised_knee.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_side_leg_finger_to_lips",
@@ -4559,7 +4729,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_side_leg_finger_to_lips.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_side_leg_finger_to_lips.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_seated_wide_legs_hand_near_face",
@@ -4570,7 +4742,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_seated_wide_legs_hand_near_face.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_seated_wide_legs_hand_near_face.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_shadow_crouch",
@@ -4581,7 +4755,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_shadow_crouch.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_shadow_crouch.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "squatting",
+      "pose_category_es": "Cuclillas"
     },
     {
       "id": "AXFRA_pose_side_profile_kneeling_look_back",
@@ -4592,7 +4768,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_side_profile_kneeling_look_back.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_side_profile_kneeling_look_back.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
     },
     {
       "id": "AXFRA_pose_side_sit",
@@ -4603,7 +4781,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_side_sit.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_side_sit.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_side_sit_hair_touch_point",
@@ -4614,7 +4794,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_side_sit_hair_touch_point.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_side_sit_hair_touch_point.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_sideways_stool_sit",
@@ -4625,7 +4807,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_sideways_stool_sit.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_sideways_stool_sit.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_single_leg_raised_knee_reach",
@@ -4636,7 +4820,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_single_leg_raised_knee_reach.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_single_leg_raised_knee_reach.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_slow_body_roll",
@@ -4647,7 +4833,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_slow_body_roll.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_slow_body_roll.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "dynamic",
+      "pose_category_es": "Movimiento"
     },
     {
       "id": "AXFRA_pose_sofa_seated_hands_on_knee",
@@ -4658,7 +4846,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_sofa_seated_hands_on_knee.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_sofa_seated_hands_on_knee.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_standing_against_wall_contrapposto",
@@ -4669,7 +4859,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_against_wall_contrapposto.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_against_wall_contrapposto.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_standing_crossed_arms",
@@ -4680,7 +4872,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_crossed_arms.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_crossed_arms.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_standing_hands_on_waist",
@@ -4691,7 +4885,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_hands_on_waist.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_hands_on_waist.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_standing_hip_hinge_camera_gaze_low_angle",
@@ -4702,7 +4898,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_hip_hinge_camera_gaze_low_angle.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_hip_hinge_camera_gaze_low_angle.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_standing_hip_hinge_downward_gaze",
@@ -4713,7 +4911,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_hip_hinge_downward_gaze.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_hip_hinge_downward_gaze.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_standing_hip_hinge_rear_side_view",
@@ -4724,7 +4924,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_standing_hip_hinge_rear_side_view.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_standing_hip_hinge_rear_side_view.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_stool_raised_knee_hand_on_forehead",
@@ -4735,7 +4937,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_stool_raised_knee_hand_on_forehead.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_stool_raised_knee_hand_on_forehead.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "sitting",
+      "pose_category_es": "Sentado"
     },
     {
       "id": "AXFRA_pose_supine_bed_foreshortened_camera_gaze",
@@ -4746,7 +4950,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_supine_bed_foreshortened_camera_gaze.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_supine_bed_foreshortened_camera_gaze.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_supine_bed_foreshortened_downward_gaze",
@@ -4757,7 +4963,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_supine_bed_foreshortened_downward_gaze.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_supine_bed_foreshortened_downward_gaze.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_supine_bed_knees_up",
@@ -4768,7 +4976,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_supine_bed_knees_up.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_supine_bed_knees_up.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_supine_knees_bent_hands_on_body",
@@ -4779,7 +4989,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_supine_knees_bent_hands_on_body.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_supine_knees_bent_hands_on_body.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_supine_symmetrical",
@@ -4790,7 +5002,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_supine_symmetrical.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_supine_symmetrical.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "lying",
+      "pose_category_es": "Acostado"
     },
     {
       "id": "AXFRA_pose_top_down_twist",
@@ -4801,7 +5015,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_top_down_twist.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_top_down_twist.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_victory_claim",
@@ -4812,7 +5028,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_victory_claim.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_victory_claim.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_waistband_holding_head_tilt",
@@ -4823,7 +5041,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_waistband_holding_head_tilt.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_waistband_holding_head_tilt.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_wall_back_arch_full_body",
@@ -4834,7 +5054,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_wall_back_arch_full_body.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_wall_back_arch_full_body.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_wall_back_arch_pose_only",
@@ -4845,7 +5067,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_wall_back_arch_pose_only.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_wall_back_arch_pose_only.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "bending",
+      "pose_category_es": "Inclinado"
     },
     {
       "id": "AXFRA_pose_wide_leg_hand_on_hip_finish",
@@ -4856,7 +5080,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_wide_leg_hand_on_hip_finish.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_wide_leg_hand_on_hip_finish.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_wide_stance_forward_reach",
@@ -4867,7 +5093,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_wide_stance_forward_reach.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_wide_stance_forward_reach.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_pose_wide_stance_forward_reach_pool",
@@ -4878,7 +5106,9 @@
       "url": "https://axfra.com/library/json/axfra_pose_wide_stance_forward_reach_pool.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_wide_stance_forward_reach_pool.jpg",
       "group": "composition",
-      "subgroup": "poses"
+      "subgroup": "poses",
+      "pose_category": "standing",
+      "pose_category_es": "De pie"
     },
     {
       "id": "AXFRA_scene_cello_organic_spiral",
@@ -6108,6 +6338,217 @@
         "shorts",
         "lingerie"
       ]
+    },
+    {
+      "id": "AXFRA_pose_kneeling_upright_hands_on_thighs",
+      "name": "Kneeling Upright Hands On Thighs",
+      "name_es": "De rodillas, erguido, manos sobre muslos",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_upright_hands_on_thighs.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_upright_hands_on_thighs.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_upright_hands_on_thighs.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
+    },
+    {
+      "id": "AXFRA_pose_kneeling_one_knee",
+      "name": "Kneeling One Knee",
+      "name_es": "Una rodilla apoyada, pierna contraria adelantada",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_one_knee.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_one_knee.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_one_knee.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
+    },
+    {
+      "id": "AXFRA_pose_kneeling_forward_hands_on_floor",
+      "name": "Kneeling Forward Hands On Floor",
+      "name_es": "De rodillas, torso adelante, manos al suelo",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_forward_hands_on_floor.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_forward_hands_on_floor.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_forward_hands_on_floor.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
+    },
+    {
+      "id": "AXFRA_pose_reclined_floor_on_elbows",
+      "name": "Reclined Floor On Elbows",
+      "name_es": "Semirreclinado en suelo sobre ambos codos",
+      "category": "pose",
+      "path": "json/axfra_pose_reclined_floor_on_elbows.json",
+      "url": "https://axfra.com/library/json/axfra_pose_reclined_floor_on_elbows.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_reclined_floor_on_elbows.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
+    },
+    {
+      "id": "AXFRA_pose_side_recline_propped_elbow",
+      "name": "Side Recline Propped Elbow",
+      "name_es": "Reclinado lateral apoyado sobre un codo",
+      "category": "pose",
+      "path": "json/axfra_pose_side_recline_propped_elbow.json",
+      "url": "https://axfra.com/library/json/axfra_pose_side_recline_propped_elbow.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_side_recline_propped_elbow.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
+    },
+    {
+      "id": "AXFRA_pose_chaise_longue_full_recline",
+      "name": "Chaise Longue Full Recline",
+      "name_es": "Reclinado largo sobre superficie inclinada",
+      "category": "pose",
+      "path": "json/axfra_pose_chaise_longue_full_recline.json",
+      "url": "https://axfra.com/library/json/axfra_pose_chaise_longue_full_recline.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_chaise_longue_full_recline.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
+    },
+    {
+      "id": "AXFRA_pose_all_fours_neutral",
+      "name": "All Fours Neutral",
+      "name_es": "Cuatro apoyos simétricos",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_neutral.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_neutral.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_neutral.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
+      "id": "AXFRA_pose_all_fours_forearms",
+      "name": "All Fours Forearms",
+      "name_es": "Antebrazos y rodillas como puntos de apoyo",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_forearms.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_forearms.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_forearms.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
+      "id": "AXFRA_pose_all_fours_three_point_reach",
+      "name": "All Fours Three Point Reach",
+      "name_es": "Tres apoyos, brazo extendido",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_three_point_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_three_point_reach.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_three_point_reach.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
+      "id": "AXFRA_pose_suspended_tuck_jump",
+      "name": "Suspended Tuck Jump",
+      "name_es": "Salto agrupado con rodillas al pecho",
+      "category": "pose",
+      "path": "json/axfra_pose_suspended_tuck_jump.json",
+      "url": "https://axfra.com/library/json/axfra_pose_suspended_tuck_jump.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_suspended_tuck_jump.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
+    },
+    {
+      "id": "AXFRA_pose_suspended_split_reach",
+      "name": "Suspended Split Reach",
+      "name_es": "Salto abierto con piernas separadas",
+      "category": "pose",
+      "path": "json/axfra_pose_suspended_split_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_suspended_split_reach.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_suspended_split_reach.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
+    },
+    {
+      "id": "AXFRA_pose_hanging_arch_reach",
+      "name": "Hanging Arch Reach",
+      "name_es": "Suspendido de ambas manos, cuerpo arqueado",
+      "category": "pose",
+      "path": "json/axfra_pose_hanging_arch_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_hanging_arch_reach.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_hanging_arch_reach.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
     }
-  ]
+  ],
+  "pose_taxonomy": {
+    "version": "1.0",
+    "categories": [
+      {
+        "id": "standing",
+        "label": "De pie",
+        "count": 37
+      },
+      {
+        "id": "sitting",
+        "label": "Sentado",
+        "count": 30
+      },
+      {
+        "id": "kneeling",
+        "label": "De rodillas",
+        "count": 6
+      },
+      {
+        "id": "squatting",
+        "label": "Cuclillas",
+        "count": 9
+      },
+      {
+        "id": "lying",
+        "label": "Acostado",
+        "count": 6
+      },
+      {
+        "id": "reclining",
+        "label": "Reclinado",
+        "count": 5
+      },
+      {
+        "id": "bending",
+        "label": "Inclinado",
+        "count": 8
+      },
+      {
+        "id": "all_fours",
+        "label": "Cuatro apoyos",
+        "count": 4
+      },
+      {
+        "id": "dynamic",
+        "label": "Movimiento",
+        "count": 17
+      },
+      {
+        "id": "suspended",
+        "label": "Suspendido",
+        "count": 5
+      }
+    ]
+  }
 }

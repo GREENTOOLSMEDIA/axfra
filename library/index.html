@@ -316,6 +316,7 @@ function displayName(f){
   if(!isPose(f))return f.name_es||f.name||f.id||f.path;
   const key=String(f.id||'').toLowerCase();
   const pathKey=(f.path||'').split('/').pop().replace(/\.json$/i,'').toLowerCase();
+  if(f.pose_category_es){const raw=(POSE_LABELS[key]||POSE_LABELS[pathKey]||f.name_es||f.name||f.id||'').replace(/^[^:]+:\s*/, '');return f.pose_category_es+': '+raw;}
   if(POSE_LABELS[key]||POSE_LABELS[pathKey])return POSE_LABELS[key]||POSE_LABELS[pathKey];
   const label=f.name_es||f.name||f.id||f.path;
   const hint=[f.id,f.name_es,f.name,f.subcategory].join(' ').toLowerCase();
@@ -357,8 +358,10 @@ function renderCategories(){
         if(c.id==='poses'&&groupFilter===g.id&&subgroupFilter==='poses'){
           const poses=index.files.filter(isPose);
           const counts=new Map();
-          poses.forEach(f=>{const key=displayName(f).split(':')[0];counts.set(key,(counts.get(key)||0)+1)});
-          const options=[[null,'Todas las poses',poses.length],...Array.from(counts).sort((a,b)=>a[0].localeCompare(b[0],'es')).map(([key,n])=>[key,key,n])];
+          poses.forEach(f=>{const key=f.pose_category||'standing';counts.set(key,(counts.get(key)||0)+1)});
+          const labels=Object.fromEntries((index.pose_taxonomy?.categories||[]).map(c=>[c.id,c.label]));
+          const order=(index.pose_taxonomy?.categories||[]).map(c=>c.id);
+          const options=[[null,'Todas las poses',poses.length],...Array.from(counts).sort((a,b)=>order.indexOf(a[0])-order.indexOf(b[0])).map(([key,n])=>[key,labels[key]||key,n])];
           options.forEach(([key,label,total])=>{
             const sub=document.createElement('button');sub.type='button';
             sub.className='cat child pose-sub'+(poseFilter===key?' active':'');
@@ -379,7 +382,7 @@ function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
   const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
     (!subgroupFilter||hasSubgroup(f,subgroupFilter))&&
-    (!poseFilter||(isPose(f)&&displayName(f).split(':')[0]===poseFilter))&&
+    (!poseFilter||(isPose(f)&&(f.pose_category||'standing')===poseFilter))&&
     [displayName(f),f.name,f.name_es,f.id,f.path].some(x=>String(x||'').toLocaleLowerCase().includes(q)));
   // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
   if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
