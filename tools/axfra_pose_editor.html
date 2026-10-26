@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#000000">
 <title>AXFRA Pose Editor · Alfa</title>
 <meta name="description" content="Editor 3D de poses AXFRA. Ajusta poses de la biblioteca y exporta JSON paramétrico limpio.">
-<link rel="canonical" href="https://axfra.com/pose-editor.html">
-<link href="shared-layout.css" rel="stylesheet">
+<link rel="canonical" href="https://axfra.com/tools/axfra_pose_editor.html">
+<link href="/shared-layout.css" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg:#000;--panel:#111519;--line:#303a3c;--text:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8}
 *{box-sizing:border-box}
@@ -37,12 +37,28 @@ small,.hint{color:var(--muted);font-size:12px;line-height:1.55}
 a{color:var(--accent)}
 @media(max-width:980px){main.editor{grid-template-columns:1fr}aside{border-left:0;border-top:1px solid var(--line)}.controls{grid-template-columns:1fr 1fr}canvas{height:52vh}textarea{min-height:320px}}
 button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent)}
+.toolbars{display:none}.tool-bar-link{color:var(--accent)}.tool-var{font-weight:700}
+.toolbar-unused{display:none}.tool-meta{color:var(--muted)}
+.tool-nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.toolbar-placeholder{display:none}
+.toolbar-helper{display:none}
+.tool-strip{display:none}
+.tool-note{color:var(--muted)}
+.tool-header{display:none}
+.tool-intro{display:none}
+.toolbar{padding:13px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;background:#0b1013;font-size:12px}
+.toolbar a{text-decoration:none;color:var(--accent)}
+.toolbar span{font-weight:750;letter-spacing:.06em}.toolbar small{color:var(--muted);font-weight:400}
+.preview-notice{margin:4px 0 14px;padding:10px;background:#111a1c;border:1px solid #344344;color:#b9cbca;font-size:11px;line-height:1.55}
+.preview-notice[data-level="warning"]{border-color:#80694c;color:#ead4af}
+.preview-notice[data-level="exact"]{border-color:#587866}
 </style>
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
 
+<div class="toolbar"><a href="/tools/">← Herramientas AXFRA</a><span>Pose Editor <small>· Alfa</small></span></div>
 <main id="contenido" class="editor">
 <section class="stage">
 <canvas id="canvas" aria-label="Esqueleto 3D editable"></canvas>
@@ -72,6 +88,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 <input id="search" type="search" placeholder="Buscar por nombre o ID" aria-label="Buscar poses">
 <select id="catalog" aria-label="Catálogo de poses" size="8" style="height:auto;margin-bottom:10px"></select>
 <div id="status" role="status">Cargando catálogo…</div>
+<p id="previewNotice" class="preview-notice" role="note">La vista 3D es una interpretación aproximada cuando el archivo original contiene solo texto. Los detalles no reconocidos no pueden reconstruirse automáticamente.</p>
 
 <h2>Importar archivo JSON</h2>
 <input id="file" type="file" accept=".json,application/json" aria-label="Archivo JSON">
@@ -89,7 +106,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 </main>
 
 <div id="globalFooter"></div>
-<script defer src="shared-layout.js"></script>
+<script defer src="/shared-layout.js"></script>
 
 <script>
 'use strict';
@@ -155,7 +172,8 @@ function parametricPose(){
 function serialize(){
   if(geometryActive){
     const meta = {...(doc?.meta||{}), developer:'ALARSI', developer_site:'https://alarsi.com', brand:'AXFRA', brand_site:'https://axfra.com', system:'AXFRA JSON prompt system'};
-    doc = {id:'AXFRA_pose_edited', name:'Edited Pose', name_es:'Pose editada', meta, ...parametricPose()};
+    const sourceId=doc?.source_pose_id || doc?.id || 'AXFRA_pose_edited';
+    doc = {id: sourceId, name:doc?.name||'Edited Pose',name_es:doc?.name_es||'Pose editada', meta, ...parametricPose()};
   }
   lastText = JSON.stringify(doc, null, 2);
   $('json').value = lastText;
@@ -185,21 +203,113 @@ $('fit').onclick=()=>{if(!ready())return;checkpoint();const pp=pose.map(toWorld)
 $('usePreset').onclick=()=>{if(!ready())return;checkpoint();pose=template($('preset').value);selected=-1;changed();status('Plantilla aplicada.');};
 $('undo').onclick=()=>{if(!ready()||!history.length)return;const h=history.pop();pose=h.pose;view=h.view;doc=h.doc;geometryActive=h.geometryActive;selected=-1;serialize();sync();draw();};
 function textOf(x){return JSON.stringify(x).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[_-]/g,' ');}
-function interpret(data){const t=textOf(data);let type=null,hits=[];if(/all fours|cuatro apoyos|a cuatro patas|quadruped/.test(t))type='all_fours';else if(/kneel|arrodill/.test(t))type='kneeling';else if(/seated|sitting|sentad/.test(t))type='seated';else if(/contrapposto/.test(t))type='contrapposto';else if(/arms up|arms raised|brazos arriba|brazos elevados/.test(t))type='arms_up';else if(/standing|de pie|erguid/.test(t))type='standing';if(!type)return null;const p=template(type),v={...defaults};hits.push(type);
-if(/rear three quarter|tres cuartos desde atras|tres cuartos posterior/.test(t)){v.azimuth=135;hits.push('cámara trasera ¾');}else if(/rear view|from behind|desde atras|vista posterior/.test(t)){v.azimuth=180;hits.push('cámara posterior');}else if(/profile|perfil|side view/.test(t)){v.azimuth=90;hits.push('cámara lateral');}else if(/three quarter|tres cuartos|3\/4/.test(t)){v.azimuth=45;hits.push('cámara ¾');}
-if(/low angle|contrapicado|mas baja|altura de cadera/.test(t)){v.elevation=-12;hits.push('cámara baja');}else if(/high angle|picado|desde arriba/.test(t)){v.elevation=35;hits.push('cámara alta');}
-return {p,v,hits};}
+function approximateJointPose(data){
+ const t=textOf(data), raw=JSON.stringify(data).toLowerCase();
+ const has=r=>r.test(t),hits=[];
+ const types=[
+  ['all_fours',/all fours|cuatro apoyos|a cuatro patas|quadruped/],
+  ['prone',/prone|boca abajo|on stomach/],
+  ['supine',/supine|boca arriba|on back|lying on the back/],
+  ['reclined',/reclined|reclining|recostad/],
+  ['low_squat',/squat|cuclillas|crouch|agachad/],
+  ['kneeling',/kneel|arrodill/],
+  ['seated',/seated|sitting|sentad|sit |stool|taburete/],
+  ['contrapposto',/contrapposto|curva en s|s curve/],
+  ['standing',/standing|de pie|erguid|stance|postura inicial/],
+  ['arms_up',/arms up|arms raised|brazos arriba|brazos elevados/]
+ ];
+ let type=types.find(([k,r])=>r.test(t))?.[0];
+ if(!type&&data?.pose_type){type=/squat|crouch/i.test(data.pose_type)?'low_squat':/sit/i.test(data.pose_type)?'seated':/kneel/i.test(data.pose_type)?'kneeling':data.pose_type;}
+ if(!type)return null;
+ let p=template(['prone','supine','reclined','low_squat'].includes(type)?'standing':type),v={...defaults};hits.push(type);
+ const use=(r,f,n)=>{if(has(r)){f();hits.push(n);return true;}return false;};
+ if(type==='low_squat'){
+  p=template('standing');for(let i=0;i<10;i++)p[i][1]-=.78;p[16][1]-=.78;
+  p[0][1]=.38;p[10]=[-.25,.36,0];p[13]=[.25,.36,0];p[11]=[-.44,.23,.34];p[14]=[.44,.23,.34];p[12]=[-.45,.04,.20];p[15]=[.45,.04,.20];
+ }
+ if(type==='prone'||type==='supine'||type==='reclined'){
+  const back=type!=='prone',yy=back?.22:.18;
+  p[0]=[0,yy,-.05];p[1]=[0,yy, .23];p[2]=[0,yy,.53];p[3]=[0,yy,.74];p[16]=[0,back?yy+.09:yy-.09,.87];
+  p[4]=[-.22,yy,.49];p[5]=[-.40,yy,.30];p[6]=[-.42,yy,.05];p[7]=[.22,yy,.49];p[8]=[.40,yy,.30];p[9]=[.42,yy,.05];
+  p[10]=[-.14,yy,-.14];p[13]=[.14,yy,-.14];p[11]=[-.16,yy,-.60];p[14]=[.16,yy,-.60];p[12]=[-.16,yy,-1.02];p[15]=[.16,yy,-1.02];
+  v.azimuth=0;v.elevation=55;v.distance=4.6;v.targetY=.2;
+  if(type==='reclined'){p[1][1]=.42;p[2][1]=.68;p[3][1]=.81;p[16][1]=.84;}
+ }
+ // Position and gesture modifiers, resolved against the chosen family.
+ use(/wide (knees|legs)|knees wide|legs wide|piernas abiertas|rodillas (separadas|abiertas)|open v|wide v|spread knees|cuclillas bajas/,()=>{
+  for(const i of [10,11,12])p[i][0]-=.19;for(const i of [13,14,15])p[i][0]+=.19;
+ },'piernas separadas');
+ use(/knees together|rodillas juntas|close knees/,()=>{p[11][0]=-.06;p[14][0]=.06;},'rodillas juntas');
+ use(/knees up|raised knees|rodillas elevadas|rodilla elevada|raised knee/,()=>{
+  if(type==='seated'){p[11][1]=.8;p[14][1]=.8;p[12][1]=.06;p[15][1]=.06;}
+  else if(type==='standing'||type==='contrapposto'){p[14]=[.26,.91,.38];p[15]=[.32,.52,.43];}
+  else if(type==='supine'){p[11][1]=.70;p[14][1]=.70;p[12][1]=.2;p[15][1]=.2;}
+ },'rodillas elevadas');
+ use(/one knee|single knee|rodilla izquierda elevada|left knee raised/,()=>{p[14][1]+=.18;p[14][2]+=.25;},'rodilla izquierda');
+ use(/feet behind|pies hacia atras|feet back/,()=>{p[12][2]-=.65;p[15][2]-=.65;},'pies atrás');
+ use(/feet forward|feet planted|pies adelante|feet in front/,()=>{p[12][2]+=.24;p[15][2]+=.24;},'pies adelante');
+ use(/crossed legs|legs crossed|piernas cruzadas|cross legged/,()=>{p[12][0]=.22;p[15][0]=-.22;},'piernas cruzadas');
+ use(/forward lean|leaning forward|inclina.*adelante|inclinacion hacia delante|bend forward|hip hinge/,()=>{for(const i of [1,2,3,16,4,5,6,7,8,9])p[i][2]+=.28;},'torso adelante');
+ use(/back lean|leaning backward|inclinacion hacia atras|back arch|espalda arqueada/,()=>{for(const i of [1,2,3,16,4,5,6,7,8,9])p[i][2]-=.26;},'torso atrás');
+ use(/hands on hips|manos en (la )?(cintura|cadera)/,()=>{p[5]=[-.34,1.17,.1];p[6]=[-.17,.94,.17];p[8]=[.34,1.17,.1];p[9]=[.17,.94,.17];},'manos en cintura');
+ use(/hands behind head|manos detras de la cabeza/,()=>{p[5]=[-.37,1.75,0];p[6]=[-.12,1.73,-.09];p[8]=[.37,1.75,0];p[9]=[.12,1.73,-.09];},'manos tras cabeza');
+ use(/arms crossed|brazos cruzados|crossed forearms/,()=>{p[5]=[-.22,p[1][1]+.05,.27];p[6]=[.22,p[1][1]+.10,.32];p[8]=[.22,p[1][1]+.05,.27];p[9]=[-.22,p[1][1]+.10,.32];},'brazos cruzados');
+ use(/arms up|arms raised|brazos (arriba|elevados)|victory|brazos en y|high v|arms in y/,()=>{p[5]=[-.40,p[2][1]+.20,0];p[6]=[-.64,p[2][1]+.48,0];p[8]=[.40,p[2][1]+.20,0];p[9]=[.64,p[2][1]+.48,0];},'brazos elevados');
+ use(/one arm (raised|up)|raised arm|brazo elevado|saludo con brazo/,()=>{p[8]=[.37,p[2][1]+.14,0];p[9]=[.44,p[2][1]+.47,0];},'brazo elevado');
+ use(/reaching|extended arm|brazo extendido|senaland|pointing|palma abierta/,()=>{p[8]=[.23,p[1][1]+.06,.33];p[9]=[.24,p[1][1]+.10,.85];},'brazo adelante');
+ use(/chin (resting|on)|menton (apoyado|sobre)|manos bajo el menton/,()=>{p[5]=[-.25,p[2][1]-.09,.19];p[6]=[-.08,p[3][1]-.16,.19];p[8]=[.25,p[2][1]-.09,.19];p[9]=[.08,p[3][1]-.16,.19];},'manos bajo mentón');
+ use(/look up|mirando hacia arriba|looking upward/,()=>{p[16][1]+=.10;},'mirada arriba');
+ const camera=data.camera||data.camera_and_style_block||{};
+ if(typeof camera.azimuth_deg==='number')v.azimuth=camera.azimuth_deg;
+ else if(typeof camera.relative_azimuth_corrected==='number')v.azimuth=-camera.relative_azimuth_corrected;
+ else if(typeof camera.view==='string'){
+  const cv=camera.view.toLowerCase();v.azimuth=cv.includes('rear')?180:cv.includes('profile')?90:cv.includes('quarter')?45:0;
+ }else if(!use(/rear three quarter|tres cuartos desde atras|tres cuartos posterior|rear three quarter/,()=>v.azimuth=135,'cámara ¾ posterior') &&
+  !use(/rear view|from behind|desde atras|vista posterior|vista trasera/,()=>v.azimuth=180,'cámara posterior') &&
+  !use(/side profile|profile|perfil|side view|vista lateral/,()=>v.azimuth=90,'cámara lateral')){
+    use(/three quarter|tres cuartos|3\/4/,()=>v.azimuth=45,'cámara ¾');
+ }
+ if(typeof camera.elevation_deg==='number')v.elevation=camera.elevation_deg;
+ else if(!use(/low angle|contrapicado|camara baja|altura de cadera/,()=>v.elevation=-15,'cámara baja'))use(/high angle|picado|desde arriba|overhead|cenital/,()=>v.elevation=60,'cámara alta');
+ return {p,v,hits};
+}
+function interpret(data){return approximateJointPose(data);}
 function validateObject(x){if(!x||typeof x!=='object'||Array.isArray(x))throw Error('El JSON debe ser un objeto.');}
-function importData(data,name){validateObject(data);let p,v,active=false,message;const s=data.axfra_pose_editor;
-if(s?.space==='3d'){if(!Array.isArray(s.joints)||s.joints.length!==names.length)throw Error('Esqueleto 3D incompatible.');p=clone(s.joints);v={...defaults,...s.view};active=true;message='Pose 3D recuperada.';
-}else{const result=interpret(data);if(result){p=result.p;v=result.v;active=true;message='Interpretación por reglas: '+result.hits.join(' · ')+'.';}else{p=template('standing');v={...defaults};message='No se interpretó. Referencia neutra.';}}
-checkpoint();doc=data;pose=p;view=v;geometryActive=active;filename=name||filename;selected=-1;serialize();sync();draw();status(message);}
+function previewLevel(level,detail){const el=$('previewNotice');el.dataset.level=level;el.textContent=detail;}
+function importData(data,name){
+ validateObject(data);let p,v,active=false,message,level='warning';const state=data.axfra_pose_editor;
+ if(state?.space==='3d'){
+  if(!Array.isArray(state.joints)||state.joints.length!==names.length)throw Error('Esqueleto 3D incompatible.');
+  p=clone(state.joints);v={...defaults,...state.view};active=false;level='exact';message='Proyecto 3D recuperado: articulaciones exactas.';
+ }else{
+  const result=interpret(data);
+  if(result){p=result.p;v=result.v;message='Vista aproximada: '+result.hits.join(' · ')+'.';}
+  else{p=template('standing');v={...defaults};message='Sin equivalencia 3D automática: se muestra una figura neutra, NO la pose del archivo.';}
+ }
+ checkpoint();doc=data;pose=p;view=v;geometryActive=active;filename=name||filename;selected=-1;
+ // Preserve the original imported JSON until the first edit.
+ lastText=JSON.stringify(doc,null,2);$('json').value=lastText;
+ sync();draw();status(message);
+ previewLevel(level,level==='exact'?'Visualización exacta del proyecto AXFRA guardado. Al editar se exportará la pose paramétrica.':
+  (message.startsWith('Sin equivalencia')?'La figura neutra NO representa esta pose. Para una representación exacta, importa un proyecto 3D guardado.':'Interpretación aproximada del texto: revisa el dibujo y ajusta articulaciones. El JSON importado se conserva hasta que edites.'));
+}
 $('apply').onclick=()=>{try{importData(JSON.parse($('json').value));}catch(e){status('No se aplicó: '+e.message);}};
 async function getJSON(url){const u=new URL(url,'https://axfra.com/library/');if(!['http:','https:'].includes(u.protocol))throw Error('URL inválida.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);try{const r=await fetch(u,{signal:controller.signal});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}finally{clearTimeout(timer);}}
-function renderFiles(){const q=$('search').value.toLowerCase();filtered=files.filter(f=>[f.name,f.name_es,f.id,f.path].join(' ').toLowerCase().includes(q));$('catalog').replaceChildren();filtered.forEach((f,i)=>{const o=document.createElement('option');o.value=i;o.textContent=f.name_es||f.name||f.id;$('catalog').append(o);});}
-$('search').oninput=renderFiles;
+function renderFiles(){const q=$('search').value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');filtered=files.filter(f=>[f.name,f.name_es,f.id,f.path].join(' ').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(q));$('catalog').replaceChildren();filtered.forEach((f,i)=>{const o=document.createElement('option');o.value=i;o.textContent=f.name_es||f.name||f.id||f.path;$('catalog').append(o);});}
+$('search').oninput=()=>{++catalogRequest;renderFiles();};
 async function loadCatalog(){try{const x=await getJSON('https://axfra.com/library/axfra_json_library_index.json');if(!Array.isArray(x.files))throw Error('Índice inválido');files=x.files.filter(f=>f.category==='pose'||f.subgroup==='poses'||/axfra_pose_/i.test(f.id||''));renderFiles();status(files.length+' poses disponibles. Selecciona una.');}catch(e){status('No se cargó el catálogo: '+e.message);}}
-$('catalog').onchange=async()=>{const f=filtered[$('catalog').value];if(!f)return;status('Cargando…');try{const data=await getJSON(f.url||new URL(f.path,'https://axfra.com/library/').href);importData(data,f.id||'pose.json');}catch(e){status('Error al cargar: '+e.message);}};
+let catalogRequest=0;
+async function selectCatalogPose(){
+ const f=filtered[$('catalog').value];if(!f)return;
+ const request=++catalogRequest;status('Cargando «'+(f.name_es||f.id||'pose')+'»…');
+ try{
+  const data=await getJSON(f.url||new URL(f.path,'https://axfra.com/library/').href);
+  if(request!==catalogRequest)return;
+  importData(data,f.id||'pose.json');
+ }catch(e){if(request===catalogRequest)status('Error al cargar: '+e.message);}
+}
+$('catalog').onchange=selectCatalogPose;
+$('catalog').ondblclick=selectCatalogPose;
 $('file').onchange=async e=>{const f=e.target.files[0];if(!f||!ready())return;try{const x=JSON.parse(await f.text());if(ready())importData(x,f.name);}catch(e){status('No se pudo importar: '+e.message);}finally{$('file').value='';}};
 $('copy').onclick=async()=>{try{validateObject(JSON.parse($('json').value));await navigator.clipboard.writeText($('json').value);status('JSON copiado.');}catch(e){$('json').focus();$('json').select();status('Seleccionado: copia con Ctrl/Cmd+C.');}};
 $('download').onclick=()=>{try{const x=JSON.parse($('json').value);validateObject(x);saveJSON(x,'axfra_pose_parametric.json');status('Exportado.');}catch(e){status('No se puede exportar: '+e.message);}};
