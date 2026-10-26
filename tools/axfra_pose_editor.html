@@ -169,12 +169,14 @@ function parametricPose(){
 
 function serialize(){
   if(geometryActive){
-    const meta = {...(doc?.meta||{}), developer:'ALARSI', developer_site:'https://alarsi.com', brand:'AXFRA', brand_site:'https://axfra.com', system:'AXFRA JSON prompt system'};
-    const sourceId=doc?.source_pose_id || doc?.id || 'AXFRA_pose_edited';
-    doc = {id: sourceId, name:doc?.name||'Edited Pose',name_es:doc?.name_es||'Pose editada', meta, ...parametricPose()};
+    const meta={...(doc?.meta||{}),developer:'ALARSI',developer_site:'https://alarsi.com',brand:'AXFRA',brand_site:'https://axfra.com',system:'AXFRA JSON prompt system'};
+    // Retain original content, ID, descriptions, and camera-neutral geometry.
+    doc={...doc,meta,...parametricPose()};
+    doc.axfra_pose_editor={...(doc.axfra_pose_editor||{}),version:'3.3-lab',space:'3d',joint_names:names,joints:clone(pose),view:{...view},camera_independent:true};
+    // Camera settings should live in one current place, not in a source narrative.
   }
-  lastText = JSON.stringify(doc, null, 2);
-  $('json').value = lastText;
+  lastText=JSON.stringify(doc,null,2);
+  $('json').value=lastText;
 }
 function saveJSON(data,name){const u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'})),a=document.createElement('a');a.href=u;a.download=name.replace(/[^a-zA-Z0-9_.-]/g,'_');a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);}
 function changed(){geometryActive=true;serialize();sync();draw();}
@@ -279,8 +281,8 @@ function validateObject(x){if(!x||typeof x!=='object'||Array.isArray(x))throw Er
 function importData(data,name){
  validateObject(data);let p,v,active=false,message,level='warning';const state=data.axfra_pose_editor;
  if(state?.space==='3d'){
-  if(!Array.isArray(state.joints)||state.joints.length!==names.length)throw Error('Esqueleto 3D incompatible.');
-  p=clone(state.joints);v={...defaults,...state.view};active=false;level='exact';message='Proyecto 3D recuperado: articulaciones exactas.';
+  if(!Array.isArray(state.joints)||state.joints.length!==names.length||!state.joints.every(p=>Array.isArray(p)&&p.length===3&&p.every(Number.isFinite)))throw Error('Esqueleto 3D incompatible.');
+  p=clone(state.joints);v={...defaults,...state.view};active=false;level='exact';message=state.calibration==='thumbnail_guided_approximation'?'Geometría de referencia cargada.':'Proyecto 3D recuperado.';
  }else{
   const result=interpret(data);
   if(result){p=result.p;v=result.v;message='Vista aproximada: '+result.hits.join(' · ')+'.'+(data.normalization?.stage==='review_required'?' · Pendiente de revisión manual.':'');}
