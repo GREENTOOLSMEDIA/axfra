@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 470,
+  "total_json": 471,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 32,
-    "wardrobe": 196
+    "wardrobe": 197
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 196,
+      "count": 197,
       "children": [
         {
           "id": "tops",
@@ -104,7 +104,7 @@
         {
           "id": "costumes",
           "label": "Disfraces y trajes",
-          "count": 3
+          "count": 4
         }
       ]
     },
@@ -5730,6 +5730,17 @@
       "subgroups": [
         "costumes"
       ]
+    },
+    {
+      "id": "AXFRA_wardrobe_costume_cybernetic_white_oracle",
+      "name": "White Cybernetic Oracle Costume",
+      "name_es": "Disfraz de oráculo cibernético blanco",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_costume_cybernetic_white_oracle.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_costume_cybernetic_white_oracle.json",
+      "group": "wardrobe",
+      "subgroup": "costumes",
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_costume_cybernetic_white_oracle.jpg"
     },
     {
       "id": "AXFRA_wardrobe_costume_fantasy_shell",
