@@ -8,7 +8,7 @@
     "system": "AXFRA JSON prompt system"
   },
   "base_url": "https://axfra.com/library/",
-  "total_json": 468,
+  "total_json": 470,
   "categories": {
     "appearance": 10,
     "camera": 9,
@@ -23,13 +23,13 @@
     "rotation": 1,
     "sports_uniform": 1,
     "style": 32,
-    "wardrobe": 194
+    "wardrobe": 196
   },
   "groups": [
     {
       "id": "wardrobe",
       "label": "Vestuario y accesorios",
-      "count": 194,
+      "count": 196,
       "children": [
         {
           "id": "tops",
@@ -94,7 +94,7 @@
         {
           "id": "looks",
           "label": "Looks y conjuntos",
-          "count": 136
+          "count": 137
         },
         {
           "id": "stage",
@@ -104,7 +104,7 @@
         {
           "id": "costumes",
           "label": "Disfraces y trajes",
-          "count": 2
+          "count": 3
         }
       ]
     },
@@ -3616,6 +3616,32 @@
       "subgroup": "dummies"
     },
     {
+      "id": "AXFRA_pose_all_fours_forearms",
+      "name": "All Fours Forearms",
+      "name_es": "Antebrazos y rodillas como puntos de apoyo",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_forearms.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_forearms.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
+      "id": "AXFRA_pose_all_fours_neutral",
+      "name": "All Fours Neutral",
+      "name_es": "Cuatro apoyos simétricos",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_neutral.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_neutral.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
       "id": "AXFRA_pose_all_fours_rear_three_quarter",
       "name": "All Fours Rear Three Quarter",
       "name_es": "All Fours Rear Three Quarter",
@@ -3623,6 +3649,19 @@
       "path": "json/axfra_pose_all_fours_rear_three_quarter.json",
       "url": "https://axfra.com/library/json/axfra_pose_all_fours_rear_three_quarter.json",
       "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_rear_three_quarter.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "all_fours",
+      "pose_category_es": "Cuatro apoyos"
+    },
+    {
+      "id": "AXFRA_pose_all_fours_three_point_reach",
+      "name": "All Fours Three Point Reach",
+      "name_es": "Tres apoyos, brazo extendido",
+      "category": "pose",
+      "path": "json/axfra_pose_all_fours_three_point_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_all_fours_three_point_reach.json",
+      "thumb": null,
       "group": "composition",
       "subgroup": "poses",
       "pose_category": "all_fours",
@@ -3666,6 +3705,19 @@
       "subgroup": "poses",
       "pose_category": "dynamic",
       "pose_category_es": "Movimiento"
+    },
+    {
+      "id": "AXFRA_pose_chaise_longue_full_recline",
+      "name": "Chaise Longue Full Recline",
+      "name_es": "Reclinado largo sobre superficie inclinada",
+      "category": "pose",
+      "path": "json/axfra_pose_chaise_longue_full_recline.json",
+      "url": "https://axfra.com/library/json/axfra_pose_chaise_longue_full_recline.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
     },
     {
       "id": "AXFRA_pose_chest_pop_and_head_tilt",
@@ -4019,6 +4071,19 @@
       "pose_category_es": "Cuclillas"
     },
     {
+      "id": "AXFRA_pose_hanging_arch_reach",
+      "name": "Hanging Arch Reach",
+      "name_es": "Suspendido de ambas manos, cuerpo arqueado",
+      "category": "pose",
+      "path": "json/axfra_pose_hanging_arch_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_hanging_arch_reach.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
+    },
+    {
       "id": "AXFRA_pose_heroic_ground_level_stance",
       "name": "Heroic Ground-Level Stance",
       "name_es": "Postura heroica a ras de suelo",
@@ -4069,6 +4134,45 @@
       "subgroup": "poses",
       "pose_category": "suspended",
       "pose_category_es": "Suspendido"
+    },
+    {
+      "id": "AXFRA_pose_kneeling_forward_hands_on_floor",
+      "name": "Kneeling Forward Hands On Floor",
+      "name_es": "De rodillas, torso adelante, manos al suelo",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_forward_hands_on_floor.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_forward_hands_on_floor.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_forward_hands_on_floor.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
+    },
+    {
+      "id": "AXFRA_pose_kneeling_one_knee",
+      "name": "Kneeling One Knee",
+      "name_es": "Una rodilla apoyada, pierna contraria adelantada",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_one_knee.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_one_knee.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_one_knee.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
+    },
+    {
+      "id": "AXFRA_pose_kneeling_upright_hands_on_thighs",
+      "name": "Kneeling Upright Hands On Thighs",
+      "name_es": "De rodillas, erguido, manos sobre muslos",
+      "category": "pose",
+      "path": "json/axfra_pose_kneeling_upright_hands_on_thighs.json",
+      "url": "https://axfra.com/library/json/axfra_pose_kneeling_upright_hands_on_thighs.json",
+      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_upright_hands_on_thighs.jpg",
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "kneeling",
+      "pose_category_es": "De rodillas"
     },
     {
       "id": "AXFRA_pose_knees_together_inverted_v_shins",
@@ -4500,6 +4604,19 @@
       "pose_category_es": "De pie"
     },
     {
+      "id": "AXFRA_pose_reclined_floor_on_elbows",
+      "name": "Reclined Floor On Elbows",
+      "name_es": "Semirreclinado en suelo sobre ambos codos",
+      "category": "pose",
+      "path": "json/axfra_pose_reclined_floor_on_elbows.json",
+      "url": "https://axfra.com/library/json/axfra_pose_reclined_floor_on_elbows.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
+    },
+    {
       "id": "AXFRA_pose_reclining_on_window_ledge",
       "name": "Reclining On Window Ledge",
       "name_es": "Reclining On Window Ledge",
@@ -4773,6 +4890,19 @@
       "pose_category_es": "De rodillas"
     },
     {
+      "id": "AXFRA_pose_side_recline_propped_elbow",
+      "name": "Side Recline Propped Elbow",
+      "name_es": "Reclinado lateral apoyado sobre un codo",
+      "category": "pose",
+      "path": "json/axfra_pose_side_recline_propped_elbow.json",
+      "url": "https://axfra.com/library/json/axfra_pose_side_recline_propped_elbow.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "reclining",
+      "pose_category_es": "Reclinado"
+    },
+    {
       "id": "AXFRA_pose_side_sit",
       "name": "Side Sit",
       "name_es": "Side Sit",
@@ -5005,6 +5135,32 @@
       "subgroup": "poses",
       "pose_category": "lying",
       "pose_category_es": "Acostado"
+    },
+    {
+      "id": "AXFRA_pose_suspended_split_reach",
+      "name": "Suspended Split Reach",
+      "name_es": "Salto abierto con piernas separadas",
+      "category": "pose",
+      "path": "json/axfra_pose_suspended_split_reach.json",
+      "url": "https://axfra.com/library/json/axfra_pose_suspended_split_reach.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
+    },
+    {
+      "id": "AXFRA_pose_suspended_tuck_jump",
+      "name": "Suspended Tuck Jump",
+      "name_es": "Salto agrupado con rodillas al pecho",
+      "category": "pose",
+      "path": "json/axfra_pose_suspended_tuck_jump.json",
+      "url": "https://axfra.com/library/json/axfra_pose_suspended_tuck_jump.json",
+      "thumb": null,
+      "group": "composition",
+      "subgroup": "poses",
+      "pose_category": "suspended",
+      "pose_category_es": "Suspendido"
     },
     {
       "id": "AXFRA_pose_top_down_twist",
@@ -5576,6 +5732,17 @@
       ]
     },
     {
+      "id": "AXFRA_wardrobe_costume_fantasy_shell",
+      "name": "Shell Armor Set",
+      "name_es": "Coraza de conchas",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_costume_fantasy_shell.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_costume_fantasy_shell.json",
+      "group": "wardrobe",
+      "subgroup": "costumes",
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_costume_fantasy_shell.jpg"
+    },
+    {
       "id": "dress.asymmetric",
       "name": "Asymmetric",
       "name_es": "Asimétrico",
@@ -5970,6 +6137,17 @@
       ]
     },
     {
+      "id": "AXFRA_wardrobe_look_black_lace_bustier_laceup_jeans",
+      "name": "Black Lace Bustier and Lace-Up Jeans",
+      "name_es": "Bustier de encaje negro y jeans con cordones",
+      "category": "wardrobe",
+      "path": "json/axfra_wardrobe_look_black_lace_bustier_laceup_jean.json",
+      "url": "https://axfra.com/library/json/axfra_wardrobe_look_black_lace_bustier_laceup_jean.json",
+      "group": "wardrobe",
+      "subgroup": "looks",
+      "thumb": "https://axfra.com/library/thumbs/axfra_wardrobe_look_black_lace_bustier_laceup_jean.jpg"
+    },
+    {
       "id": "AXFRA_wardrobe_look_black_pinstripe_blazer_bodysuit",
       "name": "Black Pinstripe Blazer Bodysuit",
       "name_es": "Body blazer negro diplomático",
@@ -6338,162 +6516,6 @@
         "shorts",
         "lingerie"
       ]
-    },
-    {
-      "id": "AXFRA_pose_kneeling_upright_hands_on_thighs",
-      "name": "Kneeling Upright Hands On Thighs",
-      "name_es": "De rodillas, erguido, manos sobre muslos",
-      "category": "pose",
-      "path": "json/axfra_pose_kneeling_upright_hands_on_thighs.json",
-      "url": "https://axfra.com/library/json/axfra_pose_kneeling_upright_hands_on_thighs.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_upright_hands_on_thighs.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "kneeling",
-      "pose_category_es": "De rodillas"
-    },
-    {
-      "id": "AXFRA_pose_kneeling_one_knee",
-      "name": "Kneeling One Knee",
-      "name_es": "Una rodilla apoyada, pierna contraria adelantada",
-      "category": "pose",
-      "path": "json/axfra_pose_kneeling_one_knee.json",
-      "url": "https://axfra.com/library/json/axfra_pose_kneeling_one_knee.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_one_knee.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "kneeling",
-      "pose_category_es": "De rodillas"
-    },
-    {
-      "id": "AXFRA_pose_kneeling_forward_hands_on_floor",
-      "name": "Kneeling Forward Hands On Floor",
-      "name_es": "De rodillas, torso adelante, manos al suelo",
-      "category": "pose",
-      "path": "json/axfra_pose_kneeling_forward_hands_on_floor.json",
-      "url": "https://axfra.com/library/json/axfra_pose_kneeling_forward_hands_on_floor.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_kneeling_forward_hands_on_floor.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "kneeling",
-      "pose_category_es": "De rodillas"
-    },
-    {
-      "id": "AXFRA_pose_reclined_floor_on_elbows",
-      "name": "Reclined Floor On Elbows",
-      "name_es": "Semirreclinado en suelo sobre ambos codos",
-      "category": "pose",
-      "path": "json/axfra_pose_reclined_floor_on_elbows.json",
-      "url": "https://axfra.com/library/json/axfra_pose_reclined_floor_on_elbows.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_reclined_floor_on_elbows.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "reclining",
-      "pose_category_es": "Reclinado"
-    },
-    {
-      "id": "AXFRA_pose_side_recline_propped_elbow",
-      "name": "Side Recline Propped Elbow",
-      "name_es": "Reclinado lateral apoyado sobre un codo",
-      "category": "pose",
-      "path": "json/axfra_pose_side_recline_propped_elbow.json",
-      "url": "https://axfra.com/library/json/axfra_pose_side_recline_propped_elbow.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_side_recline_propped_elbow.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "reclining",
-      "pose_category_es": "Reclinado"
-    },
-    {
-      "id": "AXFRA_pose_chaise_longue_full_recline",
-      "name": "Chaise Longue Full Recline",
-      "name_es": "Reclinado largo sobre superficie inclinada",
-      "category": "pose",
-      "path": "json/axfra_pose_chaise_longue_full_recline.json",
-      "url": "https://axfra.com/library/json/axfra_pose_chaise_longue_full_recline.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_chaise_longue_full_recline.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "reclining",
-      "pose_category_es": "Reclinado"
-    },
-    {
-      "id": "AXFRA_pose_all_fours_neutral",
-      "name": "All Fours Neutral",
-      "name_es": "Cuatro apoyos simétricos",
-      "category": "pose",
-      "path": "json/axfra_pose_all_fours_neutral.json",
-      "url": "https://axfra.com/library/json/axfra_pose_all_fours_neutral.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_neutral.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "all_fours",
-      "pose_category_es": "Cuatro apoyos"
-    },
-    {
-      "id": "AXFRA_pose_all_fours_forearms",
-      "name": "All Fours Forearms",
-      "name_es": "Antebrazos y rodillas como puntos de apoyo",
-      "category": "pose",
-      "path": "json/axfra_pose_all_fours_forearms.json",
-      "url": "https://axfra.com/library/json/axfra_pose_all_fours_forearms.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_forearms.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "all_fours",
-      "pose_category_es": "Cuatro apoyos"
-    },
-    {
-      "id": "AXFRA_pose_all_fours_three_point_reach",
-      "name": "All Fours Three Point Reach",
-      "name_es": "Tres apoyos, brazo extendido",
-      "category": "pose",
-      "path": "json/axfra_pose_all_fours_three_point_reach.json",
-      "url": "https://axfra.com/library/json/axfra_pose_all_fours_three_point_reach.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_all_fours_three_point_reach.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "all_fours",
-      "pose_category_es": "Cuatro apoyos"
-    },
-    {
-      "id": "AXFRA_pose_suspended_tuck_jump",
-      "name": "Suspended Tuck Jump",
-      "name_es": "Salto agrupado con rodillas al pecho",
-      "category": "pose",
-      "path": "json/axfra_pose_suspended_tuck_jump.json",
-      "url": "https://axfra.com/library/json/axfra_pose_suspended_tuck_jump.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_suspended_tuck_jump.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "suspended",
-      "pose_category_es": "Suspendido"
-    },
-    {
-      "id": "AXFRA_pose_suspended_split_reach",
-      "name": "Suspended Split Reach",
-      "name_es": "Salto abierto con piernas separadas",
-      "category": "pose",
-      "path": "json/axfra_pose_suspended_split_reach.json",
-      "url": "https://axfra.com/library/json/axfra_pose_suspended_split_reach.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_suspended_split_reach.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "suspended",
-      "pose_category_es": "Suspendido"
-    },
-    {
-      "id": "AXFRA_pose_hanging_arch_reach",
-      "name": "Hanging Arch Reach",
-      "name_es": "Suspendido de ambas manos, cuerpo arqueado",
-      "category": "pose",
-      "path": "json/axfra_pose_hanging_arch_reach.json",
-      "url": "https://axfra.com/library/json/axfra_pose_hanging_arch_reach.json",
-      "thumb": "https://axfra.com/library/thumbs/axfra_pose_hanging_arch_reach.jpg",
-      "group": "composition",
-      "subgroup": "poses",
-      "pose_category": "suspended",
-      "pose_category_es": "Suspendido"
     }
   ],
   "pose_taxonomy": {
