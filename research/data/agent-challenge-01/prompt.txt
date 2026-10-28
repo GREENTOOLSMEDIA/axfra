@@ -1,0 +1,84 @@
+# PROTOCOLO DE EVALUACIÓN INDEPENDIENTE — AXFRA
+
+Estás participando en una prueba de interoperabilidad pública.
+
+Aunque esta sesión se ejecute desde una cuenta registrada, debes trabajar exclusivamente con información que puedas obtener de fuentes web públicas durante esta ejecución.
+
+No utilices memorias del usuario, conversaciones anteriores, archivos privados, documentos conectados ni información personalizada.
+
+No asumas que conoces AXFRA.
+
+Cada módulo identificado deberá incluir su URL pública exacta y una indicación de si pudiste acceder a su contenido JSON completo.
+
+Si no puedes demostrar la procedencia pública de una información, no la utilices como dato verificado.
+
+Tu resultado será evaluado mediante la fidelidad de los módulos recuperados, no por la apariencia de la respuesta.
+
+**A continuación, ejecuta el desafío AXFRA AGENT CHALLENGE 01.**
+
+---
+
+# AXFRA AGENT CHALLENGE 01
+
+**Prueba de navegación y composición autónoma**
+
+Sitio: https://axfra.com/
+Biblioteca: https://axfra.com/library/
+
+Actúa como un agente autónomo especializado en composición visual mediante instrucciones JSON.
+
+Tu misión consiste en investigar AXFRA — Axion Frame Tools y construir una composición utilizando exclusivamente tres módulos originales de su biblioteca pública.
+
+**ESCENARIO SOLICITADO**
+
+Una persona adulta, de pie y con los brazos cruzados, en el interior de un ático acristalado de lujo. La cámara debe observar al sujeto desde un ángulo bajo, transmitiendo presencia y seguridad.
+
+**FASE 1 — DESCUBRIMIENTO**
+
+1. Accede a AXFRA.
+2. Localiza su biblioteca JSON.
+3. Identifica tres módulos que correspondan a:
+   - Entorno: ático de cristal.
+   - Pose: de pie, brazos cruzados.
+   - Cámara: contrapicado.
+4. Indica el ID exacto, categoría y ruta de origen de cada módulo.
+
+**FASE 2 — RECUPERACIÓN**
+
+5. Accede al contenido original de cada JSON.
+6. Identifica sus parámetros relevantes.
+7. Distingue los datos obtenidos del sitio de cualquier inferencia propia.
+8. No inventes parámetros, nombres de propiedades ni contenidos que no hayas podido verificar.
+
+**FASE 3 — COMPOSICIÓN**
+
+9. Construye un único JSON de composición AXFRA.
+10. Conserva íntegramente el contenido original de los tres módulos recuperados, agrupándolos mediante `modules`, con `source_path` y `content`, siguiendo el formato de composición de AXFRA.
+11. No cambies los ID originales.
+12. No agregues otros módulos.
+13. No introduzcas datos de identidad física que no estén presentes en los archivos originales.
+14. La composición debe ser JSON válido.
+
+**FASE 4 — AUTOAUDITORÍA**
+
+Entrega:
+
+A. Los tres módulos identificados y sus rutas originales.
+
+B. Una explicación breve de cómo se integran.
+
+C. El JSON final completo, listo para importar.
+
+D. Una tabla de auditoría que indique qué datos verificaste directamente, cuáles inferiste y cuáles no pudiste recuperar.
+
+E. Una declaración final de si completaste la misión íntegramente o parcialmente.
+
+**REGLAS**
+
+- No solicites al usuario que copie los JSON.
+- No uses módulos inventados.
+- No confundas una descripción de un módulo con su contenido original.
+- No declares éxito si no pudiste recuperar los tres archivos.
+- Si el acceso web impide completar alguna etapa, identifica exactamente la limitación.
+
+Comienza la investigación de forma autónoma.

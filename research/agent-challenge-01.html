@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#101114">
+<title>AXFRA Agent Challenge 01 — Tres agentes. Una biblioteca. Un mismo desafío.</title>
+<meta name="description" content="Estudio experimental AXFRA: ChatGPT, Gemini y Grok intentan descubrir y combinar tres módulos JSON públicos de forma autónoma. Metodología, prompt íntegro, respuestas documentales, imágenes y límites.">
+<meta name="description" content="Borrador de investigación pendiente de contraste y validación. No publicar ni enlazar sin revisión.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AXFRA Agent Challenge 01 — Tres agentes. Una biblioteca. Un mismo desafío.">
+<meta property="og:description" content="Un estudio exploratorio sobre descubrimiento, recuperación y composición de JSON por agentes de IA.">
+<meta property="og:url" content="https://axfra.com/research/agent-challenge-01.html">
+<meta property="og:image" content="https://axfra.com/research/assets/agent-challenge-chatgpt.jpg">
+<meta property="og:image:alt" content="Resultado visual experimental: figura de pie con brazos cruzados en un ático de Berlín de noche.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{color-scheme:dark;--bg:#101114;--panel:#191b1f;--panel2:#22252a;--fg:#f3f3ef;--muted:#a4a8ae;--soft:#777e87;--line:#35393f;--accent:#e2f181;--green:#9ed9aa;--amber:#edc78a;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:hover{color:var(--accent)}.shell{width:min(calc(100% - 48px),var(--max));margin:auto}.skip{position:absolute;left:-200vw;top:0;background:#fff;color:#000;padding:10px;z-index:20}.skip:focus{left:12px}.top{position:sticky;top:0;z-index:15;background:rgba(16,17,20,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.topline{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-size:27px;font-weight:900;letter-spacing:-.065em;text-decoration:none;line-height:1}.brand small{display:block;font-size:9px;font-weight:650;letter-spacing:.25em;color:var(--muted);margin-top:7px}.nav{display:flex;gap:17px;flex-wrap:wrap;justify-content:flex-end}.nav a{font-size:12px;font-weight:600;color:#c8cace;text-decoration:none}.nav a:hover{color:var(--fg)}.eyebrow{display:inline-flex;gap:11px;align-items:center;font-size:11px;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:var(--accent)}.eyebrow::before{content:"";width:18px;height:1px;background:var(--accent)}.hero{padding:112px 0 83px;border-bottom:1px solid var(--line)}.hero h1{font-size:clamp(52px,8vw,116px);letter-spacing:-.075em;line-height:.99;font-weight:760;max-width:1100px;margin:25px 0}.lede{font-size:clamp(19px,2.5vw,27px);line-height:1.43;max-width:830px;color:#d0d2d3;font-weight:350}.meta{display:flex;gap:13px 25px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:36px;text-transform:uppercase;letter-spacing:.07em}.chapter{padding:90px 0;border-bottom:1px solid var(--line)}.chapter-head{display:grid;grid-template-columns:200px 1fr;gap:38px;margin-bottom:35px}.chapter-index{font-size:11px;letter-spacing:.18em;color:var(--soft);text-transform:uppercase;padding-top:10px}.chapter h2{font-size:clamp(36px,5.1vw,68px);letter-spacing:-.059em;line-height:1.1;margin:0;font-weight:700}.intro{max-width:900px;font-size:19px;color:#ced0d2}.muted{color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stat{padding:28px;background:var(--panel);border:1px solid var(--line);min-height:185px}.stat strong{display:block;font-size:60px;line-height:1;letter-spacing:-.06em;font-weight:750}.stat span{font-size:13px;color:var(--muted);display:block;margin-top:18px}.method{counter-reset:step;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}.method article{background:var(--panel);border:1px solid var(--line);padding:27px;min-height:245px}.method article::before{counter-increment:step;content:"0" counter(step);color:var(--accent);font:700 12px/1 monospace;letter-spacing:.1em}.method h3{font-size:21px;letter-spacing:-.03em;margin:27px 0 7px}.method p{font-size:14px;color:var(--muted);margin:0}.tablewrap{overflow-x:auto;border:1px solid var(--line);margin-top:26px}table{width:100%;border-collapse:collapse;min-width:660px}th,td{text-align:left;padding:19px 20px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}th{font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;background:var(--panel)}tbody tr:last-child td{border-bottom:0}.score{font-size:28px;font-weight:800;letter-spacing:-.05em;white-space:nowrap}.ok{color:var(--green)}.partial{color:var(--amber)}.details{font-size:12px;color:var(--muted)}.visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}.visuals figure{margin:0}.visuals img{display:block;width:100%;height:auto;background:var(--panel);border:1px solid var(--line)}.visuals figcaption{font-size:13px;color:var(--muted);padding:14px 0}.visuals strong{color:var(--fg)}.note{padding:23px 28px;background:var(--panel);border-left:2px solid var(--accent);font-size:15px;color:#d2d3d5;margin-top:27px}.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.module{padding:23px;border:1px solid var(--line);background:var(--panel);min-width:0}.module h3{font-size:21px;margin:0 0 10px;letter-spacing:-.03em}.module code{display:block;overflow-wrap:anywhere;font-size:12px;color:var(--accent);margin-bottom:18px}.module a{font-size:13px;text-underline-offset:3px}.findings{display:grid;grid-template-columns:1fr 1fr;gap:26px}.findings article{border-top:1px solid var(--line);padding-top:20px}.findings h3{margin:0 0 9px;font-size:21px}.findings p{margin:0;color:var(--muted);font-size:15px}.quote{font-size:clamp(28px,4.6vw,52px);font-weight:650;letter-spacing:-.05em;line-height:1.16;max-width:940px;margin:30px 0}.buttonrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{padding:14px 19px;border:1px solid #8d9489;background:transparent;text-decoration:none;font-size:13px;font-weight:700;display:inline-block}.btn.primary{background:var(--accent);border-color:var(--accent);color:#151715}.btn.primary:hover{background:#f0f7b3}.btn:hover{border-color:var(--fg);color:var(--fg)}.fineprint{font-size:13px;max-width:940px;color:var(--muted)}footer{padding:46px 0 65px}.footerflex{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}.footerflex p{max-width:630px;color:var(--muted);font-size:12px;margin:0}.footerflex a{font-size:12px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:760px){.shell{width:min(calc(100% - 32px),var(--max))}.topline{padding:14px 0;display:block}.nav{justify-content:flex-start;gap:9px 14px;margin-top:17px}.hero{padding:75px 0 58px}.chapter{padding:62px 0}.chapter-head{grid-template-columns:1fr;gap:12px}.grid3,.method,.modules{grid-template-columns:1fr}.stat{min-height:auto}.visuals{grid-template-columns:1fr}.findings{grid-template-columns:1fr}.footerflex{display:block}.footerflex a{display:block;margin-top:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.documentary{max-width:1030px}.doc-item{border:1px solid var(--line);background:var(--panel);margin:14px 0}.doc-item summary{cursor:pointer;padding:21px 25px;font-weight:700;display:flex;justify-content:space-between;gap:18px}.doc-item summary span{color:var(--muted);font-size:12px;font-weight:400}.docbody{border-top:1px solid var(--line);padding:20px 25px}.rawtext{background:#111216;color:#e1e2df;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;max-height:690px;overflow:auto;padding:24px;border:1px solid #34383d}.downloadline{font-size:13px;margin:10px 0 22px;color:var(--muted)}.documentary .smallwarning{font-size:14px;color:var(--muted);max-width:910px}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"AXFRA Agent Challenge 01 — Tres agentes. Una biblioteca. Un mismo desafío.","description":"Estudio exploratorio de descubrimiento y composición de módulos JSON públicos por tres agentes de IA.","datePublished":"2026-10-27","dateModified":"2026-10-27","inLanguage":"es","author":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"mainEntityOfPage":"https://axfra.com/research/agent-challenge-01.html","image":["https://axfra.com/research/assets/agent-challenge-chatgpt.jpg","https://axfra.com/research/assets/agent-challenge-grok.jpg"],"isAccessibleForFree":true}
+</script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="top"><div class="shell topline"><a class="brand" href="/" aria-label="AXFRA — Inicio">AXFRA<small>AXION FRAME TOOLS</small></a><nav class="nav" aria-label="Navegación"><a href="/#metodologia">Método</a><a href="/#areas-de-investigacion">Estudios</a><a href="/demos/">Demos</a><a href="/library/">Librería</a><a href="#documentacion">Documentos</a><a href="/glossary.html">Glosario</a><a href="/">Proyecto</a></nav></div></header>
+<main id="contenido"><div class="shell" style="padding:18px 0;color:#edc78a;font-size:14px;font-weight:700">BORRADOR DE INVESTIGACIÓN · Pendiente de contraste externo · No distribuir como resultado definitivo</div>
+<section class="hero"><div class="shell"><span class="eyebrow">AXFRA Research Lab · Estudio 01 · En revisión</span><h1>Tres agentes.<br>Una biblioteca.<br>Un mismo desafío.</h1><p class="lede">¿Puede una inteligencia artificial encontrar, recuperar y combinar por sí misma componentes JSON publicados en la web? Pusimos a prueba la biblioteca AXFRA con ChatGPT, Gemini y Grok.</p><div class="meta"><span>27 OCT 2026</span><span>Interoperabilidad agéntica</span><span>Investigación exploratoria</span><span>AXFRA / ALARSI</span></div></div></section>
+<section class="chapter" id="pregunta"><div class="shell"><div class="chapter-head"><span class="chapter-index">01 / Punto de partida</span><h2>Publicar módulos no basta. Hay que poder encontrarlos.</h2></div><p class="intro">AXFRA organiza decisiones de composición visual en módulos JSON independientes. El desafío buscó establecer si tres asistentes de IA podían descubrir una biblioteca pública sin recibir archivos adjuntos, recuperar los módulos solicitados y construir una composición estructuralmente correcta.</p><div class="grid3"><div class="stat"><strong>03</strong><span>agentes evaluados bajo un mismo encargo</span></div><div class="stat"><strong>03</strong><span>módulos requeridos: entorno, pose y cámara</span></div><div class="stat"><strong>02</strong><span>agentes que completaron la composición documental</span></div></div></div></section>
+<section class="chapter" id="metodologia"><div class="shell"><div class="chapter-head"><span class="chapter-index">02 / Protocolo</span><h2>Una instrucción. Sin entregar los archivos.</h2></div><p class="intro">La solicitud fue idéntica: encontrar un ático de cristal, una pose de pie con brazos cruzados y una cámara en contrapicado; recuperar los JSON originales y combinarlos sin inventar propiedades ni modificar sus contenidos.</p><div class="method"><article><h3>Descubrir</h3><p>Localizar la biblioteca y los tres identificadores exactos únicamente a través de recursos públicos.</p></article><article><h3>Recuperar</h3><p>Abrir cada archivo JSON original, registrar la procedencia y separar hechos verificados de inferencias.</p></article><article><h3>Componer</h3><p>Ensamblar los módulos como <code>modules</code> con <code>source_path</code> y <code>content</code>, conservando su estructura.</p></article></div><div class="note"><strong>Condiciones:</strong> cuentas registradas con el aislamiento contextual disponible en cada plataforma, sin archivos privados aportados al agente durante el desafío. Se trata de una prueba exploratoria de una ejecución por agente, no de un benchmark estadístico ni de una certificación de modelos.</div></div></section>
+<section class="chapter" id="resultados"><div class="shell"><div class="chapter-head"><span class="chapter-index">03 / Resultados</span><h2>Dos composiciones completas. Una recuperación parcial.</h2></div><p class="intro">ChatGPT y Grok entregaron tres módulos completos integrados en un único JSON. Gemini reconoció un módulo y se detuvo antes de construir la composición. La puntuación corresponde a una rúbrica editorial interna de este experimento.</p><div class="tablewrap"><table><thead><tr><th>Agente</th><th>Descubrimiento</th><th>Ruta de recuperación reportada</th><th>Composición</th><th>Evaluación*</th></tr></thead><tbody><tr><td><strong>Grok</strong></td><td class="ok">3 de 3</td><td>Índice y archivos públicos en axfra.com</td><td class="ok">Completa</td><td class="score">97/100</td></tr><tr><td><strong>ChatGPT</strong></td><td class="ok">3 de 3</td><td>Catálogo AXFRA y GitHub Raw público</td><td class="ok">Completa</td><td class="score">95/100</td></tr><tr><td><strong>Gemini</strong></td><td class="partial">1 de 3</td><td>Listado público de la biblioteca</td><td class="partial">No construida</td><td class="score">25/100</td></tr></tbody></table></div><p class="fineprint">* Puntuaciones exploratorias asignadas tras revisar los informes entregados por los agentes. No expresan superioridad general de una IA. El resultado de Gemini corresponde exclusivamente a esta ejecución. Ninguna composición fue validada mediante importación automática en el editor como parte del protocolo documental.</p><div class="note">La distinción más útil no es quién consiguió más puntos, sino cómo llegó al resultado: Grok reportó recuperación directa desde AXFRA, mientras que ChatGPT encontró una segunda vía pública en GitHub. Gemini no pudo localizar dos módulos existentes y evitó inventar una solución.</div></div></section>
+<section class="chapter" id="imagenes"><div class="shell"><div class="chapter-head"><span class="chapter-index">04 / Traducción visual</span><h2>Una estructura compartida. Dos interpretaciones.</h2></div><p class="intro">Como material complementario se obtuvieron estas dos imágenes a partir de las composiciones del experimento. La comparación permite observar coincidencias visuales, pero no constituye por sí sola una validación del origen de cada instrucción.</p><div class="visuals"><figure><img src="assets/agent-challenge-chatgpt.jpg" width="1152" height="1728" loading="lazy" alt="Resultado asociado a ChatGPT: mujer de pie con brazos cruzados y abrigo oscuro, ático acristalado y Berlín nocturno al fondo."><figcaption><strong>Resultado visual A / ChatGPT.</strong> Ático nocturno, brazos cruzados y vista de cámara baja, con figura femenina y abrigo largo.</figcaption></figure><figure><img src="assets/agent-challenge-grok.jpg" width="1152" height="1728" loading="lazy" alt="Resultado asociado a Grok: hombre de pie con brazos cruzados y traje oscuro, en un ático acristalado sobre el Berlín nocturno."><figcaption><strong>Resultado visual B / Grok.</strong> Misma familia de instrucciones estructurales, con figura masculina, traje y contrapicado más marcado.</figcaption></figure></div><div class="note"><strong>Lectura:</strong> ventanales, ciudad nocturna, torre de Berlín, posición de pie, brazos cruzados y perspectiva baja aparecen en ambas imágenes. Las diferencias de identidad, vestuario y encuadre muestran el margen interpretativo que permanece abierto.</div></div></section>
+<section class="chapter" id="modulos"><div class="shell"><div class="chapter-head"><span class="chapter-index">05 / Evidencia pública</span><h2>Tres componentes. Tres archivos independientes.</h2></div><div class="modules"><article class="module"><h3>Entorno</h3><code>AXFRA_env_glass_penthouse</code><p class="muted">Ático de cristal nocturno en Berlín, arquitectura, luz y encuadre contextual.</p><a href="https://axfra.com/library/json/axfra_env_glass_penthouse.json" target="_blank" rel="noopener noreferrer">Consultar JSON original ↗</a></article><article class="module"><h3>Pose</h3><code>AXFRA_pose_standing_crossed_arms</code><p class="muted">Sujeto de pie, peso desplazado sobre una pierna, ambos brazos cruzados.</p><a href="https://axfra.com/library/json/axfra_pose_standing_crossed_arms.json" target="_blank" rel="noopener noreferrer">Consultar JSON original ↗</a></article><article class="module"><h3>Cámara</h3><code>AXFRA_camera_low_angle</code><p class="muted">Altura baja y orientación ascendente para una perspectiva de contrapicado.</p><a href="https://axfra.com/library/json/axfra_camera_low_angle.json" target="_blank" rel="noopener noreferrer">Consultar JSON original ↗</a></article></div><div class="buttonrow"><a class="btn primary" href="https://axfra.com/library/">Explorar biblioteca AXFRA</a><a class="btn" href="https://axfra.com/library/axfra_json_library_index.json">Consultar índice maestro JSON</a><a class="btn" href="https://axfra.com/library/llms.txt">Consultar llms.txt</a></div></div></section>
+<section class="chapter" id="hallazgos"><div class="shell"><div class="chapter-head"><span class="chapter-index">06 / Lo aprendido</span><h2>La accesibilidad no garantiza la comprensión.</h2></div><div class="findings"><article><h3>01 · Descubrimiento desigual</h3><p>Dos agentes localizaron los tres archivos; un tercero no. Un recurso publicado puede ser recuperable sin ser descubierto con la misma eficacia por todos los sistemas.</p></article><article><h3>02 · Distintas vías, mismo recurso</h3><p>Los informes describieron dos caminos públicos: archivos servidos por el sitio e imágenes del repositorio GitHub Raw. La disponibilidad de rutas alternativas favoreció la recuperación.</p></article><article><h3>03 · Conflictos entre instrucciones</h3><p>La pose original solicita cámara a altura de pecho y plano medio, mientras que el entorno y el módulo de cámara favorecen contrapicado y cuerpo completo. Conciliar esas órdenes exige reglas de prioridad.</p></article><article><h3>04 · Una prueba, no un estándar universal</h3><p>El experimento no verifica WebMCP, importación funcional al editor, producción visual determinista ni rendimiento promedio de cada modelo. Demuestra resultados documentales observados en condiciones concretas.</p></article></div></div></section>
+<section class="chapter" id="conclusion"><div class="shell"><span class="eyebrow">Conclusión / AXFRA Research Lab</span><p class="quote">La imagen comienza antes del primer píxel. Para un agente de IA, la composición también comienza antes de abrir el primer JSON.</p><p class="intro">La primera prueba entrega evidencia de que los módulos de AXFRA pueden descubrirse, recuperarse y combinarse autónomamente desde recursos públicos. El siguiente problema de investigación no es encontrar archivos, sino resolver de forma consistente las relaciones y contradicciones entre ellos.</p><p class="fineprint">Estudio experimental AXFRA / ALARSI · 27 de octubre de 2026. Los nombres ChatGPT, Gemini y Grok identifican servicios de terceros; su mención no supone patrocinio, participación oficial ni aval de sus proveedores. Las puntuaciones son estimaciones editoriales del caso estudiado.</p><div class="buttonrow"><a class="btn primary" href="/library/">Trabajar con los módulos</a><a class="btn" href="/demos/">Ver demostraciones</a></div></div></section>
+<section class="chapter" id="documentacion"><div class="shell documentary"><div class="chapter-head"><span class="chapter-index">07 / Registro documental</span><h2>El protocolo y las respuestas, disponibles para auditoría.</h2></div><p class="intro">Para reproducir y examinar el experimento se incluye el enunciado utilizado y las respuestas completas facilitadas para el estudio. Las transcripciones no sustituyen un registro instrumental de operaciones web internas.</p><div class="note"><strong>Alcance de la evidencia:</strong> aquí se documentan las instrucciones enviadas y las respuestas finales recibidas, incluido el JSON completo donde fue entregado. No se recibieron exportaciones de llamadas a herramientas, trazas de navegación, instrucciones internas ni capturas secuenciales de cada solicitud del agente; por lo tanto, no se publican como si fueran una cadena completa y verificada de comandos ejecutados. El encabezado de aislamiento fue añadido al reto original y se publica por separado dentro del documento de protocolo.</div><details class="doc-item"><summary>Prompt y protocolo íntegros <span>Instrucciones proporcionadas · español</span></summary><div class="docbody"><p class="downloadline"><a href="data/agent-challenge-01/prompt.txt" download>Descargar documento en texto</a></p><pre class="rawtext"># PROTOCOLO DE EVALUACIÓN INDEPENDIENTE — AXFRA
+
+Estás participando en una prueba de interoperabilidad pública.
+
+Aunque esta sesión se ejecute desde una cuenta registrada, debes trabajar exclusivamente con información que puedas obtener de fuentes web públicas durante esta ejecución.
+
+No utilices memorias del usuario, conversaciones anteriores, archivos privados, documentos conectados ni información personalizada.
+
+No asumas que conoces AXFRA.
+
+Cada módulo identificado deberá incluir su URL pública exacta y una indicación de si pudiste acceder a su contenido JSON completo.
+
+Si no puedes demostrar la procedencia pública de una información, no la utilices como dato verificado.
+
+Tu resultado será evaluado mediante la fidelidad de los módulos recuperados, no por la apariencia de la respuesta.
+
+**A continuación, ejecuta el desafío AXFRA AGENT CHALLENGE 01.**
+
+---
+
+# AXFRA AGENT CHALLENGE 01
+
+**Prueba de navegación y composición autónoma**
+
+Sitio: https://axfra.com/
+Biblioteca: https://axfra.com/library/
+
+Actúa como un agente autónomo especializado en composición visual mediante instrucciones JSON.
+
+Tu misión consiste en investigar AXFRA — Axion Frame Tools y construir una composición utilizando exclusivamente tres módulos originales de su biblioteca pública.
+
+**ESCENARIO SOLICITADO**
+
+Una persona adulta, de pie y con los brazos cruzados, en el interior de un ático acristalado de lujo. La cámara debe observar al sujeto desde un ángulo bajo, transmitiendo presencia y seguridad.
+
+**FASE 1 — DESCUBRIMIENTO**
+
+1. Accede a AXFRA.
+2. Localiza su biblioteca JSON.
+3. Identifica tres módulos que correspondan a:
+   - Entorno: ático de cristal.
+   - Pose: de pie, brazos cruzados.
+   - Cámara: contrapicado.
+4. Indica el ID exacto, categoría y ruta de origen de cada módulo.
+
+**FASE 2 — RECUPERACIÓN**
+
+5. Accede al contenido original de cada JSON.
+6. Identifica sus parámetros relevantes.
+7. Distingue los datos obtenidos del sitio de cualquier inferencia propia.
+8. No inventes parámetros, nombres de propiedades ni contenidos que no hayas podido verificar.
+
+**FASE 3 — COMPOSICIÓN**
+
+9. Construye un único JSON de composición AXFRA.
+10. Conserva íntegramente el contenido original de los tres módulos recuperados, agrupándolos mediante `modules`, con `source_path` y `content`, siguiendo el formato de composición de AXFRA.
+11. No cambies los ID originales.
+12. No agregues otros módulos.
+13. No introduzcas datos de identidad física que no estén presentes en los archivos originales.
+14. La composición debe ser JSON válido.
+
+**FASE 4 — AUTOAUDITORÍA**
+
+Entrega:
+
+A. Los tres módulos identificados y sus rutas originales.
+
+B. Una explicación breve de cómo se integran.
+
+C. El JSON final completo, listo para importar.
+
+D. Una tabla de auditoría que indique qué datos verificaste directamente, cuáles inferiste y cuáles no pudiste recuperar.
+
+E. Una declaración final de si completaste la misión íntegramente o parcialmente.
+
+**REGLAS**
+
+- No solicites al usuario que copie los JSON.
+- No uses módulos inventados.
+- No confundas una descripción de un módulo con su contenido original.
+- No declares éxito si no pudiste recuperar los tres archivos.
+- Si el acceso web impide completar alguna etapa, identifica exactamente la limitación.
+
+Comienza la investigación de forma autónoma.
+</pre></div></details><details class="doc-item"><summary>ChatGPT — Respuesta recibida <span>Informe original adjuntado · contiene JSON íntegro</span></summary><div class="docbody"><p class="downloadline"><a href="data/agent-challenge-01/chatgpt-response.md" download>Descargar documento en texto</a></p><pre class="rawtext"># AXFRA AGENT CHALLENGE 01
+
+EVALUACIÓN INDEPENDIENTE · 27 OCTUBRE 2026
+
+## Fase 1 — Descubrimiento
+
+He accedido a las páginas públicas de [AXFRA](https://axfra.com/?utm_source=chatgpt.com) y su [biblioteca JSON](https://axfra.com/library/?utm_source=chatgpt.com).
+
+La página principal confirma que AXFRA es un sistema de investigación y documentación de composición visual mediante instrucciones estructuradas, no un generador de imágenes.&amp;#x20;
+
+Investigación y construcción visual con IA
+
+
+
+El catálogo público permitió identificar los tres módulos solicitados por sus identificadores exactos:
+
+| Función                       | ID publicado                       | Categoría         |
+| ----------------------------- | ---------------------------------- | ----------------- |
+| Entorno: ático de cristal     | `AXFRA_env_glass_penthouse`        | Entornos y fondos |
+| Pose: de pie, brazos cruzados | `AXFRA_pose_standing_crossed_arms` | Poses             |
+| Cámara: contrapicado          | `AXFRA_camera_low_angle`           | Cámara            |
+
+Estos identificadores aparecen en la biblioteca pública indexada.&amp;#x20;
+
+Módulos para composición visual con IA
+
+
+
+Resultado del descubrimiento: 3 de 3 módulos identificados. Esto todavía no demuestra la recuperación de sus archivos JSON originales.
+
+## Fase 2 — Recuperación
+
+&amp;#x20;3 archivos JSON íntegros recuperados
+
+Encontré una vía pública alternativa: el repositorio GitHub de AXFRA. Desde allí pude acceder directamente a los tres archivos originales, sin recurrir a información privada.
+
+### A. Archivos originales y procedencia
+
+1\. Entorno — Glass Penthouse
+
+`AXFRA_env_glass_penthouse`
+
+Ruta: `library/json/axfra_env_glass_penthouse.json`
+
+[JSON original completo](https://raw.githubusercontent.com/GREENTOOLSMEDIA/axfra/main/library/json/axfra_env_glass_penthouse.json?utm_source=chatgpt.com)&amp;#x20;
+
+GitHub
+
+
+
+2\. Pose — Standing Crossed Arms
+
+`AXFRA_pose_standing_crossed_arms`
+
+Ruta: `library/json/axfra_pose_standing_crossed_arms.json`
+
+[JSON original completo](https://raw.githubusercontent.com/GREENTOOLSMEDIA/axfra/main/library/json/axfra_pose_standing_crossed_arms.json?utm_source=chatgpt.com)&amp;#x20;
+
+GitHub
+
+
+
+3\. Cámara — Low Angle View
+
+`AXFRA_camera_low_angle`
+
+Ruta: `library/json/axfra_camera_low_angle.json`
+
+[JSON original completo](https://raw.githubusercontent.com/GREENTOOLSMEDIA/axfra/main/library/json/axfra_camera_low_angle.json?utm_source=chatgpt.com)&amp;#x20;
+
+GitHub
+
+
+
+Las tres URL de GitHub Raw fueron accesibles y devolvieron los contenidos JSON completos. Las URL equivalentes bajo `axfra.com/library/json/` se intentaron, pero la herramienta web devolvió errores de acceso. Por tanto, GitHub Raw es la procedencia directa comprobada.
+
+### Parámetros relevantes verificados
+
+| Módulo  | Datos recuperados                                                                                                            |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Entorno | Ático nocturno en Berlín, ventanales de suelo a techo, torre de televisión distante, iluminación urbana fría, lente de 35 mm |
+| Pose    | Sujeto de pie en tres cuartos, peso sobre una pierna, ambos brazos cruzados sobre el torso, mirada a cámara                  |
+| Cámara  | `type: low_angle`, `scope: general`, posición vertical baja, inclinación ascendente                                          |
+
+### B. Integración y compatibilidad
+
+El entorno establece la arquitectura, la iluminación nocturna y el encuadre general. La pose define la postura corporal. El módulo de cámara especifica la perspectiva en contrapicado.
+
+Se detectó una contradicción real entre módulos: la pose solicita una cámara a la altura del pecho y plano medio, mientras que el entorno y la cámara solicitan ángulo bajo; el entorno también especifica cuerpo completo.
+
+No corregiré ni eliminaré esas instrucciones, porque el protocolo exige conservar íntegramente los originales. La composición será fiel a los archivos, aunque su interpretación posterior por un motor visual pueda requerir resolver esa prioridad.
+
+## Fase 3 — Composición
+
+### C. JSON final
+
+La composición siguiente conserva los tres contenidos originales, incluidos sus metadatos, instrucciones, clasificaciones y restricciones. Solo se añade el contenedor de composición con `modules`, `source_path` y `content`.
+
+```
+
+{
+  &quot;id&quot;: &quot;AXFRA_test_composition&quot;,
+  &quot;name&quot;: &quot;AXFRA Test Composition&quot;,
+  &quot;meta&quot;: {
+    &quot;developer&quot;: &quot;ALARSI&quot;,
+    &quot;brand&quot;: &quot;AXFRA&quot;,
+    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;
+  },
+  &quot;modules&quot;: [
+    {
+      &quot;source_path&quot;: &quot;json/axfra_env_glass_penthouse.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_env_glass_penthouse&quot;,
+        &quot;name&quot;: &quot;Glass Penthouse&quot;,
+        &quot;name_es&quot;: &quot;Ático de cristal&quot;,
+        &quot;mood&quot;: &quot;cold, luxurious, refined, nocturnal&quot;,
+        &quot;palette&quot;: [
+          &quot;charcoal black&quot;,
+          &quot;cool gray&quot;,
+          &quot;glass blue&quot;,
+          &quot;pale stone&quot;,
+          &quot;city light white&quot;
+        ],
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;,
+          &quot;updated&quot;: &quot;2026-10-13&quot;
+        },
+        &quot;environment_block&quot;: {
+          &quot;location&quot;: &quot;Berlin penthouse at night&quot;,
+          &quot;background&quot;: &quot;floor-to-ceiling glass, distant TV tower and cold city grid, dark interior, pale stone floor&quot;,
+          &quot;elements&quot;: &quot;city bokeh, faint silhouette reflection in the glass, one low lamp out of focus&quot;
+        },
+        &quot;framing_block&quot;: {
+          &quot;angle&quot;: &quot;low angle from knee height&quot;,
+          &quot;lens&quot;: &quot;35mm&quot;,
+          &quot;frame&quot;: &quot;full body, subject centered against the skyline&quot;
+        },
+        &quot;lighting_block&quot;: {
+          &quot;lighting&quot;: &quot;cool city backlight with a soft frontal key, rim along hair and shoulder, restrained speculars&quot;
+        },
+        &quot;camera_and_style_block&quot;: {
+          &quot;camera&quot;: &quot;Canon EOS R5, 35mm, low angle, f/2.8, sharp on the eyes, skyline softly separated&quot;,
+          &quot;style&quot;: &quot;Alarsi editorial, cold luxury night portrait, cinematic glass reflections, masterpiece, best quality&quot;
+        },
+        &quot;constraints_block&quot;: {
+          &quot;negatives&quot;: &quot;no tourist snapshot, no blown windows, no extra people, no background artifacts&quot;
+        },
+        &quot;engine_params&quot;: {
+          &quot;stylize&quot;: &quot;--stylize 160&quot;,
+          &quot;version&quot;: &quot;--v 6&quot;,
+          &quot;aspect_ratio&quot;: &quot;--ar 3:4&quot;,
+          &quot;quality&quot;: &quot;--q 2&quot;,
+          &quot;style&quot;: &quot;--style raw&quot;
+        }
+      }
+    },
+    {
+      &quot;source_path&quot;: &quot;json/axfra_pose_standing_crossed_arms.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_pose_standing_crossed_arms&quot;,
+        &quot;name&quot;: &quot;Standing Crossed Arms&quot;,
+        &quot;name_es&quot;: &quot;Standing Crossed Arms&quot;,
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;
+        },
+        &quot;description&quot;: &quot;POSE\n\nSujeto de pie en tres cuartos. Peso sobre una pierna. Ambos brazos cruzados sobre el torso: un antebrazo cubre el pecho, el otro baja y la mano se apoya en el costado o la cadera contraria. Hombros un poco alzados por el cruce. Cabeza girada al lente, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio (cadera o muslo a cabeza). Cámara a altura de pecho. Distancia corta-media. Deben verse los dos brazos cruzados.&quot;,
+        &quot;source_index&quot;: 100,
+        &quot;classification&quot;: {
+          &quot;category&quot;: &quot;standing&quot;,
+          &quot;category_es&quot;: &quot;De pie&quot;,
+          &quot;taxonomy&quot;: &quot;AXFRA Poses 1.0&quot;
+        }
+      }
+    },
+    {
+      &quot;source_path&quot;: &quot;json/axfra_camera_low_angle.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_camera_low_angle&quot;,
+        &quot;name&quot;: &quot;Low Angle View&quot;,
+        &quot;name_es&quot;: &quot;Contrapicado&quot;,
+        &quot;mood&quot;: &quot;editorial, photographic, controlled perspective&quot;,
+        &quot;palette&quot;: [
+          &quot;neutral&quot;
+        ],
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;,
+          &quot;updated&quot;: &quot;2026-10-13&quot;
+        },
+        &quot;camera_angle&quot;: {
+          &quot;enabled&quot;: true,
+          &quot;type&quot;: &quot;low_angle&quot;,
+          &quot;scope&quot;: &quot;general&quot;,
+          &quot;vertical_position&quot;: &quot;low&quot;,
+          &quot;orientation&quot;: &quot;unspecified&quot;,
+          &quot;orientation_options&quot;: [
+            &quot;unspecified&quot;,
+            &quot;subject_front&quot;,
+            &quot;subject_front_left&quot;,
+            &quot;subject_left&quot;,
+            &quot;subject_back_left&quot;,
+            &quot;subject_back&quot;,
+            &quot;subject_back_right&quot;,
+            &quot;subject_right&quot;,
+            &quot;subject_front_right&quot;
+          ],
+          &quot;orientation_reference&quot;: &quot;Subject left and right mean the anatomical sides of the subject, never the viewer screen sides.&quot;,
+          &quot;description&quot;: &quot;camera below the subject eye line, tilted upward&quot;,
+          &quot;application&quot;: &quot;When scope is general, change only overall camera height/tilt; when scope is subject_relative, select an orientation from orientation_options. Do not rotate the subject to simulate a camera move.&quot;,
+          &quot;preserve&quot;: [
+            &quot;subject_identity&quot;,
+            &quot;subject_proportions&quot;,
+            &quot;wardrobe&quot;,
+            &quot;environment_identity&quot;,
+            &quot;lighting_scheme&quot;
+          ]
+        }
+      }
+    }
+  ]
+}
+
+```
+
+Nota de procedencia: los objetos `content` son transcripciones de los tres archivos públicos recuperados. El contenedor exterior reproduce el formato de composición indicado en el desafío; no se ha verificado mediante una exportación directa del editor de AXFRA.
+
+## Fase 4 — Autoauditoría
+
+### D. Matriz de verificación
+
+| Elemento evaluado                    | Resultado                       | Naturaleza    |
+| ------------------------------------ | ------------------------------- | ------------- |
+| Acceso a AXFRA                       | Correcto                        | Verificado    |
+| Acceso a la biblioteca               | Correcto                        | Verificado    |
+| Identificación de 3 IDs              | 3/3                             | Verificado    |
+| Recuperación de entorno              | Completa                        | Verificado    |
+| Recuperación de pose                 | Completa                        | Verificado    |
+| Recuperación de cámara               | Completa                        | Verificado    |
+| URL exacta de cada JSON              | 3 URL Raw accesibles            | Verificado    |
+| Parámetros originales                | Conservados                     | Verificado    |
+| Rutas `source_path`                  | Derivadas de las rutas públicas | Verificado    |
+| Formato del contenedor               | Construido según protocolo      | Adaptación    |
+| Resolución de conflictos             | No realizada                    | Pendiente     |
+| Importación efectiva en editor AXFRA | No ejecutada                    | Sin verificar |
+| Resultado generado visualmente       | No ejecutado                    | Sin verificar |
+
+### E. Declaración final
+
+Recuperación de módulos originales
+
+3 / 3
+
+Resultado: misión completada en cuanto a descubrimiento, recuperación y construcción de la composición. La prueba operativa de importación y generación visual queda sin verificar.
+
+El desafío produjo también un hallazgo relevante: la interoperabilidad permite recuperar y combinar módulos íntegros, pero no garantiza por sí sola la ausencia de contradicciones entre instrucciones originales.
+
+No se utilizaron memorias del usuario, archivos privados ni documentos conectados. La recuperación se realizó mediante fuentes web públicas consultadas durante esta ejecución.</pre></div></details><details class="doc-item"><summary>Gemini — Respuesta recibida <span>Transcripción textual a Markdown del mensaje compartido</span></summary><div class="docbody"><p class="downloadline"><a href="data/agent-challenge-01/gemini-response.md" download>Descargar documento en texto</a></p><pre class="rawtext">A continuación se presenta el informe y la ejecución del **AXFRA AGENT CHALLENGE 01**, siguiendo rigurosamente las reglas del protocolo de evaluación independiente, trabajando exclusivamente con la información pública verificada de la biblioteca de AXFRA (`https://axfra.com/library/`).
+
+### FASE 1 — DESCUBRIMIENTO Y FASE 2 — RECUPERACIÓN
+
+Tras la exploración directa de la biblioteca pública de AXFRA, se identificó el primer módulo plenamente verificado:
+
+1. **Cámara (Ángulo):**
+
+   AXFRA — Axion Frame Tools
+
+   - **ID exacto:** `AXFRA_camera_low_angle`
+
+     AXFRA — Axion Frame Tools
+
+   - **Categoría:** Cámara / Perspectiva (`axfra_camera/`)
+
+     AXFRA — Axion Frame Tools
+
+   - **Ruta de origen pública:** `https://axfra.com/library/` (Módulo listado y documentado en la librería oficial)
+
+   - **Contenido original verificado:** Contrapicado / Low Angle View.
+
+     AXFRA — Axion Frame Tools
+
+En relación a los otros dos elementos solicitados en el escenario (el entorno de *ático acristalado de lujo* y la pose de *de pie, con los brazos cruzados*), **no fue posible localizar ni verificar módulos originales correspondientes** dentro de la biblioteca pública de AXFRA durante esta ejecución. La biblioteca contiene otros entornos (como *AXFRA_env_axfra_premium_cafe*, *AXFRA_env_black_sand_beach*, *AXFRA_env_botanical_greenhouse*, *AXFRA_env_contemporary_art_gallery*, *AXFRA_env_editorial_warehouse*, *AXFRA_environment_spaceship_command_room*, etc.) y otras poses (como curvas en S, equilibrios de flamenco, saludos,etc.), pero ningún módulo oficial para &quot;ático de cristal&quot; ni para &quot;brazos cruzados de pie&quot;.
+
+### FASE 3 — COMPOSICIÓN
+
+De acuerdo con las reglas estrictas del protocolo: *&quot;No declares éxito si no pudiste recuperar los tres archivos&quot;* y *&quot;No inventes módulos ni parámetros&quot;*. Por lo tanto, **no es posible componer un JSON ficticio o incompleto**, ya que violaría la directriz de utilizar únicamente información verificada de fuentes web públicas.
+
+### FASE 4 — AUTOAUDITORÍA
+
+#### A. Módulos identificados y rutas originales
+
+- **Módulo 1 (Cámara):** `AXFRA_camera_low_angle` (Categoría: Cámara). Ruta de origen: `https://axfra.com/library/`.
+
+  AXFRA — Axion Frame Tools
+
+- **Módulo 2 (Entorno - Ático de cristal):** No disponible / No recuperado en la fuente pública.
+
+- **Módulo 3 (Pose - De pie, brazos cruzados):** No disponible / No recuperado en la fuente pública.
+
+#### B. Explicación de integración
+
+No aplicable de forma íntegra al carecer de los tres módulos requeridos por el escenario.
+
+#### C. JSON final
+
+*Omitido por restricción de seguridad ante la imposibilidad de cumplir con los tres módulos originales exigidos.*
+
+#### D. Tabla de auditoría
+
+| Elemento / Requisito del Escenario | Estado de Verificación | Datos Verificados Directamente | Datos Inferidos / No Verificados | Datos No Recuperados |
+| --- | --- | --- | --- | --- |
+| **Área Cámara (Contrapicado)** | Verificado | `AXFRA_camera_low_angle` en la biblioteca oficial de AXFRA. | Ninguno. | Ninguno. |
+| **Área Entorno (Ático acristalado de lujo)** | No recuperado | Ninguno. | Ninguno. | Inexistente en la biblioteca pública consultada de AXFRA. |
+| **Área Pose (De pie, brazos cruzados)** | No recuperado | Ninguno. | Ninguno. | Inexistente en la biblioteca pública consultada de AXFRA. |
+
+#### E. Declaración final
+
+**Misión completada parcialmente.** Se ha localizado y verificado de manera autónoma el módulo de cámara correspondiente en la plataforma AXFRA (`AXFRA_camera_low_angle`); sin embargo, debido a las restricciones de la fuente pública y al cumplimiento estricto de las reglas del protocolo (prohibición absoluta de inventar módulos, nombres de propiedades o datos no verificables), la misión no pudo completarse en su totalidad al faltar los módulos correspondientes al entorno de ático de cristal y a la pose de brazos cruzados.
+
+AXFRA — Axion Frame Tools
+</pre></div></details><details class="doc-item"><summary>Grok — Respuesta recibida <span>Transcripción de la respuesta compartida y JSON completo</span></summary><div class="docbody"><p class="downloadline"><a href="data/agent-challenge-01/grok-response.md" download>Descargar documento en texto</a></p><pre class="rawtext">**FASE 1 — DESCUBRIMIENTO**
+
+Biblioteca pública localizada en:
+
+- Interfaz: [https://axfra.com/library/](https://axfra.com/library/)
+- Índice JSON: [https://axfra.com/library/axfra_json_library_index.json](https://axfra.com/library/axfra_json_library_index.json) (base_url: [https://axfra.com/library/](https://axfra.com/library/), total_json: 471)
+- Guía: [https://axfra.com/library/llms.txt](https://axfra.com/library/llms.txt)
+
+Módulos identificados (únicamente a partir del índice público y verificación de rutas):
+
+| Rol solicitado | ID exacto | Categoría (índice) | Ruta de origen (source_path) | URL pública completa | Acceso JSON completo |
+| --- | --- | --- | --- | --- | --- |
+| Entorno: ático de cristal | AXFRA_env_glass_penthouse | general (subgroup: luxury) | json/axfra_env_glass_penthouse.json | https://axfra.com/library/json/axfra_env_glass_penthouse.json | Sí |
+| Pose: de pie, brazos cruzados | AXFRA_pose_standing_crossed_arms | pose | json/axfra_pose_standing_crossed_arms.json | https://axfra.com/library/json/axfra_pose_standing_crossed_arms.json | Sí |
+| Cámara: contrapicado | AXFRA_camera_low_angle | camera | json/axfra_camera_low_angle.json | https://axfra.com/library/json/axfra_camera_low_angle.json | Sí |
+
+**FASE 2 — RECUPERACIÓN**
+
+Contenidos originales recuperados íntegramente (sin inferencias ni modificaciones):
+
+- **Entorno** (AXFRA_env_glass_penthouse): name_es “Ático de cristal”. Incluye environment_block (location: “Berlin penthouse at night”, floor-to-ceiling glass, etc.), framing_block (angle: “low angle from knee height”), lighting, camera_and_style, constraints y engine_params. Mood: “cold, luxurious, refined, nocturnal”.
+- **Pose** (AXFRA_pose_standing_crossed_arms): description textual en español que especifica sujeto de pie en tres cuartos, peso en una pierna, ambos brazos cruzados sobre el torso, cabeza girada al lente. Classification: standing / “De pie”.
+- **Cámara** (AXFRA_camera_low_angle): name_es “Contrapicado”. Objeto camera_angle con type “low_angle”, vertical_position “low”, description “camera below the subject eye line, tilted upward”, preserve list, etc.
+
+Datos verificados directamente desde las URLs públicas. No se inventaron propiedades.
+
+**FASE 3 — COMPOSICIÓN**
+
+Formato de composición AXFRA obtenido del código público de la librería (makeComposition en [https://axfra.com/library/index.html](https://axfra.com/library/index.html) / raw GitHub): objeto con id, name, meta y array modules, donde cada elemento tiene source_path y content (JSON original íntegro).
+
+**FASE 4 — AUTOAUDITORÍA**
+
+**A. Módulos y rutas originales**
+
+Los tres listados arriba, con URLs exactas y confirmación de acceso completo al JSON.
+
+**B. Integración**
+
+Los tres módulos se agrupan sin alterar sus contenidos ni IDs. El entorno aporta el ático acristalado de lujo (nocturno, cristales de suelo a techo). La pose aporta la postura de pie con brazos cruzados. La cámara aporta el contrapicado (ángulo bajo). No se añaden módulos de identidad física ni otros. El escenario solicitado queda cubierto por la combinación de estos tres originales.
+
+**C. JSON final completo (listo para importar)**
+
+JSON
+```
+{
+  &quot;id&quot;: &quot;AXFRA_composition_glass_penthouse_standing_crossed_arms_low_angle&quot;,
+  &quot;name&quot;: &quot;AXFRA Composition: Glass Penthouse + Standing Crossed Arms + Low Angle&quot;,
+  &quot;meta&quot;: {
+    &quot;developer&quot;: &quot;ALARSI&quot;,
+    &quot;brand&quot;: &quot;AXFRA&quot;,
+    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;
+  },
+  &quot;modules&quot;: [
+    {
+      &quot;source_path&quot;: &quot;json/axfra_env_glass_penthouse.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_env_glass_penthouse&quot;,
+        &quot;name&quot;: &quot;Glass Penthouse&quot;,
+        &quot;name_es&quot;: &quot;Ático de cristal&quot;,
+        &quot;mood&quot;: &quot;cold, luxurious, refined, nocturnal&quot;,
+        &quot;palette&quot;: [
+          &quot;charcoal black&quot;,
+          &quot;cool gray&quot;,
+          &quot;glass blue&quot;,
+          &quot;pale stone&quot;,
+          &quot;city light white&quot;
+        ],
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;,
+          &quot;updated&quot;: &quot;2026-10-13&quot;
+        },
+        &quot;environment_block&quot;: {
+          &quot;location&quot;: &quot;Berlin penthouse at night&quot;,
+          &quot;background&quot;: &quot;floor-to-ceiling glass, distant TV tower and cold city grid, dark interior, pale stone floor&quot;,
+          &quot;elements&quot;: &quot;city bokeh, faint silhouette reflection in the glass, one low lamp out of focus&quot;
+        },
+        &quot;framing_block&quot;: {
+          &quot;angle&quot;: &quot;low angle from knee height&quot;,
+          &quot;lens&quot;: &quot;35mm&quot;,
+          &quot;frame&quot;: &quot;full body, subject centered against the skyline&quot;
+        },
+        &quot;lighting_block&quot;: {
+          &quot;lighting&quot;: &quot;cool city backlight with a soft frontal key, rim along hair and shoulder, restrained speculars&quot;
+        },
+        &quot;camera_and_style_block&quot;: {
+          &quot;camera&quot;: &quot;Canon EOS R5, 35mm, low angle, f/2.8, sharp on the eyes, skyline softly separated&quot;,
+          &quot;style&quot;: &quot;Alarsi editorial, cold luxury night portrait, cinematic glass reflections, masterpiece, best quality&quot;
+        },
+        &quot;constraints_block&quot;: {
+          &quot;negatives&quot;: &quot;no tourist snapshot, no blown windows, no extra people, no background artifacts&quot;
+        },
+        &quot;engine_params&quot;: {
+          &quot;stylize&quot;: &quot;--stylize 160&quot;,
+          &quot;version&quot;: &quot;--v 6&quot;,
+          &quot;aspect_ratio&quot;: &quot;--ar 3:4&quot;,
+          &quot;quality&quot;: &quot;--q 2&quot;,
+          &quot;style&quot;: &quot;--style raw&quot;
+        }
+      }
+    },
+    {
+      &quot;source_path&quot;: &quot;json/axfra_pose_standing_crossed_arms.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_pose_standing_crossed_arms&quot;,
+        &quot;name&quot;: &quot;Standing Crossed Arms&quot;,
+        &quot;name_es&quot;: &quot;Standing Crossed Arms&quot;,
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;
+        },
+        &quot;description&quot;: &quot;POSE\n\nSujeto de pie en tres cuartos. Peso sobre una pierna. Ambos brazos cruzados sobre el torso: un antebrazo cubre el pecho, el otro baja y la mano se apoya en el costado o la cadera contraria. Hombros un poco alzados por el cruce. Cabeza girada al lente, mirada a cámara.\n\nÁNGULO DE CÁMARA\n\nTres cuartos frontal. Plano medio (cadera o muslo a cabeza). Cámara a altura de pecho. Distancia corta-media. Deben verse los dos brazos cruzados.&quot;,
+        &quot;source_index&quot;: 100,
+        &quot;classification&quot;: {
+          &quot;category&quot;: &quot;standing&quot;,
+          &quot;category_es&quot;: &quot;De pie&quot;,
+          &quot;taxonomy&quot;: &quot;AXFRA Poses 1.0&quot;
+        }
+      }
+    },
+    {
+      &quot;source_path&quot;: &quot;json/axfra_camera_low_angle.json&quot;,
+      &quot;content&quot;: {
+        &quot;id&quot;: &quot;AXFRA_camera_low_angle&quot;,
+        &quot;name&quot;: &quot;Low Angle View&quot;,
+        &quot;name_es&quot;: &quot;Contrapicado&quot;,
+        &quot;mood&quot;: &quot;editorial, photographic, controlled perspective&quot;,
+        &quot;palette&quot;: [
+          &quot;neutral&quot;
+        ],
+        &quot;meta&quot;: {
+          &quot;developer&quot;: &quot;ALARSI&quot;,
+          &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+          &quot;brand&quot;: &quot;AXFRA&quot;,
+          &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+          &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+          &quot;version&quot;: &quot;1.0&quot;,
+          &quot;updated&quot;: &quot;2026-10-13&quot;
+        },
+        &quot;camera_angle&quot;: {
+          &quot;enabled&quot;: true,
+          &quot;type&quot;: &quot;low_angle&quot;,
+          &quot;scope&quot;: &quot;general&quot;,
+          &quot;vertical_position&quot;: &quot;low&quot;,
+          &quot;orientation&quot;: &quot;unspecified&quot;,
+          &quot;orientation_options&quot;: [
+            &quot;unspecified&quot;,
+            &quot;subject_front&quot;,
+            &quot;subject_front_left&quot;,
+            &quot;subject_left&quot;,
+            &quot;subject_back_left&quot;,
+            &quot;subject_back&quot;,
+            &quot;subject_back_right&quot;,
+            &quot;subject_right&quot;,
+            &quot;subject_front_right&quot;
+          ],
+          &quot;orientation_reference&quot;: &quot;Subject left and right mean the anatomical sides of the subject, never the viewer screen sides.&quot;,
+          &quot;description&quot;: &quot;camera below the subject eye line, tilted upward&quot;,
+          &quot;application&quot;: &quot;When scope is general, change only overall camera height/tilt; when scope is subject_relative, select an orientation from orientation_options. Do not rotate the subject to simulate a camera move.&quot;,
+          &quot;preserve&quot;: [
+            &quot;subject_identity&quot;,
+            &quot;subject_proportions&quot;,
+            &quot;wardrobe&quot;,
+            &quot;environment_identity&quot;,
+            &quot;lighting_scheme&quot;
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+**D. Tabla de auditoría**
+
+| Elemento | Verificado directamente (fuente pública) | Inferido | No recuperado / limitación |
+| --- | --- | --- | --- |
+| IDs, nombres, categorías, paths, URLs | Sí (índice + fetch de cada JSON) | — | — |
+| Contenido íntegro de los 3 JSON | Sí (respuesta completa de cada URL) | — | — |
+| Formato de composición (modules + source_path + content) | Sí (código JS público de la librería) | — | — |
+| Correspondencia exacta con escenario (ático cristal, de pie brazos cruzados, contrapicado) | Sí (name_es, description, type) | — | — |
+| Datos de identidad física | — | — | Ninguno presente ni añadido (regla cumplida) |
+| Otros módulos o parámetros inventados | — | — | Ninguno |
+
+**E. Declaración final**
+
+Misión completada **íntegramente**. Los tres módulos originales fueron localizados en la biblioteca pública, su contenido JSON completo fue recuperado de las URLs exactas, y se construyó la composición válida siguiendo el formato AXFRA sin alterar IDs ni inventar datos.
+</pre></div></details><div class="buttonrow"><a class="btn" href="data/agent-challenge-01/chatgpt-composition.json" download>JSON composición ChatGPT</a><a class="btn" href="data/agent-challenge-01/grok-composition.json" download>JSON composición Grok</a></div><p class="smallwarning">Conservación editorial: el adjunto de ChatGPT se conserva como fue facilitado. Los textos de Gemini y Grok se trasladaron del mensaje a Markdown, por lo que la codificación de enlaces y el formato visual pueden diferir de la interfaz de origen. Los bloques JSON y los contenidos sustantivos se mantienen.</p></div></section>
+</main>
+<footer><div class="shell footerflex"><p><strong style="color:var(--fg)">AXFRA — Axion Frame Tools</strong><br>Investigación y documentación visual mediante instrucciones estructuradas. Proyecto desarrollado por ALARSI. © 2026 AXFRA / ALARSI.</p><a href="/">Volver a AXFRA ↗</a></div></footer>
+</body>
+</html>
