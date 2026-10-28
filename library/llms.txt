@@ -55,7 +55,6 @@ La composición puede utilizar un recurso completo o solo un extracto. Omitir un
 - [Glosario](https://axfra.com/glossary.html): conceptos técnicos.
 - [Demostraciones](https://axfra.com/demos/): aplicación narrativa; no son contratos obligatorios de composición.
 - [Herramientas](https://axfra.com/tools/): edición de componentes; verificar límites de cada herramienta.
-- [Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): prueba exploratoria, en revisión.
 
 ## Procedencia y derechos
 
