@@ -9,6 +9,14 @@ Desarrollador: ALARSI — https://alarsi.com/
 
 La Librería reúne archivos individuales, no un prompt monolítico. No asumir que todos los módulos tienen el mismo esquema: leer el JSON específico antes de interpretarlo. Algunos contienen ID, category, slot, swap_rule, bloqueos y atributos editables. El índice identifica recursos y sus URLs; no reemplaza la lectura de cada archivo.
 
+## Fundamento de estabilidad del catálogo
+
+La Librería oficial no es un borrador que deba reescribirse con cada avance de AXFRA. Sus JSON representan soluciones empaquetadas que pueden permanecer sin cambios porque siguen siendo útiles. Distinguir la estabilidad de los archivos fuente de la evolución de la interfaz web, las demos, la documentación y las herramientas.
+
+La fecha o versión de un módulo es evidencia de su edición declarada, no una garantía automática de perfección ni una señal de obsolescencia. No modificar módulos oficiales por el solo hecho de que otras partes del ecosistema hayan evolucionado. Si una tarea necesita otra representación, construir un extracto o una composición derivada; si una herramienta requiere estructuras particulares, mantenerlas como adaptaciones separadas hasta que se decida formalmente incorporarlas.
+
+Ejemplo concreto: las poses parametrizadas del Pose Editor alfa se alojan separadamente bajo /tools/json/poses/. No deben confundirse con los originales publicados bajo /library/json/. Al citar recursos, identificar de qué colección proceden.
+
 ## Principio rector: extracción contextual
 
 Un módulo AXFRA es una solución empaquetada que puede incluir más de un aspecto de la escena: una pose con cámara sugerida, un entorno con iluminación, un vestuario con peinado, un estilo con focal, etc. Son características válidas de su solución original, no órdenes que deban aplicarse siempre juntas.
