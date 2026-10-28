@@ -325,6 +325,44 @@ function displayName(f){
   return /^(De pie|Sentada|Agachada|Arrodillada|Recostada|En movimiento|En cuatro apoyos|Gestos y retratos|Secuencias|Otras):/i.test(label)?label:category+': '+label;
 }
 
+// Enlaces permanentes para grupos, subgrupos y categorías de poses.
+// Compatible con enlaces antiguos /library/#looks de las fichas de identidades.
+function libraryHash(group='all',sub=null,pose=null){
+  if(group==='all')return '#all';
+  return '#category/'+[group,sub,pose].filter(x=>x!==null&&x!==undefined).map(encodeURIComponent).join('/');
+}
+function applyLibraryHash(){
+  if(!index)return;
+  const hash=decodeURIComponent(location.hash.slice(1));
+  if(!hash||hash.startsWith(':~:text='))return;
+  if(hash==='all'){
+    groupFilter='all';subgroupFilter=null;poseFilter=null;
+  }else{
+    let group=null,sub=null,pose=null;
+    if(hash==='looks'){
+      group='wardrobe';sub='looks'; // Compatibilidad con enlaces ya publicados.
+    }else if(hash.startsWith('category/')){
+      [group,sub,pose]=hash.slice(9).split('/');
+    }else{return;}
+    const found=index.groups.find(g=>g.id===group);
+    if(!found)return;
+    if(sub&&!(found.children||[]).some(c=>c.id===sub))return;
+    if(pose&&!(group==='composition'&&sub==='poses'&&
+      index.files.some(f=>isPose(f)&&(f.pose_category||'standing')===pose)))return;
+    groupFilter=group;subgroupFilter=sub||null;poseFilter=pose||null;
+    expandedGroups.add(group);
+  }
+  renderCategories();renderItems();
+}
+function selectLibraryView(group,sub=null,pose=null){
+  groupFilter=group;subgroupFilter=sub;poseFilter=pose;
+  if(group!=='all')expandedGroups.add(group);
+  renderCategories();renderItems();
+  const next=libraryHash(group,sub,pose);
+  if(location.hash!==next)location.hash=next;
+}
+window.addEventListener('hashchange',applyLibraryHash);
+
 function renderCategories(){
   const nav=$('categories');nav.replaceChildren();
   const groups=index.groups||[];
@@ -333,27 +371,29 @@ function renderCategories(){
   const allName=document.createElement('span');allName.textContent='Todos los componentes';
   const allCount=document.createElement('span');allCount.className='count';allCount.textContent=index.files.length;
   all.append(allName,allCount);
-  all.onclick=()=>{groupFilter='all';subgroupFilter=null;poseFilter=null;renderCategories();renderItems()};nav.append(all);
+  all.onclick=()=>selectLibraryView('all');nav.append(all);
   groups.forEach(g=>{
     const wrapper=document.createElement('div');wrapper.className='group-block';
     const button=document.createElement('button');button.type='button';
     button.className='cat parent'+(groupFilter===g.id?' active':'');
     button.setAttribute('aria-expanded',String(expandedGroups.has(g.id)));
+    button.title='Seleccionar categoría y compartir su URL';
     const label=document.createElement('span');label.className='group-name';
     label.textContent=(expandedGroups.has(g.id)?'▾  ':'▸  ')+g.label;
     const count=document.createElement('span');count.className='count';count.textContent=g.count;
     button.append(label,count);
     button.onclick=()=>{if(expandedGroups.has(g.id)){expandedGroups.delete(g.id)}else{expandedGroups.add(g.id)};
-      groupFilter=g.id;subgroupFilter=null;poseFilter=null;renderCategories();renderItems()};
+      selectLibraryView(g.id)};
     wrapper.append(button);
     if(expandedGroups.has(g.id)){
       (g.children||[]).forEach(c=>{
         const child=document.createElement('button');child.type='button';
         child.className='cat child'+(groupFilter===g.id&&subgroupFilter===c.id?' active':'');
+        child.title='Seleccionar subcategoría y compartir su URL';
         const name=document.createElement('span');name.textContent=c.label;
         const n=document.createElement('span');n.className='count';n.textContent=c.count;
         child.append(name,n);
-        child.onclick=()=>{groupFilter=g.id;subgroupFilter=c.id;poseFilter=null;renderCategories();renderItems()};
+        child.onclick=()=>selectLibraryView(g.id,c.id);
         wrapper.append(child);
         if(c.id==='poses'&&groupFilter===g.id&&subgroupFilter==='poses'){
           const poses=index.files.filter(isPose);
@@ -369,7 +409,7 @@ function renderCategories(){
             const title=document.createElement('span');title.textContent=label;
             const count=document.createElement('span');count.className='count';count.textContent=total;
             sub.append(title,count);
-            sub.onclick=()=>{poseFilter=key;renderCategories();renderItems();$('items').parentElement.scrollTop=0};
+            sub.onclick=()=>{selectLibraryView(g.id,c.id,key);$('items').parentElement.scrollTop=0};
             wrapper.append(sub);
           });
         }
@@ -481,7 +521,7 @@ async function initializeLibrary(){
     if(!Array.isArray(index.files))throw new Error('Índice sin files[]');
     $('summary').textContent=index.files.length+' JSON · '+Object.keys(index.categories||{}).length+' categorías';
     if(!Array.isArray(index.groups))throw new Error('El índice no contiene groups[]. Genera el índice con axfra_generar_biblioteca.py');
-    expandedGroups.add('appearance');renderCategories();renderItems();status('Índice cargado.','ok');
+    expandedGroups.add('appearance');renderCategories();renderItems();applyLibraryHash();status('Índice cargado.','ok');
   }catch(e){
     $('summary').textContent='Error al cargar índice';
     $('loading').textContent=e.message;
