@@ -1,0 +1,119 @@
+{
+  "id": "AXFRA_identity_conde_alarsi",
+  "name": "Conde Alarsi — Complete Character Composition",
+  "category": "identity",
+  "character_id": "conde_alarsi",
+  "meta": {
+    "developer": "ALARSI",
+    "system": "AXFRA",
+    "version": "1.5",
+    "updated": "2026-10-28"
+  },
+  "identity_block": {
+    "age_years": 69,
+    "apparent_age_years": 50,
+    "age_note": "Chronologically 69 but visually appears 50",
+    "facial_identity": {
+      "face_shape": "elongated angular face, high cheekbones, lean cheeks, defined lower face",
+      "forehead": "broad, light horizontal lines, soft vertical lines between brows",
+      "hairline": "receding at temples, defined central widow's peak",
+      "jaw": "long, angular, defined",
+      "chin": "elongated, rounded-square",
+      "eyes": {
+        "shape": "deep-set with defined upper eyelid folds",
+        "color": "pale gray-green with muted olive tones and dark outer iris rim"
+      },
+      "eyebrows": {
+        "color": "dark charcoal brown with scattered gray",
+        "shape": "thick, angular, pronounced arches, tapered ends"
+      },
+      "nose": "prominent long nose, defined bridge, rounded projecting tip",
+      "lips": {
+        "shape": "thin upper lip with subtle Cupid's bow, slightly fuller lower lip",
+        "color": "muted dusty rose"
+      },
+      "teeth": {
+        "base": "natural ivory",
+        "vampire_fangs": "two elongated, sharply pointed upper canines",
+        "visibility": "visible when mouth opens or lips part"
+      },
+      "skin": {
+        "tone": "light beige, neutral-warm undertone",
+        "texture": "realistic pores, fine crow's feet, light under-eye lines, subtle nasolabial folds, healthy and well-preserved"
+      },
+      "facial_hair": "clean-shaven"
+    },
+    "body_identity": {
+      "height_cm": 184,
+      "weight_kg": 85,
+      "build": "well-proportioned athletic-lean, long legs, balanced torso"
+    },
+    "age_presentation": "Vital, charismatic and playful. Chronologically 69 but appears 50."
+  },
+  "hair_block": {
+    "color": "salt-and-pepper charcoal gray with abundant silver at temples",
+    "length": "medium",
+    "styling": "swept back from widow's peak, slight lift over forehead",
+    "texture": "slightly wavy, controlled satin sheen"
+  },
+  "apparel_block": {
+    "top": {
+      "id": "AXFRA_wardrobe_tshirt_vintage_axion_frame_69",
+      "type": "vintage crew-neck t-shirt",
+      "cut": "relaxed regular fit, short sleeves, round ribbed crew neck, standard hip length and straight hem",
+      "fabric": "ultra-thin, extremely soft, heavily washed cotton jersey",
+      "drape": "very lightweight, loose and fluid fall, delicate folds, soft wrinkles",
+      "finish": "heavily washed, faded, distressed vintage appearance",
+      "color": "faded white charcoal",
+      "transparency": "50%",
+      "graphic": {
+        "placement": "centered front graphic",
+        "main_numbers": "69",
+        "number_style": "oversized faded crimson red varsity textile appliques, sewn onto the shirt, with heavily frayed edges, visible stitching and worn fabric texture",
+        "number_spacing": "negative horizontal spacing, with the 6 and 9 touching each other",
+        "middle_patch": "small faded crimson red horizontal textile patch overlapping the center of the 69",
+        "patch_icon": "small off-white bull silhouette",
+        "patch_text": "AXFRA",
+        "headline": "AXION FRAME",
+        "headline_style": "distressed uppercase serif lettering in faded crimson red",
+        "subheadline": "La imagen comienza antes del primer píxel.",
+        "subheadline_style": "distressed red serif lettering arranged in two lines"
+      }
+    },
+    "bottom": {
+      "id": "AXFRA_wardrobe_jeans_levis_worn_dark",
+      "type": "jeans",
+      "brand_reference": "Levi’s",
+      "color": "dark indigo denim",
+      "finish": "worn, faded and naturally distressed",
+      "fit": "regular comfortable fit"
+    },
+    "footwear": {
+      "id": "AXFRA_footwear_converse_high_top_red",
+      "type": "high-top canvas sneakers",
+      "brand_reference": "Converse",
+      "color": "red",
+      "details": "white rubber toe cap and outsole, contrasting white laces"
+    }
+  },
+  "pose_block": {
+    "body_position": "standing upright, relaxed confident posture, weight distributed naturally, shoulders relaxed",
+    "expression": "jovial playful smile showing the two elongated upper canine fangs; lively friendly eyes",
+    "gesture": "one hand raised near shoulder height forming a clearly readable peace/V sign with index and middle fingers; other arm relaxed naturally",
+    "orientation": "subject facing camera or subtle three-quarter angle"
+  },
+  "constraints_block": {
+    "identity_lock": [
+      "facial geometry",
+      "eye color and shape",
+      "eyebrow shape",
+      "nose shape",
+      "lip shape",
+      "jawline and chin",
+      "widow's peak and recessed temples",
+      "two elongated upper canine fangs",
+      "clean-shaven face",
+      "apparent age of 50 despite being 69"
+    ]
+  }
+}
