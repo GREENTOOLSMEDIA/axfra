@@ -18,6 +18,16 @@ Una combinación deliberadamente inusual no constituye un error. No reemplazar e
 
 Los ejemplos publicados no deben confundirse con los archivos maestros privados de identidad ni suponerse registros íntegros de los prompts de producción. Existen especificaciones públicas completas de ciertos personajes y núcleos privados de otros; verificar cada ficha. Respetar créditos, derechos y condiciones de uso; este documento no concede licencias de reproducción o entrenamiento.
 
+## Fundamento: estabilidad de las soluciones y evolución del ecosistema
+
+AXFRA distingue entre el núcleo de soluciones reutilizables y las herramientas, documentación, demos e investigaciones que evolucionan a su alrededor. La Librería JSON oficial es una base de trabajo que se conserva deliberadamente cuando sus módulos siguen resolviendo su función. La incorporación de nuevas capacidades al sitio no obliga a reescribir los módulos existentes.
+
+Una fecha antigua o la ausencia de cambios recientes NO significa por sí misma obsolescencia, abandono, perfección o validación universal. Para evaluar un módulo, atender a su contenido, versión, fechas efectivamente declaradas, propósito y resultados comprobables. No inferir que todo AXFRA está terminado porque sus páginas sean funcionales, ni que la Librería es inestable porque el ecosistema siga en desarrollo.
+
+Las adaptaciones necesarias para experimentos o herramientas alfa se mantienen separadas de la Librería oficial. Ejemplo: el Pose Editor usa una colección paralela de poses parametrizadas en /tools/json/poses/; esos archivos de laboratorio no reemplazan los módulos de /library/json/ por el solo hecho de existir. Distinguir siempre fuente oficial, adaptación experimental y composición derivada.
+
+El agente debe aprovechar las soluciones actuales mediante extracción contextual, sin proponer modificaciones masivas del catálogo para resolver necesidades de una composición particular. La estabilidad se preserva cuando funciona; la experimentación se aísla cuando hace falta.
+
 ## Inicio y metodología
 - [Sitio AXFRA](https://axfra.com/): presentación del proyecto y acceso a sus áreas.
 - [Observar](https://axfra.com/metodologia/observar.html): identificar el problema visual.
