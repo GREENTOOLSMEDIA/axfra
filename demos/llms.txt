@@ -1,26 +1,36 @@
 # AXFRA — Demostraciones prácticas
 
-> Las demostraciones AXFRA documentan cómo combinar identidades, vestuario, escenarios, cámara, luz, estilo y otros componentes mediante instrucciones visuales estructuradas. Son casos narrativos ilustrativos, no motores de generación.
+> Las demostraciones AXFRA muestran cómo una intención creativa utiliza y transforma soluciones visuales mediante módulos JSON. Son historias y aplicaciones editoriales, no recetas obligatorias ni motores independientes de generación.
 
 Sección oficial: https://axfra.com/demos/
 Desarrollador: ALARSI — https://alarsi.com/
 Proyecto: AXFRA — https://axfra.com/
 
-Cada demostración debe leerse como una aplicación de composición modular. Una secuencia visual no implica que los fragmentos JSON incluidos reproduzcan íntegramente el prompt original de cada imagen. Los personajes pueden cruzarse entre historias sin que esas narraciones sean el propósito central del sistema.
+## Cómo interpretar una demo
 
-## Demostraciones publicadas
+Una demostración puede utilizar módulos íntegros, extractos o variantes según el objetivo de cada imagen. La narrativa, las decisiones de dirección de arte y los JSON didácticos cumplen funciones diferentes. No suponer que los fragmentos visibles reproducen el prompt de producción completo. No interpretar las cámaras, vestuarios, iluminación o poses de una escena como parámetros fijos de un módulo para todos sus usos. Para el principio de extracción contextual consultar https://axfra.com/library/llms.txt.
 
-- [Conde Alarsi](https://axfra.com/demos/axfra_conde_alarsi_demo.html): continuidad de una identidad a través de cambios de vestuario, escenarios y acciones.
-- [Dotsy y Drácula](https://axfra.com/demos/demostracion-practica.html): historia visual construida por escenas y decisiones declarativas.
-- [Soccer Play — Red vs White](https://axfra.com/demos/soccer-play-demo.html): ocho identidades, dos equipos, uniformes y continuidad de una secuencia deportiva.
-- [PauDotsBand Concert](https://axfra.com/demos/paudotsband-concert-demo.html): identidades, instrumentos, vestuario, escenario, backstage y videoclip. Incluye «New Sensations (Live Version)», letra y música de ALARSI.
-- [AXION FRAME 69](https://axfra.com/demos/axion-frame-69.html): variaciones editoriales de una polera vintage mediante parámetros reutilizables y distintos escenarios.
+Las historias y los personajes pueden cruzarse, pero el ecosistema de narraciones no sustituye el propósito técnico y metodológico de AXFRA. Conservar la procedencia de cada recurso citado.
+
+## Demostraciones documentadas
+- [Conde Alarsi](https://axfra.com/demos/axfra_conde_alarsi_demo.html): continuidad de identidad a través de vestuario, escenarios y acciones.
+- [Dotsy y Drácula](https://axfra.com/demos/demostracion-practica.html): historia visual por escenas y decisiones declarativas.
+- [Soccer Play — Red vs White](https://axfra.com/demos/soccer-play-demo.html): ocho identidades, uniformes y continuidad deportiva.
+- [PauDotsBand Concert](https://axfra.com/demos/paudotsband-concert-demo.html): instrumentos, personajes, escenario y videoclip «New Sensations (Live Version)», de ALARSI.
+- [AXION FRAME 69](https://axfra.com/demos/axion-frame-69.html): variaciones editoriales sobre una prenda.
+- [Mira](https://axfra.com/demos/axfra-mira-demo.html): vestuario, postura, instrumentos y dirección de arte.
+- [M.A.R.I.A. y Captain Dots](https://axfra.com/demos/axfra-maria-demo.html): continuidad de personajes e interacción narrativa.
+- [La paradoja Alarsi](https://axfra.com/demos/axfra-paradoja-alarsi-demo.html): contraste entre cálculo y decisión personal.
+
+Esta lista recoge demostraciones identificadas en esta revisión; consultar el índice /demos/ y el sitemap para el inventario vigente completo.
 
 ## Recursos relacionados
+- [Librería JSON](https://axfra.com/library/): encontrar recursos reutilizables.
+- [Guía para agentes](https://axfra.com/library/llms.txt): extracción contextual y composición.
+- [Identidades](https://axfra.com/identities.html): fichas de sujetos y personajes.
+- [Herramientas](https://axfra.com/tools/): herramientas de edición disponibles.
+- [Glosario](https://axfra.com/glossary.html): terminología.
+- [Metodología](https://axfra.com/#metodo): proceso general.
+- [Research — Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): experimento documental en revisión, no normativa.
 
-- [Librería JSON](https://axfra.com/library/): explorar piezas reutilizables.
-- [Guía de Librería JSON](https://axfra.com/library/llms.txt): comprender la estructura de los módulos.
-- [Glosario](https://axfra.com/glossary.html): consultar conceptos y términos técnicos.
-- [Metodología](https://axfra.com/#metodo): proceso general de investigación y composición.
-
-Utilizar las URLs dentro de /demos/ para citar estas demostraciones. Evitar enlaces a versiones históricas ubicadas en la raíz del dominio.
+Utilizar las URLs en /demos/ para citar demostraciones. Evitar rutas históricas cuando exista una ruta canónica actual.
