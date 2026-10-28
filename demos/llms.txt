@@ -19,10 +19,12 @@ Las historias y los personajes pueden cruzarse, pero el ecosistema de narracione
 - [PauDotsBand Concert](https://axfra.com/demos/paudotsband-concert-demo.html): instrumentos, personajes, escenario y videoclip «New Sensations (Live Version)», de ALARSI.
 - [AXION FRAME 69](https://axfra.com/demos/axion-frame-69.html): variaciones editoriales sobre una prenda.
 - [Mira](https://axfra.com/demos/axfra-mira-demo.html): vestuario, postura, instrumentos y dirección de arte.
+- [AXFRA House](https://axfra.com/demos/axfra-house-demo.html): composición compartida, entornos y recorrido audiovisual.
+- [De la Cordillera al Río](https://axfra.com/demos/axfra-rio-demo.html): identidades, vestuario modular y variaciones de dirección de arte.
 - [M.A.R.I.A. y Captain Dots](https://axfra.com/demos/axfra-maria-demo.html): continuidad de personajes e interacción narrativa.
 - [La paradoja Alarsi](https://axfra.com/demos/axfra-paradoja-alarsi-demo.html): contraste entre cálculo y decisión personal.
 
-Esta lista recoge demostraciones identificadas en esta revisión; consultar el índice /demos/ y el sitemap para el inventario vigente completo.
+El índice /demos/ y el sitemap determinan el inventario oficial vigente.
 
 ## Recursos relacionados
 - [Librería JSON](https://axfra.com/library/): encontrar recursos reutilizables.
@@ -31,6 +33,5 @@ Esta lista recoge demostraciones identificadas en esta revisión; consultar el �
 - [Herramientas](https://axfra.com/tools/): herramientas de edición disponibles.
 - [Glosario](https://axfra.com/glossary.html): terminología.
 - [Metodología](https://axfra.com/#metodo): proceso general.
-- [Research — Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): experimento documental en revisión, no normativa.
 
 Utilizar las URLs en /demos/ para citar demostraciones. Evitar rutas históricas cuando exista una ruta canónica actual.
