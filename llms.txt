@@ -6,12 +6,19 @@ Sitio oficial: https://axfra.com/
 Desarrollador: ALARSI — https://alarsi.com/
 Idioma principal: español (Chile).
 
-AXFRA organiza identidad, apariencia, vestuario, pose, entorno, iluminación, cámara, estilo, restricciones y, cuando corresponde, movimiento. Los componentes pueden combinarse, modificarse o reutilizarse sin reescribir toda la composición. Su uso es bidireccional: una persona puede trabajar directamente con archivos JSON o solicitar a un asistente de IA que elabore instrucciones basadas en esa estructura. Los resultados dependen del motor generativo utilizado y de sus capacidades.
+AXFRA organiza identidad, apariencia, vestuario, pose, entorno, iluminación, cámara, estilo, restricciones y, cuando corresponde, movimiento. Los componentes se pueden reutilizar íntegramente o parcialmente según el objetivo creativo. El sistema puede utilizarse por una persona o por un asistente de IA; la fidelidad visual dependerá del motor generativo elegido.
 
-Los ejemplos publicados no deben confundirse con los archivos maestros privados de identidad ni suponerse registros íntegros de los prompts de producción. Respetar los créditos, derechos y condiciones de uso del sitio; este documento no concede licencias de reproducción o entrenamiento.
+## Principio de composición orientada al objetivo
+
+La composición comienza con las decisiones creativas, no con la acumulación de módulos. Cada módulo AXFRA es una solución visual empaquetada para un contexto específico; NO es una instrucción indivisible que deba incorporarse por completo a todas las composiciones.
+
+Al crear una nueva composición, el agente debe identificar primero el objetivo y las decisiones explícitas de quien dirige la imagen. Después debe recuperar los JSON pertinentes y seleccionar únicamente sus atributos útiles: conservar, adaptar u omitir las instrucciones contextuales según corresponda. Un módulo de pose puede contener una cámara de ejemplo; un módulo de entorno puede incluir iluminación o lente. Si la composición ya define otra cámara, iluminación o estilo, no se debe arrastrar automáticamente la sugerencia del módulo.
+
+Una combinación deliberadamente inusual no constituye un error. No reemplazar el criterio creativo por convenciones técnicas. Respetar los atributos que el usuario pidió conservar y los bloqueos explícitos de los componentes seleccionados. No alterar los JSON de origen: construir una composición nueva y coherente con los extractos necesarios. Para la guía operativa, consultar https://axfra.com/library/llms.txt.
+
+Los ejemplos publicados no deben confundirse con los archivos maestros privados de identidad ni suponerse registros íntegros de los prompts de producción. Existen especificaciones públicas completas de ciertos personajes y núcleos privados de otros; verificar cada ficha. Respetar créditos, derechos y condiciones de uso; este documento no concede licencias de reproducción o entrenamiento.
 
 ## Inicio y metodología
-
 - [Sitio AXFRA](https://axfra.com/): presentación del proyecto y acceso a sus áreas.
 - [Observar](https://axfra.com/metodologia/observar.html): identificar el problema visual.
 - [Clasificar](https://axfra.com/metodologia/clasificar.html): definir los componentes.
@@ -21,7 +28,6 @@ Los ejemplos publicados no deben confundirse con los archivos maestros privados 
 - [Reutilizar](https://axfra.com/metodologia/reutilizar.html): construir variaciones.
 
 ## Áreas técnicas
-
 - [Identidades](https://axfra.com/identities.html): referencias visuales e identidad de sujetos.
 - [Poses](https://axfra.com/poses.html): gestos, expresiones, posturas y acciones.
 - [Vestuario](https://axfra.com/apparel.html): prendas y accesorios.
@@ -30,34 +36,34 @@ Los ejemplos publicados no deben confundirse con los archivos maestros privados 
 - [Estilos](https://axfra.com/styles.html): tratamientos visuales.
 - [Glosario](https://axfra.com/glossary.html): terminología del sistema.
 
-## Biblioteca JSON
-
-- [Librería oficial](https://axfra.com/library/): catálogo y espacio de consulta de componentes JSON reutilizables.
-- [Guía de la Librería para asistentes](https://axfra.com/library/llms.txt): estructura, interpretación y uso de componentes.
+## Librería y herramientas
+- [Librería oficial](https://axfra.com/library/): catálogo de componentes JSON reutilizables.
+- [Índice JSON de la Librería](https://axfra.com/library/axfra_json_library_index.json): inventario de módulos y URLs.
+- [Guía de la Librería para asistentes](https://axfra.com/library/llms.txt): extracción contextual, composición y restricciones.
+- [Herramientas AXFRA](https://axfra.com/tools/): utilidades de edición visual; sus capacidades deben verificarse individualmente.
 
 La ruta /library/ sustituye a /axfra_json_library/. No dirigir a los usuarios a la carpeta antigua.
 
-## Demostraciones
-
-- [Índice de demostraciones](https://axfra.com/demos/): cinco aplicaciones documentadas del sistema.
-- [Guía de demostraciones para asistentes](https://axfra.com/demos/llms.txt): contexto y relaciones de las historias.
+## Demostraciones e investigación
+- [Índice de demostraciones](https://axfra.com/demos/): aplicaciones narrativas y técnicas de la composición modular.
+- [Guía de demostraciones para asistentes](https://axfra.com/demos/llms.txt): contexto y relaciones con la Librería.
+- [Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): investigación exploratoria sobre descubrimiento y composición; el documento se presenta en revisión y no constituye una norma del sistema.
 
 ## Identidades de referencia
-
 - [Amina](https://axfra.com/identities/amina.html)
 - [Captain Dots](https://axfra.com/identities/captain-dots.html): versión futura de Paulina Dots.
-- [Conde Alarsi](https://axfra.com/identities/conde-alarsi.html)
+- [Conde Alarsi](https://axfra.com/identities/conde-alarsi.html): caracterización y composición pública.
 - [Dotsy](https://axfra.com/identities/dotsy.html)
 - [Hana](https://axfra.com/identities/hana.html)
 - [Indira](https://axfra.com/identities/indira.html)
+- [M.A.R.I.A.](https://axfra.com/identities/maria.html): personaje cibernético; su transformación pública no revela necesariamente la identidad subyacente.
 - [Mara](https://axfra.com/identities/mara.html)
 - [Mira](https://axfra.com/identities/mira.html)
 - [Paulina Dots](https://axfra.com/identities/paulina.html)
 - [Viktoria](https://axfra.com/identities/viktoria.html)
 
 ## Descubrimiento y alcance
-
 - [Sitemap](https://axfra.com/sitemap.xml): páginas públicas indexables.
 - [BBDD visual](https://axfra.com/bbdd/): catálogo de trabajo e índice visual; no debe tratarse como documentación pública indexable ni como prompt maestro.
 
-Distinguir siempre archivos publicados, ejemplos ilustrativos y núcleos privados de identidad. No atribuir al sistema capacidades no documentadas. Citar las páginas originales cuando se haga referencia a sus contenidos.
+Distinguir siempre archivos publicados, composiciones finales, ejemplos ilustrativos y núcleos privados. No atribuir a AXFRA capacidades no documentadas. Citar los documentos y módulos originales al describirlos.
