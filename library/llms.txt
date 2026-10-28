@@ -1,37 +1,56 @@
 # AXFRA — Librería JSON
 
-> Biblioteca de componentes visuales estructurados en JSON, desarrollada por ALARSI para AXFRA. Los módulos permiten describir y combinar partes de una composición visual en motores de IA compatibles con instrucciones textuales o estructuradas.
+> Biblioteca de soluciones visuales estructuradas en JSON, desarrollada por ALARSI para AXFRA. Cada módulo documenta un recurso reutilizable; la composición selecciona lo pertinente de esos recursos según la intención creativa.
 
 Librería oficial: https://axfra.com/library/
+Índice JSON: https://axfra.com/library/axfra_json_library_index.json
 Proyecto: https://axfra.com/
 Desarrollador: ALARSI — https://alarsi.com/
 
-La Librería reúne piezas individuales, no un único prompt monolítico. Al reutilizar una pieza se debe respetar su ID, categoría, slot y reglas propias. Algunos módulos incluyen swap_rule, atributos editables, bloqueos y metadatos de procedencia. No asumir que todos los archivos poseen exactamente el mismo esquema: inspeccionar el JSON específico antes de utilizarlo.
+La Librería reúne archivos individuales, no un prompt monolítico. No asumir que todos los módulos tienen el mismo esquema: leer el JSON específico antes de interpretarlo. Algunos contienen ID, category, slot, swap_rule, bloqueos y atributos editables. El índice identifica recursos y sus URLs; no reemplaza la lectura de cada archivo.
 
-El uso puede ser directo, seleccionando y combinando archivos JSON, o mediado por un asistente de IA que elabore instrucciones equivalentes conforme a los módulos publicados. La compatibilidad efectiva y fidelidad de los resultados dependen del modelo utilizado.
+## Principio rector: extracción contextual
+
+Un módulo AXFRA es una solución empaquetada que puede incluir más de un aspecto de la escena: una pose con cámara sugerida, un entorno con iluminación, un vestuario con peinado, un estilo con focal, etc. Son características válidas de su solución original, no órdenes que deban aplicarse siempre juntas.
+
+1. Identificar primero el objetivo visual y las decisiones ya fijadas por el usuario.
+2. Localizar y leer los módulos pertinentes desde el índice y sus URLs originales.
+3. Identificar qué parte de cada módulo resuelve el objetivo: identidad, anatomía, prenda, textura, gesto, perspectiva, iluminación, entorno, estilo u otro atributo.
+4. Extraer lo necesario, adaptar lo editable y omitir lo contextual o redundante. No acumular instrucciones incompatibles por el solo hecho de aparecer en distintos JSON.
+5. Si la composición establece una cámara de 35 mm, no importar automáticamente la sugerencia de 85 mm de otro módulo. Aplicar el mismo criterio a poses, vestuario, expresión, entornos, iluminación, estilos y movimiento.
+6. Respetar decisiones explícitas del usuario y restricciones esenciales del componente utilizado, especialmente bloqueos de identidad y propiedades del diseño que se solicita conservar. No convertir recomendaciones técnicas en prohibiciones de combinaciones creativas deliberadas.
+7. Redactar una composición final clara, evitando contradicciones accidentales y preservando la intención. Si una decisión esencial sigue siendo ambigua, señalarlo sin inventar un dato como si fuera del módulo.
+8. Mantener los JSON originales intactos. La extracción, edición y combinación ocurren en la composición resultante; indicar IDs o URLs de procedencia cuando sea útil.
+
+## Ejemplo de criterio
+
+Objetivo del usuario: personaje con pose de brazos cruzados, lente de 35 mm e iluminación propia.
+
+- Del módulo de pose: usar postura y distribución anatómica; omitir su encuadre o focal de ejemplo si no corresponde.
+- Del módulo de entorno: usar arquitectura y elementos espaciales; omitir su cámara si contradice el encuadre fijado.
+- Del módulo de cámara: usar el ángulo pertinente, manteniendo los 35 mm decididos para el resultado.
+- Del módulo de iluminación: usar solo las fuentes necesarias para el objetivo.
+
+La composición puede utilizar un recurso completo o solo un extracto. Omitir un atributo contextual no significa que el módulo original esté mal hecho. Una combinación deliberadamente no convencional tampoco es un error por sí misma.
 
 ## Acceso al catálogo
-
-- [Interfaz de la Librería JSON](https://axfra.com/library/): navegación y consulta de recursos publicados.
-- [Índice JSON de la Librería](https://axfra.com/library/axfra_json_library_index.json): inventario publicado de módulos.
+- [Interfaz de la Librería JSON](https://axfra.com/library/): navegación y consulta.
+- [Índice JSON de la Librería](https://axfra.com/library/axfra_json_library_index.json): IDs, categorías y rutas a archivos individuales.
 
 ## Áreas relacionadas
-
-- [Identidades](https://axfra.com/identities.html): referencias de sujetos; los núcleos maestros privados de identidad no están incluidos necesariamente en la Librería.
+- [Identidades](https://axfra.com/identities.html): sujetos y fichas públicas; no inferir que todos sus núcleos completos son públicos.
 - [Poses](https://axfra.com/poses.html): poses y expresiones.
 - [Vestuario](https://axfra.com/apparel.html): prendas y accesorios.
-- [Entornos](https://axfra.com/environments.html): escenarios y elementos de ambiente.
-- [Cámara e iluminación](https://axfra.com/camera.html): orientación de cámara, perspectiva e iluminación.
-- [Estilos](https://axfra.com/styles.html): lenguajes y tratamientos visuales.
+- [Entornos](https://axfra.com/environments.html): escenarios y ambientes.
+- [Cámara e iluminación](https://axfra.com/camera.html): perspectivas y fuentes de luz.
+- [Estilos](https://axfra.com/styles.html): tratamientos visuales.
 - [Glosario](https://axfra.com/glossary.html): conceptos técnicos.
-- [Demostraciones](https://axfra.com/demos/): usos narrativos de la arquitectura modular.
+- [Demostraciones](https://axfra.com/demos/): aplicación narrativa; no son contratos obligatorios de composición.
+- [Herramientas](https://axfra.com/tools/): edición de componentes; verificar límites de cada herramienta.
+- [Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): prueba exploratoria, en revisión.
 
-## Orientaciones para asistentes de IA
+## Procedencia y derechos
 
-- Leer el archivo JSON específico antes de describir sus parámetros o modificarlo.
-- Conservar IDs, cortes de prendas, estructuras y bloqueos salvo instrucciones expresas de cambio.
-- Mantener separados la identidad, el vestuario, el entorno, la cámara y otros módulos para evitar cambios no solicitados.
-- Diferenciar un módulo de ejemplo, una composición ilustrativa y un prompt completo de producción.
-- No presentar los recursos públicos como autorización para reproducir imágenes, identidades o material protegido.
+Conservar identificadores al citar recursos. Diferenciar recurso fuente, extracto seleccionado y composición final. Las restricciones expresas y el alcance de las licencias siguen siendo aplicables; publicar un JSON no implica permisos universales de reproducción, entrenamiento o uso de identidades. La compatibilidad y fidelidad de los resultados dependen del modelo generativo utilizado.
 
-La carpeta /axfra_json_library/ es una estructura anterior y no debe usarse como destino oficial de enlaces.
+La carpeta /axfra_json_library/ es anterior y no debe emplearse como destino oficial.
