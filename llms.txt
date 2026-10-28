@@ -57,7 +57,6 @@ La ruta /library/ sustituye a /axfra_json_library/. No dirigir a los usuarios a 
 ## Demostraciones e investigación
 - [Índice de demostraciones](https://axfra.com/demos/): aplicaciones narrativas y técnicas de la composición modular.
 - [Guía de demostraciones para asistentes](https://axfra.com/demos/llms.txt): contexto y relaciones con la Librería.
-- [Agent Challenge 01](https://axfra.com/research/agent-challenge-01.html): investigación exploratoria sobre descubrimiento y composición; el documento se presenta en revisión y no constituye una norma del sistema.
 
 ## Identidades de referencia
 - [Amina](https://axfra.com/identities/amina.html)
