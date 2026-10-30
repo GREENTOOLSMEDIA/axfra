@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-CL"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#050607">
+<title>Cómo controlar la transparencia de ropa con IA usando JSON | AXFRA</title><meta name="description" content="Cómo lograr ropa translúcida con inteligencia artificial: una prueba visual con M.A.R.I.A., camisa roja y cuatro parámetros JSON de opacidad, luz y tejido."><meta name="author" content="ALARSI"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://axfra.com/demos/axfra-transparencia-ropa-ia.html">
+<meta property="og:type" content="article"><meta property="og:locale" content="es_CL"><meta property="og:site_name" content="AXFRA"><meta property="og:title" content="Cómo controlar la transparencia de ropa con IA usando JSON | AXFRA"><meta property="og:description" content="Cómo lograr ropa translúcida con inteligencia artificial: una prueba visual con M.A.R.I.A., camisa roja y cuatro parámetros JSON de opacidad, luz y tejido."><meta property="og:url" content="https://axfra.com/demos/axfra-transparencia-ropa-ia.html"><meta property="og:image" content="https://axfra.com/images/editorial/axfra_maria_camisa_roja_transparente.jpg"><meta property="og:image:alt" content="M.A.R.I.A. con camisa roja translúcida; estructura robótica visible bajo el tejido"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/shared-layout.css"><link rel="stylesheet" href="/demo-conclusion.css"><style>
+:root{--bg:#050607;--p:#101316;--text:#f3f4f5;--muted:#b5bec4;--stroke:#32383e;--red:#ec6764;--max:1170px;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif}a{color:inherit}img{display:block;width:100%;height:auto}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.hero{padding:80px 0 67px;background:radial-gradient(ellipse at 85% 5%,#632a2a70,transparent 48%);border-bottom:1px solid var(--stroke)}.kicker{font-size:.73rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase;color:#ffa2a0}h1{font-size:clamp(2.9rem,7vw,6.1rem);line-height:1.02;letter-spacing:-.055em;max-width:990px;margin:16px 0 25px}h1 em{font-style:normal;color:var(--red)}h2{font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.13;letter-spacing:-.034em;margin:12px 0 20px}h3{font-size:1.17rem;line-height:1.3;margin:8px 0}.lead{font-size:1.17rem;max-width:820px;color:#d3d8db}.section{padding:70px 0;border-bottom:1px solid var(--stroke)}p{max-width:810px;color:#ccd1d4}.buttons{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}.btn,button.copy{display:inline-flex;align-items:center;justify-content:center;padding:10px 15px;min-height:45px;border:1px solid #5b656a;background:#161b1e;color:#fff;text-decoration:none;font:700 .83rem Inter,system-ui,sans-serif;cursor:pointer}.btn.primary{background:#f0b2b0;color:#1a0b0a;border-color:#f0b2b0}.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.photo{background:var(--p);border:1px solid var(--stroke);margin:0;min-width:0}.photo img{aspect-ratio:2/3;object-fit:cover}.photo figcaption{padding:18px 19px}.photo strong{display:block;font-size:1.03rem}.photo small{display:block;color:var(--muted);margin-top:5px;font-size:.83rem}.flag{display:inline-block;color:#ffb4b0;letter-spacing:.1em;text-transform:uppercase;font-weight:800;font-size:.7rem;margin-bottom:8px}.third{display:grid;grid-template-columns:minmax(220px,370px) 1fr;align-items:center;gap:35px;margin-top:28px}.third figure{margin:0;border:1px solid var(--stroke)}.third figure img{aspect-ratio:2/3;object-fit:cover}.parameter-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:24px}.param{background:var(--p);border:1px solid var(--stroke);padding:24px}.param code{font-size:1.1rem;color:#ffb4b0}.param p{margin:10px 0 0;font-size:.9rem}.pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.codebox{min-width:0;background:#0e1114;border:1px solid var(--stroke)}.codehead{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 16px;border-bottom:1px solid var(--stroke)}.codehead strong{font-size:.86rem}.codebox pre{padding:18px;margin:0;max-width:100%;max-height:370px;overflow:auto;font:12px/1.62 ui-monospace,SFMono-Regular,Consolas,monospace;color:#e2eaed;white-space:pre}.notice{border-left:3px solid #eaa19d;background:#201718;padding:16px 19px;margin:25px 0;color:#e5d4d3}.faq details{border-top:1px solid var(--stroke);padding:17px 0}.faq summary{cursor:pointer;font-weight:750}.faq p{margin:10px 0}.footnav{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px}.footnav a{color:#ffb4b0}.mini{font-size:.87rem;color:var(--muted)}@media(max-width:760px){.compare,.pair,.parameter-grid,.third{grid-template-columns:1fr}.third{max-width:520px}.section{padding:52px 0}.hero{padding:55px 0}.wrap{width:calc(100% - 28px)}.photo figcaption{padding:14px}.buttons .btn{width:100%}}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://axfra.com/demos/axfra-transparencia-ropa-ia.html#article","headline":"Cómo controlar la transparencia de ropa con IA usando JSON | AXFRA","description":"Cómo lograr ropa translúcida con inteligencia artificial: una prueba visual con M.A.R.I.A., camisa roja y cuatro parámetros JSON de opacidad, luz y tejido.","inLanguage":"es-CL","mainEntityOfPage":{"@id":"https://axfra.com/demos/axfra-transparencia-ropa-ia.html"},"author":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"image":["https://axfra.com/images/editorial/axfra_maria_camisa_roja_opaca.jpg","https://axfra.com/images/editorial/axfra_maria_camisa_roja_transparente.jpg","https://axfra.com/images/editorial/axfra_maria_referencia_anatomica.jpg"],"about":["transparencia de ropa con inteligencia artificial","prompts JSON","materiales y tejidos"]},{"@type":"FAQPage","@id":"https://axfra.com/demos/axfra-transparencia-ropa-ia.html#preguntas","mainEntity":[{"@type":"Question","name":"¿Cómo controlar la transparencia de la ropa generada con IA?","acceptedAnswer":{"@type":"Answer","text":"En esta prueba de AXFRA se mantuvo una camisa roja de lino como base y se antepusieron cuatro instrucciones: opacity, light_transmission, fiber_density y transparency. Las imágenes muestran un cambio perceptible, pero no garantizan resultados idénticos en todos los modelos."}},{"@type":"Question","name":"¿Qué hace opacity en un prompt de imagen?","acceptedAnswer":{"@type":"Answer","text":"Es una indicación de cobertura visual: los valores bajos buscan que se perciba más de lo situado debajo del material. En un generador de imágenes es una instrucción semántica, no una simulación física garantizada."}},{"@type":"Question","name":"¿Es necesario modificar el JSON de la prenda?","acceptedAnswer":{"@type":"Answer","text":"No. El objetivo de este experimento es conservar el JSON de vestuario y anteponer instrucciones de comportamiento óptico. El JSON original se muestra con una corrección exclusivamente sintáctica: tue se normalizó a true."}}]}]}</script></head>
+<body><a class="skip" href="#contenido">Saltar al contenido</a><div id="globalHeader"></div>
+<main id="contenido">
+<section class="hero"><div class="wrap"><div class="kicker">AXFRA / Demostración técnica / Material Behavior 01</div><h1>Cómo controlar la <em>transparencia de ropa</em> con IA</h1><p class="lead">Una camisa roja, el mismo personaje y cuatro parámetros JSON. Comparamos el resultado sin ajustes ópticos con una versión translúcida para explicar cómo combinar instrucciones de opacidad, luz y densidad de tejido.</p><div class="buttons"><a class="btn primary" href="#comparacion">Ver el antes y después</a><a class="btn" href="#parametros">Entender los parámetros</a><a class="btn" href="#json">Copiar el JSON</a></div></div></section>
+<section class="section" id="comparacion"><div class="wrap"><div class="kicker">01 / Prueba visual</div><h2>La misma camisa. Dos respuestas visuales.</h2><p>La protagonista es <strong>M.A.R.I.A.</strong>, una androide de AXFRA cuya anatomía mecánica permite observar con claridad la diferencia entre una prenda opaca y otra translúcida. Se utiliza el módulo de vestuario <code>AXFRA_blouse_camisa</code> con color rojo y material declarado como lino.</p>
+<div class="compare"><figure class="photo"><img src="/images/editorial/axfra_maria_camisa_roja_opaca.jpg" width="1024" height="1536" alt="M.A.R.I.A. vestida con una camisa roja opaca de cuello y mangas largas; no se ve la estructura mecánica del torso a través del tejido" fetchpriority="high"><figcaption><span class="flag">A / Sin parámetros adicionales</span><strong>Camisa roja opaca</strong><small>El tejido cubre la arquitectura mecánica. Referencia de vestuario base.</small></figcaption></figure><figure class="photo"><img src="/images/editorial/axfra_maria_camisa_roja_transparente.jpg" width="1024" height="1536" alt="M.A.R.I.A. con una camisa roja translúcida a través de la cual se distinguen placas, articulaciones y circuitos del torso robótico" fetchpriority="high"><figcaption><span class="flag">B / Con parámetros adicionales</span><strong>Camisa roja translúcida</strong><small>Se hacen visibles las placas y las articulaciones bajo la tela; se reconocen cuello, mangas, puños y botones.</small></figcaption></figure></div>
+<p class="mini">Imágenes generadas mediante Grok; ensayo visual de AXFRA / ALARSI. Las tomas no son píxeles idénticos y no constituyen una medición óptica de laboratorio.</p></div></section>
+<section class="section"><div class="wrap"><div class="kicker">02 / Referencia de anatomía</div><h2>¿Qué estamos viendo a través de la tela?</h2><div class="third"><figure><img src="/images/editorial/axfra_maria_referencia_anatomica.jpg" width="1024" height="1536" loading="lazy" alt="M.A.R.I.A. sin camisa, mostrando placas blancas, circuitos y articulaciones del cuerpo robótico junto a una piscina"></figure><div><p>La referencia sin camisa muestra la arquitectura mecánica de M.A.R.I.A. Al comparar las imágenes anteriores, es posible reconocer esas formas bajo la camisa roja translúcida.</p><p>Una referencia de alto contraste resulta útil para enseñar visualmente el efecto: el visitante distingue de inmediato la prenda de lo que se encuentra debajo.</p></div></div></div></section>
+<section class="section" id="parametros"><div class="wrap"><div class="kicker">03 / Cómo funciona</div><h2>La transparencia no es un botón.</h2><p>En esta prueba no se utilizó un único adjetivo como «transparente». Se antepusieron <strong>cuatro instrucciones complementarias</strong> al JSON de vestuario. Su combinación orienta al generador hacia una apariencia de tejido más abierto y transmisivo.</p><div class="parameter-grid">
+<div class="param"><code>opacity: 0.1</code><h3>Opacidad</h3><p>Solicita una cobertura visual muy baja: se busca que aquello situado bajo la tela resulte más visible.</p></div>
+<div class="param"><code>light_transmission: 0.9</code><h3>Transmisión de luz</h3><p>Solicita que una fracción elevada de la luz atraviese el tejido, contribuyendo a su apariencia translúcida.</p></div>
+<div class="param"><code>fiber_density: 0.05</code><h3>Densidad de fibra</h3><p>Describe una trama visualmente muy poco densa. Ayuda a comunicar finura y menor cobertura del tejido.</p></div>
+<div class="param"><code>transparency: 1</code><h3>Transparencia solicitada</h3><p>Refuerza la intención global del efecto. El valor no debe interpretarse como una medición física calibrada del motor.</p></div></div>
+<div class="notice"><strong>La clave es la combinación.</strong> Estos nombres y valores son instrucciones semánticas para el modelo generativo, no controles físicos normalizados. Las imágenes muestran una respuesta útil a este conjunto, pero no aíslan el efecto de cada variable.</div></div></section>
+<section class="section" id="json"><div class="wrap"><div class="kicker">04 / Reproduce el ensayo</div><h2>Dos bloques. Sin reescribir el vestuario.</h2><p>Primero se utiliza la definición de la camisa roja. Para la variante translúcida se antepone el conjunto de cuatro parámetros. Se conserva la estructura original de vestuario. Abajo puedes copiar las instrucciones y consultar el módulo completo.</p>
+<div class="pair"><div class="codebox"><div class="codehead"><strong>01 / Parámetros experimentales</strong><button class="copy" type="button" data-target="opt-code">Copiar</button></div><pre><code id="opt-code">{
+  &quot;opacity&quot;: 0.1,
+  &quot;light_transmission&quot;: 0.9,
+  &quot;fiber_density&quot;: 0.05,
+  &quot;transparency&quot;: 1
+}</code></pre></div><div class="codebox"><div class="codehead"><strong>02 / Vestuario base · extracto</strong><button class="copy" type="button" data-target="short-code">Copiar</button></div><pre><code id="short-code">{
+  &quot;id&quot;: &quot;AXFRA_blouse_camisa&quot;,
+  &quot;category&quot;: &quot;wardrobe&quot;,
+  &quot;piece_type&quot;: &quot;blouse&quot;,
+  &quot;neckline&quot;: &quot;shirt collar&quot;,
+  &quot;sleeves&quot;: &quot;long sleeves with cuffs&quot;,
+  &quot;fit&quot;: &quot;classic fit, button-front&quot;,
+  &quot;material&quot;: &quot;linen&quot;,
+  &quot;thickness&quot;: &quot;normal&quot;,
+  &quot;transparency&quot;: true,
+  &quot;color&quot;: &quot;red&quot;
+}</code></pre></div></div>
+<details class="faq"><summary>Ver y copiar el JSON completo de la camisa roja</summary><div class="codebox"><div class="codehead"><strong>AXFRA_blouse_camisa</strong><button class="copy" type="button" data-target="base-code">Copiar JSON</button></div><pre><code id="base-code">{
+  &quot;id&quot;: &quot;AXFRA_blouse_camisa&quot;,
+  &quot;name&quot;: &quot;Button-down shirt&quot;,
+  &quot;name_es&quot;: &quot;Camisa&quot;,
+  &quot;meta&quot;: {
+    &quot;developer&quot;: &quot;ALARSI&quot;,
+    &quot;developer_site&quot;: &quot;https://alarsi.com&quot;,
+    &quot;brand&quot;: &quot;AXFRA&quot;,
+    &quot;brand_site&quot;: &quot;https://axfra.com&quot;,
+    &quot;system&quot;: &quot;AXFRA JSON prompt system&quot;,
+    &quot;version&quot;: &quot;1.0&quot;,
+    &quot;source&quot;: &quot;Clara Pattern Studio — Tipos de blusas&quot;
+  },
+  &quot;category&quot;: &quot;wardrobe&quot;,
+  &quot;piece_type&quot;: &quot;blouse&quot;,
+  &quot;swap_rule&quot;: &quot;Reference the blouse ID and change material, thickness, transparency, pattern, and color. Do not rewrite the cut.&quot;,
+  &quot;material_catalog&quot;: [
+    &quot;cotton&quot;,
+    &quot;linen&quot;,
+    &quot;silk&quot;,
+    &quot;satin&quot;,
+    &quot;chiffon&quot;,
+    &quot;lace&quot;,
+    &quot;knit&quot;,
+    &quot;denim&quot;,
+    &quot;corduroy&quot;,
+    &quot;velvet&quot;,
+    &quot;leather&quot;,
+    &quot;tulle&quot;
+  ],
+  &quot;thickness_catalog&quot;: [
+    &quot;very_thin&quot;,
+    &quot;thin&quot;,
+    &quot;normal&quot;,
+    &quot;thick&quot;
+  ],
+  &quot;transparency_catalog&quot;: [
+    true,
+    false
+  ],
+  &quot;pattern_catalog&quot;: [
+    &quot;solid&quot;,
+    &quot;stripes&quot;,
+    &quot;checks&quot;,
+    &quot;polka_dots&quot;,
+    &quot;floral&quot;
+  ],
+  &quot;neckline&quot;: &quot;shirt collar&quot;,
+  &quot;sleeves&quot;: &quot;long sleeves with cuffs&quot;,
+  &quot;hem&quot;: &quot;straight&quot;,
+  &quot;fit&quot;: &quot;classic fit, button-front&quot;,
+  &quot;material&quot;: &quot;linen&quot;,
+  &quot;thickness&quot;: &quot;normal&quot;,
+  &quot;transparency&quot;: true,
+  &quot;pattern&quot;: &quot;solid&quot;,
+  &quot;color&quot;: &quot;red&quot;
+}</code></pre></div></details>
+<p class="mini">Nota de fidelidad: el texto compartido originalmente anteponía cuatro pares clave/valor al objeto de vestuario y contenía el error tipográfico <code>tue</code>. Para ofrecer archivos JSON válidos se muestra la misma camisa con <code>true</code> corregido. El prefijo experimental no constituye, por sí solo, un documento JSON completo.</p>
+<div class="buttons"><a class="btn" href="/library/json/axfra_blouse_camisa_demo_base.json" download>JSON de la camisa</a><a class="btn" href="/library/json/axfra_optical_behavior_experimento_01.json" download>JSON del módulo óptico</a><a class="btn" href="axfra-transparencia-prompt-usado.txt" download>Secuencia de prompt</a></div></div></section>
+<section class="section faq"><div class="wrap"><div class="kicker">05 / Preguntas frecuentes</div><h2>Transparencia de ropa con inteligencia artificial: dudas habituales</h2><details><summary>¿Cómo controlar la transparencia de la ropa generada con IA?</summary><p>En esta prueba de AXFRA se mantuvo una camisa roja de lino como base y se antepusieron cuatro instrucciones: opacity, light_transmission, fiber_density y transparency. Las imágenes muestran un cambio perceptible, pero no garantizan resultados idénticos en todos los modelos.</p></details><details><summary>¿Qué hace opacity en un prompt de imagen?</summary><p>Es una indicación de cobertura visual: los valores bajos buscan que se perciba más de lo situado debajo del material. En un generador de imágenes es una instrucción semántica, no una simulación física garantizada.</p></details><details><summary>¿Es necesario modificar el JSON de la prenda?</summary><p>No. El objetivo de este experimento es conservar el JSON de vestuario y anteponer instrucciones de comportamiento óptico. El JSON original se muestra con una corrección exclusivamente sintáctica: tue se normalizó a true.</p></details></div></section>
+<section class="section"><div class="wrap"><div class="kicker">06 / Conclusión</div><h2>Una solución modular para un problema visual concreto.</h2><p>En este ensayo, anteponer cuatro parámetros al JSON de una prenda produjo una diferencia clara de apariencia óptica. No hizo falta crear otra definición de camisa: la estructura de vestuario pudo reutilizarse.</p><p>La prueba no demuestra que Grok interprete cada valor de manera independiente ni garantiza idénticos resultados con otros materiales. Sí ofrece un procedimiento documentado, visual y fácil de experimentar.</p><p><strong>AXFRA no genera imágenes:</strong> estructura las decisiones que se entregan a herramientas de generación visual con IA.</p><nav class="footnav" aria-label="Continuar en AXFRA"><a href="/library/">Explorar la Librería AXFRA</a><a href="/demos/">Ver más demostraciones</a><a href="/identities/maria.html">Conocer a M.A.R.I.A.</a></nav></div></section>
+</main><div id="globalFooter"></div><script defer src="/shared-layout.js"></script><script defer src="/demo-conclusion.js"></script><script>document.querySelectorAll('button.copy').forEach(b=>b.addEventListener('click',async()=>{let t=document.getElementById(b.dataset.target).textContent;try{await navigator.clipboard.writeText(t);b.textContent='Copiado ✓';setTimeout(()=>b.textContent='Copiar',1800)}catch(e){b.textContent='Selecciona el texto'}}));</script></body></html>
