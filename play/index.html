@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#070a10">
-<title>AXFRA Play — Código JSON | Ocho historias visuales</title>
+<title>AXFRA Play — Código JSON | Cuatro episodios visuales</title>
 <meta name="description" content="AXFRA: Código JSON. Ocho demostraciones visuales en formato cinematográfico: identidad, vestuario, cámara y composición mediante módulos JSON.">
 <meta name="robots" content="noindex,follow">
 <link rel="canonical" href="https://axfra.com/play/">
-<meta property="og:type" content="website"><meta property="og:locale" content="es_CL"><meta property="og:site_name" content="AXFRA"><meta property="og:title" content="AXFRA Play — Código JSON"><meta property="og:description" content="Ocho historias visuales. Ocho escenas de ocho segundos. Una arquitectura JSON."><meta property="og:url" content="https://axfra.com/play/"><meta property="og:image" content="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_CL"><meta property="og:site_name" content="AXFRA"><meta property="og:title" content="AXFRA Play — Código JSON"><meta property="og:description" content="Cuatro episodios visuales. Ocho escenas de ocho segundos. Una arquitectura JSON."><meta property="og:url" content="https://axfra.com/play/"><meta property="og:image" content="https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg">
 <link rel="stylesheet" href="https://axfra.com/shared-layout.css">
 <link rel="stylesheet" href="./css/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"AXFRA Play — Código JSON","url":"https://axfra.com/play/","inLanguage":"es-CL","publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com/"}}</script>
@@ -18,25 +18,24 @@
 <div id="globalHeader"></div>
 <main id="contenido" class="play-main">
   <section class="stage" aria-label="Episodio destacado">
-    <div class="stage-art" id="stageArt"></div><div class="stage-shade"></div>
+    <div class="stage-art" id="stageArt"></div><video class="stage-video" id="stageVideo" muted autoplay playsinline preload="auto" aria-label="Video del episodio seleccionado"></video><div class="stage-shade"></div>
     <div class="stage-copy">
       <span class="micro">AXFRA / SERIE VISUAL ORIGINAL</span>
-      <div class="premiere">Ocho episodios</div>
+      <div class="premiere">4 episodios · reproducción continua</div>
       <h1>AXFRA: <span>CÓDIGO JSON</span></h1>
-      <p class="stage-meta">2026 <b>·</b> 1 temporada <b>·</b> Narrativa y composición visual <b>·</b> 8 s por episodio</p>
-      <h2 id="heroEpisode">T1:E1 — Conde Alarsi</h2>
-      <p id="heroDescription">Ocho escenas. Ocho formas de construir una imagen.</p>
-      <div class="stage-actions"><button class="play-button" id="playCurrent" type="button"><span aria-hidden="true">▶</span> REPRODUCIR</button><a id="visitDemo" class="secondary-button" href="https://axfra.com/demos/">VER DEMOSTRACIÓN ↗</a></div>
-      <p class="play-hint" id="playHint" aria-live="polite">Los clips de ocho segundos se incorporarán próximamente.</p>
+      <p class="stage-meta">2026 <b>·</b> 1 temporada <b>·</b> Narrativa y composición visual <b>·</b> 8 s por clip</p>
+      <h2 id="heroEpisode">T1:E1 — Cara a cara</h2>
+      <p id="heroDescription">Cuatro escenas. Cuatro formas de construir una imagen.</p>
+      <div class="stage-actions"><button class="play-button" id="playCurrent" type="button"><span aria-hidden="true">❚❚</span> PAUSAR</button><a id="visitDemo" class="secondary-button" href="https://axfra.com/demos/">VER DEMOSTRACIÓN ↗</a></div>
+      <p class="play-hint" id="playHint" aria-live="polite">Los videos se reproducen automáticamente, sin sonido. Si falta un MP4, permanece su fotografía durante 8 segundos.</p>
     </div>
   </section>
   <section class="catalog" aria-label="Catálogo de episodios">
     <div class="tabs" role="tablist" aria-label="Secciones de AXFRA Play"><button class="tab active" role="tab" aria-selected="true" id="tabEpisodes" type="button">EPISODIOS</button><button class="tab" role="tab" aria-selected="false" id="tabDetails" type="button">DETALLES</button></div>
-    <div id="episodesPanel" role="tabpanel" aria-labelledby="tabEpisodes"><div class="catalog-head"><h2>Temporada 1</h2><span>8 episodios · 8 segundos cada uno</span></div><div class="episode-grid" id="episodeGrid"></div></div>
-    <div id="detailsPanel" role="tabpanel" aria-labelledby="tabDetails" hidden><h2>La imagen comienza antes del primer píxel.</h2><p>AXFRA estudia cómo las identidades, el vestuario, la cámara, la iluminación y los escenarios pueden describirse mediante instrucciones JSON modulares. Esta selección reúne ocho demostraciones del proyecto.</p><a href="https://axfra.com/demos/">Explorar las demostraciones completas ↗</a></div>
+    <div id="episodesPanel" role="tabpanel" aria-labelledby="tabEpisodes"><div class="catalog-head"><h2>Temporada 1</h2><span>4 episodios · 8 segundos cada uno</span></div><div class="episode-grid" id="episodeGrid"></div></div>
+    <div id="detailsPanel" role="tabpanel" aria-labelledby="tabDetails" hidden><h2>La imagen comienza antes del primer píxel.</h2><p>AXFRA estudia cómo las identidades, el vestuario, la cámara, la iluminación y los escenarios pueden describirse mediante instrucciones JSON modulares. Esta selección presenta cuatro escenas del proyecto.</p><a href="https://axfra.com/demos/">Explorar las demostraciones completas ↗</a></div>
   </section>
 </main>
-<div class="video-modal" id="videoModal" hidden role="dialog" aria-modal="true" aria-label="Reproductor del episodio"><div class="modal-inner"><button type="button" id="closeVideo" class="close-video" aria-label="Cerrar video">✕</button><video id="episodeVideo" controls playsinline preload="none"></video><p id="videoFallback" hidden>El video de este episodio todavía no está disponible. <a id="videoDemoLink" href="https://axfra.com/demos/">Puedes explorar su demostración completa ↗</a></p></div></div>
 <div id="globalFooter"></div>
 <script src="./js/player.js" defer></script>
 <script src="https://axfra.com/shared-layout.js" defer></script>

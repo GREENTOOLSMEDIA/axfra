@@ -1,52 +1,72 @@
 (() => {
   'use strict';
-  // Cambiar las imágenes provisionales y colocar los clips en videos/01.mp4 ... videos/08.mp4.
+  // Los JPG y MP4 usan la misma base y rutas locales bajo /play/.
   const episodes = [
-    {title:'Conde Alarsi',description:'Una historia fantástica empieza con un café y una serie de decisiones visuales.',image:'https://axfra.com/images/homegallery/axfra_editorial-80.jpg',demo:'https://axfra.com/demos/demostracion-practica.html'},
-    {title:'Soccer Play',description:'Paulina y Amina enfrentan a los equipos Red y White. Ocho identidades, una misma cancha.',image:'https://axfra.com/images/homegallery/axfra_soccer_captains_faceoff.jpg',demo:'https://axfra.com/demos/soccer-play-demo.html'},
-    {title:'PauDotsBand',description:'Del backstage al escenario: vestuario, instrumentos y luces en una banda de rock.',image:'https://axfra.com/images/homegallery/axfra_paudotsband_stage_illuminated.jpg',demo:'https://axfra.com/demos/paudotsband-concert-demo.html'},
-    {title:'AXION FRAME 69',description:'Una prenda, dos identidades y múltiples variaciones de materiales y escenarios.',image:'https://axfra.com/images/homegallery/axfra_indira_mira_atardecer.jpg',demo:'https://axfra.com/demos/axion-frame-69.html'},
-    {title:'AXFRA House',description:'Un entorno compartido para personajes, objetos y aventuras.',image:'https://axfra.com/images/homegallery/axfra_editorial_82.jpg',demo:'https://axfra.com/demos/'},
-    {title:'De la Cordillera al Río',description:'Identidades AXFRA reinterpretadas como una producción editorial de carnaval.',image:'https://axfra.com/images/editorial/axfra_indira_sol_05_retrato_solar.jpg',demo:'https://axfra.com/demos/axfra-rio-demo.html'},
-    {title:'M.A.R.I.A. y Conde Alarsi',description:'La lógica de una inteligencia modular choca con las decisiones analógicas del Conde.',image:'https://axfra.com/images/homegallery/axfra_editorial-52.jpg',demo:'https://axfra.com/demos/axfra-maria-demo.html'},
-    {title:'Indira y el SOL perdido',description:'Una aventura visual donde el verdadero tesoro era el orden.',image:'https://axfra.com/images/editorial/axfra_indira_sol_05_retrato_solar.jpg',demo:'https://axfra.com/demos/axfra-indira-sol-perdido-demo.html'}
+    {slug:'axfra_soccer_play_cara_a_cara',title:'Soccer Play — Cara a cara',description:'Paulina y Amina se enfrentan antes del primer pase. Dos equipos y ocho identidades en una misma composición.',demo:'https://axfra.com/demos/soccer-play-demo.html'},
+    {slug:'axfra_conde_alarsi_libro',title:'Conde Alarsi — El libro',description:'El Conde descubre un universo fantástico entre páginas, personajes y un monumental vitral AXFRA.',demo:'https://axfra.com/demos/demostracion-practica.html'},
+    {slug:'axfra_axion_frame_69_surf',title:'AXION FRAME 69 — Surf',description:'Una prenda modular cruza imágenes, tratamientos gráficos y escenarios inesperados.',demo:'https://axfra.com/demos/axion-frame-69.html'},
+    {slug:'axfra_heroina_fantastica',title:'Heroína fantástica',description:'Una composición de fantasía reúne identidad, materiales, vestuario y dirección de cámara.',demo:'https://axfra.com/demos/'}
   ];
-  let selected = 1;
   const $ = id => document.getElementById(id);
-  const grid = $('episodeGrid');
+  const video = $('stageVideo'), art = $('stageArt'), grid = $('episodeGrid');
   const cards = [];
-  const stageArt = $('stageArt');
-  const modal = $('videoModal');
-  const video = $('episodeVideo');
-  function select(index,scroll=false) {
-    selected = index;
-    const ep = episodes[index];
-    stageArt.style.backgroundImage = `url("${ep.image}")`;
-    $('heroEpisode').textContent = `T1:E${index + 1} — ${ep.title}`;
-    $('heroDescription').textContent = ep.description;
-    $('visitDemo').href = ep.demo;
-    $('videoDemoLink').href = ep.demo;
-    cards.forEach((card,i)=>{card.classList.toggle('selected',i===index);card.setAttribute('aria-pressed',String(i===index));});
-    if(scroll) window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  let current = 0, paused = false, fallbackTimer = null, token = 0;
+  const FALLBACK_MS = 8000;
+  const imageOf = ep => `./images/${ep.slug}.jpg`;
+  const videoOf = ep => `./videos/${ep.slug}.mp4`;
+  function clearFallback(){ if(fallbackTimer!==null) clearTimeout(fallbackTimer); fallbackTimer=null; }
+  function updateButton(){ $('playCurrent').innerHTML = paused ? '<span aria-hidden="true">▶</span> REPRODUCIR' : '<span aria-hidden="true">❚❚</span> PAUSAR'; }
+  function scheduleFallback(t){
+    clearFallback();
+    $('playHint').textContent='Fotografía de respaldo: el MP4 todavía no está disponible.';
+    if(!paused) fallbackTimer=setTimeout(()=>{if(t===token) advance();}, FALLBACK_MS);
   }
+  function show(index){
+    token++;
+    clearFallback();
+    current=(index+episodes.length)%episodes.length;
+    const ep=episodes[current];
+    // Fotografía de fondo persistente; el video se superpone solo cuando hay fotogramas.
+    art.style.backgroundImage=`url("${imageOf(ep)}")`;
+    video.classList.remove('is-playing');
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    $('heroEpisode').textContent=`T1:E${current+1} — ${ep.title}`;
+    $('heroDescription').textContent=ep.description;
+    $('visitDemo').href=ep.demo;
+    cards.forEach((card,i)=>{card.classList.toggle('selected',i===current);card.setAttribute('aria-pressed',String(i===current));});
+    video.poster=imageOf(ep);
+    video.src=videoOf(ep);
+    video.load();
+    $('playHint').textContent='Reproducción continua · 8 segundos por episodio · sin sonido';
+    updateButton();
+    if(!paused){
+      // Si el archivo aún no está subido, el evento error activa la fotografía de respaldo.
+      video.play().catch(()=>{if(!paused && !video.error) scheduleFallback(token);});
+    }
+  }
+  function advance(){ if(!paused) show(current+1); }
+  video.addEventListener('playing',()=>{clearFallback();video.classList.add('is-playing');$('playHint').textContent='Reproducción continua · 8 segundos por episodio · sin sonido';});
+  video.addEventListener('loadeddata',()=>{if(!paused) video.classList.add('is-playing');});
+  video.addEventListener('ended',advance);
+  video.addEventListener('error',()=>{video.classList.remove('is-playing');if(!paused) scheduleFallback(token);});
+  $('playCurrent').addEventListener('click',()=>{
+    paused=!paused;clearFallback();
+    if(paused){video.pause();$('playHint').textContent='Emisión en pausa';}
+    else if(video.error || !video.getAttribute('src')) scheduleFallback(token);
+    else video.play().catch(()=>scheduleFallback(token));
+    updateButton();
+  });
   episodes.forEach((ep,i)=>{
     const btn=document.createElement('button');btn.className='episode';btn.type='button';
-    btn.innerHTML=`<span class="episode-image"><img loading="lazy" decoding="async" alt="" src="${ep.image}"><span class="episode-number">8 s</span></span><h3>${i+1}. ${ep.title}</h3><p>${ep.description}</p><span class="episode-play">Ver episodio ↑</span>`;
-    btn.setAttribute('aria-label',`Seleccionar episodio ${i+1}: ${ep.title}`);
-    btn.addEventListener('click',()=>select(i,true));grid.appendChild(btn);cards.push(btn);
+    btn.setAttribute('aria-label',`Reproducir episodio ${i+1}: ${ep.title}`);
+    btn.innerHTML=`<span class="episode-image"><img loading="lazy" decoding="async" alt="${ep.title}" src="${imageOf(ep)}"><span class="episode-number">8 s</span></span><h3>${i+1}. ${ep.title}</h3><p>${ep.description}</p><span class="episode-play">Seleccionar episodio ↗</span>`;
+    btn.addEventListener('click',()=>{paused=false;show(i);window.scrollTo({top:0,behavior:'smooth'});});
+    grid.appendChild(btn);cards.push(btn);
   });
-  select(selected);
-  function close(){video.pause();video.removeAttribute('src');video.load();modal.hidden=true;document.body.style.overflow='';$('playCurrent').focus();}
-  $('playCurrent').addEventListener('click',()=>{
-    $('videoFallback').hidden=true;video.hidden=false;
-    const file=`./videos/${String(selected+1).padStart(2,'0')}.mp4`;
-    video.src=file;modal.hidden=false;document.body.style.overflow='hidden';
-    video.play().catch(()=>{});
-  });
-  video.addEventListener('error',()=>{video.hidden=true;$('videoFallback').hidden=false;});
-  $('closeVideo').addEventListener('click',close);
-  modal.addEventListener('click',e=>{if(e.target===modal)close();});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close();});
   function tab(showEpisodes){$('episodesPanel').hidden=!showEpisodes;$('detailsPanel').hidden=showEpisodes;$('tabEpisodes').classList.toggle('active',showEpisodes);$('tabDetails').classList.toggle('active',!showEpisodes);$('tabEpisodes').setAttribute('aria-selected',String(showEpisodes));$('tabDetails').setAttribute('aria-selected',String(!showEpisodes));}
   $('tabEpisodes').addEventListener('click',()=>tab(true));$('tabDetails').addEventListener('click',()=>tab(false));
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)video.pause();else if(!paused && !video.error)video.play().catch(()=>{});});
+  show(0);
 })();
