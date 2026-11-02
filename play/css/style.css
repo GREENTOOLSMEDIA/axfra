@@ -2,3 +2,12 @@
 
 /* Emisión continua sobre la fotografía JPG de respaldo */
 .stage-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;z-index:-2;opacity:0;pointer-events:none}.stage-video.is-playing{opacity:1}.stage-art{z-index:-3;transition:none}.stage-shade{z-index:-1}.stage-copy{position:relative}.play-button:focus-visible{outline:3px solid white;outline-offset:3px}@media(max-width:600px){.stage-video{object-position:65% center}}
+
+/* Aviso editorial bajo el título principal */
+.stage-copy .play-disclaimer {
+  max-width: 620px;
+  margin: 10px 0 18px;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+}
