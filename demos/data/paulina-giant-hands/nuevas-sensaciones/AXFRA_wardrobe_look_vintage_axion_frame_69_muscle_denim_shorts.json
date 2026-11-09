@@ -1,0 +1,89 @@
+{
+  "parameters": {
+    "character_color": "faded off-apple green",
+    "graphic_main_color": "faded white",
+    "graphic_secondary_color": "off-white",
+    "shorts_color": "white washed denim",
+    "transparency": "50%"
+  },
+  "wardrobe": {
+    "id": "AXFRA_wardrobe_look_vintage_axion_frame_69_muscle_denim_shorts",
+    "top": {
+      "id": "AXFRA_wardrobe_tshirt_vintage_axion_frame_69_muscle",
+      "type": "vintage sleeveless muscle t-shirt",
+      "cut": "relaxed loose oversized fit, sleeveless with narrow thin shoulder straps, deep arm openings that cut high into the shoulders, round ribbed crew neck, standard hip length and straight hem",
+      "fabric": "ultra-thin, extremely soft, heavily washed cotton jersey with naturally worn and softened fibers",
+      "drape": "very lightweight, loose and fluid fall, delicate folds, soft wrinkles and almost no fabric stiffness",
+      "finish": "heavily washed, faded, distressed vintage appearance with subtle uneven wear",
+      "color": "{{parameters.character_color}}",
+      "transparency": "{{parameters.transparency}}",
+      "graphic": {
+        "placement": "centered front graphic",
+        "main_numbers": "69",
+        "number_style": "oversized {{parameters.graphic_main_color}} varsity textile appliques, sewn onto the shirt, with heavily frayed edges, visible stitching and worn fabric texture",
+        "number_spacing": "negative horizontal spacing, with the 6 and 9 touching each other",
+        "middle_patch": "small {{parameters.graphic_main_color}} horizontal textile patch overlapping the center of the 69",
+        "patch_icon": "small {{parameters.graphic_secondary_color}} bull silhouette",
+        "patch_text": "AXFRA",
+        "headline": "AXION FRAME",
+        "headline_style": "distressed uppercase serif lettering in {{parameters.graphic_main_color}}",
+        "subheadline": "La imagen comienza antes del primer píxel.",
+        "subheadline_style": "distressed {{parameters.graphic_main_color}} serif lettering arranged in two lines",
+        "graphic_colors": [
+          "{{parameters.graphic_main_color}}",
+          "{{parameters.graphic_secondary_color}}"
+        ]
+      }
+    },
+    "bottom": "high-waisted {{parameters.shorts_color}} denim shorts, curved front pockets, coin pocket, rivets, belt loops, front zipper, raw frayed hem with irregular denim fringe",
+    "belt": "wide black leather belt with two rows of small shiny studs, large rounded silver buckle with rhinestone inlays",
+    "jewelry": "layered silver necklaces of varying lengths with small crystal charms and two crosses at different heights in the neckline, stacked silver bracelets with links and rhinestones on one wrist"
+  },
+  "pose_and_expression": {
+    "pose": "seated on deep burgundy tufted leather booth, legs elegantly crossed, slight S-curve body angle toward camera",
+    "hands": "one hand lightly resting near collarbone or thigh, the other on the seat back",
+    "expression": "calm confident neutral, direct gaze at camera, lips slightly parted"
+  },
+  "environment": {
+    "location": "retro-modern upscale neon club interior",
+    "background": "dark polished wood floor with reflections, round marble tables, glowing neon signs including small elegant AXFRA, pin-up artwork and vintage posters on walls",
+    "elements": "deep burgundy tufted leather booth seating, reflective surfaces, layered neon accents"
+  },
+  "lighting": {
+    "type": "clashing neon pink and green flood lighting",
+    "character": "dramatic high-contrast shadows, strong rim light and neon wrap, vivid specular highlights on hair, skin, crystals, denim, leather and metal",
+    "response": "respect finish_level lighting_response (soft transitions + controlled speculars)"
+  },
+  "camera_and_style": {
+    "camera": "iPhone 15 Pro Max, vertical 9:16, deep depth of field, razor-sharp focus on subject and key background elements",
+    "style": "ultra-photorealistic high-fashion editorial, raw iPhone capture aesthetic, cinematic neon drama, hyper-detailed textures"
+  },
+  "constraints": {
+    "identity_lock": true,
+    "preserve_facial_proportions": true,
+    "preserve_oval_soft_heart_geometry": true,
+    "preserve_cheekbone_structure": true,
+    "preserve_eye_shape_and_iris_color": true,
+    "preserve_skin_tone": true,
+    "preserve_hair_color_and_volume": true,
+    "negatives": [
+      "identity drift",
+      "facial morphing",
+      "plastic skin",
+      "over-smoothing",
+      "waxy or over-glossy skin",
+      "unrealistic proportions",
+      "extra limbs",
+      "deformed hands",
+      "blur",
+      "low detail",
+      "washed neon",
+      "flat lighting",
+      "blonde hair",
+      "bronzed tropical tan",
+      "short nose",
+      "round childlike face",
+      "heavy upper eyelids"
+    ]
+  }
+}

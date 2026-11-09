@@ -1,0 +1,49 @@
+{
+  "id": "AXFRA_env_vip_elevator",
+  "name": "VIP Elevator",
+  "name_es": "Ascensor VIP",
+  "mood": "luxurious, exclusive, polished, nightlife",
+  "palette": [
+    "black",
+    "smoked chrome",
+    "silver",
+    "deep red",
+    "deep blue"
+  ],
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "updated": "2026-10-13"
+  },
+  "environment_block": {
+    "location": "ultra-luxury VIP nightclub elevator interior",
+    "background": "mirrored infinity walls, smoked chrome panels, glossy black marble floor, metallic trim",
+    "elements": "subtle haze, hard LED edge light, subject multiplied in the mirrors, faint nightclub glow at the seams"
+  },
+  "framing_block": {
+    "angle": "ultra-wide high angle",
+    "lens": "20mm",
+    "frame": "full body, perfectly centered inside the mirrored reflections"
+  },
+  "lighting_block": {
+    "lighting": "high-contrast nightclub light, dark chrome reflections, subtle red-blue LED ambience, glossy highlights, crisp editorial illumination"
+  },
+  "camera_and_style_block": {
+    "camera": "Canon EOS R5, 20mm, high angle, deep focus across the mirrors",
+    "style": "Alarsi editorial, ultra-luxury nightlife photography, cinematic mirrored reflections, masterpiece, best quality"
+  },
+  "constraints_block": {
+    "negatives": "no distorted mirrors, no cheap nightclub look, no neon overload, no extra people, no background artifacts"
+  },
+  "engine_params": {
+    "stylize": "--stylize 160",
+    "version": "--v 6",
+    "aspect_ratio": "--ar 3:4",
+    "quality": "--q 2",
+    "style": "--style raw"
+  }
+}
