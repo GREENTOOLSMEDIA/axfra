@@ -1,0 +1,32 @@
+{
+  "id": "AXFRA_pose_seated_legs_apart",
+  "name": "Seated with Legs Apart",
+  "name_es": "Sentada, piernas abiertas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "license": "all rights reserved"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_category": "seated",
+  "pose": {
+    "description": "Peso sobre ambas nalgas. Ambas piernas en abducción marcada con flexión moderada de rodillas y pies en el suelo. Cadera abierta. Torso erguido con leve inclinación anterior. Hombros nivelados. Ambos brazos flexionados, con cada mano apoyada sobre la rodilla del mismo lado. Cabeza erguida y mirada al frente."
+  },
+  "camera": {
+    "position": "frontal",
+    "lens_height": "altura del pecho en posición sentada",
+    "nearest": "torso y rodillas",
+    "farthest": "pies",
+    "full_body": true,
+    "exclude": [
+      "perfil",
+      "contrapicado"
+    ]
+  }
+}

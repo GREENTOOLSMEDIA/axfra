@@ -1,0 +1,70 @@
+{
+  "id": "AXFRA_motion_paulina_giant_hands_styling",
+  "name": "Paulina Dots — Giant Hands Styling",
+  "name_es": "Paulina Dots — Cambio de look con manos gigantes",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "motion",
+  "slot": "animation",
+  "subject": "Paulina Dots",
+  "props": {
+    "barber_chair": "AXFRA_prop_burgundy_vintage_barber_chair"
+  },
+  "camera": {
+    "movement": "cámara fija, vista frontal",
+    "framing": "plano lo bastante abierto para ver a Paulina de cuerpo entero, las manos entrando por los bordes y la silla completa al final",
+    "continuity": "mantener el mismo eje, encuadre y escala durante toda la secuencia"
+  },
+  "initial_state": {
+    "pose": "de pie y descalza",
+    "wardrobe": "conjunto deportivo blanco AXFRA de sujetador y shorts",
+    "hair": "cola de caballo alta"
+  },
+  "sequence": [
+    {
+      "step": 1,
+      "action": "Dos manos humanas gigantes y realistas entran, una por cada lado del cuadro. Sostienen a Paulina con cuidado, la colocan de pie en el centro exacto del encuadre y la sueltan cuando ambos pies tocan el suelo."
+    },
+    {
+      "step": 2,
+      "action": "Un dedo gigante da un toque suave en la coronilla y se retira. Paulina frunce levemente el ceño y hace un pequeño gesto de desaprobación con la cabeza."
+    },
+    {
+      "step": 3,
+      "action": "Un índice gigante se acerca a la altura de su pecho. Antes de que la toque, Paulina levanta ambas manos y aparta el dedo con un gesto rápido y claro de rechazo."
+    },
+    {
+      "step": 4,
+      "action": "Las manos la visten como a una muñeca de moda, prenda por prenda: primero colocan una camiseta gráfica AXFRA negra sin mangas sobre el sujetador deportivo; luego, pantalones de cuero negro desgastado con cadena, zapatillas altas negras, un collar y pulseras."
+    },
+    {
+      "step": 5,
+      "action": "Una mano sostiene la cola de caballo mientras la otra retira el elástico. Las manos aflojan y despeinan ligeramente el cabello, que cae en ondas y rizos sueltos sobre los hombros."
+    },
+    {
+      "step": 6,
+      "action": "Las manos le colocan un sombrero de copa negro de corona alta. Las gafas de sol oscuras quedan apoyadas sobre el ala del sombrero y el rostro permanece visible."
+    },
+    {
+      "step": 7,
+      "action": "Las manos traen desde atrás el sillón de barbería vintage burdeos y lo dejan directamente detrás de Paulina. Luego la alzan con cuidado y la sientan en el cojín. Ella muestra una expresión de confusión. Queda con el torso erguido, las piernas separadas y cada mano sobre la rodilla del mismo lado. Las manos gigantes se retiran del cuadro."
+    },
+    {
+      "step": 8,
+      "action": "Sin levantarse, Paulina inclina el torso hacia la cámara y alza la mano derecha. Con la palma hacia la cámara, extiende el índice y el medio en V y mantiene el gesto un instante. La mano izquierda permanece sobre la rodilla izquierda."
+    }
+  ],
+  "continuity": [
+    "Conservar la identidad y las proporciones de Paulina durante toda la secuencia.",
+    "Mantener cada prenda y accesorio en su sitio una vez colocado. El cabello permanece recogido hasta el paso 5 y suelto desde entonces.",
+    "Distinguir siempre las dos manos gigantes de las manos de Paulina. Evitar que los dedos atraviesen el cuerpo, las prendas o el mobiliario.",
+    "El sillón aparece en el paso 7 y permanece fijo durante el gesto final."
+  ]
+}

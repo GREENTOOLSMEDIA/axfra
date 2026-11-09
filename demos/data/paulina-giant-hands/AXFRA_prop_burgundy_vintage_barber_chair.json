@@ -1,0 +1,32 @@
+{
+  "id": "AXFRA_prop_burgundy_vintage_barber_chair",
+  "name": "Burgundy Vintage Barber Chair",
+  "name_es": "Sillón de barbería vintage burdeos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "prop",
+  "slot": "furniture",
+  "piece_family": "barber_chair",
+  "reference_image": "image(20261109-135638).jpeg",
+  "design": {
+    "upholstery": "tapizado burdeos oscuro de aspecto cuero, con reflejos brillantes",
+    "backrest": "respaldo redondeado y acolchado, con capitoné de botones y reposacabezas rectangular separado",
+    "seat": "asiento acolchado con frente redondeado, montado sobre una carcasa cromada",
+    "armrests": "dos apoyabrazos estrechos y acolchados, sobre soportes metálicos expuestos",
+    "leg_support": "panel acolchado bajo el asiento, plataforma metálica texturada para los pies y almohadilla rectangular inclinada en el extremo frontal",
+    "base": "pedestal central ensanchado sobre un disco circular cromado, con mecanismos metálicos visibles"
+  },
+  "pose_support": {
+    "seat": "superficie acolchada elevada para apoyar la pelvis",
+    "backrest": "respaldo y reposacabezas separados para apoyar espalda y cabeza",
+    "hands": "apoyabrazos estrechos para manos o antebrazos",
+    "feet": "para poses con un pie en el suelo, comprobar que el pie alcance el piso sin atravesar el conjunto del reposapiés"
+  }
+}

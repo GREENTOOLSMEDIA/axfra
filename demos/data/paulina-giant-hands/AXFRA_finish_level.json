@@ -1,0 +1,40 @@
+{
+  "finish_level": {
+    "skin_microtexture": {
+      "pore_visibility": 0.82,
+      "pore_size": "fine-natural",
+      "fine_lines": 0.35,
+      "imperfections": 0.25,
+      "subsurface_scattering": 0.78
+    },
+    "skin_sheen": {
+      "type": "natural-oil",
+      "intensity": 0.42,
+      "distribution": "nose-bridge, cheekbones, under-eyes",
+      "avoid": [
+        "plastic",
+        "waxy",
+        "over-glossy",
+        "matte-flat"
+      ]
+    },
+    "detail_frequency": {
+      "high_frequency_detail": 0.88,
+      "eyelash_definition": 0.91,
+      "eyebrow_hair_detail": 0.85,
+      "iris_detail": 0.9,
+      "skin_clarity": 0.75
+    },
+    "lighting_response": {
+      "soft_transition": true,
+      "specular_highlights": "subtle-controlled",
+      "shadow_softness": 0.7
+    },
+    "overall_finish": {
+      "realism_target": "high-end-editorial-photoreal",
+      "plasticity": 0.08,
+      "oversharpening": 0.15,
+      "noise": 0.05
+    }
+  }
+}
