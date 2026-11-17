@@ -1,4 +1,6 @@
+<!doctype html>
 <!DOCTYPE html>
+
 <!DOCTYPE html>
 
 <html lang="es-CL">
@@ -23,7 +25,7 @@
 <meta content="KATEFA — Una modelo virtual para una tienda de moda" name="twitter:title"/>
 <meta content="Retrato, vestuario y movimiento de una modelo virtual creada para una tienda online de moda." name="twitter:description"/>
 <meta content="https://axfra.com/images/editorial/axfra_katefa_hello_world.jpg" name="twitter:image"/>
-<link href="/shared-layout.css" rel="stylesheet"/>
+<link href="https://axfra.com/shared-layout.css?v=katefa-20261117-v4" rel="stylesheet"/>
 <link href="/demo-conclusion.css" rel="stylesheet"/>
 <style>
     .katefa {
@@ -299,13 +301,12 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
     }
   ]
 }</script>
-
 <style>html, body {margin:0; padding:0; background:#000; min-height:100%;} body {overflow-x:hidden;}</style>
-</head>
+<style>html,body{margin:0;padding:0;min-height:100%;background:#000;color:#e9eceb}body{overflow-x:hidden}#globalHeader,#globalFooter{position:relative;width:100%;}</style><meta content="katefa-20261117-v4" name="axfra-build"/></head>
 <body>
 <a class="katefa-skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
-<main class="katefa" id="contenido">
+<main class="katefa" data-build="katefa-20261117-v4" id="contenido">
 <section aria-labelledby="katefa-title" class="katefa-hero">
 <div class="katefa-wrap katefa-hero-grid">
 <div>
@@ -365,7 +366,27 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
 </main>
 <div id="globalFooter"></div>
 
-<script defer src="/shared-layout.js"></script>
-<script defer src="/demo-conclusion.js"></script>
-</body>
+<script defer="" src="/demo-conclusion.js"></script>
+<script>
+// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
+// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
+(async function () {
+  async function insertarComponente(ruta, id) {
+    const respuesta = await fetch(ruta, {cache: 'no-cache'});
+    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
+    document.getElementById(id).innerHTML = await respuesta.text();
+  }
+  try {
+    await insertarComponente('/header.html', 'globalHeader');
+    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
+    if (actual) actual.setAttribute('aria-current', 'page');
+  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
+  try {
+    await insertarComponente('/footer.html', 'globalFooter');
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
+})();
+
+console.info("AXFRA KATEFA layout build 20261117-v4");</script></body>
 </html>
