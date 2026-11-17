@@ -298,8 +298,8 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
     }
   ]
 }</script>
-<script defer="" src="/shared-layout.js"></script>
 <script defer="" src="/demo-conclusion.js"></script>
+<style>html, body {margin:0; padding:0; background:#000; min-height:100%;} body {overflow-x:hidden;}</style>
 </head>
 <body>
 <a class="katefa-skip" href="#contenido">Saltar al contenido</a>
@@ -366,5 +366,26 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
 </section>
 </main>
 <div id="globalFooter"></div>
+<script>
+// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
+// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
+(async function () {
+  async function insertarComponente(ruta, id) {
+    const respuesta = await fetch(ruta, {cache: 'no-cache'});
+    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
+    document.getElementById(id).innerHTML = await respuesta.text();
+  }
+  try {
+    await insertarComponente('/header.html', 'globalHeader');
+    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
+    if (actual) actual.setAttribute('aria-current', 'page');
+  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
+  try {
+    await insertarComponente('/footer.html', 'globalFooter');
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
+})();
+</script>
 </body>
 </html>
