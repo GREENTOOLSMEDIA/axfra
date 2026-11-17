@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="es-CL">
 <head>
@@ -298,7 +299,7 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
     }
   ]
 }</script>
-<script defer="" src="/demo-conclusion.js"></script>
+
 <style>html, body {margin:0; padding:0; background:#000; min-height:100%;} body {overflow-x:hidden;}</style>
 </head>
 <body>
@@ -358,34 +359,13 @@ html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x
 <div class="axfra-demo-conclusion-inner">
 <h2 id="axfra-conclusion-title">Una identidad reutilizable</h2>
 <p>En AXFRA, la identidad, el vestuario, la pose, la cámara y la iluminación se pueden trabajar por separado. Eso permite preparar nuevas composiciones para la tienda y sus campañas tomando a KATEFA como referencia común. Su <i>Identity Core</i> es privado.</p>
-<div aria-label="Recursos relacionados de AXFRA" class="katefa-related" id="globalDemoConclusion">
-<a href="/demos/">Ver todas las demostraciones</a>
-<a href="/library/">Explorar la Librería JSON</a>
-</div>
+<div aria-label="Recursos relacionados de AXFRA" class="katefa-related" id="globalDemoConclusion"></div>
 </div>
 </section>
 </main>
 <div id="globalFooter"></div>
-<script>
-// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
-// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
-(async function () {
-  async function insertarComponente(ruta, id) {
-    const respuesta = await fetch(ruta, {cache: 'no-cache'});
-    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
-    document.getElementById(id).innerHTML = await respuesta.text();
-  }
-  try {
-    await insertarComponente('/header.html', 'globalHeader');
-    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
-    if (actual) actual.setAttribute('aria-current', 'page');
-  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
-  try {
-    await insertarComponente('/footer.html', 'globalFooter');
-    const year = document.getElementById('year');
-    if (year) year.textContent = new Date().getFullYear();
-  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
-})();
-</script>
+
+<script defer src="/shared-layout.js"></script>
+<script defer src="/demo-conclusion.js"></script>
 </body>
 </html>
