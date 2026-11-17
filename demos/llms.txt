@@ -50,6 +50,8 @@ Las historias y los personajes pueden cruzarse, pero el ecosistema narrativo no 
 
 14. [Nuevas Sensaciones — AXFRA Band](https://axfra.com/demos/axfra-nuevas-sensaciones-demo.html): composición de banda musical, entorno de espejos, materiales reflectantes, variaciones parametrizadas de vestuario y una coreografía de 37 pasos protagonizada por Captain Dots.
 
+15. [KATEFA — Una modelo virtual para una tienda de moda](https://axfra.com/demos/axfra-katefa-demo.html): identidad creada para modelar ropa en una tienda online durante 2027, con primeras composiciones de retrato, vestuario y video.
+
 ## Criterios de interpretación técnica
 
 - **Identidad:** conservar la distinción entre los personajes visibles y sus Identity Core, que pueden ser privados.
@@ -59,7 +61,7 @@ Las historias y los personajes pueden cruzarse, pero el ecosistema narrativo no 
 - **Resultados:** las imágenes y videos documentan resultados de generación visual. No implican reproducibilidad idéntica en todos los motores.
 - **Procedencia:** distinguir archivos originales, extractos explicativos, variantes experimentales y composiciones finales.
 
-El índice https://axfra.com/demos/ y el sitemap determinan el inventario oficial vigente. Esta enumeración corresponde a las 14 demostraciones documentadas al 9 de noviembre de 2026.
+El índice https://axfra.com/demos/ y el sitemap determinan el inventario oficial vigente. Esta enumeración corresponde a las 15 demostraciones documentadas al 17 de noviembre de 2026.
 
 ## Recursos relacionados
 
