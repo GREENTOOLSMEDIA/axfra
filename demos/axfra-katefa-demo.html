@@ -24,50 +24,38 @@
   <link rel="stylesheet" href="/shared-layout.css">
   <link rel="stylesheet" href="/demo-conclusion.css">
   <style>
-    .katefa {
-      --katefa-ink: #f5eeed;
-      --katefa-lower: #c6babb;
-      --katefa-accent: #f3a4c0;
-      --katefa-line: #30272b;
-      background: #090809;
-      color: var(--katefa-ink);
-      font: 16px/1.65 Inter, system-ui, -apple-system, sans-serif;
-    }
-    .katefa *, .katefa *::before, .katefa *::after { box-sizing: border-box; }
-    .katefa-wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
-    .katefa-skip { position: absolute; left: 1rem; top: 1rem; z-index: 1000; padding: .5rem 1rem; background: #fff; color: #111; transform: translateY(-200%); }
-    .katefa-skip:focus { transform: translateY(0); }
-    .katefa-skip:focus-visible, .katefa a:focus-visible { outline: 2px solid var(--katefa-accent); outline-offset: 5px; }
-    .katefa figure { margin: 0; min-width: 0; }
-    .katefa img, .katefa video { display: block; width: 100%; height: auto; }
-    .katefa-hero {
-      padding: clamp(36px, 6vw, 84px) 0;
-      border-bottom: 1px solid var(--katefa-line);
-      background: radial-gradient(ellipse at 79% 40%, #26151b 0%, #100c0f 48%, #090809 75%);
-    }
-    .katefa-hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(24px, 7vw, 100px); align-items: center; }
-    .katefa-kicker { margin: 0 0 12px; color: var(--katefa-accent); font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
-    .katefa h1 { margin: 0; font-size: clamp(3.2rem, 9.4vw, 7.5rem); font-weight: 760; letter-spacing: -.075em; line-height: .94; }
-    .katefa-subtitle { display: block; max-width: 19ch; margin-top: 20px; font-size: clamp(1.4rem, 3.2vw, 2.45rem); letter-spacing: -.042em; line-height: 1.13; }
-    .katefa-lead { max-width: 46ch; margin: 21px 0 0; color: var(--katefa-lower); font-size: clamp(1rem, 1.8vw, 1.19rem); }
-    .katefa-hero video { aspect-ratio: 768 / 1168; background: #100d0f; border: 1px solid var(--katefa-line); }
-    .katefa figcaption { margin-top: 11px; color: var(--katefa-lower); font-size: .9rem; }
-    .katefa-section { padding: clamp(42px, 7vw, 94px) 0; border-bottom: 1px solid var(--katefa-line); }
-    .katefa h2 { margin: 0 0 12px; font-size: clamp(1.9rem, 4.4vw, 3.35rem); letter-spacing: -.05em; line-height: 1.06; }
-    .katefa-section p:not(.katefa-kicker) { max-width: 56ch; color: var(--katefa-lower); }
-    .katefa-portrait { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 8vw, 110px); align-items: center; }
-    .katefa-image-link { display: block; }
-    .katefa-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 3vw, 32px); margin-top: 26px; }
-    .katefa-gallery strong { color: var(--katefa-ink); }
-    .katefa-related { display: flex; flex-wrap: wrap; gap: 14px 24px; }
-    .katefa-related a { color: var(--katefa-accent); text-underline-offset: .23em; }
-    @media (max-width: 750px) {
-      .katefa-wrap { width: min(520px, calc(100% - 34px)); }
-      .katefa-hero-grid, .katefa-portrait { grid-template-columns: minmax(0, 1fr); }
-      .katefa-portrait > div { grid-row: 1; }
-    }
-    @media (max-width: 380px) { .katefa-gallery { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
-  </style>
+:root{--bg:#000;--surface:#111519;--line:#303a3c;--ink:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8}*{box-sizing:border-box}html{scroll-behavior:smooth;background:#000;color-scheme:dark}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Arial,sans-serif}a{color:inherit}a:hover{color:var(--accent)}.wrap{width:min(1200px,calc(100% - 44px));margin:auto}.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:12px;z-index:30}.skip:focus{left:10px}.hero{padding:clamp(70px,9vw,120px) 0 78px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:750}.hero h1{font-size:clamp(48px,8vw,103px);letter-spacing:-.065em;line-height:1.02;margin:17px 0 25px;max-width:1050px}.hero h1 span{color:#b6c7be}.lead{font-size:clamp(18px,2vw,22px);color:#c6cfc9;max-width:800px;line-height:1.55}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{border:1px solid #65746d;padding:12px 19px;display:inline-block;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.02em}.btn:first-child{background:var(--accent);color:#0a1110}.section{padding:78px 0 88px;border-bottom:1px solid var(--line)}.section-head{max-width:850px;margin-bottom:32px}.section h2{font-size:clamp(30px,4vw,53px);letter-spacing:-.047em;line-height:1.12;margin:12px 0 18px}.section p{color:#c2ccca}.section-head p{font-size:17px;max-width:760px}.two-up{display:grid;grid-template-columns:1fr 1fr;gap:24px}.figure{margin:0;border:1px solid var(--line);background:var(--surface)}.figure img{width:100%;height:auto;display:block;aspect-ratio:3/4;object-fit:cover}.figure figcaption{font-size:13px;padding:15px 19px;color:#a6b4af}.film-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,470px);gap:7%;align-items:center}.film-layout .story{max-width:520px}.video-frame{background:transparent;border:0;padding:0;margin:auto;width:100%;max-width:470px}.video-frame video{display:block;width:100%;aspect-ratio:768/1168;object-fit:contain;background:#070808}.video-caption{color:#94a39e;font-size:12px;line-height:1.5;margin-top:10px}
+#globalHeader,#globalFooter{background:var(--bg);color:var(--ink)}
+.fallback-header{min-height:64px;border-bottom:1px solid var(--line)}
+.fallback-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0}
+.fallback-nav a{text-decoration:none}.fallback-nav a[aria-current]{color:var(--accent)}
+.fallback-brand{font-size:19px;font-weight:800;letter-spacing:-.04em}
+.fallback-footer{border-top:1px solid var(--line);padding:18px 0;font-size:13px;color:var(--muted)}
+.katefa-hero{padding:clamp(48px,7vw,92px) 0}
+.katefa-hero h1{font-size:clamp(49px,7vw,91px);margin:17px 0 25px}
+.katefa-hero .film-layout{grid-template-columns:minmax(0,1fr) minmax(260px,420px)}
+.katefa-hero .video-frame{max-width:420px}
+.katefa-hero .video-frame video{height:auto}
+.katefa-portrait{grid-template-columns:minmax(0,1fr) minmax(0,440px)}
+.katefa-portrait .figure img,.katefa-looks .figure img{aspect-ratio:auto}
+.katefa-portrait .figure,.katefa-looks .figure{border:0}
+.katefa-looks .figure a,.katefa-portrait .figure a{display:block}
+.katefa-looks figcaption strong{color:var(--ink)}
+.katefa-related{display:flex;flex-wrap:wrap;gap:16px 24px}
+.katefa-related a{color:var(--accent)}
+.axfra-demo-conclusion{padding:clamp(46px,7vw,88px) 0}
+.axfra-demo-conclusion-inner{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+@media(max-width:780px){
+  .film-layout,.katefa-hero .film-layout,.katefa-portrait{grid-template-columns:minmax(0,1fr);gap:30px}
+  .section{padding:55px 0 65px}
+  .katefa-portrait .figure{width:min(100%,480px)}
+}
+@media(max-width:600px){.two-up{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:480px){
+  .wrap,.axfra-demo-conclusion-inner{width:calc(100% - 32px)}
+  .katefa-hero h1{font-size:clamp(40px,10vw,47px)}
+}
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -108,60 +96,70 @@
     ]
   }
   </script>
-  <script defer src="/shared-layout.js"></script>
   <script defer src="/demo-conclusion.js"></script>
 </head>
+
 <body>
-  <a class="katefa-skip" href="#contenido">Saltar al contenido</a>
-  <div id="globalHeader"></div>
-  <main id="contenido" class="katefa">
-    <section class="katefa-hero" aria-labelledby="katefa-title">
-      <div class="katefa-wrap katefa-hero-grid">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="globalHeader">
+    <header class="fallback-header">
+      <nav class="wrap fallback-nav" aria-label="Navegación principal">
+        <a class="fallback-brand" href="https://axfra.com/">AXFRA</a>
+        <a href="https://axfra.com/demos/" aria-current="page">Demos</a>
+      </nav>
+    </header>
+  </div>
+  <main id="contenido">
+    <section class="hero katefa-hero" aria-labelledby="katefa-title">
+      <div class="wrap film-layout">
         <div>
-          <p class="katefa-kicker">AXFRA / Demostración aplicada</p>
-          <h1 id="katefa-title">KATEFA<span class="katefa-subtitle">Una modelo virtual para una tienda de moda</span></h1>
-          <p class="katefa-lead">ALARSI creó a KATEFA con AXFRA para un cliente. Durante 2027 modelará prendas para su tienda online y será el rostro de su publicidad.</p>
+          <div class="eyebrow">AXFRA / Demostración aplicada</div>
+          <h1 id="katefa-title">KATEFA.<br><span>Una modelo virtual para una tienda de moda.</span></h1>
+          <p class="lead">ALARSI creó a KATEFA con AXFRA para un cliente. Durante 2027 modelará prendas para su tienda online y será el rostro de su publicidad.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#retrato">Explorar la demostración ↓</a>
+          </div>
         </div>
-        <figure>
+        <figure class="video-frame">
           <video id="video" controls playsinline preload="metadata" width="768" height="1168"
             poster="../images/editorial/axfra_katefa_hello_world.jpg" aria-label="KATEFA en movimiento en el Rock Bar">
             <source src="../video/axfra_katefa_video.mp4" type="video/mp4">
             <a href="../video/axfra_katefa_video.mp4">Abrir el video de KATEFA</a>
           </video>
-          <figcaption>Rock Bar · KATEFA en movimiento · 15 s</figcaption>
+          <figcaption class="video-caption">Rock Bar · KATEFA en movimiento · 15 s</figcaption>
         </figure>
       </div>
     </section>
-
-    <section class="katefa-section" aria-labelledby="katefa-rostro">
-      <div class="katefa-wrap katefa-portrait">
-        <figure>
-          <a class="katefa-image-link" href="../images/editorial/axfra_katefa_close_up.jpg">
+    <section class="section" id="retrato" aria-labelledby="katefa-rostro">
+      <div class="wrap film-layout katefa-portrait">
+        <div class="story">
+          <h2 id="katefa-rostro">El rostro de KATEFA.</h2>
+          <p>El primer plano deja ver las pecas sobre la nariz, la forma de los ojos y las cejas marcadas. Son rasgos que ayudan a reconocerla cuando el plano se abre o cambia la iluminación.</p>
+        </div>
+        <figure class="figure">
+          <a href="../images/editorial/axfra_katefa_close_up.jpg">
             <img src="../images/editorial/axfra_katefa_close_up.jpg" width="1152" height="1728" loading="lazy" decoding="async"
               alt="Primer plano de KATEFA con pecas sobre la nariz, ojos castaños y cabello oscuro sobre el rostro.">
           </a>
         </figure>
-        <div>
-          <h2 id="katefa-rostro">El rostro de KATEFA</h2>
-          <p>El primer plano deja ver las pecas sobre la nariz, la forma de los ojos y las cejas marcadas. Son rasgos que ayudan a reconocerla cuando el plano se abre o cambia la iluminación.</p>
-        </div>
       </div>
     </section>
-
-    <section class="katefa-section" aria-labelledby="katefa-vestuario">
-      <div class="katefa-wrap">
-        <h2 id="katefa-vestuario">Un conjunto, dos puestas en escena</h2>
-        <p>El top rosa de encaje y el short de denim se mantienen en ambas composiciones. La pose, el encuadre y la luz cambian qué parte del conjunto llama primero la atención.</p>
-        <div class="katefa-gallery">
-          <figure>
-            <a class="katefa-image-link" href="../images/editorial/axfra_katefa_pink.jpg">
+    <section class="section" aria-labelledby="katefa-vestuario">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="katefa-vestuario">Un conjunto, dos puestas en escena.</h2>
+          <p>El top rosa de encaje y el short de denim se mantienen en ambas composiciones. La pose, el encuadre y la luz cambian qué parte del conjunto llama primero la atención.</p>
+        </div>
+        <div class="two-up katefa-looks">
+          <figure class="figure">
+            <a href="../images/editorial/axfra_katefa_pink.jpg">
               <img src="../images/editorial/axfra_katefa_pink.jpg" width="1152" height="1728" loading="lazy" decoding="async"
                 alt="KATEFA posa con las manos en la cintura y viste un top rosa de encaje y un short de denim sobre un fondo neutro.">
             </a>
             <figcaption><strong>Pink.</strong> La luz suave y el encuadre cercano destacan el escote y la trama del encaje.</figcaption>
           </figure>
-          <figure>
-            <a class="katefa-image-link" href="../images/editorial/axfra_katefa_rockstar.jpg">
+          <figure class="figure">
+            <a href="../images/editorial/axfra_katefa_rockstar.jpg">
               <img src="../images/editorial/axfra_katefa_rockstar.jpg" width="1152" height="1728" loading="lazy" decoding="async"
                 alt="KATEFA de cuerpo entero, con los brazos alzados frente a una gran estrella iluminada.">
             </a>
@@ -170,18 +168,43 @@
         </div>
       </div>
     </section>
-
     <section class="axfra-demo-conclusion" aria-labelledby="axfra-conclusion-title">
       <div class="axfra-demo-conclusion-inner">
-        <h2 id="axfra-conclusion-title">Una identidad reutilizable</h2>
+        <h2 id="axfra-conclusion-title">Una identidad reutilizable.</h2>
         <p>En AXFRA, la identidad, el vestuario, la pose, la cámara y la iluminación se pueden trabajar por separado. Eso permite preparar nuevas composiciones para la tienda y sus campañas tomando a KATEFA como referencia común. Su <i>Identity Core</i> es privado.</p>
-        <div id="globalDemoConclusion" class="katefa-related" aria-label="Recursos relacionados de AXFRA">
-          <a href="/demos/">Ver todas las demostraciones</a>
-          <a href="/library/">Explorar la Librería JSON</a>
+        <div id="globalDemoConclusion" class="katefa-related" aria-label="Enlaces de continuación AXFRA">
+          <a href="https://axfra.com/demos/">Ver todas las demostraciones</a>
+          <a href="https://axfra.com/library/">Explorar la Librería JSON</a>
         </div>
       </div>
     </section>
   </main>
-  <div id="globalFooter"></div>
+  <div id="globalFooter">
+    <footer class="fallback-footer"><div class="wrap">AXFRA · Axion Frame Tools</div></footer>
+  </div>
+<script>
+// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
+// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
+(async function () {
+  if (!/^https?:$/.test(location.protocol)) return;
+  async function insertarComponente(ruta, id) {
+    const respuesta = await fetch(ruta, {cache: 'no-cache'});
+    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
+    const componente = await respuesta.text();
+    if (!componente.trim()) throw new Error('Componente vacío: ' + ruta);
+    document.getElementById(id).innerHTML = componente;
+  }
+  try {
+    await insertarComponente('/header.html', 'globalHeader');
+    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
+    if (actual) actual.setAttribute('aria-current', 'page');
+  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
+  try {
+    await insertarComponente('/footer.html', 'globalFooter');
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
+})();
+</script>
 </body>
 </html>
