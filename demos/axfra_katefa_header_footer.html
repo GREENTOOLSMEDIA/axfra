@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="es-CL">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#000000" name="theme-color"/>
+<title>KATEFA — Una modelo virtual para una tienda de moda | AXFRA</title>
+<meta content="KATEFA es una modelo virtual creada con AXFRA para una tienda online de moda. Sus primeras composiciones exploran continuidad de identidad, vestuario y movimiento de cara a 2027." name="description"/>
+<meta content="ALARSI" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<link href="https://axfra.com/demos/axfra-katefa-demo.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="AXFRA" property="og:site_name"/>
+<meta content="es_CL" property="og:locale"/>
+<meta content="KATEFA — Una modelo virtual para una tienda de moda" property="og:title"/>
+<meta content="Una identidad visual creada para modelar ropa en una tienda online durante 2027. Retrato, vestuario y movimiento en una demo de AXFRA." property="og:description"/>
+<meta content="https://axfra.com/demos/axfra-katefa-demo.html" property="og:url"/>
+<meta content="https://axfra.com/images/editorial/axfra_katefa_hello_world.jpg" property="og:image"/>
+<meta content="KATEFA sentada frente al neón del Rock Bar, con una mano extendida hacia la cámara." property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="KATEFA — Una modelo virtual para una tienda de moda" name="twitter:title"/>
+<meta content="Retrato, vestuario y movimiento de una modelo virtual creada para una tienda online de moda." name="twitter:description"/>
+<meta content="https://axfra.com/images/editorial/axfra_katefa_hello_world.jpg" name="twitter:image"/>
+<link href="/shared-layout.css" rel="stylesheet"/>
+<link href="/demo-conclusion.css" rel="stylesheet"/>
+<style>
+    .katefa {
+      --katefa-ink: #f5eeed;
+      --katefa-lower: #c6babb;
+      --katefa-accent: #f3a4c0;
+      --katefa-line: #30272b;
+      background: #090809;
+      color: var(--katefa-ink);
+      font: 16px/1.65 Inter, system-ui, -apple-system, sans-serif;
+    }
+    .katefa *, .katefa *::before, .katefa *::after { box-sizing: border-box; }
+    .katefa-wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+    .katefa-skip { position: absolute; left: 1rem; top: 1rem; z-index: 1000; padding: .5rem 1rem; background: #fff; color: #111; transform: translateY(-200%); }
+    .katefa-skip:focus { transform: translateY(0); }
+    .katefa-skip:focus-visible, .katefa a:focus-visible { outline: 2px solid var(--katefa-accent); outline-offset: 5px; }
+    .katefa figure { margin: 0; min-width: 0; }
+    .katefa img, .katefa video { display: block; width: 100%; height: auto; }
+    .katefa-hero {
+      padding: clamp(36px, 6vw, 84px) 0;
+      border-bottom: 1px solid var(--katefa-line);
+      background: radial-gradient(ellipse at 79% 40%, #26151b 0%, #100c0f 48%, #090809 75%);
+    }
+    .katefa-hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(24px, 7vw, 100px); align-items: center; }
+    .katefa-kicker { margin: 0 0 12px; color: var(--katefa-accent); font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .katefa h1 { margin: 0; font-size: clamp(3.2rem, 9.4vw, 7.5rem); font-weight: 760; letter-spacing: -.075em; line-height: .94; }
+    .katefa-subtitle { display: block; max-width: 19ch; margin-top: 20px; font-size: clamp(1.4rem, 3.2vw, 2.45rem); letter-spacing: -.042em; line-height: 1.13; }
+    .katefa-lead { max-width: 46ch; margin: 21px 0 0; color: var(--katefa-lower); font-size: clamp(1rem, 1.8vw, 1.19rem); }
+    .katefa-hero video { aspect-ratio: 768 / 1168; background: #100d0f; border: 1px solid var(--katefa-line); }
+    .katefa figcaption { margin-top: 11px; color: var(--katefa-lower); font-size: .9rem; }
+    .katefa-section { padding: clamp(42px, 7vw, 94px) 0; border-bottom: 1px solid var(--katefa-line); }
+    .katefa h2 { margin: 0 0 12px; font-size: clamp(1.9rem, 4.4vw, 3.35rem); letter-spacing: -.05em; line-height: 1.06; }
+    .katefa-section p:not(.katefa-kicker) { max-width: 56ch; color: var(--katefa-lower); }
+    .katefa-portrait { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(24px, 8vw, 110px); align-items: center; }
+    .katefa-image-link { display: block; }
+    .katefa-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 3vw, 32px); margin-top: 26px; }
+    .katefa-gallery strong { color: var(--katefa-ink); }
+    .katefa-related { display: flex; flex-wrap: wrap; gap: 14px 24px; }
+    .katefa-related a { color: var(--katefa-accent); text-underline-offset: .23em; }
+    @media (max-width: 750px) {
+      .katefa-wrap { width: min(520px, calc(100% - 34px)); }
+      .katefa-hero-grid, .katefa-portrait { grid-template-columns: minmax(0, 1fr); }
+      .katefa-portrait > div { grid-row: 1; }
+    }
+    @media (max-width: 380px) { .katefa-gallery { grid-template-columns: minmax(0, 1fr); gap: 28px; } }
+  
+html,body{margin:0;min-height:100%;background:#000;color:#f5eeed}body{overflow-x:hidden}.katefa-mini-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;margin-top:30px}.katefa-mini-gallery figure{min-width:0}.katefa-mini-gallery img{aspect-ratio:2/3;object-fit:cover;background:#151112}.katefa-mini-gallery figcaption{font-size:.77rem;line-height:1.45}.katefa-mini-gallery figcaption strong{display:block;font-size:.83rem;color:#eee;margin-bottom:3px}@media(max-width:1000px){.katefa-mini-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.katefa-mini-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}}</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage",
+      "url": "https://axfra.com/demos/axfra-katefa-demo.html",
+      "name": "KATEFA — Una modelo virtual para una tienda de moda | AXFRA",
+      "description": "Presentación de KATEFA, modelo virtual creada con AXFRA para una tienda online de moda.",
+      "inLanguage": "es-CL",
+      "isPartOf": {
+        "@id": "https://axfra.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_hello_world.jpg"
+      },
+      "video": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#video"
+      },
+      "breadcrumb": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://axfra.com/demos/axfra-katefa-demo.html#video",
+      "name": "KATEFA en movimiento — Rock Bar",
+      "description": "Clip de presentación de KATEFA, modelo virtual de moda, con un top rosa y un short de denim en el AXFRA Rock Bar.",
+      "thumbnailUrl": "https://axfra.com/images/editorial/axfra_katefa_hello_world.jpg",
+      "contentUrl": "https://axfra.com/video/axfra_katefa_video.mp4",
+      "duration": "PT15S",
+      "uploadDate": "2026-11-17",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "publisher": {
+        "@id": "https://axfra.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://axfra.com/demos/axfra-katefa-demo.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "AXFRA",
+          "item": "https://axfra.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Demostraciones",
+          "item": "https://axfra.com/demos/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "KATEFA",
+          "item": "https://axfra.com/demos/axfra-katefa-demo.html"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_gala_duotone.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_gala_duotone.jpg",
+      "name": "KATEFA — Gala Duotone",
+      "caption": "Gala Duotone",
+      "description": "KATEFA con vestido de gala bicolor blanco y negro, acompañada de un hombre con traje gris, en una escena generada ambientada en el Hotel Marriott Kennedy de Santiago.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_lingerie_blue.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_lingerie_blue.jpg",
+      "name": "KATEFA — Blue Lingerie",
+      "caption": "Blue Lingerie",
+      "description": "KATEFA con conjunto de lencería azul claro de encaje y transparencias en una habitación elegante; escena generada ambientada en un salón de Cousiño Macul, Santiago.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_beach_resort.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_beach_resort.jpg",
+      "name": "KATEFA — Beach Resort",
+      "caption": "Beach Resort",
+      "description": "KATEFA camina por la playa con bikini blanco y salida de baño tejida color turquesa; escena generada ambientada en San Alfonso del Mar, Algarrobo, Chile.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_active_supermarket.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_active_supermarket.jpg",
+      "name": "KATEFA — Active Supermarket",
+      "caption": "Active Supermarket",
+      "description": "KATEFA luce top blanco y calzas deportivas azules mientras empuja un carro de compras en una escena generada ambientada en el supermercado Jumbo Kennedy, Santiago de Chile.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_fitness_pink.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_fitness_pink.jpg",
+      "name": "KATEFA — Fitness Pink",
+      "caption": "Fitness Pink",
+      "description": "KATEFA con conjunto deportivo rosa y audífonos corre en una cinta; escena generada ambientada en el gimnasio Smart Fit La Florida, Santiago de Chile.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_juicy_denim.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_juicy_denim.jpg",
+      "name": "KATEFA — Juicy Denim",
+      "caption": "Juicy Denim",
+      "description": "KATEFA camina por una avenida de Santiago con corsé de denim, falda corta a juego, bolso y zapatos rosas; escena generada ambientada en el sector Tobalaba.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_transantiago_pink.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_transantiago_pink.jpg",
+      "name": "KATEFA — Transantiago Pink",
+      "caption": "Transantiago Pink",
+      "description": "KATEFA viste top rosa, chaqueta de denim negro y jeans bordados en la vereda junto a un bus del Transantiago; escena generada ambientada frente a Apumanque, Las Condes, Santiago.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_wicked_concert.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_wicked_concert.jpg",
+      "name": "KATEFA — Wicked Concert",
+      "caption": "Wicked Concert",
+      "description": "KATEFA luce top rosa y negro con gráfica rockera, pantalones cargo negros y accesorios metálicos frente a una arena de conciertos; escena generada ambientada en Movistar Arena, Santiago.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_steampunk_fair.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_steampunk_fair.jpg",
+      "name": "KATEFA — Steampunk Fair",
+      "caption": "Steampunk Fair",
+      "description": "KATEFA con chaqueta de cuero, gafas de aviador, guantes y accesorios steampunk en una escena generada ambientada en Estación Mapocho, Santiago de Chile.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://axfra.com/images/editorial/axfra_katefa_devil_party.jpg#image",
+      "contentUrl": "https://axfra.com/images/editorial/axfra_katefa_devil_party.jpg",
+      "name": "KATEFA — Devil Party",
+      "caption": "Devil Party",
+      "description": "KATEFA viste conjunto negro de inspiración diabólica con cuernos rojos y alas, en una fiesta nocturna con iluminación de colores y asistentes disfrazados; escena generada con IA.",
+      "creator": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "isPartOf": {
+        "@id": "https://axfra.com/demos/axfra-katefa-demo.html#webpage"
+      }
+    }
+  ]
+}</script>
+<script defer="" src="/demo-conclusion.js"></script>
+<style>html, body {margin:0; padding:0; background:#000; min-height:100%;} body {overflow-x:hidden;}</style>
+</head>
+<body>
+<a class="katefa-skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+<main class="katefa" id="contenido">
+<section aria-labelledby="katefa-title" class="katefa-hero">
+<div class="katefa-wrap katefa-hero-grid">
+<div>
+<p class="katefa-kicker">AXFRA / Demostración aplicada</p>
+<h1 id="katefa-title">KATEFA<span class="katefa-subtitle">Una modelo virtual para una tienda de moda</span></h1>
+<p class="katefa-lead">ALARSI creó a KATEFA con AXFRA para un cliente. Durante 2027 modelará prendas para su tienda online y será el rostro de su publicidad.</p>
+</div>
+<figure>
+<video aria-label="KATEFA en movimiento en el Rock Bar" controls="" height="1168" id="video" playsinline="" poster="../images/editorial/axfra_katefa_hello_world.jpg" preload="metadata" width="768">
+<source src="../video/axfra_katefa_video.mp4" type="video/mp4"/>
+<a href="../video/axfra_katefa_video.mp4">Abrir el video de KATEFA</a>
+</video>
+<figcaption>Rock Bar · KATEFA en movimiento · 15 s</figcaption>
+</figure>
+</div>
+</section>
+<section aria-labelledby="katefa-rostro" class="katefa-section">
+<div class="katefa-wrap katefa-portrait">
+<figure>
+<a class="katefa-image-link" href="../images/editorial/axfra_katefa_close_up.jpg">
+<img alt="Primer plano de KATEFA con pecas sobre la nariz, ojos castaños y cabello oscuro sobre el rostro." decoding="async" height="1728" loading="lazy" src="../images/editorial/axfra_katefa_close_up.jpg" width="1152"/>
+</a>
+</figure>
+<div>
+<h2 id="katefa-rostro">El rostro de KATEFA</h2>
+<p>El primer plano deja ver las pecas sobre la nariz, la forma de los ojos y las cejas marcadas. Son rasgos que ayudan a reconocerla cuando el plano se abre o cambia la iluminación.</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="katefa-vestuario" class="katefa-section">
+<div class="katefa-wrap">
+<h2 id="katefa-vestuario">Un conjunto, dos puestas en escena</h2>
+<p>El top rosa de encaje y el short de denim se mantienen en ambas composiciones. La pose, el encuadre y la luz cambian qué parte del conjunto llama primero la atención.</p>
+<div class="katefa-gallery">
+<figure>
+<a class="katefa-image-link" href="../images/editorial/axfra_katefa_pink.jpg">
+<img alt="KATEFA posa con las manos en la cintura y viste un top rosa de encaje y un short de denim sobre un fondo neutro." decoding="async" height="1728" loading="lazy" src="../images/editorial/axfra_katefa_pink.jpg" width="1152"/>
+</a>
+<figcaption><strong>Pink.</strong> La luz suave y el encuadre cercano destacan el escote y la trama del encaje.</figcaption>
+</figure>
+<figure>
+<a class="katefa-image-link" href="../images/editorial/axfra_katefa_rockstar.jpg">
+<img alt="KATEFA de cuerpo entero, con los brazos alzados frente a una gran estrella iluminada." decoding="async" height="1728" loading="lazy" src="../images/editorial/axfra_katefa_rockstar.jpg" width="1152"/>
+</a>
+<figcaption><strong>Rockstar.</strong> El plano de cuerpo entero y la estrella de luz ámbar llevan el conjunto a un registro de campaña.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section aria-labelledby="katefa-black-widow" class="katefa-section"><div class="katefa-wrap"><p class="katefa-kicker">Variación de vestuario / Editorial</p><h2 id="katefa-black-widow">Black Widow</h2><p>Un mismo look oscuro en dos escenarios: un muro de neones y un cubo rojo luminoso. Materiales, pose y contraste modifican la lectura editorial del conjunto.</p><div class="katefa-gallery"><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_black_widow_neon.jpg"><img alt="KATEFA con vestido negro brillante, mangas transparentes y accesorios de araña frente a una pared de neones naranjas y azules." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_black_widow_neon.jpg" width="1024"/></a><figcaption><strong>Neon Wall. </strong>Neón y texturas sobre un fondo de ladrillo.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_black_widow.jpg"><img alt="KATEFA con vestido negro, medias y botas altas de charol, sentada sobre un cubo iluminado con neón rojo en un estudio oscuro." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_black_widow.jpg" width="1024"/></a><figcaption><strong>Red Cube. </strong>Cubo rojo iluminado y reflejos sobre el suelo.</figcaption></figure></div></div></section><section aria-labelledby="katefa-editorial" class="katefa-section"><div class="katefa-wrap"><p class="katefa-kicker">Fashion / Lifestyle / Editorial</p><h2 id="katefa-editorial">Variaciones editoriales</h2><p>Diez composiciones exploran la continuidad visual de KATEFA en distintos vestuarios, géneros y escenarios. La misma identidad, múltiples registros para moda y campañas.</p><div class="katefa-mini-gallery"><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_gala_duotone.jpg"><img alt="KATEFA con vestido de gala bicolor blanco y negro, acompañada de un hombre con traje gris, en una escena generada ambientada en el Hotel Marriott Kennedy de Santiago." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_gala_duotone.jpg" width="1024"/></a><figcaption><strong>Gala Duotone</strong>Vestido de gala bicolor y accesorios en un entorno inspirado en el Hotel Marriott Kennedy, Santiago.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_lingerie_blue.jpg"><img alt="KATEFA con conjunto de lencería azul claro de encaje y transparencias en una habitación elegante; escena generada ambientada en un salón de Cousiño Macul, Santiago." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_lingerie_blue.jpg" width="1024"/></a><figcaption><strong>Blue Lingerie</strong>Lencería azul de encaje, con iluminación cálida y ambientación inspirada en un salón de Cousiño Macul.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_beach_resort.jpg"><img alt="KATEFA camina por la playa con bikini blanco y salida de baño tejida color turquesa; escena generada ambientada en San Alfonso del Mar, Algarrobo, Chile." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_beach_resort.jpg" width="1024"/></a><figcaption><strong>Beach Resort</strong>Moda de playa en una composición ambientada en San Alfonso del Mar, Algarrobo.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_active_supermarket.jpg"><img alt="KATEFA luce top blanco y calzas deportivas azules mientras empuja un carro de compras en una escena generada ambientada en el supermercado Jumbo Kennedy, Santiago de Chile." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_active_supermarket.jpg" width="1024"/></a><figcaption><strong>Active Supermarket</strong>Activewear blanco y azul en un entorno comercial inspirado en Jumbo Kennedy.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_fitness_pink.jpg"><img alt="KATEFA con conjunto deportivo rosa y audífonos corre en una cinta; escena generada ambientada en el gimnasio Smart Fit La Florida, Santiago de Chile." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_fitness_pink.jpg" width="1024"/></a><figcaption><strong>Fitness Pink</strong>Vestuario fitness rosa en una recreación visual ambientada en Smart Fit La Florida.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_juicy_denim.jpg"><img alt="KATEFA camina por una avenida de Santiago con corsé de denim, falda corta a juego, bolso y zapatos rosas; escena generada ambientada en el sector Tobalaba." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_juicy_denim.jpg" width="1024"/></a><figcaption><strong>Juicy Denim</strong>Conjunto denim y accesorios rosa, en una composición de moda urbana ambientada en el sector Tobalaba, Santiago.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_transantiago_pink.jpg"><img alt="KATEFA viste top rosa, chaqueta de denim negro y jeans bordados en la vereda junto a un bus del Transantiago; escena generada ambientada frente a Apumanque, Las Condes, Santiago." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_transantiago_pink.jpg" width="1024"/></a><figcaption><strong>Transantiago Pink</strong>Street style rosa y denim en una escena inspirada en el exterior de Apumanque, junto al transporte público de Santiago.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_wicked_concert.jpg"><img alt="KATEFA luce top rosa y negro con gráfica rockera, pantalones cargo negros y accesorios metálicos frente a una arena de conciertos; escena generada ambientada en Movistar Arena, Santiago." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_wicked_concert.jpg" width="1024"/></a><figcaption><strong>Wicked Concert</strong>Estilismo rock en una composición inspirada en el entorno del Movistar Arena de Santiago.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_steampunk_fair.jpg"><img alt="KATEFA con chaqueta de cuero, gafas de aviador, guantes y accesorios steampunk en una escena generada ambientada en Estación Mapocho, Santiago de Chile." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_steampunk_fair.jpg" width="1024"/></a><figcaption><strong>Steampunk Fair</strong>Vestuario steampunk, texturas de cuero y accesorios mecánicos en una escena ambientada en Estación Mapocho.</figcaption></figure><figure><a class="katefa-image-link" href="../images/editorial/axfra_katefa_devil_party.jpg"><img alt="KATEFA viste conjunto negro de inspiración diabólica con cuernos rojos y alas, en una fiesta nocturna con iluminación de colores y asistentes disfrazados; escena generada con IA." decoding="async" height="1536" loading="lazy" src="../images/editorial/axfra_katefa_devil_party.jpg" width="1024"/></a><figcaption><strong>Devil Party</strong>Vestuario temático de fiesta, con iluminación de discoteca y accesorios de fantasía.</figcaption></figure></div></div></section><section aria-labelledby="axfra-conclusion-title" class="axfra-demo-conclusion">
+<div class="axfra-demo-conclusion-inner">
+<h2 id="axfra-conclusion-title">Una identidad reutilizable</h2>
+<p>En AXFRA, la identidad, el vestuario, la pose, la cámara y la iluminación se pueden trabajar por separado. Eso permite preparar nuevas composiciones para la tienda y sus campañas tomando a KATEFA como referencia común. Su <i>Identity Core</i> es privado.</p>
+<div aria-label="Recursos relacionados de AXFRA" class="katefa-related" id="globalDemoConclusion">
+<a href="/demos/">Ver todas las demostraciones</a>
+<a href="/library/">Explorar la Librería JSON</a>
+</div>
+</div>
+</section>
+</main>
+<div id="globalFooter"></div>
+<script>
+// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
+// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
+(async function () {
+  async function insertarComponente(ruta, id) {
+    const respuesta = await fetch(ruta, {cache: 'no-cache'});
+    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
+    document.getElementById(id).innerHTML = await respuesta.text();
+  }
+  try {
+    await insertarComponente('/header.html', 'globalHeader');
+    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
+    if (actual) actual.setAttribute('aria-current', 'page');
+  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
+  try {
+    await insertarComponente('/footer.html', 'globalFooter');
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
+})();
+</script>
+</body>
+</html>
