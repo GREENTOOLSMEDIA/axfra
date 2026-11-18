@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_arms_forming_an_arch_overhead_p002_front",
+  "name": "Arms Forming an Arch Overhead",
+  "name_es": "Brazos en arco sobre la cabeza",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P002_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso erguido y frontal.",
+  "arms": {
+    "both": "Elevar ambos brazos con los codos abiertos. Juntar las puntas de los dedos sobre la coronilla para cerrar el arco."
+  },
+  "head": "Cabeza erguida al centro.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

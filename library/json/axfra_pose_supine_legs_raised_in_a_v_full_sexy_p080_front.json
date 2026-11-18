@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_supine_legs_raised_in_a_v_full_sexy_p080_front",
+  "name": "Supine, Legs Raised in a V",
+  "name_es": "Boca arriba, piernas en V elevadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_sexy_P080_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "supine",
+  "support": "Peso sobre la espalda.",
+  "torso": "Torso supino.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha en abducción marcada.",
+    "left": "Pierna izquierda en abducción marcada."
+  },
+  "head": "Cabeza apoyada.",
+  "camera": {
+    "view": "overhead",
+    "lens_height": "por encima del cuerpo",
+    "nearest": "pies",
+    "farthest": "cabeza",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No profile view."
+    ]
+  }
+}

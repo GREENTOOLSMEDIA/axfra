@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_supine_knees_together_p073_front",
+  "name": "Supine, Knees Together",
+  "name_es": "Boca arriba, rodillas juntas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P073_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "supine",
+  "support": "Peso sobre la espalda.",
+  "torso": "Torso supino.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza apoyada.",
+  "camera": {
+    "view": "overhead_three_quarter",
+    "lens_height": "por encima del cuerpo",
+    "nearest": "rodillas",
+    "farthest": "cabeza",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No profile view."
+    ]
+  }
+}

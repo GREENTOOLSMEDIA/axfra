@@ -1,0 +1,39 @@
+{
+  "id": "axfra_pose_standing_sideways_profile_full_single_p030_side",
+  "name": "Standing Sideways, Profile",
+  "name_es": "De pie de lado, perfil",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P030_side.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en la pierna derecha.",
+  "torso": "Torso erguido de perfil.",
+  "arms": {
+    "right": "Brazo derecho colgando.",
+    "left": "Brazo izquierdo colgando."
+  },
+  "legs": {
+    "left": "Pierna izquierda en apoyo."
+  },
+  "head": "Cabeza de perfil.",
+  "camera": {
+    "view": "side",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No low-angle shot."
+    ]
+  }
+}

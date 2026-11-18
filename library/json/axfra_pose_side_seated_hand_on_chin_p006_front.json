@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_side_seated_hand_on_chin_p006_front",
+  "name": "Side Seated, Hand on Chin",
+  "name_es": "Sentada de lado, mano en el mentón",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P006_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "pelvis": "Cadera rotada.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano derecha bajo el mentón.",
+    "left": "Brazo izquierdo flexionado, mano izquierda en el muslo."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada y cruzada."
+  },
+  "head": "Cabeza inclinada, mirada al frente.",
+  "camera": {
+    "view": "side",
+    "lens_height": "a la altura de los ojos sentada",
+    "nearest": "rostro y torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No low-angle shot."
+    ]
+  }
+}

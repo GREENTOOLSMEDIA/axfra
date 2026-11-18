@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_arms_reaching_forward_to_plant_hands_p067_front",
+  "name": "Arms Reaching Forward to Plant Hands",
+  "name_es": "Brazos hacia delante con palmas apoyadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P067_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso de frente, adelantado hacia cámara.",
+  "arms": {
+    "both": "Extender ambos brazos hacia delante y abajo. Plantar ambas manos separadas sobre una superficie, con dedos abiertos hacia cámara."
+  },
+  "head": "Cabeza frontal.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

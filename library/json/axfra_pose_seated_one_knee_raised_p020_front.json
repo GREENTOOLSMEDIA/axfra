@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_seated_one_knee_raised_p020_front",
+  "name": "Seated, One Knee Raised",
+  "name_es": "Sentada con una rodilla en alto",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P020_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano en la rodilla.",
+    "left": "Brazo izquierdo flexionado, mano en el muslo."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada, rodilla elevada.",
+    "left": "Pierna izquierda flexionada y plegada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho sentada",
+    "nearest": "rodilla elevada",
+    "farthest": "pie plegado",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

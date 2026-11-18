@@ -1,0 +1,36 @@
+{
+  "id": "axfra_pose_standing_arms_raised_full_single_p056_front",
+  "name": "Standing, Arms Raised",
+  "name_es": "De pie, brazos en alto",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P056_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en ambas piernas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en flexión de hombro marcada.",
+    "left": "Brazo izquierdo en flexión de hombro marcada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "torso y brazos",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

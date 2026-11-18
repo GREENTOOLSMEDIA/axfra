@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_side_seated_legs_together_p053_front",
+  "name": "Side Seated, Legs Together",
+  "name_es": "Sentada de lado, piernas juntas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P053_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre la cadera.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza en perfil.",
+  "camera": {
+    "view": "side",
+    "lens_height": "a la altura del hombro",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No low-angle shot."
+    ]
+  }
+}

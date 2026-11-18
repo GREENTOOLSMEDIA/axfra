@@ -1,0 +1,39 @@
+{
+  "id": "axfra_pose_standing_forward_bend_full_single_p052_front",
+  "name": "Standing Forward Bend",
+  "name_es": "Flexión de tronco de pie",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P052_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en ambas piernas.",
+  "pelvis": "Cadera flexionada.",
+  "torso": "Torso flexionado hacia adelante.",
+  "arms": {
+    "right": "Brazo derecho extendido hacia abajo.",
+    "left": "Brazo izquierdo extendido hacia abajo."
+  },
+  "legs": {
+    "both": "Rodillas en flexión leve."
+  },
+  "head": "Cabeza colgando.",
+  "camera": {
+    "view": "rear_three_quarter",
+    "lens_height": "a la altura de la cadera",
+    "nearest": "espalda",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No straight-on front view."
+    ]
+  }
+}

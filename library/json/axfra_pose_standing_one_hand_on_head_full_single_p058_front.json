@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_standing_one_hand_on_head_full_single_p058_front",
+  "name": "Standing, One Hand on Head",
+  "name_es": "De pie, una mano en la cabeza",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P058_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en la pierna derecha.",
+  "pelvis": "Cadera desplazada.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en flexión de hombro, mano en la cabeza.",
+    "left": "Brazo izquierdo colgando."
+  },
+  "legs": {
+    "left": "Pierna izquierda en apoyo."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

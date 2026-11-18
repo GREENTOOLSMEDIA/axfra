@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_standing_looking_back_p017_front",
+  "name": "Standing, Looking Back",
+  "name_es": "De pie, mirada atrás",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P017_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en la pierna derecha.",
+  "pelvis": "Cadera rotada.",
+  "torso": "Torso rotado de forma marcada hacia atrás.",
+  "arms": {
+    "right": "Brazo derecho colgando.",
+    "left": "Brazo izquierdo colgando."
+  },
+  "legs": {
+    "left": "Pierna izquierda ligeramente flexionada."
+  },
+  "head": "Cabeza rotada de forma marcada hacia atrás.",
+  "camera": {
+    "view": "rear_three_quarter",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "espalda",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No strict profile view."
+    ]
+  }
+}

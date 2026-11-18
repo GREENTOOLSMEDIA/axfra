@@ -1,0 +1,36 @@
+{
+  "id": "axfra_pose_standing_arms_open_full_single_p066_front",
+  "name": "Standing, Arms Open",
+  "name_es": "De pie, brazos abiertos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P066_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso en ambas piernas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en abducción.",
+    "left": "Brazo izquierdo en abducción."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

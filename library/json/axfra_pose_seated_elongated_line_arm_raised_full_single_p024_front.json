@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_seated_elongated_line_arm_raised_full_single_p024_front",
+  "name": "Seated, Elongated Line, Arm Raised",
+  "name_es": "Sentada, línea larga, brazo elevado",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P024_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en flexión de hombro marcada.",
+    "left": "Brazo izquierdo en extensión."
+  },
+  "legs": {
+    "right": "Pierna derecha en extensión hacia el lado.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza inclinada hacia atrás.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del torso",
+    "nearest": "brazo y torso",
+    "farthest": "pie",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No overhead view."
+    ]
+  }
+}

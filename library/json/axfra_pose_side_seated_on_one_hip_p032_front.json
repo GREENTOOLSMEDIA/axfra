@@ -1,0 +1,39 @@
+{
+  "id": "axfra_pose_side_seated_on_one_hip_p032_front",
+  "name": "Side Seated on One Hip",
+  "name_es": "Sentada de lado sobre la cadera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P032_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre la cadera derecha.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho extendido hacia atrás, mano en el suelo.",
+    "left": "Brazo izquierdo flexionado, mano en el muslo."
+  },
+  "legs": {
+    "both": "Ambas piernas flexionadas y plegadas hacia el lado izquierdo."
+  },
+  "head": "Cabeza en perfil, mirada hacia el lado izquierdo.",
+  "camera": {
+    "view": "right_profile",
+    "lens_height": "a la altura del hombro sentada",
+    "nearest": "torso y brazo de apoyo",
+    "farthest": "pies plegados",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No low-angle shot."
+    ]
+  }
+}

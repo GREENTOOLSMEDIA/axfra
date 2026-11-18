@@ -1,0 +1,30 @@
+{
+  "id": "axfra_pose_upper_body_arm_behind_head_other_hand_on_chest_p055_front",
+  "name": "Arm Behind Head, Other Hand on Chest",
+  "name_es": "Brazo detrás de la cabeza y otra mano en el pecho",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P055_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso casi frontal y erguido.",
+  "arms": {
+    "both": "Elevar un brazo con el codo alto y la mano detrás de la cabeza. Colocar la mano opuesta sobre el pecho en diagonal.",
+    "reference_orientation": "El primer gesto descrito queda a la derecha de la imagen. Conservar esta orientación al componer."
+  },
+  "head": "Cabeza erguida con ligera inclinación.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}
