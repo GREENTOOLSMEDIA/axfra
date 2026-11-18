@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_neutral_standing_facing_front_full_single_p051_front",
+  "name": "Neutral Standing, Facing Front",
+  "name_es": "De pie neutra frontal",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P051_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso repartido entre ambas piernas.",
+  "pelvis": "Cadera nivelada.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho colgando.",
+    "left": "Brazo izquierdo colgando."
+  },
+  "legs": {
+    "both": "Rodillas en extensión."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura de los ojos",
+    "nearest": "rostro",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No low-angle shot.",
+      "No profile view."
+    ]
+  }
+}

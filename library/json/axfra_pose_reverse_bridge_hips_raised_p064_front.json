@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_reverse_bridge_hips_raised_p064_front",
+  "name": "Reverse Bridge, Hips Raised",
+  "name_es": "Puente invertido, caderas elevadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P064_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "reverse_bridge",
+  "support": "Peso sobre ambas manos y ambos pies.",
+  "pelvis": "Cadera elevada.",
+  "torso": "Torso arqueado.",
+  "arms": {
+    "right": "Brazo derecho en extensión, mano en el suelo.",
+    "left": "Brazo izquierdo en extensión, mano en el suelo."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza inclinada hacia atrás.",
+  "camera": {
+    "view": "side",
+    "lens_height": "a la altura de la cadera",
+    "nearest": "torso",
+    "farthest": "manos y pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No overhead view."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_prone_one_leg_raised_p023_front",
+  "name": "Prone, One Leg Raised",
+  "name_es": "Boca abajo, una pierna elevada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P023_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "prone",
+  "support": "Peso sobre el abdomen y la pierna izquierda.",
+  "torso": "Torso prono.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano sosteniendo la cabeza.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "left": "Pierna izquierda en extensión.",
+    "right": "Pierna derecha en flexión de cadera marcada, rodilla en extensión, pie elevado."
+  },
+  "head": "Cabeza girada.",
+  "camera": {
+    "view": "side_three_quarter",
+    "lens_height": "a la altura de la cadera",
+    "nearest": "cadera y pierna elevada",
+    "farthest": "pie en el suelo",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No overhead view."
+    ]
+  }
+}

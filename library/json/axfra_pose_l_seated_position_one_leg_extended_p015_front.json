@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_l_seated_position_one_leg_extended_p015_front",
+  "name": "L Seated Position, One Leg Extended",
+  "name_es": "Sentada en L, una pierna extendida",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P015_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho extendido hacia atrás, mano en el suelo.",
+    "left": "Brazo izquierdo flexionado, mano en el muslo."
+  },
+  "legs": {
+    "right": "Pierna derecha en extensión hacia el lado.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho sentada",
+    "nearest": "torso",
+    "farthest": "pie de la pierna extendida",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

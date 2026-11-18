@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_one_leg_balance_p016_front",
+  "name": "One-Leg Balance",
+  "name_es": "Equilibrio sobre una pierna",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P016_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "standing",
+  "support": "Peso completo en la pierna izquierda, rodilla en extensión.",
+  "pelvis": "Cadera nivelada.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en abducción, mano abierta.",
+    "left": "Brazo izquierdo en abducción, mano abierta."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada, rodilla elevada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho",
+    "nearest": "rodilla elevada",
+    "farthest": "pie de apoyo",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

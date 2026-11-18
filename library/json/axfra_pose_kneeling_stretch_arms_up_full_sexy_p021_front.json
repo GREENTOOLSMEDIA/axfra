@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_kneeling_stretch_arms_up_full_sexy_p021_front",
+  "name": "Kneeling Stretch, Arms Up",
+  "name_es": "Estiramiento de rodillas, brazos arriba",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_sexy_P021_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "kneeling",
+  "support": "Peso sobre ambas rodillas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en flexión de hombro marcada.",
+    "left": "Brazo izquierdo en flexión de hombro marcada."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso y brazos",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

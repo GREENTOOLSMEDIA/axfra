@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_prone_legs_bent_back_full_single_p041_front",
+  "name": "Prone, Legs Bent Back",
+  "name_es": "Boca abajo, piernas flexionadas atrás",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P041_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "prone",
+  "support": "Peso sobre el abdomen.",
+  "torso": "Torso prono.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza girada.",
+  "camera": {
+    "view": "three_quarter",
+    "lens_height": "ligeramente por encima",
+    "nearest": "cadera",
+    "farthest": "cabeza",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No low-angle shot."
+    ]
+  }
+}
