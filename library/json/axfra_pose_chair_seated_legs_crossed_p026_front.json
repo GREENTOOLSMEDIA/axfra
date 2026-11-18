@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_chair_seated_legs_crossed_p026_front",
+  "name": "Chair Seated, Legs Crossed",
+  "name_es": "Sentada en silla, piernas cruzadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P026_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "pelvis": "Cadera neutra.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano en la rodilla.",
+    "left": "Brazo izquierdo flexionado, mano en el muslo."
+  },
+  "legs": {
+    "right": "Pierna derecha cruzada sobre la izquierda.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

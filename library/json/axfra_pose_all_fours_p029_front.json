@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_all_fours_p029_front",
+  "name": "All Fours",
+  "name_es": "Cuatro apoyos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P029_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "all_fours",
+  "support": "Peso repartido entre ambas manos y ambas rodillas.",
+  "pelvis": "Cadera neutra.",
+  "torso": "Espalda horizontal. Torso paralelo al suelo.",
+  "arms": {
+    "right": "Brazo derecho en extensión, mano en el suelo.",
+    "left": "Brazo izquierdo en extensión, mano en el suelo."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada, rodilla en el suelo.",
+    "left": "Pierna izquierda flexionada, rodilla en el suelo."
+  },
+  "head": "Cabeza alineada, mirada al suelo.",
+  "camera": {
+    "view": "side_three_quarter",
+    "lens_height": "a la altura de la espalda",
+    "nearest": "cadera y torso",
+    "farthest": "manos y cabeza",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No overhead view."
+    ]
+  }
+}

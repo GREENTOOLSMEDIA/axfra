@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_floor_back_extension_full_single_p039_front",
+  "name": "Floor Back Extension",
+  "name_es": "Extensión de espalda en el suelo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P039_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "prone",
+  "support": "Peso sobre la pelvis y las manos.",
+  "torso": "Torso en extensión marcada.",
+  "arms": {
+    "right": "Brazo derecho en extensión.",
+    "left": "Brazo izquierdo en extensión."
+  },
+  "legs": {
+    "right": "Pierna derecha en extensión.",
+    "left": "Pierna izquierda en extensión."
+  },
+  "head": "Cabeza en extensión.",
+  "camera": {
+    "view": "side_three_quarter",
+    "lens_height": "a la altura del torso",
+    "nearest": "pecho",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No front view.",
+      "No overhead view."
+    ]
+  }
+}

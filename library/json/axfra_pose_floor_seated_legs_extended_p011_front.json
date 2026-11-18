@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_floor_seated_legs_extended_p011_front",
+  "name": "Floor Seated, Legs Extended",
+  "name_es": "Sentada en el suelo, piernas extendidas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P011_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "pelvis": "Cadera en el suelo.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho en extensión hacia atrás, mano en el suelo.",
+    "left": "Brazo izquierdo en extensión hacia atrás, mano en el suelo."
+  },
+  "legs": {
+    "right": "Pierna derecha en extensión.",
+    "left": "Pierna izquierda en extensión."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura del pecho sentada",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

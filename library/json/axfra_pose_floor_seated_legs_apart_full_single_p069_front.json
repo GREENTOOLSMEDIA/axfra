@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_floor_seated_legs_apart_full_single_p069_front",
+  "name": "Floor Seated, Legs Apart",
+  "name_es": "Sentada en el suelo, piernas abiertas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "full_single_P069_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho extendido.",
+    "left": "Brazo izquierdo extendido."
+  },
+  "legs": {
+    "right": "Pierna derecha en abducción.",
+    "left": "Pierna izquierda en abducción."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

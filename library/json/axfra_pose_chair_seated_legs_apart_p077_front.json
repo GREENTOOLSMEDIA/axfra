@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_chair_seated_legs_apart_p077_front",
+  "name": "Chair Seated, Legs Apart",
+  "name_es": "Sentada, piernas abiertas en silla",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P077_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha en abducción.",
+    "left": "Pierna izquierda en abducción."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

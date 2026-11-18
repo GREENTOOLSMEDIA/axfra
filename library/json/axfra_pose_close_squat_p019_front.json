@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_close_squat_p019_front",
+  "name": "Close Squat",
+  "name_es": "Cuclillas cerrada",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P019_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "squat",
+  "support": "Peso en ambos pies.",
+  "pelvis": "Cadera baja.",
+  "torso": "Torso flexionado hacia adelante.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano cerca del mentón.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha en flexión marcada.",
+    "left": "Pierna izquierda en flexión marcada, rodillas juntas."
+  },
+  "head": "Cabeza inclinada hacia adelante.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura de la cabeza en cuclillas",
+    "nearest": "rodillas y manos",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

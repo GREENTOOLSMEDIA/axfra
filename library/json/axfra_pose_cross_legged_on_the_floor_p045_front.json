@@ -1,0 +1,40 @@
+{
+  "id": "axfra_pose_cross_legged_on_the_floor_p045_front",
+  "name": "Cross-Legged on the Floor",
+  "name_es": "Sentada, piernas cruzadas en el suelo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P045_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre ambas nalgas.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado.",
+    "left": "Brazo izquierdo flexionado."
+  },
+  "legs": {
+    "right": "Pierna derecha cruzada.",
+    "left": "Pierna izquierda cruzada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

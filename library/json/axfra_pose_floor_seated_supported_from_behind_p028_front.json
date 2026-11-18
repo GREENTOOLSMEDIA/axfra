@@ -1,0 +1,41 @@
+{
+  "id": "axfra_pose_floor_seated_supported_from_behind_p028_front",
+  "name": "Floor Seated, Supported from Behind",
+  "name_es": "Sentada en el suelo, apoyo atrás",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P028_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "seated",
+  "support": "Peso sobre las nalgas y las manos.",
+  "pelvis": "Cadera en el suelo.",
+  "torso": "Torso reclinado.",
+  "arms": {
+    "right": "Brazo derecho en extensión hacia atrás, mano en el suelo.",
+    "left": "Brazo izquierdo en extensión hacia atrás, mano en el suelo."
+  },
+  "legs": {
+    "right": "Pierna derecha flexionada.",
+    "left": "Pierna izquierda flexionada."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura del pecho",
+    "nearest": "torso",
+    "farthest": "pies",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}
