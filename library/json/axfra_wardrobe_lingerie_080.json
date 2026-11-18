@@ -1,0 +1,90 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_080",
+  "name": "Black geometric cage strap garter set",
+  "name_es": "Conjunto negro de liguero geométrico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings",
+    "choker"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_080",
+  "pattern": "solid",
+  "color": "black",
+  "bra": {
+    "type": "triangle cup",
+    "coverage": null,
+    "straps": "crossed neckline straps",
+    "pattern": "solid",
+    "details": "Dark sheer cups with additional diagonal cage straps.",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "low-rise",
+    "details": "Low-rise waistband and open leg line. Straps descend from the hip or lower waist toward the stocking bands.",
+    "material": "mesh",
+    "thickness": "thin",
+    "transparency": "yes"
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "black",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": "straps integrated into lower garment",
+    "details": "Sheer leg with a distinct upper band.",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "choker": {
+    "type": "ribbon choker",
+    "details": "Separate narrow collar or bow at the neck as shown in the reference.",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  }
+}

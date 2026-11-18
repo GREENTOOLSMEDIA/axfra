@@ -1,0 +1,82 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_002",
+  "name": "Midnight blue floral lingerie set",
+  "name_es": "Conjunto de lencería floral azul marino",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_002",
+  "pattern": "floral",
+  "color": "navy blue",
+  "bra": {
+    "type": "structured cup",
+    "coverage": null,
+    "straps": "slender shoulder straps",
+    "pattern": "floral",
+    "details": "underwire floral lace bra",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "low-rise",
+    "details": "Low-rise waistband and open leg line. Decorative floral textile on the visible front.",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "black",
+    "pattern": "solid",
+    "top": "contrast lace band",
+    "attachment": null,
+    "details": "Sheer leg with a distinct upper band.",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}

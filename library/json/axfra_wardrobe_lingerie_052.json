@@ -1,0 +1,82 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_052",
+  "name": "Champagne satin garter lingerie",
+  "name_es": "Conjunto champán satinado con liguero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bra",
+    "panties",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_052",
+  "pattern": "solid",
+  "color": "champagne",
+  "bra": {
+    "type": "structured cup",
+    "coverage": null,
+    "straps": "slender shoulder straps",
+    "pattern": "solid",
+    "details": "sujetador champán de acabado brillante",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no"
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "low-rise",
+    "details": "Low-rise waistband and open leg line. Straps descend from the hip or lower waist toward the stocking bands.",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no"
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "champagne",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": "straps integrated into lower garment",
+    "details": "Sheer leg with a distinct upper band.",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}

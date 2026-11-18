@@ -1,0 +1,91 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_044",
+  "name": "Indigo floral embroidered garter lingerie",
+  "name_es": "Conjunto índigo bordado con liguero",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "bra",
+    "panties",
+    "garter_belt",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_044",
+  "pattern": "floral",
+  "color": "indigo",
+  "bra": {
+    "type": "structured cup",
+    "coverage": null,
+    "straps": "slender shoulder straps",
+    "pattern": "floral",
+    "details": "sujetador con bordados florales claros sobre base azul oscura",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "panties": {
+    "type": "brief",
+    "cut": "low-rise",
+    "details": "Low-rise waistband and open leg line. Decorative floral textile on the visible front.",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "garter_belt": {
+    "type": "separate garter belt",
+    "attachment": "straps descend to stocking bands",
+    "details": "Elementos florales en copas y cintura; tiras de liguero oscuras",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "black",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": "separate garter belt",
+    "details": "Sheer leg with a distinct upper band.",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}
