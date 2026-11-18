@@ -1,0 +1,30 @@
+{
+  "id": "axfra_pose_upper_body_one_fist_overhead_other_arm_beside_face_p023_front",
+  "name": "One Fist Overhead, Other Arm Beside Face",
+  "name_es": "Un puño en alto y el otro brazo junto al rostro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P023_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso inclinado lateralmente.",
+  "arms": {
+    "both": "Extender un brazo hacia arriba con la mano cerrada. Flexionar el otro, con antebrazo elevado y mano cerca de la cara.",
+    "reference_orientation": "El primer gesto descrito queda a la derecha de la imagen. Conservar esta orientación al componer."
+  },
+  "head": "Cabeza inclinada hacia la mano cercana.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0007",
+  "name": "Costume SXY-0007",
+  "name_es": "Bruja de encaje — burdeos y negro (SXY-0007)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "witch",
+  "source_reference": "SXY-0007.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "minivestido corset con escote corazón, lazada frontal, falda de volantes y sobrefalda lateral de encaje asimétrica",
+  "head": "sombrero alto de bruja de ala ancha y punta curvada",
+  "arms": "mangas de encaje separadas con puños acampanados",
+  "neck": "gargantilla",
+  "legs": "medias oscuras al muslo y ligueros",
+  "shoes": "botas de cordones con plataforma y tacón alto",
+  "material": "satén y encaje",
+  "reference_details": "falda corta delante y larga detrás; botas negras",
+  "color": "burdeos y negro"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "axfra_pose_upper_body_hand_behind_neck_other_on_hip_p005_front",
+  "name": "Hand Behind Neck, Other on Hip",
+  "name_es": "Mano detrás de la nuca y otra en la cadera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P005_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso con leve giro e inclinación lateral.",
+  "arms": {
+    "both": "Abrir un codo hacia el costado con la mano detrás o al lado de la nuca. Apoyar la otra mano en la cadera, con el codo abierto.",
+    "reference_orientation": "El primer gesto descrito queda a la izquierda de la imagen. Conservar esta orientación al componer."
+  },
+  "head": "Cabeza ligeramente inclinada.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

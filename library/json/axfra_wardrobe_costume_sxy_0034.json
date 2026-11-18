@@ -1,0 +1,30 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0034",
+  "name": "Costume SXY-0034",
+  "name_es": "Diablilla alada — negro y rojo (SXY-0034)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "devil",
+  "source_reference": "SXY-0034.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "top corto negro halter con abertura central y minifalda plisada",
+  "head": "diadema de cuernos rojos curvados",
+  "back": "alas pequeñas de murciélago negras con membranas rojas y cola fina terminada en punta de flecha",
+  "neck": "gargantilla",
+  "legs": "ligueros y medias negras al muslo con encaje",
+  "shoes": "botines negros de cordones con plataforma y tacón alto",
+  "material": "cuero sintético, satén y encaje",
+  "reference_details": "top con recorte pequeño vertical; cinturón fino con aros",
+  "color": "negro y rojo"
+}

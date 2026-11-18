@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_hands_across_upper_chest_p047_front",
+  "name": "Hands Across Upper Chest",
+  "name_es": "Manos sobre la parte alta del pecho",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P047_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal y erguido.",
+  "arms": {
+    "both": "Llevar ambas manos abiertas al pecho superior, con dedos separados hacia el centro y codos flexionados hacia fuera."
+  },
+  "head": "Cabeza frontal.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_hands_lifted_near_shoulders_p056_front",
+  "name": "Hands Lifted Near Shoulders",
+  "name_es": "Manos elevadas junto a los hombros",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P056_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal erguido.",
+  "arms": {
+    "both": "Flexionar ambos brazos con los antebrazos levantados. Colocar ambas manos cerca de los hombros, con los dedos curvados hacia dentro."
+  },
+  "head": "Cabeza frontal.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

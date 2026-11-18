@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0118",
+  "name": "Costume SXY-0118",
+  "name_es": "Piloto con minifalda — verde esmeralda y blanco (SXY-0118)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "racer",
+  "source_reference": "SXY-0118.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "conjunto de chaqueta corta abierta, top corto con copas y minifalda plisada",
+  "head": "gorra con visera",
+  "belt": "cinturón blanco ancho con hebilla rectangular",
+  "shoes": "botas altas por encima de la rodilla con tacón alto",
+  "material": "cuero sintético brillante",
+  "reference_details": "chaqueta blanca con paneles verdes, falda verde y botas blancas con franjas verdes",
+  "color": "verde esmeralda y blanco"
+}

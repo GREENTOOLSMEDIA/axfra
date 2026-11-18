@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_face_covered_with_both_hands_p025_front",
+  "name": "Face Covered with Both Hands",
+  "name_es": "Rostro cubierto con ambas manos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P025_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal con hombros recogidos.",
+  "arms": {
+    "both": "Subir ambos antebrazos juntos y cubrir el centro del rostro con ambas manos. Dedos abiertos y orientados hacia la frente."
+  },
+  "head": "Cabeza de frente detrás de las manos.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

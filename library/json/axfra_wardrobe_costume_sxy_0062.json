@@ -1,0 +1,30 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0062",
+  "name": "Costume SXY-0062",
+  "name_es": "Corset ceremonial con sombrero — azul marino y oro (SXY-0062)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "royal",
+  "source_reference": "SXY-0062.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "corset de escote corazón con varillas y ornamentación dorada, minifalda de volantes superpuestos y caídas laterales de encaje",
+  "head": "pequeño sombrero de copa inclinado con lazo y plumas",
+  "neck": "lazo o collar decorativo",
+  "arms": "guantes largos separados",
+  "legs": "medias al muslo con bordes de encaje y ligueros",
+  "shoes": "botines altos de cordones con tacón y plataforma",
+  "material": "satén, encaje y pasamanería metálica",
+  "reference_details": "corset con hombros descubiertos y pequeñas mangas, falda escalonada, sombrero inclinado",
+  "color": "azul marino y oro"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "axfra_pose_upright_kneeling_p031_front",
+  "name": "Upright Kneeling",
+  "name_es": "De rodillas erguida",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P031_front.json"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "kneeling",
+  "support": "Peso sobre ambas rodillas y empeines.",
+  "torso": "Torso erguido.",
+  "arms": {
+    "right": "Brazo derecho flexionado, mano en el muslo.",
+    "left": "Brazo izquierdo flexionado, mano en el muslo."
+  },
+  "legs": {
+    "right": "Pierna derecha y pierna izquierda flexionadas."
+  },
+  "head": "Cabeza erguida, mirada al frente.",
+  "camera": {
+    "view": "front_three_quarter",
+    "lens_height": "a la altura de los ojos arrodillada",
+    "nearest": "torso y rodillas",
+    "farthest": "pies detrás",
+    "framing": "full_body",
+    "restrictions": [
+      "No profile view.",
+      "No low-angle shot."
+    ]
+  }
+}

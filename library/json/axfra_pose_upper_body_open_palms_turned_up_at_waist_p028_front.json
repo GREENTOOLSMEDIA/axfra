@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_open_palms_turned_up_at_waist_p028_front",
+  "name": "Open Palms Turned Up at Waist",
+  "name_es": "Palmas abiertas hacia arriba junto a la cintura",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P028_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal, erguido.",
+  "arms": {
+    "both": "Doblar ambos codos junto al tronco, abrir los antebrazos hacia ambos lados y girar las palmas hacia arriba. Dedos separados."
+  },
+  "head": "Cabeza erguida y centrada.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

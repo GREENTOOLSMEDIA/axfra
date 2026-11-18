@@ -1,0 +1,27 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0089",
+  "name": "Costume SXY-0089",
+  "name_es": "Qipao corto — azul marino y oro (SXY-0089)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "qipao",
+  "source_reference": "SXY-0089.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "qipao mini ceñido de manga corta, cuello mandarín y abertura de lágrima en el pecho",
+  "legs": "medias al muslo",
+  "shoes": "zapatos de tacón alto",
+  "material": "brocado satinado",
+  "reference_details": "mangas cortas, recorte en pecho y estampado floral dorado; medias negras y sandalias negras",
+  "color": "azul marino y oro"
+}

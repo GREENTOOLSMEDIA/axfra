@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_palms_cupping_cheeks_p020_front",
+  "name": "Palms Cupping Cheeks",
+  "name_es": "Palmas sosteniendo las mejillas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P020_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal con hombros recogidos.",
+  "arms": {
+    "both": "Elevar ambos antebrazos casi juntos y apoyar las palmas en las mejillas. Dedos hacia arriba, pegados a los lados de la cara."
+  },
+  "head": "Cabeza frontal entre ambas manos.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

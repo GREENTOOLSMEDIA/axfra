@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0009",
+  "name": "Costume SXY-0009",
+  "name_es": "Mucama marinera — negro, blanco y rojo (SXY-0009)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "maid",
+  "source_reference": "SXY-0009.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "minivestido negro de manga corta abullonada, cuello marinero blanco con doble ribete y gran lazo rojo en el pecho, falda acampanada con borde blanco",
+  "accessories": "delantal blanco corto con borde fruncido y diadema de encaje",
+  "legs": "medias blancas al muslo con lazos",
+  "shoes": "zapatos negros de pulsera, plataforma y tacón alto",
+  "material": "tejido uniforme y encaje",
+  "reference_details": "doble ribete de la falda y lazos oscuros en las medias",
+  "color": "negro, blanco y rojo"
+}

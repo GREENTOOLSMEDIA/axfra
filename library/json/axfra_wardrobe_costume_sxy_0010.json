@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0010",
+  "name": "Costume SXY-0010",
+  "name_es": "Mucama de corset — verde esmeralda y blanco (SXY-0010)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "maid_puff",
+  "source_reference": "SXY-0010.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "minivestido de corpiño ceñido con copas, mangas abullonadas y falda de volantes",
+  "accessories": "delantal blanco fruncido, diadema de encaje y lazo al cuello",
+  "legs": "medias blancas al muslo con lazos y encaje",
+  "shoes": "zapatos de plataforma y tacón alto",
+  "material": "satén y encaje",
+  "reference_details": "botones en el corpiño y lazo verde en el cuello",
+  "color": "verde esmeralda y blanco"
+}

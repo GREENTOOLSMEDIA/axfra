@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_low_forearm_cross_with_side_tilt_p073_front",
+  "name": "Low Forearm Cross with Side Tilt",
+  "name_es": "Antebrazos cruzados abajo con inclinación lateral",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P073_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso casi frontal inclinado levemente hacia un lado.",
+  "arms": {
+    "both": "Cruzar un antebrazo en diagonal sobre el pecho bajo y el otro por debajo, más horizontal. Manos abiertas hacia los lados opuestos."
+  },
+  "head": "Cabeza inclinada acompañando al torso.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

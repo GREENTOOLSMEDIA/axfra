@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_neutral_torso_with_arms_at_sides_p045_front",
+  "name": "Neutral Torso with Arms at Sides",
+  "name_es": "Torso neutro con brazos a los costados",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P045_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso erguido de frente, hombros relajados.",
+  "arms": {
+    "both": "Dejar caer ambos brazos a los lados, con ligera separación del torso y manos bajas."
+  },
+  "head": "Cabeza erguida y centrada.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

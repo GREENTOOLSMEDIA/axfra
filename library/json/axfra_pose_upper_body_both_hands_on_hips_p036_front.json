@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_both_hands_on_hips_p036_front",
+  "name": "Both Hands on Hips",
+  "name_es": "Ambas manos en la cadera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P036_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal erguido.",
+  "arms": {
+    "both": "Apoyar las manos a ambos lados de la cadera con los dedos adelantados y los codos abiertos."
+  },
+  "head": "Cabeza erguida.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

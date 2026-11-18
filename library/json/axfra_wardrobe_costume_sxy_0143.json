@@ -1,0 +1,29 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0143",
+  "name": "Costume SXY-0143",
+  "name_es": "Guerrera ninja — negro y rojo (SXY-0143)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "ninja",
+  "source_reference": "SXY-0143.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "minitúnica negra ajustada, cuello alto, abertura geométrica en el pecho y faldón asimétrico",
+  "arms": "mangas largas ajustadas y guantes",
+  "belt": "faja roja cruzada y anudada con extremos largos a un costado",
+  "legs": "tiras negras entrecruzadas alrededor de los muslos",
+  "shoes": "botas negras ajustadas por encima de la rodilla con tacón alto",
+  "material": "tejido elástico y cuero sintético",
+  "reference_details": "recorte ancho sobre el pecho, mangas con bandas rojas y faja roja larga",
+  "color": "negro y rojo"
+}

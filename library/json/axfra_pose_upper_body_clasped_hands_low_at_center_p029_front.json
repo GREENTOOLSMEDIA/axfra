@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_clasped_hands_low_at_center_p029_front",
+  "name": "Clasped Hands Low at Center",
+  "name_es": "Manos juntas abajo al centro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P029_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal, hombros elevados y cercanos entre sí.",
+  "arms": {
+    "both": "Acercar los brazos hacia el centro y bajar ambos antebrazos. Juntar las manos delante de la parte baja del torso."
+  },
+  "head": "Cabeza erguida, mentón ligeramente bajo.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

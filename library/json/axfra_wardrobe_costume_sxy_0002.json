@@ -1,0 +1,30 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0002",
+  "name": "Costume SXY-0002",
+  "name_es": "Ángel ceremonial — blanco (SXY-0002)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "angel",
+  "source_reference": "SXY-0002.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "minivestido satinado con escote halter, copas definidas, aberturas bajo el pecho y falda drapeada",
+  "head": "aureola circular suspendida sobre la cabeza",
+  "back": "alas de plumas blancas unidas a la espalda",
+  "arms": "guantes largos blancos",
+  "legs": "medias blancas al muslo con borde de encaje y ligueros",
+  "shoes": "calzado blanco de tacón alto",
+  "material": "satén, encaje y plumas",
+  "reference_details": "top halter cruzado; falda drapeada; zapatos blancos de plataforma",
+  "color": "blanco"
+}

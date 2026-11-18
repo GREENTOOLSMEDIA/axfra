@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_crossed_arms_reaching_opposite_shoulders_p041_front",
+  "name": "Crossed Arms Reaching Opposite Shoulders",
+  "name_es": "Brazos cruzados con manos en hombros opuestos",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P041_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal erguido.",
+  "arms": {
+    "both": "Cruzar los antebrazos en X delante del pecho y apoyar cada mano sobre el hombro opuesto."
+  },
+  "head": "Cabeza frontal al centro.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

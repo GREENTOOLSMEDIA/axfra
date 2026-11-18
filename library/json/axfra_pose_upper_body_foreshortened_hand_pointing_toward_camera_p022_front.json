@@ -1,0 +1,30 @@
+{
+  "id": "axfra_pose_upper_body_foreshortened_hand_pointing_toward_camera_p022_front",
+  "name": "Foreshortened Hand Pointing Toward Camera",
+  "name_es": "Mano apuntando a cámara en escorzo",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P022_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso casi frontal, con un hombro adelantado.",
+  "arms": {
+    "both": "Proyectar un brazo directamente hacia cámara y apuntar con la mano en primer plano. El otro brazo baja con la mano cerca de la cadera o el muslo.",
+    "reference_orientation": "El primer gesto descrito queda a la izquierda de la imagen. Conservar esta orientación al componer."
+  },
+  "head": "Cabeza frontal.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

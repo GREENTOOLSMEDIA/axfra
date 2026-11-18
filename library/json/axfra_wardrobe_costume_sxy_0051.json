@@ -1,0 +1,29 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0051",
+  "name": "Costume SXY-0051",
+  "name_es": "Sacerdotisa zorro — rojo y blanco (SXY-0051)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "shrine",
+  "source_reference": "SXY-0051.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "top blanco cruzado con ribetes rojos, mangas separadas anchas de caída larga y minifalda roja plisada",
+  "head": "orejas de zorro blancas con detalles rojos y cintas colgantes",
+  "belt": "faja roja con cordones, lazos y pequeños dijes dorados",
+  "legs": "medias blancas al muslo con lazos rojos",
+  "shoes": "sandalias de plataforma negras con tiras rojas y blancas",
+  "material": "satén y tejido bordado",
+  "reference_details": "falda roja de capas con borde blanco; mangas largas abiertas con cordones rojos",
+  "color": "rojo y blanco"
+}

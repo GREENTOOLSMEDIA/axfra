@@ -1,0 +1,28 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0027",
+  "name": "Costume SXY-0027",
+  "name_es": "Vestido largo con corazón — negro (SXY-0027)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "heart_long",
+  "source_reference": "SXY-0027.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "vestido largo ajustado de cuello alto, abertura de corazón en pecho, abertura lateral alta y lazada en cadera",
+  "arms": "mangas largas separadas con puños acampanados",
+  "legs": "media oscura al muslo visible en la abertura",
+  "shoes": "zapatos de tacón alto",
+  "material": "punto elástico",
+  "reference_details": "abertura izquierda con cordones y zapatos negros de plataforma",
+  "color": "negro"
+}

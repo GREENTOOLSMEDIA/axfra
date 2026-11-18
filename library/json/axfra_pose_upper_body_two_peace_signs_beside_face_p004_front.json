@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_two_peace_signs_beside_face_p004_front",
+  "name": "Two Peace Signs Beside Face",
+  "name_es": "Dos signos de paz junto al rostro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P004_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso frontal, hombros casi simétricos.",
+  "arms": {
+    "both": "Elevar ambos antebrazos cerca del rostro, con los codos próximos al tronco. Extender índice y medio en V a cada lado de la cara."
+  },
+  "head": "Cabeza al centro, de frente.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

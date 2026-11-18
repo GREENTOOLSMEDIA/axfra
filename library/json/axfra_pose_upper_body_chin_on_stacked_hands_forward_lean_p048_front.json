@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_chin_on_stacked_hands_forward_lean_p048_front",
+  "name": "Chin on Stacked Hands, Forward Lean",
+  "name_es": "Mentón sobre manos superpuestas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P048_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso inclinado hacia delante, hombros adelantados y codos bajos.",
+  "arms": {
+    "both": "Apoyar los codos delante del cuerpo. Llevar los antebrazos hacia arriba y superponer las manos horizontalmente bajo el mentón."
+  },
+  "head": "Cabeza centrada e inclinada hacia las manos.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

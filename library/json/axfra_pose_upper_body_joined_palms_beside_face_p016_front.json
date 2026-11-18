@@ -1,0 +1,29 @@
+{
+  "id": "axfra_pose_upper_body_joined_palms_beside_face_p016_front",
+  "name": "Joined Palms Beside Face",
+  "name_es": "Palmas juntas al lado del rostro",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P016_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso en giro suave, hombros recogidos.",
+  "arms": {
+    "both": "Juntar ambas palmas verticales junto a un lado del rostro, con los dedos hacia arriba y ambos codos bajos."
+  },
+  "head": "Inclinar y girar la cabeza hacia las manos.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}

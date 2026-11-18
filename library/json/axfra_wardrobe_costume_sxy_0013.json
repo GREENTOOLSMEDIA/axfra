@@ -1,0 +1,31 @@
+{
+  "id": "AXFRA_wardrobe_costume_sxy_0013",
+  "name": "Costume SXY-0013",
+  "name_es": "Gatita de falda plisada — verde menta y blanco (SXY-0013)",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "costume",
+  "piece_family": "cat",
+  "source_reference": "SXY-0013.webp",
+  "swap_rule": "Se cita el id. Se cambian material, grosor, transparencia, estampado y color. El corte y los accesorios no se reescriben.",
+  "application": "Aplicar el vestuario al sujeto de la imagen base conservando identidad, proporciones, pose, orientación y encuadre. Describir las piezas completas no obliga a mostrar zonas fuera de cuadro.",
+  "garment": "top corto halter con abertura central y minifalda plisada con lazo en la cintura",
+  "head": "diadema de orejas de gato",
+  "neck": "collar con cascabel dorado",
+  "back": "cola larga de gato unida detrás de la cintura",
+  "arms": "mangas o guantes largos separados",
+  "legs": "medias claras al muslo con lazos",
+  "shoes": "zapatos de plataforma y tacón alto",
+  "material": "satén elástico y encaje",
+  "reference_details": "cola blanca y zapatos verde menta",
+  "color": "verde menta y blanco"
+}

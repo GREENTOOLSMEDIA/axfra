@@ -1,0 +1,30 @@
+{
+  "id": "axfra_pose_upper_body_peace_sign_near_eye_other_hand_on_hip_p011_front",
+  "name": "Peace Sign Near Eye, Other Hand on Hip",
+  "name_es": "Signo de paz junto al ojo y otra mano en la cadera",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0",
+    "source_file": "upper80v2_P011_front.jpg"
+  },
+  "archive": "AXFRA",
+  "category": "pose",
+  "slot": "pose",
+  "pose_type": "upper_body",
+  "swap_rule": "Aplicar el gesto visible de torso, cabeza, brazos y manos. Conservar la posición de la parte inferior que aporte la composición.",
+  "torso": "Torso erguido con leve contrapposto.",
+  "arms": {
+    "both": "Abrir un codo lateral y hacer una V con índice y medio junto al ojo. Apoyar la otra mano en la cadera.",
+    "reference_orientation": "El primer gesto descrito queda a la izquierda de la imagen. Conservar esta orientación al componer."
+  },
+  "head": "Cabeza ligeramente inclinada, vista casi frontal.",
+  "camera": {
+    "view": "front",
+    "framing": "upper_body",
+    "composition": "Encuadrar el torso y la cabeza e incluir completas las manos visibles del gesto, incluso si se elevan por encima de la cabeza."
+  }
+}
