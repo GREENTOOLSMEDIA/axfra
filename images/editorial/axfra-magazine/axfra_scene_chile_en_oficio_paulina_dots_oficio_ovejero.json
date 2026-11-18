@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_scene_chile_en_oficio_paulina_dots_oficio_ovejero",
+  "name": "Chile en oficio — Paulina Dots",
+  "name_es": "Paulina Dots · Oficio ovejero patagónico",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "scene",
+  "slot": "editorial",
+  "series": "AXFRA · Chile en oficio",
+  "series_order": 7,
+  "subject": {
+    "model": "Paulina Dots",
+    "identity_source": "Use the supplied AXFRA Identity Core or portrait reference for this model. Preserve facial geometry, apparent age, complexion, hair color and texture, and visible proportions. Adapt hair styling to the existing cut and to the working conditions."
+  },
+  "occupation": "Oficio ovejero patagónico",
+  "composition": {
+    "aspect_ratio": "2:3",
+    "camera": "Eye-level portrait perspective, approximately 75 mm full-frame equivalent. Both eyes and the nearest work detail are sharp. Use enough depth of field to keep the key occupational landmark recognizable.",
+    "framing": "Full-bleed close editorial portrait from chest up. Face slightly right of center, near the upper third. Place the working hand and key object beside the face toward the right, leaving a low-detail area at lower left for cover text."
+  },
+  "pose": "Paulina faces the lens holding a small tuft of raw wool near her collar. Crosswind moves loose strands of hair and the edge of the jacket.",
+  "wardrobe": "Weathered work jacket, wool layers and a well-worn boina.",
+  "makeup": "Natural matte skin, soft wind-flushed cheeks and subdued lips.",
+  "background": "Open Patagonian steppe with a recognizable flock dispersed near a distant fence and low hills.",
+  "lighting": "Cool overcast daylight with subtle side separation and moving grass.",
+  "color_direction": {
+    "palette": "weathered olive and raw wool",
+    "accent_hex": "#DBCEAE"
+  },
+  "cover_text": {
+    "masthead": {
+      "text": "AXFRA",
+      "placement": "Across the upper edge. The crown partially occludes the lower parts of the letters while the full title remains readable.",
+      "style": "Large warm-ivory high-contrast display serif."
+    },
+    "edition": {
+      "text": "CHILE EN OFICIO",
+      "placement": "Upper right, below the masthead, clear of the head.",
+      "style": "Small uppercase spaced lettering."
+    },
+    "lower_left": {
+      "placement": "Inside the left margin at 7% of canvas width, with 8% bottom clearance. Keep the text block clear of the hands and tool. Give the lettering strong contrast against the photograph.",
+      "model_name": {
+        "text": "PAULINA DOTS",
+        "style": "Uppercase warm-ivory display serif, one line, resize as needed."
+      },
+      "rule": {
+        "color": "#DBCEAE",
+        "placement": "Immediately below the name. Match the width of the rendered name exactly and align both ends with the name."
+      },
+      "cover_line": {
+        "text": "Acá el viento también trabaja.",
+        "style": "Small warm-ivory sans serif, sentence case, one or two lines, left-aligned directly below the rule."
+      }
+    },
+    "rendering": "Render only the specified masthead, edition, model name and cover line. Preserve exact accents, spelling and punctuation."
+  }
+}

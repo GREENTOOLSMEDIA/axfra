@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_scene_chile_en_oficio_mara_telar",
+  "name": "Chile en oficio — Mara",
+  "name_es": "Mara · Tejido en telar",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "scene",
+  "slot": "editorial",
+  "series": "AXFRA · Chile en oficio",
+  "series_order": 6,
+  "subject": {
+    "model": "Mara",
+    "identity_source": "Use the supplied AXFRA Identity Core or portrait reference for this model. Preserve facial geometry, apparent age, complexion, hair color and texture, and visible proportions. Adapt hair styling to the existing cut and to the working conditions."
+  },
+  "occupation": "Tejido en telar",
+  "composition": {
+    "aspect_ratio": "2:3",
+    "camera": "Eye-level portrait perspective, approximately 75 mm full-frame equivalent. Both eyes and the nearest work detail are sharp. Use enough depth of field to keep the key occupational landmark recognizable.",
+    "framing": "Full-bleed close editorial portrait from chest up. Face slightly right of center, near the upper third. Place the working hand and key object beside the face toward the right, leaving a low-detail area at lower left for cover text."
+  },
+  "pose": "Mara raises a single strand of wool to eye level between two fingertips while guiding it toward the loom, calm and focused.",
+  "wardrobe": "Plain woven work shirt with a dark linen apron.",
+  "makeup": "Soft neutral makeup with understated rose-brown cheek tones.",
+  "background": "Working loom with an unfinished woven piece, warp threads and wool skeins drawn from the cloth palette.",
+  "lighting": "Soft angled window light, with fine detail on the wool strand and gentle falloff across the loom.",
+  "color_direction": {
+    "palette": "warm ivory and indigo",
+    "accent_hex": "#DCCAB0"
+  },
+  "cover_text": {
+    "masthead": {
+      "text": "AXFRA",
+      "placement": "Across the upper edge. The crown partially occludes the lower parts of the letters while the full title remains readable.",
+      "style": "Large warm-ivory high-contrast display serif."
+    },
+    "edition": {
+      "text": "CHILE EN OFICIO",
+      "placement": "Upper right, below the masthead, clear of the head.",
+      "style": "Small uppercase spaced lettering."
+    },
+    "lower_left": {
+      "placement": "Inside the left margin at 7% of canvas width, with 8% bottom clearance. Keep the text block clear of the hands and tool. Give the lettering strong contrast against the photograph.",
+      "model_name": {
+        "text": "MARA",
+        "style": "Uppercase warm-ivory display serif, one line, resize as needed."
+      },
+      "rule": {
+        "color": "#DCCAB0",
+        "placement": "Immediately below the name. Match the width of the rendered name exactly and align both ends with the name."
+      },
+      "cover_line": {
+        "text": "Todo pende de un hilo.",
+        "style": "Small warm-ivory sans serif, sentence case, one or two lines, left-aligned directly below the rule."
+      }
+    },
+    "rendering": "Render only the specified masthead, edition, model name and cover line. Preserve exact accents, spelling and punctuation."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "AXFRA_style_editorial_beauty_cover_indira",
+  "name": "AXFRA Beauty Issue — Indira",
+  "name_es": "AXFRA Beauty Issue — Indira",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.1",
+    "palette_status": "editorial_proposal"
+  },
+  "archive": "AXFRA",
+  "category": "style",
+  "slot": "editorial",
+  "inputs": {
+    "identity": "Use the supplied AXFRA Identity Core or identity reference for the named model. Preserve facial geometry, apparent age, skin tone, eye color, hair color and texture, and body proportions. Adapt the coiffure to the existing hair length and texture."
+  },
+  "variables": {
+    "model_name": "INDIRA",
+    "base_color": "silver platinum #B9C0CB",
+    "rule_color": "#E0E5ED",
+    "garment_fabric": "silver-gray satin duchesse",
+    "background_material": "blackened steel",
+    "background_color": "blue graphite #222831",
+    "background_finish": "brushed matte finish"
+  },
+  "composition": {
+    "aspect_ratio": "2:3",
+    "framing": "Full-bleed vertical chest-up beauty portrait, face slightly right of center, eyes at upper third. Keep both shoulders and raised hand in frame. Reserve a dark, low-detail area in the lower left for all cover copy.",
+    "camera": "Eye-level 85 mm portrait look. Both eyes sharp and background softly out of focus."
+  },
+  "pose": {
+    "body": "Shoulders angled slightly away, with face turned back toward lens.",
+    "hand": "One hand raised by chin, relaxed index finger lightly touching underside of chin, remaining fingers naturally curved. Keep raised hand on the right side of the image.",
+    "expression": "Direct gaze, relaxed brow and closed lips."
+  },
+  "wardrobe": {
+    "cut": "Off-the-shoulder evening gown with long sleeves and subtle tonal cuff detailing.",
+    "fabric": "silver-gray satin duchesse",
+    "color": "silver platinum #B9C0CB",
+    "accessories": "One understated ring and short glossy charcoal nails."
+  },
+  "hair": "Polished editorial styling. Where the existing hair length permits, use a deep side part and softly waved low updo. For short hair, keep the original cut and define its natural texture.",
+  "makeup": "Charcoal smoky eyes, defined lash line, softly sculpted cheeks and rich red satin lipstick adapted to the existing skin tone. Natural skin texture remains visible.",
+  "lighting": {
+    "key": "Soft directional key from upper camera left, shaping cheeks and jaw.",
+    "fill": "Low fill on camera right, preserving shadow detail.",
+    "rim": "Soft neutral-warm rim on hair and shoulder. Keep backdrop highlights and reflections away from cover copy."
+  },
+  "background": {
+    "material": "blackened steel",
+    "color": "blue graphite #222831",
+    "finish": "brushed matte finish",
+    "direction": "Subdued behind the portrait, with even, dark tonal values under the lower-left typography."
+  },
+  "cover_text": {
+    "masthead": {
+      "text": "AXFRA",
+      "position": "Across the top, behind the crown of the head, with enough of each letter visible to read the title.",
+      "style": "Oversized high-contrast serif, muted champagne gold."
+    },
+    "issue_label": {
+      "text": "BEAUTY ISSUE",
+      "position": "Upper right below the masthead, clear of the silhouette.",
+      "style": "Small tracked uppercase serif in champagne gold."
+    },
+    "model_lockup": {
+      "position": "Lower left, at a left inset of 7% of canvas width and a bottom inset of 8% of canvas height. Keep the block within the left 55% of canvas width. Align name, rule and slogan to the same left edge.",
+      "model_name": {
+        "text": "INDIRA",
+        "style": "Single-line uppercase champagne-gold display serif. Scale to fit and retain exact spelling and accents."
+      },
+      "rule": {
+        "position": "Directly beneath the name, from the first visible glyph edge to the last visible glyph edge. Match the rendered name width exactly.",
+        "color": "#E0E5ED",
+        "style": "Thin, continuous horizontal line."
+      },
+      "slogan": {
+        "text": "La imagen comienza antes del primer píxel.",
+        "position": "Directly below the line, left-aligned. Use up to two lines.",
+        "style": "Ivory sans serif, sentence case, substantially smaller than the name."
+      }
+    },
+    "rendering": "Use the listed copy verbatim. The four listed text elements constitute the complete cover copy."
+  }
+}

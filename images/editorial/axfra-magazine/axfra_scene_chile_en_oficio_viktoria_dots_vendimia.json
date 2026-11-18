@@ -1,0 +1,65 @@
+{
+  "id": "AXFRA_scene_chile_en_oficio_viktoria_dots_vendimia",
+  "name": "Chile en oficio — Viktoria Dots",
+  "name_es": "Viktoria Dots · Vendimia",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "scene",
+  "slot": "editorial",
+  "series": "AXFRA · Chile en oficio",
+  "series_order": 5,
+  "subject": {
+    "model": "Viktoria Dots",
+    "identity_source": "Use the supplied AXFRA Identity Core or portrait reference for this model. Preserve facial geometry, apparent age, complexion, hair color and texture, and visible proportions. Adapt hair styling to the existing cut and to the working conditions."
+  },
+  "occupation": "Vendimia",
+  "composition": {
+    "aspect_ratio": "2:3",
+    "camera": "Eye-level portrait perspective, approximately 75 mm full-frame equivalent. Both eyes and the nearest work detail are sharp. Use enough depth of field to keep the key occupational landmark recognizable.",
+    "framing": "Full-bleed close editorial portrait from chest up. Face slightly right of center, near the upper third. Place the working hand and key object beside the face toward the right, leaving a low-detail area at lower left for cover text."
+  },
+  "pose": "Viktoria looks at camera just after cutting a cluster of dark grapes. She holds it beside her shoulder with the open pruning shears visible lower on the opposite side.",
+  "wardrobe": "Plum-toned work shirt with durable woven texture, sleeves rolled, practical harvest apron.",
+  "makeup": "Soft plum-brown eyes, neutral lips and visible skin texture.",
+  "background": "Vineyard rows receding toward hazy hills, backlit leaves and a harvest crate in soft focus.",
+  "lighting": "Low golden side light, mild fill and subtle highlights on the grape skins.",
+  "color_direction": {
+    "palette": "plum and vine green",
+    "accent_hex": "#D1A0B8"
+  },
+  "cover_text": {
+    "masthead": {
+      "text": "AXFRA",
+      "placement": "Across the upper edge. The crown partially occludes the lower parts of the letters while the full title remains readable.",
+      "style": "Large warm-ivory high-contrast display serif."
+    },
+    "edition": {
+      "text": "CHILE EN OFICIO",
+      "placement": "Upper right, below the masthead, clear of the head.",
+      "style": "Small uppercase spaced lettering."
+    },
+    "lower_left": {
+      "placement": "Inside the left margin at 7% of canvas width, with 8% bottom clearance. Keep the text block clear of the hands and tool. Give the lettering strong contrast against the photograph.",
+      "model_name": {
+        "text": "VIKTORIA DOTS",
+        "style": "Uppercase warm-ivory display serif, one line, resize as needed."
+      },
+      "rule": {
+        "color": "#D1A0B8",
+        "placement": "Immediately below the name. Match the width of the rendered name exactly and align both ends with the name."
+      },
+      "cover_line": {
+        "text": "El vino empieza con un corte.",
+        "style": "Small warm-ivory sans serif, sentence case, one or two lines, left-aligned directly below the rule."
+      }
+    },
+    "rendering": "Render only the specified masthead, edition, model name and cover line. Preserve exact accents, spelling and punctuation."
+  }
+}
