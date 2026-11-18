@@ -1,0 +1,83 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_183",
+  "name": "Rose wrap top, plush shorts and booties",
+  "name_es": "Top cruzado rosa, shorts afelpados y botines",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "camisole",
+    "shorts",
+    "headband",
+    "booties"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle",
+    "velour"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_183",
+  "pattern": "solid",
+  "color": "pastel pink",
+  "camisole": {
+    "type": "camisole",
+    "details": "Top cruzado rosa de escote en V, mangas largas y puños afelpados.",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "shorts": {
+    "type": "shorts",
+    "details": "Short rosa afelpado, de bajo corto.",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "headband": {
+    "type": "headband",
+    "details": "Diadema rosa con lazo",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  },
+  "booties": {
+    "type": "booties",
+    "details": "Botas rosa afelpadas hasta media pantorrilla",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  }
+}

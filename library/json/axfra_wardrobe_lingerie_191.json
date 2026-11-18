@@ -1,0 +1,88 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_191",
+  "name": "Black velour zip hoodie and shorts loungewear",
+  "name_es": "Conjunto de terciopelo negro con capucha y shorts",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "hoodie",
+    "shorts",
+    "stockings",
+    "slippers"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle",
+    "knit",
+    "velour"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_191",
+  "pattern": "solid",
+  "color": "black",
+  "hoodie": {
+    "type": "hoodie",
+    "details": "Chaqueta negra corta con capucha, cierre frontal contrastante y mangas largas",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "shorts": {
+    "type": "shorts",
+    "details": "Shorts negros muy cortos con vivo blanco y cintura ajustada",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "stockings": {
+    "type": "over-the-knee socks",
+    "color": "black",
+    "pattern": "solid",
+    "top": "ribbed or plain cuff",
+    "attachment": null,
+    "details": "Medias negras opacas altas",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no"
+  },
+  "slippers": {
+    "type": "slippers",
+    "details": "Pantuflas negras afelpadas",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  }
+}

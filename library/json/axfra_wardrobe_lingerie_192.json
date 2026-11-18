@@ -1,0 +1,88 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_192",
+  "name": "Pink satin zip hoodie shorts and thigh highs",
+  "name_es": "Chaqueta rosa satinada con shorts y medias altas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "hoodie",
+    "shorts",
+    "stockings",
+    "slippers"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle",
+    "knit",
+    "velour"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_192",
+  "pattern": "solid",
+  "color": "pastel pink",
+  "hoodie": {
+    "type": "hoodie",
+    "details": "Chaqueta corta rosa brillante con capucha y cierre frontal",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "shorts": {
+    "type": "shorts",
+    "details": "Shorts rosas con detalles claros en el borde",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "stockings": {
+    "type": "over-the-knee socks",
+    "color": "pink",
+    "pattern": "solid",
+    "top": "ribbed or plain cuff",
+    "attachment": null,
+    "details": "Medias rosas altas opacas",
+    "material": "knit",
+    "thickness": "normal",
+    "transparency": "no"
+  },
+  "slippers": {
+    "type": "slippers",
+    "details": "Pantuflas rosas afelpadas",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  }
+}

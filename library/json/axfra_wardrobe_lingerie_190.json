@@ -1,0 +1,86 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_190",
+  "name": "Midnight blue satin ruffle babydoll and stockings",
+  "name_es": "Babydoll azul noche con volantes y medias",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "babydoll",
+    "shorts",
+    "stockings",
+    "choker"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_190",
+  "pattern": "solid",
+  "color": "midnight blue",
+  "babydoll": {
+    "type": "babydoll",
+    "details": "Camisola azul marino ajustada en el torso con copas y tirantes finos anudados",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  },
+  "shorts": {
+    "type": "shorts",
+    "details": "Bajo corto de encaje fruncido con varios volantes",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "navy",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": null,
+    "details": "Medias negras transparentes altas",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "choker": {
+    "type": "ribbon choker",
+    "details": "Separate narrow collar or bow at the neck as shown in the reference.",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  }
+}

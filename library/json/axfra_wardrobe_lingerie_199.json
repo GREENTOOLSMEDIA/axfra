@@ -1,0 +1,79 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_199",
+  "name": "Blush ruffled bodysuit with fluffy sleeves",
+  "name_es": "Body rosa de volantes con mangas afelpadas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 3,
+  "pieces": [
+    "bustier",
+    "ruffled_skirt",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle",
+    "velour"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_199",
+  "pattern": "solid",
+  "color": "pastel pink",
+  "bustier": {
+    "type": "bustier",
+    "details": "Corpiño rosa satinado con copas, lazo frontal y mangas abullonadas afelpadas. El conjunto remata la cadera con un borde de volantes.",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "ruffled_skirt": {
+    "type": "ruffled skirt",
+    "details": "Faldón corto de volantes superpuestos rosa",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "peach",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": null,
+    "details": "Medias rosa pálido al muslo con encaje",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}

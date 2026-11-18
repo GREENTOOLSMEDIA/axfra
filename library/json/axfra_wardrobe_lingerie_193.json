@@ -1,0 +1,87 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_193",
+  "name": "Ivory plush cropped jacket and lace ruffle set",
+  "name_es": "Chaqueta marfil afelpada con conjunto de volantes",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "jacket",
+    "bodice",
+    "ruffled_skirt",
+    "stockings"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle",
+    "velour"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_193",
+  "pattern": "solid",
+  "color": "ivory white",
+  "jacket": {
+    "type": "jacket",
+    "details": "Chaqueta corta clara abierta con mangas largas y ribetes muy afelpados",
+    "material": "velour",
+    "thickness": "thick",
+    "transparency": "no"
+  },
+  "bodice": {
+    "type": "bodice",
+    "details": "Corpiño blanco entallado con copas y encaje",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "ruffled_skirt": {
+    "type": "ruffled skirt",
+    "details": "Falda mini de múltiples volantes de encaje",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "ivory",
+    "pattern": "floral",
+    "top": "visible top band",
+    "attachment": null,
+    "details": "Medias marfil altas con trama ornamental",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  }
+}

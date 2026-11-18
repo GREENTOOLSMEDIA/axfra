@@ -1,0 +1,86 @@
+{
+  "id": "AXFRA_wardrobe_lingerie_187",
+  "name": "Emerald satin bodice and floral lace robe",
+  "name_es": "Corpiño esmeralda con bata de encaje floral",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "license": "all rights reserved",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "wardrobe",
+  "slot": "lingerie",
+  "piece_family": "set",
+  "piece_count": 4,
+  "pieces": [
+    "robe",
+    "bustier",
+    "stockings",
+    "shorts"
+  ],
+  "swap_rule": "Reference the set ID. Material, thickness, transparency, and color may be changed independently for each piece. Preserve the cut, construction, and pattern.",
+  "material_catalog": [
+    "mesh",
+    "lace",
+    "microfiber",
+    "satin",
+    "fishnet",
+    "tulle"
+  ],
+  "thickness_catalog": [
+    "very_thin",
+    "thin",
+    "normal",
+    "thick"
+  ],
+  "transparency_catalog": [
+    "yes",
+    "no"
+  ],
+  "pattern_catalog": [
+    "solid",
+    "polka dots",
+    "stripes",
+    "floral",
+    "fishnet"
+  ],
+  "source_id": "AXFRA_lng_187",
+  "pattern": "floral",
+  "color": "emerald green",
+  "robe": {
+    "type": "robe",
+    "details": "Bata larga verde abierta de encaje con mangas anchas y bajo fluido",
+    "material": "lace",
+    "thickness": "thin",
+    "transparency": null
+  },
+  "bustier": {
+    "type": "bustier",
+    "details": "Corpiño verde satinado de copas estructuradas",
+    "material": "satin",
+    "thickness": "thin",
+    "transparency": "no"
+  },
+  "stockings": {
+    "type": "thigh-high stockings",
+    "color": "green",
+    "pattern": "solid",
+    "top": "visible top band",
+    "attachment": null,
+    "details": "Medias oscuras al muslo",
+    "material": "mesh",
+    "thickness": "very_thin",
+    "transparency": "yes"
+  },
+  "shorts": {
+    "type": "shorts",
+    "details": "Short esmeralda de volantes bajo el corpiño.",
+    "material": null,
+    "thickness": null,
+    "transparency": null
+  }
+}
