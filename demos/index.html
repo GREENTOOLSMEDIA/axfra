@@ -17,12 +17,15 @@
 <meta content="https://axfra.com/demos/" property="og:url"/>
 <meta content="https://axfra.com/images/homegallery/axfra_indira_mira_atardecer.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<link href="https://axfra.com/shared-layout.css" rel="stylesheet"/>
+<link href="/shared-layout.css" rel="stylesheet"/>
 <style>
 :root{--bg:#000;--surface:#111519;--line:#303a3c;--ink:#e9eceb;--muted:#a5b0af;--accent:#b8d4c8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,Arial,sans-serif}
 .wrap{width:min(1200px,calc(100% - 44px));margin:auto}
+#globalHeader{position:sticky;top:0;z-index:30}
+#globalHeader .header-inner{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+#globalHeader .brand{color:inherit}
 .hero{padding:clamp(65px,9vw,120px) 0 68px;border-bottom:1px solid var(--line)}
 .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:750}
 h1{font-size:clamp(48px,7vw,95px);letter-spacing:-.06em;line-height:1.02;margin:13px 0 27px}
@@ -45,7 +48,6 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
 .end a{color:var(--accent)}
 @media(max-width:780px){.demo-card{grid-template-columns:1fr}.demo-thumb img{height:auto;aspect-ratio:4/3;min-height:0;max-height:540px;object-fit:contain}.section{padding:45px 0}}
 @media(max-width:480px){.wrap{width:calc(100% - 28px)}.hero{padding:64px 0 45px}}
-.demo-thumb--katefa img{height:auto;aspect-ratio:4/3;min-height:0;max-height:none;object-fit:cover;object-position:50% 22%}
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -159,8 +161,8 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
         {
           "@type": "ListItem",
           "position": 15,
-          "name": "KATEFA — Una modelo virtual para una tienda de moda",
-          "url": "https://axfra.com/demos/axfra-katefa-demo.html"
+          "name": "AXFRA MAGAZINE",
+          "url": "https://axfra.com/demos/axfra-magazine-demo.html"
         }
       ]
     }
@@ -169,7 +171,6 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
 <meta content="https://axfra.com/images/homegallery/axfra_indira_mira_atardecer.jpg" name="twitter:image"/></head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
-<!-- Carga el mismo header.html oficial del sitio desde la raíz. -->
 <div id="globalHeader"></div>
 <main id="contenido">
 <section class="hero">
@@ -185,7 +186,7 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
 </section>
 <section class="section">
 <div class="wrap">
-<span class="eyebrow">Catorce demostraciones / creación visual aplicada</span>
+<span class="eyebrow">Quince demostraciones / creación visual aplicada</span>
 <h2>Explora las historias.</h2>
 <div class="demo-list">
 <!-- 01 / DOTSY Y DRÁCULA -->
@@ -383,7 +384,7 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
 </article>
 
 
-        &lt;!-- 14 / NUEVAS SENSACIONES — AXFRA BAND --&gt;
+<!-- 14 / NUEVAS SENSACIONES — AXFRA BAND -->
 <article class="demo-card">
 <a aria-label="Explorar Nuevas Sensaciones — AXFRA Band" class="demo-thumb" href="/demos/axfra-nuevas-sensaciones-demo.html">
 <img alt="AXFRA Band sobre un escenario de espejos: bajista vestida de blanco, vocalista de rojo, guitarrista de verde y baterista al fondo." decoding="async" loading="lazy" src="https://axfra.com/images/editorial/axfra_paudotsband_living_in_full_color.jpg"/>
@@ -396,43 +397,23 @@ h2{font-size:clamp(28px,3.3vw,43px);line-height:1.13;letter-spacing:-.04em}
 <a class="view" href="/demos/axfra-nuevas-sensaciones-demo.html">Explorar demostración ↗</a>
 </div>
 </article>
-<!-- 15 / KATEFA -->
+<!-- 15 / AXFRA MAGAZINE -->
 <article class="demo-card">
-<a aria-label="Explorar KATEFA" class="demo-thumb demo-thumb--katefa" href="/demos/axfra-katefa-demo.html">
-<img alt="KATEFA frente a una estrella iluminada, en el retrato editorial Rockstar." width="1152" height="1728" decoding="async" loading="lazy" src="/images/editorial/axfra_katefa_rockstar.jpg"/>
+<a aria-label="Explorar AXFRA Magazine" class="demo-thumb" href="/demos/axfra-magazine-demo.html">
+<img alt="Amina con casco y ropa de faena en Chuquicamata, portada de Chile en oficio." decoding="async" loading="lazy" src="https://axfra.com/images/editorial/axfra-magazine/axfra_scene_chile_en_oficio_amina_chuquicamata.jpg"/>
 </a>
 <div class="demo-copy">
-<span class="eyebrow">AXFRA / Demostración aplicada</span>
-<h3><a href="/demos/axfra-katefa-demo.html">KATEFA</a></h3>
-<p class="subtitle">Una modelo virtual para una tienda de moda</p>
-<p>KATEFA fue creada para modelar ropa en una tienda online durante 2027. Sus primeras piezas muestran cómo presentar una identidad y un mismo conjunto en retrato, fotografía editorial y video.</p>
-<a class="view" href="/demos/axfra-katefa-demo.html">Explorar demostración ↗</a>
+<span class="eyebrow">AXFRA / Demostración editorial</span>
+<h3><a href="/demos/axfra-magazine-demo.html">AXFRA MAGAZINE</a></h3>
+<p class="subtitle">Dos ediciones, dieciséis portadas</p>
+<p>Ocho identidades pasan del retrato de estudio en Beauty Issue a la minería, la pesca y otros oficios de Chile. La demo muestra cómo reutilizar una composición editorial con módulos JSON y cambiar el sentido del retrato a través del gesto, el vestuario y el entorno.</p>
+<a class="view" href="/demos/axfra-magazine-demo.html">Explorar demostración ↗</a>
 </div>
 </article>
 </div></div></section>
 <section class="end"><div class="wrap"><p><strong>AXFRA — Axion Frame Tools.</strong> Las demostraciones no son generadores automáticos: documentan procesos, ejemplos y decisiones creativas para trabajar con herramientas de IA.</p><p><a href="https://axfra.com/">Volver a AXFRA</a> · <a href="https://axfra.com/library/">Explorar librería JSON</a> · <a href="https://axfra.com/glossary.html">Glosario</a></p></div></section>
 </main>
 <div id="globalFooter"></div>
-<script>
-// Carga explícita de los componentes oficiales desde la raíz, también en /demos/.
-// No se carga shared-layout.js para evitar que reemplace el header de nuevo.
-(async function () {
-  async function insertarComponente(ruta, id) {
-    const respuesta = await fetch(ruta, {cache: 'no-cache'});
-    if (!respuesta.ok) throw new Error(`No se pudo cargar ${ruta}: ${respuesta.status}`);
-    document.getElementById(id).innerHTML = await respuesta.text();
-  }
-  try {
-    await insertarComponente('/header.html', 'globalHeader');
-    const actual = document.querySelector('#globalHeader .nav a[href="/demos/"]');
-    if (actual) actual.setAttribute('aria-current', 'page');
-  } catch (error) { console.error('AXFRA: error de carga del header oficial', error); }
-  try {
-    await insertarComponente('/footer.html', 'globalFooter');
-    const year = document.getElementById('year');
-    if (year) year.textContent = new Date().getFullYear();
-  } catch (error) { console.error('AXFRA: error de carga del footer oficial', error); }
-})();
-</script>
+<script defer src="/shared-layout.js"></script>
 </body>
 </html>
