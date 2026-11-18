@@ -36,9 +36,7 @@
     }
     .katefa *, .katefa *::before, .katefa *::after { box-sizing: border-box; }
     .katefa-wrap { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
-    .katefa-skip { position: absolute; left: 1rem; top: 1rem; z-index: 1000; padding: .5rem 1rem; background: #fff; color: #111; transform: translateY(-200%); }
-    .katefa-skip:focus { transform: translateY(0); }
-    .katefa-skip:focus-visible, .katefa a:focus-visible { outline: 2px solid var(--katefa-accent); outline-offset: 5px; }
+    .katefa a:focus-visible { outline: 2px solid var(--katefa-accent); outline-offset: 5px; }
     .katefa figure { margin: 0; min-width: 0; }
     .katefa img, .katefa video { display: block; width: 100%; height: auto; }
     .katefa-hero {
@@ -449,10 +447,28 @@
     }
   ]
 }</script>
-<style>html, body {margin:0; padding:0; background:#000; min-height:100%;} body {overflow-x:hidden;}</style>
+<style>
+/* Marco común de AXFRA. La demo conserva su tipografía y su paleta en el contenido principal. */
+body {
+  margin: 0;
+  background: #000;
+  color: #e9eceb;
+  font: 16px/1.65 Inter, system-ui, -apple-system, Arial, sans-serif;
+}
+#globalHeader {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+#globalHeader .header-inner {
+  width: min(1200px, calc(100% - 44px));
+  margin-inline: auto;
+}
+#globalHeader .brand { color: inherit; }
+</style>
 </head>
 <body>
-<a class="katefa-skip" href="#contenido">Saltar al contenido</a>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
 <main class="katefa" id="contenido">
 <section aria-labelledby="katefa-title" class="katefa-hero">

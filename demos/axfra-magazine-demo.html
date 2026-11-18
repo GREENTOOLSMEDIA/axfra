@@ -6,18 +6,35 @@
 <meta property="og:locale" content="es_CL"><meta property="og:title" content="AXFRA MAGAZINE"><meta property="og:description" content="Dieciséis portadas, ocho identidades y dos ediciones. Beauty Issue y Chile en oficio muestran cómo dirigir y reutilizar una composición editorial con módulos JSON e IA.">
 <meta property="og:url" content="https://axfra.com/demos/axfra-magazine-demo.html"><meta property="og:image" content="https://axfra.com/images/editorial/axfra-magazine/axfra_scene_chile_en_oficio_amina_chuquicamata.jpg"><meta property="og:image:alt" content="Amina en la portada de Chile en oficio">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AXFRA MAGAZINE"><meta name="twitter:description" content="Dieciséis portadas, ocho identidades y dos ediciones. Beauty Issue y Chile en oficio muestran cómo dirigir y reutilizar una composición editorial con módulos JSON e IA."><meta name="twitter:image" content="https://axfra.com/images/editorial/axfra-magazine/axfra_scene_chile_en_oficio_amina_chuquicamata.jpg">
-<link rel="stylesheet" href="../shared-layout.css"><link rel="stylesheet" href="../demo-conclusion.css">
+<link rel="stylesheet" href="/shared-layout.css"><link rel="stylesheet" href="/demo-conclusion.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AXFRA MAGAZINE", "description": "Dieciséis portadas, ocho identidades y dos ediciones. Beauty Issue y Chile en oficio muestran cómo dirigir y reutilizar una composición editorial con módulos JSON e IA.", "url": "https://axfra.com/demos/axfra-magazine-demo.html", "mainEntityOfPage": "https://axfra.com/demos/axfra-magazine-demo.html", "inLanguage": "es-CL", "image": ["https://axfra.com/images/editorial/axfra-magazine/axfra_scene_chile_en_oficio_amina_chuquicamata.jpg", "https://axfra.com/images/editorial/axfra-magazine/axfra_style_editorial_beauty_cover_amina.jpg"], "author": {"@type": "Person", "name": "ALARSI", "url": "https://alarsi.com/"}, "publisher": {"@type": "Organization", "name": "AXFRA", "url": "https://axfra.com/"}}</script><style>
+/* Marco común de AXFRA. La demo conserva su tipografía y su paleta en el contenido principal. */
+body {
+  margin: 0;
+  background: #000;
+  color: #e9eceb;
+  font: 16px/1.65 Inter, system-ui, -apple-system, Arial, sans-serif;
+}
+#globalHeader {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+#globalHeader .header-inner {
+  width: min(1200px, calc(100% - 44px));
+  margin-inline: auto;
+}
+#globalHeader .brand { color: inherit; }
 .mag{--paper:#f3eee5;--ink:#211d19;--quiet:#5b5045;--line:#d2c5b6;--accent:#79472f;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
-body{margin:0}.mag *{box-sizing:border-box}.mag a{color:inherit}.mag a:focus-visible{outline:2px solid currentColor;outline-offset:5px}.mag h1,.mag h2,.mag h3{font-family:Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.045em;margin:0}.mag p{margin:0}.mag img{display:block;width:100%;height:auto}.mag .wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}.mag [id]{scroll-margin-top:96px}
+.mag *{box-sizing:border-box}.mag a{color:inherit}.mag a:focus-visible{outline:2px solid currentColor;outline-offset:5px}.mag h1,.mag h2,.mag h3{font-family:Georgia,serif;font-weight:400;line-height:1;letter-spacing:-.045em;margin:0}.mag p{margin:0}.mag img{display:block;width:100%;height:auto}.mag .wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}.mag [id]{scroll-margin-top:96px}
 .mag .hero{background:#241e1a;color:#f7ede1;padding:clamp(42px,8vw,100px) 0}.mag .hero-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(24px,5vw,70px);align-items:center}.mag .tag{text-transform:uppercase;letter-spacing:.13em;font-size:.73rem;font-weight:700;color:var(--accent)}.mag .hero .tag{color:#edbc99}.mag h1{font-size:clamp(2.7rem,7.3vw,7rem);margin:.22em 0}.mag .hero p:not(.tag){max-width:44ch;color:#ecdfd1}.mag .hero .duo{gap:10px}.mag .hero a{display:inline-block;margin-top:22px;text-underline-offset:5px}.mag .hero .duo a{display:block;margin:0}
 .mag .nav{display:flex;flex-wrap:wrap;gap:12px 26px;padding:18px 0;border-bottom:1px solid var(--line)}.mag .nav a,.mag .downloads a{font-size:.86rem;text-underline-offset:4px}.mag .section{padding:clamp(45px,7vw,90px) 0}.mag h2{font-size:clamp(2.4rem,5.5vw,5rem);margin:.18em 0 .3em}.mag h3{font-size:clamp(1.7rem,3.5vw,3rem);margin:.15em 0}.mag .lead{max-width:74ch;color:var(--quiet)}.mag .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}.mag .cards article{border-top:1px solid var(--line);padding-top:14px}.mag .cards p,.mag .pair-intro>p{color:var(--quiet)}
-.mag .pair-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 32px;margin-top:32px}.mag .pair{border-top:1px solid var(--line);padding-top:16px}.mag .pair-intro{min-height:140px}.mag .pair-intro>p{margin:8px 0 14px}.mag .duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.mag figure{margin:0}.mag figcaption{padding:8px 0}.mag .cover-line{display:block;font-family:Georgia,serif}.mag .downloads{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:7px}.mag .callout{margin-top:24px;border-left:2px solid var(--accent);padding-left:16px}.mag .skip{position:absolute;left:12px;top:12px;transform:translateY(-180%);background:#fff;color:#111;padding:8px;z-index:500}.mag .skip:focus{transform:none}
+.mag .pair-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 32px;margin-top:32px}.mag .pair{border-top:1px solid var(--line);padding-top:16px}.mag .pair-intro{min-height:140px}.mag .pair-intro>p{margin:8px 0 14px}.mag .duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.mag figure{margin:0}.mag figcaption{padding:8px 0}.mag .cover-line{display:block;font-family:Georgia,serif}.mag .downloads{display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:7px}.mag .callout{margin-top:24px;border-left:2px solid var(--accent);padding-left:16px}
 @media(max-width:830px){.mag .pair-list{grid-template-columns:1fr}.mag .pair-intro{min-height:0}}@media(max-width:640px){.mag .wrap{width:calc(100% - 28px)}.mag .hero-grid,.mag .cards{grid-template-columns:1fr}.mag .hero h1{max-width:none}.mag .pair-list{gap:30px}}
 </style></head><body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 <div id="globalHeader"></div>
 <main id="contenido" class="mag">
-<a class="skip" href="#revista">Saltar al contenido</a>
 <section class="hero" aria-labelledby="magazine-title"><div class="wrap hero-grid">
 <div><p class="tag">AXFRA / Demostración editorial</p><h1 id="magazine-title">AXFRA<br>MAGAZINE</h1>
 <p>Ocho identidades, dieciséis portadas. Del retrato de estudio a los oficios de Chile, una misma estructura editorial cambia de materiales, escenarios y voz.</p>
@@ -71,4 +88,4 @@ body{margin:0}.mag *{box-sizing:border-box}.mag a{color:inherit}.mag a:focus-vis
 </section></div>
 <section class="axfra-demo-conclusion"><div class="axfra-demo-conclusion-inner"><div class="axfra-demo-kicker">AXFRA / Conclusión</div><h2>El gesto cambia lo que cuenta el retrato</h2><p>Una mano enmarca el rostro en Beauty Issue. En Chile en oficio, esa misma posición permite mostrar la sal, tensar una red o levantar un cuenco. La comparación muestra cómo una decisión de pose puede cambiar el sentido de una imagen sin perder la continuidad de la serie.</p><div id="globalDemoConclusion" aria-label="Enlaces de continuación AXFRA"></div></div></section>
 </main><div id="globalFooter"></div>
-<script defer src="../shared-layout.js"></script><script defer src="../demo-conclusion.js"></script></body></html>
+<script defer src="/shared-layout.js"></script><script defer src="/demo-conclusion.js"></script></body></html>
