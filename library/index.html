@@ -173,6 +173,39 @@ html{background:#000}body{margin:0;background:#000;color:#e9eceb}
 <div id="globalFooter"></div>
 <script>
 'use strict';
+// Orden de armado AXFRA. Mantener este bloque igual en las tres interfaces.
+const AXFRA_ORDER = [
+  'identity identities character characters personaje personajes subject identity_core face facial_features facial_geometry facial_structure skin physical_appearance appearance',
+  'expression expressions expresion expresiones',
+  'makeup maquillaje',
+  'hair hairstyle hairstyles peinado peinados',
+  'wardrobe apparel clothing outfit costume vestuario looks accessory accessories accesorios material materials',
+  'pose poses pose_and_framing postura posturas composition',
+  'action actions motion movimiento',
+  'environment environments background backdrop setting location ambiente ambientes scene scenes escena escenas escenarios',
+  'prop props objects object objetos vehicle vehicles',
+  'camera cameras camera_and_style framing encuadre encuadres camara camaras',
+  'lighting light lights luz iluminacion',
+  'style styles styling estilos graphic_style',
+  'finish finish_level finishes acabados acabado',
+  'constraints negative negatives engine_params meta'
+];
+const axfraRanks = new Map(AXFRA_ORDER.flatMap((aliases, rank) =>
+  aliases.split(' ').map(alias => [alias,rank])));
+function axfraRank(...values) {
+  for (const value of values) {
+    if (typeof value !== 'string') continue;
+    const key = value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
+      .trim().replace(/[ -]+/g,'_').replace(/_block$/,'');
+    if (axfraRanks.has(key)) return axfraRanks.get(key);
+    if (key.startsWith('axfra_')) {
+      const alias = key.slice(6).split('_')[0];
+      if (axfraRanks.has(alias)) return axfraRanks.get(alias);
+    }
+  }
+  return AXFRA_ORDER.length;
+}
+
 const INDEX_URL='./axfra_json_library_index.json';
 const thumbVersion=Date.now(); // Verifica referencias nuevas en cada apertura
 const $=id=>document.getElementById(id);
@@ -365,7 +398,9 @@ window.addEventListener('hashchange',applyLibraryHash);
 
 function renderCategories(){
   const nav=$('categories');nav.replaceChildren();
-  const groups=index.groups||[];
+  const groupRank = group => Math.min(axfraRank(group.id,group.label),
+    ...(group.children||[]).map(child => axfraRank(child.id,child.label)));
+  const groups=[...(index.groups||[])].sort((a,b)=>groupRank(a)-groupRank(b));
   const all=document.createElement('button');all.type='button';
   all.className='cat parent'+(groupFilter==='all'?' active':'');
   const allName=document.createElement('span');allName.textContent='Todos los componentes';
@@ -386,7 +421,7 @@ function renderCategories(){
       selectLibraryView(g.id)};
     wrapper.append(button);
     if(expandedGroups.has(g.id)){
-      (g.children||[]).forEach(c=>{
+      [...(g.children||[])].sort((a,b)=>axfraRank(a.id,a.label)-axfraRank(b.id,b.label)).forEach(c=>{
         const child=document.createElement('button');child.type='button';
         child.className='cat child'+(groupFilter===g.id&&subgroupFilter===c.id?' active':'');
         child.title='Seleccionar subcategoría y compartir su URL';
@@ -418,6 +453,7 @@ function renderCategories(){
     nav.append(wrapper)
   });
 }
+function catalogRank(item){return axfraRank(item.subgroup,item.category,item.slot,item.id,item.group)}
 function renderItems(){
   const q=$('search').value.toLocaleLowerCase().trim();
   const files=index.files.filter(f=>(groupFilter==='all'||f.group===groupFilter)&&
@@ -427,6 +463,7 @@ function renderItems(){
   // "Por clasificar" se muestra exclusivamente por nombre de archivo A-Z.
   if(groupFilter==='unclassified')files.sort((a,b)=>a.path.localeCompare(b.path,'es'));
   else {
+    files.sort((a,b)=>catalogRank(a)-catalogRank(b));
     // Ordena las poses entre sí, conservando las posiciones de otros módulos.
     const poses=files.filter(isPose).sort((a,b)=>displayName(a).localeCompare(displayName(b),'es',{numeric:true,sensitivity:'base'}));
     let poseIndex=0;files.forEach((f,i)=>{if(isPose(f))files[i]=poses[poseIndex++]});
@@ -507,7 +544,7 @@ $('reload').onclick=()=>{
 $('validate').onclick=()=>{const data=getJSON();if(data!==null)status('JSON válido.','ok')};
 $('copy').onclick=()=>{const data=getJSON();if(data!==null)copyText(JSON.stringify(data,null,2))};
 $('download').onclick=()=>{const data=getJSON();if(data!==null)download(selected?.path.split('/').pop()||'axfra.json',JSON.stringify(data,null,2)+'\n')};
-$('add').onclick=()=>{const data=getJSON();if(data===null)return;const path=selected?.path||'local/'+(data.id||'custom')+'.json';const i=composition.findIndex(x=>x.path===path);const x={path,label:data.name||data.id||path,data};if(i>=0)composition[i]=x;else composition.push(x);renderComposition();status(i>=0?'Actualizado.':'Añadido.','ok')};
+$('add').onclick=()=>{const data=getJSON();if(data===null)return;const path=selected?.path||'local/'+(data.id||'custom')+'.json';const i=composition.findIndex(x=>x.path===path);const rank=selected ? catalogRank(selected) : catalogRank(data);const x={path,label:data.name||data.id||path,data,rank};if(i>=0)composition[i]=x;else composition.push(x);composition.sort((a,b)=>a.rank-b.rank);renderComposition();status(i>=0?'Actualizado.':'Añadido.','ok')};
 $('copyComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');copyText(JSON.stringify(makeComposition(),null,2))};
 $('downloadComposition').onclick=()=>{if(!composition.length)return status('Añade al menos un módulo.','err');download('axfra_test_composition.json',JSON.stringify(makeComposition(),null,2)+'\n')};
 $('clearComposition').onclick=()=>{composition=[];renderComposition();status('Vacío.','ok')};
