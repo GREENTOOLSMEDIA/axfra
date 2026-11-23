@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AXFRA MAGAZINE · N.º 01 · Katefa</title>
+  <meta name="description" content="AXFRA MAGAZINE presenta Katefa, una edición digital de 42 páginas de moda, ficción visual y cultura.">
+  <meta name="theme-color" content="#0c0f0d">
+  <link rel="canonical" href="https://axfra.com/magazine/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AXFRA MAGAZINE · N.º 01 · Katefa">
+  <meta property="og:description" content="Del estudio a la pista. La primera edición digital de AXFRA MAGAZINE.">
+  <meta property="og:url" content="https://axfra.com/magazine/">
+  <meta property="og:image" content="https://axfra.com/magazine/images/katefa-cover.jpg">
+  <link href="https://axfra.com/shared-layout.css" rel="stylesheet">
+  <style>
+    body{margin:0;background:#0c0f0d;color:#f1f1e6;font:16px/1.6 system-ui,sans-serif}
+    .skip{position:absolute;left:1rem;top:-10rem;z-index:100;padding:.6rem 1rem;background:#fff;color:#111}
+    .skip:focus{top:1rem}
+    .mag{--accent:#cbe387;--muted:#c0c5b7;--line:#373d33;max-width:1200px;padding:0 clamp(20px,5vw,70px);margin:auto}
+    .mag a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+    .mag section{padding:clamp(42px,8vw,100px) 0;border-bottom:1px solid var(--line)}
+    .mag img{display:block;width:100%;height:auto}
+    .mag h1,.mag h2{font-family:Georgia,serif;line-height:.98;letter-spacing:-.045em;font-weight:400;margin:0 0 1.2rem}
+    .mag h1{font-size:clamp(4rem,11vw,9rem)}
+    .mag h2{font-size:clamp(2.6rem,6vw,5rem)}
+    .hero,.collection{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(24px,7vw,94px);align-items:center}
+    .hero img{max-width:470px;justify-self:end}
+    .mag .kicker{font-size:.77rem;font-weight:700;letter-spacing:.16em;color:var(--accent)}
+    .mag .subtitle{font:italic clamp(1.5rem,3.5vw,2.5rem)/1.2 Georgia,serif;color:#f1f1e6;margin:.3rem 0 1.3rem}
+    .mag p{color:var(--muted);max-width:55ch}
+    .mag .actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.6rem}
+    .mag .button{display:inline-block;padding:.75rem 1.15rem;text-decoration:none;font-weight:700;border:1px solid var(--accent);color:var(--accent)}
+    .mag .primary{background:var(--accent);color:#131a11}
+    .mag .button:hover{filter:brightness(1.12)}
+    .preview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,3vw,30px);max-width:770px}
+    .preview-grid a{display:block}
+    .collection img{max-width:385px}
+    @media(max-width:700px){
+      .hero,.collection{grid-template-columns:1fr}
+      .hero img{justify-self:start;max-width:390px}
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+<main id="contenido" class="mag">
+  <section class="hero" aria-labelledby="titulo">
+    <div>
+      <p class="kicker">AXFRA MAGAZINE · N.º 01</p>
+      <h1 id="titulo">Katefa</h1>
+      <p class="subtitle">Del estudio a la pista</p>
+      <p>Moda, escenas de Chile en oficio y notas que van del pie de manzana al estrés cotidiano.</p>
+      <p>Edición digital · 42 páginas · PDF en alta resolución</p>
+      <div class="actions">
+        <a class="button primary" href="https://payhip.com/b/6xeNI">Comprar edición digital · US$5</a>
+        <a class="button" href="#muestra">Ver muestra</a>
+      </div>
+    </div>
+    <img src="images/katefa-cover.jpg" alt="Portada de AXFRA MAGAZINE 01 con Katefa en un sillón verde" width="967" height="1450" fetchpriority="high">
+  </section>
+  <section id="muestra" aria-labelledby="titulo-muestra">
+    <h2 id="titulo-muestra">Dentro del número</h2>
+    <div class="preview-grid">
+      <a href="images/katefa-preview-apple.jpg"><img src="images/katefa-preview-apple.jpg" alt="Abrir página de muestra: De la silla al horno" width="967" height="1450" loading="lazy"></a>
+      <a href="images/katefa-preview-fashion.jpg"><img src="images/katefa-preview-fashion.jpg" alt="Abrir página de muestra de la editorial de moda de Katefa" width="967" height="1450" loading="lazy"></a>
+    </div>
+  </section>
+  <section class="collection" aria-labelledby="titulo-coleccion">
+    <div>
+      <h2 id="titulo-coleccion">La colección</h2>
+      <p>Nueve portadas, nueve personajes. Katefa abre la colección.</p>
+    </div>
+    <img src="images/axfra-collection.jpg" alt="Contraportada con las nueve portadas de la colección AXFRA MAGAZINE" width="967" height="1450" loading="lazy">
+  </section>
+  <section aria-labelledby="titulo-publicidad">
+    <h2 id="titulo-publicidad">Tu marca en el próximo número</h2>
+    <p>Creamos una campaña visual para tu producto, pensada para las páginas de AXFRA MAGAZINE.</p>
+    <a class="button" href="mailto:info@alarsi.com?subject=Publicidad%20en%20AXFRA%20MAGAZINE">Publicidad y colaboraciones</a>
+  </section>
+</main>
+<div id="globalFooter"></div>
+<script defer src="https://axfra.com/shared-layout.js"></script>
+</body>
+</html>
