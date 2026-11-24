@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa del sitio | AXFRA</title>
+  <meta name="description" content="Encuentra el método, las áreas visuales, las identidades, las demostraciones, la librería y las herramientas de AXFRA.">
+  <link rel="canonical" href="https://axfra.com/mapa-del-sitio/">
+  <link rel="stylesheet" href="/shared-layout.css">
+  <style>
+    :root {
+      --bg: #000;
+      --surface: #111519;
+      --surface2: #171d21;
+      --text: #e9eceb;
+      --muted: #a5b0af;
+      --line: #303a3c;
+      --accent: #d5e4db;
+      --highlight: #b8d4c8;
+      --max: 1320px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 1rem/1.6 Inter, system-ui, sans-serif; }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
+    .skip { position: absolute; inset: 8px auto auto 8px; z-index: 1000; padding: 8px 12px; background: var(--bg); }
+    .skip:not(:focus) { clip-path: inset(50%); }
+    .site-map { padding-block: clamp(40px, 7vw, 96px); }
+    .site-map h1 { margin: 0 0 32px; font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.05; letter-spacing: -.04em; }
+    .site-map-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px 36px; }
+    .site-map-grid section { border-top: 1px solid var(--line); padding-top: 12px; }
+    .site-map h2 { margin: 0 0 8px; font-size: 1.16rem; }
+    .site-map ul { list-style: none; margin: 0; padding: 0; }
+    .site-map li a { display: inline-block; padding-block: 4px; color: var(--highlight); text-underline-offset: .2em; }
+    .site-map li a:hover { color: var(--text); }
+    .site-map li a:focus-visible { outline: 2px solid var(--highlight); outline-offset: 3px; }
+    @media (max-width: 850px) { .site-map-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 540px) { .site-map-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="globalHeader"></div>
+  <main id="contenido" class="wrap site-map">
+    <h1>Mapa del sitio</h1>
+    <div class="site-map-grid">
+      <section aria-labelledby="map-group-1">
+        <h2 id="map-group-1">Proyecto y método</h2>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/#estudios">Estudios</a></li>
+          <li><a href="/#metodo">Método AXFRA</a></li>
+          <li><a href="/metodologia/observar.html">Observar</a></li>
+          <li><a href="/metodologia/clasificar.html">Clasificar</a></li>
+          <li><a href="/metodologia/estructurar.html">Estructurar</a></li>
+          <li><a href="/metodologia/probar.html">Probar</a></li>
+          <li><a href="/metodologia/ajustar.html">Ajustar</a></li>
+          <li><a href="/metodologia/reutilizar.html">Reutilizar</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="map-group-2">
+        <h2 id="map-group-2">Áreas visuales</h2>
+        <ul>
+          <li><a href="/apparel.html">Vestuario</a></li>
+          <li><a href="/camera.html">Cámara</a></li>
+          <li><a href="/environments.html">Ambientes</a></li>
+          <li><a href="/poses.html">Poses</a></li>
+          <li><a href="/styles.html">Estilos gráficos</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="map-group-3">
+        <h2 id="map-group-3">Identidades</h2>
+        <ul>
+          <li><a href="/identities.html">Todas las identidades</a></li>
+          <li><a href="/identities/amina.html">Amina</a></li>
+          <li><a href="/identities/captain-dots.html">Captain Dots</a></li>
+          <li><a href="/identities/conde-alarsi.html">Conde Alarsi</a></li>
+          <li><a href="/identities/dotsy.html">Dotsy Dots</a></li>
+          <li><a href="/identities/hana.html">Hana</a></li>
+          <li><a href="/identities/indira.html">Indira</a></li>
+          <li><a href="/identities/maria.html">M.A.R.I.A.</a></li>
+          <li><a href="/identities/mara.html">Mara Voss</a></li>
+          <li><a href="/identities/mira.html">Mira</a></li>
+          <li><a href="/identities/paulina.html">Paulina Dots</a></li>
+          <li><a href="/identities/viktoria.html">Viktoria Dots</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="map-group-4">
+        <h2 id="map-group-4">Editorial y audiovisual</h2>
+        <ul>
+          <li><a href="/magazine/">AXFRA Magazine</a></li>
+          <li><a href="/motion/">AXFRA Motion</a></li>
+          <li><a href="/play/">AXFRA Play</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="map-group-5">
+        <h2 id="map-group-5">Librería y herramientas</h2>
+        <ul>
+          <li><a href="/library/">Librería JSON</a></li>
+          <li><a href="/glossary.html">Glosario</a></li>
+          <li><a href="/tools/">Herramientas</a></li>
+          <li><a href="/tools/axfra_pose_editor.html">AXFRA Pose Editor</a></li>
+          <li><a href="/tools/axfra_material_editor.html">AXFRA Material Editor</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="map-group-6">
+        <h2 id="map-group-6">Demostraciones</h2>
+        <ul>
+          <li><a href="/demos/">Todas las demos</a></li>
+          <li><a href="/demos/soccer-play-demo.html">Soccer Play</a></li>
+          <li><a href="/demos/paudotsband-concert-demo.html">PauDotsBand Concert</a></li>
+          <li><a href="/demos/axion-frame-69.html">AXION FRAME 69</a></li>
+          <li><a href="/demos/axfra-house-demo.html">AXFRA House</a></li>
+          <li><a href="/demos/axfra_conde_alarsi_demo.html">Conde Alarsi</a></li>
+          <li><a href="/demos/axfra-mira-demo.html">Mira</a></li>
+          <li><a href="/demos/demostracion-practica.html">Demostración práctica</a></li>
+          <li><a href="/demos/axfra-rio-demo.html">RÍO</a></li>
+          <li><a href="/demos/axfra-maria-demo.html">M.A.R.I.A.</a></li>
+          <li><a href="/demos/axfra-paradoja-alarsi-demo.html">Paradoja Alarsi</a></li>
+          <li><a href="/demos/axfra-indira-sol-perdido-demo.html">Indira · SOL Perdido</a></li>
+          <li><a href="/demos/axfra-transparencia-ropa-ia.html">Transparencia de ropa con IA</a></li>
+          <li><a href="/demos/axfra-paulina-giant-hands-demo.html">Paulina · Giant Hands</a></li>
+          <li><a href="/demos/axfra-nuevas-sensaciones-demo.html">Nuevas Sensaciones</a></li>
+          <li><a href="/demos/axfra-katefa-demo.html">KATEFA</a></li>
+          <li><a href="/demos/axfra-magazine-demo.html">Demo de AXFRA Magazine</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <div id="globalFooter"></div>
+  <script defer src="/shared-layout.js"></script>
+</body>
+</html>
