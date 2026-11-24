@@ -39,6 +39,15 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
 .share-motion{background:none;border:0;padding:0;font-family:inherit;cursor:pointer;text-decoration:underline}
 .share-status{font-size:.85rem;color:#d2e3da}
 .share-status:empty{display:none}
+
+.motion-ai form{display:grid;gap:12px;max-width:800px;margin-top:24px}
+.motion-ai select,.motion-ai textarea{box-sizing:border-box;width:100%;background:#111012;color:#f4efed;border:1px solid #71626a;border-radius:4px;padding:12px;font:inherit}
+.motion-ai textarea{resize:vertical}
+.motion-ai-actions{display:flex;flex-wrap:wrap;gap:10px}
+.motion-ai button,.motion-ai-actions a{background:#180f12;color:#f4efed;border:1px solid #8c626d;border-radius:4px;padding:10px 14px;font:inherit;text-decoration:none;cursor:pointer}
+.motion-ai button:hover,.motion-ai-actions a:hover{background:#382029}
+.motion-ai-status{margin:0;color:#e5d5db}
+.motion-ai-status:empty{display:none}
 </style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido</a><div id="globalHeader"></div><main id="contenido">
 <section class="hero"><div class="wrap"><div class="eyebrow">AXFRA / Dirección audiovisual</div><h1>AXFRA <span>MOTION</span></h1><p class="tagline">El movimiento comienza antes del primer fotograma.</p><p class="intro">La animación también se compone: acción, continuidad, cámara, materiales y ritmo. Tres ejemplos editoriales muestran cómo AXFRA organiza decisiones visuales y temporales para dar movimiento a imágenes de referencia.</p><div class="anchors"><a href="#katefa">KATEFA</a><a href="#crimson">Crimson Ribbon Bloom</a><a href="#pearl">Pearl Green Ribbon Bloom</a><a href="/magazine/">Magazine</a></div></div></section>
@@ -393,6 +402,35 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
 </div>
 <div class="motion-note"><p><strong>Un archivo visual, no una biblioteca de prompts.</strong> Las obras de AXFRA Motion muestran resultados de investigación y dirección audiovisual. Los dos módulos Ribbon Bloom se comparten como excepciones documentales; el resto de las instrucciones y secuencias de producción de ALARSI permanece privado.</p></div>
 </div></section>
+
+<section class="motion-direction motion-ai" id="preguntar-axfra"><div class="wrap">
+<h2>Preguntar sobre AXFRA</h2>
+<p>Pregunta por una pieza, una técnica o el método. Copia la consulta y pégala en tu asistente para que busque en el sitio.</p>
+<form id="motion-ai-form">
+<label for="motion-ai-context">Pieza de referencia</label>
+<select id="motion-ai-context">
+  <option value="">AXFRA Motion</option>
+  <option value="katefa">KATEFA · Orbit 360°</option>
+  <option value="crimson">Paulina · Crimson Ribbon Bloom</option>
+  <option value="pearl">Viktoria · Pearl Green Ribbon Bloom</option>
+</select>
+<label for="motion-ai-question">Tu pregunta</label>
+<textarea id="motion-ai-question" rows="3" maxlength="800" required placeholder="¿Cómo logra AXFRA ese nivel de detalle en sus imágenes?"></textarea>
+<div class="motion-ai-actions" aria-label="Preguntas sugeridas">
+  <button type="button" data-question>¿Cómo logra AXFRA ese nivel de detalle?</button>
+  <button type="button" data-question>¿Cómo se ilumina y se dirige la pose?</button>
+  <button type="button" data-question>¿Cómo se conserva la identidad cuando cambia la cámara?</button>
+</div>
+<button type="submit">Copiar consulta</button>
+<p class="motion-ai-status" role="status" id="motion-ai-status"></p>
+<textarea id="motion-ai-preview" aria-label="Consulta preparada" rows="7" readonly hidden></textarea>
+<div class="motion-ai-actions">
+  <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT</a>
+  <a href="https://grok.com/" target="_blank" rel="noopener noreferrer">Abrir Grok</a>
+  <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Abrir Gemini</a>
+</div>
+</form>
+</div></section>
 <section class="endnote"><div class="wrap"><div class="eyebrow">AXFRA / Método</div><h2>Una arquitectura temporal. Tres expresiones visuales.</h2><p>Estas piezas muestran una aplicación del enfoque modular AXFRA: la dirección organiza acciones, cámara y continuidad, mientras las referencias y los parámetros de materiales orientan el resultado visual. Los dos JSON de Ribbon Bloom se comparten específicamente para estas demostraciones; el resto de la colección Motion permanece privada.</p><p>AXFRA no es un motor de generación de video: documenta decisiones visuales y temporales utilizadas con herramientas externas de IA. Los resultados pueden variar según el modelo.</p></div></section>
 <section class="axfra-demo-conclusion"><div class="axfra-demo-conclusion-inner"><div class="axfra-demo-kicker">AXFRA / Motion</div><h2>Del primer píxel al primer fotograma.</h2><p>AXFRA investiga la composición visual antes de generar una imagen y la dirección temporal antes de producir una secuencia. El resultado audiovisual es la expresión de esas decisiones, no un motor de generación independiente.</p><div id="globalDemoConclusion"></div></div></section>
 </main><div id="globalFooter"></div><script defer="" src="/shared-layout.js"></script><script defer="" src="/demo-conclusion.js"></script>
@@ -425,5 +463,64 @@ document.querySelectorAll('.share-motion').forEach(button => {
     }
   });
 });
+</script>
+
+<script>
+(() => {
+  const form = document.getElementById('motion-ai-form');
+  const context = document.getElementById('motion-ai-context');
+  const question = document.getElementById('motion-ai-question');
+  const preview = document.getElementById('motion-ai-preview');
+  const status = document.getElementById('motion-ai-status');
+  const page = 'https://axfra.com/motion/';
+  const currentPiece = location.hash.slice(1);
+  if (Array.from(context.options).some(option => option.value === currentPiece)) {
+    context.value = currentPiece;
+  }
+
+  function clearPreview() {
+    status.textContent = '';
+    preview.hidden = true;
+  }
+
+  form.addEventListener('input', clearPreview);
+  form.querySelectorAll('[data-question]').forEach(button => {
+    button.addEventListener('click', () => {
+      question.value = button.textContent.trim();
+      clearPreview();
+      question.focus();
+    });
+  });
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    const query = question.value.trim();
+    if (!query) {
+      status.textContent = 'Escribe una pregunta para preparar la consulta.';
+      question.focus();
+      return;
+    }
+
+    const section = context.value;
+    const origin = section ? page + '#' + section : page;
+    const piece = context.selectedOptions[0].textContent;
+    preview.value = [
+      'Pregunta: ' + query,
+      'Punto de partida: ' + piece + ' — ' + origin,
+      'Busca en las páginas públicas de todo AXFRA que ayuden a responder. Empieza por https://axfra.com/llms.txt y usa https://axfra.com/sitemap.xml para localizar otras secciones. Si corresponde, consulta la Librería en https://axfra.com/library/ y su índice en https://axfra.com/library/axfra_json_library_index.json.',
+      'Abre las fuentes pertinentes antes de responder y enlázalas para que pueda seguir explorando en AXFRA. Distingue lo que AXFRA documenta de tus inferencias. Si el proceso exacto no está publicado o alguna página no es accesible, indícalo y ofrece un ejemplo público relacionado cuando lo encuentres. Responde en español.'
+    ].join('\n\n');
+    preview.hidden = false;
+
+    try {
+      await navigator.clipboard.writeText(preview.value);
+      status.textContent = 'Consulta copiada. Abre tu asistente y pégala en el chat.';
+    } catch {
+      preview.focus();
+      preview.select();
+      status.textContent = 'Copia el texto seleccionado y pégalo en tu asistente.';
+    }
+  });
+})();
 </script>
 </body></html>
