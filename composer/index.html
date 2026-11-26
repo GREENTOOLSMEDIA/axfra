@@ -22,6 +22,7 @@
   <meta name="twitter:description" content="AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.">
   <meta name="twitter:image" content="https://axfra.com/images/editorial/axfra_composer.jpg">
   <meta name="twitter:image:alt" content="Portada editorial de AXFRA Composer con Katefa en un sillón verde, rodeada de portadas de AXFRA.">
+  <meta name="referrer" content="no-referrer">
   <link rel="stylesheet" href="/shared-layout.css">
   <style>
     :root {
@@ -250,19 +251,56 @@
     const video = document.getElementById('axfra-demo');
     const src = 'https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8';
 
-    if (window.Hls && Hls.isSupported()) {
+    function startHls() {
+      if (!window.Hls || !Hls.isSupported()) {
+        console.warn('hls.js no disponible o no soportado');
+        if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = src;
+          video.setAttribute('referrerpolicy', 'no-referrer');
+        }
+        return;
+      }
+
       const hls = new Hls({
         enableWorker: true,
-        xhrSetup: function (xhr) {
-          // Evita el 403 de X al no enviar Referer
-          xhr.setRequestHeader('Referer', '');
+        fetchSetup: function (context, initParams) {
+          initParams.referrerPolicy = 'no-referrer';
+          return new Request(context.url, initParams);
         }
       });
+
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        console.log('Manifest cargado correctamente');
+      });
+
+      hls.on(Hls.Events.ERROR, (event, data) => {
+        console.error('HLS Error:', data.type, data.details, data);
+        if (data.fatal) {
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              console.error('Error de red (probablemente 403). Reintentando...');
+              hls.startLoad();
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              console.error('Error de media. Recuperando...');
+              hls.recoverMediaError();
+              break;
+            default:
+              console.error('Error fatal, destruyendo hls');
+              hls.destroy();
+              break;
+          }
+        }
+      });
+
       hls.loadSource(src);
       hls.attachMedia(video);
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = src;
-      video.setAttribute('referrerpolicy', 'no-referrer');
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', startHls);
+    } else {
+      startHls();
     }
   </script>
 </body>
