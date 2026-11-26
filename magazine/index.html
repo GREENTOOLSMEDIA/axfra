@@ -139,14 +139,13 @@
     .cover-grid figure{margin:0;min-width:0}
     .cover-grid img{aspect-ratio:2 / 3;object-fit:contain;background:#141814}
     .cover-grid figcaption{margin-top:.55rem;color:var(--muted)}
+    .mag .cover-grid .motion-button{margin-top:.8rem;padding:.6rem .85rem;font-size:.85rem;line-height:1.4;box-sizing:border-box;max-width:100%;white-space:normal;border-radius:0}
     @media(max-width:520px){.cover-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:700px){
       .hero{grid-template-columns:1fr}
       .hero img{justify-self:start;max-width:390px}
     }
     .calendar-gallery{margin-top:2rem}
-    .calendar-gallery summary{cursor:pointer;color:var(--accent);font-weight:700;padding:.7rem 0}
-    .calendar-gallery summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
   </style>
 <meta content="AXFRA / ALARSI" name="author"/><meta content="max-image-preview:large" name="robots"/><style>.preview-grid figure{margin:0;min-width:0}.preview-grid figcaption{margin-top:.8rem;color:var(--muted);font-size:.92rem;line-height:1.5}.preview-grid figcaption strong{color:#f1f1e6}.mag p a{color:var(--accent)}.cover-grid figcaption{font-size:.92rem;line-height:1.5}</style></head>
 <body>
@@ -196,8 +195,7 @@
 </div>
 <img alt="Portada del Calendario AXFRA 2027: mosaico de doce escenas editoriales de moda, música, fantasía y creación visual con IA sobre fondo negro." decoding="async" height="1728" loading="lazy" src="images/axfra-calendario-2027-00-portada.jpg" width="1152"/>
 </div>
-<details class="calendar-gallery">
-<summary>Ver los 12 meses</summary>
+<div class="calendar-gallery">
 <div class="cover-grid">
 <figure><a href="images/axfra-calendario-2027-01-enero.jpg"><img alt="Calendario AXFRA 2027, enero. Modelo con vestido negro y botas frente a una escultura de conejo naranja." decoding="async" height="1728" loading="lazy" src="images/axfra-calendario-2027-01-enero.jpg" width="1152"/></a><figcaption>Enero · Katefa con vestido negro y botas frente a una escultura de conejo naranja.</figcaption></figure>
 <figure><a href="images/axfra-calendario-2027-02-febrero.jpg"><img alt="Calendario AXFRA 2027, febrero. Guitarrista con corset rojo y guitarra eléctrica en un escenario AXFRA Rock Bar." decoding="async" height="1728" loading="lazy" src="images/axfra-calendario-2027-02-febrero.jpg" width="1152"/></a><figcaption>Febrero · Paulina DOts con corset rojo y guitarra eléctrica en un escenario AXFRA Rock Bar.</figcaption></figure>
@@ -212,7 +210,7 @@
 <figure><a href="images/axfra-calendario-2027-11-noviembre.jpg"><img alt="Calendario AXFRA 2027, noviembre. Primer plano de un rostro cibernético plateado con ojo azul y componentes mecánicos luminosos." decoding="async" height="1728" loading="lazy" src="images/axfra-calendario-2027-11-noviembre.jpg" width="1152"/></a><figcaption>Noviembre · Primer plano de M.A.R.I.A. un rostro cibernético plateado con ojo azul y componentes mecánicos luminosos.</figcaption></figure>
 <figure><a href="images/axfra-calendario-2027-12-diciembre.jpg"><img alt="Calendario AXFRA 2027, diciembre. Dos modelos con vestidos rojos y gorros navideños intercambian un regalo y una cinta dorada." decoding="async" height="1728" loading="lazy" src="images/axfra-calendario-2027-12-diciembre.jpg" width="1152"/></a><figcaption>Diciembre · Paulina Y viktoria  con vestidos rojos y gorros navideños intercambian un regalo y una cinta dorada.</figcaption></figure>
 </div>
-</details>
+</div>
 </section>
 <section aria-labelledby="titulo-coleccion">
 <h2 id="titulo-coleccion">La colección</h2>
@@ -248,11 +246,11 @@
 </figure>
 <figure id="vol-08">
 <a href="images/axfra_magazine_paulina_01.jpg"><img alt="Portada de AXFRA Magazine. Paulina Dots con traje rojo, cuernos y alas negras en un sillón rojo, rodeada de frutillas." decoding="async" height="1728" loading="lazy" src="images/axfra_magazine_paulina_01.jpg" width="1152"/></a>
-<figcaption>Axfra Magazine Vol. 08 · Paulina Dots<br/><a href="/motion/#crimson">Ver en Motion · Crimson Ribbon Bloom</a></figcaption>
+<figcaption>Axfra Magazine Vol. 08 · Paulina Dots<br/><a class="button motion-button" href="/motion/#crimson">Ver en Motion · Crimson Ribbon Bloom</a></figcaption>
 </figure>
 <figure id="vol-09">
 <a href="images/axfra_magazine_viktoria_01.jpg"><img alt="Portada de AXFRA Magazine. Viktoria Dots con vestuario blanco y alas de ángel en un sillón marfil, rodeada de frutillas blancas." decoding="async" height="1728" loading="lazy" src="images/axfra_magazine_viktoria_01.jpg" width="1152"/></a>
-<figcaption>Axfra Magazine Vol. 09 · Viktoria Dots<br/><a href="/motion/#pearl">Ver en Motion · Pearl Green Ribbon Bloom</a></figcaption>
+<figcaption>Axfra Magazine Vol. 09 · Viktoria Dots<br/><a class="button motion-button" href="/motion/#pearl">Ver en Motion · Pearl Green Ribbon Bloom</a></figcaption>
 </figure>
 </div>
 </section>
