@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AXFRA Composer | Biblioteca visual y editor JSON</title>
+  <meta name="description" content="AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #101214;
+      --surface: #161a19;
+      --line: #34393b;
+      --text: #ececea;
+      --muted: #bec7c1;
+      --accent: #dcfb9b;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .wrap { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--line); }
+    header nav {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding-block: 1rem;
+    }
+    .brand { font-weight: 800; letter-spacing: .14em; text-decoration: none; }
+    .nav-link { color: var(--muted); }
+    main { padding-block: clamp(2.5rem, 7vw, 6rem); }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2 { line-height: 1.05; letter-spacing: -.045em; }
+    h1 { font-size: clamp(2.7rem, 8vw, 6.4rem); }
+    h2 { font-size: clamp(1.9rem, 4vw, 3rem); }
+    p { max-width: 66ch; color: var(--muted); }
+    .claim {
+      color: var(--text);
+      font-size: clamp(1.35rem, 3.5vw, 2.6rem);
+      line-height: 1.2;
+      margin-block: .8rem 1.35rem;
+    }
+    .claim em { color: var(--accent); }
+    .demo { margin: 2rem 0 0; }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #090b0c;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+    }
+    figcaption { margin-top: .85rem; font-size: .9rem; }
+    section {
+      margin-top: clamp(2.5rem, 6vw, 5rem);
+      padding-top: clamp(1.5rem, 4vw, 3rem);
+      border-top: 1px solid var(--line);
+    }
+    section p { margin-top: .85rem; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .card {
+      display: block;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+      background: var(--surface);
+      text-decoration: none;
+    }
+    .card:hover { border-color: var(--accent); }
+    .card p { margin-top: .4rem; }
+    .distribution {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: .4rem;
+      max-width: 42rem;
+      margin-top: 1.25rem;
+    }
+    .distribution span {
+      padding: .8rem;
+      border: 1px solid var(--line);
+      border-radius: .5rem;
+      background: var(--surface);
+    }
+    .distribution span:first-child { color: var(--accent); }
+    footer {
+      border-top: 1px solid var(--line);
+      padding-block: 1.25rem;
+      font-size: .9rem;
+    }
+    @media (max-width: 38rem) {
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegación">
+      <a class="brand" href="/">AXFRA</a>
+      <a class="nav-link" href="/tools/">Herramientas</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>AXFRA Composer</h1>
+    <p class="claim">La escena comienza <em>antes del primer píxel.</em></p>
+    <p>Creé AXFRA Composer para armar escenas con mis módulos JSON desde una
+      sola pantalla. Reúne la biblioteca visual y el editor de composición
+      para que pueda reutilizar lo que ya desarrollé y dedicar más tiempo
+      a probar nuevas ideas.</p>
+
+    <figure class="demo">
+      <video controls playsinline preload="none" poster="PORTADA_ACTUAL.jpg"
+        aria-label="Demostración de AXFRA Composer">
+        <source
+          src="https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8"
+          type="application/vnd.apple.mpegurl">
+      </video>
+      <figcaption>
+        <p>Katefa hace el gag de los archivos. Su «¡Tengo una gran idea!»
+          da paso a la demo.</p>
+      </figcaption>
+    </figure>
+
+    <section aria-labelledby="componer">
+      <h2 id="componer">De los módulos a la escena</h2>
+      <p>Parto de una identidad y elijo el vestuario, la pose, el ambiente
+        y la cámara desde la biblioteca visual. Con <strong>LOAD</strong>
+        voy sumando los módulos a la composición. Cuando la escena está
+        lista, copio el JSON y lo pruebo en la IA con la que estoy trabajando.</p>
+      <p>También puedo trabajar con una copia local de la biblioteca de
+        AXFRA.com. Uso sus módulos en escenas nuevas, los refino durante la
+        producción y llevo de vuelta a la web los que ya están listos.</p>
+    </section>
+
+    <section aria-labelledby="produccion">
+      <h2 id="produccion">En producción</h2>
+      <p>Usé Composer para producir AXFRA Magazine y AXFRA Motion en poco
+        tiempo. En la demo aparecen Paulina con su traje de Diabla y
+        Viktoria con su traje de Ángel, dos ejemplos del trabajo visual
+        que preparo con la herramienta.</p>
+      <div class="cards">
+        <a class="card" href="/magazine/">
+          <h3>AXFRA Magazine</h3>
+          <p>Identidades y vestuario en composiciones editoriales.</p>
+        </a>
+        <a class="card" href="/motion/">
+          <h3>AXFRA Motion</h3>
+          <p>El movimiento comienza antes del primer fotograma.</p>
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="escritorio">
+      <h2 id="escritorio">El mismo escritorio cada vez</h2>
+      <p>Desarrollé <strong>AXFRA Safari Split Panel</strong> para colocar dos
+        ventanas de Safari lado a lado con proporciones como 50/50, 60/40
+        o 70/30. Mi configuración habitual deja Composer a la izquierda
+        y Grok, Gemini o ChatGPT a la derecha.</p>
+
+      <div class="distribution" aria-label="Distribución de ventanas 60/40">
+        <span>Composer · 60 %</span>
+        <span>IA · 40 %</span>
+      </div>
+
+      <p>Si cambio de pantalla o retomo una grabación otro día, recupero
+        la misma proporción en el espacio disponible. Y desde la barra
+        de Composer tengo a mano los accesos a Illustrator, Photoshop,
+        InDesign, Dreamweaver, AXFRA.com, ChatGPT, Grok y GitHub.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">AXFRA Composer · Desarrollado por ALARSI</div>
+  </footer>
+</body>
+</html>
