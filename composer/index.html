@@ -1,10 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-CL">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
   <title>AXFRA Composer | Biblioteca visual y editor JSON</title>
   <meta name="description" content="AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.">
+  <meta name="author" content="ALARSI">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://axfra.com/composer/">
   <meta property="og:type" content="website">
@@ -20,42 +22,7 @@
   <meta name="twitter:description" content="AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.">
   <meta name="twitter:image" content="https://axfra.com/images/editorial/axfra_composer.jpg">
   <meta name="twitter:image:alt" content="Portada editorial de AXFRA Composer con Katefa en un sillón verde, rodeada de portadas de AXFRA.">
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://axfra.com/composer/#webpage",
-      "url": "https://axfra.com/composer/",
-      "name": "AXFRA Composer | Biblioteca visual y editor JSON",
-      "description": "AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.",
-      "inLanguage": "es-CL",
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "contentUrl": "https://axfra.com/images/editorial/axfra_composer.jpg"
-      },
-      "mainEntity": {
-        "@id": "https://axfra.com/composer/#composer"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://axfra.com/composer/#composer",
-      "name": "AXFRA Composer",
-      "url": "https://axfra.com/composer/",
-      "description": "AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.",
-      "applicationCategory": "MultimediaApplication",
-      "author": {
-        "@type": "Person",
-        "name": "ALARSI",
-        "url": "https://alarsi.com/"
-      },
-      "image": "https://axfra.com/images/editorial/axfra_composer.jpg"
-    }
-  ]
-}
-  </script>
+  <link rel="stylesheet" href="/shared-layout.css">
   <style>
     :root {
       color-scheme: dark;
@@ -66,7 +33,6 @@
       --muted: #bec7c1;
       --accent: #dcfb9b;
     }
-
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -77,15 +43,6 @@
     a { color: var(--accent); text-underline-offset: .2em; }
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
     .wrap { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
-    header { border-bottom: 1px solid var(--line); }
-    header nav {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      padding-block: 1rem;
-    }
-    .brand { font-weight: 800; letter-spacing: .14em; text-decoration: none; }
-    .nav-link { color: var(--muted); }
     main { padding-block: clamp(2.5rem, 7vw, 6rem); }
     h1, h2, h3, p { margin: 0; }
     h1, h2 { line-height: 1.05; letter-spacing: -.045em; }
@@ -100,18 +57,6 @@
     }
     .claim em { color: var(--accent); }
     .hero { display: grid; justify-items: start; }
-    .demo-link {
-      display: inline-block;
-      margin-top: 1.15rem;
-      padding: .55rem .95rem;
-      border: 1px solid var(--accent);
-      border-radius: .45rem;
-      color: var(--background);
-      background: var(--accent);
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .demo-link:hover { background: var(--text); }
     .demo { margin: 2rem 0 0; scroll-margin-top: 1.25rem; }
     video {
       display: block;
@@ -168,25 +113,52 @@
       background: var(--surface);
     }
     .distribution span:first-child { color: var(--accent); }
-    footer {
-      border-top: 1px solid var(--line);
-      padding-block: 1.25rem;
-      font-size: .9rem;
-    }
     @media (max-width: 38rem) {
       .cards { grid-template-columns: 1fr; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://axfra.com/composer/#webpage",
+        "url": "https://axfra.com/composer/",
+        "name": "AXFRA Composer | Biblioteca visual y editor JSON",
+        "description": "AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.",
+        "inLanguage": "es-CL",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "contentUrl": "https://axfra.com/images/editorial/axfra_composer.jpg"
+        },
+        "mainEntity": {
+          "@id": "https://axfra.com/composer/#composer"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://axfra.com/composer/#composer",
+        "name": "AXFRA Composer",
+        "url": "https://axfra.com/composer/",
+        "description": "AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.",
+        "applicationCategory": "MultimediaApplication",
+        "author": {
+          "@type": "Person",
+          "name": "ALARSI",
+          "url": "https://alarsi.com/"
+        },
+        "image": "https://axfra.com/images/editorial/axfra_composer.jpg"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <nav class="wrap" aria-label="Navegación">
-      <a class="brand" href="/">AXFRA</a>
-      <a class="nav-link" href="/tools/">Herramientas</a>
-    </nav>
-  </header>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="globalHeader"></div>
 
-  <main class="wrap">
+  <main class="wrap" id="contenido">
     <div class="hero">
       <h1>AXFRA Composer</h1>
       <p class="claim">La escena comienza <em>antes del primer píxel.</em></p>
@@ -194,15 +166,15 @@
         y más a probar ideas. La aplicación reúne una biblioteca visual
         y un editor JSON en una sola pantalla. Desde ahí puedo reutilizar
         identidades, vestuario, poses, ambientes y cámaras.</p>
-      <a class="demo-link" href="https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8" target="_blank" rel="noopener">Ver la demo</a>
     </div>
 
     <figure class="demo" id="demo">
-      <video controls playsinline preload="none" poster="/images/editorial/axfra_composer.jpg"
-        aria-label="Demostración de AXFRA Composer">
-        <source
-          src="https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8"
-          type="application/vnd.apple.mpegurl">
+      <video id="axfra-demo"
+             controls
+             playsinline
+             preload="metadata"
+             poster="/images/editorial/axfra_composer.jpg"
+             aria-label="Demostración de AXFRA Composer">
       </video>
       <figcaption>
         <p>Katefa pone el humor en la apertura. Entre archivos que vuelan,
@@ -263,15 +235,35 @@
 
       <figure class="organizer-preview">
         <img src="/images/editorial/axfra_grok_organizer.jpg"
-          alt="AXFRA Grok Organizer muestra la sesión Paulina · Diabla con sus imágenes, prompt y notas."
-          width="640" height="480" loading="lazy">
+             alt="AXFRA Grok Organizer muestra la sesión Paulina · Diabla con sus imágenes, prompt y notas."
+             width="640" height="480" loading="lazy">
         <figcaption>AXFRA Grok Organizer · Vista ilustrativa de una sesión de producción.</figcaption>
       </figure>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">AXFRA Composer · Desarrollado por ALARSI</div>
-  </footer>
+  <div id="globalFooter"></div>
+
+  <script defer src="/shared-layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script>
+    const video = document.getElementById('axfra-demo');
+    const src = 'https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8';
+
+    if (window.Hls && Hls.isSupported()) {
+      const hls = new Hls({
+        enableWorker: true,
+        xhrSetup: function (xhr) {
+          // Evita el 403 de X al no enviar Referer
+          xhr.setRequestHeader('Referer', '');
+        }
+      });
+      hls.loadSource(src);
+      hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = src;
+      video.setAttribute('referrerpolicy', 'no-referrer');
+    }
+  </script>
 </body>
 </html>
