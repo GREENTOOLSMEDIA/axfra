@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AXFRA Composer | Biblioteca visual y editor JSON</title>
   <meta name="description" content="AXFRA Composer reúne una biblioteca visual y un editor JSON para combinar identidades, vestuario, poses, ambientes y cámaras en nuevas escenas.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AXFRA Composer">
+  <meta property="og:description" content="La escena comienza antes del primer píxel. Biblioteca visual y editor JSON para componer escenas.">
+  <meta property="og:image" content="https://axfra.com/images/editorial/axfra_composer.jpg">
   <style>
     :root {
       color-scheme: dark;
@@ -48,7 +52,20 @@
       margin-block: .8rem 1.35rem;
     }
     .claim em { color: var(--accent); }
-    .demo { margin: 2rem 0 0; }
+    .hero { display: grid; justify-items: start; }
+    .demo-link {
+      display: inline-block;
+      margin-top: 1.15rem;
+      padding: .55rem .95rem;
+      border: 1px solid var(--accent);
+      border-radius: .45rem;
+      color: var(--background);
+      background: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .demo-link:hover { background: var(--text); }
+    .demo { margin: 2rem 0 0; scroll-margin-top: 1.25rem; }
     video {
       display: block;
       width: 100%;
@@ -65,6 +82,15 @@
       border-top: 1px solid var(--line);
     }
     section p { margin-top: .85rem; }
+    .workflow-heading { margin-top: 1.5rem; }
+    .organizer-preview { margin: 1.25rem 0 0; }
+    .organizer-preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+    }
     .cards {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -114,23 +140,26 @@
   </header>
 
   <main class="wrap">
-    <h1>AXFRA Composer</h1>
-    <p class="claim">La escena comienza <em>antes del primer píxel.</em></p>
-    <p>Creé AXFRA Composer para armar escenas con mis módulos JSON desde una
-      sola pantalla. Reúne la biblioteca visual y el editor de composición
-      para que pueda reutilizar lo que ya desarrollé y dedicar más tiempo
-      a probar nuevas ideas.</p>
+    <div class="hero">
+      <h1>AXFRA Composer</h1>
+      <p class="claim">La escena comienza <em>antes del primer píxel.</em></p>
+      <p>Creé AXFRA Composer para dedicar menos tiempo a preparar una escena
+        y más a probar ideas. La aplicación reúne una biblioteca visual
+        y un editor JSON en una sola pantalla. Desde ahí puedo reutilizar
+        identidades, vestuario, poses, ambientes y cámaras.</p>
+      <a class="demo-link" href="#demo">Ver la demo</a>
+    </div>
 
-    <figure class="demo">
-      <video controls playsinline preload="none" poster="PORTADA_ACTUAL.jpg"
+    <figure class="demo" id="demo">
+      <video controls playsinline preload="none" poster="/images/editorial/axfra_composer.jpg"
         aria-label="Demostración de AXFRA Composer">
         <source
           src="https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8"
           type="application/vnd.apple.mpegurl">
       </video>
       <figcaption>
-        <p>Katefa hace el gag de los archivos. Su «¡Tengo una gran idea!»
-          da paso a la demo.</p>
+        <p>Katefa pone el humor en la apertura. Entre archivos que vuelan,
+          su «¡Tengo una gran idea!» da paso a la herramienta en uso.</p>
       </figcaption>
     </figure>
 
@@ -147,10 +176,10 @@
 
     <section aria-labelledby="produccion">
       <h2 id="produccion">En producción</h2>
-      <p>Usé Composer para producir AXFRA Magazine y AXFRA Motion en poco
-        tiempo. En la demo aparecen Paulina con su traje de Diabla y
-        Viktoria con su traje de Ángel, dos ejemplos del trabajo visual
-        que preparo con la herramienta.</p>
+      <p>Usé este flujo para producir AXFRA Magazine y AXFRA Motion en poco
+        tiempo. La demo muestra cómo paso de los módulos en Composer a
+        resultados como Paulina con su traje de Diabla y Viktoria con
+        su traje de Ángel.</p>
       <div class="cards">
         <a class="card" href="/magazine/">
           <h3>AXFRA Magazine</h3>
@@ -179,6 +208,18 @@
         la misma proporción en el espacio disponible. Y desde la barra
         de Composer tengo a mano los accesos a Illustrator, Photoshop,
         InDesign, Dreamweaver, AXFRA.com, ChatGPT, Grok y GitHub.</p>
+
+      <h3 class="workflow-heading">AXFRA Grok Organizer</h3>
+      <p>También desarrollé AXFRA Grok Organizer para uso interno. Lo uso
+        para administrar mis sesiones de Grok por personaje o proyecto y
+        retomar desde la conversación donde dejé las pruebas.</p>
+
+      <figure class="organizer-preview">
+        <img src="/Images/edorial/axfra_grok_organizer.jpg"
+          alt="AXFRA Grok Organizer muestra la sesión Paulina · Diabla con sus imágenes, prompt y notas."
+          width="1586" height="992" loading="lazy">
+        <figcaption>AXFRA Grok Organizer · Vista ilustrativa de una sesión de producción.</figcaption>
+      </figure>
     </section>
   </main>
 
