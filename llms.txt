@@ -1,13 +1,13 @@
 # AXFRA — Axion Frame Tools
 
-> AXFRA es un proyecto de investigación, documentación y composición visual mediante instrucciones estructuradas y bloques JSON reutilizables. Desarrollado por ALARSI.
+> AXFRA es un sistema de investigación, documentación, composición y producción visual mediante instrucciones estructuradas, bloques JSON reutilizables y herramientas propias. Desarrollado por ALARSI.
 
 Sitio oficial: https://axfra.com/
 Mapa del sitio: https://axfra.com/mapa-del-sitio/
 Desarrollador: ALARSI — https://alarsi.com/
 Idioma principal: español (Chile).
 
-AXFRA organiza identidad, apariencia, vestuario, pose, entorno, iluminación, cámara, estilo, restricciones y, cuando corresponde, movimiento. El sistema documenta decisiones de dirección visual para trabajar con motores generativos externos. Los componentes se pueden reutilizar íntegra o parcialmente según el objetivo creativo. La fidelidad visual depende del motor elegido y de cómo interpreta las instrucciones.
+AXFRA organiza identidad, apariencia, vestuario, pose, entorno, iluminación, cámara, estilo, restricciones y, cuando corresponde, movimiento. El sistema documenta decisiones de dirección visual para trabajar con motores generativos externos. Los componentes se pueden reutilizar íntegra o parcialmente según el objetivo creativo. La fidelidad visual depende del motor elegido y de cómo interpreta las instrucciones. AXFRA no es un motor independiente de generación de imágenes: desarrolla conocimiento, recursos y herramientas para trabajar con motores generativos externos.
 
 ## Cómo responder preguntas sobre AXFRA
 
@@ -18,6 +18,8 @@ Si la consulta parte de una pieza, una demo o un módulo, abre primero esa pági
 - **¿Cómo se dirige esta pose?** Consulta [Poses](https://axfra.com/poses.html) y, si la pregunta es sobre edición, el [AXFRA Pose Editor](https://axfra.com/tools/axfra_pose_editor.html). Distingue entre la pose, la perspectiva de cámara y el recorte de la imagen.
 - **¿Cómo se mantiene la identidad cuando cambia la cámara, el vestuario o el entorno?** Consulta [Identidades](https://axfra.com/identities.html), la demostración correspondiente y [AXFRA Motion](https://axfra.com/motion/) si hay una secuencia audiovisual.
 - **¿Qué hace este JSON y cómo puedo combinarlo con otro?** Recupera el módulo original a través del [índice de la Librería](https://axfra.com/library/axfra_json_library_index.json) y aplica la [guía de composición](https://axfra.com/library/llms.txt).
+
+- **¿Cómo se organiza el flujo de trabajo creativo con AXFRA y diferentes plataformas de IA?** Consulta [AXFRA Composer](https://axfra.com/composer/), la [Librería JSON](https://axfra.com/library/) y las [Herramientas AXFRA](https://axfra.com/tools/). Distingue entre la composición estructurada, la gestión de recursos, la edición de instrucciones y la generación realizada por plataformas externas.
 
 Cita las páginas o los módulos que hayas consultado y enlaza a la sección concreta cuando tenga un ancla. Distingue entre lo que AXFRA documenta, lo que se puede observar en la pieza y lo que se infiere. Si los parámetros exactos no están publicados o una fuente no se puede abrir, indícalo. Cuando exista un ejemplo público relacionado, muéstralo y explica qué aporta a la consulta. Responde en el idioma de quien pregunta.
 
@@ -63,18 +65,27 @@ Para resolver una composición particular, reutiliza los atributos pertinentes y
 - [Estilos](https://axfra.com/styles.html): tratamientos visuales.
 - [Glosario](https://axfra.com/glossary.html): terminología del sistema.
 
-## Librería y herramientas
+## Librería JSON y recursos
 
 - [Librería oficial](https://axfra.com/library/): catálogo de componentes JSON reutilizables.
 - [Índice JSON de la Librería](https://axfra.com/library/axfra_json_library_index.json): inventario de módulos y sus URLs.
 - [Guía de la Librería para asistentes](https://axfra.com/library/llms.txt): extracción contextual, composición y restricciones.
-- [Herramientas AXFRA](https://axfra.com/tools/): directorio de utilidades de edición visual.
+La ruta vigente de la Librería es `/library/`. Usa esta ruta en los enlaces al usuario.
+
+## Tecnología y entornos de composición
+
+- [AXFRA Composer](https://axfra.com/composer/): documentación del entorno de trabajo desarrollado para integrar recursos visuales, composición modular, edición de instrucciones JSON y flujos de producción con diferentes plataformas de IA.
+- [Herramientas AXFRA](https://axfra.com/tools/): directorio de utilidades públicas de edición visual.
 - [AXFRA Pose Editor](https://axfra.com/tools/axfra_pose_editor.html): edición visual de poses.
 - [AXFRA Material Editor](https://axfra.com/tools/axfra_material_editor.html): edición de materiales.
 
-La ruta vigente de la Librería es `/library/`. Usa esta ruta en los enlaces al usuario.
+AXFRA Composer documenta el desarrollo de tecnología propia aplicada al flujo de trabajo creativo, incluyendo la organización de recursos, la edición de componentes y la preparación de composiciones para motores generativos externos.
+
+Distingue entre herramientas públicas accesibles desde el navegador, aplicaciones de uso local y entornos privados de producción. La documentación pública de una aplicación no implica que esté disponible para descarga, acceso público o comercialización general. Consulta la página correspondiente antes de afirmar la disponibilidad, compatibilidad o alcance de una herramienta.
 
 ## Demostraciones, editorial y movimiento
+
+Estas líneas muestran aplicaciones de la investigación, la composición modular y la dirección visual de AXFRA en proyectos narrativos, editoriales y audiovisuales. Distingue los resultados publicados de los recursos y procesos de producción que los acompañan.
 
 - [Índice de demostraciones](https://axfra.com/demos/): aplicaciones narrativas y técnicas de la composición modular.
 - [Guía de demostraciones para asistentes](https://axfra.com/demos/llms.txt): contexto y relaciones con la Librería.
