@@ -64,7 +64,7 @@
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: contain;
-      background: #090b0c;
+      background: #090b0c url('https://axfra.com/images/editorial/axfra_composer.jpg') center / cover no-repeat;
       border: 1px solid var(--line);
       border-radius: .8rem;
     }
@@ -77,14 +77,14 @@
     section p { margin-top: .85rem; }
     .workflow-heading { margin-top: 1.5rem; }
     .organizer-preview { margin: 1.25rem 0 0; }
-  .organizer-preview img {
-  display: block;
-  width: 100%;
-  max-width: 640px;
-  height: auto;
-  border: 1px solid var(--line);
-  border-radius: .8rem;
-}
+    .organizer-preview img {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: .8rem;
+    }
     .cards {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -159,7 +159,6 @@
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
   <div id="globalHeader"></div>
-
   <main class="wrap" id="contenido">
     <div class="hero">
       <h1>AXFRA Composer</h1>
@@ -178,26 +177,23 @@ Más que generar imágenes, me interesa construir un entorno en el que
 las ideas puedan evolucionar y la tecnología esté al servicio
 de la creatividad.</p>
     </div>
-
     <figure class="demo" id="demo">
       <video id="axfra-demo"
              controls
              playsinline
-             preload="metadata"
-             poster="/images/editorial/axfra_composer.jpg"
+             preload="none"
+             poster="https://axfra.com/images/editorial/axfra_composer.jpg"
              aria-label="Demostración de AXFRA Composer">
       </video>
       <figcaption>
         <p>AXFRA Composer en acción · De la idea a la composición visual con inteligencia artificial.</p>
       </figcaption>
     </figure>
-
     <section aria-labelledby="componer">
       <h2 id="componer">La construcción de una idea</h2>
       <p>AXFRA comenzó como una investigación sobre la posibilidad de construir imágenes a partir de componentes independientes. Con el tiempo, esa experimentación dio forma a una biblioteca visual de módulos JSON reutilizables: identidades, vestuario, poses, ambientes, iluminación y cámara. Composer surge de la necesidad de reunir esos recursos en un espacio de trabajo común, donde puedan combinarse y editarse sin tener que reconstruir cada escena desde cero.</p>
       <p>La biblioteca y el editor JSON permiten trabajar visualmente con esos componentes, modificar sus parámetros y llevar la composición a distintos sistemas de inteligencia artificial, como Grok, Gemini o ChatGPT. Los módulos pueden conservarse, evolucionar durante la producción y volver a incorporarse a la biblioteca de AXFRA.com. Así, cada proyecto contribuye también al desarrollo de los siguientes.</p>
     </section>
-
     <section aria-labelledby="produccion">
       <h2 id="produccion">De la experimentación a la producción</h2>
       <p>El desarrollo de herramientas propias adquiere sentido cuando estas se incorporan al trabajo cotidiano. AXFRA Magazine y AXFRA Motion son ejemplos concretos de esa transición: proyectos donde la reutilización de identidades, vestuario y otros recursos permite explorar distintas propuestas visuales en menos tiempo, mantener una dirección creativa y dar continuidad a las composiciones desde la imagen fija hasta el movimiento.</p>
@@ -212,11 +208,9 @@ de la creatividad.</p>
         </a>
       </div>
     </section>
-
     <section aria-labelledby="escritorio">
       <h2 id="escritorio">Un entorno creativo integrado</h2>
       <p>La inteligencia artificial no sustituye necesariamente las herramientas con las que ya trabajamos. El desafío está en integrarlas de forma natural. De esa necesidad surge también <strong>AXFRA Safari Split Panel</strong>, una herramienta que permite distribuir el espacio de trabajo entre Composer y los distintos sistemas de IA, manteniendo ambos entornos disponibles simultáneamente y adaptando sus proporciones a cada pantalla.</p>
-
       <div class="distribution" aria-label="Distribución de ventanas 60/40">
         <span>Composer · 60 %</span>
         <span>IA · 40 %</span>
@@ -228,41 +222,32 @@ de la creatividad.</p>
              width="640" height="480" loading="lazy">
         <figcaption>AXFRA Composer · Organización y continuidad del proceso creativo.</figcaption>
       </figure>
-
       <p>El entorno se complementa con accesos directos a Illustrator, Photoshop, InDesign, Dreamweaver, AXFRA.com, ChatGPT, Grok y GitHub. La intención es reducir las interrupciones entre la composición, la experimentación visual, la edición y la publicación, respetando las distintas maneras de trabajar tanto en el escritorio como en el portátil.</p>
-
       <h3 class="workflow-heading">Organizar para seguir creando</h3>
       <p>Otro aspecto de la experimentación con inteligencia artificial es la continuidad. A medida que crecen los proyectos, también aumenta la cantidad de conversaciones, imágenes, pruebas y decisiones creativas. <strong>AXFRA Grok Organizer</strong> nace como una herramienta de uso interno para organizar las sesiones por personaje o proyecto y recuperar el contexto de trabajo sin perder el hilo de una idea.</p>
       <p>Composer y estas herramientas complementarias forman parte de un proceso de investigación y desarrollo continuo. No nacieron de la intención de crear un producto de distribución masiva, sino de necesidades reales de producción. Son una forma de explorar cómo la inteligencia artificial puede convivir con las herramientas existentes y cómo podemos desarrollar otras nuevas cuando nuestra manera de crear así lo requiere.</p>
-
         <figure class="organizer-preview">
         <img src="/images/editorial/axfra_grok_organizer.jpg"
              alt="AXFRA Grok Organizer muestra la sesión Paulina · Diabla con sus imágenes, prompt y notas."
              width="640" height="480" loading="lazy">
         <figcaption>AXFRA Grok Organizer · Organización y continuidad del proceso creativo.</figcaption>
       </figure>
-
       <p>Aunque AXFRA Composer nació para resolver mis propias
         necesidades de producción, al mostrarlo en funcionamiento
         despertó espontáneamente el interés de profesionales de mi
         entorno cercano. Algunos quisieron adquirirlo y hoy lo
         utilizan en sus propios procesos creativos.</p>
-
       <p>Una experiencia que demuestra cómo una herramienta
         desarrollada desde la práctica puede encontrar aplicaciones
         más allá de su propósito original.</p>
-
     </section>
   </main>
-
   <div id="globalFooter"></div>
-
   <script defer src="/shared-layout.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
   <script>
     const video = document.getElementById('axfra-demo');
     const src = 'https://video.twimg.com/amplify_video/2126045162828697600/pl/3J-n7WDRAT15ATTv.m3u8';
-
     function startHls() {
       if (!window.Hls || !Hls.isSupported()) {
         console.warn('hls.js no disponible o no soportado');
@@ -272,7 +257,6 @@ de la creatividad.</p>
         }
         return;
       }
-
       const hls = new Hls({
         enableWorker: true,
         fetchSetup: function (context, initParams) {
@@ -280,11 +264,9 @@ de la creatividad.</p>
           return new Request(context.url, initParams);
         }
       });
-
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         console.log('Manifest cargado correctamente');
       });
-
       hls.on(Hls.Events.ERROR, (event, data) => {
         console.error('HLS Error:', data.type, data.details, data);
         if (data.fatal) {
@@ -304,11 +286,9 @@ de la creatividad.</p>
           }
         }
       });
-
       hls.loadSource(src);
       hls.attachMedia(video);
     }
-
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', startHls);
     } else {
