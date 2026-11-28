@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#080808" name="theme-color"/>
+<title>AXFRA Motion — Animación y transformación con IA | AXFRA</title>
+<meta content="AXFRA Motion: tres demostraciones de animación con IA — KATEFA, Paulina y Viktoria. Movimiento, dirección audiovisual, continuidad visual y secuencias JSON." name="description"/>
+<meta content="ALARSI" name="author"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://axfra.com/motion/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="AXFRA" property="og:site_name"/>
+<meta content="es_CL" property="og:locale"/>
+<meta content="AXFRA Motion — El movimiento comienza antes del primer fotograma" property="og:title"/>
+<meta content="Tres demostraciones de animación con IA: KATEFA, Crimson Ribbon Bloom y Pearl Green Ribbon Bloom. Video editorial y módulos de movimiento AXFRA." property="og:description"/>
+<meta content="https://axfra.com/motion/" property="og:url"/>
+<meta content="https://axfra.com/magazine/images/axfra_magazine_katefa_01.jpg" property="og:image"/>
+<meta content="Portada de KATEFA en AXFRA Magazine, referencia visual del video editorial" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://axfra.com/magazine/images/axfra_magazine_katefa_01.jpg" name="twitter:image"/>
+<meta name="referrer" content="no-referrer">
+<link href="/shared-layout.css" rel="stylesheet"/>
+<link href="/demo-conclusion.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://axfra.com/motion/#webpage","url":"https://axfra.com/motion/","name":"AXFRA Motion — El movimiento comienza antes del primer fotograma","description":"Dirección audiovisual y animación con IA: tres demostraciones verticales, KATEFA, Crimson Ribbon Bloom y Pearl Green Ribbon Bloom, con videos y composiciones estructuradas.","inLanguage":"es-CL","isPartOf":{"@id":"https://axfra.com/#website"},"mainEntity":{"@id":"https://axfra.com/motion/#videos"}},{"@type":"ItemList","@id":"https://axfra.com/motion/#videos","numberOfItems":3,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://axfra.com/motion/#video-katefa"}},{"@type":"ListItem","position":2,"item":{"@id":"https://axfra.com/motion/#video-crimson"}},{"@type":"ListItem","position":3,"item":{"@id":"https://axfra.com/motion/#video-pearl"}}]},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-katefa","name":"KATEFA — AXFRA Magazine Animation","description":"Animación editorial vertical de KATEFA basada en una portada de AXFRA Magazine; composición visual, movimiento de cámara y continuidad de identidad.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_katefa_01.jpg","contentUrl":"https://axfra.com/video/axfra_magazine_katefa_animation.mp4","inLanguage":"es-CL","width":768,"height":1168,"duration":"PT12.5S","uploadDate":"2026-11-24","creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"}},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-crimson","name":"Crimson Ribbon Bloom — AXFRA Motion","description":"Animación vertical con cintas rojas y negras, cristales, flor y estructuras alares temporales.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_paulina_01.jpg","contentUrl":"https://axfra.com/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4","inLanguage":"es-CL","width":768,"height":1152,"creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"uploadDate":"2026-11-24","duration":"PT15S"},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-pearl","name":"Pearl Green Ribbon Bloom — AXFRA Motion","description":"Variación de animación vertical con cintas blancas y verdes, cristales perlados y floración luminosa.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_viktoria_01.jpg","contentUrl":"https://axfra.com/video/axfra_motion_pearl_green_ribbon_bloom.mp4","inLanguage":"es-CL","width":768,"height":1152,"creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"uploadDate":"2026-11-24"}]}
+</script>
+
+
+<style>
+
+/* ==================================================
+   01. VARIABLES GENERALES
+   ================================================== */
+
+:root {
+    --bg: #080808;
+    --line: #37383b;
+    --muted: #b3bdbe;
+    --ink: #f4f4f3;
+    --accent: #bacbc5;
+    color-scheme: dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 94px;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.7 Inter, system-ui, -apple-system, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ==================================================
+   02. CONTENEDORES Y HEADER
+   ================================================== */
+
+.wrap,
+#globalHeader .wrap {
+    width: min(1200px, calc(100% - 44px));
+    margin: auto;
+}
+
+main .wrap {
+    width: min(1200px, calc(100% - 64px));
+}
+
+#globalHeader .site-header {
+    color: #f3f5f4;
+}
+
+
+/* ==================================================
+   03. TIPOGRAFÍA GENERAL
+   ================================================== */
+
+.eyebrow {
+    font-size: .73rem;
+    font-weight: 750;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: #cadbd4;
+}
+
+h1 {
+    margin: 16px 0 22px;
+    font-size: clamp(3.6rem, 10vw, 8.5rem);
+    line-height: .94;
+    letter-spacing: -.07em;
+}
+
+h1 span {
+    display: block;
+    color: #d9d8d1;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2,
+.motion-identities h2 {
+    font-size: clamp(2rem, 4.6vw, 4.1rem);
+    line-height: 1.08;
+    letter-spacing: -.045em;
+    margin: 12px 0 18px;
+}
+
+
+/* ==================================================
+   04. HERO — M.A.R.I.A.
+   ================================================== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(480px, 47vw, 680px);
+    display: flex;
+    align-items: center;
+    padding: clamp(56px, 8vw, 110px) 0;
+    border: 0;
+
+    background-color: #080808;
+    background-image: url('https://axfra.com/motion/axfra_maria_luz_camara_AXFRA.jpg');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        90deg,
+        #080808 0%,
+        rgba(8, 8, 8, .97) 18%,
+        rgba(8, 8, 8, .72) 42%,
+        transparent 78%
+    );
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: clamp(3.6rem, 8vw, 7.5rem);
+}
+
+.tagline {
+    margin: 0 0 22px;
+    font-size: clamp(1.3rem, 3.3vw, 2.6rem);
+    letter-spacing: -.035em;
+    line-height: 1.18;
+    max-width: 650px;
+}
+
+.intro {
+    color: #c5cbcb;
+    font-size: 1.09rem;
+    max-width: 560px;
+}
+
+.anchors {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    max-width: 650px;
+}
+
+
+/* ==================================================
+   05. BOTONES Y ENLACES
+   ================================================== */
+
+.anchors a,
+.case-actions a,
+.case-actions button,
+.identity-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 10px 14px;
+    border: 1px solid #515755;
+    border-radius: 0;
+    background: transparent;
+    color: var(--ink);
+    text-decoration: none;
+    font: inherit;
+    font-size: .78rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.anchors a:first-child {
+    background: #c8d7d0;
+    color: #101412;
+    border-color: #c8d7d0;
+}
+
+.anchors a:hover,
+.case-actions a:hover,
+.case-actions button:hover,
+.identity-link:hover {
+    background: #242b28;
+    color: #fff;
+}
+
+
+/* ==================================================
+   06. VIDEO PRINCIPAL — LUZ, CÁMARA, AXFRA
+   ================================================== */
+
+.hero-video {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+    background: transparent;
+}
+
+.hero-video figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.hero-video video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #080808;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hero-video figcaption {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: .8rem;
+    border: 0;
+}
+
+
+/* AXFRA — Poster independiente del streaming */
+.axfra-video-stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #080808;
+    overflow: hidden;
+}
+.axfra-video-stage video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.axfra-video-poster {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #080808;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .35s ease, visibility .35s ease;
+}
+.axfra-video-poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.axfra-video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    padding-left: 4px;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 50%;
+    background: rgba(0,0,0,.55);
+    color: #fff;
+    font-size: 27px;
+    transition: background .25s ease;
+}
+.axfra-video-poster:hover .axfra-video-play {
+    background: rgba(0,0,0,.85);
+}
+.axfra-video-poster.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.axfra-video-poster:focus-visible {
+    outline: 2px solid #bacbc5;
+    outline-offset: -4px;
+}
+.axfra-video-status { margin: 0; color: var(--muted); font-size: .8rem; }
+.axfra-video-status:empty { display: none; }
+@media (prefers-reduced-motion: reduce) {
+    .axfra-video-poster { transition: none; }
+}
+
+/* ==================================================
+   07. ARCHIVO EN MOVIMIENTO — IDENTIDADES
+   ================================================== */
+
+.motion-identities {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.motion-identities p {
+    color: var(--muted);
+    max-width: 800px;
+}
+
+/* Distribución de personajes */
+
+.identity-grid {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.identity-grid a {
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+    border: 0;
+}
+
+.identity-grid figure {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Imágenes completas, sin recorte */
+
+.identity-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto 9 / 16;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Nombre de cada personaje */
+
+.identity-grid figcaption {
+    margin-top: auto;
+    padding: 9px 0;
+    border: 0;
+    font-size: .78rem;
+    font-weight: 650;
+    text-align: center;
+    color: var(--ink);
+}
+
+/* Interacción sin marco */
+
+.identity-grid a:hover figcaption {
+    color: #bacbc5;
+}
+
+.identity-grid a:hover img {
+    opacity: .85;
+}
+
+
+/* ==================================================
+   08. COVER MOTION — DEMOSTRACIONES VERTICALES
+   ================================================== */
+
+.cases-grid {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.cases-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+/* Contenedor individual de cada demostración */
+
+.case-col {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Títulos */
+
+.case-col h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+    line-height: 1.15;
+    margin: 8px 0 18px;
+    min-height: 3.6em;
+    overflow-wrap: anywhere;
+}
+
+.case-col .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .08em;
+}
+
+/* Contenedor audiovisual */
+
+.case-col figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.case-col .media {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.case-col .media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background: #080808;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Pie del video */
+
+.case-col figcaption {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: .8rem;
+    border: 0;
+}
+
+/* Textos descriptivos */
+
+.case-col .case-lead {
+    font-size: .9rem;
+    margin: 12px 0 6px;
+    color: #d4d4d2;
+}
+
+.case-col .case-desc {
+    font-size: .88rem;
+    line-height: 1.45;
+    color: #adb5b3;
+    margin: 0 0 14px;
+    min-height: 5.2em;
+}
+
+/* Acciones */
+
+.case-col .case-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    font-size: .85rem;
+}
+
+
+/* ==================================================
+   09. MÓDULOS JSON DESPLEGABLES
+   ================================================== */
+
+/* Se conserva el borde por tratarse de un control */
+
+.json-details {
+    margin-top: 30px;
+    border: 1px solid #343b3b;
+    background: #101315;
+}
+
+.case-col .json-details {
+    margin-top: 16px;
+    font-size: .85rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.json-details summary {
+    cursor: pointer;
+    padding: 12px;
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+/* Cabecera del código */
+
+.code-top {
+    border-top: 1px solid #343b3b;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 16px;
+}
+
+.code-top strong {
+    font-size: .78rem;
+    overflow-wrap: anywhere;
+    color: #bfcbc8;
+}
+
+.code-top button {
+    border: 1px solid #62726e;
+    background: #1b2322;
+    color: #f8faf8;
+    padding: 9px 13px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Visualización del JSON */
+
+pre {
+    margin: 0;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+    max-height: 470px;
+    overflow: auto;
+    color: #dce9e4;
+    white-space: pre;
+}
+
+.case-col .json-details pre {
+    font-size: .75rem;
+    max-height: 280px;
+    overflow: auto;
+}
+
+
+/* ==================================================
+   10. QUÉ SE DIRIGE
+   ================================================== */
+
+.motion-direction {
+    padding: clamp(55px, 7vw, 90px) 0;
+    border: 0;
+}
+
+.motion-direction h2 {
+    font-size: clamp(2rem, 4.6vw, 4.1rem);
+    line-height: 1.08;
+    letter-spacing: -.045em;
+    margin: 13px 0 24px;
+}
+
+.motion-direction > .wrap > p {
+    color: #c1b9b6;
+    max-width: 800px;
+}
+
+/* Distribución de principios */
+
+.motion-principles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Principios sin tarjetas ni marcos */
+
+.motion-principles article {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.motion-principles h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+}
+
+.motion-principles p {
+    margin: 0;
+    color: #c1b9b6;
+    font-size: .91rem;
+}
+
+/* Nota editorial */
+
+.motion-note {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-top: 34px;
+}
+
+.motion-note p {
+    margin: 0;
+    color: #cfc5c2;
+    max-width: 860px;
+}
+
+
+/* ==================================================
+   11. COMPARTIR
+   ================================================== */
+
+.share-motion {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.share-status {
+    font-size: .85rem;
+    color: #d2e3da;
+}
+
+.share-status:empty {
+    display: none;
+}
+
+
+/* ==================================================
+   12. PREGUNTAR SOBRE AXFRA — IA
+   ================================================== */
+
+/* Contenedor abierto, sin tarjeta */
+
+.motion-ai form {
+    display: grid;
+    gap: 12px;
+    max-width: 100%;
+    margin-top: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Campos de formulario */
+
+.motion-ai select,
+.motion-ai textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background: #151917;
+    color: #f4efed;
+    border: 1px solid #515755;
+    border-radius: 0;
+    font: inherit;
+}
+
+.motion-ai textarea {
+    resize: vertical;
+}
+
+.motion-ai textarea[hidden] {
+    display: none;
+}
+
+/* Botones de asistentes */
+
+.motion-ai-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.motion-ai button,
+.motion-ai-actions a {
+    background: #151917;
+    color: #f4efed;
+    border: 1px solid #515755;
+    border-radius: 0;
+    padding: 10px 14px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.motion-ai button:hover,
+.motion-ai-actions a:hover {
+    background: #242b28;
+}
+
+/* Botón principal */
+
+.motion-ai form > button {
+    justify-self: start;
+    background: #c8d7d0;
+    color: #101412;
+    border-color: #c8d7d0;
+    font-weight: 700;
+}
+
+.motion-ai form > button:hover {
+    background: #e2ece7;
+}
+
+/* Estado de consulta */
+
+.motion-ai-status {
+    margin: 0;
+    color: #e5d5db;
+}
+
+.motion-ai-status:empty {
+    display: none;
+}
+
+
+/* ==================================================
+   13. MÉTODO — CIERRE EDITORIAL
+   ================================================== */
+
+.endnote {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.endnote h2 {
+    font-size: clamp(2rem, 4vw, 3.7rem);
+    letter-spacing: -.05em;
+    margin: 10px 0 18px;
+}
+
+.endnote p {
+    max-width: 860px;
+    color: #b9c3c0;
+}
+
+/* Conclusión corporativa de Motion */
+
+.axfra-demo-conclusion {
+    border: 0;
+    box-shadow: none;
+}
+
+.axfra-demo-conclusion-inner {
+    border: 0;
+    box-shadow: none;
+}
+
+
+/* ==================================================
+   14. RESPONSIVE — TABLET Y LAPTOP
+   ================================================== */
+
+@media (max-width: 1050px) {
+
+    .identity-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .cases-columns {
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .motion-principles {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}
+
+
+/* ==================================================
+   15. RESPONSIVE — MÓVIL
+   ================================================== */
+
+@media (max-width: 760px) {
+
+    main .wrap {
+        width: calc(100% - 32px);
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 0;
+        padding: 0 0 42px;
+        background-size: 100% auto;
+        background-position: top center;
+    }
+
+    .hero::before {
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            #080808 48%
+        );
+    }
+
+    .hero .wrap {
+        padding-top: clamp(180px, 53vw, 400px);
+    }
+
+    .hero h1 {
+        font-size: clamp(3.2rem, 13vw, 6rem);
+    }
+
+    /* Demostraciones verticales */
+
+    .cases-columns {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .case-col h2,
+    .case-col .case-desc {
+        min-height: 0;
+    }
+
+    .case-col .media {
+        max-width: 480px;
+        align-self: center;
+    }
+
+    /* Identidades */
+
+    .identity-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .wrap,
+    #globalHeader .wrap {
+        width: calc(100% - 28px);
+    }
+
+    h1 {
+        font-size: clamp(3.2rem, 15vw, 6rem);
+    }
+
+}
+
+</style>
+
+
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div id="globalHeader"></div>
+<main id="contenido">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">AXFRA / Dirección audiovisual</div>
+    <h1>AXFRA <span>MOTION</span></h1>
+    <p class="tagline">El movimiento comienza antes del primer fotograma.</p>
+    <p class="intro">La animación también se compone: acción, continuidad, cámara, materiales y ritmo. AXFRA organiza decisiones visuales y temporales para dar movimiento a imágenes de referencia.</p>
+    <div class="anchors">
+      <a href="#luz-camara">Luz, Cámara, AXFRA!</a>
+      <a href="#identidades">Identidades</a>
+      <a href="#cover-motion">Cover Motion</a>
+      <a href="/magazine/">Magazine</a>
+    </div>
+  </div>
+</section>
+
+<!-- NUEVO VIDEO (antes de la sección 01) -->
+<section class="hero-video" id="luz-camara">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">AXFRA / Motion Picture</div><h2>Luz, Cámara, AXFRA!</h2></div>
+    <figure>
+      <div class="axfra-video-stage">
+        <video id="axfra-luz-camara"
+               controls
+               playsinline
+               preload="none"
+               poster="/motion/axfra_motion_luz_camara_indira_maria_poster.jpg"
+               aria-label="Demostración de AXFRA Motion — Luz, Cámara, AXFRA">
+        </video>
+        <button class="axfra-video-poster" id="axfra-luz-camara-poster"
+                type="button" aria-label="Reproducir Luz, Cámara, AXFRA">
+          <img src="/motion/axfra_motion_luz_camara_indira_maria_poster.jpg"
+               alt="Indira y M.A.R.I.A. abrazadas, formando un encuadre cinematográfico con sus manos."
+               loading="lazy" decoding="async">
+          <span class="axfra-video-play" aria-hidden="true">&#9654;</span>
+        </button>
+      </div>
+      <p id="axfra-video-status" class="axfra-video-status" role="status"></p>
+      <figcaption>Luz, Cámara, AXFRA · Demostración de movimiento</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="motion-identities" id="identidades">
+  <div class="wrap">
+    <div class="eyebrow">Archivo en movimiento</div>
+    <h2>Identidades presentes.</h2>
+    <p>El montaje recorre varias identidades del archivo AXFRA. La dirección se mantiene; el sujeto cambia.</p>
+
+    <div class="identity-grid">
+
+  <a href="/identities/amina.html">
+    <figure>
+      <img src="/images/identity/axfra_amina.png"
+           alt="AXFRA Motion: Amina con vestuario azul metalizado, retratos desde distintos ángulos y salpicaduras multicolores sobre fondo negro."
+           title="Amina — Continuidad de identidad, expresión facial y movimiento en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Amina</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/dotsy.html">
+    <figure>
+      <img src="/images/identity/axfra_dotsy.png"
+           alt="AXFRA Motion: Dotsy con cabello negro ondulado, vestuario verde esmeralda y composición de retratos y cuerpo entero."
+           title="Dotsy — Consistencia facial, dirección de pose y materiales reflectantes en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Dotsy</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/hana.html">
+    <figure>
+      <img src="/images/identity/axfra_hana.png"
+           alt="AXFRA Motion: Hana con cabello negro corto, vestuario amarillo brillante y pose dinámica entre salpicaduras de color."
+           title="Hana — Dirección de movimiento, expresión y continuidad visual en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Hana</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/indira.html">
+    <figure>
+      <img src="/images/identity/axfra_indira.png"
+           alt="AXFRA Motion: Indira con vestuario negro metalizado, retratos frontal y lateral y composición monocromática."
+           title="Indira — Identidad visual, control de iluminación y superficies reflectantes en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Indira</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/mara.html">
+    <figure>
+      <img src="/images/identity/axfra_mara.png"
+           alt="AXFRA Motion: Mara con cabello rubio, vestuario naranja metalizado y pinceladas abstractas naranjas y blancas."
+           title="Mara — Dirección cromática, continuidad facial y composición visual en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Mara</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/maria.html">
+    <figure>
+      <img src="https://axfra.com/images/editorial/axfra_maria_black_background.jpg"
+           alt="AXFRA Motion: M.A.R.I.A. con armadura cibernética blanca, componentes mecánicos y luces azules en una composición de múltiples perspectivas."
+           title="M.A.R.I.A. — Diseño cibernético, transformación visual y continuidad de identidad en AXFRA."
+           width="1152"
+           height="1728"
+           loading="lazy"
+           decoding="async">
+      <figcaption>M.A.R.I.A.</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/mira.html">
+    <figure>
+      <img src="/images/identity/axfra_mira.png"
+           alt="AXFRA Motion: Mira con cabello pelirrojo ondulado, pecas, vestuario violeta metalizado y retratos desde diferentes perspectivas."
+           title="Mira — Consistencia de rasgos faciales, expresión y dirección artística en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Mira</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/paulina.html">
+    <figure>
+      <img src="/images/identity/axfra_paulina.png"
+           alt="AXFRA Motion: Paulina con cabello rubio ondulado, vestuario rojo metalizado y composición dinámica de retratos y cuerpo entero."
+           title="Paulina — Continuidad de personaje, dirección de pose y composición audiovisual en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Paulina</figcaption>
+    </figure>
+  </a>
+
+  <a href="/identities/viktoria.html">
+    <figure>
+      <img src="/images/identity/axfra_viktoria.png"
+           alt="AXFRA Motion: Viktoria con cabello oscuro, vestuario blanco perlado y pinceladas multicolores que conectan distintas perspectivas del personaje."
+           title="Viktoria — Continuidad de identidad, materiales perlados y dirección visual en AXFRA."
+           width="1080"
+           height="1920"
+           loading="lazy"
+           decoding="async">
+      <figcaption>Viktoria</figcaption>
+    </figure>
+  </a>
+
+</div>
+
+    <p style="margin-top:1.5rem"><a class="identity-link" href="/identities.html">Ver todas las identidades ↗</a></p>
+  </div>
+</section>
+
+<section class="cases-grid" id="cover-motion">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">AXFRA / Magazine</div><h2>Cover Motion</h2></div>
+    <div class="cases-columns">
+
+      <!-- Katefa -->
+      <article class="case-col" id="katefa">
+        <div class="eyebrow">01 · Vertical</div>
+        <h2>Katefa:<br>Orbit 360º</h2>
+        <figure class="media media-video">
+          <video aria-label="Animación editorial de KATEFA" controls playsinline poster="/magazine/images/axfra_magazine_katefa_01.jpg" preload="metadata">
+            <source src="/video/axfra_magazine_katefa_animation.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: KATEFA</figcaption>
+        </figure>
+        <p class="case-lead">Identidad editorial · cámara · continuidad</p>
+        <p class="case-desc">De portada de Magazine a secuencia. El movimiento amplía la composición sin perder el rostro, el vestuario ni el lenguaje gráfico.</p>
+        <div class="case-actions">
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
+        </div>
+      </article>
+
+      <!-- Crimson -->
+      <article class="case-col" id="crimson">
+        <div class="eyebrow">02 · 2:3</div>
+        <h2>Paulina:<br>
+          Crimson Ribbon Bloom</h2>
+        <figure class="media media-video">
+          <video aria-label="Crimson Ribbon Bloom" controls playsinline poster="/magazine/images/axfra_magazine_paulina_01.jpg" preload="metadata">
+            <source src="/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: Paulina</figcaption>
+        </figure>
+        <p class="case-lead">Cintas carmesí · cristales · transformación</p>
+        <p class="case-desc">Doce etapas. De cintas a flor, mandalas y estructuras alares temporales, sobre la referencia editorial de Paulina.</p>
+        <div class="case-actions">
+          <a href="#json-crimson">Ver JSON</a>
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
+        </div>
+        <details class="json-details" id="json-crimson">
+          <summary>JSON · Crimson Ribbon Bloom</summary>
+          <div class="code-top">
+            <strong>axfra_motion_animation_crimson_ribbon_bloom.json</strong>
+            <button data-copy="code-crimson" type="button">Copiar</button>
+          </div>
+          <pre><code id="code-crimson">{
+  "id": "AXFRA_motion_animation_crimson_ribbon_bloom",
+  "name": "Crimson Ribbon Bloom Transformation",
+  "name_es": "Transformación de cintas carmesí en flor y alas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.1"
+  },
+  "archive": "AXFRA",
+  "category": "motion",
+  "slot": "animation",
+  "piece_family": "cinematic_transformation_sequence",
+  "swap_rule": "Reference this ID to apply the complete 12-stage sequence to the subject in the input image. Preserve the subject’s existing identity, appearance, anatomy, wardrobe, and original visual context unless a stage specifically requires a temporary visual effect. Do not assign a character name, gender, role, species, costume, or backstory. Keep the ordered ribbon-to-flower-to-wing transformation and camera moves.",
+  "subject": {
+    "source": "active input image",
+    "reference": "the subject",
+    "identity_rule": "Use the existing main subject from the input image. Preserve recognizable identity, facial features, body proportions, hair, wardrobe, and other defining attributes. Do not invent any character identity, gender, role, or costume.",
+    "adaptation_rule": "Adapt movements to the subject’s anatomy and physical possibilities without adding unrelated features."
+  },
+  "sequence": {
+    "step_count": 12,
+    "order": "strict",
+    "continuity": "One continuous cinematic progression; stages transition into one another without resetting the ribbons, particles, crystals, flower, or wings.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Rapid Expansive Surge",
+        "action": "Translucent red crystal fragments float in midair while red and black fabric ribbons catch and violently twist around the center, forming a chaotic organic cocoon.",
+        "camera": "Dynamic wide view toward the center",
+        "effects": "High-speed ribbon twisting with floating crystals"
+      },
+      {
+        "step": 2,
+        "name": "Pressure Build",
+        "action": "The cocoon compresses forcefully, pulses with brilliant internal energy; ribbons tighten and vibrate, with sparks and a visible magical pulse.",
+        "camera": "Hold on the compressed cocoon",
+        "effects": "Increasing tension and pulsing internal light"
+      },
+      {
+        "step": 3,
+        "name": "Radial Explosion",
+        "action": "The cocoon explodes outward in a dramatic radial burst of ribbons, fabric arcs, intense magical energy and physically convincing particles.",
+        "camera": "Capture the radial expansion",
+        "effects": "Explosive fabric and particle dynamics"
+      },
+      {
+        "step": 4,
+        "name": "Subject Reveal",
+        "action": "The subject appears at the center as the cocoon opens, moving the right arm through a fast, precise arc while the ribbons accelerate realistically around the subject. Adapt the gesture if necessary to the subject’s anatomy.",
+        "camera": "Reveal the subject at the center",
+        "effects": "Fast right-arm arc and accelerating ribbons"
+      },
+      {
+        "step": 5,
+        "name": "Spiral Ascent",
+        "action": "The subject rises and rotates in a controlled, natural movement while upward-coiling ribbons build a towering vertical floral structure.",
+        "camera": "Low-angle camera ascends in a spiral",
+        "effects": "Upward spiral of fabric, floral tower construction"
+      },
+      {
+        "step": 6,
+        "name": "Bloom Snap",
+        "action": "The ribbon tower opens dramatically into a gigantic layered flower, revealing the subject at its center with a powerful visual impact and a sharp SNAP sound.",
+        "camera": "Frame the flower expansion and central reveal",
+        "effects": "Layered petal opening; synchronized SNAP"
+      },
+      {
+        "step": 7,
+        "name": "Through the Petals",
+        "action": "The subject moves through the enormous petals, turning as they fold and reform responsively around the movement.",
+        "camera": "Follow movement through the petals",
+        "effects": "Responsive folding and re-forming petals"
+      },
+      {
+        "step": 8,
+        "name": "Rotating Mandala",
+        "action": "The flower reorganizes into concentric rotating mandala rings around the subject, forming elaborate, elegant geometric patterns.",
+        "camera": "Keep the subject visually centered within rings",
+        "effects": "Concentric ring rotation and ordered transformation"
+      },
+      {
+        "step": 9,
+        "name": "Calligraphic Release",
+        "action": "The mandala rings dissolve into dynamic black-ribbon calligraphic strokes with rhythmic motion and strong visual snapping accents.",
+        "camera": "Track calligraphic strokes without losing the subject",
+        "effects": "Black-ribbon calligraphy and rhythmic snaps"
+      },
+      {
+        "step": 10,
+        "name": "Ribbon Storm",
+        "action": "The ribbons multiply into a fast, chaotic but visually controlled storm; fabric trails rush toward the camera without obscuring the subject for extended periods.",
+        "camera": "Emphasize ribbons traveling toward the lens",
+        "effects": "High-velocity ribbons and energetic trails"
+      },
+      {
+        "step": 11,
+        "name": "Ribbon Wing Formation",
+        "action": "Storm ribbons gather behind the subject into large, majestic red wing-shaped structures with luminous edges, opening with realistic fabric weight and motion. These are temporary ribbon effects, not anatomical wings or costume additions.",
+        "camera": "Reveal the full wings behind the subject",
+        "effects": "Ribbon-to-wing formation; physically weighted unfolding"
+      },
+      {
+        "step": 12,
+        "name": "Final Wide Reveal",
+        "action": "A final wide shot shows the subject framed by fully open red wing-shaped ribbon structures; loose strands and red crystals orbit the subject as fine glowing particles float in subtle ethereal light. Preserve the subject’s original identity and wardrobe.",
+        "camera": "Final wide shot",
+        "effects": "Orbiting crystals and ribbons, floating particles, subtle ethereal glow"
+      }
+    ]
+  },
+  "visual_effects": {
+    "primary_materials": [
+      "translucent red crystal fragments",
+      "red fabric ribbons",
+      "black fabric ribbons"
+    ],
+    "transformations": [
+      "organic cocoon",
+      "compressed pulsing cocoon",
+      "radial explosion",
+      "vertical flower tower",
+      "gigantic layered flower",
+      "concentric rotating mandalas",
+      "black calligraphic ribbons",
+      "ribbon storm",
+      "red wing-shaped ribbon structures (visual effect only)"
+    ],
+    "physics": "Plausible inertia, fabric tension, acceleration, weight, and continuous particle trajectories; supernatural energy is a stylized visual effect.",
+    "lighting": "Dramatic cinematic light with glowing magical pulses, luminous wing edges, and a subtle ethereal final glow."
+  },
+  "audio_cue": {
+    "step": 6,
+    "sound": "SNAP",
+    "context": "Synchronized with the layered flower opening"
+  },
+  "constraints": [
+    "Preserve the sequence order and all 12 distinct actions.",
+    "Do not add new costumes, identities, or facial characteristics.",
+    "Avoid replacing continuous fabric motion with disconnected scene cuts.",
+    "Maintain readable staging of the subject throughout the transformation.",
+    "Treat the visible input-image subject as the only identity reference.",
+    "Do not assign any character type, role, or gender. Wing shapes are temporary ribbon effects.",
+    "Adapt camera framing to the original composition when required; do not replace the background unnecessarily."
+  ]
+}</code></pre>
+        </details>
+      </article>
+
+      <!-- Pearl -->
+      <article class="case-col" id="pearl">
+        <div class="eyebrow">03 · 2:3</div>
+        <h2>Viktoria:<br>
+          Pearl Green Ribbon Bloom</h2>
+        <figure class="media media-video">
+          <video aria-label="Pearl Green Ribbon Bloom" controls playsinline poster="/magazine/images/axfra_magazine_viktoria_01.jpg" preload="metadata">
+            <source src="/video/axfra_motion_pearl_green_ribbon_bloom.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: Viktoria</figcaption>
+        </figure>
+        <p class="case-lead">Blanco perla · verde botánico · etéreo</p>
+        <p class="case-desc">Misma lógica de doce etapas. Materiales y luz orientados a una estética luminosa, respetando la referencia original.</p>
+        <div class="case-actions">
+          <a href="#json-pearl">Ver JSON</a>
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
+        </div>
+        <details class="json-details" id="json-pearl">
+          <summary>JSON · Pearl Green Ribbon Bloom</summary>
+          <div class="code-top">
+            <strong>axfra_motion_animation_pearl_green_ribbon_bloom.json</strong>
+            <button data-copy="code-pearl" type="button">Copiar</button>
+          </div>
+          <pre><code id="code-pearl">{
+  "id": "AXFRA_motion_animation_pearl_green_ribbon_bloom",
+  "name": "Pearl Green Ribbon Bloom Transformation",
+  "name_es": "Transformación de cintas blanco perla y verde en flor y alas",
+  "meta": {
+    "developer": "ALARSI",
+    "developer_site": "https://alarsi.com",
+    "brand": "AXFRA",
+    "brand_site": "https://axfra.com",
+    "system": "AXFRA JSON prompt system",
+    "version": "1.0"
+  },
+  "archive": "AXFRA",
+  "category": "motion",
+  "slot": "animation",
+  "piece_family": "cinematic_transformation_sequence",
+  "swap_rule": "Reference this ID to apply the complete 12-stage sequence to the subject in the input image. Preserve the subject's existing identity, facial features, anatomy, wardrobe, accessories, wings, original visual context, and editorial graphics. Do not assign a character name, gender, role, species, costume, or backstory. Keep the ordered ribbon-to-flower-to-wing transformation and camera moves. Apply a pearl-white, ivory, and botanical-green palette to the animated effects without recoloring the original subject.",
+  "subject": {
+    "source": "active input image",
+    "reference": "the subject",
+    "identity_rule": "Use the existing main subject from the input image. Preserve recognizable identity, facial features, body proportions, hair, wardrobe, accessories, original wings, and other defining attributes. Do not invent any character identity, gender, role, or costume.",
+    "adaptation_rule": "Adapt movements to the subject’s anatomy and physical possibilities without adding unrelated features.",
+    "reference_preservation": "Preserve the original white costume, white feathered wings, halo, chair, botanical details, and existing editorial typography when present in the input image. Do not replace, recolor, or redesign them."
+  },
+  "sequence": {
+    "step_count": 12,
+    "order": "strict",
+    "continuity": "One continuous cinematic progression; stages transition into one another without resetting the ribbons, particles, crystals, flower, or temporary ribbon wings.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Rapid Expansive Surge",
+        "action": "Translucent pearl-white crystal fragments float in midair while ivory-white satin ribbons and soft botanical-green translucent fabric ribbons catch and violently twist around the center, forming a chaotic organic cocoon. The ribbons move independently of the subject's original wardrobe and wings.",
+        "camera": "Dynamic wide view toward the center",
+        "effects": "High-speed white-and-green ribbon twisting with floating pearl-white crystals"
+      },
+      {
+        "step": 2,
+        "name": "Pressure Build",
+        "action": "The white-and-green cocoon compresses forcefully and pulses with brilliant pearl-white internal energy and soft botanical-green luminous accents. Ribbons tighten and vibrate, with delicate sparks and a visible ethereal energy pulse.",
+        "camera": "Hold on the compressed cocoon",
+        "effects": "Increasing tension, pearl-white internal light, soft green energy pulses"
+      },
+      {
+        "step": 3,
+        "name": "Radial Explosion",
+        "action": "The cocoon explodes outward in a dramatic radial burst of ivory satin ribbons, translucent botanical-green fabric arcs, brilliant pearl-white energy, and physically convincing luminous crystal particles. Maintain the original intensity and speed of the explosion while replacing the crimson-and-black palette with white and green.",
+        "camera": "Capture the radial expansion",
+        "effects": "Explosive white-and-green fabric dynamics, pearl crystal fragments, luminous particle trails"
+      },
+      {
+        "step": 4,
+        "name": "Subject Reveal",
+        "action": "The subject appears at the center as the cocoon opens, moving the right arm through a fast, precise arc while ivory-white and botanical-green ribbons accelerate realistically around the subject. Adapt the gesture if necessary to the subject's anatomy. Preserve the original costume, feathered wings, accessories, and facial identity.",
+        "camera": "Reveal the subject at the center",
+        "effects": "Fast right-arm arc, accelerating white-and-green ribbons, pearlescent highlights"
+      },
+      {
+        "step": 5,
+        "name": "Spiral Ascent",
+        "action": "The subject rises and rotates in a controlled, natural movement while upward-coiling white satin ribbons and botanical-green translucent ribbons build a towering vertical floral structure. Pearl crystal fragments spiral upward with physically plausible inertia.",
+        "camera": "Low-angle camera ascends in a spiral",
+        "effects": "Upward spiral of ivory and green fabric, luminous floral tower construction"
+      },
+      {
+        "step": 6,
+        "name": "Bloom Snap",
+        "action": "The ribbon tower opens dramatically into a gigantic layered ivory-white flower with subtle botanical-green accents, revealing the subject at its center with a powerful visual impact and a sharp SNAP sound. The flower has luminous pearl-like petal edges and delicate green light passing between its layers.",
+        "camera": "Frame the flower expansion and central reveal",
+        "effects": "Gigantic ivory floral bloom, green luminous accents, layered petal opening, synchronized SNAP"
+      },
+      {
+        "step": 7,
+        "name": "Through the Petals",
+        "action": "The subject moves through the enormous ivory-white petals, turning as they fold and reform responsively around the movement. Thin botanical-green ribbons weave between the petals, following their motion without altering the subject's original wardrobe or wings.",
+        "camera": "Follow movement through the petals",
+        "effects": "Responsive folding and re-forming ivory petals, subtle green fabric trails"
+      },
+      {
+        "step": 8,
+        "name": "Rotating Mandala",
+        "action": "The flower reorganizes into concentric rotating mandala rings around the subject, forming elaborate geometric patterns of pearl-white luminous ribbons and translucent botanical-green accents. The rings maintain elegant radial symmetry while rotating at different speeds.",
+        "camera": "Keep the subject visually centered within rings",
+        "effects": "Concentric pearl-white and botanical-green mandala rotation, ordered transformation, luminous geometric patterns"
+      },
+      {
+        "step": 9,
+        "name": "Calligraphic Release",
+        "action": "The mandala rings dissolve into dynamic botanical-green ribbon calligraphic strokes with rhythmic motion and strong visual snapping accents. Thin ivory-white satin ribbons follow the green strokes, producing elegant flowing contrast without introducing black elements.",
+        "camera": "Track calligraphic strokes without losing the subject",
+        "effects": "Botanical-green ribbon calligraphy, ivory-white flowing accents, rhythmic snaps"
+      },
+      {
+        "step": 10,
+        "name": "Ribbon Storm",
+        "action": "The ivory-white and botanical-green ribbons multiply into a fast, chaotic but visually controlled storm. Pearlescent fabric trails rush toward the camera while translucent green ribbons twist between them. Keep the subject recognizable and avoid obscuring the face or original costume for extended periods.",
+        "camera": "Emphasize ribbons traveling toward the lens",
+        "effects": "High-velocity white-and-green ribbons, luminous particle trails, pearl highlights"
+      },
+      {
+        "step": 11,
+        "name": "Ribbon Wing Formation",
+        "action": "Storm ribbons gather behind the subject into large, majestic pearl-white wing-shaped structures with subtle botanical-green luminous edges, opening with realistic fabric weight and motion. These are temporary ribbon-based visual effects, not anatomical wings or costume additions. If the subject already has feathered wings, preserve them and distinguish the temporary ribbon structures as an additional surrounding visual effect.",
+        "camera": "Reveal the full ribbon-wing structures behind the subject",
+        "effects": "Pearl-white ribbon-to-wing formation, soft green luminous edges, physically weighted unfolding"
+      },
+      {
+        "step": 12,
+        "name": "Final Wide Reveal",
+        "action": "A final wide shot shows the subject framed by fully open pearl-white wing-shaped ribbon structures with delicate botanical-green luminous edges. Loose ivory and green strands and translucent pearl-white crystals orbit the subject as fine glowing particles float in clean ethereal light. Preserve the subject's original identity, wardrobe, feathered wings, halo, accessories, and original visual context.",
+        "camera": "Final wide shot",
+        "effects": "Orbiting pearl crystals, ivory-white and green ribbons, floating luminous particles, soft ethereal glow"
+      }
+    ]
+  },
+  "visual_effects": {
+    "primary_materials": [
+      "translucent pearl-white crystal fragments",
+      "ivory-white satin fabric ribbons",
+      "soft botanical-green translucent fabric ribbons"
+    ],
+    "transformations": [
+      "organic white-and-green ribbon cocoon",
+      "compressed pulsing pearl-white cocoon",
+      "radial white-and-green explosion",
+      "vertical ivory floral tower",
+      "gigantic layered ivory-white flower",
+      "concentric rotating pearl-white and botanical-green mandalas",
+      "botanical-green calligraphic ribbons",
+      "luminous ivory-and-green ribbon storm",
+      "pearl-white wing-shaped ribbon structures with subtle green luminous edges (visual effect only)"
+    ],
+    "physics": "Plausible inertia, fabric tension, acceleration, weight, and continuous particle trajectories; supernatural energy is a stylized visual effect.",
+    "lighting": "Bright editorial cinematic light with pearlescent highlights, soft botanical-green luminous accents, halo-like bloom, delicate satin reflections, clean whites, and a luminous ethereal final glow.",
+    "color_palette": {
+      "primary": "pearl white",
+      "secondary": "ivory white",
+      "accent": "soft botanical green",
+      "highlights": "luminous champagne-white",
+      "energy": "pearl-white light with subtle green pulses",
+      "avoid": [
+        "crimson red",
+        "black ribbons",
+        "dark gothic atmosphere",
+        "saturated neon green",
+        "heavy colored smoke"
+      ]
+    },
+    "material_response": "Ivory satin ribbons preserve their smooth reflective surface and fabric weight. Botanical-green translucent ribbons remain lightweight, flexible, and light-transmissive. Pearl crystal fragments retain sharp reflective edges, translucency, and luminous highlights."
+  },
+  "audio_cue": {
+    "step": 6,
+    "sound": "SNAP",
+    "context": "Synchronized with the layered ivory-white flower opening"
+  },
+  "constraints": [
+    "Preserve the sequence order and all 12 distinct actions.",
+    "Do not add new costumes, identities, or facial characteristics.",
+    "Preserve the original wardrobe, accessories, feathered wings, halo, and defining elements of the reference image.",
+    "Do not recolor the original subject to match the animated effects.",
+    "Avoid replacing continuous fabric motion with disconnected scene cuts.",
+    "Maintain readable staging of the subject throughout the transformation.",
+    "Treat the visible input-image subject as the only identity reference.",
+    "Do not assign any character type, role, or gender.",
+    "Temporary ribbon-wing structures must remain visual effects and must not replace existing anatomical or costume wings.",
+    "Adapt camera framing to the original composition when required; do not replace the background unnecessarily.",
+    "Maintain the pearl-white, ivory-white, and botanical-green visual palette throughout the complete sequence.",
+    "Avoid dark crimson effects, black calligraphic ribbons, and gothic lighting.",
+    "Do not invent or alter editorial text, magazine logos, or graphic elements present in the reference image."
+  ]
+}</code></pre>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="motion-direction" id="que-se-dirige">
+  <div class="wrap">
+    <div class="eyebrow">04 / QUÉ SE DIRIGE</div>
+    <h2>El tiempo también se compone.</h2>
+    <p>En AXFRA, animar no significa limitarse a pedir que una imagen se mueva. Supone concebir cómo se encadenan acciones, materiales, cámara y efectos para construir una evolución audiovisual con intención.</p>
+    <div class="motion-principles">
+      <article>
+        <h3>Acción y transformación</h3>
+        <p>Las formas se expanden, se reorganizan y cambian de función en distintos momentos de la pieza.</p>
+      </article>
+      <article>
+        <h3>Cámara y perspectiva</h3>
+        <p>La posición, el movimiento y la escala del plano forman parte de la puesta en escena.</p>
+      </article>
+      <article>
+        <h3>Continuidad e identidad</h3>
+        <p>La dirección busca relacionar acontecimientos y conservar lo que identifica al sujeto mientras el entorno visual se transforma.</p>
+      </article>
+    </div>
+    <div class="motion-note">
+      <p><strong>Un archivo visual, no una biblioteca de prompts.</strong> Las obras de AXFRA Motion muestran resultados de investigación y dirección audiovisual. Los dos módulos Ribbon Bloom se comparten como excepciones documentales; el resto de las instrucciones y secuencias de producción de ALARSI permanece privado.</p>
+    </div>
+  </div>
+</section>
+
+<section class="motion-direction motion-ai" id="preguntar-axfra">
+  <div class="wrap">
+    <h2>Preguntar sobre AXFRA</h2>
+    <p>Pregunta por una pieza, una técnica o el método. Copia la consulta y pégala en tu asistente para que busque en el sitio.</p>
+    <form id="motion-ai-form">
+      <label for="motion-ai-context">Pieza de referencia</label>
+      <select id="motion-ai-context">
+        <option value="">AXFRA Motion</option>
+        <option value="katefa">KATEFA · Orbit 360°</option>
+        <option value="crimson">Paulina · Crimson Ribbon Bloom</option>
+        <option value="pearl">Viktoria · Pearl Green Ribbon Bloom</option>
+      </select>
+      <label for="motion-ai-question">Tu pregunta</label>
+      <textarea id="motion-ai-question" rows="3" maxlength="800" required placeholder="¿Cómo logra AXFRA ese nivel de detalle en sus imágenes?"></textarea>
+      <div class="motion-ai-actions" aria-label="Preguntas sugeridas">
+        <button type="button" data-question>¿Cómo logra AXFRA ese nivel de detalle?</button>
+        <button type="button" data-question>¿Cómo se ilumina y se dirige la pose?</button>
+        <button type="button" data-question>¿Cómo se conserva la identidad cuando cambia la cámara?</button>
+      </div>
+      <button type="submit">Copiar consulta</button>
+      <p class="motion-ai-status" role="status" id="motion-ai-status"></p>
+      <textarea id="motion-ai-preview" aria-label="Consulta preparada" rows="7" readonly hidden></textarea>
+      <div class="motion-ai-actions">
+        <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT</a>
+        <a href="https://grok.com/" target="_blank" rel="noopener noreferrer">Abrir Grok</a>
+        <a href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer">Abrir Gemini</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="endnote">
+  <div class="wrap">
+    <div class="eyebrow">AXFRA / Método</div>
+    <h2>Una arquitectura temporal. Tres expresiones visuales.</h2>
+    <p>Estas piezas muestran una aplicación del enfoque modular AXFRA: la dirección organiza acciones, cámara y continuidad, mientras las referencias y los parámetros de materiales orientan el resultado visual. Los dos JSON de Ribbon Bloom se comparten específicamente para estas demostraciones; el resto de la colección Motion permanece privada.</p>
+    <p>AXFRA no es un motor de generación de video: documenta decisiones visuales y temporales utilizadas con herramientas externas de IA. Los resultados pueden variar según el modelo.</p>
+  </div>
+</section>
+
+<section class="axfra-demo-conclusion">
+  <div class="axfra-demo-conclusion-inner">
+    <div class="axfra-demo-kicker">AXFRA / Motion</div>
+    <h2>Del primer píxel al primer fotograma.</h2>
+    <p>AXFRA investiga la composición visual antes de generar una imagen y la dirección temporal antes de producir una secuencia. El resultado audiovisual es la expresión de esas decisiones, no un motor de generación independiente.</p>
+    <div id="globalDemoConclusion"></div>
+  </div>
+</section>
+
+</main>
+<div id="globalFooter"></div>
+<script defer="" src="/shared-layout.js"></script>
+<script defer="" src="/demo-conclusion.js"></script>
+
+<script>
+document.querySelectorAll('button[data-copy]').forEach(b=>b.addEventListener('click',async()=>{const n=document.getElementById(b.dataset.copy);if(!n)return;const prev=b.textContent;try{await navigator.clipboard.writeText(n.textContent);b.textContent='Copiado ✓'}catch(e){b.textContent='Seleccionar texto';const r=document.createRange();r.selectNodeContents(n);getSelection().removeAllRanges();getSelection().addRange(r)}setTimeout(()=>b.textContent=prev,1600)}));
+</script>
+
+<script>
+const motionShareData = {
+  title: 'AXFRA Motion',
+  url: 'https://axfra.com/motion/'
+};
+
+document.querySelectorAll('.share-motion').forEach(button => {
+  button.addEventListener('click', async () => {
+    const status = button.nextElementSibling;
+    status.textContent = '';
+    if (typeof navigator.share === 'function') {
+      try {
+        await navigator.share(motionShareData);
+        return;
+      } catch (error) {
+        if (error.name === 'AbortError') return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(motionShareData.url);
+      status.textContent = 'Enlace copiado';
+    } catch {
+      window.prompt('Copia el enlace de AXFRA Motion', motionShareData.url);
+    }
+  });
+});
+</script>
+
+<script>
+(() => {
+  const form = document.getElementById('motion-ai-form');
+  const context = document.getElementById('motion-ai-context');
+  const question = document.getElementById('motion-ai-question');
+  const preview = document.getElementById('motion-ai-preview');
+  const status = document.getElementById('motion-ai-status');
+  const page = 'https://axfra.com/motion/';
+  const currentPiece = location.hash.slice(1);
+  if (Array.from(context.options).some(option => option.value === currentPiece)) {
+    context.value = currentPiece;
+  }
+
+  function clearPreview() {
+    status.textContent = '';
+    preview.hidden = true;
+  }
+
+  form.addEventListener('input', clearPreview);
+  form.querySelectorAll('[data-question]').forEach(button => {
+    button.addEventListener('click', () => {
+      question.value = button.textContent.trim();
+      clearPreview();
+      question.focus();
+    });
+  });
+
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    const query = question.value.trim();
+    if (!query) {
+      status.textContent = 'Escribe una pregunta para preparar la consulta.';
+      question.focus();
+      return;
+    }
+
+    const section = context.value;
+    const origin = section ? page + '#' + section : page;
+    const piece = context.selectedOptions[0].textContent;
+    preview.value = [
+      'Pregunta: ' + query,
+      'Punto de partida: ' + piece + ' — ' + origin,
+      'Busca en las páginas públicas de todo AXFRA que ayuden a responder. Empieza por https://axfra.com/llms.txt y usa https://axfra.com/sitemap.xml para localizar otras secciones. Si corresponde, consulta la Librería en https://axfra.com/library/ y su índice en https://axfra.com/library/axfra_json_library_index.json.',
+      'Abre las fuentes pertinentes antes de responder y enlázalas para que pueda seguir explorando en AXFRA. Distingue lo que AXFRA documenta de tus inferencias. Si el proceso exacto no está publicado o alguna página no es accesible, indícalo y ofrece un ejemplo público relacionado cuando lo encuentres. Responde en español.'
+    ].join('\n\n');
+    preview.hidden = false;
+
+    try {
+      await navigator.clipboard.writeText(preview.value);
+      status.textContent = 'Consulta copiada. Abre tu asistente y pégala en el chat.';
+    } catch {
+      preview.focus();
+      preview.select();
+      status.textContent = 'Copia el texto seleccionado y pégalo en tu asistente.';
+    }
+  });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+<script>
+  const video = document.getElementById('axfra-luz-camara');
+  const src = 'https://video.twimg.com/amplify_video/2126462373401694209/pl/fPdpx7QtQw-Ra4R0.m3u8';
+
+  // AXFRA — Control independiente del poster
+  const poster = document.getElementById('axfra-luz-camara-poster');
+  const videoStatus = document.getElementById('axfra-video-status');
+
+  if (poster) {
+    poster.addEventListener('click', () => {
+      videoStatus.textContent = 'Preparando video…';
+      video.play().catch(error => {
+        console.warn('AXFRA Video:', error);
+        poster.classList.remove('is-hidden');
+        videoStatus.textContent = 'No se pudo iniciar el video. Intenta nuevamente.';
+      });
+    });
+
+    video.addEventListener('playing', () => {
+      videoStatus.textContent = '';
+      poster.classList.add('is-hidden');
+      video.classList.add('playing');
+      if (document.activeElement === poster) {
+        video.focus({ preventScroll: true });
+      }
+    });
+
+    video.addEventListener('ended', () => {
+      videoStatus.textContent = '';
+      poster.classList.remove('is-hidden');
+      video.classList.remove('playing');
+    });
+
+    video.addEventListener('error', () => {
+      poster.classList.remove('is-hidden');
+      video.classList.remove('playing');
+      videoStatus.textContent = 'Video no disponible. Intenta nuevamente.';
+    });
+  }
+
+  function startHls() {
+    if (!window.Hls || !Hls.isSupported()) {
+      console.warn('hls.js no disponible o no soportado');
+      if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = src;
+        video.setAttribute('referrerpolicy', 'no-referrer');
+      }
+      return;
+    }
+
+    const hls = new Hls({
+      enableWorker: true,
+      fetchSetup: function (context, initParams) {
+        initParams.referrerPolicy = 'no-referrer';
+        return new Request(context.url, initParams);
+      }
+    });
+
+    hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      console.log('Manifest cargado correctamente');
+    });
+
+    hls.on(Hls.Events.ERROR, (event, data) => {
+      console.error('HLS Error:', data.type, data.details, data);
+      if (data.fatal) {
+        switch (data.type) {
+          case Hls.ErrorTypes.NETWORK_ERROR:
+            console.error('Error de red. Reintentando...');
+            hls.startLoad();
+            break;
+          case Hls.ErrorTypes.MEDIA_ERROR:
+            console.error('Error de media. Recuperando...');
+            hls.recoverMediaError();
+            break;
+          default:
+            console.error('Error fatal, destruyendo hls');
+            hls.destroy();
+            break;
+        }
+      }
+    });
+
+    hls.loadSource(src);
+    hls.attachMedia(video);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startHls);
+  } else {
+    startHls();
+  }
+</script>
+</body>
+</html>
