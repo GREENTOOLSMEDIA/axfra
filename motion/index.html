@@ -25,121 +25,814 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://axfra.com/motion/#webpage","url":"https://axfra.com/motion/","name":"AXFRA Motion — El movimiento comienza antes del primer fotograma","description":"Dirección audiovisual y animación con IA: tres demostraciones verticales, KATEFA, Crimson Ribbon Bloom y Pearl Green Ribbon Bloom, con videos y composiciones estructuradas.","inLanguage":"es-CL","isPartOf":{"@id":"https://axfra.com/#website"},"mainEntity":{"@id":"https://axfra.com/motion/#videos"}},{"@type":"ItemList","@id":"https://axfra.com/motion/#videos","numberOfItems":3,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://axfra.com/motion/#video-katefa"}},{"@type":"ListItem","position":2,"item":{"@id":"https://axfra.com/motion/#video-crimson"}},{"@type":"ListItem","position":3,"item":{"@id":"https://axfra.com/motion/#video-pearl"}}]},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-katefa","name":"KATEFA — AXFRA Magazine Animation","description":"Animación editorial vertical de KATEFA basada en una portada de AXFRA Magazine; composición visual, movimiento de cámara y continuidad de identidad.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_katefa_01.jpg","contentUrl":"https://axfra.com/video/axfra_magazine_katefa_animation.mp4","inLanguage":"es-CL","width":768,"height":1168,"duration":"PT12.5S","uploadDate":"2026-11-24","creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"}},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-crimson","name":"Crimson Ribbon Bloom — AXFRA Motion","description":"Animación vertical con cintas rojas y negras, cristales, flor y estructuras alares temporales.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_paulina_01.jpg","contentUrl":"https://axfra.com/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4","inLanguage":"es-CL","width":768,"height":1152,"creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"uploadDate":"2026-11-24","duration":"PT15S"},{"@type":"VideoObject","@id":"https://axfra.com/motion/#video-pearl","name":"Pearl Green Ribbon Bloom — AXFRA Motion","description":"Variación de animación vertical con cintas blancas y verdes, cristales perlados y floración luminosa.","thumbnailUrl":"https://axfra.com/magazine/images/axfra_magazine_viktoria_01.jpg","contentUrl":"https://axfra.com/video/axfra_motion_pearl_green_ribbon_bloom.mp4","inLanguage":"es-CL","width":768,"height":1152,"creator":{"@type":"Person","name":"ALARSI","url":"https://alarsi.com/"},"publisher":{"@type":"Organization","name":"AXFRA","url":"https://axfra.com"},"uploadDate":"2026-11-24"}]}
 </script>
+
+
 <style>
-:root{--bg:#080808;--line:#37383b;--muted:#b3bdbe;--ink:#f4f4f3;--accent:#bacbc5;color-scheme:dark}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:94px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif;overflow-x:hidden}
-#globalHeader .wrap{width:min(1200px,calc(100% - 44px));margin:auto}
-#globalHeader .site-header{color:#f3f5f4}
-.wrap{width:min(1200px,calc(100% - 44px));margin:auto}
-a{color:inherit}
-.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:#cadbd4}
 
-/* Hero */
-.hero{
-  padding:clamp(64px,8vw,106px) 0 76px;
-  border-bottom:1px solid var(--line);
-  background:#080808 url('https://axfra.com/motion/axfra_maria_luz_camara_AXFRA.jpg') right center / cover no-repeat;
-}
-h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter-spacing:-.07em}
-h1 span{display:block;color:#d9d8d1}
-.tagline{margin:0 0 22px;font-size:clamp(1.3rem,3.3vw,2.6rem);letter-spacing:-.035em;line-height:1.18}
-.intro{color:#c5cbcb;font-size:1.09rem;max-width:790px}
-.anchors{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.anchors a{text-decoration:none;border:1px solid #86918d;padding:11px 18px;font-size:.82rem;font-weight:750}
-.anchors a:first-child{background:#c8d7d0;color:#101412;border-color:#c8d7d0}
+/* ==================================================
+   01. VARIABLES GENERALES
+   ================================================== */
 
-/* Hero video (16:9) */
-.hero-video{padding:0 0 clamp(40px,6vw,70px)}
-.hero-video video{
-  display:block;
-  width:100%;
-  aspect-ratio:16/9;
-  object-fit:contain;
-  background:#090b0c;
-}
-.hero-video figcaption{margin-top:.85rem;text-align:center;color:#adb5b3;font-size:.85rem}
-
-/* 3 columnas de cases */
-.cases-grid{padding:clamp(40px,5vw,70px) 0;border-bottom:1px solid var(--line)}
-.cases-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,36px)}
-.case-col h2{font-size:clamp(1.4rem,2.2vw,1.75rem);line-height:1.15;margin:8px 0 16px}
-.case-col .eyebrow{font-size:.72rem;letter-spacing:.08em}
-.case-col .media video{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;background:#111}
-.case-col .case-lead{font-size:.9rem;margin:12px 0 6px;color:#d4d4d2}
-.case-col .case-desc{font-size:.88rem;line-height:1.45;color:#adb5b3;margin:0 0 14px}
-.case-col .case-actions{display:flex;flex-wrap:wrap;gap:8px 12px;font-size:.85rem}
-.case-col .json-details{margin-top:16px;font-size:.85rem}
-.case-col .json-details pre{font-size:.75rem;max-height:280px;overflow:auto}
-
-/* Qué se dirige */
-.motion-direction{padding:clamp(55px,7vw,90px) 0;border-bottom:1px solid var(--line)}
-.motion-direction h2{font-size:clamp(2rem,4.6vw,4.1rem);line-height:1.08;letter-spacing:-.045em;margin:13px 0 24px}
-.motion-direction > .wrap > p{color:#c1b9b6;max-width:800px}
-.motion-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:32px}
-.motion-principles article{background:#111012;border:1px solid #393034;padding:25px}
-.motion-principles h3{margin:0 0 10px;font-size:1.25rem}
-.motion-principles p{margin:0;color:#c1b9b6;font-size:.91rem}
-.motion-note{border-left:3px solid #e5727a;background:#180f12;padding:21px 25px;margin-top:34px}
-.motion-note p{margin:0;color:#cfc5c2}
-
-/* Identidades */
-.motion-identities{padding:clamp(55px,7vw,90px) 0;border-bottom:1px solid var(--line)}
-.identity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:14px;margin-top:28px}
-.identity-grid a{text-decoration:none;color:inherit}
-.identity-grid figure{margin:0}
-.identity-grid img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:4px;background:#111}
-.identity-grid figcaption{font-size:.78rem;text-align:center;margin-top:6px;color:#adb5b3}
-.identity-grid a:hover figcaption{color:#f4f4f3}
-
-/* JSON details */
-.json-details{margin-top:30px;border:1px solid #343b3b;background:#101315}
-.json-details summary{cursor:pointer;padding:17px 20px;font-weight:750}
-.code-top{border-top:1px solid #343b3b;display:flex;gap:12px;justify-content:space-between;align-items:center;padding:13px 16px}
-.code-top strong{font-size:.78rem;overflow-wrap:anywhere;color:#bfcbc8}
-.code-top button{border:1px solid #62726e;background:#1b2322;color:#f8faf8;padding:9px 13px;cursor:pointer;font-weight:700}
-pre{margin:0;padding:20px;font-size:12px;line-height:1.6;max-height:470px;overflow:auto;color:#dce9e4;white-space:pre}
-
-/* Share & AI */
-.share-motion{background:none;border:0;padding:0;font-family:inherit;cursor:pointer;text-decoration:underline}
-.share-status{font-size:.85rem;color:#d2e3da}
-.share-status:empty{display:none}
-.motion-ai form{display:grid;gap:12px;max-width:800px;margin-top:24px}
-.motion-ai select,.motion-ai textarea{box-sizing:border-box;width:100%;background:#111012;color:#f4efed;border:1px solid #71626a;border-radius:4px;padding:12px;font:inherit}
-.motion-ai textarea{resize:vertical}
-.motion-ai-actions{display:flex;flex-wrap:wrap;gap:10px}
-.motion-ai button,.motion-ai-actions a{background:#180f12;color:#f4efed;border:1px solid #8c626d;border-radius:4px;padding:10px 14px;font:inherit;text-decoration:none;cursor:pointer}
-.motion-ai button:hover,.motion-ai-actions a:hover{background:#382029}
-.motion-ai-status{margin:0;color:#e5d5db}
-.motion-ai-status:empty{display:none}
-
-.endnote{padding:65px 0;border-bottom:1px solid var(--line)}
-.endnote h2{font-size:clamp(2rem,4vw,3.7rem);letter-spacing:-.05em;margin:10px 0 18px}
-.endnote p{max-width:860px;color:#b9c3c0}
-
-@media(max-width:900px){.cases-columns{grid-template-columns:1fr}}
-@media(max-width:800px){.motion-principles{grid-template-columns:1fr}}
-@media(max-width:680px){
-  .wrap,#globalHeader .wrap{width:calc(100% - 28px)}
-  h1{font-size:clamp(3.2rem,15vw,6rem)}
+:root {
+    --bg: #080808;
+    --line: #37383b;
+    --muted: #b3bdbe;
+    --ink: #f4f4f3;
+    --accent: #bacbc5;
+    color-scheme: dark;
 }
 
-/* Motion — editorial layout */
-main .wrap{width:min(1200px,calc(100% - 64px))}
-.hero{position:relative;isolation:isolate;min-height:clamp(480px,47vw,680px);display:flex;align-items:center;background-size:contain;background-position:right center;padding:clamp(56px,8vw,110px) 0}
-.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.97) 18%,rgba(8,8,8,.72) 42%,transparent 78%);pointer-events:none}
-.hero .intro{max-width:560px}.hero .tagline{max-width:650px}.hero h1{font-size:clamp(3.6rem,8vw,7.5rem)}
-.hero .anchors{max-width:650px}.anchors a,.case-actions a,.case-actions button,.identity-link{border:1px solid #515755;padding:10px 14px;text-decoration:none;color:var(--ink);background:transparent;font:inherit;font-size:.78rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:40px}.anchors a:hover,.case-actions a:hover,.case-actions button:hover,.identity-link:hover{background:#242b28;color:#fff}
-.section-heading{margin-bottom:28px}.section-heading h2,.motion-identities h2{font-size:clamp(2rem,4.6vw,4.1rem);line-height:1.08;letter-spacing:-.045em;margin:12px 0 18px}
-.hero-video{padding:clamp(44px,6vw,78px) 0;border-bottom:1px solid var(--line)}
-.hero-video figure,.case-col figure{margin:0}.hero-video video{border:1px solid #303533}.hero-video figcaption,.case-col figcaption{text-align:left;color:var(--muted);font-size:.8rem;padding:10px 0;margin:0}
-.motion-identities{padding:clamp(44px,6vw,78px) 0}.motion-identities p{color:var(--muted);max-width:800px}.identity-grid{grid-template-columns:repeat(9,minmax(0,1fr));gap:12px;margin-top:30px}.identity-grid a{min-width:0}.identity-grid img{aspect-ratio:auto;height:auto;object-fit:contain;border-radius:0;background:transparent}.identity-grid figure{height:100%;display:flex;flex-direction:column;justify-content:flex-end}.identity-grid figcaption{padding:9px 0;border-top:1px solid #37383b;margin-top:auto;color:var(--ink);font-weight:650}.identity-grid a:hover img{outline:1px solid #bacbc5;outline-offset:-1px}
-.cases-grid{padding:clamp(44px,6vw,78px) 0}.cases-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.case-col{min-width:0;padding:18px;border:1px solid #353a38;background:#101211;display:flex;flex-direction:column}.case-col h2{min-height:3.6em;margin-bottom:18px;overflow-wrap:anywhere}.case-col .media{width:100%;min-width:0}.case-col .media video{display:block;object-fit:contain;aspect-ratio:2/3;background:#080808}.case-col .case-desc{min-height:5.2em}.case-col .case-actions{gap:7px;align-items:center}.case-col .json-details{width:100%;min-width:0}.json-details summary{padding:12px;font-size:.8rem}.code-top{flex-wrap:wrap}.motion-principles article{background:#101211;border-color:#353a38}.motion-note{background:#151917;border-color:#bacbc5}.motion-ai form{max-width:100%;padding:clamp(16px,3vw,32px);border:1px solid #353a38;background:#101211}.motion-ai select,.motion-ai textarea,.motion-ai button,.motion-ai-actions a{background:#151917;border-color:#515755;border-radius:0}.motion-ai button:hover,.motion-ai-actions a:hover{background:#242b28}.motion-ai textarea[hidden]{display:none}.motion-ai form>button{justify-self:start;background:#c8d7d0;color:#101412;font-weight:700}.motion-ai form>button:hover{background:#e2ece7}.endnote{padding:clamp(44px,6vw,78px) 0}
-@media(max-width:1050px){.identity-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.case-col{padding:12px}.cases-columns{gap:12px}}
-@media(max-width:760px){main .wrap{width:calc(100% - 32px)}.hero{min-height:0;padding:0 0 42px;background-size:100% auto;background-position:top center}.hero:before{background:linear-gradient(180deg,transparent 0%,#080808 48%)}.hero .wrap{padding-top:clamp(180px,53vw,400px)}.hero h1{font-size:clamp(3.2rem,13vw,6rem)}.cases-columns{grid-template-columns:1fr;gap:24px}.case-col{padding:18px}.case-col h2,.case-col .case-desc{min-height:0}.case-col .media{max-width:480px;align-self:center}.identity-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.motion-principles{grid-template-columns:1fr}}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 94px;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.7 Inter, system-ui, -apple-system, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ==================================================
+   02. CONTENEDORES Y HEADER
+   ================================================== */
+
+.wrap,
+#globalHeader .wrap {
+    width: min(1200px, calc(100% - 44px));
+    margin: auto;
+}
+
+main .wrap {
+    width: min(1200px, calc(100% - 64px));
+}
+
+#globalHeader .site-header {
+    color: #f3f5f4;
+}
+
+
+/* ==================================================
+   03. TIPOGRAFÍA GENERAL
+   ================================================== */
+
+.eyebrow {
+    font-size: .73rem;
+    font-weight: 750;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+    color: #cadbd4;
+}
+
+h1 {
+    margin: 16px 0 22px;
+    font-size: clamp(3.6rem, 10vw, 8.5rem);
+    line-height: .94;
+    letter-spacing: -.07em;
+}
+
+h1 span {
+    display: block;
+    color: #d9d8d1;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2,
+.motion-identities h2 {
+    font-size: clamp(2rem, 4.6vw, 4.1rem);
+    line-height: 1.08;
+    letter-spacing: -.045em;
+    margin: 12px 0 18px;
+}
+
+
+/* ==================================================
+   04. HERO — M.A.R.I.A.
+   ================================================== */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(480px, 47vw, 680px);
+    display: flex;
+    align-items: center;
+    padding: clamp(56px, 8vw, 110px) 0;
+    border: 0;
+
+    background-color: #080808;
+    background-image: url('https://axfra.com/motion/axfra_maria_luz_camara_AXFRA.jpg');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        90deg,
+        #080808 0%,
+        rgba(8, 8, 8, .97) 18%,
+        rgba(8, 8, 8, .72) 42%,
+        transparent 78%
+    );
+    pointer-events: none;
+}
+
+.hero h1 {
+    font-size: clamp(3.6rem, 8vw, 7.5rem);
+}
+
+.tagline {
+    margin: 0 0 22px;
+    font-size: clamp(1.3rem, 3.3vw, 2.6rem);
+    letter-spacing: -.035em;
+    line-height: 1.18;
+    max-width: 650px;
+}
+
+.intro {
+    color: #c5cbcb;
+    font-size: 1.09rem;
+    max-width: 560px;
+}
+
+.anchors {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    max-width: 650px;
+}
+
+
+/* ==================================================
+   05. BOTONES Y ENLACES
+   ================================================== */
+
+.anchors a,
+.case-actions a,
+.case-actions button,
+.identity-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 10px 14px;
+    border: 1px solid #515755;
+    border-radius: 0;
+    background: transparent;
+    color: var(--ink);
+    text-decoration: none;
+    font: inherit;
+    font-size: .78rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.anchors a:first-child {
+    background: #c8d7d0;
+    color: #101412;
+    border-color: #c8d7d0;
+}
+
+.anchors a:hover,
+.case-actions a:hover,
+.case-actions button:hover,
+.identity-link:hover {
+    background: #242b28;
+    color: #fff;
+}
+
+
+/* ==================================================
+   06. VIDEO PRINCIPAL — LUZ, CÁMARA, AXFRA
+   ================================================== */
+
+.hero-video {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+    background: transparent;
+}
+
+.hero-video figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.hero-video video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #080808;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hero-video figcaption {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: .8rem;
+    border: 0;
+}
+
+
+/* ==================================================
+   07. ARCHIVO EN MOVIMIENTO — IDENTIDADES
+   ================================================== */
+
+.motion-identities {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.motion-identities p {
+    color: var(--muted);
+    max-width: 800px;
+}
+
+/* Distribución de personajes */
+
+.identity-grid {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.identity-grid a {
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+    border: 0;
+}
+
+.identity-grid figure {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Imágenes completas, sin recorte */
+
+.identity-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Nombre de cada personaje */
+
+.identity-grid figcaption {
+    margin-top: auto;
+    padding: 9px 0;
+    border: 0;
+    font-size: .78rem;
+    font-weight: 650;
+    text-align: center;
+    color: var(--ink);
+}
+
+/* Interacción sin marco */
+
+.identity-grid a:hover figcaption {
+    color: #bacbc5;
+}
+
+.identity-grid a:hover img {
+    opacity: .85;
+}
+
+
+/* ==================================================
+   08. COVER MOTION — DEMOSTRACIONES VERTICALES
+   ================================================== */
+
+.cases-grid {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.cases-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+/* Contenedor individual de cada demostración */
+
+.case-col {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Títulos */
+
+.case-col h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+    line-height: 1.15;
+    margin: 8px 0 18px;
+    min-height: 3.6em;
+    overflow-wrap: anywhere;
+}
+
+.case-col .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .08em;
+}
+
+/* Contenedor audiovisual */
+
+.case-col figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.case-col .media {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.case-col .media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background: #080808;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Pie del video */
+
+.case-col figcaption {
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    color: var(--muted);
+    font-size: .8rem;
+    border: 0;
+}
+
+/* Textos descriptivos */
+
+.case-col .case-lead {
+    font-size: .9rem;
+    margin: 12px 0 6px;
+    color: #d4d4d2;
+}
+
+.case-col .case-desc {
+    font-size: .88rem;
+    line-height: 1.45;
+    color: #adb5b3;
+    margin: 0 0 14px;
+    min-height: 5.2em;
+}
+
+/* Acciones */
+
+.case-col .case-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    font-size: .85rem;
+}
+
+
+/* ==================================================
+   09. MÓDULOS JSON DESPLEGABLES
+   ================================================== */
+
+/* Se conserva el borde por tratarse de un control */
+
+.json-details {
+    margin-top: 30px;
+    border: 1px solid #343b3b;
+    background: #101315;
+}
+
+.case-col .json-details {
+    margin-top: 16px;
+    font-size: .85rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.json-details summary {
+    cursor: pointer;
+    padding: 12px;
+    font-size: .8rem;
+    font-weight: 750;
+}
+
+/* Cabecera del código */
+
+.code-top {
+    border-top: 1px solid #343b3b;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 16px;
+}
+
+.code-top strong {
+    font-size: .78rem;
+    overflow-wrap: anywhere;
+    color: #bfcbc8;
+}
+
+.code-top button {
+    border: 1px solid #62726e;
+    background: #1b2322;
+    color: #f8faf8;
+    padding: 9px 13px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Visualización del JSON */
+
+pre {
+    margin: 0;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+    max-height: 470px;
+    overflow: auto;
+    color: #dce9e4;
+    white-space: pre;
+}
+
+.case-col .json-details pre {
+    font-size: .75rem;
+    max-height: 280px;
+    overflow: auto;
+}
+
+
+/* ==================================================
+   10. QUÉ SE DIRIGE
+   ================================================== */
+
+.motion-direction {
+    padding: clamp(55px, 7vw, 90px) 0;
+    border: 0;
+}
+
+.motion-direction h2 {
+    font-size: clamp(2rem, 4.6vw, 4.1rem);
+    line-height: 1.08;
+    letter-spacing: -.045em;
+    margin: 13px 0 24px;
+}
+
+.motion-direction > .wrap > p {
+    color: #c1b9b6;
+    max-width: 800px;
+}
+
+/* Distribución de principios */
+
+.motion-principles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+/* Principios sin tarjetas ni marcos */
+
+.motion-principles article {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.motion-principles h3 {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+}
+
+.motion-principles p {
+    margin: 0;
+    color: #c1b9b6;
+    font-size: .91rem;
+}
+
+/* Nota editorial */
+
+.motion-note {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-top: 34px;
+}
+
+.motion-note p {
+    margin: 0;
+    color: #cfc5c2;
+    max-width: 860px;
+}
+
+
+/* ==================================================
+   11. COMPARTIR
+   ================================================== */
+
+.share-motion {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.share-status {
+    font-size: .85rem;
+    color: #d2e3da;
+}
+
+.share-status:empty {
+    display: none;
+}
+
+
+/* ==================================================
+   12. PREGUNTAR SOBRE AXFRA — IA
+   ================================================== */
+
+/* Contenedor abierto, sin tarjeta */
+
+.motion-ai form {
+    display: grid;
+    gap: 12px;
+    max-width: 100%;
+    margin-top: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Campos de formulario */
+
+.motion-ai select,
+.motion-ai textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background: #151917;
+    color: #f4efed;
+    border: 1px solid #515755;
+    border-radius: 0;
+    font: inherit;
+}
+
+.motion-ai textarea {
+    resize: vertical;
+}
+
+.motion-ai textarea[hidden] {
+    display: none;
+}
+
+/* Botones de asistentes */
+
+.motion-ai-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.motion-ai button,
+.motion-ai-actions a {
+    background: #151917;
+    color: #f4efed;
+    border: 1px solid #515755;
+    border-radius: 0;
+    padding: 10px 14px;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.motion-ai button:hover,
+.motion-ai-actions a:hover {
+    background: #242b28;
+}
+
+/* Botón principal */
+
+.motion-ai form > button {
+    justify-self: start;
+    background: #c8d7d0;
+    color: #101412;
+    border-color: #c8d7d0;
+    font-weight: 700;
+}
+
+.motion-ai form > button:hover {
+    background: #e2ece7;
+}
+
+/* Estado de consulta */
+
+.motion-ai-status {
+    margin: 0;
+    color: #e5d5db;
+}
+
+.motion-ai-status:empty {
+    display: none;
+}
+
+
+/* ==================================================
+   13. MÉTODO — CIERRE EDITORIAL
+   ================================================== */
+
+.endnote {
+    padding: clamp(44px, 6vw, 78px) 0;
+    border: 0;
+}
+
+.endnote h2 {
+    font-size: clamp(2rem, 4vw, 3.7rem);
+    letter-spacing: -.05em;
+    margin: 10px 0 18px;
+}
+
+.endnote p {
+    max-width: 860px;
+    color: #b9c3c0;
+}
+
+/* Conclusión corporativa de Motion */
+
+.axfra-demo-conclusion {
+    border: 0;
+    box-shadow: none;
+}
+
+.axfra-demo-conclusion-inner {
+    border: 0;
+    box-shadow: none;
+}
+
+
+/* ==================================================
+   14. RESPONSIVE — TABLET Y LAPTOP
+   ================================================== */
+
+@media (max-width: 1050px) {
+
+    .identity-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .cases-columns {
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .motion-principles {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}
+
+
+/* ==================================================
+   15. RESPONSIVE — MÓVIL
+   ================================================== */
+
+@media (max-width: 760px) {
+
+    main .wrap {
+        width: calc(100% - 32px);
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 0;
+        padding: 0 0 42px;
+        background-size: 100% auto;
+        background-position: top center;
+    }
+
+    .hero::before {
+        background: linear-gradient(
+            180deg,
+            transparent 0%,
+            #080808 48%
+        );
+    }
+
+    .hero .wrap {
+        padding-top: clamp(180px, 53vw, 400px);
+    }
+
+    .hero h1 {
+        font-size: clamp(3.2rem, 13vw, 6rem);
+    }
+
+    /* Demostraciones verticales */
+
+    .cases-columns {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .case-col h2,
+    .case-col .case-desc {
+        min-height: 0;
+    }
+
+    .case-col .media {
+        max-width: 480px;
+        align-self: center;
+    }
+
+    /* Identidades */
+
+    .identity-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .wrap,
+    #globalHeader .wrap {
+        width: calc(100% - 28px);
+    }
+
+    h1 {
+        font-size: clamp(3.2rem, 15vw, 6rem);
+    }
+
+}
 
 </style>
+
+
 </head>
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
