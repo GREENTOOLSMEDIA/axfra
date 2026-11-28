@@ -27,16 +27,53 @@
 </script>
 <style>
 :root{--bg:#080808;--line:#37383b;--muted:#b3bdbe;--ink:#f4f4f3;--accent:#bacbc5;color-scheme:dark}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:94px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif;overflow-x:hidden}
-#globalHeader .wrap{width:min(1200px,calc(100% - 44px));margin:auto}#globalHeader .site-header{color:#f3f5f4}
-.wrap{width:min(1200px,calc(100% - 44px));margin:auto}a{color:inherit}.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:#cadbd4}
-.hero{padding:clamp(64px,8vw,106px) 0 76px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 85% 20%,rgba(88,45,59,.38),transparent 57%),#080808}
-h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter-spacing:-.07em}h1 span{display:block;color:#d9d8d1}.tagline{margin:0 0 22px;font-size:clamp(1.3rem,3.3vw,2.6rem);letter-spacing:-.035em;line-height:1.18}.intro{color:#c5cbcb;font-size:1.09rem;max-width:790px}.anchors{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.anchors a{text-decoration:none;border:1px solid #86918d;padding:11px 18px;font-size:.82rem;font-weight:750}.anchors a:first-child{background:#c8d7d0;color:#101412;border-color:#c8d7d0}
-.case{padding:clamp(54px,7vw,88px) 0;border-bottom:1px solid var(--line)}.case h2{font-size:clamp(2.3rem,5.5vw,5.2rem);line-height:1.06;letter-spacing:-.055em;margin:13px 0 12px}.case-editorial{display:grid;grid-template-columns:minmax(320px,520px) minmax(260px,1fr);gap:34px;align-items:start;margin-top:26px}.case-copy{padding-top:4px}.case-lead{margin:0 0 16px;font-size:clamp(1.12rem,2vw,1.42rem);color:#e2e3e1;max-width:520px}.case-desc{margin:0;color:#bbc4c2;max-width:520px}.media{margin:0;background:#111114;border:1px solid #35383a}.media video,.media img{display:block;width:100%;height:auto;background:#17191b}.media-video{max-width:520px}.media-video video{aspect-ratio:2/3;object-fit:cover}.media figcaption{padding:11px 15px;color:#adb5b3;font-size:.79rem}.case-actions{display:flex;flex-direction:column;align-items:flex-start;gap:11px;margin-top:22px}.case-actions a,.share-motion{color:#d2e3da;font-size:.92rem;text-underline-offset:3px}
-.json-details{margin-top:30px;border:1px solid #343b3b;background:#101315}.json-details summary{cursor:pointer;padding:17px 20px;font-weight:750}.code-top{border-top:1px solid #343b3b;display:flex;gap:12px;justify-content:space-between;align-items:center;padding:13px 16px}.code-top strong{font-size:.78rem;overflow-wrap:anywhere;color:#bfcbc8}.code-top button{border:1px solid #62726e;background:#1b2322;color:#f8faf8;padding:9px 13px;cursor:pointer;font-weight:700}pre{margin:0;padding:20px;font-size:12px;line-height:1.6;max-height:470px;overflow:auto;color:#dce9e4;white-space:pre}.endnote{padding:65px 0;border-bottom:1px solid var(--line)}.endnote h2{font-size:clamp(2rem,4vw,3.7rem);letter-spacing:-.05em;margin:10px 0 18px}.endnote p{max-width:860px;color:#b9c3c0}
-@media(max-width:820px){.case-editorial{grid-template-columns:1fr;gap:18px}.media-video{max-width:520px}.case-copy{padding-top:0}}@media(max-width:680px){.wrap,#globalHeader .wrap{width:calc(100% - 28px)}h1{font-size:clamp(3.2rem,15vw,6rem)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:94px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif;overflow-x:hidden}
+#globalHeader .wrap{width:min(1200px,calc(100% - 44px));margin:auto}
+#globalHeader .site-header{color:#f3f5f4}
+.wrap{width:min(1200px,calc(100% - 44px));margin:auto}
+a{color:inherit}
+.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:#cadbd4}
 
-/* AXFRA Motion / Qué se dirige - diseño editorial de tres columnas */
+/* Hero */
+.hero{
+  padding:clamp(64px,8vw,106px) 0 76px;
+  border-bottom:1px solid var(--line);
+  background:#080808 url('https://axfra.com/motion/axfra_maria_luz_camara_AXFRA.jpg') right center / cover no-repeat;
+}
+h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter-spacing:-.07em}
+h1 span{display:block;color:#d9d8d1}
+.tagline{margin:0 0 22px;font-size:clamp(1.3rem,3.3vw,2.6rem);letter-spacing:-.035em;line-height:1.18}
+.intro{color:#c5cbcb;font-size:1.09rem;max-width:790px}
+.anchors{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.anchors a{text-decoration:none;border:1px solid #86918d;padding:11px 18px;font-size:.82rem;font-weight:750}
+.anchors a:first-child{background:#c8d7d0;color:#101412;border-color:#c8d7d0}
+
+/* Hero video (16:9) */
+.hero-video{padding:0 0 clamp(40px,6vw,70px)}
+.hero-video video{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:contain;
+  background:#090b0c;
+}
+.hero-video figcaption{margin-top:.85rem;text-align:center;color:#adb5b3;font-size:.85rem}
+
+/* 3 columnas de cases */
+.cases-grid{padding:clamp(40px,5vw,70px) 0;border-bottom:1px solid var(--line)}
+.cases-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,36px)}
+.case-col h2{font-size:clamp(1.4rem,2.2vw,1.75rem);line-height:1.15;margin:8px 0 16px}
+.case-col .eyebrow{font-size:.72rem;letter-spacing:.08em}
+.case-col .media video{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;background:#111}
+.case-col .case-lead{font-size:.9rem;margin:12px 0 6px;color:#d4d4d2}
+.case-col .case-desc{font-size:.88rem;line-height:1.45;color:#adb5b3;margin:0 0 14px}
+.case-col .case-actions{display:flex;flex-wrap:wrap;gap:8px 12px;font-size:.85rem}
+.case-col .json-details{margin-top:16px;font-size:.85rem}
+.case-col .json-details pre{font-size:.75rem;max-height:280px;overflow:auto}
+
+/* Qué se dirige */
 .motion-direction{padding:clamp(55px,7vw,90px) 0;border-bottom:1px solid var(--line)}
 .motion-direction h2{font-size:clamp(2rem,4.6vw,4.1rem);line-height:1.08;letter-spacing:-.045em;margin:13px 0 24px}
 .motion-direction > .wrap > p{color:#c1b9b6;max-width:800px}
@@ -46,18 +83,28 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
 .motion-principles p{margin:0;color:#c1b9b6;font-size:.91rem}
 .motion-note{border-left:3px solid #e5727a;background:#180f12;padding:21px 25px;margin-top:34px}
 .motion-note p{margin:0;color:#cfc5c2}
-@media(max-width:800px){.motion-principles{grid-template-columns:1fr}}
 
-/* Motion — videos verticales sin recorte ni barras externas superfluas */
-.media-video{width:100%;max-width:520px;min-width:0}
-.media-video video{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;background:#111114}
-#video-katefa-player video{aspect-ratio:2/3;object-fit:contain}
-@media(min-width:821px){.case-editorial{grid-template-columns:minmax(0,520px) minmax(0,1fr)}}
+/* Identidades */
+.motion-identities{padding:clamp(55px,7vw,90px) 0;border-bottom:1px solid var(--line)}
+.identity-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:14px;margin-top:28px}
+.identity-grid a{text-decoration:none;color:inherit}
+.identity-grid figure{margin:0}
+.identity-grid img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:4px;background:#111}
+.identity-grid figcaption{font-size:.78rem;text-align:center;margin-top:6px;color:#adb5b3}
+.identity-grid a:hover figcaption{color:#f4f4f3}
 
+/* JSON details */
+.json-details{margin-top:30px;border:1px solid #343b3b;background:#101315}
+.json-details summary{cursor:pointer;padding:17px 20px;font-weight:750}
+.code-top{border-top:1px solid #343b3b;display:flex;gap:12px;justify-content:space-between;align-items:center;padding:13px 16px}
+.code-top strong{font-size:.78rem;overflow-wrap:anywhere;color:#bfcbc8}
+.code-top button{border:1px solid #62726e;background:#1b2322;color:#f8faf8;padding:9px 13px;cursor:pointer;font-weight:700}
+pre{margin:0;padding:20px;font-size:12px;line-height:1.6;max-height:470px;overflow:auto;color:#dce9e4;white-space:pre}
+
+/* Share & AI */
 .share-motion{background:none;border:0;padding:0;font-family:inherit;cursor:pointer;text-decoration:underline}
 .share-status{font-size:.85rem;color:#d2e3da}
 .share-status:empty{display:none}
-
 .motion-ai form{display:grid;gap:12px;max-width:800px;margin-top:24px}
 .motion-ai select,.motion-ai textarea{box-sizing:border-box;width:100%;background:#111012;color:#f4efed;border:1px solid #71626a;border-radius:4px;padding:12px;font:inherit}
 .motion-ai textarea{resize:vertical}
@@ -66,67 +113,32 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
 .motion-ai button:hover,.motion-ai-actions a:hover{background:#382029}
 .motion-ai-status{margin:0;color:#e5d5db}
 .motion-ai-status:empty{display:none}
-	
-	.motion-identities {
-  padding: clamp(55px, 7vw, 90px) 0;
-  border-bottom: 1px solid var(--line);
-}
-.identity-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: 14px;
-  margin-top: 28px;
-}
-.identity-grid a {
-  text-decoration: none;
-  color: inherit;
-}
-.identity-grid figure {
-  margin: 0;
-}
-.identity-grid img {
-  display: block;
-  width: 100%;
-aspect-ratio: 9 / 16;   /* 9:16 */
-	object-fit: cover;
-  border-radius: 4px;
-  background: #111;
-}
-.identity-grid figcaption {
-  font-size: .78rem;
-  text-align: center;
-  margin-top: 6px;
-  color: #adb5b3;
-}
-.identity-grid a:hover figcaption {
-  color: #f4f4f3;
+
+.endnote{padding:65px 0;border-bottom:1px solid var(--line)}
+.endnote h2{font-size:clamp(2rem,4vw,3.7rem);letter-spacing:-.05em;margin:10px 0 18px}
+.endnote p{max-width:860px;color:#b9c3c0}
+
+@media(max-width:900px){.cases-columns{grid-template-columns:1fr}}
+@media(max-width:800px){.motion-principles{grid-template-columns:1fr}}
+@media(max-width:680px){
+  .wrap,#globalHeader .wrap{width:calc(100% - 28px)}
+  h1{font-size:clamp(3.2rem,15vw,6rem)}
 }
 
-/* Nuevo video hero (16:9) */
-.hero-video { padding: 0 0 clamp(40px, 6vw, 70px); }
-.hero-video video {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  background: #090b0c url('https://axfra.com/images/editorial/axfra_composer.jpg') center / cover no-repeat;
-}
-.hero-video figcaption {
-  margin-top: .85rem;
-  text-align: center;
-  color: #adb5b3;
-  font-size: .85rem;
-}
-	.hero-video video {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  background: #090b0c url('https://axfra.com/images/editorial/axfra_composer.jpg') center / cover no-repeat;
-}
-.hero-video video.playing {
-  background: #090b0c;
-}
+/* Motion — editorial layout */
+main .wrap{width:min(1200px,calc(100% - 64px))}
+.hero{position:relative;isolation:isolate;min-height:clamp(480px,47vw,680px);display:flex;align-items:center;background-size:contain;background-position:right center;padding:clamp(56px,8vw,110px) 0}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#080808 0%,rgba(8,8,8,.97) 18%,rgba(8,8,8,.72) 42%,transparent 78%);pointer-events:none}
+.hero .intro{max-width:560px}.hero .tagline{max-width:650px}.hero h1{font-size:clamp(3.6rem,8vw,7.5rem)}
+.hero .anchors{max-width:650px}.anchors a,.case-actions a,.case-actions button,.identity-link{border:1px solid #515755;padding:10px 14px;text-decoration:none;color:var(--ink);background:transparent;font:inherit;font-size:.78rem;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:40px}.anchors a:hover,.case-actions a:hover,.case-actions button:hover,.identity-link:hover{background:#242b28;color:#fff}
+.section-heading{margin-bottom:28px}.section-heading h2,.motion-identities h2{font-size:clamp(2rem,4.6vw,4.1rem);line-height:1.08;letter-spacing:-.045em;margin:12px 0 18px}
+.hero-video{padding:clamp(44px,6vw,78px) 0;border-bottom:1px solid var(--line)}
+.hero-video figure,.case-col figure{margin:0}.hero-video video{border:1px solid #303533}.hero-video figcaption,.case-col figcaption{text-align:left;color:var(--muted);font-size:.8rem;padding:10px 0;margin:0}
+.motion-identities{padding:clamp(44px,6vw,78px) 0}.motion-identities p{color:var(--muted);max-width:800px}.identity-grid{grid-template-columns:repeat(9,minmax(0,1fr));gap:12px;margin-top:30px}.identity-grid a{min-width:0}.identity-grid img{aspect-ratio:auto;height:auto;object-fit:contain;border-radius:0;background:transparent}.identity-grid figure{height:100%;display:flex;flex-direction:column;justify-content:flex-end}.identity-grid figcaption{padding:9px 0;border-top:1px solid #37383b;margin-top:auto;color:var(--ink);font-weight:650}.identity-grid a:hover img{outline:1px solid #bacbc5;outline-offset:-1px}
+.cases-grid{padding:clamp(44px,6vw,78px) 0}.cases-columns{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}.case-col{min-width:0;padding:18px;border:1px solid #353a38;background:#101211;display:flex;flex-direction:column}.case-col h2{min-height:3.6em;margin-bottom:18px;overflow-wrap:anywhere}.case-col .media{width:100%;min-width:0}.case-col .media video{display:block;object-fit:contain;aspect-ratio:2/3;background:#080808}.case-col .case-desc{min-height:5.2em}.case-col .case-actions{gap:7px;align-items:center}.case-col .json-details{width:100%;min-width:0}.json-details summary{padding:12px;font-size:.8rem}.code-top{flex-wrap:wrap}.motion-principles article{background:#101211;border-color:#353a38}.motion-note{background:#151917;border-color:#bacbc5}.motion-ai form{max-width:100%;padding:clamp(16px,3vw,32px);border:1px solid #353a38;background:#101211}.motion-ai select,.motion-ai textarea,.motion-ai button,.motion-ai-actions a{background:#151917;border-color:#515755;border-radius:0}.motion-ai button:hover,.motion-ai-actions a:hover{background:#242b28}.motion-ai textarea[hidden]{display:none}.motion-ai form>button{justify-self:start;background:#c8d7d0;color:#101412;font-weight:700}.motion-ai form>button:hover{background:#e2ece7}.endnote{padding:clamp(44px,6vw,78px) 0}
+@media(max-width:1050px){.identity-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.case-col{padding:12px}.cases-columns{gap:12px}}
+@media(max-width:760px){main .wrap{width:calc(100% - 32px)}.hero{min-height:0;padding:0 0 42px;background-size:100% auto;background-position:top center}.hero:before{background:linear-gradient(180deg,transparent 0%,#080808 48%)}.hero .wrap{padding-top:clamp(180px,53vw,400px)}.hero h1{font-size:clamp(3.2rem,13vw,6rem)}.cases-columns{grid-template-columns:1fr;gap:24px}.case-col{padding:18px}.case-col h2,.case-col .case-desc{min-height:0}.case-col .media{max-width:480px;align-self:center}.identity-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.motion-principles{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -139,19 +151,20 @@ aspect-ratio: 9 / 16;   /* 9:16 */
     <div class="eyebrow">AXFRA / Dirección audiovisual</div>
     <h1>AXFRA <span>MOTION</span></h1>
     <p class="tagline">El movimiento comienza antes del primer fotograma.</p>
-    <p class="intro">La animación también se compone: acción, continuidad, cámara, materiales y ritmo. Tres ejemplos editoriales muestran cómo AXFRA organiza decisiones visuales y temporales para dar movimiento a imágenes de referencia.</p>
+    <p class="intro">La animación también se compone: acción, continuidad, cámara, materiales y ritmo. AXFRA organiza decisiones visuales y temporales para dar movimiento a imágenes de referencia.</p>
     <div class="anchors">
-      <a href="#katefa">KATEFA</a>
-      <a href="#crimson">Crimson Ribbon Bloom</a>
-      <a href="#pearl">Pearl Green Ribbon Bloom</a>
+      <a href="#luz-camara">Luz, Cámara, AXFRA!</a>
+      <a href="#identidades">Identidades</a>
+      <a href="#cover-motion">Cover Motion</a>
       <a href="/magazine/">Magazine</a>
     </div>
   </div>
 </section>
 
 <!-- NUEVO VIDEO (antes de la sección 01) -->
-<section class="hero-video">
+<section class="hero-video" id="luz-camara">
   <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">AXFRA / Motion Picture</div><h2>Luz, Cámara, AXFRA!</h2></div>
     <figure>
       <video id="axfra-luz-camara"
              controls
@@ -164,61 +177,121 @@ aspect-ratio: 9 / 16;   /* 9:16 */
   </div>
 </section>
 
-<section class="case" id="katefa">
+<section class="motion-identities" id="identidades">
   <div class="wrap">
-    <div class="eyebrow">01 / Demostración audiovisual · formato vertical</div>
-    <h2>Katefa:&nbsp;  Orbit 360º</h2>
-    <div class="case-editorial">
-      <figure class="media media-video" id="video-katefa-player">
-        <video aria-label="Animación editorial de KATEFA para AXFRA Magazine" controls="" height="1168" playsinline="" poster="/magazine/images/axfra_magazine_katefa_01.jpg" preload="metadata" width="768">
-          <source src="/video/axfra_magazine_katefa_animation.mp4" type="video/mp4"/>
-          <a href="/video/axfra_magazine_katefa_animation.mp4">Abrir el video de KATEFA</a>
-        </video>
-        <figcaption>AXFRA Magazine Cover Motion: KATEFA</figcaption>
-      </figure>
-      <div class="case-copy">
-        <p class="case-lead">Identidad editorial · movimiento de cámara · continuidad visual</p>
-        <p class="case-desc">KATEFA pasa de una portada de AXFRA Magazine a una secuencia audiovisual. El movimiento amplía la composición original sin convertir la referencia editorial en una escena ajena: el rostro, el vestuario y el lenguaje gráfico orientan la continuidad.</p>
-        <div class="case-actions">
-          <a href="/magazine/">Explorar AXFRA Magazine</a>
-          <button class="share-motion" type="button">Compartir AXFRA Motion</button>
-          <span class="share-status" role="status"></span>
-        </div>
-      </div>
+    <div class="eyebrow">Archivo en movimiento</div>
+    <h2>Identidades presentes.</h2>
+    <p>El montaje recorre varias identidades del archivo AXFRA. La dirección se mantiene; el sujeto cambia.</p>
+
+    <div class="identity-grid">
+      <a href="/identities/amina.html">
+        <figure>
+          <img src="/images/identity/axfra_amina.png" alt="Amina">
+          <figcaption>Amina</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/dotsy.html">
+        <figure>
+          <img src="/images/identity/axfra_dotsy.png" alt="Dotsy">
+          <figcaption>Dotsy</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/hana.html">
+        <figure>
+          <img src="/images/identity/axfra_hana.png" alt="Hana">
+          <figcaption>Hana</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/indira.html">
+        <figure>
+          <img src="/images/identity/axfra_indira.png" alt="Indira">
+          <figcaption>Indira</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/mara.html">
+        <figure>
+          <img src="/images/identity/axfra_mara.png" alt="Mara">
+          <figcaption>Mara</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/maria.html">
+        <figure>
+          <img src="https://axfra.com/images/editorial/axfra_maria_black_background.jpg" alt="M.A.R.I.A.">
+          <figcaption>M.A.R.I.A.</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/mira.html">
+        <figure>
+          <img src="/images/identity/axfra_mira.png" alt="Mira">
+          <figcaption>Mira</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/paulina.html">
+        <figure>
+          <img src="/images/identity/axfra_paulina.png" alt="Paulina">
+          <figcaption>Paulina</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/viktoria.html">
+        <figure>
+          <img src="/images/identity/axfra_viktoria.png" alt="Viktoria">
+          <figcaption>Viktoria</figcaption>
+        </figure>
+      </a>
     </div>
+
+    <p style="margin-top:1.5rem"><a class="identity-link" href="/identities.html">Ver todas las identidades ↗</a></p>
   </div>
 </section>
 
-<section class="case" id="crimson">
+<section class="cases-grid" id="cover-motion">
   <div class="wrap">
-    <div class="eyebrow">02 / Demostración audiovisual · 2:3</div>
-    <h2>Paulina: Crimson Ribbon Bloom</h2>
-    <div class="case-editorial">
-      <figure class="media media-video" id="video-crimson-player">
-        <video aria-label="Video Crimson Ribbon Bloom en formato vertical 2:3" controls="" height="1152" playsinline="" poster="/magazine/images/axfra_magazine_paulina_01.jpg" preload="metadata" width="768">
-          <source src="/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4" type="video/mp4"/>
-          <a href="/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4">Abrir video original</a>
-        </video>
-        <figcaption>AXFRA Magazine Cover Motion: Paulina</figcaption>
-      </figure>
-      <div class="case-copy">
-        <p class="case-lead">Cintas carmesí y negras · cristales rojos · transformación dramática</p>
-        <p class="case-desc">La referencia editorial de Paulina acompaña esta versión de la secuencia. El módulo de doce etapas organiza la transición entre cintas, flor, mandalas y estructuras alares temporales.</p>
+    <div class="section-heading"><div class="eyebrow">AXFRA / Magazine</div><h2>Cover Motion</h2></div>
+    <div class="cases-columns">
+
+      <!-- Katefa -->
+      <article class="case-col" id="katefa">
+        <div class="eyebrow">01 · Vertical</div>
+        <h2>Katefa:<br>Orbit 360º</h2>
+        <figure class="media media-video">
+          <video aria-label="Animación editorial de KATEFA" controls playsinline poster="/magazine/images/axfra_magazine_katefa_01.jpg" preload="metadata">
+            <source src="/video/axfra_magazine_katefa_animation.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: KATEFA</figcaption>
+        </figure>
+        <p class="case-lead">Identidad editorial · cámara · continuidad</p>
+        <p class="case-desc">De portada de Magazine a secuencia. El movimiento amplía la composición sin perder el rostro, el vestuario ni el lenguaje gráfico.</p>
         <div class="case-actions">
-          <a href="#json-crimson">Ver módulo completo</a>
-          <a href="/magazine/">Ver AXFRA Magazine</a>
-          <button class="share-motion" type="button">Compartir AXFRA Motion</button>
-          <span class="share-status" role="status"></span>
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
         </div>
-      </div>
-    </div>
-    <details class="json-details" id="json-crimson">
-      <summary>Ver JSON completo · Crimson Ribbon Bloom</summary>
-      <div class="code-top">
-        <strong>axfra_motion_animation_crimson_ribbon_bloom.json</strong>
-        <button data-copy="code-crimson" type="button">Copiar JSON</button>
-      </div>
-      <pre><code id="code-crimson">{
+      </article>
+
+      <!-- Crimson -->
+      <article class="case-col" id="crimson">
+        <div class="eyebrow">02 · 2:3</div>
+        <h2>Paulina:<br>
+          Crimson Ribbon Bloom</h2>
+        <figure class="media media-video">
+          <video aria-label="Crimson Ribbon Bloom" controls playsinline poster="/magazine/images/axfra_magazine_paulina_01.jpg" preload="metadata">
+            <source src="/video/Axfra_El_movimiento_comienza_antes_del_primer_fotograma.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: Paulina</figcaption>
+        </figure>
+        <p class="case-lead">Cintas carmesí · cristales · transformación</p>
+        <p class="case-desc">Doce etapas. De cintas a flor, mandalas y estructuras alares temporales, sobre la referencia editorial de Paulina.</p>
+        <div class="case-actions">
+          <a href="#json-crimson">Ver JSON</a>
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
+        </div>
+        <details class="json-details" id="json-crimson">
+          <summary>JSON · Crimson Ribbon Bloom</summary>
+          <div class="code-top">
+            <strong>axfra_motion_animation_crimson_ribbon_bloom.json</strong>
+            <button data-copy="code-crimson" type="button">Copiar</button>
+          </div>
+          <pre><code id="code-crimson">{
   "id": "AXFRA_motion_animation_crimson_ribbon_bloom",
   "name": "Crimson Ribbon Bloom Transformation",
   "name_es": "Transformación de cintas carmesí en flor y alas",
@@ -367,40 +440,34 @@ aspect-ratio: 9 / 16;   /* 9:16 */
     "Adapt camera framing to the original composition when required; do not replace the background unnecessarily."
   ]
 }</code></pre>
-    </details>
-  </div>
-</section>
+        </details>
+      </article>
 
-<section class="case" id="pearl">
-  <div class="wrap">
-    <div class="eyebrow">03 / Demostración audiovisual · 2:3</div>
-    <h2>Viktoria: Pearl Green Ribbon Bloom</h2>
-    <div class="case-editorial">
-      <figure class="media media-video" id="video-pearl-player">
-        <video aria-label="Video Pearl Green Ribbon Bloom en formato vertical 2:3" controls="" height="1152" playsinline="" poster="/magazine/images/axfra_magazine_viktoria_01.jpg" preload="metadata" width="768">
-          <source src="/video/axfra_motion_pearl_green_ribbon_bloom.mp4" type="video/mp4"/>
-          <a href="/video/axfra_motion_pearl_green_ribbon_bloom.mp4">Abrir video original</a>
-        </video>
-        <figcaption>AXFRA Magazine Cover Motion: Viktoria</figcaption>
-      </figure>
-      <div class="case-copy">
-        <p class="case-lead">Blanco perla y verde botánico · cristales translúcidos · atmósfera etérea</p>
-        <p class="case-desc">La referencia de Viktoria acompaña la variante blanco y verde. Se conserva la lógica temporal de doce etapas, pero los materiales y la iluminación se orientan hacia una estética luminosa, respetando los elementos originales de la imagen.</p>
+      <!-- Pearl -->
+      <article class="case-col" id="pearl">
+        <div class="eyebrow">03 · 2:3</div>
+        <h2>Viktoria:<br>
+          Pearl Green Ribbon Bloom</h2>
+        <figure class="media media-video">
+          <video aria-label="Pearl Green Ribbon Bloom" controls playsinline poster="/magazine/images/axfra_magazine_viktoria_01.jpg" preload="metadata">
+            <source src="/video/axfra_motion_pearl_green_ribbon_bloom.mp4" type="video/mp4"/>
+          </video>
+          <figcaption>Cover Motion: Viktoria</figcaption>
+        </figure>
+        <p class="case-lead">Blanco perla · verde botánico · etéreo</p>
+        <p class="case-desc">Misma lógica de doce etapas. Materiales y luz orientados a una estética luminosa, respetando la referencia original.</p>
         <div class="case-actions">
-          <a href="#json-pearl">Ver módulo completo</a>
-          <a href="/magazine/">Ver AXFRA Magazine</a>
-          <button class="share-motion" type="button">Compartir AXFRA Motion</button>
-          <span class="share-status" role="status"></span>
+          <a href="#json-pearl">Ver JSON</a>
+          <a href="/magazine/">Magazine</a>
+          <button class="share-motion" type="button">Compartir</button><span class="share-status" role="status"></span>
         </div>
-      </div>
-    </div>
-    <details class="json-details" id="json-pearl">
-      <summary>Ver JSON completo · Pearl Green Ribbon Bloom</summary>
-      <div class="code-top">
-        <strong>axfra_motion_animation_pearl_green_ribbon_bloom.json</strong>
-        <button data-copy="code-pearl" type="button">Copiar JSON</button>
-      </div>
-      <pre><code id="code-pearl">{
+        <details class="json-details" id="json-pearl">
+          <summary>JSON · Pearl Green Ribbon Bloom</summary>
+          <div class="code-top">
+            <strong>axfra_motion_animation_pearl_green_ribbon_bloom.json</strong>
+            <button data-copy="code-pearl" type="button">Copiar</button>
+          </div>
+          <pre><code id="code-pearl">{
   "id": "AXFRA_motion_animation_pearl_green_ribbon_bloom",
   "name": "Pearl Green Ribbon Bloom Transformation",
   "name_es": "Transformación de cintas blanco perla y verde en flor y alas",
@@ -571,7 +638,10 @@ aspect-ratio: 9 / 16;   /* 9:16 */
     "Do not invent or alter editorial text, magazine logos, or graphic elements present in the reference image."
   ]
 }</code></pre>
-    </details>
+        </details>
+      </article>
+
+    </div>
   </div>
 </section>
 
@@ -646,73 +716,6 @@ aspect-ratio: 9 / 16;   /* 9:16 */
     <h2>Del primer píxel al primer fotograma.</h2>
     <p>AXFRA investiga la composición visual antes de generar una imagen y la dirección temporal antes de producir una secuencia. El resultado audiovisual es la expresión de esas decisiones, no un motor de generación independiente.</p>
     <div id="globalDemoConclusion"></div>
-  </div>
-</section>
-	
-	<section class="motion-identities">
-  <div class="wrap">
-    <div class="eyebrow">Archivo en movimiento</div>
-    <h2>Identidades presentes.</h2>
-    <p>El montaje recorre varias identidades del archivo AXFRA. La dirección se mantiene; el sujeto cambia.</p>
-
-    <div class="identity-grid">
-      <a href="/identities/amina.html">
-        <figure>
-          <img src="/images/identity/axfra_amina.png" alt="Amina">
-          <figcaption>Amina</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/dotsy.html">
-        <figure>
-          <img src="/images/identity/axfra_dotsy.png" alt="Dotsy">
-          <figcaption>Dotsy</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/hana.html">
-        <figure>
-          <img src="/images/identity/axfra_hana.png" alt="Hana">
-          <figcaption>Hana</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/indira.html">
-        <figure>
-          <img src="/images/identity/axfra_indira.png" alt="Indira">
-          <figcaption>Indira</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/mara.html">
-        <figure>
-          <img src="/images/identity/axfra_mara.png" alt="Mara">
-          <figcaption>Mara</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/maria.html">
-        <figure>
-          <img src="https://axfra.com/images/editorial/axfra_maria_black_background.jpg" alt="M.A.R.I.A.">
-          <figcaption>M.A.R.I.A.</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/mira.html">
-        <figure>
-          <img src="/images/identity/axfra_mira.png" alt="Mira">
-          <figcaption>Mira</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/paulina.html">
-        <figure>
-          <img src="/images/identity/axfra_paulina.png" alt="Paulina">
-          <figcaption>Paulina</figcaption>
-        </figure>
-      </a>
-      <a href="/identities/viktoria.html">
-        <figure>
-          <img src="/images/identity/axfra_viktoria.png" alt="Viktoria">
-          <figcaption>Viktoria</figcaption>
-        </figure>
-      </a>
-    </div>
-
-    <p style="margin-top:1.5rem"><a href="/identities.html">Ver todas las identidades ↗</a></p>
   </div>
 </section>
 
