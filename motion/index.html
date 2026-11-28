@@ -66,6 +66,41 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
 .motion-ai button:hover,.motion-ai-actions a:hover{background:#382029}
 .motion-ai-status{margin:0;color:#e5d5db}
 .motion-ai-status:empty{display:none}
+	
+	.motion-identities {
+  padding: clamp(55px, 7vw, 90px) 0;
+  border-bottom: 1px solid var(--line);
+}
+.identity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+.identity-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+.identity-grid figure {
+  margin: 0;
+}
+.identity-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #111;
+}
+.identity-grid figcaption {
+  font-size: .78rem;
+  text-align: center;
+  margin-top: 6px;
+  color: #adb5b3;
+}
+.identity-grid a:hover figcaption {
+  color: #f4f4f3;
+}
 
 /* Nuevo video hero (16:9) */
 .hero-video { padding: 0 0 clamp(40px, 6vw, 70px); }
@@ -611,6 +646,73 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
     <h2>Del primer píxel al primer fotograma.</h2>
     <p>AXFRA investiga la composición visual antes de generar una imagen y la dirección temporal antes de producir una secuencia. El resultado audiovisual es la expresión de esas decisiones, no un motor de generación independiente.</p>
     <div id="globalDemoConclusion"></div>
+  </div>
+</section>
+	
+	<section class="motion-identities">
+  <div class="wrap">
+    <div class="eyebrow">Archivo en movimiento</div>
+    <h2>Identidades presentes.</h2>
+    <p>El montaje recorre varias identidades del archivo AXFRA. La dirección se mantiene; el sujeto cambia.</p>
+
+    <div class="identity-grid">
+      <a href="/identities/amina.html">
+        <figure>
+          <img src="/images/identity/axfra_amina.png" alt="Amina">
+          <figcaption>Amina</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/dotsy.html">
+        <figure>
+          <img src="/images/identity/axfra_dotsy.png" alt="Dotsy">
+          <figcaption>Dotsy</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/hana.html">
+        <figure>
+          <img src="/images/identity/axfra_hana.png" alt="Hana">
+          <figcaption>Hana</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/indira.html">
+        <figure>
+          <img src="/images/identity/axfra_indira.png" alt="Indira">
+          <figcaption>Indira</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/mara.html">
+        <figure>
+          <img src="/images/identity/axfra_mara.png" alt="Mara">
+          <figcaption>Mara</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/maria.html">
+        <figure>
+          <img src="/images/identity/axfra_maria.png" alt="M.A.R.I.A.">
+          <figcaption>M.A.R.I.A.</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/mira.html">
+        <figure>
+          <img src="/images/identity/axfra_mira.png" alt="Mira">
+          <figcaption>Mira</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/paulina.html">
+        <figure>
+          <img src="/images/identity/axfra_paulina.png" alt="Paulina">
+          <figcaption>Paulina</figcaption>
+        </figure>
+      </a>
+      <a href="/identities/viktoria.html">
+        <figure>
+          <img src="/images/identity/axfra_viktoria.png" alt="Viktoria">
+          <figcaption>Viktoria</figcaption>
+        </figure>
+      </a>
+    </div>
+
+    <p style="margin-top:1.5rem"><a href="/identities.html">Ver todas las identidades ↗</a></p>
   </div>
 </section>
 
