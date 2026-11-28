@@ -1,10 +1,64 @@
-<!DOCTYPE html><html lang="es-CL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808"><title>Integración de streaming HLS en sitios web estáticos | AXFRA</title><meta name="description" content="Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada."><meta name="author" content="ALARSI"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://axfra.com/detras-del-codigo/integracion-streaming-hls.html"><meta property="og:type" content="article"><meta property="og:site_name" content="AXFRA"><meta property="og:locale" content="es_CL"><meta property="og:title" content="Integración de streaming HLS en sitios web estáticos"><meta property="og:description" content="Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada."><meta property="og:url" content="https://axfra.com/detras-del-codigo/integracion-streaming-hls.html"><meta property="og:image" content="https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg"><link rel="stylesheet" href="/shared-layout.css"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#webpage", "url": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html", "name": "Integración de streaming HLS en sitios web estáticos", "inLanguage": "es-CL", "mainEntity": {"@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#article"}}, {"@type": "TechArticle", "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#article", "headline": "Integración de streaming HLS en sitios web estáticos", "description": "Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada.", "mainEntityOfPage": {"@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#webpage"}, "author": {"@type": "Person", "name": "ALARSI", "url": "https://alarsi.com/"}, "publisher": {"@type": "Organization", "name": "AXFRA", "url": "https://axfra.com/"}, "image": "https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg", "inLanguage": "es-CL", "about": ["HTTP Live Streaming", "HTML5", "JavaScript", "GitHub Pages"], "citation": ["https://github.com/video-dev/hls.js", "https://www.youtube.com/t/terms"]}]}</script><style>
+<!DOCTYPE html><html lang="es-CL"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808"><title>Integración de streaming HLS en sitios web estáticos | AXFRA</title><meta name="description" content="Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada."><meta name="author" content="ALARSI"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://axfra.com/detras-del-codigo/integracion-streaming-hls.html"><meta property="og:type" content="article"><meta property="og:site_name" content="AXFRA"><meta property="og:locale" content="es_CL"><meta property="og:title" content="Integración de streaming HLS en sitios web estáticos"><meta property="og:description" content="Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada."><meta property="og:url" content="https://axfra.com/detras-del-codigo/integracion-streaming-hls.html"><meta property="og:image" content="https://axfra.com/images/axfra_detras_del_codigo_integracion_streaming_hls.jpg"><meta property="og:image:alt" content="AXFRA Detrás del código: Indira y M.A.R.I.A. unen dos piezas de puzzle que representan la integración de código HTML y streaming de video HLS."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://axfra.com/images/axfra_detras_del_codigo_integracion_streaming_hls.jpg"><link rel="stylesheet" href="/shared-layout.css"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#webpage",
+      "url": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html",
+      "name": "Integración de streaming HLS en sitios web estáticos",
+      "inLanguage": "es-CL",
+      "mainEntity": {
+        "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#article"
+      },
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28"
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#article",
+      "headline": "Integración de streaming HLS en sitios web estáticos",
+      "description": "Integración de streaming HLS externo en sitios estáticos con HTML5 y hls.js: código, compatibilidad, ventajas, riesgos y control de portada.",
+      "mainEntityOfPage": {
+        "@id": "https://axfra.com/detras-del-codigo/integracion-streaming-hls.html#webpage"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "ALARSI",
+        "url": "https://alarsi.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AXFRA",
+        "url": "https://axfra.com/"
+      },
+      "image": "https://axfra.com/images/axfra_detras_del_codigo_integracion_streaming_hls.jpg",
+      "inLanguage": "es-CL",
+      "about": [
+        "HTTP Live Streaming",
+        "HTML5",
+        "JavaScript",
+        "GitHub Pages"
+      ],
+      "citation": [
+        "https://github.com/video-dev/hls.js",
+        "https://www.youtube.com/t/terms"
+      ],
+      "datePublished": "2026-11-28",
+      "dateModified": "2026-11-28"
+    }
+  ]
+}
+</script><style>
 :root{--bg:#080808;--ink:#f4f4f3;--muted:#b3bdbe;--accent:#bacbc5;--line:#37383b;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,Arial,sans-serif}a{color:inherit} .wrap,#globalHeader .wrap{width:min(1200px,calc(100% - 44px));margin:auto}main .wrap{width:min(1200px,calc(100% - 64px))}.editorial{padding:clamp(56px,8vw,108px) 0}.eyebrow{font-size:.73rem;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:#cadbd4}h1{font-size:clamp(2.9rem,7vw,6rem);line-height:1.02;letter-spacing:-.06em;margin:16px 0 24px}h2{font-size:clamp(1.6rem,3vw,2.5rem);line-height:1.12;letter-spacing:-.035em;margin:0 0 16px}h3{font-size:1.12rem;margin:24px 0 8px}p{color:var(--muted);max-width:850px;margin:0 0 16px}.lead{font-size:1.2rem;color:var(--ink);max-width:800px}.case{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:32px;align-items:center;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:44px}.case img,.cover{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:var(--bg)}.case a{text-decoration:none}.case a:hover{text-decoration:underline}.action{display:inline-flex;min-height:40px;align-items:center;border:1px solid #515755;padding:10px 14px;text-decoration:none;font-size:.8rem;font-weight:700}.action:hover{background:#242b28;color:white}.byline{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:.9rem}.block{margin-top:44px;max-width:900px}.cover{margin:32px 0}.crumb{font-size:.82rem;color:var(--muted);margin-bottom:24px}pre{background:#101315;border:1px solid var(--line);padding:18px;overflow:auto;font:13px/1.6 ui-monospace,monospace;color:#dce9e4}code{font-family:ui-monospace,monospace;overflow-wrap:anywhere}pre code{overflow-wrap:normal}.skip{position:absolute;left:12px;top:-100px}.skip:focus{top:12px;z-index:100;background:#080808;padding:10px}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}@media(max-width:760px){main .wrap{width:calc(100% - 32px)}.case{grid-template-columns:1fr;gap:20px}.editorial{padding:44px 0}}
 
-.tradeoffs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px} .tradeoffs li{color:var(--muted);margin-bottom:.6em} @media(max-width:760px){.tradeoffs{grid-template-columns:1fr;gap:12px}} pre{max-width:100%;overflow:auto} </style></head><body><a class="skip" href="#contenido">Saltar al contenido</a><div id="globalHeader"></div><main id="contenido"><article class="wrap editorial"><nav class="crumb" aria-label="Ruta de navegación"><a href="/detras-del-codigo/">Detrás del código</a> / Streaming HLS</nav>
+.tradeoffs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px} .tradeoffs li{color:var(--muted);margin-bottom:.6em} @media(max-width:760px){.tradeoffs{grid-template-columns:1fr;gap:12px}} pre{max-width:100%;overflow:auto} .article-hero{width:100%;background:#080808}.article-hero-image{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+</style></head><body><a class="skip" href="#contenido">Saltar al contenido</a><div id="globalHeader"></div><main id="contenido">
+<div class="article-hero"><img class="article-hero-image" src="https://axfra.com/images/axfra_detras_del_codigo_integracion_streaming_hls.jpg" alt="AXFRA Detrás del código: Indira y M.A.R.I.A. unen dos piezas de puzzle que representan la integración de código HTML y streaming de video HLS." width="1600" height="900" decoding="async"></div>
+<article class="wrap editorial"><nav class="crumb" aria-label="Ruta de navegación"><a href="/detras-del-codigo/">Detrás del código</a> / Streaming HLS</nav>
 <header><div class="eyebrow">01 / Distribución audiovisual</div><h1>Integración de streaming HLS en sitios web estáticos.</h1><p class="lead">Separar la presentación web de la distribución audiovisual permite optimizar los recursos disponibles y conservar el control sobre la experiencia de reproducción.</p><p>Documentación técnica · <a href="https://alarsi.com/">ALARSI®</a></p></header>
-<img class="cover" src="https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg" alt="Portada audiovisual de AXFRA Motion: Indira y M.A.R.I.A. forman un encuadre con sus manos." width="1600" height="900" decoding="async"><p><a class="action" href="/motion/#luz-camara">Ver implementación en AXFRA Motion ↗</a></p>
+<p><a class="action" href="/motion/#luz-camara">Ver implementación en AXFRA Motion ↗</a></p>
 <section class="block"><h2>01 / Arquitectura de distribución</h2><p>HTTP Live Streaming (HLS) distribuye contenido audiovisual a través de manifiestos M3U8 y segmentos multimedia servidos por HTTP. Cuando la fuente ofrece varias calidades, el reproductor puede adaptar la reproducción a las condiciones de red.</p><p>En una arquitectura estática, el sitio entrega HTML, CSS y JavaScript, mientras el proveedor audiovisual entrega los manifiestos y segmentos. No es necesario instalar un servidor de streaming en el alojamiento del sitio. AXFRA Motion utiliza esta arquitectura sobre GitHub Pages, con una fuente externa de X.com y una interfaz de reproducción propia.</p><p><strong>Sitio estático → reproductor HTML5 / hls.js → manifiesto M3U8 → segmentos del proveedor.</strong></p></section>
 <section class="block"><h2>02 / Implementación HTML5 y JavaScript</h2><p>El siguiente ejemplo utiliza hls.js cuando el navegador es compatible y recurre a HLS nativo cuando corresponde. Sustituir la URL ilustrativa por un manifiesto autorizado y accesible. En producción conviene fijar una versión concreta de la biblioteca que haya sido validada.</p><pre><code>&lt;!-- En el head, si corresponde a la política del sitio --&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
