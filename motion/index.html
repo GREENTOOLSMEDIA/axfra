@@ -75,14 +75,22 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
   aspect-ratio: 16 / 9;
   object-fit: contain;
   background: #090b0c url('https://axfra.com/images/editorial/axfra_composer.jpg') center / cover no-repeat;
-  border: 1px solid var(--line);
-  border-radius: .8rem;
 }
 .hero-video figcaption {
   margin-top: .85rem;
   text-align: center;
   color: #adb5b3;
   font-size: .85rem;
+}
+	.hero-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #090b0c url('https://axfra.com/images/editorial/axfra_composer.jpg') center / cover no-repeat;
+}
+.hero-video video.playing {
+  background: #090b0c;
 }
 </style>
 </head>
@@ -114,7 +122,6 @@ h1{margin:16px 0 22px;font-size:clamp(3.6rem,10vw,8.5rem);line-height:.94;letter
              controls
              playsinline
              preload="none"
-             poster="https://axfra.com/images/editorial/axfra_composer.jpg"
              aria-label="Demostración de AXFRA Motion — Luz, Cámara, AXFRA">
       </video>
       <figcaption>Luz, Cámara, AXFRA · Demostración de movimiento</figcaption>
@@ -707,7 +714,13 @@ document.querySelectorAll('.share-motion').forEach(button => {
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 <script>
   const video = document.getElementById('axfra-luz-camara');
-const src = 'https://video.twimg.com/amplify_video/2126462373401694209/pl/fPdpx7QtQw-Ra4R0.m3u8';
+  const src = 'https://video.twimg.com/amplify_video/2126462373401694209/pl/fPdpx7QtQw-Ra4R0.m3u8';
+
+  // Poster: se mantiene hasta que el usuario le da a play
+  video.addEventListener('play', () => video.classList.add('playing'));
+  video.addEventListener('pause', () => {
+    if (video.currentTime === 0) video.classList.remove('playing');
+  });
 
   function startHls() {
     if (!window.Hls || !Hls.isSupported()) {
