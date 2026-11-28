@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Detrás del código — Soluciones técnicas y desarrollo web | AXFRA</title>
+  <meta name="description" content="Detrás del código: soluciones técnicas, arquitectura web, streaming HLS, SEO, semántica y desarrollo implementado en proyectos reales de AXFRA.">
+  <meta name="author" content="ALARSI">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://axfra.com/detras-del-codigo/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AXFRA">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:title" content="Detrás del código — Soluciones técnicas y desarrollo web">
+  <meta property="og:description" content="Documentación abierta de soluciones técnicas reales implementadas en AXFRA. Desarrollo, arquitectura, streaming HLS, SEO y más.">
+  <meta property="og:url" content="https://axfra.com/detras-del-codigo/">
+  <meta property="og:image" content="https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg">
+  <meta property="og:image:alt" content="Indira y M.A.R.I.A. formando un encuadre con sus manos.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://axfra.com/motion/axfra_motion_luz_camara_indira_maria_poster.jpg">
+
+  <link rel="stylesheet" href="/shared-layout.css">
+  <link rel="stylesheet" href="/demo-conclusion.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"CollectionPage",
+        "@id":"https://axfra.com/detras-del-codigo/#webpage",
+        "url":"https://axfra.com/detras-del-codigo/",
+        "name":"Detrás del código — Soluciones técnicas y desarrollo web",
+        "description":"Archivo de soluciones técnicas documentadas por ALARSI a partir de implementaciones reales en AXFRA.",
+        "inLanguage":"es-CL",
+        "isPartOf":{"@id":"https://axfra.com/#website"}
+      },
+      {
+        "@type":"ItemList",
+        "@id":"https://axfra.com/detras-del-codigo/#solutions",
+        "name":"Soluciones técnicas documentadas",
+        "numberOfItems":1,
+        "itemListElement":[
+          {
+            "@type":"ListItem",
+            "position":1,
+            "url":"https://axfra.com/detras-del-codigo/reproductor-hls-poster-independiente.html",
+            "name":"Streaming HLS con póster independiente en HTML5"
+          }
+        ]
+      },
+      {
+        "@type":"TechArticle",
+        "@id":"https://axfra.com/detras-del-codigo/reproductor-hls-poster-independiente.html#article",
+        "headline":"Streaming HLS con póster independiente en HTML5",
+        "author":{
+          "@type":"Person",
+          "name":"ALARSI",
+          "url":"https://alarsi.com/"
+        },
+        "publisher":{
+          "@type":"Organization",
+          "name":"AXFRA",
+          "url":"https://axfra.com"
+        },
+        "about":[
+          "HTML5 video",
+          "HLS streaming",
+          "JavaScript",
+          "CSS",
+          "GitHub Pages",
+          "SEO técnico"
+        ],
+        "url":"https://axfra.com/detras-del-codigo/reproductor-hls-poster-independiente.html",
+        "inLanguage":"es-CL"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#080808;
+      --line:#37383b;
+      --muted:#b3bdbe;
+      --ink:#f4f4f3;
+      --accent:#bacbc5;
+      color-scheme:dark;
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{
+      scroll-behavior:smooth;
+      scroll-padding-top:94px;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font:16px/1.7 Inter, system-ui, -apple-system, Arial, sans-serif;
+      overflow-x:hidden;
+    }
+
+    a{ color:inherit; }
+
+    .wrap,
+    #globalHeader .wrap{
+      width:min(1200px, calc(100% - 44px));
+      margin:auto;
+    }
+
+    main .wrap{
+      width:min(1200px, calc(100% - 64px));
+    }
+
+    .eyebrow{
+      font-size:.73rem;
+      font-weight:750;
+      letter-spacing:.19em;
+      text-transform:uppercase;
+      color:#cadbd4;
+    }
+
+    h1{
+      margin:16px 0 22px;
+      font-size:clamp(3.1rem, 8vw, 6.6rem);
+      line-height:.96;
+      letter-spacing:-.06em;
+    }
+
+    h1 span{
+      display:block;
+      color:#d9d8d1;
+    }
+
+    h2{
+      font-size:clamp(2rem, 4.6vw, 4.1rem);
+      line-height:1.08;
+      letter-spacing:-.045em;
+      margin:12px 0 20px;
+    }
+
+    .hero{
+      position:relative;
+      min-height:clamp(480px, 56.25vw, 1080px);
+      display:flex;
+      align-items:center;
+      padding:clamp(56px, 8vw, 110px) 0;
+      background:#080808;
+      overflow:hidden;
+    }
+
+    .hero-video-bg{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+      pointer-events:none;
+      z-index:0;
+    }
+
+    .hero-grid{
+      position:relative;
+      z-index:2;
+      display:block;
+    }
+
+    .hero-copy{
+      max-width:720px;
+    }
+
+    .tagline{
+      margin:0 0 22px;
+      font-size:clamp(1.2rem, 3vw, 2.2rem);
+      letter-spacing:-.03em;
+      line-height:1.18;
+      max-width:670px;
+    }
+
+    .intro{
+      color:#c5cbcb;
+      font-size:1.04rem;
+      max-width:700px;
+    }
+
+    .anchors{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:26px;
+    }
+
+    .anchors a,
+    .case-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:10px 14px;
+      border:1px solid #515755;
+      background:transparent;
+      color:var(--ink);
+      text-decoration:none;
+      font:inherit;
+      font-size:.78rem;
+      font-weight:700;
+    }
+
+    .anchors a:first-child{
+      background:#c8d7d0;
+      color:#101412;
+      border-color:#c8d7d0;
+    }
+
+    .anchors a:hover,
+    .case-link:hover{
+      background:#242b28;
+      color:#fff;
+    }
+
+    .section{
+      padding:clamp(50px, 7vw, 90px) 0;
+    }
+
+    .section p{
+      color:var(--muted);
+      max-width:850px;
+    }
+
+    .cases-grid{
+      display:grid;
+      grid-template-columns:minmax(0, 1fr);
+      gap:24px;
+      margin-top:30px;
+    }
+
+    .case-card{
+      display:grid;
+      grid-template-columns:minmax(280px, 420px) minmax(0, 1fr);
+      gap:30px;
+      align-items:center;
+      text-decoration:none;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      padding:24px 0;
+    }
+
+    .case-card-visual img{
+      display:block;
+      width:100%;
+      height:auto;
+      aspect-ratio:16 / 9;
+      object-fit:cover;
+      background:#111;
+      transform:scaleX(-1);
+    }
+
+    .case-card-copy h3{
+      margin:0 0 10px;
+      font-size:clamp(1.4rem, 2.6vw, 2.2rem);
+      line-height:1.12;
+      letter-spacing:-.04em;
+    }
+
+    .case-card-copy p{
+      margin:0 0 1em;
+      color:var(--muted);
+      max-width:820px;
+    }
+
+    .case-meta{
+      font-size:.78rem;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#cadbd4;
+      margin-bottom:10px;
+    }
+
+    .note{
+      border-top:1px solid var(--line);
+      padding-top:22px;
+      margin-top:26px;
+    }
+
+    .note p{
+      color:#cfc5c2;
+      max-width:860px;
+      margin:0;
+    }
+
+    @media (max-width: 980px){
+      .case-card{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width: 760px){
+      main .wrap{
+        width:calc(100% - 32px);
+      }
+
+      .hero{
+        padding:40px 0 46px;
+      }
+
+    }
+
+    @media (max-width: 680px){
+      .wrap,
+      #globalHeader .wrap{
+        width:calc(100% - 28px);
+      }
+
+      h1{
+        font-size:clamp(3rem, 14vw, 5.5rem);
+      }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .hero-video-bg{ display:none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="globalHeader"></div>
+
+  <main id="contenido">
+
+    <section class="hero">
+      <video class="hero-video-bg" autoplay muted loop playsinline
+             preload="metadata" aria-hidden="true">
+        <source src="/video/axfra_detras_del_codigo.mp4" type="video/mp4">
+      </video>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">AXFRA / Desarrollo e investigación</div>
+          <h1>Detrás del <span>código</span></h1>
+          <p class="tagline">Soluciones técnicas reales, documentadas desde la práctica.</p>
+          <p class="intro">Esta sección reúne implementaciones, decisiones de desarrollo y soluciones construidas en proyectos reales de AXFRA. No es una vitrina de promesas: es un archivo de problemas resueltos.</p>
+          <div class="anchors">
+            <a href="#soluciones">Ver soluciones</a>
+            <a href="https://alarsi.com/">Conocer a ALARSI ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="soluciones">
+      <div class="wrap">
+        <div class="eyebrow">Archivo técnico</div>
+        <h2>Soluciones documentadas.</h2>
+        <p>Comenzamos con una implementación que resuelve un problema frecuente en reproductores HTML5 con streaming HLS: cómo mantener un póster visible y controlado de forma independiente hasta que la reproducción comience realmente.</p>
+
+        <div class="cases-grid">
+          <a class="case-card" href="/detras-del-codigo/reproductor-hls-poster-independiente.html">
+            <div class="case-card-visual">
+              <img src="/motion/axfra_motion_luz_camara_indira_maria_poster.jpg"
+                   alt="Indira y M.A.R.I.A. utilizadas como imagen de portada para la solución técnica."
+                   width="1365"
+                   height="768"
+                   loading="lazy"
+                   decoding="async">
+            </div>
+
+            <div class="case-card-copy">
+              <div class="case-meta">Solución 001</div>
+              <h3>Streaming HLS con póster independiente en HTML5.</h3>
+              <p>Cómo implementamos en AXFRA Motion un reproductor de video con fuente HLS externa, póster persistente, transición limpia hacia la reproducción, compatibilidad práctica y una arquitectura ligera basada en HTML, CSS y JavaScript.</p>
+              <p>Incluye el problema real, la lógica aplicada, el enfoque de interfaz y el criterio técnico detrás de la solución.</p>
+              <span class="case-link">Ver solución y código ↗</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="note">
+          <p><strong>Detrás del código</strong> conecta el trabajo técnico de AXFRA con el enfoque profesional de ALARSI: dirección de proyectos, creatividad y tecnología aplicadas a problemas concretos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="axfra-demo-conclusion">
+      <div class="wrap axfra-demo-conclusion-inner">
+        <p><strong>AXFRA</strong> es investigación visual y construcción modular. <strong>ALARSI</strong> es la capacidad de llevar esas ideas a soluciones reales, funcionales y compartibles.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="globalFooter"></div>
+
+  <script src="/shared-layout.js"></script>
+  <script>
+    const heroVideo = document.querySelector('.hero-video-bg');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    function syncHeroMotion() {
+      if (reducedMotion.matches) heroVideo.pause();
+      else heroVideo.play().catch(() => {});
+    }
+    syncHeroMotion();
+    reducedMotion.addEventListener('change', syncHeroMotion);
+  </script>
+</body>
+</html>
