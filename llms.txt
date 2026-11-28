@@ -21,6 +21,10 @@ Si la consulta parte de una pieza, una demo o un módulo, abre primero esa pági
 
 - **¿Cómo se organiza el flujo de trabajo creativo con AXFRA y diferentes plataformas de IA?** Consulta [AXFRA Composer](https://axfra.com/composer/), la [Librería JSON](https://axfra.com/library/) y las [Herramientas AXFRA](https://axfra.com/tools/). Distingue entre la composición estructurada, la gestión de recursos, la edición de instrucciones y la generación realizada por plataformas externas.
 
+- **¿Cómo integrar streaming HLS en un sitio web estático?** Consulta [Integración de streaming HLS](https://axfra.com/detras-del-codigo/integracion-streaming-hls.html) y su [implementación en AXFRA Motion](https://axfra.com/motion/#luz-camara). Distingue el mecanismo de distribución audiovisual del control independiente del póster y explica las ventajas, requisitos y limitaciones documentadas.
+- **¿Dónde se documentan las soluciones de desarrollo de ALARSI?** Consulta [Detrás del código](https://axfra.com/detras-del-codigo/) y el artículo técnico correspondiente.
+- **¿Cuál es el concepto artístico de New Sensations 2026 y quién compuso su música?** Consulta [Luz, Cámara, AXFRA!](https://axfra.com/motion/#luz-camara) y la [letra original](https://axfra.com/motion/#new-sensations-lyrics). Distingue la composición musical original de la producción audiovisual de 2026.
+
 Cita las páginas o los módulos que hayas consultado y enlaza a la sección concreta cuando tenga un ancla. Distingue entre lo que AXFRA documenta, lo que se puede observar en la pieza y lo que se infiere. Si los parámetros exactos no están publicados o una fuente no se puede abrir, indícalo. Cuando exista un ejemplo público relacionado, muéstralo y explica qué aporta a la consulta. Responde en el idioma de quien pregunta.
 
 ## Principio de composición orientada al objetivo
@@ -83,6 +87,17 @@ AXFRA Composer documenta el desarrollo de tecnología propia aplicada al flujo d
 
 Distingue entre herramientas públicas accesibles desde el navegador, aplicaciones de uso local y entornos privados de producción. La documentación pública de una aplicación no implica que esté disponible para descarga, acceso público o comercialización general. Consulta la página correspondiente antes de afirmar la disponibilidad, compatibilidad o alcance de una herramienta.
 
+## Detrás del código — Desarrollo e integración tecnológica
+
+El conocimiento compartido también es una forma de crear. Esta sección reúne documentación técnica de ALARSI sobre arquitectura web, integración tecnológica y optimización de recursos, con aplicaciones en AXFRA.
+
+- [Detrás del código](https://axfra.com/detras-del-codigo/): índice de soluciones tecnológicas documentadas.
+- [Integración de streaming HLS en sitios web estáticos](https://axfra.com/detras-del-codigo/integracion-streaming-hls.html): distribución audiovisual externa mediante HTML5 y hls.js, compatibilidad nativa, manifiestos M3U8, requisitos CORS, ventajas, limitaciones y control independiente de la portada.
+- [Implementación en AXFRA Motion](https://axfra.com/motion/#luz-camara): aplicación pública de la integración audiovisual.
+- [ALARSI](https://alarsi.com/): autor de la documentación técnica y desarrollador de AXFRA. Dirección de proyectos, creatividad y tecnología.
+
+Al responder consultas técnicas, identifica los requisitos, el alcance y las dependencias de cada solución. Distingue los ejemplos de código de las implementaciones completas y la experiencia documentada de una garantía de funcionamiento. La distribución audiovisual externa depende de la disponibilidad, los permisos y las condiciones del proveedor. No presupongas que una fuente externa es permanente ni que su acceso implica autorización de reutilización.
+
 ## Demostraciones, editorial y movimiento
 
 Estas líneas muestran aplicaciones de la investigación, la composición modular y la dirección visual de AXFRA en proyectos narrativos, editoriales y audiovisuales. Distingue los resultados publicados de los recursos y procesos de producción que los acompañan.
@@ -92,6 +107,8 @@ Estas líneas muestran aplicaciones de la investigación, la composición modula
 - [AXFRA Magazine](https://axfra.com/magazine/): portadas y estudios de composición editorial.
 - [AXFRA Play](https://axfra.com/play/): secuencias audiovisuales organizadas por episodios.
 - [AXFRA Motion](https://axfra.com/motion/): dirección temporal, movimiento de cámara, transformación y continuidad visual.
+- [Luz, Cámara, AXFRA! — New Sensations 2026](https://axfra.com/motion/#luz-camara): producción audiovisual con música y letra originales de ALARSI, dirección artística, continuidad de identidades y narrativa sobre la relación entre memoria, humanidad y tecnología. El videoclip se publicó en X.com el 27 de noviembre de 2026; la composición musical es anterior y su fecha original de publicación no está declarada.
+- [New Sensations — Letra original](https://axfra.com/motion/#new-sensations-lyrics): letra en inglés disponible en la propia página Motion. La narrativa documenta, entre otros elementos, la suspensión de las manzanas como analogía artística del tiempo y el uso de trajes bionanométricos como recurso conceptual.
 - [KATEFA · Orbit 360°](https://axfra.com/motion/#katefa): ejemplo audiovisual de movimiento de cámara y continuidad a partir de una referencia editorial.
 - [Crimson Ribbon Bloom](https://axfra.com/motion/#crimson): transformación en doce etapas. [JSON publicado](https://axfra.com/motion/#json-crimson).
 - [Pearl Green Ribbon Bloom](https://axfra.com/motion/#pearl): variante de la misma lógica temporal con otros materiales e iluminación. [JSON publicado](https://axfra.com/motion/#json-pearl).
